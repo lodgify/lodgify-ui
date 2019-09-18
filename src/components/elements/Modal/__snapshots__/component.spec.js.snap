@@ -2,9 +2,11 @@
 
 exports[`<Modal /> if \`props.header\` is passed should get the right props 1`] = `
 <Modal
+  centered={true}
   className=""
   closeIcon={
     <Icon
+      className={null}
       color={null}
       hasBorder={false}
       isButton={false}
@@ -40,9 +42,11 @@ exports[`<Modal /> if \`props.header\` is passed should get the right props 1`] 
 
 exports[`<Modal /> if \`props.isFullscreen\` is \`true\` render the right structure 1`] = `
 <Modal
+  centered={true}
   className=""
   closeIcon={
     <Icon
+      className={null}
       color={null}
       hasBorder={false}
       isButton={false}
@@ -73,9 +77,11 @@ exports[`<Modal /> if \`props.isFullscreen\` is \`true\` render the right struct
 
 exports[`<Modal /> if \`props.size\` is \`small\` render the right structure 1`] = `
 <Modal
+  centered={true}
   className=""
   closeIcon={
     <Icon
+      className={null}
       color={null}
       hasBorder={false}
       isButton={false}
@@ -106,9 +112,11 @@ exports[`<Modal /> if \`props.size\` is \`small\` render the right structure 1`]
 
 exports[`<Modal /> render the right structure 1`] = `
 <Modal
+  centered={true}
   className=""
   closeIcon={
     <Icon
+      className={null}
       color={null}
       hasBorder={false}
       isButton={false}

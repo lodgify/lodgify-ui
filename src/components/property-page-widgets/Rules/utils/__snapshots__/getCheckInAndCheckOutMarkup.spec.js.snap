@@ -9,6 +9,7 @@ exports[`\`getCheckInAndCheckOutMarkup\` if all check in and check out values ar
 >
   <React.Fragment>
     <Icon
+      className={null}
       color={null}
       hasBorder={false}
       isButton={false}
@@ -29,6 +30,7 @@ exports[`\`getCheckInAndCheckOutMarkup\` if all check in and check out values ar
     />
   </React.Fragment>
   <Icon
+    className={null}
     color={null}
     hasBorder={false}
     isButton={false}
@@ -55,6 +57,7 @@ exports[`\`getCheckInAndCheckOutMarkup\` if any check in value is false or undef
   width={null}
 >
   <Icon
+    className={null}
     color={null}
     hasBorder={false}
     isButton={false}
@@ -80,6 +83,7 @@ exports[`\`getCheckInAndCheckOutMarkup\` if any check out value is false or unde
 >
   <React.Fragment>
     <Icon
+      className={null}
       color={null}
       hasBorder={false}
       isButton={false}
@@ -100,6 +104,7 @@ exports[`\`getCheckInAndCheckOutMarkup\` if any check out value is false or unde
     />
   </React.Fragment>
   <Icon
+    className={null}
     color={null}
     hasBorder={false}
     isButton={false}

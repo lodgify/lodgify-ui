@@ -176,3 +176,18 @@ const { currencyOptions } = require('./mock-data/options');
 
 <Dropdown label="Currency" options={currencyOptions} />;
 ```
+
+#### Not Clearable
+
+```jsx
+const { currencyOptions } = require('./mock-data/options');
+
+// [
+//   { text: 'EUR', value: 'eur', label: 'Euro' },
+//   { text: 'GBP', value: 'gbp', label: 'British Pound' },
+//   { text: 'USD', value: 'usd', label: 'US Dollar' },
+//   { text: 'ZAR', value: 'zar', label: 'South African Rand' },
+// ];
+
+<Dropdown options={currencyOptions} isClearable={false} />;
+```

@@ -1,3 +1,31 @@
+jest.mock('semantic-ui-react', () => {
+  const { Component } = require('react');
+
+  class Pushable extends Component {
+    render() {
+      // eslint-disable-next-line react/prop-types
+      return <div>{this.props.children}</div>;
+    }
+  }
+
+  class Pusher extends Component {
+    render() {
+      // eslint-disable-next-line react/prop-types
+      return <div>{this.props.children}</div>;
+    }
+  }
+
+  class Sidebar extends Component {
+    static Pushable = Pushable;
+    static Pusher = Pusher;
+    render() {
+      // eslint-disable-next-line react/prop-types
+      return <div>{this.props.children}</div>;
+    }
+  }
+  return { Sidebar };
+});
+
 import React from 'react';
 import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';

@@ -155,20 +155,67 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                                   onChange={[Function]}
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
+                                  onMouseUp={[Function]}
                                 >
-                                  <input
-                                    checked={false}
-                                    className="hidden"
-                                    onClick={[Function]}
-                                    readOnly={true}
-                                    tabIndex={0}
-                                    type="checkbox"
-                                  />
-                                  <label
-                                    key="yo"
+                                  <Ref
+                                    innerRef={
+                                      Object {
+                                        "current": <input
+                                          class="hidden"
+                                          readonly=""
+                                          tabindex="0"
+                                          type="checkbox"
+                                          value=""
+                                        />,
+                                      }
+                                    }
                                   >
-                                    yo
-                                  </label>
+                                    <RefFindNode
+                                      innerRef={
+                                        Object {
+                                          "current": <input
+                                            class="hidden"
+                                            readonly=""
+                                            tabindex="0"
+                                            type="checkbox"
+                                            value=""
+                                          />,
+                                        }
+                                      }
+                                    >
+                                      <input
+                                        checked={false}
+                                        className="hidden"
+                                        disabled={false}
+                                        readOnly={true}
+                                        tabIndex={0}
+                                        type="checkbox"
+                                      />
+                                    </RefFindNode>
+                                  </Ref>
+                                  <Ref
+                                    innerRef={
+                                      Object {
+                                        "current": <label>
+                                          yo
+                                        </label>,
+                                      }
+                                    }
+                                  >
+                                    <RefFindNode
+                                      innerRef={
+                                        Object {
+                                          "current": <label>
+                                            yo
+                                          </label>,
+                                        }
+                                      }
+                                    >
+                                      <label>
+                                        yo
+                                      </label>
+                                    </RefFindNode>
+                                  </Ref>
                                 </div>
                               </Checkbox>
                             </div>
@@ -343,20 +390,67 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                                   onChange={[Function]}
                                   onClick={[Function]}
                                   onMouseDown={[Function]}
+                                  onMouseUp={[Function]}
                                 >
-                                  <input
-                                    checked={false}
-                                    className="hidden"
-                                    onClick={[Function]}
-                                    readOnly={true}
-                                    tabIndex={0}
-                                    type="checkbox"
-                                  />
-                                  <label
-                                    key="yo"
+                                  <Ref
+                                    innerRef={
+                                      Object {
+                                        "current": <input
+                                          class="hidden"
+                                          readonly=""
+                                          tabindex="0"
+                                          type="checkbox"
+                                          value=""
+                                        />,
+                                      }
+                                    }
                                   >
-                                    yo
-                                  </label>
+                                    <RefFindNode
+                                      innerRef={
+                                        Object {
+                                          "current": <input
+                                            class="hidden"
+                                            readonly=""
+                                            tabindex="0"
+                                            type="checkbox"
+                                            value=""
+                                          />,
+                                        }
+                                      }
+                                    >
+                                      <input
+                                        checked={false}
+                                        className="hidden"
+                                        disabled={false}
+                                        readOnly={true}
+                                        tabIndex={0}
+                                        type="checkbox"
+                                      />
+                                    </RefFindNode>
+                                  </Ref>
+                                  <Ref
+                                    innerRef={
+                                      Object {
+                                        "current": <label>
+                                          yo
+                                        </label>,
+                                      }
+                                    }
+                                  >
+                                    <RefFindNode
+                                      innerRef={
+                                        Object {
+                                          "current": <label>
+                                            yo
+                                          </label>,
+                                        }
+                                      }
+                                    >
+                                      <label>
+                                        yo
+                                      </label>
+                                    </RefFindNode>
+                                  </Ref>
                                 </div>
                               </Checkbox>
                             </div>

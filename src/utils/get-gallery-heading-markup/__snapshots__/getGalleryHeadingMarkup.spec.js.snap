@@ -42,6 +42,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
           className="ui small disabled rating"
           onMouseLeave={[Function]}
           role="radiogroup"
+          tabIndex={0}
         >
           <RatingIcon
             active={true}
@@ -54,6 +55,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={true}
@@ -64,7 +66,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -78,6 +80,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -88,7 +91,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -102,6 +105,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -112,7 +116,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -126,6 +130,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -136,7 +141,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -150,6 +155,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -160,7 +166,7 @@ exports[`getGalleryHeadingMarkup if \`propertyName\` is defined if \`ratingNumbe
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
         </div>

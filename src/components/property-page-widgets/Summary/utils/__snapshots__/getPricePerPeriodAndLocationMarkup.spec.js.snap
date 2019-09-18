@@ -8,6 +8,7 @@ exports[`getPricePerPeriodAndLocationMarkup if \`isShowingPlaceholder\` === true
   >
     someLocation
     <Icon
+      className={null}
       color="primary"
       hasBorder={false}
       isButton={false}
@@ -45,6 +46,7 @@ exports[`getPricePerPeriodAndLocationMarkup if \`ratingNumber\` is falsy should 
   >
     someLocation
     <Icon
+      className={null}
       color="primary"
       hasBorder={false}
       isButton={false}
@@ -82,6 +84,7 @@ exports[`getPricePerPeriodAndLocationMarkup if \`ratingNumber\` is not truthy sh
   >
     someLocation
     <Icon
+      className={null}
       color="primary"
       hasBorder={false}
       isButton={false}

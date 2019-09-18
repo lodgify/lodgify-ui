@@ -3,6 +3,7 @@
 exports[`<Availability /> by default should render the right structure 1`] = `
 <Responsive
   as={[Function]}
+  getWidth={[Function]}
   isUserOnMobile={false}
   onUpdate={[Function]}
   roomsWithImages={Array []}
@@ -13,6 +14,7 @@ exports[`<Availability /> by default should render the right structure 1`] = `
 exports[`<Availability /> if \`props.roomOptionsWithImages\` is passed should render the right structure 1`] = `
 <Responsive
   as={[Function]}
+  getWidth={[Function]}
   isUserOnMobile={false}
   onUpdate={[Function]}
   roomsWithImages={Array []}
@@ -46,6 +48,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
         width={5}
       >
         <Icon
+          className={null}
           color="light grey"
           hasBorder={false}
           isButton={false}
@@ -242,6 +245,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
           width={6}
         >
           <Icon
+            className={null}
             color={null}
             hasBorder={false}
             isButton={true}
@@ -263,6 +267,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
           width={6}
         >
           <Icon
+            className={null}
             color={null}
             hasBorder={false}
             isButton={true}
@@ -296,6 +301,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
         width={null}
       >
         <Icon
+          className={null}
           color="light grey"
           hasBorder={false}
           isButton={false}
@@ -371,6 +377,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
               getOptionsWithSearch={null}
               icon="map pin"
               initialValue={null}
+              isClearable={true}
               isCompact={false}
               isDisabled={false}
               isSearchable={false}
@@ -408,6 +415,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
         width={5}
       >
         <Icon
+          className={null}
           color="light grey"
           hasBorder={false}
           isButton={false}
@@ -604,6 +612,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
           width={6}
         >
           <Icon
+            className={null}
             color={null}
             hasBorder={false}
             isButton={true}
@@ -625,6 +634,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
           width={6}
         >
           <Icon
+            className={null}
             color={null}
             hasBorder={false}
             isButton={true}
@@ -658,6 +668,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
         width={null}
       >
         <Icon
+          className={null}
           color="light grey"
           hasBorder={false}
           isButton={false}

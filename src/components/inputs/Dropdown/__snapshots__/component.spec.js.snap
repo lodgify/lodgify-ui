@@ -7,12 +7,15 @@ exports[`<Dropdown /> if \`props.isCompact\` is \`true\` should render the right
   <Dropdown
     additionLabel="Add "
     additionPosition="top"
+    clearable={true}
     closeOnBlur={true}
+    closeOnEscape={true}
     compact={true}
     deburr={false}
     disabled={true}
     icon={
       <Icon
+        className={null}
         color={null}
         hasBorder={false}
         isButton={false}

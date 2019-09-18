@@ -307,14 +307,39 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Sign up
+                          </button>,
+                        }
+                      }
                     >
-                      Sign up
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Sign up
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Sign up
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>
@@ -680,30 +705,91 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                 onChange={[Function]}
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
+                                onMouseUp={[Function]}
                               >
-                                <input
-                                  checked={false}
-                                  className="hidden"
-                                  onClick={[Function]}
-                                  readOnly={true}
-                                  tabIndex={0}
-                                  type="checkbox"
-                                />
-                                <label
-                                  className="privacy-consent-label"
+                                <Ref
+                                  innerRef={
+                                    Object {
+                                      "current": <input
+                                        class="hidden"
+                                        readonly=""
+                                        tabindex="0"
+                                        type="checkbox"
+                                        value=""
+                                      />,
+                                    }
+                                  }
                                 >
-                                  <Paragraph
-                                    isCompact={false}
-                                    size="medium"
-                                    weight={null}
+                                  <RefFindNode
+                                    innerRef={
+                                      Object {
+                                        "current": <input
+                                          class="hidden"
+                                          readonly=""
+                                          tabindex="0"
+                                          type="checkbox"
+                                          value=""
+                                        />,
+                                      }
+                                    }
                                   >
-                                    <p
-                                      className=""
+                                    <input
+                                      checked={false}
+                                      className="hidden"
+                                      disabled={false}
+                                      readOnly={true}
+                                      tabIndex={0}
+                                      type="checkbox"
+                                    />
+                                  </RefFindNode>
+                                </Ref>
+                                <Ref
+                                  innerRef={
+                                    Object {
+                                      "current": <label
+                                        class="privacy-consent-label"
+                                      >
+                                        <p
+                                          class=""
+                                        >
+                                          I accept the privacy policy.
+                                        </p>
+                                      </label>,
+                                    }
+                                  }
+                                >
+                                  <RefFindNode
+                                    innerRef={
+                                      Object {
+                                        "current": <label
+                                          class="privacy-consent-label"
+                                        >
+                                          <p
+                                            class=""
+                                          >
+                                            I accept the privacy policy.
+                                          </p>
+                                        </label>,
+                                      }
+                                    }
+                                  >
+                                    <label
+                                      className="privacy-consent-label"
                                     >
-                                      I accept the privacy policy.
-                                    </p>
-                                  </Paragraph>
-                                </label>
+                                      <Paragraph
+                                        isCompact={false}
+                                        size="medium"
+                                        weight={null}
+                                      >
+                                        <p
+                                          className=""
+                                        >
+                                          I accept the privacy policy.
+                                        </p>
+                                      </Paragraph>
+                                    </label>
+                                  </RefFindNode>
+                                </Ref>
                               </div>
                             </Checkbox>
                           </div>
@@ -742,14 +828,39 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Sign up
+                          </button>,
+                        }
+                      }
                     >
-                      Sign up
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Sign up
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Sign up
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>
@@ -1041,9 +1152,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       <div
                         className="content"
                       >
-                        <p
-                          key="This is an error message"
-                        >
+                        <p>
                           This is an error message
                         </p>
                       </div>
@@ -1080,14 +1189,39 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Sign up
+                          </button>,
+                        }
+                      }
                     >
-                      Sign up
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Sign up
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Sign up
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>
@@ -1379,9 +1513,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       <div
                         className="content"
                       >
-                        <p
-                          key="This is a successful message"
-                        >
+                        <p>
                           This is a successful message
                         </p>
                       </div>
@@ -1418,14 +1550,39 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Sign up
+                          </button>,
+                        }
+                      }
                     >
-                      Sign up
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Sign up
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Sign up
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>
@@ -1736,14 +1893,39 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Sign up
+                          </button>,
+                        }
+                      }
                     >
-                      Sign up
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Sign up
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Sign up
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>

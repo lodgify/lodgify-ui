@@ -267,14 +267,39 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                 size={null}
                                 type="button"
                               >
-                                <button
-                                  className="ui circular left floated button"
-                                  onClick={[Function]}
-                                  role="button"
-                                  type="button"
+                                <Ref
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui circular left floated button"
+                                        type="button"
+                                      >
+                                        Book now
+                                      </button>,
+                                    }
+                                  }
                                 >
-                                  Book now
-                                </button>
+                                  <RefFindNode
+                                    innerRef={
+                                      Object {
+                                        "current": <button
+                                          class="ui circular left floated button"
+                                          type="button"
+                                        >
+                                          Book now
+                                        </button>,
+                                      }
+                                    }
+                                  >
+                                    <button
+                                      className="ui circular left floated button"
+                                      onClick={[Function]}
+                                      type="button"
+                                    >
+                                      Book now
+                                    </button>
+                                  </RefFindNode>
+                                </Ref>
                               </Button>
                             </Button>
                           </div>

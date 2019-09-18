@@ -89,6 +89,7 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
         size="tiny"
         trigger={
           <Icon
+            className={null}
             color={null}
             hasBorder={false}
             isButton={false}
@@ -105,9 +106,11 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
         }
       >
         <Modal
+          centered={true}
           className=""
           closeIcon={
             <Icon
+              className={null}
               color={null}
               hasBorder={false}
               isButton={false}
@@ -130,6 +133,7 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
           size="fullscreen"
           trigger={
             <Icon
+              className={null}
               color={null}
               hasBorder={false}
               isButton={false}
@@ -146,10 +150,8 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
           }
         >
           <Portal
-            className="ui inverted page modals dimmer transition visible active"
             closeOnDocumentClick={false}
             closeOnEscape={true}
-            closeOnRootNodeClick={true}
             eventPool="Modal"
             mountNode={<body />}
             onClose={[Function]}
@@ -159,6 +161,7 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
             openOnTriggerClick={true}
             trigger={
               <Icon
+                className={null}
                 color={null}
                 hasBorder={false}
                 isButton={false}
@@ -177,43 +180,48 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
             <Ref
               innerRef={[Function]}
             >
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="bars"
-                onBlur={[Function]}
-                onClick={[Function]}
-                onFocus={[Function]}
-                onMouseEnter={[Function]}
-                onMouseLeave={[Function]}
-                path={null}
-                size={null}
+              <RefFindNode
+                innerRef={[Function]}
               >
-                <i
-                  className="icon"
+                <Icon
+                  className={null}
+                  color={null}
+                  hasBorder={false}
+                  isButton={false}
+                  isCircular={false}
+                  isColorInverted={false}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="bars"
                   onBlur={[Function]}
                   onClick={[Function]}
                   onFocus={[Function]}
                   onMouseEnter={[Function]}
                   onMouseLeave={[Function]}
+                  path={null}
+                  size={null}
                 >
-                  <svg
-                    viewBox="0 0 24 24"
+                  <i
+                    className="icon"
+                    onBlur={[Function]}
+                    onClick={[Function]}
+                    onFocus={[Function]}
+                    onMouseEnter={[Function]}
+                    onMouseLeave={[Function]}
                   >
-                    <path
-                      d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </i>
-              </Icon>
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                </Icon>
+              </RefFindNode>
             </Ref>
           </Portal>
         </Modal>

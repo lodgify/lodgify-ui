@@ -7,9 +7,6 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { Icon, ICON_NAMES } from 'elements/Icon';
-import { NO_RESULTS } from 'utils/default-strings';
-
 import { Component as Submenu } from './component';
 
 const children = 'Click me';
@@ -29,28 +26,6 @@ describe('<Submenu />', () => {
           {children}
         </Submenu>
       ).find('Dropdown');
-
-    it('should get the right props by default', () => {
-      const wrapper = getSubmenuDropdown();
-
-      expectComponentToHaveProps(wrapper, {
-        icon: <Icon name={ICON_NAMES.CARET_DOWN} size="small" />,
-        className: '',
-        item: false,
-        name: null,
-        noResultsMessage: NO_RESULTS,
-        onChange: expect.any(Function),
-        search: false,
-        simple: false,
-        options: expect.arrayContaining([expect.any(Object)]),
-        pointing: 'top left',
-        scrolling: true,
-        style: undefined,
-        trigger: children,
-        upward: false,
-        value: null,
-      });
-    });
 
     it('should get `props.className` `underlined` if required', () => {
       const wrapper = getSubmenuDropdown({ isTriggerUnderlined: true });

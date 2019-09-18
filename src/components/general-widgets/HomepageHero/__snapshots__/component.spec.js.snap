@@ -300,14 +300,39 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   size={null}
                                   type="button"
                                 >
-                                  <button
-                                    className="ui circular left floated button"
-                                    onClick={[Function]}
-                                    role="button"
-                                    type="button"
+                                  <Ref
+                                    innerRef={
+                                      Object {
+                                        "current": <button
+                                          class="ui circular left floated button"
+                                          type="button"
+                                        >
+                                          Book now
+                                        </button>,
+                                      }
+                                    }
                                   >
-                                    Book now
-                                  </button>
+                                    <RefFindNode
+                                      innerRef={
+                                        Object {
+                                          "current": <button
+                                            class="ui circular left floated button"
+                                            type="button"
+                                          >
+                                            Book now
+                                          </button>,
+                                        }
+                                      }
+                                    >
+                                      <button
+                                        className="ui circular left floated button"
+                                        onClick={[Function]}
+                                        type="button"
+                                      >
+                                        Book now
+                                      </button>
+                                    </RefFindNode>
+                                  </Ref>
                                 </Button>
                               </Button>
                             </div>
@@ -533,6 +558,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                 getOptionsWithSearch={null}
                                                 icon="map pin"
                                                 initialValue={null}
+                                                isClearable={true}
                                                 isCompact={false}
                                                 isDisabled={false}
                                                 isSearchable={false}
@@ -557,6 +583,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   className="dropdown-container"
                                                 >
                                                   <Icon
+                                                    className={null}
                                                     color={null}
                                                     hasBorder={false}
                                                     isButton={false}
@@ -586,12 +613,15 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   <Dropdown
                                                     additionLabel="Add "
                                                     additionPosition="top"
+                                                    clearable={true}
                                                     closeOnBlur={true}
+                                                    closeOnEscape={true}
                                                     compact={false}
                                                     deburr={false}
                                                     disabled={false}
                                                     icon={
                                                       <Icon
+                                                        className={null}
                                                         color={null}
                                                         hasBorder={false}
                                                         isButton={false}
@@ -633,94 +663,195 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     value={null}
                                                     wrapSelection={true}
                                                   >
-                                                    <div
-                                                      aria-disabled={false}
-                                                      aria-expanded={false}
-                                                      className="ui selection upward dropdown"
-                                                      onBlur={[Function]}
-                                                      onChange={[Function]}
-                                                      onClick={[Function]}
-                                                      onFocus={[Function]}
-                                                      onMouseDown={[Function]}
-                                                      role="listbox"
-                                                      tabIndex={0}
-                                                    >
-                                                      <div
-                                                        aria-live="polite"
-                                                        className="text"
-                                                        role="alert"
-                                                      />
-                                                      <Icon
-                                                        color={null}
-                                                        hasBorder={false}
-                                                        isButton={false}
-                                                        isCircular={false}
-                                                        isColorInverted={false}
-                                                        isDisabled={false}
-                                                        isLabelLeft={false}
-                                                        labelText={null}
-                                                        labelWeight={null}
-                                                        name="caret down"
-                                                        onClick={[Function]}
-                                                        path={null}
-                                                        size={null}
-                                                      >
-                                                        <i
-                                                          className="icon"
-                                                          onClick={[Function]}
-                                                        >
-                                                          <svg
-                                                            viewBox="0 0 24 24"
-                                                          >
-                                                            <path
-                                                              d="M20,8.5l-8,7-8-7Z"
-                                                              fill="currentColor"
-                                                            />
-                                                          </svg>
-                                                        </i>
-                                                      </Icon>
-                                                      <DropdownMenu
-                                                        open={false}
-                                                      >
-                                                        <div
-                                                          className="menu transition"
-                                                        >
-                                                          <DropdownItem
-                                                            active={false}
-                                                            key="0"
-                                                            onClick={[Function]}
-                                                            selected={true}
-                                                            style={
-                                                              Object {
-                                                                "pointerEvents": "all",
-                                                              }
-                                                            }
-                                                            text="1"
-                                                            value="1"
+                                                    <Ref
+                                                      innerRef={
+                                                        Object {
+                                                          "current": <div
+                                                            aria-disabled="false"
+                                                            aria-expanded="false"
+                                                            class="ui selection upward dropdown"
+                                                            role="listbox"
+                                                            tabindex="0"
                                                           >
                                                             <div
-                                                              aria-checked={false}
-                                                              aria-selected={true}
-                                                              className="selected item"
-                                                              onClick={[Function]}
-                                                              role="option"
-                                                              style={
-                                                                Object {
-                                                                  "pointerEvents": "all",
-                                                                }
-                                                              }
+                                                              aria-atomic="true"
+                                                              aria-live="polite"
+                                                              class="text"
+                                                              role="alert"
+                                                            />
+                                                            <i
+                                                              class="icon"
                                                             >
-                                                              <span
-                                                                className="text"
-                                                                key="1"
+                                                              <svg
+                                                                viewBox="0 0 24 24"
                                                               >
-                                                                1
-                                                              </span>
+                                                                <path
+                                                                  d="M20,8.5l-8,7-8-7Z"
+                                                                  fill="currentColor"
+                                                                />
+                                                              </svg>
+                                                            </i>
+                                                            <div
+                                                              class="menu transition"
+                                                            >
+                                                              <div
+                                                                aria-checked="false"
+                                                                aria-selected="true"
+                                                                class="selected item"
+                                                                role="option"
+                                                                style="pointer-events: all;"
+                                                              >
+                                                                <span
+                                                                  class="text"
+                                                                >
+                                                                  1
+                                                                </span>
+                                                              </div>
                                                             </div>
-                                                          </DropdownItem>
+                                                          </div>,
+                                                        }
+                                                      }
+                                                    >
+                                                      <RefFindNode
+                                                        innerRef={
+                                                          Object {
+                                                            "current": <div
+                                                              aria-disabled="false"
+                                                              aria-expanded="false"
+                                                              class="ui selection upward dropdown"
+                                                              role="listbox"
+                                                              tabindex="0"
+                                                            >
+                                                              <div
+                                                                aria-atomic="true"
+                                                                aria-live="polite"
+                                                                class="text"
+                                                                role="alert"
+                                                              />
+                                                              <i
+                                                                class="icon"
+                                                              >
+                                                                <svg
+                                                                  viewBox="0 0 24 24"
+                                                                >
+                                                                  <path
+                                                                    d="M20,8.5l-8,7-8-7Z"
+                                                                    fill="currentColor"
+                                                                  />
+                                                                </svg>
+                                                              </i>
+                                                              <div
+                                                                class="menu transition"
+                                                              >
+                                                                <div
+                                                                  aria-checked="false"
+                                                                  aria-selected="true"
+                                                                  class="selected item"
+                                                                  role="option"
+                                                                  style="pointer-events: all;"
+                                                                >
+                                                                  <span
+                                                                    class="text"
+                                                                  >
+                                                                    1
+                                                                  </span>
+                                                                </div>
+                                                              </div>
+                                                            </div>,
+                                                          }
+                                                        }
+                                                      >
+                                                        <div
+                                                          aria-disabled={false}
+                                                          aria-expanded={false}
+                                                          className="ui selection upward dropdown"
+                                                          onBlur={[Function]}
+                                                          onChange={[Function]}
+                                                          onClick={[Function]}
+                                                          onFocus={[Function]}
+                                                          onMouseDown={[Function]}
+                                                          role="listbox"
+                                                          tabIndex={0}
+                                                        >
+                                                          <div
+                                                            aria-atomic={true}
+                                                            aria-live="polite"
+                                                            className="text"
+                                                            role="alert"
+                                                          />
+                                                          <Icon
+                                                            className=""
+                                                            color={null}
+                                                            hasBorder={false}
+                                                            isButton={false}
+                                                            isCircular={false}
+                                                            isColorInverted={false}
+                                                            isDisabled={false}
+                                                            isLabelLeft={false}
+                                                            labelText={null}
+                                                            labelWeight={null}
+                                                            name="caret down"
+                                                            onClick={[Function]}
+                                                            path={null}
+                                                            size={null}
+                                                          >
+                                                            <i
+                                                              className="icon"
+                                                              onClick={[Function]}
+                                                            >
+                                                              <svg
+                                                                viewBox="0 0 24 24"
+                                                              >
+                                                                <path
+                                                                  d="M20,8.5l-8,7-8-7Z"
+                                                                  fill="currentColor"
+                                                                />
+                                                              </svg>
+                                                            </i>
+                                                          </Icon>
+                                                          <DropdownMenu
+                                                            open={false}
+                                                          >
+                                                            <div
+                                                              className="menu transition"
+                                                            >
+                                                              <DropdownItem
+                                                                active={false}
+                                                                key="0"
+                                                                onClick={[Function]}
+                                                                selected={true}
+                                                                style={
+                                                                  Object {
+                                                                    "pointerEvents": "all",
+                                                                  }
+                                                                }
+                                                                text="1"
+                                                                value="1"
+                                                              >
+                                                                <div
+                                                                  aria-checked={false}
+                                                                  aria-selected={true}
+                                                                  className="selected item"
+                                                                  onClick={[Function]}
+                                                                  role="option"
+                                                                  style={
+                                                                    Object {
+                                                                      "pointerEvents": "all",
+                                                                    }
+                                                                  }
+                                                                >
+                                                                  <span
+                                                                    className="text"
+                                                                  >
+                                                                    1
+                                                                  </span>
+                                                                </div>
+                                                              </DropdownItem>
+                                                            </div>
+                                                          </DropdownMenu>
                                                         </div>
-                                                      </DropdownMenu>
-                                                    </div>
+                                                      </RefFindNode>
+                                                    </Ref>
                                                   </Dropdown>
                                                   <label
                                                     onClick={[Function]}
@@ -746,6 +877,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   as={[Function]}
                                                   endDatePlaceholderText="Check out"
                                                   getIsDayBlocked={[Function]}
+                                                  getWidth={[Function]}
                                                   isUserOnMobile={false}
                                                   name="dates"
                                                   onChange={[Function]}
@@ -798,6 +930,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           <DateRangePicker
                                                             customArrowIcon={
                                                               <Icon
+                                                                className={null}
                                                                 color={null}
                                                                 hasBorder={false}
                                                                 isButton={false}
@@ -814,6 +947,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             }
                                                             customInputIcon={
                                                               <Icon
+                                                                className={null}
                                                                 color={null}
                                                                 hasBorder={false}
                                                                 isButton={false}
@@ -838,6 +972,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             key=".0"
                                                             navNext={
                                                               <Icon
+                                                                className={null}
                                                                 color={null}
                                                                 hasBorder={false}
                                                                 isButton={false}
@@ -854,6 +989,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             }
                                                             navPrev={
                                                               <Icon
+                                                                className={null}
                                                                 color={null}
                                                                 hasBorder={false}
                                                                 isButton={false}
@@ -893,6 +1029,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                 error={false}
                                                 icon={
                                                   <Icon
+                                                    className={null}
                                                     color={null}
                                                     hasBorder={false}
                                                     isButton={false}
@@ -919,6 +1056,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   error={false}
                                                   icon={
                                                     <Icon
+                                                      className={null}
                                                       color={null}
                                                       hasBorder={false}
                                                       isButton={false}
@@ -970,6 +1108,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         Guests
                                                       </label>
                                                       <Icon
+                                                        className={null}
                                                         color={null}
                                                         hasBorder={false}
                                                         isButton={false}
@@ -1083,9 +1222,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                                         }
                                       >
                                         <Modal
+                                          centered={true}
                                           className="has-padding"
                                           closeIcon={
                                             <Icon
+                                              className={null}
                                               color={null}
                                               hasBorder={false}
                                               isButton={false}
@@ -1113,10 +1254,8 @@ exports[`HomepageHero should render the right structure 1`] = `
                                           }
                                         >
                                           <Portal
-                                            className="ui inverted page modals dimmer transition visible active"
                                             closeOnDocumentClick={false}
                                             closeOnEscape={true}
-                                            closeOnRootNodeClick={true}
                                             eventPool="Modal"
                                             mountNode={<body />}
                                             onClose={[Function]}
@@ -1133,15 +1272,19 @@ exports[`HomepageHero should render the right structure 1`] = `
                                             <Ref
                                               innerRef={[Function]}
                                             >
-                                              <button
-                                                onBlur={[Function]}
-                                                onClick={[Function]}
-                                                onFocus={[Function]}
-                                                onMouseEnter={[Function]}
-                                                onMouseLeave={[Function]}
+                                              <RefFindNode
+                                                innerRef={[Function]}
                                               >
-                                                search button
-                                              </button>
+                                                <button
+                                                  onBlur={[Function]}
+                                                  onClick={[Function]}
+                                                  onFocus={[Function]}
+                                                  onMouseEnter={[Function]}
+                                                  onMouseLeave={[Function]}
+                                                >
+                                                  search button
+                                                </button>
+                                              </RefFindNode>
                                             </Ref>
                                           </Portal>
                                         </Modal>

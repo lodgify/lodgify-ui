@@ -89,6 +89,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
         getOptionsWithSearch={null}
         icon={null}
         initialValue={null}
+        isClearable={true}
         isCompact={false}
         isDisabled={false}
         isSearchable={true}
@@ -123,12 +124,15 @@ exports[`<Rates /> by default should have the right structure 1`] = `
           <Dropdown
             additionLabel="Add "
             additionPosition="top"
+            clearable={true}
             closeOnBlur={true}
+            closeOnEscape={true}
             compact={false}
             deburr={false}
             disabled={false}
             icon={
               <Icon
+                className={null}
                 color={null}
                 hasBorder={false}
                 isButton={false}
@@ -182,189 +186,386 @@ exports[`<Rates /> by default should have the right structure 1`] = `
             value={null}
             wrapSelection={true}
           >
-            <div
-              aria-disabled={false}
-              aria-expanded={false}
-              className="ui search selection dropdown"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseDown={[Function]}
-              role="combobox"
+            <Ref
+              innerRef={
+                Object {
+                  "current": <div
+                    aria-disabled="false"
+                    aria-expanded="false"
+                    class="ui search selection dropdown"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocomplete="off"
+                      class="search"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      aria-atomic="true"
+                      aria-live="polite"
+                      class="text"
+                      role="alert"
+                    />
+                    <i
+                      class="icon"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20,8.5l-8,7-8-7Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                    <div
+                      class="menu transition"
+                      role="listbox"
+                    >
+                      <div
+                        aria-checked="false"
+                        aria-selected="true"
+                        class="selected item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          EUR €
+                        </span>
+                      </div>
+                      <div
+                        aria-checked="false"
+                        aria-selected="false"
+                        class="item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          GBP £
+                        </span>
+                      </div>
+                      <div
+                        aria-checked="false"
+                        aria-selected="false"
+                        class="item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          USD $
+                        </span>
+                      </div>
+                    </div>
+                  </div>,
+                }
+              }
             >
-              <DropdownSearchInput
-                inputRef={[Function]}
-                key="text"
-                onChange={[Function]}
-                style={
+              <RefFindNode
+                innerRef={
                   Object {
-                    "width": undefined,
+                    "current": <div
+                      aria-disabled="false"
+                      aria-expanded="false"
+                      class="ui search selection dropdown"
+                      role="combobox"
+                    >
+                      <input
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        class="search"
+                        tabindex="0"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        aria-atomic="true"
+                        aria-live="polite"
+                        class="text"
+                        role="alert"
+                      />
+                      <i
+                        class="icon"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M20,8.5l-8,7-8-7Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </i>
+                      <div
+                        class="menu transition"
+                        role="listbox"
+                      >
+                        <div
+                          aria-checked="false"
+                          aria-selected="true"
+                          class="selected item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            EUR €
+                          </span>
+                        </div>
+                        <div
+                          aria-checked="false"
+                          aria-selected="false"
+                          class="item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            GBP £
+                          </span>
+                        </div>
+                        <div
+                          aria-checked="false"
+                          aria-selected="false"
+                          class="item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            USD $
+                          </span>
+                        </div>
+                      </div>
+                    </div>,
                   }
                 }
-                tabIndex={0}
-                type="text"
-                value=""
-              >
-                <input
-                  aria-autocomplete="list"
-                  autoComplete="off"
-                  className="search"
-                  onChange={[Function]}
-                  style={
-                    Object {
-                      "width": undefined,
-                    }
-                  }
-                  tabIndex={0}
-                  type="text"
-                  value=""
-                />
-              </DropdownSearchInput>
-              <div
-                aria-live="polite"
-                className="text"
-                role="alert"
-              />
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="caret down"
-                onClick={[Function]}
-                path={null}
-                size={null}
-              >
-                <i
-                  className="icon"
-                  onClick={[Function]}
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M20,8.5l-8,7-8-7Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </i>
-              </Icon>
-              <DropdownMenu
-                open={false}
-                role="listbox"
               >
                 <div
-                  className="menu transition"
-                  role="listbox"
+                  aria-disabled={false}
+                  aria-expanded={false}
+                  className="ui search selection dropdown"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseDown={[Function]}
+                  role="combobox"
                 >
-                  <DropdownItem
-                    active={false}
-                    key="0"
-                    onClick={[Function]}
-                    selected={true}
-                    style={
+                  <Ref
+                    innerRef={
                       Object {
-                        "pointerEvents": "all",
+                        "current": <input
+                          aria-autocomplete="list"
+                          autocomplete="off"
+                          class="search"
+                          tabindex="0"
+                          type="text"
+                          value=""
+                        />,
                       }
                     }
-                    text="EUR €"
-                    value="eur"
                   >
-                    <div
-                      aria-checked={false}
-                      aria-selected={true}
-                      className="selected item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
+                    <RefFindNode
+                      innerRef={
                         Object {
-                          "pointerEvents": "all",
+                          "current": <input
+                            aria-autocomplete="list"
+                            autocomplete="off"
+                            class="search"
+                            tabindex="0"
+                            type="text"
+                            value=""
+                          />,
                         }
                       }
                     >
-                      <span
-                        className="text"
-                        key="EUR €"
+                      <DropdownSearchInput
+                        autoComplete="off"
+                        key="text"
+                        onChange={[Function]}
+                        style={
+                          Object {
+                            "width": undefined,
+                          }
+                        }
+                        tabIndex={0}
+                        type="text"
+                        value=""
                       >
-                        EUR €
-                      </span>
-                    </div>
-                  </DropdownItem>
-                  <DropdownItem
-                    active={false}
-                    key="1"
+                        <input
+                          aria-autocomplete="list"
+                          autoComplete="off"
+                          className="search"
+                          onChange={[Function]}
+                          style={
+                            Object {
+                              "width": undefined,
+                            }
+                          }
+                          tabIndex={0}
+                          type="text"
+                          value=""
+                        />
+                      </DropdownSearchInput>
+                    </RefFindNode>
+                  </Ref>
+                  <div
+                    aria-atomic={true}
+                    aria-live="polite"
+                    className="text"
+                    role="alert"
+                  />
+                  <Icon
+                    className=""
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="caret down"
                     onClick={[Function]}
-                    selected={false}
-                    style={
-                      Object {
-                        "pointerEvents": "all",
-                      }
-                    }
-                    text="GBP £"
-                    value="gbp"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20,8.5l-8,7-8-7Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </Icon>
+                  <DropdownMenu
+                    open={false}
+                    role="listbox"
                   >
                     <div
-                      aria-checked={false}
-                      aria-selected={false}
-                      className="item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
-                        Object {
-                          "pointerEvents": "all",
-                        }
-                      }
+                      className="menu transition"
+                      role="listbox"
                     >
-                      <span
-                        className="text"
-                        key="GBP £"
-                      >
-                        GBP £
-                      </span>
-                    </div>
-                  </DropdownItem>
-                  <DropdownItem
-                    active={false}
-                    key="2"
-                    onClick={[Function]}
-                    selected={false}
-                    style={
-                      Object {
-                        "pointerEvents": "all",
-                      }
-                    }
-                    text="USD $"
-                    value="usd"
-                  >
-                    <div
-                      aria-checked={false}
-                      aria-selected={false}
-                      className="item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
-                        Object {
-                          "pointerEvents": "all",
+                      <DropdownItem
+                        active={false}
+                        key="0"
+                        onClick={[Function]}
+                        selected={true}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
                         }
-                      }
-                    >
-                      <span
-                        className="text"
-                        key="USD $"
+                        text="EUR €"
+                        value="eur"
                       >
-                        USD $
-                      </span>
+                        <div
+                          aria-checked={false}
+                          aria-selected={true}
+                          className="selected item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
+                        >
+                          <span
+                            className="text"
+                          >
+                            EUR €
+                          </span>
+                        </div>
+                      </DropdownItem>
+                      <DropdownItem
+                        active={false}
+                        key="1"
+                        onClick={[Function]}
+                        selected={false}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
+                        }
+                        text="GBP £"
+                        value="gbp"
+                      >
+                        <div
+                          aria-checked={false}
+                          aria-selected={false}
+                          className="item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
+                        >
+                          <span
+                            className="text"
+                          >
+                            GBP £
+                          </span>
+                        </div>
+                      </DropdownItem>
+                      <DropdownItem
+                        active={false}
+                        key="2"
+                        onClick={[Function]}
+                        selected={false}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
+                        }
+                        text="USD $"
+                        value="usd"
+                      >
+                        <div
+                          aria-checked={false}
+                          aria-selected={false}
+                          className="item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
+                        >
+                          <span
+                            className="text"
+                          >
+                            USD $
+                          </span>
+                        </div>
+                      </DropdownItem>
                     </div>
-                  </DropdownItem>
+                  </DropdownMenu>
                 </div>
-              </DropdownMenu>
-            </div>
+              </RefFindNode>
+            </Ref>
           </Dropdown>
         </div>
       </Dropdown>
@@ -436,6 +637,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                       01/05/2018 - 01/08/2018
                                       <br />
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -793,6 +995,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                       01/02/2018 - 01/08/2018
                                       <br />
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -1150,6 +1353,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                       01/03/2018 - 01/08/2018
                                       <br />
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -1473,6 +1677,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                   <br />
                   <React.Fragment>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -1515,6 +1720,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                   <br />
                   <React.Fragment>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -1557,6 +1763,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                   <br />
                   <React.Fragment>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -1590,6 +1797,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
               getOptionsWithSearch={null}
               icon={null}
               initialValue={null}
+              isClearable={true}
               isCompact={false}
               isDisabled={false}
               isSearchable={true}
@@ -1666,6 +1874,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                             getOptionsWithSearch={null}
                             icon={null}
                             initialValue={null}
+                            isClearable={true}
                             isCompact={false}
                             isDisabled={false}
                             isSearchable={true}
@@ -1700,12 +1909,15 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               <Dropdown
                                 additionLabel="Add "
                                 additionPosition="top"
+                                clearable={true}
                                 closeOnBlur={true}
+                                closeOnEscape={true}
                                 compact={false}
                                 deburr={false}
                                 disabled={false}
                                 icon={
                                   <Icon
+                                    className={null}
                                     color={null}
                                     hasBorder={false}
                                     isButton={false}
@@ -1759,189 +1971,386 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 value={null}
                                 wrapSelection={true}
                               >
-                                <div
-                                  aria-disabled={false}
-                                  aria-expanded={false}
-                                  className="ui search selection dropdown"
-                                  onBlur={[Function]}
-                                  onChange={[Function]}
-                                  onClick={[Function]}
-                                  onFocus={[Function]}
-                                  onMouseDown={[Function]}
-                                  role="combobox"
+                                <Ref
+                                  innerRef={
+                                    Object {
+                                      "current": <div
+                                        aria-disabled="false"
+                                        aria-expanded="false"
+                                        class="ui search selection dropdown"
+                                        role="combobox"
+                                      >
+                                        <input
+                                          aria-autocomplete="list"
+                                          autocomplete="off"
+                                          class="search"
+                                          tabindex="0"
+                                          type="text"
+                                          value=""
+                                        />
+                                        <div
+                                          aria-atomic="true"
+                                          aria-live="polite"
+                                          class="text"
+                                          role="alert"
+                                        />
+                                        <i
+                                          class="icon"
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20,8.5l-8,7-8-7Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                        <div
+                                          class="menu transition"
+                                          role="listbox"
+                                        >
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="true"
+                                            class="selected item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              EUR €
+                                            </span>
+                                          </div>
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="false"
+                                            class="item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              GBP £
+                                            </span>
+                                          </div>
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="false"
+                                            class="item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              USD $
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>,
+                                    }
+                                  }
                                 >
-                                  <DropdownSearchInput
-                                    inputRef={[Function]}
-                                    key="text"
-                                    onChange={[Function]}
-                                    style={
+                                  <RefFindNode
+                                    innerRef={
                                       Object {
-                                        "width": undefined,
+                                        "current": <div
+                                          aria-disabled="false"
+                                          aria-expanded="false"
+                                          class="ui search selection dropdown"
+                                          role="combobox"
+                                        >
+                                          <input
+                                            aria-autocomplete="list"
+                                            autocomplete="off"
+                                            class="search"
+                                            tabindex="0"
+                                            type="text"
+                                            value=""
+                                          />
+                                          <div
+                                            aria-atomic="true"
+                                            aria-live="polite"
+                                            class="text"
+                                            role="alert"
+                                          />
+                                          <i
+                                            class="icon"
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M20,8.5l-8,7-8-7Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                          <div
+                                            class="menu transition"
+                                            role="listbox"
+                                          >
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="true"
+                                              class="selected item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                EUR €
+                                              </span>
+                                            </div>
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="false"
+                                              class="item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                GBP £
+                                              </span>
+                                            </div>
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="false"
+                                              class="item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                USD $
+                                              </span>
+                                            </div>
+                                          </div>
+                                        </div>,
                                       }
                                     }
-                                    tabIndex={0}
-                                    type="text"
-                                    value=""
-                                  >
-                                    <input
-                                      aria-autocomplete="list"
-                                      autoComplete="off"
-                                      className="search"
-                                      onChange={[Function]}
-                                      style={
-                                        Object {
-                                          "width": undefined,
-                                        }
-                                      }
-                                      tabIndex={0}
-                                      type="text"
-                                      value=""
-                                    />
-                                  </DropdownSearchInput>
-                                  <div
-                                    aria-live="polite"
-                                    className="text"
-                                    role="alert"
-                                  />
-                                  <Icon
-                                    color={null}
-                                    hasBorder={false}
-                                    isButton={false}
-                                    isCircular={false}
-                                    isColorInverted={false}
-                                    isDisabled={false}
-                                    isLabelLeft={false}
-                                    labelText={null}
-                                    labelWeight={null}
-                                    name="caret down"
-                                    onClick={[Function]}
-                                    path={null}
-                                    size={null}
-                                  >
-                                    <i
-                                      className="icon"
-                                      onClick={[Function]}
-                                    >
-                                      <svg
-                                        viewBox="0 0 24 24"
-                                      >
-                                        <path
-                                          d="M20,8.5l-8,7-8-7Z"
-                                          fill="currentColor"
-                                        />
-                                      </svg>
-                                    </i>
-                                  </Icon>
-                                  <DropdownMenu
-                                    open={false}
-                                    role="listbox"
                                   >
                                     <div
-                                      className="menu transition"
-                                      role="listbox"
+                                      aria-disabled={false}
+                                      aria-expanded={false}
+                                      className="ui search selection dropdown"
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseDown={[Function]}
+                                      role="combobox"
                                     >
-                                      <DropdownItem
-                                        active={false}
-                                        key="0"
-                                        onClick={[Function]}
-                                        selected={true}
-                                        style={
+                                      <Ref
+                                        innerRef={
                                           Object {
-                                            "pointerEvents": "all",
+                                            "current": <input
+                                              aria-autocomplete="list"
+                                              autocomplete="off"
+                                              class="search"
+                                              tabindex="0"
+                                              type="text"
+                                              value=""
+                                            />,
                                           }
                                         }
-                                        text="EUR €"
-                                        value="eur"
                                       >
-                                        <div
-                                          aria-checked={false}
-                                          aria-selected={true}
-                                          className="selected item"
-                                          onClick={[Function]}
-                                          role="option"
-                                          style={
+                                        <RefFindNode
+                                          innerRef={
                                             Object {
-                                              "pointerEvents": "all",
+                                              "current": <input
+                                                aria-autocomplete="list"
+                                                autocomplete="off"
+                                                class="search"
+                                                tabindex="0"
+                                                type="text"
+                                                value=""
+                                              />,
                                             }
                                           }
                                         >
-                                          <span
-                                            className="text"
-                                            key="EUR €"
+                                          <DropdownSearchInput
+                                            autoComplete="off"
+                                            key="text"
+                                            onChange={[Function]}
+                                            style={
+                                              Object {
+                                                "width": undefined,
+                                              }
+                                            }
+                                            tabIndex={0}
+                                            type="text"
+                                            value=""
                                           >
-                                            EUR €
-                                          </span>
-                                        </div>
-                                      </DropdownItem>
-                                      <DropdownItem
-                                        active={false}
-                                        key="1"
+                                            <input
+                                              aria-autocomplete="list"
+                                              autoComplete="off"
+                                              className="search"
+                                              onChange={[Function]}
+                                              style={
+                                                Object {
+                                                  "width": undefined,
+                                                }
+                                              }
+                                              tabIndex={0}
+                                              type="text"
+                                              value=""
+                                            />
+                                          </DropdownSearchInput>
+                                        </RefFindNode>
+                                      </Ref>
+                                      <div
+                                        aria-atomic={true}
+                                        aria-live="polite"
+                                        className="text"
+                                        role="alert"
+                                      />
+                                      <Icon
+                                        className=""
+                                        color={null}
+                                        hasBorder={false}
+                                        isButton={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="caret down"
                                         onClick={[Function]}
-                                        selected={false}
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                        text="GBP £"
-                                        value="gbp"
+                                        path={null}
+                                        size={null}
+                                      >
+                                        <i
+                                          className="icon"
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20,8.5l-8,7-8-7Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                      </Icon>
+                                      <DropdownMenu
+                                        open={false}
+                                        role="listbox"
                                       >
                                         <div
-                                          aria-checked={false}
-                                          aria-selected={false}
-                                          className="item"
-                                          onClick={[Function]}
-                                          role="option"
-                                          style={
-                                            Object {
-                                              "pointerEvents": "all",
-                                            }
-                                          }
+                                          className="menu transition"
+                                          role="listbox"
                                         >
-                                          <span
-                                            className="text"
-                                            key="GBP £"
-                                          >
-                                            GBP £
-                                          </span>
-                                        </div>
-                                      </DropdownItem>
-                                      <DropdownItem
-                                        active={false}
-                                        key="2"
-                                        onClick={[Function]}
-                                        selected={false}
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                        text="USD $"
-                                        value="usd"
-                                      >
-                                        <div
-                                          aria-checked={false}
-                                          aria-selected={false}
-                                          className="item"
-                                          onClick={[Function]}
-                                          role="option"
-                                          style={
-                                            Object {
-                                              "pointerEvents": "all",
+                                          <DropdownItem
+                                            active={false}
+                                            key="0"
+                                            onClick={[Function]}
+                                            selected={true}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
                                             }
-                                          }
-                                        >
-                                          <span
-                                            className="text"
-                                            key="USD $"
+                                            text="EUR €"
+                                            value="eur"
                                           >
-                                            USD $
-                                          </span>
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={true}
+                                              className="selected item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                EUR €
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                          <DropdownItem
+                                            active={false}
+                                            key="1"
+                                            onClick={[Function]}
+                                            selected={false}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="GBP £"
+                                            value="gbp"
+                                          >
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={false}
+                                              className="item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                GBP £
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                          <DropdownItem
+                                            active={false}
+                                            key="2"
+                                            onClick={[Function]}
+                                            selected={false}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="USD $"
+                                            value="usd"
+                                          >
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={false}
+                                              className="item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                USD $
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
                                         </div>
-                                      </DropdownItem>
+                                      </DropdownMenu>
                                     </div>
-                                  </DropdownMenu>
-                                </div>
+                                  </RefFindNode>
+                                </Ref>
                               </Dropdown>
                             </div>
                           </Dropdown>
@@ -2065,6 +2474,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               01/05/2018 - 01/08/2018
                               <br />
                               <Icon
+                                className={null}
                                 color={null}
                                 hasBorder={false}
                                 isButton={false}
@@ -2184,6 +2594,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               01/02/2018 - 01/08/2018
                               <br />
                               <Icon
+                                className={null}
                                 color={null}
                                 hasBorder={false}
                                 isButton={false}
@@ -2303,6 +2714,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                               01/03/2018 - 01/08/2018
                               <br />
                               <Icon
+                                className={null}
                                 color={null}
                                 hasBorder={false}
                                 isButton={false}
@@ -3249,6 +3661,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         getOptionsWithSearch={null}
         icon={null}
         initialValue={null}
+        isClearable={true}
         isCompact={false}
         isDisabled={false}
         isSearchable={false}
@@ -3291,12 +3704,15 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
           <Dropdown
             additionLabel="Add "
             additionPosition="top"
+            clearable={true}
             closeOnBlur={true}
+            closeOnEscape={true}
             compact={false}
             deburr={false}
             disabled={false}
             icon={
               <Icon
+                className={null}
                 color={null}
                 hasBorder={false}
                 isButton={false}
@@ -3400,285 +3816,537 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             value={null}
             wrapSelection={true}
           >
-            <div
-              aria-disabled={false}
-              aria-expanded={false}
-              className="ui selection dropdown"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseDown={[Function]}
-              role="listbox"
-              tabIndex={0}
-            >
-              <div
-                aria-live="polite"
-                className="text"
-                role="alert"
-              />
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="caret down"
-                onClick={[Function]}
-                path={null}
-                size={null}
-              >
-                <i
-                  className="icon"
-                  onClick={[Function]}
-                >
-                  <svg
-                    viewBox="0 0 24 24"
+            <Ref
+              innerRef={
+                Object {
+                  "current": <div
+                    aria-disabled="false"
+                    aria-expanded="false"
+                    class="ui selection dropdown"
+                    role="listbox"
+                    tabindex="0"
                   >
-                    <path
-                      d="M20,8.5l-8,7-8-7Z"
-                      fill="currentColor"
+                    <div
+                      aria-atomic="true"
+                      aria-live="polite"
+                      class="text"
+                      role="alert"
                     />
-                  </svg>
-                </i>
-              </Icon>
-              <DropdownMenu
-                open={false}
+                    <i
+                      class="icon"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20,8.5l-8,7-8-7Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                    <div
+                      class="menu transition"
+                    >
+                      <div
+                        aria-checked="false"
+                        aria-selected="true"
+                        class="selected item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <img
+                            alt="🎅"
+                            class="ui image"
+                            src="🎅"
+                          />
+                          <span
+                            class="text"
+                          >
+                            🎅
+                          </span>
+                        </span>
+                      </div>
+                      <div
+                        aria-checked="false"
+                        aria-selected="false"
+                        class="item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <img
+                            alt="💪"
+                            class="ui image"
+                            src="💪"
+                          />
+                          <span
+                            class="text"
+                          >
+                            💪
+                          </span>
+                        </span>
+                      </div>
+                      <div
+                        aria-checked="false"
+                        aria-selected="false"
+                        class="item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <img
+                            alt="👃"
+                            class="ui image"
+                            src="👃"
+                          />
+                          <span
+                            class="text"
+                          >
+                            👃
+                          </span>
+                        </span>
+                      </div>
+                      <div
+                        aria-checked="false"
+                        aria-selected="false"
+                        class="item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          <img
+                            alt="🧖️"
+                            class="ui image"
+                            src="🧖️"
+                          />
+                          <span
+                            class="text"
+                          >
+                            🧖️
+                          </span>
+                        </span>
+                      </div>
+                    </div>
+                  </div>,
+                }
+              }
+            >
+              <RefFindNode
+                innerRef={
+                  Object {
+                    "current": <div
+                      aria-disabled="false"
+                      aria-expanded="false"
+                      class="ui selection dropdown"
+                      role="listbox"
+                      tabindex="0"
+                    >
+                      <div
+                        aria-atomic="true"
+                        aria-live="polite"
+                        class="text"
+                        role="alert"
+                      />
+                      <i
+                        class="icon"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M20,8.5l-8,7-8-7Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </i>
+                      <div
+                        class="menu transition"
+                      >
+                        <div
+                          aria-checked="false"
+                          aria-selected="true"
+                          class="selected item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            <img
+                              alt="🎅"
+                              class="ui image"
+                              src="🎅"
+                            />
+                            <span
+                              class="text"
+                            >
+                              🎅
+                            </span>
+                          </span>
+                        </div>
+                        <div
+                          aria-checked="false"
+                          aria-selected="false"
+                          class="item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            <img
+                              alt="💪"
+                              class="ui image"
+                              src="💪"
+                            />
+                            <span
+                              class="text"
+                            >
+                              💪
+                            </span>
+                          </span>
+                        </div>
+                        <div
+                          aria-checked="false"
+                          aria-selected="false"
+                          class="item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            <img
+                              alt="👃"
+                              class="ui image"
+                              src="👃"
+                            />
+                            <span
+                              class="text"
+                            >
+                              👃
+                            </span>
+                          </span>
+                        </div>
+                        <div
+                          aria-checked="false"
+                          aria-selected="false"
+                          class="item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            <img
+                              alt="🧖️"
+                              class="ui image"
+                              src="🧖️"
+                            />
+                            <span
+                              class="text"
+                            >
+                              🧖️
+                            </span>
+                          </span>
+                        </div>
+                      </div>
+                    </div>,
+                  }
+                }
               >
                 <div
-                  className="menu transition"
+                  aria-disabled={false}
+                  aria-expanded={false}
+                  className="ui selection dropdown"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseDown={[Function]}
+                  role="listbox"
+                  tabIndex={0}
                 >
-                  <DropdownItem
-                    active={false}
-                    key="0"
+                  <div
+                    aria-atomic={true}
+                    aria-live="polite"
+                    className="text"
+                    role="alert"
+                  />
+                  <Icon
+                    className=""
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="caret down"
                     onClick={[Function]}
-                    selected={true}
-                    style={
-                      Object {
-                        "pointerEvents": "all",
-                      }
-                    }
-                    text={
-                      Array [
-                        <img
-                          alt="🎅"
-                          className="ui image"
-                          src="🎅"
-                        />,
-                        <span
-                          className="text"
-                        >
-                          🎅
-                        </span>,
-                      ]
-                    }
-                    value="🎅"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20,8.5l-8,7-8-7Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </Icon>
+                  <DropdownMenu
+                    open={false}
                   >
                     <div
-                      aria-checked={false}
-                      aria-selected={true}
-                      className="selected item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
-                        Object {
-                          "pointerEvents": "all",
-                        }
-                      }
+                      className="menu transition"
                     >
-                      <span
-                        className="text"
-                      >
-                        <img
-                          alt="🎅"
-                          className="ui image"
-                          key="img🎅0"
-                          src="🎅"
-                        />
-                        <span
-                          className="text"
-                          key="spa🎅0"
-                        >
-                          🎅
-                        </span>
-                      </span>
-                    </div>
-                  </DropdownItem>
-                  <DropdownItem
-                    active={false}
-                    key="1"
-                    onClick={[Function]}
-                    selected={false}
-                    style={
-                      Object {
-                        "pointerEvents": "all",
-                      }
-                    }
-                    text={
-                      Array [
-                        <img
-                          alt="💪"
-                          className="ui image"
-                          src="💪"
-                        />,
-                        <span
-                          className="text"
-                        >
-                          💪
-                        </span>,
-                      ]
-                    }
-                    value="💪"
-                  >
-                    <div
-                      aria-checked={false}
-                      aria-selected={false}
-                      className="item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
-                        Object {
-                          "pointerEvents": "all",
+                      <DropdownItem
+                        active={false}
+                        key="0"
+                        onClick={[Function]}
+                        selected={true}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
                         }
-                      }
-                    >
-                      <span
-                        className="text"
-                      >
-                        <img
-                          alt="💪"
-                          className="ui image"
-                          key="img💪1"
-                          src="💪"
-                        />
-                        <span
-                          className="text"
-                          key="spa💪1"
-                        >
-                          💪
-                        </span>
-                      </span>
-                    </div>
-                  </DropdownItem>
-                  <DropdownItem
-                    active={false}
-                    key="2"
-                    onClick={[Function]}
-                    selected={false}
-                    style={
-                      Object {
-                        "pointerEvents": "all",
-                      }
-                    }
-                    text={
-                      Array [
-                        <img
-                          alt="👃"
-                          className="ui image"
-                          src="👃"
-                        />,
-                        <span
-                          className="text"
-                        >
-                          👃
-                        </span>,
-                      ]
-                    }
-                    value="👃"
-                  >
-                    <div
-                      aria-checked={false}
-                      aria-selected={false}
-                      className="item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
-                        Object {
-                          "pointerEvents": "all",
+                        text={
+                          Array [
+                            <img
+                              alt="🎅"
+                              className="ui image"
+                              src="🎅"
+                            />,
+                            <span
+                              className="text"
+                            >
+                              🎅
+                            </span>,
+                          ]
                         }
-                      }
-                    >
-                      <span
-                        className="text"
+                        value="🎅"
                       >
-                        <img
-                          alt="👃"
-                          className="ui image"
-                          key="img👃2"
-                          src="👃"
-                        />
-                        <span
-                          className="text"
-                          key="spa👃2"
+                        <div
+                          aria-checked={false}
+                          aria-selected={true}
+                          className="selected item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
                         >
-                          👃
-                        </span>
-                      </span>
-                    </div>
-                  </DropdownItem>
-                  <DropdownItem
-                    active={false}
-                    key="3"
-                    onClick={[Function]}
-                    selected={false}
-                    style={
-                      Object {
-                        "pointerEvents": "all",
-                      }
-                    }
-                    text={
-                      Array [
-                        <img
-                          alt="🧖️"
-                          className="ui image"
-                          src="🧖️"
-                        />,
-                        <span
-                          className="text"
-                        >
-                          🧖️
-                        </span>,
-                      ]
-                    }
-                    value="🧖️"
-                  >
-                    <div
-                      aria-checked={false}
-                      aria-selected={false}
-                      className="item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
-                        Object {
-                          "pointerEvents": "all",
+                          <span
+                            className="text"
+                          >
+                            <img
+                              alt="🎅"
+                              className="ui image"
+                              key="img🎅0"
+                              src="🎅"
+                            />
+                            <span
+                              className="text"
+                              key="spa🎅0"
+                            >
+                              🎅
+                            </span>
+                          </span>
+                        </div>
+                      </DropdownItem>
+                      <DropdownItem
+                        active={false}
+                        key="1"
+                        onClick={[Function]}
+                        selected={false}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
                         }
-                      }
-                    >
-                      <span
-                        className="text"
+                        text={
+                          Array [
+                            <img
+                              alt="💪"
+                              className="ui image"
+                              src="💪"
+                            />,
+                            <span
+                              className="text"
+                            >
+                              💪
+                            </span>,
+                          ]
+                        }
+                        value="💪"
                       >
-                        <img
-                          alt="🧖️"
-                          className="ui image"
-                          key="img🧖️3"
-                          src="🧖️"
-                        />
-                        <span
-                          className="text"
-                          key="spa🧖️3"
+                        <div
+                          aria-checked={false}
+                          aria-selected={false}
+                          className="item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
                         >
-                          🧖️
-                        </span>
-                      </span>
+                          <span
+                            className="text"
+                          >
+                            <img
+                              alt="💪"
+                              className="ui image"
+                              key="img💪1"
+                              src="💪"
+                            />
+                            <span
+                              className="text"
+                              key="spa💪1"
+                            >
+                              💪
+                            </span>
+                          </span>
+                        </div>
+                      </DropdownItem>
+                      <DropdownItem
+                        active={false}
+                        key="2"
+                        onClick={[Function]}
+                        selected={false}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
+                        }
+                        text={
+                          Array [
+                            <img
+                              alt="👃"
+                              className="ui image"
+                              src="👃"
+                            />,
+                            <span
+                              className="text"
+                            >
+                              👃
+                            </span>,
+                          ]
+                        }
+                        value="👃"
+                      >
+                        <div
+                          aria-checked={false}
+                          aria-selected={false}
+                          className="item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
+                        >
+                          <span
+                            className="text"
+                          >
+                            <img
+                              alt="👃"
+                              className="ui image"
+                              key="img👃2"
+                              src="👃"
+                            />
+                            <span
+                              className="text"
+                              key="spa👃2"
+                            >
+                              👃
+                            </span>
+                          </span>
+                        </div>
+                      </DropdownItem>
+                      <DropdownItem
+                        active={false}
+                        key="3"
+                        onClick={[Function]}
+                        selected={false}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
+                        }
+                        text={
+                          Array [
+                            <img
+                              alt="🧖️"
+                              className="ui image"
+                              src="🧖️"
+                            />,
+                            <span
+                              className="text"
+                            >
+                              🧖️
+                            </span>,
+                          ]
+                        }
+                        value="🧖️"
+                      >
+                        <div
+                          aria-checked={false}
+                          aria-selected={false}
+                          className="item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
+                        >
+                          <span
+                            className="text"
+                          >
+                            <img
+                              alt="🧖️"
+                              className="ui image"
+                              key="img🧖️3"
+                              src="🧖️"
+                            />
+                            <span
+                              className="text"
+                              key="spa🧖️3"
+                            >
+                              🧖️
+                            </span>
+                          </span>
+                        </div>
+                      </DropdownItem>
                     </div>
-                  </DropdownItem>
+                  </DropdownMenu>
                 </div>
-              </DropdownMenu>
-            </div>
+              </RefFindNode>
+            </Ref>
           </Dropdown>
         </div>
       </Dropdown>
@@ -3715,6 +4383,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         getOptionsWithSearch={null}
         icon={null}
         initialValue={null}
+        isClearable={true}
         isCompact={false}
         isDisabled={false}
         isSearchable={true}
@@ -3749,12 +4418,15 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
           <Dropdown
             additionLabel="Add "
             additionPosition="top"
+            clearable={true}
             closeOnBlur={true}
+            closeOnEscape={true}
             compact={false}
             deburr={false}
             disabled={false}
             icon={
               <Icon
+                className={null}
                 color={null}
                 hasBorder={false}
                 isButton={false}
@@ -3808,189 +4480,386 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             value={null}
             wrapSelection={true}
           >
-            <div
-              aria-disabled={false}
-              aria-expanded={false}
-              className="ui search selection dropdown"
-              onBlur={[Function]}
-              onChange={[Function]}
-              onClick={[Function]}
-              onFocus={[Function]}
-              onMouseDown={[Function]}
-              role="combobox"
+            <Ref
+              innerRef={
+                Object {
+                  "current": <div
+                    aria-disabled="false"
+                    aria-expanded="false"
+                    class="ui search selection dropdown"
+                    role="combobox"
+                  >
+                    <input
+                      aria-autocomplete="list"
+                      autocomplete="off"
+                      class="search"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />
+                    <div
+                      aria-atomic="true"
+                      aria-live="polite"
+                      class="text"
+                      role="alert"
+                    />
+                    <i
+                      class="icon"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20,8.5l-8,7-8-7Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                    <div
+                      class="menu transition"
+                      role="listbox"
+                    >
+                      <div
+                        aria-checked="false"
+                        aria-selected="true"
+                        class="selected item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          EUR €
+                        </span>
+                      </div>
+                      <div
+                        aria-checked="false"
+                        aria-selected="false"
+                        class="item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          GBP £
+                        </span>
+                      </div>
+                      <div
+                        aria-checked="false"
+                        aria-selected="false"
+                        class="item"
+                        role="option"
+                        style="pointer-events: all;"
+                      >
+                        <span
+                          class="text"
+                        >
+                          USD $
+                        </span>
+                      </div>
+                    </div>
+                  </div>,
+                }
+              }
             >
-              <DropdownSearchInput
-                inputRef={[Function]}
-                key="text"
-                onChange={[Function]}
-                style={
+              <RefFindNode
+                innerRef={
                   Object {
-                    "width": undefined,
+                    "current": <div
+                      aria-disabled="false"
+                      aria-expanded="false"
+                      class="ui search selection dropdown"
+                      role="combobox"
+                    >
+                      <input
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        class="search"
+                        tabindex="0"
+                        type="text"
+                        value=""
+                      />
+                      <div
+                        aria-atomic="true"
+                        aria-live="polite"
+                        class="text"
+                        role="alert"
+                      />
+                      <i
+                        class="icon"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M20,8.5l-8,7-8-7Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </i>
+                      <div
+                        class="menu transition"
+                        role="listbox"
+                      >
+                        <div
+                          aria-checked="false"
+                          aria-selected="true"
+                          class="selected item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            EUR €
+                          </span>
+                        </div>
+                        <div
+                          aria-checked="false"
+                          aria-selected="false"
+                          class="item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            GBP £
+                          </span>
+                        </div>
+                        <div
+                          aria-checked="false"
+                          aria-selected="false"
+                          class="item"
+                          role="option"
+                          style="pointer-events: all;"
+                        >
+                          <span
+                            class="text"
+                          >
+                            USD $
+                          </span>
+                        </div>
+                      </div>
+                    </div>,
                   }
                 }
-                tabIndex={0}
-                type="text"
-                value=""
-              >
-                <input
-                  aria-autocomplete="list"
-                  autoComplete="off"
-                  className="search"
-                  onChange={[Function]}
-                  style={
-                    Object {
-                      "width": undefined,
-                    }
-                  }
-                  tabIndex={0}
-                  type="text"
-                  value=""
-                />
-              </DropdownSearchInput>
-              <div
-                aria-live="polite"
-                className="text"
-                role="alert"
-              />
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="caret down"
-                onClick={[Function]}
-                path={null}
-                size={null}
-              >
-                <i
-                  className="icon"
-                  onClick={[Function]}
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M20,8.5l-8,7-8-7Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </i>
-              </Icon>
-              <DropdownMenu
-                open={false}
-                role="listbox"
               >
                 <div
-                  className="menu transition"
-                  role="listbox"
+                  aria-disabled={false}
+                  aria-expanded={false}
+                  className="ui search selection dropdown"
+                  onBlur={[Function]}
+                  onChange={[Function]}
+                  onClick={[Function]}
+                  onFocus={[Function]}
+                  onMouseDown={[Function]}
+                  role="combobox"
                 >
-                  <DropdownItem
-                    active={false}
-                    key="0"
-                    onClick={[Function]}
-                    selected={true}
-                    style={
+                  <Ref
+                    innerRef={
                       Object {
-                        "pointerEvents": "all",
+                        "current": <input
+                          aria-autocomplete="list"
+                          autocomplete="off"
+                          class="search"
+                          tabindex="0"
+                          type="text"
+                          value=""
+                        />,
                       }
                     }
-                    text="EUR €"
-                    value="eur"
                   >
-                    <div
-                      aria-checked={false}
-                      aria-selected={true}
-                      className="selected item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
+                    <RefFindNode
+                      innerRef={
                         Object {
-                          "pointerEvents": "all",
+                          "current": <input
+                            aria-autocomplete="list"
+                            autocomplete="off"
+                            class="search"
+                            tabindex="0"
+                            type="text"
+                            value=""
+                          />,
                         }
                       }
                     >
-                      <span
-                        className="text"
-                        key="EUR €"
+                      <DropdownSearchInput
+                        autoComplete="off"
+                        key="text"
+                        onChange={[Function]}
+                        style={
+                          Object {
+                            "width": undefined,
+                          }
+                        }
+                        tabIndex={0}
+                        type="text"
+                        value=""
                       >
-                        EUR €
-                      </span>
-                    </div>
-                  </DropdownItem>
-                  <DropdownItem
-                    active={false}
-                    key="1"
+                        <input
+                          aria-autocomplete="list"
+                          autoComplete="off"
+                          className="search"
+                          onChange={[Function]}
+                          style={
+                            Object {
+                              "width": undefined,
+                            }
+                          }
+                          tabIndex={0}
+                          type="text"
+                          value=""
+                        />
+                      </DropdownSearchInput>
+                    </RefFindNode>
+                  </Ref>
+                  <div
+                    aria-atomic={true}
+                    aria-live="polite"
+                    className="text"
+                    role="alert"
+                  />
+                  <Icon
+                    className=""
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="caret down"
                     onClick={[Function]}
-                    selected={false}
-                    style={
-                      Object {
-                        "pointerEvents": "all",
-                      }
-                    }
-                    text="GBP £"
-                    value="gbp"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon"
+                      onClick={[Function]}
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M20,8.5l-8,7-8-7Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </Icon>
+                  <DropdownMenu
+                    open={false}
+                    role="listbox"
                   >
                     <div
-                      aria-checked={false}
-                      aria-selected={false}
-                      className="item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
-                        Object {
-                          "pointerEvents": "all",
-                        }
-                      }
+                      className="menu transition"
+                      role="listbox"
                     >
-                      <span
-                        className="text"
-                        key="GBP £"
-                      >
-                        GBP £
-                      </span>
-                    </div>
-                  </DropdownItem>
-                  <DropdownItem
-                    active={false}
-                    key="2"
-                    onClick={[Function]}
-                    selected={false}
-                    style={
-                      Object {
-                        "pointerEvents": "all",
-                      }
-                    }
-                    text="USD $"
-                    value="usd"
-                  >
-                    <div
-                      aria-checked={false}
-                      aria-selected={false}
-                      className="item"
-                      onClick={[Function]}
-                      role="option"
-                      style={
-                        Object {
-                          "pointerEvents": "all",
+                      <DropdownItem
+                        active={false}
+                        key="0"
+                        onClick={[Function]}
+                        selected={true}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
                         }
-                      }
-                    >
-                      <span
-                        className="text"
-                        key="USD $"
+                        text="EUR €"
+                        value="eur"
                       >
-                        USD $
-                      </span>
+                        <div
+                          aria-checked={false}
+                          aria-selected={true}
+                          className="selected item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
+                        >
+                          <span
+                            className="text"
+                          >
+                            EUR €
+                          </span>
+                        </div>
+                      </DropdownItem>
+                      <DropdownItem
+                        active={false}
+                        key="1"
+                        onClick={[Function]}
+                        selected={false}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
+                        }
+                        text="GBP £"
+                        value="gbp"
+                      >
+                        <div
+                          aria-checked={false}
+                          aria-selected={false}
+                          className="item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
+                        >
+                          <span
+                            className="text"
+                          >
+                            GBP £
+                          </span>
+                        </div>
+                      </DropdownItem>
+                      <DropdownItem
+                        active={false}
+                        key="2"
+                        onClick={[Function]}
+                        selected={false}
+                        style={
+                          Object {
+                            "pointerEvents": "all",
+                          }
+                        }
+                        text="USD $"
+                        value="usd"
+                      >
+                        <div
+                          aria-checked={false}
+                          aria-selected={false}
+                          className="item"
+                          onClick={[Function]}
+                          role="option"
+                          style={
+                            Object {
+                              "pointerEvents": "all",
+                            }
+                          }
+                        >
+                          <span
+                            className="text"
+                          >
+                            USD $
+                          </span>
+                        </div>
+                      </DropdownItem>
                     </div>
-                  </DropdownItem>
+                  </DropdownMenu>
                 </div>
-              </DropdownMenu>
-            </div>
+              </RefFindNode>
+            </Ref>
           </Dropdown>
         </div>
       </Dropdown>
@@ -4062,6 +4931,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                       01/05/2018 - 01/08/2018
                                       <br />
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -4419,6 +5289,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                       01/02/2018 - 01/08/2018
                                       <br />
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -4776,6 +5647,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                       01/03/2018 - 01/08/2018
                                       <br />
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -5099,6 +5971,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   <br />
                   <React.Fragment>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -5141,6 +6014,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   <br />
                   <React.Fragment>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -5183,6 +6057,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                   <br />
                   <React.Fragment>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -5216,6 +6091,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
               getOptionsWithSearch={null}
               icon={null}
               initialValue={null}
+              isClearable={true}
               isCompact={false}
               isDisabled={false}
               isSearchable={true}
@@ -5292,6 +6168,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             getOptionsWithSearch={null}
                             icon={null}
                             initialValue={null}
+                            isClearable={true}
                             isCompact={false}
                             isDisabled={false}
                             isSearchable={true}
@@ -5326,12 +6203,15 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               <Dropdown
                                 additionLabel="Add "
                                 additionPosition="top"
+                                clearable={true}
                                 closeOnBlur={true}
+                                closeOnEscape={true}
                                 compact={false}
                                 deburr={false}
                                 disabled={false}
                                 icon={
                                   <Icon
+                                    className={null}
                                     color={null}
                                     hasBorder={false}
                                     isButton={false}
@@ -5385,189 +6265,386 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 value={null}
                                 wrapSelection={true}
                               >
-                                <div
-                                  aria-disabled={false}
-                                  aria-expanded={false}
-                                  className="ui search selection dropdown"
-                                  onBlur={[Function]}
-                                  onChange={[Function]}
-                                  onClick={[Function]}
-                                  onFocus={[Function]}
-                                  onMouseDown={[Function]}
-                                  role="combobox"
+                                <Ref
+                                  innerRef={
+                                    Object {
+                                      "current": <div
+                                        aria-disabled="false"
+                                        aria-expanded="false"
+                                        class="ui search selection dropdown"
+                                        role="combobox"
+                                      >
+                                        <input
+                                          aria-autocomplete="list"
+                                          autocomplete="off"
+                                          class="search"
+                                          tabindex="0"
+                                          type="text"
+                                          value=""
+                                        />
+                                        <div
+                                          aria-atomic="true"
+                                          aria-live="polite"
+                                          class="text"
+                                          role="alert"
+                                        />
+                                        <i
+                                          class="icon"
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20,8.5l-8,7-8-7Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                        <div
+                                          class="menu transition"
+                                          role="listbox"
+                                        >
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="true"
+                                            class="selected item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              EUR €
+                                            </span>
+                                          </div>
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="false"
+                                            class="item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              GBP £
+                                            </span>
+                                          </div>
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="false"
+                                            class="item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              USD $
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>,
+                                    }
+                                  }
                                 >
-                                  <DropdownSearchInput
-                                    inputRef={[Function]}
-                                    key="text"
-                                    onChange={[Function]}
-                                    style={
+                                  <RefFindNode
+                                    innerRef={
                                       Object {
-                                        "width": undefined,
+                                        "current": <div
+                                          aria-disabled="false"
+                                          aria-expanded="false"
+                                          class="ui search selection dropdown"
+                                          role="combobox"
+                                        >
+                                          <input
+                                            aria-autocomplete="list"
+                                            autocomplete="off"
+                                            class="search"
+                                            tabindex="0"
+                                            type="text"
+                                            value=""
+                                          />
+                                          <div
+                                            aria-atomic="true"
+                                            aria-live="polite"
+                                            class="text"
+                                            role="alert"
+                                          />
+                                          <i
+                                            class="icon"
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M20,8.5l-8,7-8-7Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                          <div
+                                            class="menu transition"
+                                            role="listbox"
+                                          >
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="true"
+                                              class="selected item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                EUR €
+                                              </span>
+                                            </div>
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="false"
+                                              class="item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                GBP £
+                                              </span>
+                                            </div>
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="false"
+                                              class="item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                USD $
+                                              </span>
+                                            </div>
+                                          </div>
+                                        </div>,
                                       }
                                     }
-                                    tabIndex={0}
-                                    type="text"
-                                    value=""
-                                  >
-                                    <input
-                                      aria-autocomplete="list"
-                                      autoComplete="off"
-                                      className="search"
-                                      onChange={[Function]}
-                                      style={
-                                        Object {
-                                          "width": undefined,
-                                        }
-                                      }
-                                      tabIndex={0}
-                                      type="text"
-                                      value=""
-                                    />
-                                  </DropdownSearchInput>
-                                  <div
-                                    aria-live="polite"
-                                    className="text"
-                                    role="alert"
-                                  />
-                                  <Icon
-                                    color={null}
-                                    hasBorder={false}
-                                    isButton={false}
-                                    isCircular={false}
-                                    isColorInverted={false}
-                                    isDisabled={false}
-                                    isLabelLeft={false}
-                                    labelText={null}
-                                    labelWeight={null}
-                                    name="caret down"
-                                    onClick={[Function]}
-                                    path={null}
-                                    size={null}
-                                  >
-                                    <i
-                                      className="icon"
-                                      onClick={[Function]}
-                                    >
-                                      <svg
-                                        viewBox="0 0 24 24"
-                                      >
-                                        <path
-                                          d="M20,8.5l-8,7-8-7Z"
-                                          fill="currentColor"
-                                        />
-                                      </svg>
-                                    </i>
-                                  </Icon>
-                                  <DropdownMenu
-                                    open={false}
-                                    role="listbox"
                                   >
                                     <div
-                                      className="menu transition"
-                                      role="listbox"
+                                      aria-disabled={false}
+                                      aria-expanded={false}
+                                      className="ui search selection dropdown"
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseDown={[Function]}
+                                      role="combobox"
                                     >
-                                      <DropdownItem
-                                        active={false}
-                                        key="0"
-                                        onClick={[Function]}
-                                        selected={true}
-                                        style={
+                                      <Ref
+                                        innerRef={
                                           Object {
-                                            "pointerEvents": "all",
+                                            "current": <input
+                                              aria-autocomplete="list"
+                                              autocomplete="off"
+                                              class="search"
+                                              tabindex="0"
+                                              type="text"
+                                              value=""
+                                            />,
                                           }
                                         }
-                                        text="EUR €"
-                                        value="eur"
                                       >
-                                        <div
-                                          aria-checked={false}
-                                          aria-selected={true}
-                                          className="selected item"
-                                          onClick={[Function]}
-                                          role="option"
-                                          style={
+                                        <RefFindNode
+                                          innerRef={
                                             Object {
-                                              "pointerEvents": "all",
+                                              "current": <input
+                                                aria-autocomplete="list"
+                                                autocomplete="off"
+                                                class="search"
+                                                tabindex="0"
+                                                type="text"
+                                                value=""
+                                              />,
                                             }
                                           }
                                         >
-                                          <span
-                                            className="text"
-                                            key="EUR €"
+                                          <DropdownSearchInput
+                                            autoComplete="off"
+                                            key="text"
+                                            onChange={[Function]}
+                                            style={
+                                              Object {
+                                                "width": undefined,
+                                              }
+                                            }
+                                            tabIndex={0}
+                                            type="text"
+                                            value=""
                                           >
-                                            EUR €
-                                          </span>
-                                        </div>
-                                      </DropdownItem>
-                                      <DropdownItem
-                                        active={false}
-                                        key="1"
+                                            <input
+                                              aria-autocomplete="list"
+                                              autoComplete="off"
+                                              className="search"
+                                              onChange={[Function]}
+                                              style={
+                                                Object {
+                                                  "width": undefined,
+                                                }
+                                              }
+                                              tabIndex={0}
+                                              type="text"
+                                              value=""
+                                            />
+                                          </DropdownSearchInput>
+                                        </RefFindNode>
+                                      </Ref>
+                                      <div
+                                        aria-atomic={true}
+                                        aria-live="polite"
+                                        className="text"
+                                        role="alert"
+                                      />
+                                      <Icon
+                                        className=""
+                                        color={null}
+                                        hasBorder={false}
+                                        isButton={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="caret down"
                                         onClick={[Function]}
-                                        selected={false}
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                        text="GBP £"
-                                        value="gbp"
+                                        path={null}
+                                        size={null}
+                                      >
+                                        <i
+                                          className="icon"
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20,8.5l-8,7-8-7Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                      </Icon>
+                                      <DropdownMenu
+                                        open={false}
+                                        role="listbox"
                                       >
                                         <div
-                                          aria-checked={false}
-                                          aria-selected={false}
-                                          className="item"
-                                          onClick={[Function]}
-                                          role="option"
-                                          style={
-                                            Object {
-                                              "pointerEvents": "all",
-                                            }
-                                          }
+                                          className="menu transition"
+                                          role="listbox"
                                         >
-                                          <span
-                                            className="text"
-                                            key="GBP £"
-                                          >
-                                            GBP £
-                                          </span>
-                                        </div>
-                                      </DropdownItem>
-                                      <DropdownItem
-                                        active={false}
-                                        key="2"
-                                        onClick={[Function]}
-                                        selected={false}
-                                        style={
-                                          Object {
-                                            "pointerEvents": "all",
-                                          }
-                                        }
-                                        text="USD $"
-                                        value="usd"
-                                      >
-                                        <div
-                                          aria-checked={false}
-                                          aria-selected={false}
-                                          className="item"
-                                          onClick={[Function]}
-                                          role="option"
-                                          style={
-                                            Object {
-                                              "pointerEvents": "all",
+                                          <DropdownItem
+                                            active={false}
+                                            key="0"
+                                            onClick={[Function]}
+                                            selected={true}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
                                             }
-                                          }
-                                        >
-                                          <span
-                                            className="text"
-                                            key="USD $"
+                                            text="EUR €"
+                                            value="eur"
                                           >
-                                            USD $
-                                          </span>
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={true}
+                                              className="selected item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                EUR €
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                          <DropdownItem
+                                            active={false}
+                                            key="1"
+                                            onClick={[Function]}
+                                            selected={false}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="GBP £"
+                                            value="gbp"
+                                          >
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={false}
+                                              className="item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                GBP £
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                          <DropdownItem
+                                            active={false}
+                                            key="2"
+                                            onClick={[Function]}
+                                            selected={false}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="USD $"
+                                            value="usd"
+                                          >
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={false}
+                                              className="item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                USD $
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
                                         </div>
-                                      </DropdownItem>
+                                      </DropdownMenu>
                                     </div>
-                                  </DropdownMenu>
-                                </div>
+                                  </RefFindNode>
+                                </Ref>
                               </Dropdown>
                             </div>
                           </Dropdown>
@@ -5691,6 +6768,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               01/05/2018 - 01/08/2018
                               <br />
                               <Icon
+                                className={null}
                                 color={null}
                                 hasBorder={false}
                                 isButton={false}
@@ -5810,6 +6888,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               01/02/2018 - 01/08/2018
                               <br />
                               <Icon
+                                className={null}
                                 color={null}
                                 hasBorder={false}
                                 isButton={false}
@@ -5929,6 +7008,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                               01/03/2018 - 01/08/2018
                               <br />
                               <Icon
+                                className={null}
                                 color={null}
                                 hasBorder={false}
                                 isButton={false}

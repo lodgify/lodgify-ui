@@ -61,40 +61,88 @@ exports[`Counter render should render the right structure 1`] = `
             size={null}
             type="button"
           >
-            <button
-              className="ui basic circular left floated button has-outline"
-              onClick={[Function]}
-              role="button"
-              type="button"
-            >
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="minus"
-                path={null}
-                size={null}
-              >
-                <i
-                  className="icon"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
+            <Ref
+              innerRef={
+                Object {
+                  "current": <button
+                    class="ui basic circular left floated button has-outline"
+                    type="button"
                   >
-                    <path
-                      d="M16.35,11.27H7.65v1.57h8.7Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </i>
-              </Icon>
-            </button>
+                    <i
+                      class="icon"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.35,11.27H7.65v1.57h8.7Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </button>,
+                }
+              }
+            >
+              <RefFindNode
+                innerRef={
+                  Object {
+                    "current": <button
+                      class="ui basic circular left floated button has-outline"
+                      type="button"
+                    >
+                      <i
+                        class="icon"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M16.35,11.27H7.65v1.57h8.7Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </i>
+                    </button>,
+                  }
+                }
+              >
+                <button
+                  className="ui basic circular left floated button has-outline"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <Icon
+                    className={null}
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="minus"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M16.35,11.27H7.65v1.57h8.7Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </Icon>
+                </button>
+              </RefFindNode>
+            </Ref>
           </Button>
         </Button>
         <Paragraph
@@ -138,40 +186,88 @@ exports[`Counter render should render the right structure 1`] = `
             size={null}
             type="button"
           >
-            <button
-              className="ui basic circular left floated button has-outline"
-              onClick={[Function]}
-              role="button"
-              type="button"
-            >
-              <Icon
-                color={null}
-                hasBorder={false}
-                isButton={false}
-                isCircular={false}
-                isColorInverted={false}
-                isDisabled={false}
-                isLabelLeft={false}
-                labelText={null}
-                labelWeight={null}
-                name="plus"
-                path={null}
-                size={null}
-              >
-                <i
-                  className="icon"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
+            <Ref
+              innerRef={
+                Object {
+                  "current": <button
+                    class="ui basic circular left floated button has-outline"
+                    type="button"
                   >
-                    <path
-                      d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                      fill="currentColor"
-                    />
-                  </svg>
-                </i>
-              </Icon>
-            </button>
+                    <i
+                      class="icon"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </button>,
+                }
+              }
+            >
+              <RefFindNode
+                innerRef={
+                  Object {
+                    "current": <button
+                      class="ui basic circular left floated button has-outline"
+                      type="button"
+                    >
+                      <i
+                        class="icon"
+                      >
+                        <svg
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
+                            fill="currentColor"
+                          />
+                        </svg>
+                      </i>
+                    </button>,
+                  }
+                }
+              >
+                <button
+                  className="ui basic circular left floated button has-outline"
+                  onClick={[Function]}
+                  type="button"
+                >
+                  <Icon
+                    className={null}
+                    color={null}
+                    hasBorder={false}
+                    isButton={false}
+                    isCircular={false}
+                    isColorInverted={false}
+                    isDisabled={false}
+                    isLabelLeft={false}
+                    labelText={null}
+                    labelWeight={null}
+                    name="plus"
+                    path={null}
+                    size={null}
+                  >
+                    <i
+                      className="icon"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                      >
+                        <path
+                          d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
+                          fill="currentColor"
+                        />
+                      </svg>
+                    </i>
+                  </Icon>
+                </button>
+              </RefFindNode>
+            </Ref>
           </Button>
         </Button>
       </div>

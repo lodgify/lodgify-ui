@@ -30,9 +30,11 @@ exports[`getModalFormMarkup if \`isBotProtected\` === true should render the rig
   }
 >
   <Modal
+    centered={true}
     className=""
     closeIcon={
       <Icon
+        className={null}
         color={null}
         hasBorder={false}
         isButton={false}
@@ -74,10 +76,8 @@ exports[`getModalFormMarkup if \`isBotProtected\` === true should render the rig
     }
   >
     <Portal
-      className="ui inverted page modals dimmer transition visible active"
       closeOnDocumentClick={false}
       closeOnEscape={true}
-      closeOnRootNodeClick={true}
       eventPool="Modal"
       mountNode={<body />}
       onClose={[Function]}
@@ -108,50 +108,79 @@ exports[`getModalFormMarkup if \`isBotProtected\` === true should render the rig
       <Ref
         innerRef={[Function]}
       >
-        <Button
-          hasShadow={false}
-          icon={null}
-          isCompact={true}
-          isDisabled={false}
-          isFluid={false}
-          isFormSubmit={false}
-          isLoading={false}
-          isOutlined={false}
-          isPositionedRight={true}
-          isRounded={true}
-          isSecondary={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          size="medium"
+        <RefFindNode
+          innerRef={[Function]}
         >
           <Button
-            as="button"
-            basic={false}
-            circular={true}
-            className=""
-            compact={true}
-            disabled={false}
-            floated="right"
-            fluid={false}
-            loading={false}
+            hasShadow={false}
+            icon={null}
+            isCompact={true}
+            isDisabled={false}
+            isFluid={false}
+            isFormSubmit={false}
+            isLoading={false}
+            isOutlined={false}
+            isPositionedRight={true}
+            isRounded={true}
+            isSecondary={false}
+            onBlur={[Function]}
             onClick={[Function]}
-            secondary={false}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             size="medium"
-            type="button"
           >
-            <button
-              className="ui medium circular compact right floated button"
+            <Button
+              as="button"
+              basic={false}
+              circular={true}
+              className=""
+              compact={true}
+              disabled={false}
+              floated="right"
+              fluid={false}
+              loading={false}
               onClick={[Function]}
-              role="button"
+              secondary={false}
+              size="medium"
               type="button"
             >
-              sumbmutbuttuntuxt
-            </button>
+              <Ref
+                innerRef={
+                  Object {
+                    "current": <button
+                      class="ui medium circular compact right floated button"
+                      type="button"
+                    >
+                      sumbmutbuttuntuxt
+                    </button>,
+                  }
+                }
+              >
+                <RefFindNode
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui medium circular compact right floated button"
+                        type="button"
+                      >
+                        sumbmutbuttuntuxt
+                      </button>,
+                    }
+                  }
+                >
+                  <button
+                    className="ui medium circular compact right floated button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    sumbmutbuttuntuxt
+                  </button>
+                </RefFindNode>
+              </Ref>
+            </Button>
           </Button>
-        </Button>
+        </RefFindNode>
       </Ref>
     </Portal>
   </Modal>
@@ -188,9 +217,11 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
   }
 >
   <Modal
+    centered={true}
     className=""
     closeIcon={
       <Icon
+        className={null}
         color={null}
         hasBorder={false}
         isButton={false}
@@ -232,10 +263,8 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
     }
   >
     <Portal
-      className="ui inverted page modals dimmer transition visible active"
       closeOnDocumentClick={false}
       closeOnEscape={true}
-      closeOnRootNodeClick={true}
       eventPool="Modal"
       mountNode={<body />}
       onClose={[Function]}
@@ -266,50 +295,79 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
       <Ref
         innerRef={[Function]}
       >
-        <Button
-          hasShadow={false}
-          icon={null}
-          isCompact={true}
-          isDisabled={false}
-          isFluid={false}
-          isFormSubmit={false}
-          isLoading={false}
-          isOutlined={false}
-          isPositionedRight={true}
-          isRounded={true}
-          isSecondary={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          size="medium"
+        <RefFindNode
+          innerRef={[Function]}
         >
           <Button
-            as="button"
-            basic={false}
-            circular={true}
-            className=""
-            compact={true}
-            disabled={false}
-            floated="right"
-            fluid={false}
-            loading={false}
+            hasShadow={false}
+            icon={null}
+            isCompact={true}
+            isDisabled={false}
+            isFluid={false}
+            isFormSubmit={false}
+            isLoading={false}
+            isOutlined={false}
+            isPositionedRight={true}
+            isRounded={true}
+            isSecondary={false}
+            onBlur={[Function]}
             onClick={[Function]}
-            secondary={false}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             size="medium"
-            type="button"
           >
-            <button
-              className="ui medium circular compact right floated button"
+            <Button
+              as="button"
+              basic={false}
+              circular={true}
+              className=""
+              compact={true}
+              disabled={false}
+              floated="right"
+              fluid={false}
+              loading={false}
               onClick={[Function]}
-              role="button"
+              secondary={false}
+              size="medium"
               type="button"
             >
-              sumbmutbuttuntuxt
-            </button>
+              <Ref
+                innerRef={
+                  Object {
+                    "current": <button
+                      class="ui medium circular compact right floated button"
+                      type="button"
+                    >
+                      sumbmutbuttuntuxt
+                    </button>,
+                  }
+                }
+              >
+                <RefFindNode
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui medium circular compact right floated button"
+                        type="button"
+                      >
+                        sumbmutbuttuntuxt
+                      </button>,
+                    }
+                  }
+                >
+                  <button
+                    className="ui medium circular compact right floated button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    sumbmutbuttuntuxt
+                  </button>
+                </RefFindNode>
+              </Ref>
+            </Button>
           </Button>
-        </Button>
+        </RefFindNode>
       </Ref>
     </Portal>
   </Modal>
@@ -346,9 +404,11 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
   }
 >
   <Modal
+    centered={true}
     className=""
     closeIcon={
       <Icon
+        className={null}
         color={null}
         hasBorder={false}
         isButton={false}
@@ -390,10 +450,8 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
     }
   >
     <Portal
-      className="ui inverted page modals dimmer transition visible active"
       closeOnDocumentClick={false}
       closeOnEscape={true}
-      closeOnRootNodeClick={true}
       eventPool="Modal"
       mountNode={<body />}
       onClose={[Function]}
@@ -424,52 +482,85 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
       <Ref
         innerRef={[Function]}
       >
-        <Button
-          hasShadow={false}
-          icon={null}
-          isCompact={true}
-          isDisabled={true}
-          isFluid={false}
-          isFormSubmit={false}
-          isLoading={false}
-          isOutlined={false}
-          isPositionedRight={true}
-          isRounded={true}
-          isSecondary={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          size="medium"
+        <RefFindNode
+          innerRef={[Function]}
         >
           <Button
-            as="button"
-            basic={false}
-            circular={true}
-            className=""
-            compact={true}
-            disabled={true}
-            floated="right"
-            fluid={false}
-            loading={false}
+            hasShadow={false}
+            icon={null}
+            isCompact={true}
+            isDisabled={true}
+            isFluid={false}
+            isFormSubmit={false}
+            isLoading={false}
+            isOutlined={false}
+            isPositionedRight={true}
+            isRounded={true}
+            isSecondary={false}
+            onBlur={[Function]}
             onClick={[Function]}
-            secondary={false}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             size="medium"
-            type="button"
           >
-            <button
-              className="ui medium circular compact disabled right floated button"
+            <Button
+              as="button"
+              basic={false}
+              circular={true}
+              className=""
+              compact={true}
               disabled={true}
+              floated="right"
+              fluid={false}
+              loading={false}
               onClick={[Function]}
-              role="button"
-              tabIndex={-1}
+              secondary={false}
+              size="medium"
               type="button"
             >
-              sumbmutbuttuntuxt
-            </button>
+              <Ref
+                innerRef={
+                  Object {
+                    "current": <button
+                      class="ui medium circular compact disabled right floated button"
+                      disabled=""
+                      tabindex="-1"
+                      type="button"
+                    >
+                      sumbmutbuttuntuxt
+                    </button>,
+                  }
+                }
+              >
+                <RefFindNode
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui medium circular compact disabled right floated button"
+                        disabled=""
+                        tabindex="-1"
+                        type="button"
+                      >
+                        sumbmutbuttuntuxt
+                      </button>,
+                    }
+                  }
+                >
+                  <button
+                    className="ui medium circular compact disabled right floated button"
+                    disabled={true}
+                    onClick={[Function]}
+                    tabIndex={-1}
+                    type="button"
+                  >
+                    sumbmutbuttuntuxt
+                  </button>
+                </RefFindNode>
+              </Ref>
+            </Button>
           </Button>
-        </Button>
+        </RefFindNode>
       </Ref>
     </Portal>
   </Modal>
@@ -504,9 +595,11 @@ exports[`getModalFormMarkup should have the right structure with default props 1
   }
 >
   <Modal
+    centered={true}
     className=""
     closeIcon={
       <Icon
+        className={null}
         color={null}
         hasBorder={false}
         isButton={false}
@@ -546,10 +639,8 @@ exports[`getModalFormMarkup should have the right structure with default props 1
     }
   >
     <Portal
-      className="ui inverted page modals dimmer transition visible active"
       closeOnDocumentClick={false}
       closeOnEscape={true}
-      closeOnRootNodeClick={true}
       eventPool="Modal"
       mountNode={<body />}
       onClose={[Function]}
@@ -578,48 +669,73 @@ exports[`getModalFormMarkup should have the right structure with default props 1
       <Ref
         innerRef={[Function]}
       >
-        <Button
-          hasShadow={false}
-          icon={null}
-          isCompact={true}
-          isDisabled={false}
-          isFluid={false}
-          isFormSubmit={false}
-          isLoading={false}
-          isOutlined={false}
-          isPositionedRight={true}
-          isRounded={true}
-          isSecondary={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          size="medium"
+        <RefFindNode
+          innerRef={[Function]}
         >
           <Button
-            as="button"
-            basic={false}
-            circular={true}
-            className=""
-            compact={true}
-            disabled={false}
-            floated="right"
-            fluid={false}
-            loading={false}
+            hasShadow={false}
+            icon={null}
+            isCompact={true}
+            isDisabled={false}
+            isFluid={false}
+            isFormSubmit={false}
+            isLoading={false}
+            isOutlined={false}
+            isPositionedRight={true}
+            isRounded={true}
+            isSecondary={false}
+            onBlur={[Function]}
             onClick={[Function]}
-            secondary={false}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             size="medium"
-            type="button"
           >
-            <button
-              className="ui medium circular compact right floated button"
+            <Button
+              as="button"
+              basic={false}
+              circular={true}
+              className=""
+              compact={true}
+              disabled={false}
+              floated="right"
+              fluid={false}
+              loading={false}
               onClick={[Function]}
-              role="button"
+              secondary={false}
+              size="medium"
               type="button"
-            />
+            >
+              <Ref
+                innerRef={
+                  Object {
+                    "current": <button
+                      class="ui medium circular compact right floated button"
+                      type="button"
+                    />,
+                  }
+                }
+              >
+                <RefFindNode
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui medium circular compact right floated button"
+                        type="button"
+                      />,
+                    }
+                  }
+                >
+                  <button
+                    className="ui medium circular compact right floated button"
+                    onClick={[Function]}
+                    type="button"
+                  />
+                </RefFindNode>
+              </Ref>
+            </Button>
           </Button>
-        </Button>
+        </RefFindNode>
       </Ref>
     </Portal>
   </Modal>
@@ -656,9 +772,11 @@ exports[`getModalFormMarkup should render the right structure when props are pas
   }
 >
   <Modal
+    centered={true}
     className=""
     closeIcon={
       <Icon
+        className={null}
         color={null}
         hasBorder={false}
         isButton={false}
@@ -700,10 +818,8 @@ exports[`getModalFormMarkup should render the right structure when props are pas
     }
   >
     <Portal
-      className="ui inverted page modals dimmer transition visible active"
       closeOnDocumentClick={false}
       closeOnEscape={true}
-      closeOnRootNodeClick={true}
       eventPool="Modal"
       mountNode={<body />}
       onClose={[Function]}
@@ -734,50 +850,79 @@ exports[`getModalFormMarkup should render the right structure when props are pas
       <Ref
         innerRef={[Function]}
       >
-        <Button
-          hasShadow={false}
-          icon={null}
-          isCompact={true}
-          isDisabled={false}
-          isFluid={false}
-          isFormSubmit={false}
-          isLoading={false}
-          isOutlined={false}
-          isPositionedRight={true}
-          isRounded={true}
-          isSecondary={false}
-          onBlur={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          size="medium"
+        <RefFindNode
+          innerRef={[Function]}
         >
           <Button
-            as="button"
-            basic={false}
-            circular={true}
-            className=""
-            compact={true}
-            disabled={false}
-            floated="right"
-            fluid={false}
-            loading={false}
+            hasShadow={false}
+            icon={null}
+            isCompact={true}
+            isDisabled={false}
+            isFluid={false}
+            isFormSubmit={false}
+            isLoading={false}
+            isOutlined={false}
+            isPositionedRight={true}
+            isRounded={true}
+            isSecondary={false}
+            onBlur={[Function]}
             onClick={[Function]}
-            secondary={false}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
             size="medium"
-            type="button"
           >
-            <button
-              className="ui medium circular compact right floated button"
+            <Button
+              as="button"
+              basic={false}
+              circular={true}
+              className=""
+              compact={true}
+              disabled={false}
+              floated="right"
+              fluid={false}
+              loading={false}
               onClick={[Function]}
-              role="button"
+              secondary={false}
+              size="medium"
               type="button"
             >
-              sumbmutbuttuntuxt
-            </button>
+              <Ref
+                innerRef={
+                  Object {
+                    "current": <button
+                      class="ui medium circular compact right floated button"
+                      type="button"
+                    >
+                      sumbmutbuttuntuxt
+                    </button>,
+                  }
+                }
+              >
+                <RefFindNode
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui medium circular compact right floated button"
+                        type="button"
+                      >
+                        sumbmutbuttuntuxt
+                      </button>,
+                    }
+                  }
+                >
+                  <button
+                    className="ui medium circular compact right floated button"
+                    onClick={[Function]}
+                    type="button"
+                  >
+                    sumbmutbuttuntuxt
+                  </button>
+                </RefFindNode>
+              </Ref>
+            </Button>
           </Button>
-        </Button>
+        </RefFindNode>
       </Ref>
     </Portal>
   </Modal>

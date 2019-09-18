@@ -14,9 +14,11 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
     trigger={<div />}
   >
     <Modal
+      centered={true}
       className="has-padding"
       closeIcon={
         <Icon
+          className={null}
           color={null}
           hasBorder={false}
           isButton={false}
@@ -41,10 +43,8 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
       trigger={<div />}
     >
       <Portal
-        className="ui inverted page modals dimmer transition visible active"
         closeOnDocumentClick={false}
         closeOnEscape={true}
-        closeOnRootNodeClick={true}
         eventPool="Modal"
         mountNode={<body />}
         onClose={[Function]}
@@ -58,13 +58,17 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
         <Ref
           innerRef={[Function]}
         >
-          <div
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          />
+          <RefFindNode
+            innerRef={[Function]}
+          >
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            />
+          </RefFindNode>
         </Ref>
       </Portal>
     </Modal>
@@ -96,9 +100,11 @@ exports[`getSearchBarModal should return the right structure 1`] = `
     trigger={<div />}
   >
     <Modal
+      centered={true}
       className="has-padding"
       closeIcon={
         <Icon
+          className={null}
           color={null}
           hasBorder={false}
           isButton={false}
@@ -123,10 +129,8 @@ exports[`getSearchBarModal should return the right structure 1`] = `
       trigger={<div />}
     >
       <Portal
-        className="ui inverted page modals dimmer transition visible active"
         closeOnDocumentClick={false}
         closeOnEscape={true}
-        closeOnRootNodeClick={true}
         eventPool="Modal"
         mountNode={<body />}
         onClose={[Function]}
@@ -140,13 +144,17 @@ exports[`getSearchBarModal should return the right structure 1`] = `
         <Ref
           innerRef={[Function]}
         >
-          <div
-            onBlur={[Function]}
-            onClick={[Function]}
-            onFocus={[Function]}
-            onMouseEnter={[Function]}
-            onMouseLeave={[Function]}
-          />
+          <RefFindNode
+            innerRef={[Function]}
+          >
+            <div
+              onBlur={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseEnter={[Function]}
+              onMouseLeave={[Function]}
+            />
+          </RefFindNode>
         </Ref>
       </Portal>
     </Modal>

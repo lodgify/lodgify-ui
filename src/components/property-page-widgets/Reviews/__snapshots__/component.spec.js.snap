@@ -181,9 +181,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                       }
                     >
                       <Modal
+                        centered={true}
                         className=""
                         closeIcon={
                           <Icon
+                            className={null}
                             color={null}
                             hasBorder={false}
                             isButton={false}
@@ -225,10 +227,8 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                         }
                       >
                         <Portal
-                          className="ui inverted page modals dimmer transition visible active"
                           closeOnDocumentClick={false}
                           closeOnEscape={true}
-                          closeOnRootNodeClick={true}
                           eventPool="Modal"
                           mountNode={<body />}
                           onClose={[Function]}
@@ -259,52 +259,85 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                           <Ref
                             innerRef={[Function]}
                           >
-                            <Button
-                              hasShadow={false}
-                              icon={null}
-                              isCompact={true}
-                              isDisabled={true}
-                              isFluid={false}
-                              isFormSubmit={false}
-                              isLoading={false}
-                              isOutlined={false}
-                              isPositionedRight={true}
-                              isRounded={true}
-                              isSecondary={false}
-                              onBlur={[Function]}
-                              onClick={[Function]}
-                              onFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              size="medium"
+                            <RefFindNode
+                              innerRef={[Function]}
                             >
                               <Button
-                                as="button"
-                                basic={false}
-                                circular={true}
-                                className=""
-                                compact={true}
-                                disabled={true}
-                                floated="right"
-                                fluid={false}
-                                loading={false}
+                                hasShadow={false}
+                                icon={null}
+                                isCompact={true}
+                                isDisabled={true}
+                                isFluid={false}
+                                isFormSubmit={false}
+                                isLoading={false}
+                                isOutlined={false}
+                                isPositionedRight={true}
+                                isRounded={true}
+                                isSecondary={false}
+                                onBlur={[Function]}
                                 onClick={[Function]}
-                                secondary={false}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
                                 size="medium"
-                                type="button"
                               >
-                                <button
-                                  className="ui medium circular compact disabled right floated button"
+                                <Button
+                                  as="button"
+                                  basic={false}
+                                  circular={true}
+                                  className=""
+                                  compact={true}
                                   disabled={true}
+                                  floated="right"
+                                  fluid={false}
+                                  loading={false}
                                   onClick={[Function]}
-                                  role="button"
-                                  tabIndex={-1}
+                                  secondary={false}
+                                  size="medium"
                                   type="button"
                                 >
-                                  Submit a review
-                                </button>
+                                  <Ref
+                                    innerRef={
+                                      Object {
+                                        "current": <button
+                                          class="ui medium circular compact disabled right floated button"
+                                          disabled=""
+                                          tabindex="-1"
+                                          type="button"
+                                        >
+                                          Submit a review
+                                        </button>,
+                                      }
+                                    }
+                                  >
+                                    <RefFindNode
+                                      innerRef={
+                                        Object {
+                                          "current": <button
+                                            class="ui medium circular compact disabled right floated button"
+                                            disabled=""
+                                            tabindex="-1"
+                                            type="button"
+                                          >
+                                            Submit a review
+                                          </button>,
+                                        }
+                                      }
+                                    >
+                                      <button
+                                        className="ui medium circular compact disabled right floated button"
+                                        disabled={true}
+                                        onClick={[Function]}
+                                        tabIndex={-1}
+                                        type="button"
+                                      >
+                                        Submit a review
+                                      </button>
+                                    </RefFindNode>
+                                  </Ref>
+                                </Button>
                               </Button>
-                            </Button>
+                            </RefFindNode>
                           </Ref>
                         </Portal>
                       </Modal>
@@ -1240,9 +1273,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                       }
                     >
                       <Modal
+                        centered={true}
                         className=""
                         closeIcon={
                           <Icon
+                            className={null}
                             color={null}
                             hasBorder={false}
                             isButton={false}
@@ -1284,10 +1319,8 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                         }
                       >
                         <Portal
-                          className="ui inverted page modals dimmer transition visible active"
                           closeOnDocumentClick={false}
                           closeOnEscape={true}
-                          closeOnRootNodeClick={true}
                           eventPool="Modal"
                           mountNode={<body />}
                           onClose={[Function]}
@@ -1318,52 +1351,85 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                           <Ref
                             innerRef={[Function]}
                           >
-                            <Button
-                              hasShadow={false}
-                              icon={null}
-                              isCompact={true}
-                              isDisabled={true}
-                              isFluid={false}
-                              isFormSubmit={false}
-                              isLoading={false}
-                              isOutlined={false}
-                              isPositionedRight={true}
-                              isRounded={true}
-                              isSecondary={false}
-                              onBlur={[Function]}
-                              onClick={[Function]}
-                              onFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              size="medium"
+                            <RefFindNode
+                              innerRef={[Function]}
                             >
                               <Button
-                                as="button"
-                                basic={false}
-                                circular={true}
-                                className=""
-                                compact={true}
-                                disabled={true}
-                                floated="right"
-                                fluid={false}
-                                loading={false}
+                                hasShadow={false}
+                                icon={null}
+                                isCompact={true}
+                                isDisabled={true}
+                                isFluid={false}
+                                isFormSubmit={false}
+                                isLoading={false}
+                                isOutlined={false}
+                                isPositionedRight={true}
+                                isRounded={true}
+                                isSecondary={false}
+                                onBlur={[Function]}
                                 onClick={[Function]}
-                                secondary={false}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
                                 size="medium"
-                                type="button"
                               >
-                                <button
-                                  className="ui medium circular compact disabled right floated button"
+                                <Button
+                                  as="button"
+                                  basic={false}
+                                  circular={true}
+                                  className=""
+                                  compact={true}
                                   disabled={true}
+                                  floated="right"
+                                  fluid={false}
+                                  loading={false}
                                   onClick={[Function]}
-                                  role="button"
-                                  tabIndex={-1}
+                                  secondary={false}
+                                  size="medium"
                                   type="button"
                                 >
-                                  Submit a review
-                                </button>
+                                  <Ref
+                                    innerRef={
+                                      Object {
+                                        "current": <button
+                                          class="ui medium circular compact disabled right floated button"
+                                          disabled=""
+                                          tabindex="-1"
+                                          type="button"
+                                        >
+                                          Submit a review
+                                        </button>,
+                                      }
+                                    }
+                                  >
+                                    <RefFindNode
+                                      innerRef={
+                                        Object {
+                                          "current": <button
+                                            class="ui medium circular compact disabled right floated button"
+                                            disabled=""
+                                            tabindex="-1"
+                                            type="button"
+                                          >
+                                            Submit a review
+                                          </button>,
+                                        }
+                                      }
+                                    >
+                                      <button
+                                        className="ui medium circular compact disabled right floated button"
+                                        disabled={true}
+                                        onClick={[Function]}
+                                        tabIndex={-1}
+                                        type="button"
+                                      >
+                                        Submit a review
+                                      </button>
+                                    </RefFindNode>
+                                  </Ref>
+                                </Button>
                               </Button>
-                            </Button>
+                            </RefFindNode>
                           </Ref>
                         </Portal>
                       </Modal>
@@ -2140,6 +2206,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                           className="ui small disabled rating"
                           onMouseLeave={[Function]}
                           role="radiogroup"
+                          tabIndex={0}
                         >
                           <RatingIcon
                             active={true}
@@ -2152,6 +2219,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             selected={false}
+                            tabIndex={-1}
                           >
                             <i
                               aria-checked={false}
@@ -2162,7 +2230,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               onKeyUp={[Function]}
                               onMouseEnter={[Function]}
                               role="radio"
-                              tabIndex={0}
+                              tabIndex={-1}
                             />
                           </RatingIcon>
                           <RatingIcon
@@ -2176,6 +2244,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             selected={false}
+                            tabIndex={-1}
                           >
                             <i
                               aria-checked={false}
@@ -2186,7 +2255,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               onKeyUp={[Function]}
                               onMouseEnter={[Function]}
                               role="radio"
-                              tabIndex={0}
+                              tabIndex={-1}
                             />
                           </RatingIcon>
                           <RatingIcon
@@ -2200,6 +2269,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             selected={false}
+                            tabIndex={-1}
                           >
                             <i
                               aria-checked={false}
@@ -2210,7 +2280,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               onKeyUp={[Function]}
                               onMouseEnter={[Function]}
                               role="radio"
-                              tabIndex={0}
+                              tabIndex={-1}
                             />
                           </RatingIcon>
                           <RatingIcon
@@ -2224,6 +2294,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             selected={false}
+                            tabIndex={-1}
                           >
                             <i
                               aria-checked={true}
@@ -2234,7 +2305,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               onKeyUp={[Function]}
                               onMouseEnter={[Function]}
                               role="radio"
-                              tabIndex={0}
+                              tabIndex={-1}
                             />
                           </RatingIcon>
                           <RatingIcon
@@ -2248,6 +2319,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                             onClick={[Function]}
                             onMouseEnter={[Function]}
                             selected={false}
+                            tabIndex={-1}
                           >
                             <i
                               aria-checked={false}
@@ -2258,7 +2330,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                               onKeyUp={[Function]}
                               onMouseEnter={[Function]}
                               role="radio"
-                              tabIndex={0}
+                              tabIndex={-1}
                             />
                           </RatingIcon>
                         </div>
@@ -2316,9 +2388,11 @@ exports[`<Reviews /> should render the right structure 1`] = `
                       }
                     >
                       <Modal
+                        centered={true}
                         className=""
                         closeIcon={
                           <Icon
+                            className={null}
                             color={null}
                             hasBorder={false}
                             isButton={false}
@@ -2360,10 +2434,8 @@ exports[`<Reviews /> should render the right structure 1`] = `
                         }
                       >
                         <Portal
-                          className="ui inverted page modals dimmer transition visible active"
                           closeOnDocumentClick={false}
                           closeOnEscape={true}
-                          closeOnRootNodeClick={true}
                           eventPool="Modal"
                           mountNode={<body />}
                           onClose={[Function]}
@@ -2394,50 +2466,79 @@ exports[`<Reviews /> should render the right structure 1`] = `
                           <Ref
                             innerRef={[Function]}
                           >
-                            <Button
-                              hasShadow={false}
-                              icon={null}
-                              isCompact={true}
-                              isDisabled={false}
-                              isFluid={false}
-                              isFormSubmit={false}
-                              isLoading={false}
-                              isOutlined={false}
-                              isPositionedRight={true}
-                              isRounded={true}
-                              isSecondary={false}
-                              onBlur={[Function]}
-                              onClick={[Function]}
-                              onFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              size="medium"
+                            <RefFindNode
+                              innerRef={[Function]}
                             >
                               <Button
-                                as="button"
-                                basic={false}
-                                circular={true}
-                                className=""
-                                compact={true}
-                                disabled={false}
-                                floated="right"
-                                fluid={false}
-                                loading={false}
+                                hasShadow={false}
+                                icon={null}
+                                isCompact={true}
+                                isDisabled={false}
+                                isFluid={false}
+                                isFormSubmit={false}
+                                isLoading={false}
+                                isOutlined={false}
+                                isPositionedRight={true}
+                                isRounded={true}
+                                isSecondary={false}
+                                onBlur={[Function]}
                                 onClick={[Function]}
-                                secondary={false}
+                                onFocus={[Function]}
+                                onMouseEnter={[Function]}
+                                onMouseLeave={[Function]}
                                 size="medium"
-                                type="button"
                               >
-                                <button
-                                  className="ui medium circular compact right floated button"
+                                <Button
+                                  as="button"
+                                  basic={false}
+                                  circular={true}
+                                  className=""
+                                  compact={true}
+                                  disabled={false}
+                                  floated="right"
+                                  fluid={false}
+                                  loading={false}
                                   onClick={[Function]}
-                                  role="button"
+                                  secondary={false}
+                                  size="medium"
                                   type="button"
                                 >
-                                  Submit a review
-                                </button>
+                                  <Ref
+                                    innerRef={
+                                      Object {
+                                        "current": <button
+                                          class="ui medium circular compact right floated button"
+                                          type="button"
+                                        >
+                                          Submit a review
+                                        </button>,
+                                      }
+                                    }
+                                  >
+                                    <RefFindNode
+                                      innerRef={
+                                        Object {
+                                          "current": <button
+                                            class="ui medium circular compact right floated button"
+                                            type="button"
+                                          >
+                                            Submit a review
+                                          </button>,
+                                        }
+                                      }
+                                    >
+                                      <button
+                                        className="ui medium circular compact right floated button"
+                                        onClick={[Function]}
+                                        type="button"
+                                      >
+                                        Submit a review
+                                      </button>
+                                    </RefFindNode>
+                                  </Ref>
+                                </Button>
                               </Button>
-                            </Button>
+                            </RefFindNode>
                           </Ref>
                         </Portal>
                       </Modal>
@@ -2586,6 +2687,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                           className="ui small disabled rating"
                                                           onMouseLeave={[Function]}
                                                           role="radiogroup"
+                                                          tabIndex={0}
                                                         >
                                                           <RatingIcon
                                                             active={true}
@@ -2598,6 +2700,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={false}
@@ -2608,7 +2711,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                           <RatingIcon
@@ -2622,6 +2725,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={false}
@@ -2632,7 +2736,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                           <RatingIcon
@@ -2646,6 +2750,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={false}
@@ -2656,7 +2761,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                           <RatingIcon
@@ -2670,6 +2775,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={false}
@@ -2680,7 +2786,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                           <RatingIcon
@@ -2694,6 +2800,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={true}
@@ -2704,7 +2811,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                         </div>
@@ -3076,6 +3183,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                           className="ui small disabled rating"
                                                           onMouseLeave={[Function]}
                                                           role="radiogroup"
+                                                          tabIndex={0}
                                                         >
                                                           <RatingIcon
                                                             active={true}
@@ -3088,6 +3196,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={false}
@@ -3098,7 +3207,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                           <RatingIcon
@@ -3112,6 +3221,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={false}
@@ -3122,7 +3232,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                           <RatingIcon
@@ -3136,6 +3246,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={true}
@@ -3146,7 +3257,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                           <RatingIcon
@@ -3160,6 +3271,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={false}
@@ -3170,7 +3282,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                           <RatingIcon
@@ -3184,6 +3296,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                             onClick={[Function]}
                                                             onMouseEnter={[Function]}
                                                             selected={false}
+                                                            tabIndex={-1}
                                                           >
                                                             <i
                                                               aria-checked={false}
@@ -3194,7 +3307,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                                                               onKeyUp={[Function]}
                                                               onMouseEnter={[Function]}
                                                               role="radio"
-                                                              tabIndex={0}
+                                                              tabIndex={-1}
                                                             />
                                                           </RatingIcon>
                                                         </div>

@@ -44,6 +44,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
           className="ui small disabled rating"
           onMouseLeave={[Function]}
           role="radiogroup"
+          tabIndex={0}
         >
           <RatingIcon
             active={true}
@@ -56,6 +57,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -66,7 +68,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -80,6 +82,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -90,7 +93,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -104,6 +107,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={true}
@@ -114,7 +118,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -128,6 +132,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -138,7 +143,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -152,6 +157,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -162,7 +168,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
         </div>
@@ -393,6 +399,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
           className="ui small disabled rating"
           onMouseLeave={[Function]}
           role="radiogroup"
+          tabIndex={0}
         >
           <RatingIcon
             active={true}
@@ -405,6 +412,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -415,7 +423,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -429,6 +437,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -439,7 +448,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -453,6 +462,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={true}
@@ -463,7 +473,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -477,6 +487,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -487,7 +498,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -501,6 +512,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -511,7 +523,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
         </div>
@@ -754,6 +766,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                         className="top aligned column"
                       >
                         <Icon
+                          className={null}
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -820,6 +833,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                         className="top aligned column"
                       >
                         <Icon
+                          className={null}
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -1187,6 +1201,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                         className="top aligned column"
                       >
                         <Icon
+                          className={null}
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -1253,6 +1268,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                         className="top aligned column"
                       >
                         <Icon
+                          className={null}
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -1404,6 +1420,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
           className="ui small disabled rating"
           onMouseLeave={[Function]}
           role="radiogroup"
+          tabIndex={0}
         >
           <RatingIcon
             active={true}
@@ -1416,6 +1433,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -1426,7 +1444,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -1440,6 +1458,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -1450,7 +1469,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -1464,6 +1483,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={true}
@@ -1474,7 +1494,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -1488,6 +1508,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -1498,7 +1519,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -1512,6 +1533,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -1522,7 +1544,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
         </div>
@@ -1773,6 +1795,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                         className="top aligned column"
                       >
                         <Icon
+                          className={null}
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -1839,6 +1862,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                         className="top aligned column"
                       >
                         <Icon
+                          className={null}
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -1990,6 +2014,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
           className="ui small disabled rating"
           onMouseLeave={[Function]}
           role="radiogroup"
+          tabIndex={0}
         >
           <RatingIcon
             active={true}
@@ -2002,6 +2027,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -2012,7 +2038,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -2026,6 +2052,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -2036,7 +2063,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -2050,6 +2077,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={true}
@@ -2060,7 +2088,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -2074,6 +2102,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -2084,7 +2113,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
           <RatingIcon
@@ -2098,6 +2127,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             selected={false}
+            tabIndex={-1}
           >
             <i
               aria-checked={false}
@@ -2108,7 +2138,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               onKeyUp={[Function]}
               onMouseEnter={[Function]}
               role="radio"
-              tabIndex={0}
+              tabIndex={-1}
             />
           </RatingIcon>
         </div>
@@ -2347,6 +2377,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                         className="top aligned column"
                       >
                         <Icon
+                          className={null}
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -2413,6 +2444,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                         className="top aligned column"
                       >
                         <Icon
+                          className={null}
                           color={null}
                           hasBorder={false}
                           isButton={false}

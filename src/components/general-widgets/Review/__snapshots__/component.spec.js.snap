@@ -316,6 +316,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                       className="ui small disabled rating"
                                       onMouseLeave={[Function]}
                                       role="radiogroup"
+                                      tabIndex={0}
                                     >
                                       <RatingIcon
                                         active={true}
@@ -328,6 +329,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={false}
@@ -338,7 +340,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                       <RatingIcon
@@ -352,6 +354,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={false}
@@ -362,7 +365,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                       <RatingIcon
@@ -376,6 +379,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={false}
@@ -386,7 +390,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                       <RatingIcon
@@ -400,6 +404,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={true}
@@ -410,7 +415,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                       <RatingIcon
@@ -424,6 +429,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={false}
@@ -434,7 +440,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                     </div>
@@ -767,6 +773,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                       className="ui small disabled rating"
                                       onMouseLeave={[Function]}
                                       role="radiogroup"
+                                      tabIndex={0}
                                     >
                                       <RatingIcon
                                         active={true}
@@ -779,6 +786,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={false}
@@ -789,7 +797,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                       <RatingIcon
@@ -803,6 +811,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={false}
@@ -813,7 +822,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                       <RatingIcon
@@ -827,6 +836,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={false}
@@ -837,7 +847,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                       <RatingIcon
@@ -851,6 +861,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={true}
@@ -861,7 +872,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                       <RatingIcon
@@ -875,6 +886,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                         onClick={[Function]}
                                         onMouseEnter={[Function]}
                                         selected={false}
+                                        tabIndex={-1}
                                       >
                                         <i
                                           aria-checked={false}
@@ -885,7 +897,7 @@ exports[`<Review /> should render the right structure 1`] = `
                                           onKeyUp={[Function]}
                                           onMouseEnter={[Function]}
                                           role="radio"
-                                          tabIndex={0}
+                                          tabIndex={-1}
                                         />
                                       </RatingIcon>
                                     </div>

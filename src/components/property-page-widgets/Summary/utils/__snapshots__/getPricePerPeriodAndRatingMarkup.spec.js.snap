@@ -115,6 +115,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
             className="ui tiny disabled rating"
             onMouseLeave={[Function]}
             role="radiogroup"
+            tabIndex={0}
           >
             <RatingIcon
               active={true}
@@ -127,6 +128,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={-1}
             >
               <i
                 aria-checked={true}
@@ -137,7 +139,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
                 onKeyUp={[Function]}
                 onMouseEnter={[Function]}
                 role="radio"
-                tabIndex={0}
+                tabIndex={-1}
               />
             </RatingIcon>
             <RatingIcon
@@ -151,6 +153,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={-1}
             >
               <i
                 aria-checked={false}
@@ -161,7 +164,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
                 onKeyUp={[Function]}
                 onMouseEnter={[Function]}
                 role="radio"
-                tabIndex={0}
+                tabIndex={-1}
               />
             </RatingIcon>
             <RatingIcon
@@ -175,6 +178,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={-1}
             >
               <i
                 aria-checked={false}
@@ -185,7 +189,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
                 onKeyUp={[Function]}
                 onMouseEnter={[Function]}
                 role="radio"
-                tabIndex={0}
+                tabIndex={-1}
               />
             </RatingIcon>
             <RatingIcon
@@ -199,6 +203,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={-1}
             >
               <i
                 aria-checked={false}
@@ -209,7 +214,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
                 onKeyUp={[Function]}
                 onMouseEnter={[Function]}
                 role="radio"
-                tabIndex={0}
+                tabIndex={-1}
               />
             </RatingIcon>
             <RatingIcon
@@ -223,6 +228,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={-1}
             >
               <i
                 aria-checked={false}
@@ -233,7 +239,7 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
                 onKeyUp={[Function]}
                 onMouseEnter={[Function]}
                 role="radio"
-                tabIndex={0}
+                tabIndex={-1}
               />
             </RatingIcon>
           </div>

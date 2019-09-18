@@ -34,6 +34,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
     trigger={null}
   >
     <Modal
+      centered={true}
       className="has-rounded-corners"
       closeIcon={false}
       closeOnDimmerClick={true}
@@ -46,10 +47,8 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
       trigger={null}
     >
       <Portal
-        className="ui inverted page modals dimmer transition visible active"
         closeOnDocumentClick={false}
         closeOnEscape={true}
-        closeOnRootNodeClick={true}
         eventPool="Modal"
         mountNode={
           <body
@@ -57,6 +56,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
           >
             <div
               class="ui inverted page modals dimmer transition visible active"
+              style="display: flex;"
             >
               <div
                 class="ui tiny modal transition visible active has-rounded-corners"
@@ -93,7 +93,6 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                       />
                       <button
                         class="ui circular left floated button"
-                        role="button"
                         type="button"
                       >
                         There is some text
@@ -116,7 +115,677 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
         open={true}
         openOnTriggerClick={true}
         trigger={null}
-      />
+      >
+        <PortalInner
+          innerRef={
+            Object {
+              "current": <div
+                class="ui inverted page modals dimmer transition visible active"
+                style="display: flex;"
+              >
+                <div
+                  class="ui tiny modal transition visible active has-rounded-corners"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui container"
+                    >
+                      <div
+                        class="flex-container"
+                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                      >
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <p
+                          class=""
+                        >
+                          some text
+                        </p>
+                        <a
+                          class="ui basic left floated button"
+                          href="/"
+                          role="button"
+                          target="_blank"
+                          type="button"
+                        >
+                          A link
+                        </a>
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <button
+                          class="ui circular left floated button"
+                          type="button"
+                        >
+                          There is some text
+                        </button>
+                         
+                        <div
+                          class="ui hidden divider"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+            }
+          }
+          mountNode={
+            <body
+              class="dimmable dimmed"
+            >
+              <div
+                class="ui inverted page modals dimmer transition visible active"
+                style="display: flex;"
+              >
+                <div
+                  class="ui tiny modal transition visible active has-rounded-corners"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui container"
+                    >
+                      <div
+                        class="flex-container"
+                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                      >
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <p
+                          class=""
+                        >
+                          some text
+                        </p>
+                        <a
+                          class="ui basic left floated button"
+                          href="/"
+                          role="button"
+                          target="_blank"
+                          type="button"
+                        >
+                          A link
+                        </a>
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <button
+                          class="ui circular left floated button"
+                          type="button"
+                        >
+                          There is some text
+                        </button>
+                         
+                        <div
+                          class="ui hidden divider"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>
+          }
+          onMount={[Function]}
+          onUnmount={[Function]}
+        >
+          <Portal
+            containerInfo={
+              <body
+                class="dimmable dimmed"
+              >
+                <div
+                  class="ui inverted page modals dimmer transition visible active"
+                  style="display: flex;"
+                >
+                  <div
+                    class="ui tiny modal transition visible active has-rounded-corners"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <div
+                        class="ui container"
+                      >
+                        <div
+                          class="flex-container"
+                          style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                        >
+                          <div
+                            class="ui hidden divider"
+                          />
+                          <p
+                            class=""
+                          >
+                            some text
+                          </p>
+                          <a
+                            class="ui basic left floated button"
+                            href="/"
+                            role="button"
+                            target="_blank"
+                            type="button"
+                          >
+                            A link
+                          </a>
+                          <div
+                            class="ui hidden divider"
+                          />
+                          <button
+                            class="ui circular left floated button"
+                            type="button"
+                          >
+                            There is some text
+                          </button>
+                           
+                          <div
+                            class="ui hidden divider"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </body>
+            }
+          >
+            <Ref
+              innerRef={[Function]}
+            >
+              <RefFindNode
+                innerRef={[Function]}
+              >
+                <div
+                  className="ui inverted page modals dimmer transition visible active"
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          class="ui tiny modal transition visible active has-rounded-corners"
+                        >
+                          <div
+                            class="content"
+                          >
+                            <div
+                              class="ui container"
+                            >
+                              <div
+                                class="flex-container"
+                                style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                              >
+                                <div
+                                  class="ui hidden divider"
+                                />
+                                <p
+                                  class=""
+                                >
+                                  some text
+                                </p>
+                                <a
+                                  class="ui basic left floated button"
+                                  href="/"
+                                  role="button"
+                                  target="_blank"
+                                  type="button"
+                                >
+                                  A link
+                                </a>
+                                <div
+                                  class="ui hidden divider"
+                                />
+                                <button
+                                  class="ui circular left floated button"
+                                  type="button"
+                                >
+                                  There is some text
+                                </button>
+                                 
+                                <div
+                                  class="ui hidden divider"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            class="ui tiny modal transition visible active has-rounded-corners"
+                          >
+                            <div
+                              class="content"
+                            >
+                              <div
+                                class="ui container"
+                              >
+                                <div
+                                  class="flex-container"
+                                  style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                                >
+                                  <div
+                                    class="ui hidden divider"
+                                  />
+                                  <p
+                                    class=""
+                                  >
+                                    some text
+                                  </p>
+                                  <a
+                                    class="ui basic left floated button"
+                                    href="/"
+                                    role="button"
+                                    target="_blank"
+                                    type="button"
+                                  >
+                                    A link
+                                  </a>
+                                  <div
+                                    class="ui hidden divider"
+                                  />
+                                  <button
+                                    class="ui circular left floated button"
+                                    type="button"
+                                  >
+                                    There is some text
+                                  </button>
+                                   
+                                  <div
+                                    class="ui hidden divider"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
+                    >
+                      <div
+                        className="ui tiny modal transition visible active has-rounded-corners"
+                        style={Object {}}
+                      >
+                        <MountNode
+                          className="dimmable dimmed"
+                        />
+                        <ModalContent>
+                          <div
+                            className="content"
+                          >
+                            <HorizontalGutters>
+                              <Container>
+                                <div
+                                  className="ui container"
+                                >
+                                  <FlexContainer
+                                    alignContent={null}
+                                    alignItems="center"
+                                    flexDirection="column"
+                                    flexWrap={null}
+                                    justifyContent="center"
+                                  >
+                                    <div
+                                      className="flex-container"
+                                      style={
+                                        Object {
+                                          "alignContent": null,
+                                          "alignItems": "center",
+                                          "display": "flex",
+                                          "flexDirection": "column",
+                                          "flexGrow": "1",
+                                          "flexWrap": null,
+                                          "height": "100%",
+                                          "justifyContent": "center",
+                                        }
+                                      }
+                                    >
+                                      <Divider
+                                        className=""
+                                        hasLine={false}
+                                        size="medium"
+                                      >
+                                        <Divider
+                                          className=""
+                                          hidden={true}
+                                          section={false}
+                                        >
+                                          <div
+                                            className="ui hidden divider"
+                                          />
+                                        </Divider>
+                                      </Divider>
+                                      <Paragraph
+                                        isCompact={false}
+                                        size="medium"
+                                        weight={null}
+                                      >
+                                        <p
+                                          className=""
+                                        >
+                                          some text
+                                        </p>
+                                      </Paragraph>
+                                      <Link
+                                        href="/"
+                                        isFluid={false}
+                                        isPositionedRight={false}
+                                        onClick={[Function]}
+                                        willOpenInNewTab={true}
+                                      >
+                                        <Button
+                                          as="a"
+                                          basic={true}
+                                          floated="left"
+                                          fluid={false}
+                                          href="/"
+                                          onClick={[Function]}
+                                          target="_blank"
+                                          type="button"
+                                        >
+                                          <Ref
+                                            innerRef={
+                                              Object {
+                                                "current": <a
+                                                  class="ui basic left floated button"
+                                                  href="/"
+                                                  role="button"
+                                                  target="_blank"
+                                                  type="button"
+                                                >
+                                                  A link
+                                                </a>,
+                                              }
+                                            }
+                                          >
+                                            <RefFindNode
+                                              innerRef={
+                                                Object {
+                                                  "current": <a
+                                                    class="ui basic left floated button"
+                                                    href="/"
+                                                    role="button"
+                                                    target="_blank"
+                                                    type="button"
+                                                  >
+                                                    A link
+                                                  </a>,
+                                                }
+                                              }
+                                            >
+                                              <a
+                                                className="ui basic left floated button"
+                                                href="/"
+                                                onClick={[Function]}
+                                                role="button"
+                                                target="_blank"
+                                                type="button"
+                                              >
+                                                A link
+                                              </a>
+                                            </RefFindNode>
+                                          </Ref>
+                                        </Button>
+                                      </Link>
+                                      <Divider
+                                        className=""
+                                        hasLine={false}
+                                        size="medium"
+                                      >
+                                        <Divider
+                                          className=""
+                                          hidden={true}
+                                          section={false}
+                                        >
+                                          <div
+                                            className="ui hidden divider"
+                                          />
+                                        </Divider>
+                                      </Divider>
+                                      <Button
+                                        hasShadow={false}
+                                        icon={null}
+                                        isCompact={false}
+                                        isDisabled={false}
+                                        isFluid={false}
+                                        isFormSubmit={false}
+                                        isLoading={false}
+                                        isOutlined={false}
+                                        isPositionedRight={false}
+                                        isRounded={true}
+                                        isSecondary={false}
+                                        onClick={[MockFunction]}
+                                        size={null}
+                                      >
+                                        <Button
+                                          as="button"
+                                          basic={false}
+                                          circular={true}
+                                          className=""
+                                          compact={false}
+                                          disabled={false}
+                                          floated="left"
+                                          fluid={false}
+                                          loading={false}
+                                          onClick={[MockFunction]}
+                                          secondary={false}
+                                          size={null}
+                                          type="button"
+                                        >
+                                          <Ref
+                                            innerRef={
+                                              Object {
+                                                "current": <button
+                                                  class="ui circular left floated button"
+                                                  type="button"
+                                                >
+                                                  There is some text
+                                                </button>,
+                                              }
+                                            }
+                                          >
+                                            <RefFindNode
+                                              innerRef={
+                                                Object {
+                                                  "current": <button
+                                                    class="ui circular left floated button"
+                                                    type="button"
+                                                  >
+                                                    There is some text
+                                                  </button>,
+                                                }
+                                              }
+                                            >
+                                              <button
+                                                className="ui circular left floated button"
+                                                onClick={[Function]}
+                                                type="button"
+                                              >
+                                                There is some text
+                                              </button>
+                                            </RefFindNode>
+                                          </Ref>
+                                        </Button>
+                                      </Button>
+                                       
+                                      <Divider
+                                        className=""
+                                        hasLine={false}
+                                        size="medium"
+                                      >
+                                        <Divider
+                                          className=""
+                                          hidden={true}
+                                          section={false}
+                                        >
+                                          <div
+                                            className="ui hidden divider"
+                                          />
+                                        </Divider>
+                                      </Divider>
+                                    </div>
+                                  </FlexContainer>
+                                </div>
+                              </Container>
+                            </HorizontalGutters>
+                          </div>
+                        </ModalContent>
+                      </div>
+                    </RefFindNode>
+                  </Ref>
+                </div>
+              </RefFindNode>
+            </Ref>
+          </Portal>
+        </PortalInner>
+        <EventStack
+          name="mouseleave"
+          on={[Function]}
+          pool="Modal"
+          target={
+            Object {
+              "current": <div
+                class="ui inverted page modals dimmer transition visible active"
+                style="display: flex;"
+              >
+                <div
+                  class="ui tiny modal transition visible active has-rounded-corners"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui container"
+                    >
+                      <div
+                        class="flex-container"
+                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                      >
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <p
+                          class=""
+                        >
+                          some text
+                        </p>
+                        <a
+                          class="ui basic left floated button"
+                          href="/"
+                          role="button"
+                          target="_blank"
+                          type="button"
+                        >
+                          A link
+                        </a>
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <button
+                          class="ui circular left floated button"
+                          type="button"
+                        >
+                          There is some text
+                        </button>
+                         
+                        <div
+                          class="ui hidden divider"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+            }
+          }
+        />
+        <EventStack
+          name="mouseenter"
+          on={[Function]}
+          pool="Modal"
+          target={
+            Object {
+              "current": <div
+                class="ui inverted page modals dimmer transition visible active"
+                style="display: flex;"
+              >
+                <div
+                  class="ui tiny modal transition visible active has-rounded-corners"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui container"
+                    >
+                      <div
+                        class="flex-container"
+                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                      >
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <p
+                          class=""
+                        >
+                          some text
+                        </p>
+                        <a
+                          class="ui basic left floated button"
+                          href="/"
+                          role="button"
+                          target="_blank"
+                          type="button"
+                        >
+                          A link
+                        </a>
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <button
+                          class="ui circular left floated button"
+                          type="button"
+                        >
+                          There is some text
+                        </button>
+                         
+                        <div
+                          class="ui hidden divider"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+            }
+          }
+        />
+        <EventStack
+          name="mousedown"
+          on={[Function]}
+          pool="Modal"
+          target="document"
+        />
+        <EventStack
+          name="click"
+          on={[Function]}
+          pool="Modal"
+          target="document"
+        />
+        <EventStack
+          name="keydown"
+          on={[Function]}
+          pool="Modal"
+          target="document"
+        />
+      </Portal>
     </Modal>
   </Modal>
 </CookieAlert>
@@ -215,16 +884,48 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                           target="_blank"
                           type="button"
                         >
-                          <a
-                            className="ui basic left floated button"
-                            href="/"
-                            onClick={[Function]}
-                            role="button"
-                            target="_blank"
-                            type="button"
+                          <Ref
+                            innerRef={
+                              Object {
+                                "current": <a
+                                  class="ui basic left floated button"
+                                  href="/"
+                                  role="button"
+                                  target="_blank"
+                                  type="button"
+                                >
+                                  A link
+                                </a>,
+                              }
+                            }
                           >
-                            A link
-                          </a>
+                            <RefFindNode
+                              innerRef={
+                                Object {
+                                  "current": <a
+                                    class="ui basic left floated button"
+                                    href="/"
+                                    role="button"
+                                    target="_blank"
+                                    type="button"
+                                  >
+                                    A link
+                                  </a>,
+                                }
+                              }
+                            >
+                              <a
+                                className="ui basic left floated button"
+                                href="/"
+                                onClick={[Function]}
+                                role="button"
+                                target="_blank"
+                                type="button"
+                              >
+                                A link
+                              </a>
+                            </RefFindNode>
+                          </Ref>
                         </Button>
                       </Link>
                     </div>
@@ -259,14 +960,39 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                       size={null}
                       type="submit"
                     >
-                      <button
-                        className="ui circular right floated button"
-                        onClick={[Function]}
-                        role="button"
-                        type="submit"
+                      <Ref
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              There is some text
+                            </button>,
+                          }
+                        }
                       >
-                        There is some text
-                      </button>
+                        <RefFindNode
+                          innerRef={
+                            Object {
+                              "current": <button
+                                class="ui circular right floated button"
+                                type="submit"
+                              >
+                                There is some text
+                              </button>,
+                            }
+                          }
+                        >
+                          <button
+                            className="ui circular right floated button"
+                            onClick={[Function]}
+                            type="submit"
+                          >
+                            There is some text
+                          </button>
+                        </RefFindNode>
+                      </Ref>
                     </Button>
                   </Button>
                 </form>
@@ -302,6 +1028,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
     trigger={null}
   >
     <Modal
+      centered={true}
       className="has-rounded-corners"
       closeIcon={false}
       closeOnDimmerClick={true}
@@ -314,10 +1041,8 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
       trigger={null}
     >
       <Portal
-        className="ui inverted page modals dimmer transition visible active"
         closeOnDocumentClick={false}
         closeOnEscape={true}
-        closeOnRootNodeClick={true}
         eventPool="Modal"
         mountNode={
           <body
@@ -325,6 +1050,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
           >
             <div
               class="ui inverted page modals dimmer transition visible active"
+              style="display: flex;"
             >
               <div
                 class="ui tiny modal transition visible active has-rounded-corners"
@@ -361,7 +1087,6 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                       />
                       <button
                         class="ui circular left floated button"
-                        role="button"
                         type="button"
                       >
                         There is some text
@@ -377,6 +1102,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
             </div>
             <div
               class="ui inverted page modals dimmer transition visible active"
+              style="display: flex;"
             >
               <div
                 class="ui tiny modal transition visible active has-rounded-corners"
@@ -413,7 +1139,6 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                       />
                       <button
                         class="ui circular left floated button"
-                        role="button"
                         type="button"
                       >
                         There is some text
@@ -436,7 +1161,781 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
         open={true}
         openOnTriggerClick={true}
         trigger={null}
-      />
+      >
+        <PortalInner
+          innerRef={
+            Object {
+              "current": <div
+                class="ui inverted page modals dimmer transition visible active"
+                style="display: flex;"
+              >
+                <div
+                  class="ui tiny modal transition visible active has-rounded-corners"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui container"
+                    >
+                      <div
+                        class="flex-container"
+                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                      >
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <p
+                          class=""
+                        >
+                          some text
+                        </p>
+                        <a
+                          class="ui basic left floated button"
+                          href="/"
+                          role="button"
+                          target="_blank"
+                          type="button"
+                        >
+                          A link
+                        </a>
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <button
+                          class="ui circular left floated button"
+                          type="button"
+                        >
+                          There is some text
+                        </button>
+                         
+                        <div
+                          class="ui hidden divider"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+            }
+          }
+          mountNode={
+            <body
+              class="dimmable dimmed"
+            >
+              <div
+                class="ui inverted page modals dimmer transition visible active"
+                style="display: flex;"
+              >
+                <div
+                  class="ui tiny modal transition visible active has-rounded-corners"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui container"
+                    >
+                      <div
+                        class="flex-container"
+                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                      >
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <p
+                          class=""
+                        >
+                          some text
+                        </p>
+                        <a
+                          class="ui basic left floated button"
+                          href="/"
+                          role="button"
+                          target="_blank"
+                          type="button"
+                        >
+                          A link
+                        </a>
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <button
+                          class="ui circular left floated button"
+                          type="button"
+                        >
+                          There is some text
+                        </button>
+                         
+                        <div
+                          class="ui hidden divider"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="ui inverted page modals dimmer transition visible active"
+                style="display: flex;"
+              >
+                <div
+                  class="ui tiny modal transition visible active has-rounded-corners"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui container"
+                    >
+                      <div
+                        class="flex-container"
+                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                      >
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <p
+                          class=""
+                        >
+                          some text
+                        </p>
+                        <a
+                          class="ui basic left floated button"
+                          href="/"
+                          role="button"
+                          target="_blank"
+                          type="button"
+                        >
+                          A link
+                        </a>
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <button
+                          class="ui circular left floated button"
+                          type="button"
+                        >
+                          There is some text
+                        </button>
+                         
+                        <div
+                          class="ui hidden divider"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </body>
+          }
+          onMount={[Function]}
+          onUnmount={[Function]}
+        >
+          <Portal
+            containerInfo={
+              <body
+                class="dimmable dimmed"
+              >
+                <div
+                  class="ui inverted page modals dimmer transition visible active"
+                  style="display: flex;"
+                >
+                  <div
+                    class="ui tiny modal transition visible active has-rounded-corners"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <div
+                        class="ui container"
+                      >
+                        <div
+                          class="flex-container"
+                          style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                        >
+                          <div
+                            class="ui hidden divider"
+                          />
+                          <p
+                            class=""
+                          >
+                            some text
+                          </p>
+                          <a
+                            class="ui basic left floated button"
+                            href="/"
+                            role="button"
+                            target="_blank"
+                            type="button"
+                          >
+                            A link
+                          </a>
+                          <div
+                            class="ui hidden divider"
+                          />
+                          <button
+                            class="ui circular left floated button"
+                            type="button"
+                          >
+                            There is some text
+                          </button>
+                           
+                          <div
+                            class="ui hidden divider"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="ui inverted page modals dimmer transition visible active"
+                  style="display: flex;"
+                >
+                  <div
+                    class="ui tiny modal transition visible active has-rounded-corners"
+                  >
+                    <div
+                      class="content"
+                    >
+                      <div
+                        class="ui container"
+                      >
+                        <div
+                          class="flex-container"
+                          style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                        >
+                          <div
+                            class="ui hidden divider"
+                          />
+                          <p
+                            class=""
+                          >
+                            some text
+                          </p>
+                          <a
+                            class="ui basic left floated button"
+                            href="/"
+                            role="button"
+                            target="_blank"
+                            type="button"
+                          >
+                            A link
+                          </a>
+                          <div
+                            class="ui hidden divider"
+                          />
+                          <button
+                            class="ui circular left floated button"
+                            type="button"
+                          >
+                            There is some text
+                          </button>
+                           
+                          <div
+                            class="ui hidden divider"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </body>
+            }
+          >
+            <Ref
+              innerRef={[Function]}
+            >
+              <RefFindNode
+                innerRef={[Function]}
+              >
+                <div
+                  className="ui inverted page modals dimmer transition visible active"
+                >
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          class="ui tiny modal transition visible active has-rounded-corners"
+                        >
+                          <div
+                            class="content"
+                          >
+                            <div
+                              class="ui container"
+                            >
+                              <div
+                                class="flex-container"
+                                style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                              >
+                                <div
+                                  class="ui hidden divider"
+                                />
+                                <p
+                                  class=""
+                                >
+                                  some text
+                                </p>
+                                <a
+                                  class="ui basic left floated button"
+                                  href="/"
+                                  role="button"
+                                  target="_blank"
+                                  type="button"
+                                >
+                                  A link
+                                </a>
+                                <div
+                                  class="ui hidden divider"
+                                />
+                                <button
+                                  class="ui circular left floated button"
+                                  type="button"
+                                >
+                                  There is some text
+                                </button>
+                                 
+                                <div
+                                  class="ui hidden divider"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            class="ui tiny modal transition visible active has-rounded-corners"
+                          >
+                            <div
+                              class="content"
+                            >
+                              <div
+                                class="ui container"
+                              >
+                                <div
+                                  class="flex-container"
+                                  style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                                >
+                                  <div
+                                    class="ui hidden divider"
+                                  />
+                                  <p
+                                    class=""
+                                  >
+                                    some text
+                                  </p>
+                                  <a
+                                    class="ui basic left floated button"
+                                    href="/"
+                                    role="button"
+                                    target="_blank"
+                                    type="button"
+                                  >
+                                    A link
+                                  </a>
+                                  <div
+                                    class="ui hidden divider"
+                                  />
+                                  <button
+                                    class="ui circular left floated button"
+                                    type="button"
+                                  >
+                                    There is some text
+                                  </button>
+                                   
+                                  <div
+                                    class="ui hidden divider"
+                                  />
+                                </div>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
+                    >
+                      <div
+                        className="ui tiny modal transition visible active has-rounded-corners"
+                        style={Object {}}
+                      >
+                        <MountNode
+                          className="dimmable dimmed"
+                        />
+                        <ModalContent>
+                          <div
+                            className="content"
+                          >
+                            <HorizontalGutters>
+                              <Container>
+                                <div
+                                  className="ui container"
+                                >
+                                  <FlexContainer
+                                    alignContent={null}
+                                    alignItems="center"
+                                    flexDirection="column"
+                                    flexWrap={null}
+                                    justifyContent="center"
+                                  >
+                                    <div
+                                      className="flex-container"
+                                      style={
+                                        Object {
+                                          "alignContent": null,
+                                          "alignItems": "center",
+                                          "display": "flex",
+                                          "flexDirection": "column",
+                                          "flexGrow": "1",
+                                          "flexWrap": null,
+                                          "height": "100%",
+                                          "justifyContent": "center",
+                                        }
+                                      }
+                                    >
+                                      <Divider
+                                        className=""
+                                        hasLine={false}
+                                        size="medium"
+                                      >
+                                        <Divider
+                                          className=""
+                                          hidden={true}
+                                          section={false}
+                                        >
+                                          <div
+                                            className="ui hidden divider"
+                                          />
+                                        </Divider>
+                                      </Divider>
+                                      <Paragraph
+                                        isCompact={false}
+                                        size="medium"
+                                        weight={null}
+                                      >
+                                        <p
+                                          className=""
+                                        >
+                                          some text
+                                        </p>
+                                      </Paragraph>
+                                      <Link
+                                        href="/"
+                                        isFluid={false}
+                                        isPositionedRight={false}
+                                        onClick={[Function]}
+                                        willOpenInNewTab={true}
+                                      >
+                                        <Button
+                                          as="a"
+                                          basic={true}
+                                          floated="left"
+                                          fluid={false}
+                                          href="/"
+                                          onClick={[Function]}
+                                          target="_blank"
+                                          type="button"
+                                        >
+                                          <Ref
+                                            innerRef={
+                                              Object {
+                                                "current": <a
+                                                  class="ui basic left floated button"
+                                                  href="/"
+                                                  role="button"
+                                                  target="_blank"
+                                                  type="button"
+                                                >
+                                                  A link
+                                                </a>,
+                                              }
+                                            }
+                                          >
+                                            <RefFindNode
+                                              innerRef={
+                                                Object {
+                                                  "current": <a
+                                                    class="ui basic left floated button"
+                                                    href="/"
+                                                    role="button"
+                                                    target="_blank"
+                                                    type="button"
+                                                  >
+                                                    A link
+                                                  </a>,
+                                                }
+                                              }
+                                            >
+                                              <a
+                                                className="ui basic left floated button"
+                                                href="/"
+                                                onClick={[Function]}
+                                                role="button"
+                                                target="_blank"
+                                                type="button"
+                                              >
+                                                A link
+                                              </a>
+                                            </RefFindNode>
+                                          </Ref>
+                                        </Button>
+                                      </Link>
+                                      <Divider
+                                        className=""
+                                        hasLine={false}
+                                        size="medium"
+                                      >
+                                        <Divider
+                                          className=""
+                                          hidden={true}
+                                          section={false}
+                                        >
+                                          <div
+                                            className="ui hidden divider"
+                                          />
+                                        </Divider>
+                                      </Divider>
+                                      <Button
+                                        hasShadow={false}
+                                        icon={null}
+                                        isCompact={false}
+                                        isDisabled={false}
+                                        isFluid={false}
+                                        isFormSubmit={false}
+                                        isLoading={false}
+                                        isOutlined={false}
+                                        isPositionedRight={false}
+                                        isRounded={true}
+                                        isSecondary={false}
+                                        onClick={[MockFunction]}
+                                        size={null}
+                                      >
+                                        <Button
+                                          as="button"
+                                          basic={false}
+                                          circular={true}
+                                          className=""
+                                          compact={false}
+                                          disabled={false}
+                                          floated="left"
+                                          fluid={false}
+                                          loading={false}
+                                          onClick={[MockFunction]}
+                                          secondary={false}
+                                          size={null}
+                                          type="button"
+                                        >
+                                          <Ref
+                                            innerRef={
+                                              Object {
+                                                "current": <button
+                                                  class="ui circular left floated button"
+                                                  type="button"
+                                                >
+                                                  There is some text
+                                                </button>,
+                                              }
+                                            }
+                                          >
+                                            <RefFindNode
+                                              innerRef={
+                                                Object {
+                                                  "current": <button
+                                                    class="ui circular left floated button"
+                                                    type="button"
+                                                  >
+                                                    There is some text
+                                                  </button>,
+                                                }
+                                              }
+                                            >
+                                              <button
+                                                className="ui circular left floated button"
+                                                onClick={[Function]}
+                                                type="button"
+                                              >
+                                                There is some text
+                                              </button>
+                                            </RefFindNode>
+                                          </Ref>
+                                        </Button>
+                                      </Button>
+                                       
+                                      <Divider
+                                        className=""
+                                        hasLine={false}
+                                        size="medium"
+                                      >
+                                        <Divider
+                                          className=""
+                                          hidden={true}
+                                          section={false}
+                                        >
+                                          <div
+                                            className="ui hidden divider"
+                                          />
+                                        </Divider>
+                                      </Divider>
+                                    </div>
+                                  </FlexContainer>
+                                </div>
+                              </Container>
+                            </HorizontalGutters>
+                          </div>
+                        </ModalContent>
+                      </div>
+                    </RefFindNode>
+                  </Ref>
+                </div>
+              </RefFindNode>
+            </Ref>
+          </Portal>
+        </PortalInner>
+        <EventStack
+          name="mouseleave"
+          on={[Function]}
+          pool="Modal"
+          target={
+            Object {
+              "current": <div
+                class="ui inverted page modals dimmer transition visible active"
+                style="display: flex;"
+              >
+                <div
+                  class="ui tiny modal transition visible active has-rounded-corners"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui container"
+                    >
+                      <div
+                        class="flex-container"
+                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                      >
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <p
+                          class=""
+                        >
+                          some text
+                        </p>
+                        <a
+                          class="ui basic left floated button"
+                          href="/"
+                          role="button"
+                          target="_blank"
+                          type="button"
+                        >
+                          A link
+                        </a>
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <button
+                          class="ui circular left floated button"
+                          type="button"
+                        >
+                          There is some text
+                        </button>
+                         
+                        <div
+                          class="ui hidden divider"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+            }
+          }
+        />
+        <EventStack
+          name="mouseenter"
+          on={[Function]}
+          pool="Modal"
+          target={
+            Object {
+              "current": <div
+                class="ui inverted page modals dimmer transition visible active"
+                style="display: flex;"
+              >
+                <div
+                  class="ui tiny modal transition visible active has-rounded-corners"
+                >
+                  <div
+                    class="content"
+                  >
+                    <div
+                      class="ui container"
+                    >
+                      <div
+                        class="flex-container"
+                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; flex-direction: column; justify-content: center;"
+                      >
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <p
+                          class=""
+                        >
+                          some text
+                        </p>
+                        <a
+                          class="ui basic left floated button"
+                          href="/"
+                          role="button"
+                          target="_blank"
+                          type="button"
+                        >
+                          A link
+                        </a>
+                        <div
+                          class="ui hidden divider"
+                        />
+                        <button
+                          class="ui circular left floated button"
+                          type="button"
+                        >
+                          There is some text
+                        </button>
+                         
+                        <div
+                          class="ui hidden divider"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>,
+            }
+          }
+        />
+        <EventStack
+          name="mousedown"
+          on={[Function]}
+          pool="Modal"
+          target="document"
+        />
+        <EventStack
+          name="click"
+          on={[Function]}
+          pool="Modal"
+          target="document"
+        />
+        <EventStack
+          name="keydown"
+          on={[Function]}
+          pool="Modal"
+          target="document"
+        />
+      </Portal>
     </Modal>
   </Modal>
 </CookieAlert>

@@ -13,6 +13,7 @@ import { getButtonProps } from './utils/getButtonProps';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  className,
   color,
   hasBorder,
   isCircular,
@@ -28,7 +29,7 @@ export const Component = ({
   ...otherProps
 }) => (
   <i
-    className={getClassNames('icon', color, size, {
+    className={getClassNames('icon', color, size, className, {
       circular: isCircular,
       'has-border': hasBorder,
       'inverted grey': isDisabled,
@@ -56,6 +57,7 @@ export const Component = ({
 Component.displayName = 'Icon';
 
 Component.defaultProps = {
+  className: null,
   color: null,
   hasBorder: false,
   isButton: false,
@@ -71,6 +73,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** Custom className for the icon */
+  className: PropTypes.string,
   /** The color of the icon. */
   color: PropTypes.oneOf([
     'black',
