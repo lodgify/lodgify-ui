@@ -3,6 +3,7 @@
 exports[`<EmailCapture /> should render the right structure 1`] = `
 <Responsive
   as={[Function]}
+  getWidth={[Function]}
   isUserOnMobile={false}
   onUpdate={[Function]}
   windowInnerWidth={1024}
@@ -62,9 +63,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                     <div
                       className="content"
                     >
-                      <p
-                        key="Nurrrrrrr"
-                      >
+                      <p>
                         Nurrrrrrr
                       </p>
                     </div>
@@ -340,14 +339,39 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                               size={null}
                               type="button"
                             >
-                              <button
-                                className="ui circular fluid left floated button"
-                                onClick={[Function]}
-                                role="button"
-                                type="button"
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui circular fluid left floated button"
+                                      type="button"
+                                    >
+                                      Subscribe
+                                    </button>,
+                                  }
+                                }
                               >
-                                Subscribe
-                              </button>
+                                <RefFindNode
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui circular fluid left floated button"
+                                        type="button"
+                                      >
+                                        Subscribe
+                                      </button>,
+                                    }
+                                  }
+                                >
+                                  <button
+                                    className="ui circular fluid left floated button"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </RefFindNode>
+                              </Ref>
                             </Button>
                           </Button>
                         </div>
@@ -661,14 +685,39 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                               size={null}
                               type="button"
                             >
-                              <button
-                                className="ui circular fluid left floated button"
-                                onClick={[Function]}
-                                role="button"
-                                type="button"
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui circular fluid left floated button"
+                                      type="button"
+                                    >
+                                      Subscribe
+                                    </button>,
+                                  }
+                                }
                               >
-                                Subscribe
-                              </button>
+                                <RefFindNode
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui circular fluid left floated button"
+                                        type="button"
+                                      >
+                                        Subscribe
+                                      </button>,
+                                    }
+                                  }
+                                >
+                                  <button
+                                    className="ui circular fluid left floated button"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </RefFindNode>
+                              </Ref>
                             </Button>
                           </Button>
                         </div>
@@ -1045,14 +1094,39 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                               size={null}
                               type="button"
                             >
-                              <button
-                                className="ui circular fluid left floated button"
-                                onClick={[Function]}
-                                role="button"
-                                type="button"
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui circular fluid left floated button"
+                                      type="button"
+                                    >
+                                      Subscribe
+                                    </button>,
+                                  }
+                                }
                               >
-                                Subscribe
-                              </button>
+                                <RefFindNode
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui circular fluid left floated button"
+                                        type="button"
+                                      >
+                                        Subscribe
+                                      </button>,
+                                    }
+                                  }
+                                >
+                                  <button
+                                    className="ui circular fluid left floated button"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </RefFindNode>
+                              </Ref>
                             </Button>
                           </Button>
                         </div>
@@ -1182,30 +1256,91 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                       onChange={[Function]}
                                       onClick={[Function]}
                                       onMouseDown={[Function]}
+                                      onMouseUp={[Function]}
                                     >
-                                      <input
-                                        checked={false}
-                                        className="hidden"
-                                        onClick={[Function]}
-                                        readOnly={true}
-                                        tabIndex={0}
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        className="privacy-consent-label"
+                                      <Ref
+                                        innerRef={
+                                          Object {
+                                            "current": <input
+                                              class="hidden"
+                                              readonly=""
+                                              tabindex="0"
+                                              type="checkbox"
+                                              value=""
+                                            />,
+                                          }
+                                        }
                                       >
-                                        <Paragraph
-                                          isCompact={false}
-                                          size="medium"
-                                          weight={null}
+                                        <RefFindNode
+                                          innerRef={
+                                            Object {
+                                              "current": <input
+                                                class="hidden"
+                                                readonly=""
+                                                tabindex="0"
+                                                type="checkbox"
+                                                value=""
+                                              />,
+                                            }
+                                          }
                                         >
-                                          <p
-                                            className=""
+                                          <input
+                                            checked={false}
+                                            className="hidden"
+                                            disabled={false}
+                                            readOnly={true}
+                                            tabIndex={0}
+                                            type="checkbox"
+                                          />
+                                        </RefFindNode>
+                                      </Ref>
+                                      <Ref
+                                        innerRef={
+                                          Object {
+                                            "current": <label
+                                              class="privacy-consent-label"
+                                            >
+                                              <p
+                                                class=""
+                                              >
+                                                I accept the privacy policy.
+                                              </p>
+                                            </label>,
+                                          }
+                                        }
+                                      >
+                                        <RefFindNode
+                                          innerRef={
+                                            Object {
+                                              "current": <label
+                                                class="privacy-consent-label"
+                                              >
+                                                <p
+                                                  class=""
+                                                >
+                                                  I accept the privacy policy.
+                                                </p>
+                                              </label>,
+                                            }
+                                          }
+                                        >
+                                          <label
+                                            className="privacy-consent-label"
                                           >
-                                            I accept the privacy policy.
-                                          </p>
-                                        </Paragraph>
-                                      </label>
+                                            <Paragraph
+                                              isCompact={false}
+                                              size="medium"
+                                              weight={null}
+                                            >
+                                              <p
+                                                className=""
+                                              >
+                                                I accept the privacy policy.
+                                              </p>
+                                            </Paragraph>
+                                          </label>
+                                        </RefFindNode>
+                                      </Ref>
                                     </div>
                                   </Checkbox>
                                 </div>
@@ -1569,14 +1704,39 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               size={null}
                               type="button"
                             >
-                              <button
-                                className="ui circular fluid left floated button"
-                                onClick={[Function]}
-                                role="button"
-                                type="button"
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui circular fluid left floated button"
+                                      type="button"
+                                    >
+                                      Subscribe
+                                    </button>,
+                                  }
+                                }
                               >
-                                Subscribe
-                              </button>
+                                <RefFindNode
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui circular fluid left floated button"
+                                        type="button"
+                                      >
+                                        Subscribe
+                                      </button>,
+                                    }
+                                  }
+                                >
+                                  <button
+                                    className="ui circular fluid left floated button"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </RefFindNode>
+                              </Ref>
                             </Button>
                           </Button>
                         </div>
@@ -1955,30 +2115,91 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                       onChange={[Function]}
                                       onClick={[Function]}
                                       onMouseDown={[Function]}
+                                      onMouseUp={[Function]}
                                     >
-                                      <input
-                                        checked={false}
-                                        className="hidden"
-                                        onClick={[Function]}
-                                        readOnly={true}
-                                        tabIndex={0}
-                                        type="checkbox"
-                                      />
-                                      <label
-                                        className="privacy-consent-label"
+                                      <Ref
+                                        innerRef={
+                                          Object {
+                                            "current": <input
+                                              class="hidden"
+                                              readonly=""
+                                              tabindex="0"
+                                              type="checkbox"
+                                              value=""
+                                            />,
+                                          }
+                                        }
                                       >
-                                        <Paragraph
-                                          isCompact={false}
-                                          size="medium"
-                                          weight={null}
+                                        <RefFindNode
+                                          innerRef={
+                                            Object {
+                                              "current": <input
+                                                class="hidden"
+                                                readonly=""
+                                                tabindex="0"
+                                                type="checkbox"
+                                                value=""
+                                              />,
+                                            }
+                                          }
                                         >
-                                          <p
-                                            className=""
+                                          <input
+                                            checked={false}
+                                            className="hidden"
+                                            disabled={false}
+                                            readOnly={true}
+                                            tabIndex={0}
+                                            type="checkbox"
+                                          />
+                                        </RefFindNode>
+                                      </Ref>
+                                      <Ref
+                                        innerRef={
+                                          Object {
+                                            "current": <label
+                                              class="privacy-consent-label"
+                                            >
+                                              <p
+                                                class=""
+                                              >
+                                                I accept the privacy policy.
+                                              </p>
+                                            </label>,
+                                          }
+                                        }
+                                      >
+                                        <RefFindNode
+                                          innerRef={
+                                            Object {
+                                              "current": <label
+                                                class="privacy-consent-label"
+                                              >
+                                                <p
+                                                  class=""
+                                                >
+                                                  I accept the privacy policy.
+                                                </p>
+                                              </label>,
+                                            }
+                                          }
+                                        >
+                                          <label
+                                            className="privacy-consent-label"
                                           >
-                                            I accept the privacy policy.
-                                          </p>
-                                        </Paragraph>
-                                      </label>
+                                            <Paragraph
+                                              isCompact={false}
+                                              size="medium"
+                                              weight={null}
+                                            >
+                                              <p
+                                                className=""
+                                              >
+                                                I accept the privacy policy.
+                                              </p>
+                                            </Paragraph>
+                                          </label>
+                                        </RefFindNode>
+                                      </Ref>
                                     </div>
                                   </Checkbox>
                                 </div>
@@ -2030,14 +2251,39 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               size={null}
                               type="button"
                             >
-                              <button
-                                className="ui circular fluid left floated button"
-                                onClick={[Function]}
-                                role="button"
-                                type="button"
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui circular fluid left floated button"
+                                      type="button"
+                                    >
+                                      Subscribe
+                                    </button>,
+                                  }
+                                }
                               >
-                                Subscribe
-                              </button>
+                                <RefFindNode
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui circular fluid left floated button"
+                                        type="button"
+                                      >
+                                        Subscribe
+                                      </button>,
+                                    }
+                                  }
+                                >
+                                  <button
+                                    className="ui circular fluid left floated button"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </RefFindNode>
+                              </Ref>
                             </Button>
                           </Button>
                         </div>
@@ -2351,14 +2597,39 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               size={null}
                               type="button"
                             >
-                              <button
-                                className="ui circular fluid left floated button"
-                                onClick={[Function]}
-                                role="button"
-                                type="button"
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui circular fluid left floated button"
+                                      type="button"
+                                    >
+                                      Subscribe
+                                    </button>,
+                                  }
+                                }
                               >
-                                Subscribe
-                              </button>
+                                <RefFindNode
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui circular fluid left floated button"
+                                        type="button"
+                                      >
+                                        Subscribe
+                                      </button>,
+                                    }
+                                  }
+                                >
+                                  <button
+                                    className="ui circular fluid left floated button"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </RefFindNode>
+                              </Ref>
                             </Button>
                           </Button>
                         </div>
@@ -2444,9 +2715,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                     <div
                       className="content"
                     >
-                      <p
-                        key="Yurrrrrrr"
-                      >
+                      <p>
                         Yurrrrrrr
                       </p>
                     </div>
@@ -2722,14 +2991,39 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                               size={null}
                               type="button"
                             >
-                              <button
-                                className="ui circular fluid left floated button"
-                                onClick={[Function]}
-                                role="button"
-                                type="button"
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui circular fluid left floated button"
+                                      type="button"
+                                    >
+                                      Subscribe
+                                    </button>,
+                                  }
+                                }
                               >
-                                Subscribe
-                              </button>
+                                <RefFindNode
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui circular fluid left floated button"
+                                        type="button"
+                                      >
+                                        Subscribe
+                                      </button>,
+                                    }
+                                  }
+                                >
+                                  <button
+                                    className="ui circular fluid left floated button"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </RefFindNode>
+                              </Ref>
                             </Button>
                           </Button>
                         </div>
@@ -3043,14 +3337,39 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                               size={null}
                               type="button"
                             >
-                              <button
-                                className="ui circular fluid left floated button"
-                                onClick={[Function]}
-                                role="button"
-                                type="button"
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui circular fluid left floated button"
+                                      type="button"
+                                    >
+                                      Subscribe
+                                    </button>,
+                                  }
+                                }
                               >
-                                Subscribe
-                              </button>
+                                <RefFindNode
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui circular fluid left floated button"
+                                        type="button"
+                                      >
+                                        Subscribe
+                                      </button>,
+                                    }
+                                  }
+                                >
+                                  <button
+                                    className="ui circular fluid left floated button"
+                                    onClick={[Function]}
+                                    type="button"
+                                  >
+                                    Subscribe
+                                  </button>
+                                </RefFindNode>
+                              </Ref>
                             </Button>
                           </Button>
                         </div>

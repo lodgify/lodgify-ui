@@ -17,6 +17,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \
     01/05/2018 - 01/08/2018
     <br />
     <Icon
+      className={null}
       color={null}
       hasBorder={false}
       isButton={false}
@@ -53,6 +54,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \
     01/08/2018 - 01/10/2018
     <br />
     <Icon
+      className={null}
       color={null}
       hasBorder={false}
       isButton={false}
@@ -131,6 +133,7 @@ exports[`getRateCategoryHeadingMarkup if all values are defined should return th
     01/05/2018 - 01/08/2018
     <br />
     <Icon
+      className={null}
       color={null}
       hasBorder={false}
       isButton={false}

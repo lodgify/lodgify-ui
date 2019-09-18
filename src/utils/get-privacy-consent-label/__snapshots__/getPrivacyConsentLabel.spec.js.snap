@@ -32,16 +32,48 @@ exports[`getPrivacyConsentLabel if \`privacyConsentLabelLinkUrl\` is passed shou
       target="_blank"
       type="button"
     >
-      <a
-        className="ui basic left floated button"
-        href="labelLinkUrl"
-        onClick={[Function]}
-        role="button"
-        target="_blank"
-        type="button"
+      <Ref
+        innerRef={
+          Object {
+            "current": <a
+              class="ui basic left floated button"
+              href="labelLinkUrl"
+              role="button"
+              target="_blank"
+              type="button"
+            >
+              Privacy policy
+            </a>,
+          }
+        }
       >
-        Privacy policy
-      </a>
+        <RefFindNode
+          innerRef={
+            Object {
+              "current": <a
+                class="ui basic left floated button"
+                href="labelLinkUrl"
+                role="button"
+                target="_blank"
+                type="button"
+              >
+                Privacy policy
+              </a>,
+            }
+          }
+        >
+          <a
+            className="ui basic left floated button"
+            href="labelLinkUrl"
+            onClick={[Function]}
+            role="button"
+            target="_blank"
+            type="button"
+          >
+            Privacy policy
+          </a>
+        </RefFindNode>
+      </Ref>
     </Button>
   </Link>
 </label>
@@ -79,16 +111,48 @@ exports[`getPrivacyConsentLabel if both \`privacyConsentLabelLinkUrl\` and \`pri
       target="_blank"
       type="button"
     >
-      <a
-        className="ui basic left floated button"
-        href="labelLinkUrl"
-        onClick={[Function]}
-        role="button"
-        target="_blank"
-        type="button"
+      <Ref
+        innerRef={
+          Object {
+            "current": <a
+              class="ui basic left floated button"
+              href="labelLinkUrl"
+              role="button"
+              target="_blank"
+              type="button"
+            >
+              labelLinkText
+            </a>,
+          }
+        }
       >
-        labelLinkText
-      </a>
+        <RefFindNode
+          innerRef={
+            Object {
+              "current": <a
+                class="ui basic left floated button"
+                href="labelLinkUrl"
+                role="button"
+                target="_blank"
+                type="button"
+              >
+                labelLinkText
+              </a>,
+            }
+          }
+        >
+          <a
+            className="ui basic left floated button"
+            href="labelLinkUrl"
+            onClick={[Function]}
+            role="button"
+            target="_blank"
+            type="button"
+          >
+            labelLinkText
+          </a>
+        </RefFindNode>
+      </Ref>
     </Button>
   </Link>
 </label>

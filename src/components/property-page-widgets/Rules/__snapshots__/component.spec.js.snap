@@ -70,6 +70,7 @@ exports[`<Rules /> by default should render the right structure 1`] = `
               className="top aligned nine wide computer seven wide tablet column"
             >
               <Icon
+                className={null}
                 color={null}
                 hasBorder={false}
                 isButton={false}
@@ -123,6 +124,7 @@ exports[`<Rules /> by default should render the right structure 1`] = `
                 </Divider>
               </Divider>
               <Icon
+                className={null}
                 color={null}
                 hasBorder={false}
                 isButton={false}
@@ -335,6 +337,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
               className="top aligned nine wide computer seven wide tablet column"
             >
               <Icon
+                className={null}
                 color={null}
                 hasBorder={false}
                 isButton={false}
@@ -388,6 +391,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                 </Divider>
               </Divider>
               <Icon
+                className={null}
                 color={null}
                 hasBorder={false}
                 isButton={false}

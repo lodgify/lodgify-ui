@@ -11,6 +11,7 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
     getOptionsWithSearch={[Function]}
     icon={null}
     initialValue={null}
+    isClearable={true}
     isCompact={false}
     isDisabled={false}
     isFluid={true}
@@ -38,12 +39,15 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
       <Dropdown
         additionLabel="Add "
         additionPosition="top"
+        clearable={true}
         closeOnBlur={true}
+        closeOnEscape={true}
         compact={false}
         deburr={false}
         disabled={false}
         icon={
           <Icon
+            className={null}
             color={null}
             hasBorder={false}
             isButton={false}
@@ -85,123 +89,270 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
         value={null}
         wrapSelection={true}
       >
-        <div
-          aria-disabled={false}
-          aria-expanded={false}
-          className="ui search selection dropdown"
-          onBlur={[Function]}
-          onChange={[Function]}
-          onClick={[Function]}
-          onFocus={[Function]}
-          onMouseDown={[Function]}
-          role="combobox"
+        <Ref
+          innerRef={
+            Object {
+              "current": <div
+                aria-disabled="false"
+                aria-expanded="false"
+                class="ui search selection dropdown"
+                role="combobox"
+              >
+                <input
+                  aria-autocomplete="list"
+                  autocomplete="off"
+                  class="search"
+                  tabindex="0"
+                  type="text"
+                  value=""
+                />
+                <div
+                  aria-atomic="true"
+                  aria-live="polite"
+                  class="text"
+                  role="alert"
+                />
+                <i
+                  class="icon"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20,8.5l-8,7-8-7Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </i>
+                <div
+                  class="menu transition"
+                  role="listbox"
+                >
+                  <div
+                    aria-checked="false"
+                    aria-selected="true"
+                    class="selected item"
+                    role="option"
+                    style="pointer-events: all;"
+                  >
+                    <span
+                      class="text"
+                    >
+                      some text
+                    </span>
+                  </div>
+                </div>
+              </div>,
+            }
+          }
         >
-          <DropdownSearchInput
-            inputRef={[Function]}
-            key="text"
-            onChange={[Function]}
-            style={
+          <RefFindNode
+            innerRef={
               Object {
-                "width": undefined,
+                "current": <div
+                  aria-disabled="false"
+                  aria-expanded="false"
+                  class="ui search selection dropdown"
+                  role="combobox"
+                >
+                  <input
+                    aria-autocomplete="list"
+                    autocomplete="off"
+                    class="search"
+                    tabindex="0"
+                    type="text"
+                    value=""
+                  />
+                  <div
+                    aria-atomic="true"
+                    aria-live="polite"
+                    class="text"
+                    role="alert"
+                  />
+                  <i
+                    class="icon"
+                  >
+                    <svg
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M20,8.5l-8,7-8-7Z"
+                        fill="currentColor"
+                      />
+                    </svg>
+                  </i>
+                  <div
+                    class="menu transition"
+                    role="listbox"
+                  >
+                    <div
+                      aria-checked="false"
+                      aria-selected="true"
+                      class="selected item"
+                      role="option"
+                      style="pointer-events: all;"
+                    >
+                      <span
+                        class="text"
+                      >
+                        some text
+                      </span>
+                    </div>
+                  </div>
+                </div>,
               }
             }
-            tabIndex={0}
-            type="text"
-            value=""
-          >
-            <input
-              aria-autocomplete="list"
-              autoComplete="off"
-              className="search"
-              onChange={[Function]}
-              style={
-                Object {
-                  "width": undefined,
-                }
-              }
-              tabIndex={0}
-              type="text"
-              value=""
-            />
-          </DropdownSearchInput>
-          <div
-            aria-live="polite"
-            className="text"
-            role="alert"
-          />
-          <Icon
-            color={null}
-            hasBorder={false}
-            isButton={false}
-            isCircular={false}
-            isColorInverted={false}
-            isDisabled={false}
-            isLabelLeft={false}
-            labelText={null}
-            labelWeight={null}
-            name="caret down"
-            onClick={[Function]}
-            path={null}
-            size={null}
-          >
-            <i
-              className="icon"
-              onClick={[Function]}
-            >
-              <svg
-                viewBox="0 0 24 24"
-              >
-                <path
-                  d="M20,8.5l-8,7-8-7Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </i>
-          </Icon>
-          <DropdownMenu
-            open={false}
-            role="listbox"
           >
             <div
-              className="menu transition"
-              role="listbox"
+              aria-disabled={false}
+              aria-expanded={false}
+              className="ui search selection dropdown"
+              onBlur={[Function]}
+              onChange={[Function]}
+              onClick={[Function]}
+              onFocus={[Function]}
+              onMouseDown={[Function]}
+              role="combobox"
             >
-              <DropdownItem
-                active={false}
-                key="0"
-                onClick={[Function]}
-                selected={true}
-                style={
+              <Ref
+                innerRef={
                   Object {
-                    "pointerEvents": "all",
+                    "current": <input
+                      aria-autocomplete="list"
+                      autocomplete="off"
+                      class="search"
+                      tabindex="0"
+                      type="text"
+                      value=""
+                    />,
                   }
                 }
-                text="some text"
-                value="some value "
               >
-                <div
-                  aria-checked={false}
-                  aria-selected={true}
-                  className="selected item"
-                  onClick={[Function]}
-                  role="option"
-                  style={
+                <RefFindNode
+                  innerRef={
                     Object {
-                      "pointerEvents": "all",
+                      "current": <input
+                        aria-autocomplete="list"
+                        autocomplete="off"
+                        class="search"
+                        tabindex="0"
+                        type="text"
+                        value=""
+                      />,
                     }
                   }
                 >
-                  <span
-                    className="text"
-                    key="some text"
+                  <DropdownSearchInput
+                    autoComplete="off"
+                    key="text"
+                    onChange={[Function]}
+                    style={
+                      Object {
+                        "width": undefined,
+                      }
+                    }
+                    tabIndex={0}
+                    type="text"
+                    value=""
                   >
-                    some text
-                  </span>
+                    <input
+                      aria-autocomplete="list"
+                      autoComplete="off"
+                      className="search"
+                      onChange={[Function]}
+                      style={
+                        Object {
+                          "width": undefined,
+                        }
+                      }
+                      tabIndex={0}
+                      type="text"
+                      value=""
+                    />
+                  </DropdownSearchInput>
+                </RefFindNode>
+              </Ref>
+              <div
+                aria-atomic={true}
+                aria-live="polite"
+                className="text"
+                role="alert"
+              />
+              <Icon
+                className=""
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="caret down"
+                onClick={[Function]}
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon"
+                  onClick={[Function]}
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20,8.5l-8,7-8-7Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </i>
+              </Icon>
+              <DropdownMenu
+                open={false}
+                role="listbox"
+              >
+                <div
+                  className="menu transition"
+                  role="listbox"
+                >
+                  <DropdownItem
+                    active={false}
+                    key="0"
+                    onClick={[Function]}
+                    selected={true}
+                    style={
+                      Object {
+                        "pointerEvents": "all",
+                      }
+                    }
+                    text="some text"
+                    value="some value "
+                  >
+                    <div
+                      aria-checked={false}
+                      aria-selected={true}
+                      className="selected item"
+                      onClick={[Function]}
+                      role="option"
+                      style={
+                        Object {
+                          "pointerEvents": "all",
+                        }
+                      }
+                    >
+                      <span
+                        className="text"
+                      >
+                        some text
+                      </span>
+                    </div>
+                  </DropdownItem>
                 </div>
-              </DropdownItem>
+              </DropdownMenu>
             </div>
-          </DropdownMenu>
-        </div>
+          </RefFindNode>
+        </Ref>
       </Dropdown>
     </div>
   </Dropdown>

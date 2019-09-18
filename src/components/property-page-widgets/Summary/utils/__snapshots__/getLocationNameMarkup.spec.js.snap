@@ -7,6 +7,7 @@ exports[`getLocationNameMarkup should render the right structure 1`] = `
 >
   Alpha-Centauri
   <Icon
+    className={null}
     color="primary"
     hasBorder={false}
     isButton={false}

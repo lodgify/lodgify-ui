@@ -779,6 +779,7 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
             getOptionsWithSearch={null}
             icon={null}
             initialValue={null}
+            isClearable={true}
             isCompact={true}
             isDisabled={false}
             isSearchable={false}
@@ -807,12 +808,15 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
               <Dropdown
                 additionLabel="Add "
                 additionPosition="top"
+                clearable={true}
                 closeOnBlur={true}
+                closeOnEscape={true}
                 compact={true}
                 deburr={false}
                 disabled={false}
                 icon={
                   <Icon
+                    className={null}
                     color={null}
                     hasBorder={false}
                     isButton={false}
@@ -822,7 +826,7 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
                     isLabelLeft={false}
                     labelText={null}
                     labelWeight={null}
-                    name="caret down"
+                    name="close"
                     path={null}
                     size="small"
                   />
@@ -856,97 +860,202 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
                 value="price"
                 wrapSelection={true}
               >
-                <div
-                  aria-disabled={false}
-                  aria-expanded={false}
-                  className="ui compact selection dropdown"
-                  onBlur={[Function]}
-                  onChange={[Function]}
-                  onClick={[Function]}
-                  onFocus={[Function]}
-                  onMouseDown={[Function]}
-                  role="listbox"
-                  tabIndex={0}
-                >
-                  <div
-                    aria-live="polite"
-                    className="text"
-                    role="alert"
-                  >
-                    Sort by price (lowest first)
-                  </div>
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="caret down"
-                    onClick={[Function]}
-                    path={null}
-                    size="small"
-                  >
-                    <i
-                      className="icon small"
-                      onClick={[Function]}
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
-                      >
-                        <path
-                          d="M20,8.5l-8,7-8-7Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </i>
-                  </Icon>
-                  <DropdownMenu
-                    open={false}
-                  >
-                    <div
-                      className="menu transition"
-                    >
-                      <DropdownItem
-                        active={true}
-                        content="Price (lowest to highest)"
-                        key="0"
-                        onClick={[Function]}
-                        selected={true}
-                        style={
-                          Object {
-                            "pointerEvents": "all",
-                          }
-                        }
-                        text="Sort by price (lowest first)"
-                        value="price"
+                <Ref
+                  innerRef={
+                    Object {
+                      "current": <div
+                        aria-disabled="false"
+                        aria-expanded="false"
+                        class="ui compact selection dropdown"
+                        role="listbox"
+                        tabindex="0"
                       >
                         <div
-                          aria-checked={true}
-                          aria-selected={true}
-                          className="active selected item"
-                          onClick={[Function]}
-                          role="option"
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
+                          aria-atomic="true"
+                          aria-live="polite"
+                          class="text"
+                          role="alert"
                         >
-                          <span
-                            className="text"
-                            key="Price (lowest to highest)"
-                          >
-                            Price (lowest to highest)
-                          </span>
+                          Sort by price (lowest first)
                         </div>
-                      </DropdownItem>
+                        <i
+                          class="icon small clear"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                        <div
+                          class="menu transition"
+                        >
+                          <div
+                            aria-checked="true"
+                            aria-selected="true"
+                            class="active selected item"
+                            role="option"
+                            style="pointer-events: all;"
+                          >
+                            <span
+                              class="text"
+                            >
+                              Price (lowest to highest)
+                            </span>
+                          </div>
+                        </div>
+                      </div>,
+                    }
+                  }
+                >
+                  <RefFindNode
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          class="ui compact selection dropdown"
+                          role="listbox"
+                          tabindex="0"
+                        >
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
+                          >
+                            Sort by price (lowest first)
+                          </div>
+                          <i
+                            class="icon small clear"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="true"
+                              aria-selected="true"
+                              class="active selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Price (lowest to highest)
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <div
+                      aria-disabled={false}
+                      aria-expanded={false}
+                      className="ui compact selection dropdown"
+                      onBlur={[Function]}
+                      onChange={[Function]}
+                      onClick={[Function]}
+                      onFocus={[Function]}
+                      onMouseDown={[Function]}
+                      role="listbox"
+                      tabIndex={0}
+                    >
+                      <div
+                        aria-atomic={true}
+                        aria-live="polite"
+                        className="text"
+                        role="alert"
+                      >
+                        Sort by price (lowest first)
+                      </div>
+                      <Icon
+                        className="clear"
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="close"
+                        onClick={[Function]}
+                        path={null}
+                        size="small"
+                      >
+                        <i
+                          className="icon small clear"
+                          onClick={[Function]}
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                      <DropdownMenu
+                        open={false}
+                      >
+                        <div
+                          className="menu transition"
+                        >
+                          <DropdownItem
+                            active={true}
+                            content="Price (lowest to highest)"
+                            key="0"
+                            onClick={[Function]}
+                            selected={true}
+                            style={
+                              Object {
+                                "pointerEvents": "all",
+                              }
+                            }
+                            text="Sort by price (lowest first)"
+                            value="price"
+                          >
+                            <div
+                              aria-checked={true}
+                              aria-selected={true}
+                              className="active selected item"
+                              onClick={[Function]}
+                              role="option"
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                            >
+                              <span
+                                className="text"
+                              >
+                                Price (lowest to highest)
+                              </span>
+                            </div>
+                          </DropdownItem>
+                        </div>
+                      </DropdownMenu>
                     </div>
-                  </DropdownMenu>
-                </div>
+                  </RefFindNode>
+                </Ref>
               </Dropdown>
             </div>
           </Dropdown>
@@ -1496,16 +1605,43 @@ exports[`<PropertySearchResultList /> render if \`props.messageText\` is passed 
                     target="_self"
                     type="button"
                   >
-                    <button
-                      className="ui basic left floated button"
-                      href={null}
-                      onClick={[Function]}
-                      role="button"
-                      target="_self"
-                      type="button"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui basic left floated button"
+                            target="_self"
+                            type="button"
+                          >
+                            Some button text
+                          </button>,
+                        }
+                      }
                     >
-                      Some button text
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui basic left floated button"
+                              target="_self"
+                              type="button"
+                            >
+                              Some button text
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui basic left floated button"
+                          href={null}
+                          onClick={[Function]}
+                          target="_self"
+                          type="button"
+                        >
+                          Some button text
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Link>
               </div>
@@ -2456,6 +2592,7 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
                   content={null}
                 >
                   <Icon
+                    className={null}
                     color={null}
                     hasBorder={false}
                     isButton={false}
@@ -2482,6 +2619,7 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
                   content={null}
                 >
                   <Icon
+                    className={null}
                     color={null}
                     hasBorder={false}
                     isButton={false}
@@ -2525,41 +2663,91 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
                     type="prevItem"
                     value={1}
                   >
-                    <button
-                      className="ui basic circular button has-outline"
-                      onClick={[Function]}
-                      role="button"
-                      type="prevItem"
-                      value={1}
-                    >
-                      <Icon
-                        color={null}
-                        hasBorder={false}
-                        isButton={false}
-                        isCircular={false}
-                        isColorInverted={false}
-                        isDisabled={false}
-                        isLabelLeft={false}
-                        labelText={null}
-                        labelWeight={null}
-                        name="chevron left"
-                        path={null}
-                        size={null}
-                      >
-                        <i
-                          className="icon"
-                        >
-                          <svg
-                            viewBox="0 0 24 24"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui basic circular button has-outline"
+                            type="prevItem"
+                            value="1"
                           >
-                            <path
-                              d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </i>
-                      </Icon>
-                    </button>
+                            <i
+                              class="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </button>,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui basic circular button has-outline"
+                              type="prevItem"
+                              value="1"
+                            >
+                              <i
+                                class="icon"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui basic circular button has-outline"
+                          onClick={[Function]}
+                          type="prevItem"
+                          value={1}
+                        >
+                          <Icon
+                            className={null}
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="chevron left"
+                            path={null}
+                            size={null}
+                          >
+                            <i
+                              className="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                   <PaginationItem
                     active={true}
@@ -2572,8 +2760,8 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
                     <MenuItem
                       active={true}
                       aria-current={true}
+                      aria-disabled={false}
                       content={1}
-                      disabled={false}
                       onClick={[Function]}
                       onKeyDown={[Function]}
                       tabIndex={0}
@@ -2582,6 +2770,7 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
                     >
                       <a
                         aria-current={true}
+                        aria-disabled={false}
                         className="active item"
                         onClick={[Function]}
                         onKeyDown={[Function]}
@@ -2604,8 +2793,8 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
                     <MenuItem
                       active={false}
                       aria-current={false}
+                      aria-disabled={false}
                       content={2}
-                      disabled={false}
                       onClick={[Function]}
                       onKeyDown={[Function]}
                       tabIndex={0}
@@ -2614,6 +2803,7 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
                     >
                       <a
                         aria-current={false}
+                        aria-disabled={false}
                         className="item"
                         onClick={[Function]}
                         onKeyDown={[Function]}
@@ -2637,41 +2827,91 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
                     type="nextItem"
                     value={2}
                   >
-                    <button
-                      className="ui basic circular button has-outline"
-                      onClick={[Function]}
-                      role="button"
-                      type="nextItem"
-                      value={2}
-                    >
-                      <Icon
-                        color={null}
-                        hasBorder={false}
-                        isButton={false}
-                        isCircular={false}
-                        isColorInverted={false}
-                        isDisabled={false}
-                        isLabelLeft={false}
-                        labelText={null}
-                        labelWeight={null}
-                        name="chevron right"
-                        path={null}
-                        size={null}
-                      >
-                        <i
-                          className="icon"
-                        >
-                          <svg
-                            viewBox="0 0 24 24"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui basic circular button has-outline"
+                            type="nextItem"
+                            value="2"
                           >
-                            <path
-                              d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </i>
-                      </Icon>
-                    </button>
+                            <i
+                              class="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </button>,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui basic circular button has-outline"
+                              type="nextItem"
+                              value="2"
+                            >
+                              <i
+                                class="icon"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui basic circular button has-outline"
+                          onClick={[Function]}
+                          type="nextItem"
+                          value={2}
+                        >
+                          <Icon
+                            className={null}
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="chevron right"
+                            path={null}
+                            size={null}
+                          >
+                            <i
+                              className="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </div>
               </Menu>

@@ -82,6 +82,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
               getOptionsWithSearch={null}
               icon="map pin"
               initialValue={null}
+              isClearable={true}
               isCompact={false}
               isDisabled={false}
               isSearchable={false}
@@ -118,6 +119,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 className="dropdown-container"
               >
                 <Icon
+                  className={null}
                   color={null}
                   hasBorder={false}
                   isButton={false}
@@ -147,12 +149,15 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 <Dropdown
                   additionLabel="Add "
                   additionPosition="top"
+                  clearable={true}
                   closeOnBlur={true}
+                  closeOnEscape={true}
                   compact={false}
                   deburr={false}
                   disabled={false}
                   icon={
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -212,193 +217,369 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   value={null}
                   wrapSelection={true}
                 >
-                  <div
-                    aria-disabled={false}
-                    aria-expanded={false}
-                    className="ui selection dropdown"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseDown={[Function]}
-                    role="listbox"
-                    tabIndex={0}
-                  >
-                    <div
-                      aria-live="polite"
-                      className="text"
-                      role="alert"
-                    />
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isButton={false}
-                      isCircular={false}
-                      isColorInverted={false}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="caret down"
-                      onClick={[Function]}
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon"
-                        onClick={[Function]}
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          class="ui selection dropdown"
+                          role="listbox"
+                          tabindex="0"
                         >
-                          <path
-                            d="M20,8.5l-8,7-8-7Z"
-                            fill="currentColor"
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
                           />
-                        </svg>
-                      </i>
-                    </Icon>
-                    <DropdownMenu
-                      open={false}
+                          <i
+                            class="icon"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="false"
+                              aria-selected="true"
+                              class="selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Barcelona
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Valencia
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Madrid
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Bilbao
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-disabled="false"
+                            aria-expanded="false"
+                            class="ui selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            />
+                            <i
+                              class="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M20,8.5l-8,7-8-7Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="false"
+                                aria-selected="true"
+                                class="selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Barcelona
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Valencia
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Madrid
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Bilbao
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
                     >
                       <div
-                        className="menu transition"
+                        aria-disabled={false}
+                        aria-expanded={false}
+                        className="ui selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
                       >
-                        <DropdownItem
-                          active={false}
-                          key="0"
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          className=""
+                          color={null}
+                          hasBorder={false}
+                          isButton={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
                           onClick={[Function]}
-                          selected={true}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Barcelona"
-                          value="barcelona"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu
+                          open={false}
                         >
                           <div
-                            aria-checked={false}
-                            aria-selected={true}
-                            className="selected item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
+                            className="menu transition"
                           >
-                            <span
-                              className="text"
-                              key="Barcelona"
-                            >
-                              Barcelona
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="1"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Valencia"
-                          value="valencia"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                            <DropdownItem
+                              active={false}
+                              key="0"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Valencia"
+                              text="Barcelona"
+                              value="barcelona"
                             >
-                              Valencia
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="2"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Madrid"
-                          value="madrid"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Barcelona
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="1"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Madrid"
+                              text="Valencia"
+                              value="valencia"
                             >
-                              Madrid
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="3"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Bilbao"
-                          value="bilbao"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Valencia
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="2"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Bilbao"
+                              text="Madrid"
+                              value="madrid"
                             >
-                              Bilbao
-                            </span>
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Madrid
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="3"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Bilbao"
+                              value="bilbao"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Bilbao
+                                </span>
+                              </div>
+                            </DropdownItem>
                           </div>
-                        </DropdownItem>
+                        </DropdownMenu>
                       </div>
-                    </DropdownMenu>
-                  </div>
+                    </RefFindNode>
+                  </Ref>
                 </Dropdown>
                 <label
                   onClick={[Function]}
@@ -425,6 +606,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 as={[Function]}
                 endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
+                getWidth={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
                 name="dates"
@@ -478,6 +660,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         <DateRangePicker
                           customArrowIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -494,6 +677,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           }
                           customInputIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -518,6 +702,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           key=".0"
                           navNext={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -534,6 +719,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           }
                           navPrev={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -573,6 +759,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
               error={false}
               icon={
                 <Icon
+                  className={null}
                   color={null}
                   hasBorder={false}
                   isButton={false}
@@ -599,6 +786,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 error={false}
                 icon={
                   <Icon
+                    className={null}
                     color={null}
                     hasBorder={false}
                     isButton={false}
@@ -650,6 +838,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       Guests
                     </label>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -715,41 +904,91 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 size={null}
                 type="submit"
               >
-                <button
-                  className="ui circular left floated button"
-                  onClick={[Function]}
-                  role="button"
-                  type="submit"
-                >
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="search"
-                    path={null}
-                    size={null}
-                  >
-                    <i
-                      className="icon"
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
+                <Ref
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui circular left floated button"
+                        type="submit"
                       >
-                        <path
-                          d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </i>
-                  </Icon>
-                  Search
-                </button>
+                        <i
+                          class="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                        Search
+                      </button>,
+                    }
+                  }
+                >
+                  <RefFindNode
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular left floated button"
+                          type="submit"
+                        >
+                          <i
+                            class="icon"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                          Search
+                        </button>,
+                      }
+                    }
+                  >
+                    <button
+                      className="ui circular left floated button"
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Icon
+                        className={null}
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="search"
+                        path={null}
+                        size={null}
+                      >
+                        <i
+                          className="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                      Search
+                    </button>
+                  </RefFindNode>
+                </Ref>
               </Button>
             </Button>
           </div>
@@ -860,6 +1099,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                         getOptionsWithSearch={null}
                         icon="map pin"
                         initialValue={null}
+                        isClearable={true}
                         isCompact={false}
                         isDisabled={false}
                         isSearchable={false}
@@ -896,6 +1136,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           className="dropdown-container"
                         >
                           <Icon
+                            className={null}
                             color={null}
                             hasBorder={false}
                             isButton={false}
@@ -925,12 +1166,15 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           <Dropdown
                             additionLabel="Add "
                             additionPosition="top"
+                            clearable={true}
                             closeOnBlur={true}
+                            closeOnEscape={true}
                             compact={false}
                             deburr={false}
                             disabled={false}
                             icon={
                               <Icon
+                                className={null}
                                 color={null}
                                 hasBorder={false}
                                 isButton={false}
@@ -990,193 +1234,369 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             value={null}
                             wrapSelection={true}
                           >
-                            <div
-                              aria-disabled={false}
-                              aria-expanded={false}
-                              className="ui selection upward dropdown"
-                              onBlur={[Function]}
-                              onChange={[Function]}
-                              onClick={[Function]}
-                              onFocus={[Function]}
-                              onMouseDown={[Function]}
-                              role="listbox"
-                              tabIndex={0}
-                            >
-                              <div
-                                aria-live="polite"
-                                className="text"
-                                role="alert"
-                              />
-                              <Icon
-                                color={null}
-                                hasBorder={false}
-                                isButton={false}
-                                isCircular={false}
-                                isColorInverted={false}
-                                isDisabled={false}
-                                isLabelLeft={false}
-                                labelText={null}
-                                labelWeight={null}
-                                name="caret down"
-                                onClick={[Function]}
-                                path={null}
-                                size={null}
-                              >
-                                <i
-                                  className="icon"
-                                  onClick={[Function]}
-                                >
-                                  <svg
-                                    viewBox="0 0 24 24"
+                            <Ref
+                              innerRef={
+                                Object {
+                                  "current": <div
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    class="ui selection upward dropdown"
+                                    role="listbox"
+                                    tabindex="0"
                                   >
-                                    <path
-                                      d="M20,8.5l-8,7-8-7Z"
-                                      fill="currentColor"
+                                    <div
+                                      aria-atomic="true"
+                                      aria-live="polite"
+                                      class="text"
+                                      role="alert"
                                     />
-                                  </svg>
-                                </i>
-                              </Icon>
-                              <DropdownMenu
-                                open={false}
+                                    <i
+                                      class="icon"
+                                    >
+                                      <svg
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M20,8.5l-8,7-8-7Z"
+                                          fill="currentColor"
+                                        />
+                                      </svg>
+                                    </i>
+                                    <div
+                                      class="menu transition"
+                                    >
+                                      <div
+                                        aria-checked="false"
+                                        aria-selected="true"
+                                        class="selected item"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          Barcelona
+                                        </span>
+                                      </div>
+                                      <div
+                                        aria-checked="false"
+                                        aria-selected="false"
+                                        class="item"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          Valencia
+                                        </span>
+                                      </div>
+                                      <div
+                                        aria-checked="false"
+                                        aria-selected="false"
+                                        class="item"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          Madrid
+                                        </span>
+                                      </div>
+                                      <div
+                                        aria-checked="false"
+                                        aria-selected="false"
+                                        class="item"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          Bilbao
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>,
+                                }
+                              }
+                            >
+                              <RefFindNode
+                                innerRef={
+                                  Object {
+                                    "current": <div
+                                      aria-disabled="false"
+                                      aria-expanded="false"
+                                      class="ui selection upward dropdown"
+                                      role="listbox"
+                                      tabindex="0"
+                                    >
+                                      <div
+                                        aria-atomic="true"
+                                        aria-live="polite"
+                                        class="text"
+                                        role="alert"
+                                      />
+                                      <i
+                                        class="icon"
+                                      >
+                                        <svg
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            d="M20,8.5l-8,7-8-7Z"
+                                            fill="currentColor"
+                                          />
+                                        </svg>
+                                      </i>
+                                      <div
+                                        class="menu transition"
+                                      >
+                                        <div
+                                          aria-checked="false"
+                                          aria-selected="true"
+                                          class="selected item"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            Barcelona
+                                          </span>
+                                        </div>
+                                        <div
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            Valencia
+                                          </span>
+                                        </div>
+                                        <div
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            Madrid
+                                          </span>
+                                        </div>
+                                        <div
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            Bilbao
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>,
+                                  }
+                                }
                               >
                                 <div
-                                  className="menu transition"
+                                  aria-disabled={false}
+                                  aria-expanded={false}
+                                  className="ui selection upward dropdown"
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseDown={[Function]}
+                                  role="listbox"
+                                  tabIndex={0}
                                 >
-                                  <DropdownItem
-                                    active={false}
-                                    key="0"
+                                  <div
+                                    aria-atomic={true}
+                                    aria-live="polite"
+                                    className="text"
+                                    role="alert"
+                                  />
+                                  <Icon
+                                    className=""
+                                    color={null}
+                                    hasBorder={false}
+                                    isButton={false}
+                                    isCircular={false}
+                                    isColorInverted={false}
+                                    isDisabled={false}
+                                    isLabelLeft={false}
+                                    labelText={null}
+                                    labelWeight={null}
+                                    name="caret down"
                                     onClick={[Function]}
-                                    selected={true}
-                                    style={
-                                      Object {
-                                        "pointerEvents": "all",
-                                      }
-                                    }
-                                    text="Barcelona"
-                                    value="barcelona"
+                                    path={null}
+                                    size={null}
+                                  >
+                                    <i
+                                      className="icon"
+                                      onClick={[Function]}
+                                    >
+                                      <svg
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M20,8.5l-8,7-8-7Z"
+                                          fill="currentColor"
+                                        />
+                                      </svg>
+                                    </i>
+                                  </Icon>
+                                  <DropdownMenu
+                                    open={false}
                                   >
                                     <div
-                                      aria-checked={false}
-                                      aria-selected={true}
-                                      className="selected item"
-                                      onClick={[Function]}
-                                      role="option"
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
-                                        }
-                                      }
+                                      className="menu transition"
                                     >
-                                      <span
-                                        className="text"
-                                        key="Barcelona"
-                                      >
-                                        Barcelona
-                                      </span>
-                                    </div>
-                                  </DropdownItem>
-                                  <DropdownItem
-                                    active={false}
-                                    key="1"
-                                    onClick={[Function]}
-                                    selected={false}
-                                    style={
-                                      Object {
-                                        "pointerEvents": "all",
-                                      }
-                                    }
-                                    text="Valencia"
-                                    value="valencia"
-                                  >
-                                    <div
-                                      aria-checked={false}
-                                      aria-selected={false}
-                                      className="item"
-                                      onClick={[Function]}
-                                      role="option"
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
+                                      <DropdownItem
+                                        active={false}
+                                        key="0"
+                                        onClick={[Function]}
+                                        selected={true}
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
                                         }
-                                      }
-                                    >
-                                      <span
-                                        className="text"
-                                        key="Valencia"
+                                        text="Barcelona"
+                                        value="barcelona"
                                       >
-                                        Valencia
-                                      </span>
-                                    </div>
-                                  </DropdownItem>
-                                  <DropdownItem
-                                    active={false}
-                                    key="2"
-                                    onClick={[Function]}
-                                    selected={false}
-                                    style={
-                                      Object {
-                                        "pointerEvents": "all",
-                                      }
-                                    }
-                                    text="Madrid"
-                                    value="madrid"
-                                  >
-                                    <div
-                                      aria-checked={false}
-                                      aria-selected={false}
-                                      className="item"
-                                      onClick={[Function]}
-                                      role="option"
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
+                                        <div
+                                          aria-checked={false}
+                                          aria-selected={true}
+                                          className="selected item"
+                                          onClick={[Function]}
+                                          role="option"
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="text"
+                                          >
+                                            Barcelona
+                                          </span>
+                                        </div>
+                                      </DropdownItem>
+                                      <DropdownItem
+                                        active={false}
+                                        key="1"
+                                        onClick={[Function]}
+                                        selected={false}
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
                                         }
-                                      }
-                                    >
-                                      <span
-                                        className="text"
-                                        key="Madrid"
+                                        text="Valencia"
+                                        value="valencia"
                                       >
-                                        Madrid
-                                      </span>
-                                    </div>
-                                  </DropdownItem>
-                                  <DropdownItem
-                                    active={false}
-                                    key="3"
-                                    onClick={[Function]}
-                                    selected={false}
-                                    style={
-                                      Object {
-                                        "pointerEvents": "all",
-                                      }
-                                    }
-                                    text="Bilbao"
-                                    value="bilbao"
-                                  >
-                                    <div
-                                      aria-checked={false}
-                                      aria-selected={false}
-                                      className="item"
-                                      onClick={[Function]}
-                                      role="option"
-                                      style={
-                                        Object {
-                                          "pointerEvents": "all",
+                                        <div
+                                          aria-checked={false}
+                                          aria-selected={false}
+                                          className="item"
+                                          onClick={[Function]}
+                                          role="option"
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="text"
+                                          >
+                                            Valencia
+                                          </span>
+                                        </div>
+                                      </DropdownItem>
+                                      <DropdownItem
+                                        active={false}
+                                        key="2"
+                                        onClick={[Function]}
+                                        selected={false}
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
                                         }
-                                      }
-                                    >
-                                      <span
-                                        className="text"
-                                        key="Bilbao"
+                                        text="Madrid"
+                                        value="madrid"
                                       >
-                                        Bilbao
-                                      </span>
+                                        <div
+                                          aria-checked={false}
+                                          aria-selected={false}
+                                          className="item"
+                                          onClick={[Function]}
+                                          role="option"
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="text"
+                                          >
+                                            Madrid
+                                          </span>
+                                        </div>
+                                      </DropdownItem>
+                                      <DropdownItem
+                                        active={false}
+                                        key="3"
+                                        onClick={[Function]}
+                                        selected={false}
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
+                                        }
+                                        text="Bilbao"
+                                        value="bilbao"
+                                      >
+                                        <div
+                                          aria-checked={false}
+                                          aria-selected={false}
+                                          className="item"
+                                          onClick={[Function]}
+                                          role="option"
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="text"
+                                          >
+                                            Bilbao
+                                          </span>
+                                        </div>
+                                      </DropdownItem>
                                     </div>
-                                  </DropdownItem>
+                                  </DropdownMenu>
                                 </div>
-                              </DropdownMenu>
-                            </div>
+                              </RefFindNode>
+                            </Ref>
                           </Dropdown>
                           <label
                             onClick={[Function]}
@@ -1203,6 +1623,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           as={[Function]}
                           endDatePlaceholderText="Check out"
                           getIsDayBlocked={[Function]}
+                          getWidth={[Function]}
                           isUserOnMobile={false}
                           localeCode="ko"
                           name="dates"
@@ -1256,6 +1677,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                   <DateRangePicker
                                     customArrowIcon={
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -1272,6 +1694,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     }
                                     customInputIcon={
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -1296,6 +1719,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     key=".0"
                                     navNext={
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -1312,6 +1736,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     }
                                     navPrev={
                                       <Icon
+                                        className={null}
                                         color={null}
                                         hasBorder={false}
                                         isButton={false}
@@ -1351,6 +1776,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                         error={false}
                         icon={
                           <Icon
+                            className={null}
                             color={null}
                             hasBorder={false}
                             isButton={false}
@@ -1377,6 +1803,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           error={false}
                           icon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -1428,6 +1855,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 Guests
                               </label>
                               <Icon
+                                className={null}
                                 color={null}
                                 hasBorder={false}
                                 isButton={false}
@@ -1493,41 +1921,91 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           size={null}
                           type="submit"
                         >
-                          <button
-                            className="ui circular left floated button"
-                            onClick={[Function]}
-                            role="button"
-                            type="submit"
-                          >
-                            <Icon
-                              color={null}
-                              hasBorder={false}
-                              isButton={false}
-                              isCircular={false}
-                              isColorInverted={false}
-                              isDisabled={false}
-                              isLabelLeft={false}
-                              labelText={null}
-                              labelWeight={null}
-                              name="search"
-                              path={null}
-                              size={null}
-                            >
-                              <i
-                                className="icon"
-                              >
-                                <svg
-                                  viewBox="0 0 24 24"
+                          <Ref
+                            innerRef={
+                              Object {
+                                "current": <button
+                                  class="ui circular left floated button"
+                                  type="submit"
                                 >
-                                  <path
-                                    d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
-                                    fill="currentColor"
-                                  />
-                                </svg>
-                              </i>
-                            </Icon>
-                            Search
-                          </button>
+                                  <i
+                                    class="icon"
+                                  >
+                                    <svg
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                        fill="currentColor"
+                                      />
+                                    </svg>
+                                  </i>
+                                  Search
+                                </button>,
+                              }
+                            }
+                          >
+                            <RefFindNode
+                              innerRef={
+                                Object {
+                                  "current": <button
+                                    class="ui circular left floated button"
+                                    type="submit"
+                                  >
+                                    <i
+                                      class="icon"
+                                    >
+                                      <svg
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                          fill="currentColor"
+                                        />
+                                      </svg>
+                                    </i>
+                                    Search
+                                  </button>,
+                                }
+                              }
+                            >
+                              <button
+                                className="ui circular left floated button"
+                                onClick={[Function]}
+                                type="submit"
+                              >
+                                <Icon
+                                  className={null}
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="search"
+                                  path={null}
+                                  size={null}
+                                >
+                                  <i
+                                    className="icon"
+                                  >
+                                    <svg
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                        fill="currentColor"
+                                      />
+                                    </svg>
+                                  </i>
+                                </Icon>
+                                Search
+                              </button>
+                            </RefFindNode>
+                          </Ref>
                         </Button>
                       </Button>
                     </div>
@@ -1586,9 +2064,11 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                 }
               >
                 <Modal
+                  centered={true}
                   className="has-padding"
                   closeIcon={
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -1630,10 +2110,8 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                   }
                 >
                   <Portal
-                    className="ui inverted page modals dimmer transition visible active"
                     closeOnDocumentClick={false}
                     closeOnEscape={true}
-                    closeOnRootNodeClick={true}
                     eventPool="Modal"
                     mountNode={<body />}
                     onClose={[Function]}
@@ -1664,77 +2142,131 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                     <Ref
                       innerRef={[Function]}
                     >
-                      <Button
-                        hasShadow={false}
-                        icon="search"
-                        isCompact={false}
-                        isDisabled={false}
-                        isFluid={false}
-                        isFormSubmit={true}
-                        isLoading={false}
-                        isOutlined={false}
-                        isPositionedRight={false}
-                        isRounded={true}
-                        isSecondary={false}
-                        onBlur={[Function]}
-                        onClick={[Function]}
-                        onFocus={[Function]}
-                        onMouseEnter={[Function]}
-                        onMouseLeave={[Function]}
-                        size={null}
+                      <RefFindNode
+                        innerRef={[Function]}
                       >
                         <Button
-                          as="button"
-                          basic={false}
-                          circular={true}
-                          className=""
-                          compact={false}
-                          disabled={false}
-                          floated="left"
-                          fluid={false}
-                          loading={false}
+                          hasShadow={false}
+                          icon="search"
+                          isCompact={false}
+                          isDisabled={false}
+                          isFluid={false}
+                          isFormSubmit={true}
+                          isLoading={false}
+                          isOutlined={false}
+                          isPositionedRight={false}
+                          isRounded={true}
+                          isSecondary={false}
+                          onBlur={[Function]}
                           onClick={[Function]}
-                          secondary={false}
+                          onFocus={[Function]}
+                          onMouseEnter={[Function]}
+                          onMouseLeave={[Function]}
                           size={null}
-                          type="submit"
                         >
-                          <button
-                            className="ui circular left floated button"
+                          <Button
+                            as="button"
+                            basic={false}
+                            circular={true}
+                            className=""
+                            compact={false}
+                            disabled={false}
+                            floated="left"
+                            fluid={false}
+                            loading={false}
                             onClick={[Function]}
-                            role="button"
+                            secondary={false}
+                            size={null}
                             type="submit"
                           >
-                            <Icon
-                              color={null}
-                              hasBorder={false}
-                              isButton={false}
-                              isCircular={false}
-                              isColorInverted={false}
-                              isDisabled={false}
-                              isLabelLeft={false}
-                              labelText={null}
-                              labelWeight={null}
-                              name="search"
-                              path={null}
-                              size={null}
+                            <Ref
+                              innerRef={
+                                Object {
+                                  "current": <button
+                                    class="ui circular left floated button"
+                                    type="submit"
+                                  >
+                                    <i
+                                      class="icon"
+                                    >
+                                      <svg
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                          fill="currentColor"
+                                        />
+                                      </svg>
+                                    </i>
+                                    Search
+                                  </button>,
+                                }
+                              }
                             >
-                              <i
-                                className="icon"
+                              <RefFindNode
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui circular left floated button"
+                                      type="submit"
+                                    >
+                                      <i
+                                        class="icon"
+                                      >
+                                        <svg
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                            fill="currentColor"
+                                          />
+                                        </svg>
+                                      </i>
+                                      Search
+                                    </button>,
+                                  }
+                                }
                               >
-                                <svg
-                                  viewBox="0 0 24 24"
+                                <button
+                                  className="ui circular left floated button"
+                                  onClick={[Function]}
+                                  type="submit"
                                 >
-                                  <path
-                                    d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
-                                    fill="currentColor"
-                                  />
-                                </svg>
-                              </i>
-                            </Icon>
-                            Search
-                          </button>
+                                  <Icon
+                                    className={null}
+                                    color={null}
+                                    hasBorder={false}
+                                    isButton={false}
+                                    isCircular={false}
+                                    isColorInverted={false}
+                                    isDisabled={false}
+                                    isLabelLeft={false}
+                                    labelText={null}
+                                    labelWeight={null}
+                                    name="search"
+                                    path={null}
+                                    size={null}
+                                  >
+                                    <i
+                                      className="icon"
+                                    >
+                                      <svg
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                          fill="currentColor"
+                                        />
+                                      </svg>
+                                    </i>
+                                  </Icon>
+                                  Search
+                                </button>
+                              </RefFindNode>
+                            </Ref>
+                          </Button>
                         </Button>
-                      </Button>
+                      </RefFindNode>
                     </Ref>
                   </Portal>
                 </Modal>
@@ -1831,6 +2363,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
               getOptionsWithSearch={null}
               icon="map pin"
               initialValue={null}
+              isClearable={true}
               isCompact={false}
               isDisabled={false}
               isSearchable={false}
@@ -1867,6 +2400,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 className="dropdown-container"
               >
                 <Icon
+                  className={null}
                   color={null}
                   hasBorder={false}
                   isButton={false}
@@ -1896,12 +2430,15 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 <Dropdown
                   additionLabel="Add "
                   additionPosition="top"
+                  clearable={true}
                   closeOnBlur={true}
+                  closeOnEscape={true}
                   compact={false}
                   deburr={false}
                   disabled={false}
                   icon={
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -1961,193 +2498,369 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   value={null}
                   wrapSelection={true}
                 >
-                  <div
-                    aria-disabled={false}
-                    aria-expanded={false}
-                    className="ui selection dropdown"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseDown={[Function]}
-                    role="listbox"
-                    tabIndex={0}
-                  >
-                    <div
-                      aria-live="polite"
-                      className="text"
-                      role="alert"
-                    />
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isButton={false}
-                      isCircular={false}
-                      isColorInverted={false}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="caret down"
-                      onClick={[Function]}
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon"
-                        onClick={[Function]}
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          class="ui selection dropdown"
+                          role="listbox"
+                          tabindex="0"
                         >
-                          <path
-                            d="M20,8.5l-8,7-8-7Z"
-                            fill="currentColor"
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
                           />
-                        </svg>
-                      </i>
-                    </Icon>
-                    <DropdownMenu
-                      open={false}
+                          <i
+                            class="icon"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="false"
+                              aria-selected="true"
+                              class="selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Barcelona
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Valencia
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Madrid
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Bilbao
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-disabled="false"
+                            aria-expanded="false"
+                            class="ui selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            />
+                            <i
+                              class="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M20,8.5l-8,7-8-7Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="false"
+                                aria-selected="true"
+                                class="selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Barcelona
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Valencia
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Madrid
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Bilbao
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
                     >
                       <div
-                        className="menu transition"
+                        aria-disabled={false}
+                        aria-expanded={false}
+                        className="ui selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
                       >
-                        <DropdownItem
-                          active={false}
-                          key="0"
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          className=""
+                          color={null}
+                          hasBorder={false}
+                          isButton={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
                           onClick={[Function]}
-                          selected={true}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Barcelona"
-                          value="barcelona"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu
+                          open={false}
                         >
                           <div
-                            aria-checked={false}
-                            aria-selected={true}
-                            className="selected item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
+                            className="menu transition"
                           >
-                            <span
-                              className="text"
-                              key="Barcelona"
-                            >
-                              Barcelona
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="1"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Valencia"
-                          value="valencia"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                            <DropdownItem
+                              active={false}
+                              key="0"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Valencia"
+                              text="Barcelona"
+                              value="barcelona"
                             >
-                              Valencia
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="2"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Madrid"
-                          value="madrid"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Barcelona
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="1"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Madrid"
+                              text="Valencia"
+                              value="valencia"
                             >
-                              Madrid
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="3"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Bilbao"
-                          value="bilbao"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Valencia
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="2"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Bilbao"
+                              text="Madrid"
+                              value="madrid"
                             >
-                              Bilbao
-                            </span>
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Madrid
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="3"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Bilbao"
+                              value="bilbao"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Bilbao
+                                </span>
+                              </div>
+                            </DropdownItem>
                           </div>
-                        </DropdownItem>
+                        </DropdownMenu>
                       </div>
-                    </DropdownMenu>
-                  </div>
+                    </RefFindNode>
+                  </Ref>
                 </Dropdown>
                 <label
                   onClick={[Function]}
@@ -2174,6 +2887,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 as={[Function]}
                 endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
+                getWidth={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
                 name="dates"
@@ -2227,6 +2941,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         <DateRangePicker
                           customArrowIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -2243,6 +2958,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           }
                           customInputIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -2267,6 +2983,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           key=".0"
                           navNext={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -2283,6 +3000,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           }
                           navPrev={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -2322,6 +3040,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
               error={false}
               icon={
                 <Icon
+                  className={null}
                   color={null}
                   hasBorder={false}
                   isButton={false}
@@ -2348,6 +3067,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 error={false}
                 icon={
                   <Icon
+                    className={null}
                     color={null}
                     hasBorder={false}
                     isButton={false}
@@ -2399,6 +3119,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       Guests
                     </label>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -2464,41 +3185,91 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 size={null}
                 type="submit"
               >
-                <button
-                  className="ui circular left floated button"
-                  onClick={[Function]}
-                  role="button"
-                  type="submit"
-                >
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="search"
-                    path={null}
-                    size={null}
-                  >
-                    <i
-                      className="icon"
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
+                <Ref
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui circular left floated button"
+                        type="submit"
                       >
-                        <path
-                          d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </i>
-                  </Icon>
-                  Search
-                </button>
+                        <i
+                          class="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                        Search
+                      </button>,
+                    }
+                  }
+                >
+                  <RefFindNode
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular left floated button"
+                          type="submit"
+                        >
+                          <i
+                            class="icon"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                          Search
+                        </button>,
+                      }
+                    }
+                  >
+                    <button
+                      className="ui circular left floated button"
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Icon
+                        className={null}
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="search"
+                        path={null}
+                        size={null}
+                      >
+                        <i
+                          className="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                      Search
+                    </button>
+                  </RefFindNode>
+                </Ref>
               </Button>
             </Button>
           </div>
@@ -2591,6 +3362,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
               getOptionsWithSearch={null}
               icon="map pin"
               initialValue={null}
+              isClearable={true}
               isCompact={false}
               isDisabled={false}
               isSearchable={false}
@@ -2627,6 +3399,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 className="dropdown-container"
               >
                 <Icon
+                  className={null}
                   color={null}
                   hasBorder={false}
                   isButton={false}
@@ -2656,12 +3429,15 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 <Dropdown
                   additionLabel="Add "
                   additionPosition="top"
+                  clearable={true}
                   closeOnBlur={true}
+                  closeOnEscape={true}
                   compact={false}
                   deburr={false}
                   disabled={false}
                   icon={
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -2721,193 +3497,369 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   value={null}
                   wrapSelection={true}
                 >
-                  <div
-                    aria-disabled={false}
-                    aria-expanded={false}
-                    className="ui selection dropdown"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseDown={[Function]}
-                    role="listbox"
-                    tabIndex={0}
-                  >
-                    <div
-                      aria-live="polite"
-                      className="text"
-                      role="alert"
-                    />
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isButton={false}
-                      isCircular={false}
-                      isColorInverted={false}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="caret down"
-                      onClick={[Function]}
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon"
-                        onClick={[Function]}
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          class="ui selection dropdown"
+                          role="listbox"
+                          tabindex="0"
                         >
-                          <path
-                            d="M20,8.5l-8,7-8-7Z"
-                            fill="currentColor"
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
                           />
-                        </svg>
-                      </i>
-                    </Icon>
-                    <DropdownMenu
-                      open={false}
+                          <i
+                            class="icon"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="false"
+                              aria-selected="true"
+                              class="selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Barcelona
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Valencia
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Madrid
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Bilbao
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-disabled="false"
+                            aria-expanded="false"
+                            class="ui selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            />
+                            <i
+                              class="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M20,8.5l-8,7-8-7Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="false"
+                                aria-selected="true"
+                                class="selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Barcelona
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Valencia
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Madrid
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Bilbao
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
                     >
                       <div
-                        className="menu transition"
+                        aria-disabled={false}
+                        aria-expanded={false}
+                        className="ui selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
                       >
-                        <DropdownItem
-                          active={false}
-                          key="0"
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          className=""
+                          color={null}
+                          hasBorder={false}
+                          isButton={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
                           onClick={[Function]}
-                          selected={true}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Barcelona"
-                          value="barcelona"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu
+                          open={false}
                         >
                           <div
-                            aria-checked={false}
-                            aria-selected={true}
-                            className="selected item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
+                            className="menu transition"
                           >
-                            <span
-                              className="text"
-                              key="Barcelona"
-                            >
-                              Barcelona
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="1"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Valencia"
-                          value="valencia"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                            <DropdownItem
+                              active={false}
+                              key="0"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Valencia"
+                              text="Barcelona"
+                              value="barcelona"
                             >
-                              Valencia
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="2"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Madrid"
-                          value="madrid"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Barcelona
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="1"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Madrid"
+                              text="Valencia"
+                              value="valencia"
                             >
-                              Madrid
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="3"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Bilbao"
-                          value="bilbao"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Valencia
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="2"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Bilbao"
+                              text="Madrid"
+                              value="madrid"
                             >
-                              Bilbao
-                            </span>
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Madrid
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="3"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Bilbao"
+                              value="bilbao"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Bilbao
+                                </span>
+                              </div>
+                            </DropdownItem>
                           </div>
-                        </DropdownItem>
+                        </DropdownMenu>
                       </div>
-                    </DropdownMenu>
-                  </div>
+                    </RefFindNode>
+                  </Ref>
                 </Dropdown>
                 <label
                   onClick={[Function]}
@@ -2934,6 +3886,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 as={[Function]}
                 endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
+                getWidth={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
                 name="dates"
@@ -2987,6 +3940,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                         <DateRangePicker
                           customArrowIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -3003,6 +3957,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           }
                           customInputIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -3027,6 +3982,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           key=".0"
                           navNext={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -3043,6 +3999,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           }
                           navPrev={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -3082,6 +4039,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
               error={false}
               icon={
                 <Icon
+                  className={null}
                   color={null}
                   hasBorder={false}
                   isButton={false}
@@ -3108,6 +4066,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 error={false}
                 icon={
                   <Icon
+                    className={null}
                     color={null}
                     hasBorder={false}
                     isButton={false}
@@ -3159,6 +4118,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       Guests
                     </label>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -3224,41 +4184,91 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 size={null}
                 type="submit"
               >
-                <button
-                  className="ui circular left floated button"
-                  onClick={[Function]}
-                  role="button"
-                  type="submit"
-                >
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="search"
-                    path={null}
-                    size={null}
-                  >
-                    <i
-                      className="icon"
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
+                <Ref
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui circular left floated button"
+                        type="submit"
                       >
-                        <path
-                          d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </i>
-                  </Icon>
-                  Search
-                </button>
+                        <i
+                          class="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                        Search
+                      </button>,
+                    }
+                  }
+                >
+                  <RefFindNode
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular left floated button"
+                          type="submit"
+                        >
+                          <i
+                            class="icon"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                          Search
+                        </button>,
+                      }
+                    }
+                  >
+                    <button
+                      className="ui circular left floated button"
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Icon
+                        className={null}
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="search"
+                        path={null}
+                        size={null}
+                      >
+                        <i
+                          className="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                      Search
+                    </button>
+                  </RefFindNode>
+                </Ref>
               </Button>
             </Button>
           </div>
@@ -3341,6 +4351,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 as={[Function]}
                 endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
+                getWidth={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
                 name="dates"
@@ -3394,6 +4405,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         <DateRangePicker
                           customArrowIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -3410,6 +4422,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           }
                           customInputIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -3434,6 +4447,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           key=".0"
                           navNext={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -3450,6 +4464,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           }
                           navPrev={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -3489,6 +4504,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
               error={false}
               icon={
                 <Icon
+                  className={null}
                   color={null}
                   hasBorder={false}
                   isButton={false}
@@ -3515,6 +4531,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 error={false}
                 icon={
                   <Icon
+                    className={null}
                     color={null}
                     hasBorder={false}
                     isButton={false}
@@ -3566,6 +4583,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       Guests
                     </label>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -3631,41 +4649,91 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 size={null}
                 type="submit"
               >
-                <button
-                  className="ui circular left floated button"
-                  onClick={[Function]}
-                  role="button"
-                  type="submit"
-                >
-                  <Icon
-                    color={null}
-                    hasBorder={false}
-                    isButton={false}
-                    isCircular={false}
-                    isColorInverted={false}
-                    isDisabled={false}
-                    isLabelLeft={false}
-                    labelText={null}
-                    labelWeight={null}
-                    name="search"
-                    path={null}
-                    size={null}
-                  >
-                    <i
-                      className="icon"
-                    >
-                      <svg
-                        viewBox="0 0 24 24"
+                <Ref
+                  innerRef={
+                    Object {
+                      "current": <button
+                        class="ui circular left floated button"
+                        type="submit"
                       >
-                        <path
-                          d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
-                          fill="currentColor"
-                        />
-                      </svg>
-                    </i>
-                  </Icon>
-                  Search
-                </button>
+                        <i
+                          class="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                        Search
+                      </button>,
+                    }
+                  }
+                >
+                  <RefFindNode
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular left floated button"
+                          type="submit"
+                        >
+                          <i
+                            class="icon"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                          Search
+                        </button>,
+                      }
+                    }
+                  >
+                    <button
+                      className="ui circular left floated button"
+                      onClick={[Function]}
+                      type="submit"
+                    >
+                      <Icon
+                        className={null}
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="search"
+                        path={null}
+                        size={null}
+                      >
+                        <i
+                          className="icon"
+                        >
+                          <svg
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                      Search
+                    </button>
+                  </RefFindNode>
+                </Ref>
               </Button>
             </Button>
           </div>
@@ -3740,6 +4808,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
               getOptionsWithSearch={null}
               icon="map pin"
               initialValue={null}
+              isClearable={true}
               isCompact={false}
               isDisabled={false}
               isSearchable={false}
@@ -3776,6 +4845,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 className="dropdown-container"
               >
                 <Icon
+                  className={null}
                   color={null}
                   hasBorder={false}
                   isButton={false}
@@ -3805,12 +4875,15 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 <Dropdown
                   additionLabel="Add "
                   additionPosition="top"
+                  clearable={true}
                   closeOnBlur={true}
+                  closeOnEscape={true}
                   compact={false}
                   deburr={false}
                   disabled={false}
                   icon={
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}
@@ -3870,193 +4943,369 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   value={null}
                   wrapSelection={true}
                 >
-                  <div
-                    aria-disabled={false}
-                    aria-expanded={false}
-                    className="ui selection dropdown"
-                    onBlur={[Function]}
-                    onChange={[Function]}
-                    onClick={[Function]}
-                    onFocus={[Function]}
-                    onMouseDown={[Function]}
-                    role="listbox"
-                    tabIndex={0}
-                  >
-                    <div
-                      aria-live="polite"
-                      className="text"
-                      role="alert"
-                    />
-                    <Icon
-                      color={null}
-                      hasBorder={false}
-                      isButton={false}
-                      isCircular={false}
-                      isColorInverted={false}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="caret down"
-                      onClick={[Function]}
-                      path={null}
-                      size={null}
-                    >
-                      <i
-                        className="icon"
-                        onClick={[Function]}
-                      >
-                        <svg
-                          viewBox="0 0 24 24"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <div
+                          aria-disabled="false"
+                          aria-expanded="false"
+                          class="ui selection dropdown"
+                          role="listbox"
+                          tabindex="0"
                         >
-                          <path
-                            d="M20,8.5l-8,7-8-7Z"
-                            fill="currentColor"
+                          <div
+                            aria-atomic="true"
+                            aria-live="polite"
+                            class="text"
+                            role="alert"
                           />
-                        </svg>
-                      </i>
-                    </Icon>
-                    <DropdownMenu
-                      open={false}
+                          <i
+                            class="icon"
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                          <div
+                            class="menu transition"
+                          >
+                            <div
+                              aria-checked="false"
+                              aria-selected="true"
+                              class="selected item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Barcelona
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Valencia
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Madrid
+                              </span>
+                            </div>
+                            <div
+                              aria-checked="false"
+                              aria-selected="false"
+                              class="item"
+                              role="option"
+                              style="pointer-events: all;"
+                            >
+                              <span
+                                class="text"
+                              >
+                                Bilbao
+                              </span>
+                            </div>
+                          </div>
+                        </div>,
+                      }
+                    }
+                  >
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-disabled="false"
+                            aria-expanded="false"
+                            class="ui selection dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            <div
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="text"
+                              role="alert"
+                            />
+                            <i
+                              class="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M20,8.5l-8,7-8-7Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                            <div
+                              class="menu transition"
+                            >
+                              <div
+                                aria-checked="false"
+                                aria-selected="true"
+                                class="selected item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Barcelona
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Valencia
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Madrid
+                                </span>
+                              </div>
+                              <div
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  Bilbao
+                                </span>
+                              </div>
+                            </div>
+                          </div>,
+                        }
+                      }
                     >
                       <div
-                        className="menu transition"
+                        aria-disabled={false}
+                        aria-expanded={false}
+                        className="ui selection dropdown"
+                        onBlur={[Function]}
+                        onChange={[Function]}
+                        onClick={[Function]}
+                        onFocus={[Function]}
+                        onMouseDown={[Function]}
+                        role="listbox"
+                        tabIndex={0}
                       >
-                        <DropdownItem
-                          active={false}
-                          key="0"
+                        <div
+                          aria-atomic={true}
+                          aria-live="polite"
+                          className="text"
+                          role="alert"
+                        />
+                        <Icon
+                          className=""
+                          color={null}
+                          hasBorder={false}
+                          isButton={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="caret down"
                           onClick={[Function]}
-                          selected={true}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Barcelona"
-                          value="barcelona"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon"
+                            onClick={[Function]}
+                          >
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M20,8.5l-8,7-8-7Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <DropdownMenu
+                          open={false}
                         >
                           <div
-                            aria-checked={false}
-                            aria-selected={true}
-                            className="selected item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
+                            className="menu transition"
                           >
-                            <span
-                              className="text"
-                              key="Barcelona"
-                            >
-                              Barcelona
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="1"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Valencia"
-                          value="valencia"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                            <DropdownItem
+                              active={false}
+                              key="0"
+                              onClick={[Function]}
+                              selected={true}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Valencia"
+                              text="Barcelona"
+                              value="barcelona"
                             >
-                              Valencia
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="2"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Madrid"
-                          value="madrid"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                              <div
+                                aria-checked={false}
+                                aria-selected={true}
+                                className="selected item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Barcelona
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="1"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Madrid"
+                              text="Valencia"
+                              value="valencia"
                             >
-                              Madrid
-                            </span>
-                          </div>
-                        </DropdownItem>
-                        <DropdownItem
-                          active={false}
-                          key="3"
-                          onClick={[Function]}
-                          selected={false}
-                          style={
-                            Object {
-                              "pointerEvents": "all",
-                            }
-                          }
-                          text="Bilbao"
-                          value="bilbao"
-                        >
-                          <div
-                            aria-checked={false}
-                            aria-selected={false}
-                            className="item"
-                            onClick={[Function]}
-                            role="option"
-                            style={
-                              Object {
-                                "pointerEvents": "all",
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Valencia
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="2"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
                               }
-                            }
-                          >
-                            <span
-                              className="text"
-                              key="Bilbao"
+                              text="Madrid"
+                              value="madrid"
                             >
-                              Bilbao
-                            </span>
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Madrid
+                                </span>
+                              </div>
+                            </DropdownItem>
+                            <DropdownItem
+                              active={false}
+                              key="3"
+                              onClick={[Function]}
+                              selected={false}
+                              style={
+                                Object {
+                                  "pointerEvents": "all",
+                                }
+                              }
+                              text="Bilbao"
+                              value="bilbao"
+                            >
+                              <div
+                                aria-checked={false}
+                                aria-selected={false}
+                                className="item"
+                                onClick={[Function]}
+                                role="option"
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                              >
+                                <span
+                                  className="text"
+                                >
+                                  Bilbao
+                                </span>
+                              </div>
+                            </DropdownItem>
                           </div>
-                        </DropdownItem>
+                        </DropdownMenu>
                       </div>
-                    </DropdownMenu>
-                  </div>
+                    </RefFindNode>
+                  </Ref>
                 </Dropdown>
                 <label
                   onClick={[Function]}
@@ -4083,6 +5332,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 as={[Function]}
                 endDatePlaceholderText="Check out"
                 getIsDayBlocked={[Function]}
+                getWidth={[Function]}
                 isUserOnMobile={false}
                 localeCode="ko"
                 name="dates"
@@ -4136,6 +5386,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         <DateRangePicker
                           customArrowIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -4152,6 +5403,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           }
                           customInputIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -4176,6 +5428,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           key=".0"
                           navNext={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -4192,6 +5445,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           }
                           navPrev={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -4231,6 +5485,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
               error={false}
               icon={
                 <Icon
+                  className={null}
                   color={null}
                   hasBorder={false}
                   isButton={false}
@@ -4257,6 +5512,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 error={false}
                 icon={
                   <Icon
+                    className={null}
                     color={null}
                     hasBorder={false}
                     isButton={false}
@@ -4308,6 +5564,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       Guests
                     </label>
                     <Icon
+                      className={null}
                       color={null}
                       hasBorder={false}
                       isButton={false}

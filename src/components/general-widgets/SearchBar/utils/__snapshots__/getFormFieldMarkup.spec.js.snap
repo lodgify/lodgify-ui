@@ -13,6 +13,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
         getOptionsWithSearch={null}
         icon="map pin"
         initialValue={null}
+        isClearable={true}
         isCompact={false}
         isDisabled={false}
         isSearchable={false}
@@ -51,6 +52,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
         error={false}
         icon={
           <Icon
+            className={null}
             color={null}
             hasBorder={false}
             isButton={false}
@@ -105,6 +107,7 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
         error={false}
         icon={
           <Icon
+            className={null}
             color={null}
             hasBorder={false}
             isButton={false}

@@ -259,9 +259,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       <div
                         className="content"
                       >
-                        <p
-                          key="This is an error message"
-                        >
+                        <p>
                           This is an error message
                         </p>
                       </div>
@@ -285,93 +283,128 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                     target="_self"
                     type="button"
                   >
-                    <button
-                      className="ui basic left floated button"
-                      href={null}
-                      onClick={[Function]}
-                      role="button"
-                      target="_self"
-                      type="button"
-                    >
-                      <Modal
-                        hasCloseIcon={true}
-                        hasPadding={false}
-                        hasRoundedCorners={false}
-                        header={null}
-                        isFullscreen={false}
-                        onClose={[Function]}
-                        size="tiny"
-                        trigger={
-                          <span>
-                            Forgot password
-                          </span>
-                        }
-                      >
-                        <Modal
-                          className=""
-                          closeIcon={
-                            <Icon
-                              color={null}
-                              hasBorder={false}
-                              isButton={false}
-                              isCircular={false}
-                              isColorInverted={false}
-                              isDisabled={false}
-                              isLabelLeft={false}
-                              labelText={null}
-                              labelWeight={null}
-                              name="close"
-                              path={null}
-                              size={null}
-                            />
-                          }
-                          closeOnDimmerClick={true}
-                          closeOnDocumentClick={false}
-                          dimmer="inverted"
-                          eventPool="Modal"
-                          onClose={[Function]}
-                          size="tiny"
-                          trigger={
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui basic left floated button"
+                            target="_self"
+                            type="button"
+                          >
                             <span>
                               Forgot password
                             </span>
+                          </button>,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui basic left floated button"
+                              target="_self"
+                              type="button"
+                            >
+                              <span>
+                                Forgot password
+                              </span>
+                            </button>,
                           }
+                        }
+                      >
+                        <button
+                          className="ui basic left floated button"
+                          href={null}
+                          onClick={[Function]}
+                          target="_self"
+                          type="button"
                         >
-                          <Portal
-                            className="ui inverted page modals dimmer transition visible active"
-                            closeOnDocumentClick={false}
-                            closeOnEscape={true}
-                            closeOnRootNodeClick={true}
-                            eventPool="Modal"
-                            mountNode={<body />}
+                          <Modal
+                            hasCloseIcon={true}
+                            hasPadding={false}
+                            hasRoundedCorners={false}
+                            header={null}
+                            isFullscreen={false}
                             onClose={[Function]}
-                            onMount={[Function]}
-                            onOpen={[Function]}
-                            onUnmount={[Function]}
-                            openOnTriggerClick={true}
+                            size="tiny"
                             trigger={
                               <span>
                                 Forgot password
                               </span>
                             }
                           >
-                            <Ref
-                              innerRef={[Function]}
+                            <Modal
+                              centered={true}
+                              className=""
+                              closeIcon={
+                                <Icon
+                                  className={null}
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="close"
+                                  path={null}
+                                  size={null}
+                                />
+                              }
+                              closeOnDimmerClick={true}
+                              closeOnDocumentClick={false}
+                              dimmer="inverted"
+                              eventPool="Modal"
+                              onClose={[Function]}
+                              size="tiny"
+                              trigger={
+                                <span>
+                                  Forgot password
+                                </span>
+                              }
                             >
-                              <span
-                                onBlur={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseEnter={[Function]}
-                                onMouseLeave={[Function]}
+                              <Portal
+                                closeOnDocumentClick={false}
+                                closeOnEscape={true}
+                                eventPool="Modal"
+                                mountNode={<body />}
+                                onClose={[Function]}
+                                onMount={[Function]}
+                                onOpen={[Function]}
+                                onUnmount={[Function]}
+                                openOnTriggerClick={true}
+                                trigger={
+                                  <span>
+                                    Forgot password
+                                  </span>
+                                }
                               >
-                                Forgot password
-                              </span>
-                            </Ref>
-                          </Portal>
-                        </Modal>
-                      </Modal>
-                    </button>
+                                <Ref
+                                  innerRef={[Function]}
+                                >
+                                  <RefFindNode
+                                    innerRef={[Function]}
+                                  >
+                                    <span
+                                      onBlur={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseEnter={[Function]}
+                                      onMouseLeave={[Function]}
+                                    >
+                                      Forgot password
+                                    </span>
+                                  </RefFindNode>
+                                </Ref>
+                              </Portal>
+                            </Modal>
+                          </Modal>
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Link>
                 <Button
@@ -404,14 +437,39 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Log in
+                          </button>,
+                        }
+                      }
                     >
-                      Log in
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Log in
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Log in
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>
@@ -683,9 +741,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       <div
                         className="content"
                       >
-                        <p
-                          key="This is a successful message"
-                        >
+                        <p>
                           This is a successful message
                         </p>
                       </div>
@@ -709,93 +765,128 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                     target="_self"
                     type="button"
                   >
-                    <button
-                      className="ui basic left floated button"
-                      href={null}
-                      onClick={[Function]}
-                      role="button"
-                      target="_self"
-                      type="button"
-                    >
-                      <Modal
-                        hasCloseIcon={true}
-                        hasPadding={false}
-                        hasRoundedCorners={false}
-                        header={null}
-                        isFullscreen={false}
-                        onClose={[Function]}
-                        size="tiny"
-                        trigger={
-                          <span>
-                            Forgot password
-                          </span>
-                        }
-                      >
-                        <Modal
-                          className=""
-                          closeIcon={
-                            <Icon
-                              color={null}
-                              hasBorder={false}
-                              isButton={false}
-                              isCircular={false}
-                              isColorInverted={false}
-                              isDisabled={false}
-                              isLabelLeft={false}
-                              labelText={null}
-                              labelWeight={null}
-                              name="close"
-                              path={null}
-                              size={null}
-                            />
-                          }
-                          closeOnDimmerClick={true}
-                          closeOnDocumentClick={false}
-                          dimmer="inverted"
-                          eventPool="Modal"
-                          onClose={[Function]}
-                          size="tiny"
-                          trigger={
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui basic left floated button"
+                            target="_self"
+                            type="button"
+                          >
                             <span>
                               Forgot password
                             </span>
+                          </button>,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui basic left floated button"
+                              target="_self"
+                              type="button"
+                            >
+                              <span>
+                                Forgot password
+                              </span>
+                            </button>,
                           }
+                        }
+                      >
+                        <button
+                          className="ui basic left floated button"
+                          href={null}
+                          onClick={[Function]}
+                          target="_self"
+                          type="button"
                         >
-                          <Portal
-                            className="ui inverted page modals dimmer transition visible active"
-                            closeOnDocumentClick={false}
-                            closeOnEscape={true}
-                            closeOnRootNodeClick={true}
-                            eventPool="Modal"
-                            mountNode={<body />}
+                          <Modal
+                            hasCloseIcon={true}
+                            hasPadding={false}
+                            hasRoundedCorners={false}
+                            header={null}
+                            isFullscreen={false}
                             onClose={[Function]}
-                            onMount={[Function]}
-                            onOpen={[Function]}
-                            onUnmount={[Function]}
-                            openOnTriggerClick={true}
+                            size="tiny"
                             trigger={
                               <span>
                                 Forgot password
                               </span>
                             }
                           >
-                            <Ref
-                              innerRef={[Function]}
+                            <Modal
+                              centered={true}
+                              className=""
+                              closeIcon={
+                                <Icon
+                                  className={null}
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="close"
+                                  path={null}
+                                  size={null}
+                                />
+                              }
+                              closeOnDimmerClick={true}
+                              closeOnDocumentClick={false}
+                              dimmer="inverted"
+                              eventPool="Modal"
+                              onClose={[Function]}
+                              size="tiny"
+                              trigger={
+                                <span>
+                                  Forgot password
+                                </span>
+                              }
                             >
-                              <span
-                                onBlur={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseEnter={[Function]}
-                                onMouseLeave={[Function]}
+                              <Portal
+                                closeOnDocumentClick={false}
+                                closeOnEscape={true}
+                                eventPool="Modal"
+                                mountNode={<body />}
+                                onClose={[Function]}
+                                onMount={[Function]}
+                                onOpen={[Function]}
+                                onUnmount={[Function]}
+                                openOnTriggerClick={true}
+                                trigger={
+                                  <span>
+                                    Forgot password
+                                  </span>
+                                }
                               >
-                                Forgot password
-                              </span>
-                            </Ref>
-                          </Portal>
-                        </Modal>
-                      </Modal>
-                    </button>
+                                <Ref
+                                  innerRef={[Function]}
+                                >
+                                  <RefFindNode
+                                    innerRef={[Function]}
+                                  >
+                                    <span
+                                      onBlur={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseEnter={[Function]}
+                                      onMouseLeave={[Function]}
+                                    >
+                                      Forgot password
+                                    </span>
+                                  </RefFindNode>
+                                </Ref>
+                              </Portal>
+                            </Modal>
+                          </Modal>
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Link>
                 <Button
@@ -828,14 +919,39 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Log in
+                          </button>,
+                        }
+                      }
                     >
-                      Log in
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Log in
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Log in
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>
@@ -1113,93 +1229,128 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                     target="_self"
                     type="button"
                   >
-                    <button
-                      className="ui basic left floated button"
-                      href={null}
-                      onClick={[Function]}
-                      role="button"
-                      target="_self"
-                      type="button"
-                    >
-                      <Modal
-                        hasCloseIcon={true}
-                        hasPadding={false}
-                        hasRoundedCorners={false}
-                        header={null}
-                        isFullscreen={false}
-                        onClose={[Function]}
-                        size="tiny"
-                        trigger={
-                          <span>
-                            Forgot password
-                          </span>
-                        }
-                      >
-                        <Modal
-                          className=""
-                          closeIcon={
-                            <Icon
-                              color={null}
-                              hasBorder={false}
-                              isButton={false}
-                              isCircular={false}
-                              isColorInverted={false}
-                              isDisabled={false}
-                              isLabelLeft={false}
-                              labelText={null}
-                              labelWeight={null}
-                              name="close"
-                              path={null}
-                              size={null}
-                            />
-                          }
-                          closeOnDimmerClick={true}
-                          closeOnDocumentClick={false}
-                          dimmer="inverted"
-                          eventPool="Modal"
-                          onClose={[Function]}
-                          size="tiny"
-                          trigger={
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui basic left floated button"
+                            target="_self"
+                            type="button"
+                          >
                             <span>
                               Forgot password
                             </span>
+                          </button>,
+                        }
+                      }
+                    >
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui basic left floated button"
+                              target="_self"
+                              type="button"
+                            >
+                              <span>
+                                Forgot password
+                              </span>
+                            </button>,
                           }
+                        }
+                      >
+                        <button
+                          className="ui basic left floated button"
+                          href={null}
+                          onClick={[Function]}
+                          target="_self"
+                          type="button"
                         >
-                          <Portal
-                            className="ui inverted page modals dimmer transition visible active"
-                            closeOnDocumentClick={false}
-                            closeOnEscape={true}
-                            closeOnRootNodeClick={true}
-                            eventPool="Modal"
-                            mountNode={<body />}
+                          <Modal
+                            hasCloseIcon={true}
+                            hasPadding={false}
+                            hasRoundedCorners={false}
+                            header={null}
+                            isFullscreen={false}
                             onClose={[Function]}
-                            onMount={[Function]}
-                            onOpen={[Function]}
-                            onUnmount={[Function]}
-                            openOnTriggerClick={true}
+                            size="tiny"
                             trigger={
                               <span>
                                 Forgot password
                               </span>
                             }
                           >
-                            <Ref
-                              innerRef={[Function]}
+                            <Modal
+                              centered={true}
+                              className=""
+                              closeIcon={
+                                <Icon
+                                  className={null}
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="close"
+                                  path={null}
+                                  size={null}
+                                />
+                              }
+                              closeOnDimmerClick={true}
+                              closeOnDocumentClick={false}
+                              dimmer="inverted"
+                              eventPool="Modal"
+                              onClose={[Function]}
+                              size="tiny"
+                              trigger={
+                                <span>
+                                  Forgot password
+                                </span>
+                              }
                             >
-                              <span
-                                onBlur={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseEnter={[Function]}
-                                onMouseLeave={[Function]}
+                              <Portal
+                                closeOnDocumentClick={false}
+                                closeOnEscape={true}
+                                eventPool="Modal"
+                                mountNode={<body />}
+                                onClose={[Function]}
+                                onMount={[Function]}
+                                onOpen={[Function]}
+                                onUnmount={[Function]}
+                                openOnTriggerClick={true}
+                                trigger={
+                                  <span>
+                                    Forgot password
+                                  </span>
+                                }
                               >
-                                Forgot password
-                              </span>
-                            </Ref>
-                          </Portal>
-                        </Modal>
-                      </Modal>
-                    </button>
+                                <Ref
+                                  innerRef={[Function]}
+                                >
+                                  <RefFindNode
+                                    innerRef={[Function]}
+                                  >
+                                    <span
+                                      onBlur={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseEnter={[Function]}
+                                      onMouseLeave={[Function]}
+                                    >
+                                      Forgot password
+                                    </span>
+                                  </RefFindNode>
+                                </Ref>
+                              </Portal>
+                            </Modal>
+                          </Modal>
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Link>
                 <Button
@@ -1232,14 +1383,39 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Log in
+                          </button>,
+                        }
+                      }
                     >
-                      Log in
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Log in
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Log in
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>

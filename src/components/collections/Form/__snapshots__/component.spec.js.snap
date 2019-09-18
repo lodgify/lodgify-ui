@@ -74,14 +74,39 @@ exports[`<Form /> by default should render the correct structure 1`] = `
                   size={null}
                   type="submit"
                 >
-                  <button
-                    className="ui circular right floated button"
-                    onClick={[Function]}
-                    role="button"
-                    type="submit"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular right floated button"
+                          type="submit"
+                        >
+                          Send
+                        </button>,
+                      }
+                    }
                   >
-                    Send
-                  </button>
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui circular right floated button"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </RefFindNode>
+                  </Ref>
                 </Button>
               </Button>
             </form>
@@ -159,16 +184,43 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
                   target="_self"
                   type="button"
                 >
-                  <button
-                    className="ui basic left floated button"
-                    href={null}
-                    onClick={[Function]}
-                    role="button"
-                    target="_self"
-                    type="button"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui basic left floated button"
+                          target="_self"
+                          type="button"
+                        >
+                          mayday
+                        </button>,
+                      }
+                    }
                   >
-                    mayday
-                  </button>
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui basic left floated button"
+                            target="_self"
+                            type="button"
+                          >
+                            mayday
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui basic left floated button"
+                        href={null}
+                        onClick={[Function]}
+                        target="_self"
+                        type="button"
+                      >
+                        mayday
+                      </button>
+                    </RefFindNode>
+                  </Ref>
                 </Button>
               </Link>
               <Button
@@ -201,14 +253,39 @@ exports[`<Form /> if \`props.actionLink\` is passed should render the correct st
                   size={null}
                   type="submit"
                 >
-                  <button
-                    className="ui circular right floated button"
-                    onClick={[Function]}
-                    role="button"
-                    type="submit"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular right floated button"
+                          type="submit"
+                        >
+                          Send
+                        </button>,
+                      }
+                    }
                   >
-                    Send
-                  </button>
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui circular right floated button"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </RefFindNode>
+                  </Ref>
                 </Button>
               </Button>
             </form>
@@ -278,9 +355,7 @@ exports[`<Form /> if \`props.errorMessage\` is passed should render the correct 
                     <div
                       className="content"
                     >
-                      <p
-                        key="This is an error message"
-                      >
+                      <p>
                         This is an error message
                       </p>
                     </div>
@@ -317,14 +392,39 @@ exports[`<Form /> if \`props.errorMessage\` is passed should render the correct 
                   size={null}
                   type="submit"
                 >
-                  <button
-                    className="ui circular right floated button"
-                    onClick={[Function]}
-                    role="button"
-                    type="submit"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular right floated button"
+                          type="submit"
+                        >
+                          Send
+                        </button>,
+                      }
+                    }
                   >
-                    Send
-                  </button>
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui circular right floated button"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </RefFindNode>
+                  </Ref>
                 </Button>
               </Button>
             </form>
@@ -436,14 +536,39 @@ exports[`<Form /> if \`props.headingText\` is passed should render the correct s
                   size={null}
                   type="submit"
                 >
-                  <button
-                    className="ui circular right floated button"
-                    onClick={[Function]}
-                    role="button"
-                    type="submit"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular right floated button"
+                          type="submit"
+                        >
+                          Send
+                        </button>,
+                      }
+                    }
                   >
-                    Send
-                  </button>
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui circular right floated button"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </RefFindNode>
+                  </Ref>
                 </Button>
               </Button>
             </form>
@@ -529,14 +654,39 @@ exports[`<Form /> if \`props.submitButtonText\` is an empty string should render
                   size={null}
                   type="submit"
                 >
-                  <button
-                    className="ui circular right floated button"
-                    onClick={[Function]}
-                    role="button"
-                    type="submit"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular right floated button"
+                          type="submit"
+                        >
+                          Send
+                        </button>,
+                      }
+                    }
                   >
-                    Send
-                  </button>
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui circular right floated button"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </RefFindNode>
+                  </Ref>
                 </Button>
               </Button>
             </form>
@@ -622,14 +772,39 @@ exports[`<Form /> if \`props.submitButtonText\` is passed should render the corr
                   size={null}
                   type="submit"
                 >
-                  <button
-                    className="ui circular right floated button"
-                    onClick={[Function]}
-                    role="button"
-                    type="submit"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular right floated button"
+                          type="submit"
+                        >
+                          someText
+                        </button>,
+                      }
+                    }
                   >
-                    someText
-                  </button>
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            someText
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui circular right floated button"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        someText
+                      </button>
+                    </RefFindNode>
+                  </Ref>
                 </Button>
               </Button>
             </form>
@@ -699,9 +874,7 @@ exports[`<Form /> if \`props.successMessage\` is passed should render the correc
                     <div
                       className="content"
                     >
-                      <p
-                        key="This is a successful message"
-                      >
+                      <p>
                         This is a successful message
                       </p>
                     </div>
@@ -738,14 +911,39 @@ exports[`<Form /> if \`props.successMessage\` is passed should render the correc
                   size={null}
                   type="submit"
                 >
-                  <button
-                    className="ui circular right floated button"
-                    onClick={[Function]}
-                    role="button"
-                    type="submit"
+                  <Ref
+                    innerRef={
+                      Object {
+                        "current": <button
+                          class="ui circular right floated button"
+                          type="submit"
+                        >
+                          Send
+                        </button>,
+                      }
+                    }
                   >
-                    Send
-                  </button>
+                    <RefFindNode
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
+                    >
+                      <button
+                        className="ui circular right floated button"
+                        onClick={[Function]}
+                        type="submit"
+                      >
+                        Send
+                      </button>
+                    </RefFindNode>
+                  </Ref>
                 </Button>
               </Button>
             </form>

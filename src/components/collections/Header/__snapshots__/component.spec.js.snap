@@ -183,9 +183,11 @@ exports[`<Header /> by default should render the right structure 1`] = `
                     additionPosition="top"
                     className=""
                     closeOnBlur={true}
+                    closeOnEscape={true}
                     deburr={false}
                     icon={
                       <Icon
+                        className={null}
                         color={null}
                         hasBorder={false}
                         isButton={false}
@@ -243,191 +245,362 @@ exports[`<Header /> by default should render the right structure 1`] = `
                     value={null}
                     wrapSelection={true}
                   >
-                    <div
-                      aria-expanded={false}
-                      className="ui item simple scrolling top left pointing dropdown"
-                      name={null}
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseDown={[Function]}
-                      role="listbox"
-                      tabIndex={0}
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-expanded="false"
+                            class="ui item simple scrolling top left pointing dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            All properties
+                            <i
+                              class="icon small"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M20,8.5l-8,7-8-7Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                            <div
+                              class="menu transition"
+                            >
+                              <a
+                                aria-checked="false"
+                                aria-selected="true"
+                                class="selected item"
+                                href="/la-casa-viva"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  La Casa Viva
+                                </span>
+                              </a>
+                              <a
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                href="/la-casa-muerta"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  La Casa Muerta
+                                </span>
+                              </a>
+                              <a
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                href="/the-white-lodge"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  The White Lodge
+                                </span>
+                              </a>
+                              <a
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                href="/the-black-lodge"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  The Black Lodge
+                                </span>
+                              </a>
+                            </div>
+                          </div>,
+                        }
+                      }
                     >
-                      All properties
-                      <Icon
-                        color={null}
-                        hasBorder={false}
-                        isButton={false}
-                        isCircular={false}
-                        isColorInverted={false}
-                        isDisabled={false}
-                        isLabelLeft={false}
-                        labelText={null}
-                        labelWeight={null}
-                        name="caret down"
-                        onClick={[Function]}
-                        path={null}
-                        size="small"
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <div
+                              aria-expanded="false"
+                              class="ui item simple scrolling top left pointing dropdown"
+                              role="listbox"
+                              tabindex="0"
+                            >
+                              All properties
+                              <i
+                                class="icon small"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M20,8.5l-8,7-8-7Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                              <div
+                                class="menu transition"
+                              >
+                                <a
+                                  aria-checked="false"
+                                  aria-selected="true"
+                                  class="selected item"
+                                  href="/la-casa-viva"
+                                  role="option"
+                                  style="pointer-events: all;"
+                                >
+                                  <span
+                                    class="text"
+                                  >
+                                    La Casa Viva
+                                  </span>
+                                </a>
+                                <a
+                                  aria-checked="false"
+                                  aria-selected="false"
+                                  class="item"
+                                  href="/la-casa-muerta"
+                                  role="option"
+                                  style="pointer-events: all;"
+                                >
+                                  <span
+                                    class="text"
+                                  >
+                                    La Casa Muerta
+                                  </span>
+                                </a>
+                                <a
+                                  aria-checked="false"
+                                  aria-selected="false"
+                                  class="item"
+                                  href="/the-white-lodge"
+                                  role="option"
+                                  style="pointer-events: all;"
+                                >
+                                  <span
+                                    class="text"
+                                  >
+                                    The White Lodge
+                                  </span>
+                                </a>
+                                <a
+                                  aria-checked="false"
+                                  aria-selected="false"
+                                  class="item"
+                                  href="/the-black-lodge"
+                                  role="option"
+                                  style="pointer-events: all;"
+                                >
+                                  <span
+                                    class="text"
+                                  >
+                                    The Black Lodge
+                                  </span>
+                                </a>
+                              </div>
+                            </div>,
+                          }
+                        }
                       >
-                        <i
-                          className="icon small"
-                          onClick={[Function]}
-                        >
-                          <svg
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M20,8.5l-8,7-8-7Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </i>
-                      </Icon>
-                      <DropdownMenu>
                         <div
-                          className="menu transition"
+                          aria-expanded={false}
+                          className="ui item simple scrolling top left pointing dropdown"
+                          name={null}
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseDown={[Function]}
+                          role="listbox"
+                          tabIndex={0}
                         >
-                          <DropdownItem
-                            active={false}
-                            href="/la-casa-viva"
-                            key="La Casa Viva"
+                          All properties
+                          <Icon
+                            className=""
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="caret down"
                             onClick={[Function]}
-                            selected={true}
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
-                            text="La Casa Viva"
+                            path={null}
+                            size="small"
                           >
-                            <a
-                              aria-checked={false}
-                              aria-selected={true}
-                              className="selected item"
-                              href="/la-casa-viva"
+                            <i
+                              className="icon small"
                               onClick={[Function]}
-                              role="option"
-                              style={
-                                Object {
-                                  "pointerEvents": "all",
-                                }
-                              }
                             >
-                              <span
-                                className="text"
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M20,8.5l-8,7-8-7Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                          <DropdownMenu>
+                            <div
+                              className="menu transition"
+                            >
+                              <DropdownItem
+                                active={false}
+                                href="/la-casa-viva"
                                 key="La Casa Viva"
-                              >
-                                La Casa Viva
-                              </span>
-                            </a>
-                          </DropdownItem>
-                          <DropdownItem
-                            active={false}
-                            href="/la-casa-muerta"
-                            key="La Casa Muerta"
-                            onClick={[Function]}
-                            selected={false}
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
-                            text="La Casa Muerta"
-                          >
-                            <a
-                              aria-checked={false}
-                              aria-selected={false}
-                              className="item"
-                              href="/la-casa-muerta"
-                              onClick={[Function]}
-                              role="option"
-                              style={
-                                Object {
-                                  "pointerEvents": "all",
+                                onClick={[Function]}
+                                selected={true}
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
                                 }
-                              }
-                            >
-                              <span
-                                className="text"
+                                text="La Casa Viva"
+                              >
+                                <a
+                                  aria-checked={false}
+                                  aria-selected={true}
+                                  className="selected item"
+                                  href="/la-casa-viva"
+                                  onClick={[Function]}
+                                  role="option"
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="text"
+                                  >
+                                    La Casa Viva
+                                  </span>
+                                </a>
+                              </DropdownItem>
+                              <DropdownItem
+                                active={false}
+                                href="/la-casa-muerta"
                                 key="La Casa Muerta"
-                              >
-                                La Casa Muerta
-                              </span>
-                            </a>
-                          </DropdownItem>
-                          <DropdownItem
-                            active={false}
-                            href="/the-white-lodge"
-                            key="The White Lodge"
-                            onClick={[Function]}
-                            selected={false}
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
-                            text="The White Lodge"
-                          >
-                            <a
-                              aria-checked={false}
-                              aria-selected={false}
-                              className="item"
-                              href="/the-white-lodge"
-                              onClick={[Function]}
-                              role="option"
-                              style={
-                                Object {
-                                  "pointerEvents": "all",
+                                onClick={[Function]}
+                                selected={false}
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
                                 }
-                              }
-                            >
-                              <span
-                                className="text"
+                                text="La Casa Muerta"
+                              >
+                                <a
+                                  aria-checked={false}
+                                  aria-selected={false}
+                                  className="item"
+                                  href="/la-casa-muerta"
+                                  onClick={[Function]}
+                                  role="option"
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="text"
+                                  >
+                                    La Casa Muerta
+                                  </span>
+                                </a>
+                              </DropdownItem>
+                              <DropdownItem
+                                active={false}
+                                href="/the-white-lodge"
                                 key="The White Lodge"
-                              >
-                                The White Lodge
-                              </span>
-                            </a>
-                          </DropdownItem>
-                          <DropdownItem
-                            active={false}
-                            href="/the-black-lodge"
-                            key="The Black Lodge"
-                            onClick={[Function]}
-                            selected={false}
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
-                            text="The Black Lodge"
-                          >
-                            <a
-                              aria-checked={false}
-                              aria-selected={false}
-                              className="item"
-                              href="/the-black-lodge"
-                              onClick={[Function]}
-                              role="option"
-                              style={
-                                Object {
-                                  "pointerEvents": "all",
+                                onClick={[Function]}
+                                selected={false}
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
                                 }
-                              }
-                            >
-                              <span
-                                className="text"
-                                key="The Black Lodge"
+                                text="The White Lodge"
                               >
-                                The Black Lodge
-                              </span>
-                            </a>
-                          </DropdownItem>
+                                <a
+                                  aria-checked={false}
+                                  aria-selected={false}
+                                  className="item"
+                                  href="/the-white-lodge"
+                                  onClick={[Function]}
+                                  role="option"
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="text"
+                                  >
+                                    The White Lodge
+                                  </span>
+                                </a>
+                              </DropdownItem>
+                              <DropdownItem
+                                active={false}
+                                href="/the-black-lodge"
+                                key="The Black Lodge"
+                                onClick={[Function]}
+                                selected={false}
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                                text="The Black Lodge"
+                              >
+                                <a
+                                  aria-checked={false}
+                                  aria-selected={false}
+                                  className="item"
+                                  href="/the-black-lodge"
+                                  onClick={[Function]}
+                                  role="option"
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="text"
+                                  >
+                                    The Black Lodge
+                                  </span>
+                                </a>
+                              </DropdownItem>
+                            </div>
+                          </DropdownMenu>
                         </div>
-                      </DropdownMenu>
-                    </div>
+                      </RefFindNode>
+                    </Ref>
                   </Dropdown>
                 </Submenu>
                 <MenuItem
@@ -684,6 +857,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                         size="tiny"
                         trigger={
                           <Icon
+                            className={null}
                             color={null}
                             hasBorder={false}
                             isButton={false}
@@ -700,9 +874,11 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                         }
                       >
                         <Modal
+                          centered={true}
                           className=""
                           closeIcon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -725,6 +901,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                           size="fullscreen"
                           trigger={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -741,10 +918,8 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                           }
                         >
                           <Portal
-                            className="ui inverted page modals dimmer transition visible active"
                             closeOnDocumentClick={false}
                             closeOnEscape={true}
-                            closeOnRootNodeClick={true}
                             eventPool="Modal"
                             mountNode={<body />}
                             onClose={[Function]}
@@ -754,6 +929,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                             openOnTriggerClick={true}
                             trigger={
                               <Icon
+                                className={null}
                                 color={null}
                                 hasBorder={false}
                                 isButton={false}
@@ -772,43 +948,48 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                             <Ref
                               innerRef={[Function]}
                             >
-                              <Icon
-                                color={null}
-                                hasBorder={false}
-                                isButton={false}
-                                isCircular={false}
-                                isColorInverted={false}
-                                isDisabled={false}
-                                isLabelLeft={false}
-                                labelText={null}
-                                labelWeight={null}
-                                name="bars"
-                                onBlur={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseEnter={[Function]}
-                                onMouseLeave={[Function]}
-                                path={null}
-                                size={null}
+                              <RefFindNode
+                                innerRef={[Function]}
                               >
-                                <i
-                                  className="icon"
+                                <Icon
+                                  className={null}
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="bars"
                                   onBlur={[Function]}
                                   onClick={[Function]}
                                   onFocus={[Function]}
                                   onMouseEnter={[Function]}
                                   onMouseLeave={[Function]}
+                                  path={null}
+                                  size={null}
                                 >
-                                  <svg
-                                    viewBox="0 0 24 24"
+                                  <i
+                                    className="icon"
+                                    onBlur={[Function]}
+                                    onClick={[Function]}
+                                    onFocus={[Function]}
+                                    onMouseEnter={[Function]}
+                                    onMouseLeave={[Function]}
                                   >
-                                    <path
-                                      d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
-                                      fill="currentColor"
-                                    />
-                                  </svg>
-                                </i>
-                              </Icon>
+                                    <svg
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                                        fill="currentColor"
+                                      />
+                                    </svg>
+                                  </i>
+                                </Icon>
+                              </RefFindNode>
                             </Ref>
                           </Portal>
                         </Modal>
@@ -1009,9 +1190,11 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                     additionPosition="top"
                     className=""
                     closeOnBlur={true}
+                    closeOnEscape={true}
                     deburr={false}
                     icon={
                       <Icon
+                        className={null}
                         color={null}
                         hasBorder={false}
                         isButton={false}
@@ -1069,191 +1252,362 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                     value={null}
                     wrapSelection={true}
                   >
-                    <div
-                      aria-expanded={false}
-                      className="ui item simple scrolling top left pointing dropdown"
-                      name={null}
-                      onBlur={[Function]}
-                      onChange={[Function]}
-                      onClick={[Function]}
-                      onFocus={[Function]}
-                      onMouseDown={[Function]}
-                      role="listbox"
-                      tabIndex={0}
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <div
+                            aria-expanded="false"
+                            class="ui item simple scrolling top left pointing dropdown"
+                            role="listbox"
+                            tabindex="0"
+                          >
+                            All properties
+                            <i
+                              class="icon small"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M20,8.5l-8,7-8-7Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                            <div
+                              class="menu transition"
+                            >
+                              <a
+                                aria-checked="false"
+                                aria-selected="true"
+                                class="selected item"
+                                href="/la-casa-viva"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  La Casa Viva
+                                </span>
+                              </a>
+                              <a
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                href="/la-casa-muerta"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  La Casa Muerta
+                                </span>
+                              </a>
+                              <a
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                href="/the-white-lodge"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  The White Lodge
+                                </span>
+                              </a>
+                              <a
+                                aria-checked="false"
+                                aria-selected="false"
+                                class="item"
+                                href="/the-black-lodge"
+                                role="option"
+                                style="pointer-events: all;"
+                              >
+                                <span
+                                  class="text"
+                                >
+                                  The Black Lodge
+                                </span>
+                              </a>
+                            </div>
+                          </div>,
+                        }
+                      }
                     >
-                      All properties
-                      <Icon
-                        color={null}
-                        hasBorder={false}
-                        isButton={false}
-                        isCircular={false}
-                        isColorInverted={false}
-                        isDisabled={false}
-                        isLabelLeft={false}
-                        labelText={null}
-                        labelWeight={null}
-                        name="caret down"
-                        onClick={[Function]}
-                        path={null}
-                        size="small"
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <div
+                              aria-expanded="false"
+                              class="ui item simple scrolling top left pointing dropdown"
+                              role="listbox"
+                              tabindex="0"
+                            >
+                              All properties
+                              <i
+                                class="icon small"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M20,8.5l-8,7-8-7Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                              </i>
+                              <div
+                                class="menu transition"
+                              >
+                                <a
+                                  aria-checked="false"
+                                  aria-selected="true"
+                                  class="selected item"
+                                  href="/la-casa-viva"
+                                  role="option"
+                                  style="pointer-events: all;"
+                                >
+                                  <span
+                                    class="text"
+                                  >
+                                    La Casa Viva
+                                  </span>
+                                </a>
+                                <a
+                                  aria-checked="false"
+                                  aria-selected="false"
+                                  class="item"
+                                  href="/la-casa-muerta"
+                                  role="option"
+                                  style="pointer-events: all;"
+                                >
+                                  <span
+                                    class="text"
+                                  >
+                                    La Casa Muerta
+                                  </span>
+                                </a>
+                                <a
+                                  aria-checked="false"
+                                  aria-selected="false"
+                                  class="item"
+                                  href="/the-white-lodge"
+                                  role="option"
+                                  style="pointer-events: all;"
+                                >
+                                  <span
+                                    class="text"
+                                  >
+                                    The White Lodge
+                                  </span>
+                                </a>
+                                <a
+                                  aria-checked="false"
+                                  aria-selected="false"
+                                  class="item"
+                                  href="/the-black-lodge"
+                                  role="option"
+                                  style="pointer-events: all;"
+                                >
+                                  <span
+                                    class="text"
+                                  >
+                                    The Black Lodge
+                                  </span>
+                                </a>
+                              </div>
+                            </div>,
+                          }
+                        }
                       >
-                        <i
-                          className="icon small"
-                          onClick={[Function]}
-                        >
-                          <svg
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              d="M20,8.5l-8,7-8-7Z"
-                              fill="currentColor"
-                            />
-                          </svg>
-                        </i>
-                      </Icon>
-                      <DropdownMenu>
                         <div
-                          className="menu transition"
+                          aria-expanded={false}
+                          className="ui item simple scrolling top left pointing dropdown"
+                          name={null}
+                          onBlur={[Function]}
+                          onChange={[Function]}
+                          onClick={[Function]}
+                          onFocus={[Function]}
+                          onMouseDown={[Function]}
+                          role="listbox"
+                          tabIndex={0}
                         >
-                          <DropdownItem
-                            active={false}
-                            href="/la-casa-viva"
-                            key="La Casa Viva"
+                          All properties
+                          <Icon
+                            className=""
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="caret down"
                             onClick={[Function]}
-                            selected={true}
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
-                            text="La Casa Viva"
+                            path={null}
+                            size="small"
                           >
-                            <a
-                              aria-checked={false}
-                              aria-selected={true}
-                              className="selected item"
-                              href="/la-casa-viva"
+                            <i
+                              className="icon small"
                               onClick={[Function]}
-                              role="option"
-                              style={
-                                Object {
-                                  "pointerEvents": "all",
-                                }
-                              }
                             >
-                              <span
-                                className="text"
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M20,8.5l-8,7-8-7Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                          <DropdownMenu>
+                            <div
+                              className="menu transition"
+                            >
+                              <DropdownItem
+                                active={false}
+                                href="/la-casa-viva"
                                 key="La Casa Viva"
-                              >
-                                La Casa Viva
-                              </span>
-                            </a>
-                          </DropdownItem>
-                          <DropdownItem
-                            active={false}
-                            href="/la-casa-muerta"
-                            key="La Casa Muerta"
-                            onClick={[Function]}
-                            selected={false}
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
-                            text="La Casa Muerta"
-                          >
-                            <a
-                              aria-checked={false}
-                              aria-selected={false}
-                              className="item"
-                              href="/la-casa-muerta"
-                              onClick={[Function]}
-                              role="option"
-                              style={
-                                Object {
-                                  "pointerEvents": "all",
+                                onClick={[Function]}
+                                selected={true}
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
                                 }
-                              }
-                            >
-                              <span
-                                className="text"
+                                text="La Casa Viva"
+                              >
+                                <a
+                                  aria-checked={false}
+                                  aria-selected={true}
+                                  className="selected item"
+                                  href="/la-casa-viva"
+                                  onClick={[Function]}
+                                  role="option"
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="text"
+                                  >
+                                    La Casa Viva
+                                  </span>
+                                </a>
+                              </DropdownItem>
+                              <DropdownItem
+                                active={false}
+                                href="/la-casa-muerta"
                                 key="La Casa Muerta"
-                              >
-                                La Casa Muerta
-                              </span>
-                            </a>
-                          </DropdownItem>
-                          <DropdownItem
-                            active={false}
-                            href="/the-white-lodge"
-                            key="The White Lodge"
-                            onClick={[Function]}
-                            selected={false}
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
-                            text="The White Lodge"
-                          >
-                            <a
-                              aria-checked={false}
-                              aria-selected={false}
-                              className="item"
-                              href="/the-white-lodge"
-                              onClick={[Function]}
-                              role="option"
-                              style={
-                                Object {
-                                  "pointerEvents": "all",
+                                onClick={[Function]}
+                                selected={false}
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
                                 }
-                              }
-                            >
-                              <span
-                                className="text"
+                                text="La Casa Muerta"
+                              >
+                                <a
+                                  aria-checked={false}
+                                  aria-selected={false}
+                                  className="item"
+                                  href="/la-casa-muerta"
+                                  onClick={[Function]}
+                                  role="option"
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="text"
+                                  >
+                                    La Casa Muerta
+                                  </span>
+                                </a>
+                              </DropdownItem>
+                              <DropdownItem
+                                active={false}
+                                href="/the-white-lodge"
                                 key="The White Lodge"
-                              >
-                                The White Lodge
-                              </span>
-                            </a>
-                          </DropdownItem>
-                          <DropdownItem
-                            active={false}
-                            href="/the-black-lodge"
-                            key="The Black Lodge"
-                            onClick={[Function]}
-                            selected={false}
-                            style={
-                              Object {
-                                "pointerEvents": "all",
-                              }
-                            }
-                            text="The Black Lodge"
-                          >
-                            <a
-                              aria-checked={false}
-                              aria-selected={false}
-                              className="item"
-                              href="/the-black-lodge"
-                              onClick={[Function]}
-                              role="option"
-                              style={
-                                Object {
-                                  "pointerEvents": "all",
+                                onClick={[Function]}
+                                selected={false}
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
                                 }
-                              }
-                            >
-                              <span
-                                className="text"
-                                key="The Black Lodge"
+                                text="The White Lodge"
                               >
-                                The Black Lodge
-                              </span>
-                            </a>
-                          </DropdownItem>
+                                <a
+                                  aria-checked={false}
+                                  aria-selected={false}
+                                  className="item"
+                                  href="/the-white-lodge"
+                                  onClick={[Function]}
+                                  role="option"
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="text"
+                                  >
+                                    The White Lodge
+                                  </span>
+                                </a>
+                              </DropdownItem>
+                              <DropdownItem
+                                active={false}
+                                href="/the-black-lodge"
+                                key="The Black Lodge"
+                                onClick={[Function]}
+                                selected={false}
+                                style={
+                                  Object {
+                                    "pointerEvents": "all",
+                                  }
+                                }
+                                text="The Black Lodge"
+                              >
+                                <a
+                                  aria-checked={false}
+                                  aria-selected={false}
+                                  className="item"
+                                  href="/the-black-lodge"
+                                  onClick={[Function]}
+                                  role="option"
+                                  style={
+                                    Object {
+                                      "pointerEvents": "all",
+                                    }
+                                  }
+                                >
+                                  <span
+                                    className="text"
+                                  >
+                                    The Black Lodge
+                                  </span>
+                                </a>
+                              </DropdownItem>
+                            </div>
+                          </DropdownMenu>
                         </div>
-                      </DropdownMenu>
-                    </div>
+                      </RefFindNode>
+                    </Ref>
                   </Dropdown>
                 </Submenu>
                 <MenuItem

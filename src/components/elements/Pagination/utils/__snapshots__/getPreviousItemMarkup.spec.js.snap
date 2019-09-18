@@ -6,39 +6,85 @@ exports[`getPreviousItemMarkup if \`isShowingPageNumbers\` is false should retur
   circular={true}
   content={null}
 >
-  <button
-    className="ui circular button"
-    onClick={[Function]}
-    role="button"
-  >
-    <Icon
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={true}
-      isDisabled={false}
-      isLabelLeft={false}
-      labelText={null}
-      labelWeight={null}
-      name="chevron left"
-      path={null}
-      size={null}
-    >
-      <i
-        className="icon inverted"
-      >
-        <svg
-          viewBox="0 0 24 24"
+  <Ref
+    innerRef={
+      Object {
+        "current": <button
+          class="ui circular button"
         >
-          <path
-            d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
-            fill="currentColor"
-          />
-        </svg>
-      </i>
-    </Icon>
-  </button>
+          <i
+            class="icon inverted"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </button>,
+      }
+    }
+  >
+    <RefFindNode
+      innerRef={
+        Object {
+          "current": <button
+            class="ui circular button"
+          >
+            <i
+              class="icon inverted"
+            >
+              <svg
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </i>
+          </button>,
+        }
+      }
+    >
+      <button
+        className="ui circular button"
+        onClick={[Function]}
+      >
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={true}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="chevron left"
+          path={null}
+          size={null}
+        >
+          <i
+            className="icon inverted"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </Icon>
+      </button>
+    </RefFindNode>
+  </Ref>
 </Button>
 `;
 
@@ -50,38 +96,84 @@ exports[`getPreviousItemMarkup if \`isShowingPageNumbers\` is true should return
   className="has-outline"
   content={null}
 >
-  <button
-    className="ui basic circular button has-outline"
-    onClick={[Function]}
-    role="button"
-  >
-    <Icon
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={false}
-      isLabelLeft={false}
-      labelText={null}
-      labelWeight={null}
-      name="chevron left"
-      path={null}
-      size={null}
-    >
-      <i
-        className="icon"
-      >
-        <svg
-          viewBox="0 0 24 24"
+  <Ref
+    innerRef={
+      Object {
+        "current": <button
+          class="ui basic circular button has-outline"
         >
-          <path
-            d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
-            fill="currentColor"
-          />
-        </svg>
-      </i>
-    </Icon>
-  </button>
+          <i
+            class="icon"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </button>,
+      }
+    }
+  >
+    <RefFindNode
+      innerRef={
+        Object {
+          "current": <button
+            class="ui basic circular button has-outline"
+          >
+            <i
+              class="icon"
+            >
+              <svg
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </i>
+          </button>,
+        }
+      }
+    >
+      <button
+        className="ui basic circular button has-outline"
+        onClick={[Function]}
+      >
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="chevron left"
+          path={null}
+          size={null}
+        >
+          <i
+            className="icon"
+          >
+            <svg
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                fill="currentColor"
+              />
+            </svg>
+          </i>
+        </Icon>
+      </button>
+    </RefFindNode>
+  </Ref>
 </Button>
 `;

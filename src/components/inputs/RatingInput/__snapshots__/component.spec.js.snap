@@ -44,6 +44,7 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
             className="ui small rating"
             onMouseLeave={[Function]}
             role="radiogroup"
+            tabIndex={-1}
             value=""
           >
             <RatingIcon
@@ -57,6 +58,7 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}
@@ -81,6 +83,7 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}
@@ -105,6 +108,7 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}
@@ -129,6 +133,7 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}
@@ -153,6 +158,7 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}
@@ -229,6 +235,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
             className="ui small rating"
             onMouseLeave={[Function]}
             role="radiogroup"
+            tabIndex={-1}
             value=""
           >
             <RatingIcon
@@ -242,6 +249,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}
@@ -266,6 +274,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}
@@ -290,6 +299,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}
@@ -314,6 +324,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}
@@ -338,6 +349,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
               onClick={[Function]}
               onMouseEnter={[Function]}
               selected={false}
+              tabIndex={0}
             >
               <i
                 aria-checked={false}

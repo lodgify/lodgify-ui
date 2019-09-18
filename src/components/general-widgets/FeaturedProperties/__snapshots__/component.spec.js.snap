@@ -180,6 +180,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                       className="ui tiny disabled rating"
                       onMouseLeave={[Function]}
                       role="radiogroup"
+                      tabIndex={0}
                     >
                       <RatingIcon
                         active={true}
@@ -192,6 +193,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -202,7 +204,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -216,6 +218,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -226,7 +229,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -240,6 +243,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -250,7 +254,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -264,6 +268,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -274,7 +279,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -288,6 +293,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={true}
@@ -298,7 +304,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                     </div>
@@ -490,6 +496,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                       className="ui tiny disabled rating"
                       onMouseLeave={[Function]}
                       role="radiogroup"
+                      tabIndex={0}
                     >
                       <RatingIcon
                         active={true}
@@ -502,6 +509,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -512,7 +520,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -526,6 +534,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -536,7 +545,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -550,6 +559,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -560,7 +570,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -574,6 +584,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -584,7 +595,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -598,6 +609,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={true}
@@ -608,7 +620,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                     </div>
@@ -854,6 +866,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                       className="ui tiny disabled rating"
                       onMouseLeave={[Function]}
                       role="radiogroup"
+                      tabIndex={0}
                     >
                       <RatingIcon
                         active={true}
@@ -866,6 +879,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -876,7 +890,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -890,6 +904,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -900,7 +915,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -914,6 +929,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -924,7 +940,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -938,6 +954,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -948,7 +965,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -962,6 +979,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={true}
@@ -972,7 +990,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                     </div>
@@ -1164,6 +1182,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                       className="ui tiny disabled rating"
                       onMouseLeave={[Function]}
                       role="radiogroup"
+                      tabIndex={0}
                     >
                       <RatingIcon
                         active={true}
@@ -1176,6 +1195,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -1186,7 +1206,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -1200,6 +1220,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -1210,7 +1231,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -1224,6 +1245,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -1234,7 +1256,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -1248,6 +1270,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={false}
@@ -1258,7 +1281,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                       <RatingIcon
@@ -1272,6 +1295,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                         onClick={[Function]}
                         onMouseEnter={[Function]}
                         selected={false}
+                        tabIndex={-1}
                       >
                         <i
                           aria-checked={true}
@@ -1282,7 +1306,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                           onKeyUp={[Function]}
                           onMouseEnter={[Function]}
                           role="radio"
-                          tabIndex={0}
+                          tabIndex={-1}
                         />
                       </RatingIcon>
                     </div>

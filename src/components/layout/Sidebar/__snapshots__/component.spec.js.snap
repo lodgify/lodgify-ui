@@ -8,19 +8,15 @@ exports[`<Sidebar /> if \`hasCloseIcon\` is \`true\` should render the right str
   renderSidebarContent={[Function]}
   willSlideFromTop={false}
 >
-  <SidebarPushable>
-    <div
-      className="pushable"
-    >
+  <Pushable>
+    <div>
       <Sidebar
         animation="overlay"
-        direction="left"
         visible={false}
       >
-        <div
-          className="ui overlay left sidebar"
-        >
+        <div>
           <Icon
+            className={null}
             color={null}
             hasBorder={false}
             isButton={false}
@@ -54,17 +50,15 @@ exports[`<Sidebar /> if \`hasCloseIcon\` is \`true\` should render the right str
           </div>
         </div>
       </Sidebar>
-      <SidebarPusher
+      <Pusher
         dimmed={false}
       >
-        <div
-          className="pusher"
-        >
+        <div>
           '🚸'
         </div>
-      </SidebarPusher>
+      </Pusher>
     </div>
-  </SidebarPushable>
+  </Pushable>
 </Sidebar>
 `;
 
@@ -76,34 +70,27 @@ exports[`<Sidebar /> if \`isVisible\` is \`true\` should render the right struct
   renderSidebarContent={[Function]}
   willSlideFromTop={false}
 >
-  <SidebarPushable>
-    <div
-      className="pushable"
-    >
+  <Pushable>
+    <div>
       <Sidebar
         animation="overlay"
-        direction="left"
         visible={true}
       >
-        <div
-          className="ui overlay left visible sidebar"
-        >
+        <div>
           <div>
             Some content
           </div>
         </div>
       </Sidebar>
-      <SidebarPusher
+      <Pusher
         dimmed={true}
       >
-        <div
-          className="pusher dimmed"
-        >
+        <div>
           '🚸'
         </div>
-      </SidebarPusher>
+      </Pusher>
     </div>
-  </SidebarPushable>
+  </Pushable>
 </Sidebar>
 `;
 
@@ -115,34 +102,28 @@ exports[`<Sidebar /> if \`willSlideFromTop\` is \`true\` should render the right
   renderSidebarContent={[Function]}
   willSlideFromTop={true}
 >
-  <SidebarPushable>
-    <div
-      className="pushable"
-    >
+  <Pushable>
+    <div>
       <Sidebar
         animation="overlay"
         direction="top"
         visible={false}
       >
-        <div
-          className="ui overlay top sidebar"
-        >
+        <div>
           <div>
             Some content
           </div>
         </div>
       </Sidebar>
-      <SidebarPusher
+      <Pusher
         dimmed={false}
       >
-        <div
-          className="pusher"
-        >
+        <div>
           '🚸'
         </div>
-      </SidebarPusher>
+      </Pusher>
     </div>
-  </SidebarPushable>
+  </Pushable>
 </Sidebar>
 `;
 
@@ -154,33 +135,26 @@ exports[`<Sidebar /> should render the right structure 1`] = `
   renderSidebarContent={[Function]}
   willSlideFromTop={false}
 >
-  <SidebarPushable>
-    <div
-      className="pushable"
-    >
+  <Pushable>
+    <div>
       <Sidebar
         animation="overlay"
-        direction="left"
         visible={false}
       >
-        <div
-          className="ui overlay left sidebar"
-        >
+        <div>
           <div>
             Some content
           </div>
         </div>
       </Sidebar>
-      <SidebarPusher
+      <Pusher
         dimmed={false}
       >
-        <div
-          className="pusher"
-        >
+        <div>
           '🚸'
         </div>
-      </SidebarPusher>
+      </Pusher>
     </div>
-  </SidebarPushable>
+  </Pushable>
 </Sidebar>
 `;

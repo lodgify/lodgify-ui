@@ -647,6 +647,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                       <Responsive
                         as={[Function]}
                         endDatePlaceholderText="Departure"
+                        getWidth={[Function]}
                         isUserOnMobile={false}
                         name="dates"
                         onBlur={[Function]}
@@ -698,6 +699,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                 <DateRangePicker
                                   customArrowIcon={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -714,6 +716,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   }
                                   customInputIcon={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -738,6 +741,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   key=".0"
                                   navNext={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -754,6 +758,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   }
                                   navPrev={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -886,14 +891,39 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
                     >
-                      Send
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Send
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Send
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>
@@ -1553,6 +1583,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                       <Responsive
                         as={[Function]}
                         endDatePlaceholderText="Departure"
+                        getWidth={[Function]}
                         isUserOnMobile={false}
                         name="dates"
                         onBlur={[Function]}
@@ -1604,6 +1635,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                 <DateRangePicker
                                   customArrowIcon={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -1620,6 +1652,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   }
                                   customInputIcon={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -1644,6 +1677,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   key=".0"
                                   navNext={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -1660,6 +1694,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   }
                                   navPrev={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -1838,30 +1873,91 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                 onChange={[Function]}
                                 onClick={[Function]}
                                 onMouseDown={[Function]}
+                                onMouseUp={[Function]}
                               >
-                                <input
-                                  checked={false}
-                                  className="hidden"
-                                  onClick={[Function]}
-                                  readOnly={true}
-                                  tabIndex={0}
-                                  type="checkbox"
-                                />
-                                <label
-                                  className="privacy-consent-label"
+                                <Ref
+                                  innerRef={
+                                    Object {
+                                      "current": <input
+                                        class="hidden"
+                                        readonly=""
+                                        tabindex="0"
+                                        type="checkbox"
+                                        value=""
+                                      />,
+                                    }
+                                  }
                                 >
-                                  <Paragraph
-                                    isCompact={false}
-                                    size="medium"
-                                    weight={null}
+                                  <RefFindNode
+                                    innerRef={
+                                      Object {
+                                        "current": <input
+                                          class="hidden"
+                                          readonly=""
+                                          tabindex="0"
+                                          type="checkbox"
+                                          value=""
+                                        />,
+                                      }
+                                    }
                                   >
-                                    <p
-                                      className=""
+                                    <input
+                                      checked={false}
+                                      className="hidden"
+                                      disabled={false}
+                                      readOnly={true}
+                                      tabIndex={0}
+                                      type="checkbox"
+                                    />
+                                  </RefFindNode>
+                                </Ref>
+                                <Ref
+                                  innerRef={
+                                    Object {
+                                      "current": <label
+                                        class="privacy-consent-label"
+                                      >
+                                        <p
+                                          class=""
+                                        >
+                                          I accept the privacy policy.
+                                        </p>
+                                      </label>,
+                                    }
+                                  }
+                                >
+                                  <RefFindNode
+                                    innerRef={
+                                      Object {
+                                        "current": <label
+                                          class="privacy-consent-label"
+                                        >
+                                          <p
+                                            class=""
+                                          >
+                                            I accept the privacy policy.
+                                          </p>
+                                        </label>,
+                                      }
+                                    }
+                                  >
+                                    <label
+                                      className="privacy-consent-label"
                                     >
-                                      I accept the privacy policy.
-                                    </p>
-                                  </Paragraph>
-                                </label>
+                                      <Paragraph
+                                        isCompact={false}
+                                        size="medium"
+                                        weight={null}
+                                      >
+                                        <p
+                                          className=""
+                                        >
+                                          I accept the privacy policy.
+                                        </p>
+                                      </Paragraph>
+                                    </label>
+                                  </RefFindNode>
+                                </Ref>
                               </div>
                             </Checkbox>
                           </div>
@@ -1900,14 +1996,39 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
                     >
-                      Send
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Send
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Send
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>
@@ -2586,6 +2707,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                       <Responsive
                         as={[Function]}
                         endDatePlaceholderText="Departure"
+                        getWidth={[Function]}
                         isUserOnMobile={false}
                         name="dates"
                         onBlur={[Function]}
@@ -2637,6 +2759,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 <DateRangePicker
                                   customArrowIcon={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -2653,6 +2776,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   }
                                   customInputIcon={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -2677,6 +2801,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   key=".0"
                                   navNext={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -2693,6 +2818,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   }
                                   navPrev={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -2797,6 +2923,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                       getOptionsWithSearch={null}
                       icon={null}
                       initialValue={null}
+                      isClearable={true}
                       isCompact={false}
                       isDisabled={false}
                       isSearchable={false}
@@ -2835,12 +2962,15 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                         <Dropdown
                           additionLabel="Add "
                           additionPosition="top"
+                          clearable={true}
                           closeOnBlur={true}
+                          closeOnEscape={true}
                           compact={false}
                           deburr={false}
                           disabled={false}
                           icon={
                             <Icon
+                              className={null}
                               color={null}
                               hasBorder={false}
                               isButton={false}
@@ -2900,193 +3030,369 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           value={null}
                           wrapSelection={true}
                         >
-                          <div
-                            aria-disabled={false}
-                            aria-expanded={false}
-                            className="ui selection dropdown"
-                            onBlur={[Function]}
-                            onChange={[Function]}
-                            onClick={[Function]}
-                            onFocus={[Function]}
-                            onMouseDown={[Function]}
-                            role="listbox"
-                            tabIndex={0}
-                          >
-                            <div
-                              aria-live="polite"
-                              className="text"
-                              role="alert"
-                            />
-                            <Icon
-                              color={null}
-                              hasBorder={false}
-                              isButton={false}
-                              isCircular={false}
-                              isColorInverted={false}
-                              isDisabled={false}
-                              isLabelLeft={false}
-                              labelText={null}
-                              labelWeight={null}
-                              name="caret down"
-                              onClick={[Function]}
-                              path={null}
-                              size={null}
-                            >
-                              <i
-                                className="icon"
-                                onClick={[Function]}
-                              >
-                                <svg
-                                  viewBox="0 0 24 24"
+                          <Ref
+                            innerRef={
+                              Object {
+                                "current": <div
+                                  aria-disabled="false"
+                                  aria-expanded="false"
+                                  class="ui selection dropdown"
+                                  role="listbox"
+                                  tabindex="0"
                                 >
-                                  <path
-                                    d="M20,8.5l-8,7-8-7Z"
-                                    fill="currentColor"
+                                  <div
+                                    aria-atomic="true"
+                                    aria-live="polite"
+                                    class="text"
+                                    role="alert"
                                   />
-                                </svg>
-                              </i>
-                            </Icon>
-                            <DropdownMenu
-                              open={false}
+                                  <i
+                                    class="icon"
+                                  >
+                                    <svg
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M20,8.5l-8,7-8-7Z"
+                                        fill="currentColor"
+                                      />
+                                    </svg>
+                                  </i>
+                                  <div
+                                    class="menu transition"
+                                  >
+                                    <div
+                                      aria-checked="false"
+                                      aria-selected="true"
+                                      class="selected item"
+                                      role="option"
+                                      style="pointer-events: all;"
+                                    >
+                                      <span
+                                        class="text"
+                                      >
+                                        La Casa Viva
+                                      </span>
+                                    </div>
+                                    <div
+                                      aria-checked="false"
+                                      aria-selected="false"
+                                      class="item"
+                                      role="option"
+                                      style="pointer-events: all;"
+                                    >
+                                      <span
+                                        class="text"
+                                      >
+                                        La Casa Muerta
+                                      </span>
+                                    </div>
+                                    <div
+                                      aria-checked="false"
+                                      aria-selected="false"
+                                      class="item"
+                                      role="option"
+                                      style="pointer-events: all;"
+                                    >
+                                      <span
+                                        class="text"
+                                      >
+                                        The White Lodge
+                                      </span>
+                                    </div>
+                                    <div
+                                      aria-checked="false"
+                                      aria-selected="false"
+                                      class="item"
+                                      role="option"
+                                      style="pointer-events: all;"
+                                    >
+                                      <span
+                                        class="text"
+                                      >
+                                        The Black Lodge
+                                      </span>
+                                    </div>
+                                  </div>
+                                </div>,
+                              }
+                            }
+                          >
+                            <RefFindNode
+                              innerRef={
+                                Object {
+                                  "current": <div
+                                    aria-disabled="false"
+                                    aria-expanded="false"
+                                    class="ui selection dropdown"
+                                    role="listbox"
+                                    tabindex="0"
+                                  >
+                                    <div
+                                      aria-atomic="true"
+                                      aria-live="polite"
+                                      class="text"
+                                      role="alert"
+                                    />
+                                    <i
+                                      class="icon"
+                                    >
+                                      <svg
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M20,8.5l-8,7-8-7Z"
+                                          fill="currentColor"
+                                        />
+                                      </svg>
+                                    </i>
+                                    <div
+                                      class="menu transition"
+                                    >
+                                      <div
+                                        aria-checked="false"
+                                        aria-selected="true"
+                                        class="selected item"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          La Casa Viva
+                                        </span>
+                                      </div>
+                                      <div
+                                        aria-checked="false"
+                                        aria-selected="false"
+                                        class="item"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          La Casa Muerta
+                                        </span>
+                                      </div>
+                                      <div
+                                        aria-checked="false"
+                                        aria-selected="false"
+                                        class="item"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          The White Lodge
+                                        </span>
+                                      </div>
+                                      <div
+                                        aria-checked="false"
+                                        aria-selected="false"
+                                        class="item"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          The Black Lodge
+                                        </span>
+                                      </div>
+                                    </div>
+                                  </div>,
+                                }
+                              }
                             >
                               <div
-                                className="menu transition"
+                                aria-disabled={false}
+                                aria-expanded={false}
+                                className="ui selection dropdown"
+                                onBlur={[Function]}
+                                onChange={[Function]}
+                                onClick={[Function]}
+                                onFocus={[Function]}
+                                onMouseDown={[Function]}
+                                role="listbox"
+                                tabIndex={0}
                               >
-                                <DropdownItem
-                                  active={false}
-                                  key="0"
+                                <div
+                                  aria-atomic={true}
+                                  aria-live="polite"
+                                  className="text"
+                                  role="alert"
+                                />
+                                <Icon
+                                  className=""
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="caret down"
                                   onClick={[Function]}
-                                  selected={true}
-                                  style={
-                                    Object {
-                                      "pointerEvents": "all",
-                                    }
-                                  }
-                                  text="La Casa Viva"
-                                  value="casaViva"
+                                  path={null}
+                                  size={null}
+                                >
+                                  <i
+                                    className="icon"
+                                    onClick={[Function]}
+                                  >
+                                    <svg
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M20,8.5l-8,7-8-7Z"
+                                        fill="currentColor"
+                                      />
+                                    </svg>
+                                  </i>
+                                </Icon>
+                                <DropdownMenu
+                                  open={false}
                                 >
                                   <div
-                                    aria-checked={false}
-                                    aria-selected={true}
-                                    className="selected item"
-                                    onClick={[Function]}
-                                    role="option"
-                                    style={
-                                      Object {
-                                        "pointerEvents": "all",
-                                      }
-                                    }
+                                    className="menu transition"
                                   >
-                                    <span
-                                      className="text"
-                                      key="La Casa Viva"
-                                    >
-                                      La Casa Viva
-                                    </span>
-                                  </div>
-                                </DropdownItem>
-                                <DropdownItem
-                                  active={false}
-                                  key="1"
-                                  onClick={[Function]}
-                                  selected={false}
-                                  style={
-                                    Object {
-                                      "pointerEvents": "all",
-                                    }
-                                  }
-                                  text="La Casa Muerta"
-                                  value="casaMuerta"
-                                >
-                                  <div
-                                    aria-checked={false}
-                                    aria-selected={false}
-                                    className="item"
-                                    onClick={[Function]}
-                                    role="option"
-                                    style={
-                                      Object {
-                                        "pointerEvents": "all",
+                                    <DropdownItem
+                                      active={false}
+                                      key="0"
+                                      onClick={[Function]}
+                                      selected={true}
+                                      style={
+                                        Object {
+                                          "pointerEvents": "all",
+                                        }
                                       }
-                                    }
-                                  >
-                                    <span
-                                      className="text"
-                                      key="La Casa Muerta"
+                                      text="La Casa Viva"
+                                      value="casaViva"
                                     >
-                                      La Casa Muerta
-                                    </span>
-                                  </div>
-                                </DropdownItem>
-                                <DropdownItem
-                                  active={false}
-                                  key="2"
-                                  onClick={[Function]}
-                                  selected={false}
-                                  style={
-                                    Object {
-                                      "pointerEvents": "all",
-                                    }
-                                  }
-                                  text="The White Lodge"
-                                  value="whiteLodge"
-                                >
-                                  <div
-                                    aria-checked={false}
-                                    aria-selected={false}
-                                    className="item"
-                                    onClick={[Function]}
-                                    role="option"
-                                    style={
-                                      Object {
-                                        "pointerEvents": "all",
+                                      <div
+                                        aria-checked={false}
+                                        aria-selected={true}
+                                        className="selected item"
+                                        onClick={[Function]}
+                                        role="option"
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          className="text"
+                                        >
+                                          La Casa Viva
+                                        </span>
+                                      </div>
+                                    </DropdownItem>
+                                    <DropdownItem
+                                      active={false}
+                                      key="1"
+                                      onClick={[Function]}
+                                      selected={false}
+                                      style={
+                                        Object {
+                                          "pointerEvents": "all",
+                                        }
                                       }
-                                    }
-                                  >
-                                    <span
-                                      className="text"
-                                      key="The White Lodge"
+                                      text="La Casa Muerta"
+                                      value="casaMuerta"
                                     >
-                                      The White Lodge
-                                    </span>
-                                  </div>
-                                </DropdownItem>
-                                <DropdownItem
-                                  active={false}
-                                  key="3"
-                                  onClick={[Function]}
-                                  selected={false}
-                                  style={
-                                    Object {
-                                      "pointerEvents": "all",
-                                    }
-                                  }
-                                  text="The Black Lodge"
-                                  value="blackLodge"
-                                >
-                                  <div
-                                    aria-checked={false}
-                                    aria-selected={false}
-                                    className="item"
-                                    onClick={[Function]}
-                                    role="option"
-                                    style={
-                                      Object {
-                                        "pointerEvents": "all",
+                                      <div
+                                        aria-checked={false}
+                                        aria-selected={false}
+                                        className="item"
+                                        onClick={[Function]}
+                                        role="option"
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          className="text"
+                                        >
+                                          La Casa Muerta
+                                        </span>
+                                      </div>
+                                    </DropdownItem>
+                                    <DropdownItem
+                                      active={false}
+                                      key="2"
+                                      onClick={[Function]}
+                                      selected={false}
+                                      style={
+                                        Object {
+                                          "pointerEvents": "all",
+                                        }
                                       }
-                                    }
-                                  >
-                                    <span
-                                      className="text"
-                                      key="The Black Lodge"
+                                      text="The White Lodge"
+                                      value="whiteLodge"
                                     >
-                                      The Black Lodge
-                                    </span>
+                                      <div
+                                        aria-checked={false}
+                                        aria-selected={false}
+                                        className="item"
+                                        onClick={[Function]}
+                                        role="option"
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          className="text"
+                                        >
+                                          The White Lodge
+                                        </span>
+                                      </div>
+                                    </DropdownItem>
+                                    <DropdownItem
+                                      active={false}
+                                      key="3"
+                                      onClick={[Function]}
+                                      selected={false}
+                                      style={
+                                        Object {
+                                          "pointerEvents": "all",
+                                        }
+                                      }
+                                      text="The Black Lodge"
+                                      value="blackLodge"
+                                    >
+                                      <div
+                                        aria-checked={false}
+                                        aria-selected={false}
+                                        className="item"
+                                        onClick={[Function]}
+                                        role="option"
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
+                                        }
+                                      >
+                                        <span
+                                          className="text"
+                                        >
+                                          The Black Lodge
+                                        </span>
+                                      </div>
+                                    </DropdownItem>
                                   </div>
-                                </DropdownItem>
+                                </DropdownMenu>
                               </div>
-                            </DropdownMenu>
-                          </div>
+                            </RefFindNode>
+                          </Ref>
                         </Dropdown>
                         <label
                           onClick={[Function]}
@@ -3127,14 +3433,39 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
                     >
-                      Send
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Send
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Send
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>
@@ -3794,6 +4125,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                       <Responsive
                         as={[Function]}
                         endDatePlaceholderText="Departure"
+                        getWidth={[Function]}
                         isUserOnMobile={false}
                         name="dates"
                         onBlur={[Function]}
@@ -3845,6 +4177,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                 <DateRangePicker
                                   customArrowIcon={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -3861,6 +4194,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   }
                                   customInputIcon={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -3885,6 +4219,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   key=".0"
                                   navNext={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -3901,6 +4236,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   }
                                   navPrev={
                                     <Icon
+                                      className={null}
                                       color={null}
                                       hasBorder={false}
                                       isButton={false}
@@ -4024,14 +4360,39 @@ exports[`<Contact /> should have the correct structure 1`] = `
                     size={null}
                     type="submit"
                   >
-                    <button
-                      className="ui circular right floated button"
-                      onClick={[Function]}
-                      role="button"
-                      type="submit"
+                    <Ref
+                      innerRef={
+                        Object {
+                          "current": <button
+                            class="ui circular right floated button"
+                            type="submit"
+                          >
+                            Send
+                          </button>,
+                        }
+                      }
                     >
-                      Send
-                    </button>
+                      <RefFindNode
+                        innerRef={
+                          Object {
+                            "current": <button
+                              class="ui circular right floated button"
+                              type="submit"
+                            >
+                              Send
+                            </button>,
+                          }
+                        }
+                      >
+                        <button
+                          className="ui circular right floated button"
+                          onClick={[Function]}
+                          type="submit"
+                        >
+                          Send
+                        </button>
+                      </RefFindNode>
+                    </Ref>
                   </Button>
                 </Button>
               </form>

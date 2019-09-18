@@ -60,6 +60,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
             >
               Catania
               <Icon
+                className={null}
                 color="primary"
                 hasBorder={false}
                 isButton={false}
@@ -111,6 +112,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                     className="ui tiny disabled rating"
                     onMouseLeave={[Function]}
                     role="radiogroup"
+                    tabIndex={0}
                   >
                     <RatingIcon
                       active={true}
@@ -123,6 +125,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={false}
@@ -133,7 +136,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                     <RatingIcon
@@ -147,6 +150,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={false}
@@ -157,7 +161,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                     <RatingIcon
@@ -171,6 +175,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={false}
@@ -181,7 +186,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                     <RatingIcon
@@ -195,6 +200,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={false}
@@ -205,7 +211,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                     <RatingIcon
@@ -219,6 +225,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={true}
@@ -229,7 +236,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                   </div>
@@ -351,6 +358,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                     className="ui tiny disabled rating"
                     onMouseLeave={[Function]}
                     role="radiogroup"
+                    tabIndex={0}
                   >
                     <RatingIcon
                       active={true}
@@ -363,6 +371,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={false}
@@ -373,7 +382,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                     <RatingIcon
@@ -387,6 +396,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={false}
@@ -397,7 +407,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                     <RatingIcon
@@ -411,6 +421,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={false}
@@ -421,7 +432,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                     <RatingIcon
@@ -435,6 +446,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={false}
@@ -445,7 +457,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                     <RatingIcon
@@ -459,6 +471,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                       onClick={[Function]}
                       onMouseEnter={[Function]}
                       selected={false}
+                      tabIndex={-1}
                     >
                       <i
                         aria-checked={true}
@@ -469,7 +482,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
                         onKeyUp={[Function]}
                         onMouseEnter={[Function]}
                         role="radio"
-                        tabIndex={0}
+                        tabIndex={-1}
                       />
                     </RatingIcon>
                   </div>

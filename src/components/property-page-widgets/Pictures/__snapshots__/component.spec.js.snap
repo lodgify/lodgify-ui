@@ -1298,9 +1298,11 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                   }
                 >
                   <Modal
+                    centered={true}
                     className="has-padding"
                     closeIcon={
                       <Icon
+                        className={null}
                         color={null}
                         hasBorder={false}
                         isButton={false}
@@ -1334,10 +1336,8 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                     }
                   >
                     <Portal
-                      className="ui inverted page modals dimmer transition visible active"
                       closeOnDocumentClick={false}
                       closeOnEscape={true}
-                      closeOnRootNodeClick={true}
                       eventPool="Modal"
                       mountNode={<body />}
                       onClose={[Function]}
@@ -1360,39 +1360,70 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       <Ref
                         innerRef={[Function]}
                       >
-                        <Link
-                          href={null}
-                          isFluid={false}
-                          isPositionedRight={false}
-                          onBlur={[Function]}
-                          onClick={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                          willOpenInNewTab={false}
+                        <RefFindNode
+                          innerRef={[Function]}
                         >
-                          <Button
-                            as={null}
-                            basic={true}
-                            floated="left"
-                            fluid={false}
+                          <Link
                             href={null}
+                            isFluid={false}
+                            isPositionedRight={false}
+                            onBlur={[Function]}
                             onClick={[Function]}
-                            target="_self"
-                            type="button"
+                            onFocus={[Function]}
+                            onMouseEnter={[Function]}
+                            onMouseLeave={[Function]}
+                            willOpenInNewTab={false}
                           >
-                            <button
-                              className="ui basic left floated button"
+                            <Button
+                              as={null}
+                              basic={true}
+                              floated="left"
+                              fluid={false}
                               href={null}
                               onClick={[Function]}
-                              role="button"
                               target="_self"
                               type="button"
                             >
-                              Explore all pictures
-                            </button>
-                          </Button>
-                        </Link>
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <button
+                                      class="ui basic left floated button"
+                                      target="_self"
+                                      type="button"
+                                    >
+                                      Explore all pictures
+                                    </button>,
+                                  }
+                                }
+                              >
+                                <RefFindNode
+                                  innerRef={
+                                    Object {
+                                      "current": <button
+                                        class="ui basic left floated button"
+                                        target="_self"
+                                        type="button"
+                                      >
+                                        Explore all pictures
+                                      </button>,
+                                    }
+                                  }
+                                >
+                                  <button
+                                    className="ui basic left floated button"
+                                    href={null}
+                                    onClick={[Function]}
+                                    target="_self"
+                                    type="button"
+                                  >
+                                    Explore all pictures
+                                  </button>
+                                </RefFindNode>
+                              </Ref>
+                            </Button>
+                          </Link>
+                        </RefFindNode>
                       </Ref>
                     </Portal>
                   </Modal>

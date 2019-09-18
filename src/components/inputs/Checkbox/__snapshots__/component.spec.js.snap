@@ -55,18 +55,61 @@ exports[`<Checkbox /> if \`props.isFluid\` is true should return the right struc
             onChange={[Function]}
             onClick={[Function]}
             onMouseDown={[Function]}
+            onMouseUp={[Function]}
           >
-            <input
-              checked={false}
-              className="hidden"
-              onClick={[Function]}
-              readOnly={true}
-              tabIndex={0}
-              type="checkbox"
-            />
-            <label
-              key=""
-            />
+            <Ref
+              innerRef={
+                Object {
+                  "current": <input
+                    class="hidden"
+                    readonly=""
+                    tabindex="0"
+                    type="checkbox"
+                    value=""
+                  />,
+                }
+              }
+            >
+              <RefFindNode
+                innerRef={
+                  Object {
+                    "current": <input
+                      class="hidden"
+                      readonly=""
+                      tabindex="0"
+                      type="checkbox"
+                      value=""
+                    />,
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  className="hidden"
+                  disabled={false}
+                  readOnly={true}
+                  tabIndex={0}
+                  type="checkbox"
+                />
+              </RefFindNode>
+            </Ref>
+            <Ref
+              innerRef={
+                Object {
+                  "current": <label />,
+                }
+              }
+            >
+              <RefFindNode
+                innerRef={
+                  Object {
+                    "current": <label />,
+                  }
+                }
+              >
+                <label />
+              </RefFindNode>
+            </Ref>
           </div>
         </Checkbox>
       </div>
@@ -130,18 +173,61 @@ exports[`<Checkbox /> if \`props.isLabelLeft\` is true should return the right s
             onChange={[Function]}
             onClick={[Function]}
             onMouseDown={[Function]}
+            onMouseUp={[Function]}
           >
-            <input
-              checked={false}
-              className="hidden"
-              onClick={[Function]}
-              readOnly={true}
-              tabIndex={0}
-              type="checkbox"
-            />
-            <label
-              key=""
-            />
+            <Ref
+              innerRef={
+                Object {
+                  "current": <input
+                    class="hidden"
+                    readonly=""
+                    tabindex="0"
+                    type="checkbox"
+                    value=""
+                  />,
+                }
+              }
+            >
+              <RefFindNode
+                innerRef={
+                  Object {
+                    "current": <input
+                      class="hidden"
+                      readonly=""
+                      tabindex="0"
+                      type="checkbox"
+                      value=""
+                    />,
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  className="hidden"
+                  disabled={false}
+                  readOnly={true}
+                  tabIndex={0}
+                  type="checkbox"
+                />
+              </RefFindNode>
+            </Ref>
+            <Ref
+              innerRef={
+                Object {
+                  "current": <label />,
+                }
+              }
+            >
+              <RefFindNode
+                innerRef={
+                  Object {
+                    "current": <label />,
+                  }
+                }
+              >
+                <label />
+              </RefFindNode>
+            </Ref>
           </div>
         </Checkbox>
       </div>
@@ -205,18 +291,61 @@ exports[`<Checkbox /> should return the right structure 1`] = `
             onChange={[Function]}
             onClick={[Function]}
             onMouseDown={[Function]}
+            onMouseUp={[Function]}
           >
-            <input
-              checked={false}
-              className="hidden"
-              onClick={[Function]}
-              readOnly={true}
-              tabIndex={0}
-              type="checkbox"
-            />
-            <label
-              key=""
-            />
+            <Ref
+              innerRef={
+                Object {
+                  "current": <input
+                    class="hidden"
+                    readonly=""
+                    tabindex="0"
+                    type="checkbox"
+                    value=""
+                  />,
+                }
+              }
+            >
+              <RefFindNode
+                innerRef={
+                  Object {
+                    "current": <input
+                      class="hidden"
+                      readonly=""
+                      tabindex="0"
+                      type="checkbox"
+                      value=""
+                    />,
+                  }
+                }
+              >
+                <input
+                  checked={false}
+                  className="hidden"
+                  disabled={false}
+                  readOnly={true}
+                  tabIndex={0}
+                  type="checkbox"
+                />
+              </RefFindNode>
+            </Ref>
+            <Ref
+              innerRef={
+                Object {
+                  "current": <label />,
+                }
+              }
+            >
+              <RefFindNode
+                innerRef={
+                  Object {
+                    "current": <label />,
+                  }
+                }
+              >
+                <label />
+              </RefFindNode>
+            </Ref>
           </div>
         </Checkbox>
       </div>

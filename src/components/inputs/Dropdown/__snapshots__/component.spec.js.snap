@@ -15,7 +15,7 @@ exports[`<Dropdown /> if \`props.isCompact\` is \`true\` should render the right
     disabled={true}
     icon={
       <Icon
-        className="icon"
+        className={null}
         color={null}
         hasBorder={false}
         isButton={false}
