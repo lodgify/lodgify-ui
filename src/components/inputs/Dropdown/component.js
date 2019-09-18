@@ -16,6 +16,7 @@ import { getIsOpenAfterChange } from './utils/getIsOpenAfterChange';
 import { adaptOptions } from './utils/adaptOptions';
 import { getHasImages } from './utils/getHasImages';
 import { isValueValid } from './utils/isValueValid';
+import { getIcon } from './utils/getIcon';
 
 /**
  * A dropdown allows a user to select a value from a series of options.
@@ -24,24 +25,9 @@ import { isValueValid } from './utils/isValueValid';
 export class Component extends PureComponent {
   state = {
     isBlurred: true,
-    isDirty: false,
     isOpen: false,
     value: this.props.initialValue,
   };
-
-  componentDidMount() {
-    if (!!this.state.value || !!this.props.value) {
-      const value = getControlledInputValue(
-        this.props.value,
-        this.props.initialValue,
-        this.state.value
-      );
-
-      const isDirty = isValueValid(value);
-
-      this.setState({ isDirty });
-    }
-  }
 
   componentDidUpdate(previousProps, previousState) {
     if (getIsInputValueReset(previousProps.value, this.props.value)) {
@@ -59,9 +45,7 @@ export class Component extends PureComponent {
         this.state.value
       );
 
-      const isDirty = isValueValid(value);
-
-      this.setState({ isDirty, value });
+      this.setState({ value });
       return;
     }
 
@@ -90,11 +74,12 @@ export class Component extends PureComponent {
   handleBlur = isBlurred => this.setState({ isBlurred, isOpen: false });
 
   render() {
-    const { isOpen, isDirty } = this.state;
+    const { isOpen } = this.state;
     const {
       getOptionsWithSearch,
       error,
       icon,
+      isClearable,
       isCompact,
       isDisabled,
       isSearchable,
@@ -118,7 +103,7 @@ export class Component extends PureComponent {
         className={getClassNames('dropdown-container', {
           'has-images': hasImages,
           'is-compact': isCompact,
-          dirty: isDirty,
+          dirty: isValueValid(value),
           error: error,
           focus: isOpen,
           valid: isValid,
@@ -128,11 +113,12 @@ export class Component extends PureComponent {
         {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
         {!hasImages && icon && <Icon name={icon} />}
         <Dropdown
+          clearable={isClearable}
           compact={isCompact}
           disabled={isDisabled || !adaptedOptions.length}
           icon={
             <Icon
-              name={ICON_NAMES.CARET_DOWN}
+              name={getIcon(value, isClearable)}
               size={getPropOnCondition('small', isCompact)}
             />
           }
@@ -163,6 +149,7 @@ Component.defaultProps = {
   error: false,
   getOptionsWithSearch: null,
   icon: null,
+  isClearable: true,
   isCompact: false,
   isDisabled: false,
   isSearchable: false,
@@ -186,12 +173,14 @@ Component.propTypes = {
   getOptionsWithSearch: PropTypes.func,
   /** Icon for the dropdown. Not displayed if options have images. */
   icon: PropTypes.string,
-  /** The default value of the dropdown. */
+  /** The dropdown's value can be cleared. */
   initialValue: PropTypes.oneOfType([
     PropTypes.bool,
     PropTypes.number,
     PropTypes.string,
   ]),
+  /** A dropdown is clearable  */
+  isClearable: PropTypes.bool,
   /** A compact dropdown occupies less space. */
   isCompact: PropTypes.bool,
   /** A disabled dropdown does not allow user interaction. */

@@ -2,6 +2,7 @@ jest.mock('utils/get-is-input-value-reset');
 jest.mock('utils/get-controlled-input-value');
 jest.mock('./utils/getIsOpenAfterChange');
 jest.mock('./utils/isValueValid');
+jest.mock('./utils/getIcon');
 
 import React from 'react';
 import { shallow } from 'enzyme';
@@ -14,15 +15,16 @@ import {
 } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
-import { Icon, ICON_NAMES } from 'elements/Icon';
-import { NO_RESULTS } from 'utils/default-strings';
+import { Icon } from 'elements/Icon';
 import { getControlledInputValue } from 'utils/get-controlled-input-value';
 
 import { ErrorMessage } from '../ErrorMessage';
+import { ICON_NAMES } from '../../elements/Icon/constants';
 
 import { isValueValid } from './utils/isValueValid';
 import { getIsOpenAfterChange } from './utils/getIsOpenAfterChange';
 import { Component as Dropdown } from './component';
+import { getIcon } from './utils/getIcon';
 
 const OPTIONS = [{ text: 'someText', value: 'someValue' }];
 const OPTIONS_WITH_IMAGES = [
@@ -36,6 +38,7 @@ const getDropdownContainer = extraProps =>
 const IS_OPEN = false;
 
 getIsOpenAfterChange.mockReturnValue(IS_OPEN);
+getIcon.mockReturnValue(ICON_NAMES.CARET_DOWN);
 
 describe('<Dropdown />', () => {
   it('should render a single `div` with class `.dropdown-container`', () => {
@@ -126,24 +129,6 @@ describe('<Dropdown />', () => {
       expectComponentToHaveChildren(wrapper, SemanticDropdown);
     });
 
-    it('should pass the right props to `Dropdown`', () => {
-      const wrapper = getSemanticDropdown();
-
-      expectComponentToHaveProps(wrapper, {
-        icon: <Icon name={ICON_NAMES.CARET_DOWN} />,
-        noResultsMessage: NO_RESULTS,
-        onBlur: expect.any(Function),
-        onChange: expect.any(Function),
-        onClick: expect.any(Function),
-        open: false,
-        options: expect.any(Array),
-        search: false,
-        selectOnBlur: false,
-        selection: true,
-        upward: false,
-      });
-    });
-
     describe('if `options` prop is passed and has a length', () => {
       it('should have the right props', () => {
         const wrapper = getSemanticDropdown({
@@ -177,7 +162,17 @@ describe('<Dropdown />', () => {
       });
     });
 
-    describe('if `isDisabled` prop is passed', () => {
+    describe('if `isClearable` prop is false', () => {
+      it('should have the right props', () => {
+        const wrapper = getSemanticDropdown({
+          isClearable: false,
+        });
+
+        expectComponentToHaveProps(wrapper, { clearable: false });
+      });
+    });
+
+    describe('if `willOpenAbove` prop is passed', () => {
       it('should have the right props', () => {
         const wrapper = getSemanticDropdown({
           willOpenAbove: true,
@@ -249,61 +244,6 @@ describe('<Dropdown />', () => {
         const wrapper = getDropdownWithImageOptions({ label: '🏷' });
 
         expectComponentToHaveChildren(wrapper, SemanticDropdown);
-      });
-    });
-  });
-
-  describe('`componentDidMount`', () => {
-    describe('if `this.state.value` or `this.props.value` are truthy', () => {
-      it('should call `getControlledInputValue` with the correct arguments', () => {
-        const PROPS_VALUE = '🌴';
-        const PROPS_INITIAL_VALUE = '🌲';
-        const STATE_VALUE = '🌳';
-
-        const wrapper = getDropdown({
-          value: PROPS_VALUE,
-          initialValue: PROPS_INITIAL_VALUE,
-        });
-
-        wrapper.instance().state = {
-          value: STATE_VALUE,
-        };
-        wrapper.instance().componentDidMount();
-
-        expect(getControlledInputValue).toHaveBeenCalledWith(
-          PROPS_VALUE,
-          PROPS_INITIAL_VALUE,
-          STATE_VALUE
-        );
-      });
-
-      it('should call `isValueValid` with the correct arguments', () => {
-        const PROPS_VALUE = '🌴';
-        const PROPS_INITIAL_VALUE = '🌲';
-        const VALUE = '🐑';
-
-        getControlledInputValue.mockReturnValue(VALUE);
-        const wrapper = getDropdown({
-          value: PROPS_VALUE,
-          initialValue: PROPS_INITIAL_VALUE,
-        });
-
-        wrapper.instance().componentDidMount();
-
-        expect(isValueValid).toHaveBeenCalledWith(VALUE);
-      });
-
-      it('should call `this.setState` with the correct arguments', () => {
-        const PROPS_VALUE = '🌴';
-        const wrapper = getDropdown({ value: PROPS_VALUE });
-
-        isValueValid.mockReturnValueOnce(true);
-        wrapper.instance().setState = jest.fn();
-        wrapper.instance().componentDidMount();
-
-        expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          isDirty: true,
-        });
       });
     });
   });
@@ -406,7 +346,6 @@ describe('<Dropdown />', () => {
           .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
 
         expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          isDirty: false,
           value: CONTROLLED_VALUE,
         });
       });
@@ -467,7 +406,6 @@ describe('<Dropdown />', () => {
         isBlurred: true,
         isOpen: false,
         value: null,
-        isDirty: false,
       });
     });
   });
@@ -496,7 +434,6 @@ describe('<Dropdown />', () => {
         isBlurred: true,
         isOpen: IS_OPEN,
         value: data.value,
-        isDirty: false,
       });
     });
   });
@@ -513,7 +450,6 @@ describe('<Dropdown />', () => {
         isOpen: true,
         isBlurred: false,
         value: null,
-        isDirty: false,
       });
     });
   });
@@ -530,7 +466,6 @@ describe('<Dropdown />', () => {
         isOpen: true,
         isBlurred: false,
         value: null,
-        isDirty: false,
       });
     });
   });
@@ -563,6 +498,13 @@ describe('<Dropdown />', () => {
         undefined,
         STATE_VALUE
       );
+    });
+
+    it('should call getIcon with the correct values', () => {
+      const value = '🐑';
+
+      getDropdown();
+      expect(getIcon).toHaveBeenCalledWith(value, true);
     });
   });
 
