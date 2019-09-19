@@ -21,21 +21,6 @@ import { getValueFromEvent } from './utils/getValueFromEvent';
 export class Component extends PureComponent {
   state = {
     value: this.props.initialValue,
-    isDirty: undefined,
-  };
-
-  componentDidMount = () => {
-    if (!!this.state.value || !!this.props.value) {
-      const value = getControlledInputValue(
-        this.props.value,
-        this.props.initialValue,
-        this.state.value
-      );
-
-      const isDirty = some(value);
-
-      this.setState({ isDirty });
-    }
   };
 
   componentDidUpdate(previousProps, previousState) {
@@ -54,9 +39,7 @@ export class Component extends PureComponent {
         this.state.value
       );
 
-      const isDirty = some(value);
-
-      this.setState({ isDirty, value });
+      this.setState({ value });
       return;
     }
 
@@ -99,7 +82,7 @@ export class Component extends PureComponent {
       <Input
         className={getClassNames({
           compact: isCompact,
-          dirty: this.state.isDirty,
+          dirty: some(value),
           error: error,
           focus: isFocused,
           valid: isValid,

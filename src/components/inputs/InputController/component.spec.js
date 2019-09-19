@@ -28,9 +28,6 @@ const props = {
 const children = <input />;
 
 const CONTROLLED_VALUE = '🐑';
-const SOME_VALUE = '🔢';
-
-some.mockReturnValue(SOME_VALUE);
 
 const getInputController = extraProps =>
   shallow(
@@ -49,7 +46,8 @@ describe('<InputController />', () => {
     });
 
     it('should default to no classNames on `Input`', () => {
-      const semanticInput = getInputControllerInput();
+      const wrapper = getInputController();
+      const semanticInput = wrapper.find('Input');
       const classNames = ['dirty', 'valid', 'error'];
 
       classNames.forEach(className => {
@@ -275,59 +273,6 @@ describe('<InputController />', () => {
     });
   });
 
-  describe('`componentDidMount`', () => {
-    describe('if `this.state.value` or `this.props.value` are truthy', () => {
-      it('should call `getControlledInputValue` with the correct arguments', () => {
-        const PROPS_VALUE = '🌴';
-        const PROPS_INITIAL_VALUE = '🌲';
-        const STATE_VALUE = '🌳';
-
-        const wrapper = getInputController({
-          value: PROPS_VALUE,
-          initialValue: PROPS_INITIAL_VALUE,
-        });
-
-        wrapper.instance().state = {
-          value: STATE_VALUE,
-        };
-        wrapper.instance().componentDidMount();
-
-        expect(getControlledInputValue).toHaveBeenCalledWith(
-          PROPS_VALUE,
-          PROPS_INITIAL_VALUE,
-          STATE_VALUE
-        );
-      });
-
-      it('should call `some` with the correct arguments', () => {
-        const PROPS_VALUE = '🌴';
-        const PROPS_INITIAL_VALUE = '🌲';
-
-        getControlledInputValue.mockReturnValue(CONTROLLED_VALUE);
-        const wrapper = getInputController({
-          value: PROPS_VALUE,
-          initialValue: PROPS_INITIAL_VALUE,
-        });
-
-        wrapper.instance().componentDidMount();
-
-        expect(some).toHaveBeenCalledWith(CONTROLLED_VALUE);
-      });
-
-      it('should call `this.setState` with the correct arguments', () => {
-        const PROPS_VALUE = '🌴';
-        const wrapper = getInputController({ value: PROPS_VALUE });
-
-        wrapper.instance().setState = jest.fn();
-        wrapper.instance().componentDidMount();
-
-        expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          isDirty: SOME_VALUE,
-        });
-      });
-    });
-  });
-
   describe('`componentDidUpdate`', () => {
     it('should call `getIsInputValueReset` with the right arguments', () => {
       const PROPS_VALUE = '🌴';
@@ -425,7 +370,6 @@ describe('<InputController />', () => {
           .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
 
         expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          isDirty: SOME_VALUE,
           value: CONTROLLED_VALUE,
         });
       });
