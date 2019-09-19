@@ -1,3 +1,10 @@
+## [1.242.1](https://github.com/lodgify/lodgify-ui/compare/v1.242.0...v1.242.1) (2019-09-19)
+
+
+### Bug Fixes
+
+* **Inputs:** fix label behaviour when input is dirty ([bb10e48](https://github.com/lodgify/lodgify-ui/commit/bb10e48))
+
 # [1.242.0](https://github.com/lodgify/lodgify-ui/compare/v1.241.0...v1.242.0) (2019-09-18)
 
 
