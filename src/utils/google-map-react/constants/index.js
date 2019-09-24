@@ -8,4 +8,5 @@ export {
   CIRCLE_IMAGE_SRC,
   CIRCLE_IMAGE_STYLE,
   CONTROL_SIZE,
+  MIN_ZOOM,
 } from './constants';

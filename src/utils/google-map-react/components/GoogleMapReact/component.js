@@ -95,7 +95,6 @@ export class Component extends PureComponent {
       markers,
     } = this.props;
     const { bounds, zoom } = this.state;
-
     const center = getCenter(this.state.center, latitude, longitude);
 
     if (!center) return null;
