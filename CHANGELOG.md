@@ -1,3 +1,10 @@
+## [1.242.2](https://github.com/lodgify/lodgify-ui/compare/v1.242.1...v1.242.2) (2019-09-24)
+
+
+### Bug Fixes
+
+* **GoogleMap:** add minZoom in order to support ([6b99bfa](https://github.com/lodgify/lodgify-ui/commit/6b99bfa))
+
 ## [1.242.1](https://github.com/lodgify/lodgify-ui/compare/v1.242.0...v1.242.1) (2019-09-19)
 
 
