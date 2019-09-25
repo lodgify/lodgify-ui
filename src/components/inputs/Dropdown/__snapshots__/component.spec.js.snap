@@ -46,6 +46,7 @@ exports[`<Dropdown /> if \`props.isCompact\` is \`true\` should render the right
     selectOnNavigation={true}
     selection={true}
     upward={false}
+    value="🐑"
     wrapSelection={true}
   />
 </div>

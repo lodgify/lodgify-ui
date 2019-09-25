@@ -191,3 +191,31 @@ const { currencyOptions } = require('./mock-data/options');
 
 <Dropdown options={currencyOptions} isClearable={false} />;
 ```
+
+#### Controlled
+
+```jsx
+const {useState} = require('react');
+
+const Controller = () => {
+  const [value, setValue] = useState('1');
+  
+  const options = [{
+    value: '1',
+    text: 'Unu',
+  }, {
+    value: '2',
+    text: 'Du'
+  }, {
+    value: '3',
+    text: 'Tri'
+  }];
+
+  const onChange = (name, value) => setValue(value);
+
+  return <Dropdown value={value} onChange={onChange} options={options} label="Nombro" />
+
+}
+
+<Controller />
+```

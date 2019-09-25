@@ -52,3 +52,9 @@
   initialCountryValue="JP"
 />
 ```
+
+#### With value
+
+```jsx
+<PhoneInput value="123456789" label="Label" initialCountryValue="IT" />
+```

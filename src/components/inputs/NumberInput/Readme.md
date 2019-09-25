@@ -34,3 +34,9 @@
 ```jsx
 <NumberInput min={0} max={3} />
 ```
+
+#### Initialize with Value and Label
+
+```jsx
+<NumberInput min={0} max={3} label="Label" value={5} />
+```

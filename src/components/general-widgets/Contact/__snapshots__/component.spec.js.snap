@@ -140,7 +140,6 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -550,7 +549,6 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -615,7 +613,6 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -838,7 +835,6 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -1076,7 +1072,6 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -1486,7 +1481,6 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -1551,7 +1545,6 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -1774,7 +1767,6 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -2200,7 +2192,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -2610,7 +2601,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -2675,7 +2665,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -2898,7 +2887,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -3027,7 +3015,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           selectOnNavigation={true}
                           selection={true}
                           upward={false}
-                          value={null}
                           wrapSelection={true}
                         >
                           <Ref
@@ -3618,7 +3605,6 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -4028,7 +4014,6 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -4093,7 +4078,6 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="number"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -4316,7 +4300,6 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
-                              value=""
                             />
                             <label
                               key=".3"

@@ -26,7 +26,7 @@ export class Component extends PureComponent {
   state = {
     isBlurred: true,
     isOpen: false,
-    value: this.props.initialValue,
+    value: getControlledInputValue(this.props.value, this.props.initialValue),
   };
 
   componentDidUpdate(previousProps, previousState) {

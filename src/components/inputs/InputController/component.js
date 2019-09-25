@@ -20,7 +20,7 @@ import { getValueFromEvent } from './utils/getValueFromEvent';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
-    value: this.props.initialValue,
+    value: getControlledInputValue(this.props.value, this.props.initialValue),
   };
 
   componentDidUpdate(previousProps, previousState) {
@@ -62,7 +62,6 @@ export class Component extends PureComponent {
       children,
       error,
       icon,
-      initialValue,
       inputOnChangeFunctionName,
       isCompact,
       isFluid,
@@ -71,11 +70,9 @@ export class Component extends PureComponent {
       label,
       mapValueToProps,
     } = this.props;
-    const value = getControlledInputValue(
-      this.props.value,
-      initialValue,
-      this.state.value
-    );
+
+    const { value } = this.state;
+
     const hasErrorMessage = getHasErrorMessage(error);
 
     return (
