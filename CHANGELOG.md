@@ -1,3 +1,11 @@
+## [1.242.3](https://github.com/lodgify/lodgify-ui/compare/v1.242.2...v1.242.3) (2019-09-25)
+
+
+### Bug Fixes
+
+* **Dropdown:** set value props as state on mount ([4acbcf3](https://github.com/lodgify/lodgify-ui/commit/4acbcf3))
+* **InputController:** set value props to state  on mount ([57bba7a](https://github.com/lodgify/lodgify-ui/commit/57bba7a))
+
 ## [1.242.2](https://github.com/lodgify/lodgify-ui/compare/v1.242.1...v1.242.2) (2019-09-24)
 
 
