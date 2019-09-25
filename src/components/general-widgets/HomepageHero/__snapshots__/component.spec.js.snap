@@ -660,7 +660,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     selectOnNavigation={true}
                                                     selection={true}
                                                     upward={true}
-                                                    value={null}
                                                     wrapSelection={true}
                                                   >
                                                     <Ref
@@ -1099,7 +1098,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         onBlur={[Function]}
                                                         onChange={[Function]}
                                                         type="number"
-                                                        value=""
                                                       />
                                                       <label
                                                         key=".3"

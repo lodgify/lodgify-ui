@@ -296,25 +296,11 @@ describe('<InputController />', () => {
         getIsInputValueReset.mockReturnValueOnce(true);
 
         wrapper.instance().setState = jest.fn();
-        wrapper.update();
-        wrapper.instance().componentDidUpdate({}, {});
+        wrapper.instance().componentDidUpdate({}, {}, 'check');
 
         expect(wrapper.instance().setState).toHaveBeenCalledWith({
           value: '',
         });
-      });
-
-      it('should not call `props.onChange`', () => {
-        const onChange = jest.fn();
-        const wrapper = getInputController({ onChange });
-
-        getIsInputValueReset.mockReturnValueOnce(true);
-
-        wrapper
-          .instance()
-          .componentDidUpdate({}, { value: 'some changed value' });
-
-        expect(onChange).not.toHaveBeenCalled();
       });
     });
 
@@ -346,9 +332,8 @@ describe('<InputController />', () => {
 
       it('should call `some` with the correct arguments', () => {
         const PROPS_VALUE = '🌴';
-        const VALUE = '🐑';
 
-        getControlledInputValue.mockReturnValue(VALUE);
+        getControlledInputValue.mockReturnValue(CONTROLLED_VALUE);
         const wrapper = getInputController({
           value: PROPS_VALUE,
         });
@@ -357,7 +342,7 @@ describe('<InputController />', () => {
           .instance()
           .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
 
-        expect(some).toHaveBeenCalledWith(VALUE);
+        expect(some).toHaveBeenCalledWith(CONTROLLED_VALUE);
       });
 
       it('should call `this.setState` with the correct arguments', () => {
@@ -427,27 +412,6 @@ describe('<InputController />', () => {
 
       htmlLabel.simulate('click');
       expect(htmlInput).toBe(document.activeElement);
-    });
-  });
-
-  describe('`render`', () => {
-    it('should call `getControlledInputValue` with the right arguments', () => {
-      const INITIAL_VALUE = '👶';
-      const PROPS_VALUE = '🎅';
-      const STATE_VALUE = '😎';
-      const wrapper = getInputController({
-        initialValue: INITIAL_VALUE,
-        value: PROPS_VALUE,
-      });
-
-      wrapper.setState({ value: STATE_VALUE });
-      wrapper.instance().render();
-
-      expect(getControlledInputValue).toHaveBeenCalledWith(
-        PROPS_VALUE,
-        INITIAL_VALUE,
-        STATE_VALUE
-      );
     });
   });
 

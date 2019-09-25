@@ -185,7 +185,6 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -586,7 +585,6 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -885,7 +883,6 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
-                              value={null}
                               wrapSelection={true}
                             >
                               <Ref
@@ -1494,7 +1491,6 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                           selectOnNavigation={true}
                           selection={true}
                           upward={false}
-                          value={null}
                           wrapSelection={true}
                         >
                           <Ref
@@ -1917,7 +1913,6 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -2200,7 +2195,6 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -2601,7 +2595,6 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -2900,7 +2893,6 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
-                              value={null}
                               wrapSelection={true}
                             >
                               <Ref
@@ -3509,7 +3501,6 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                           selectOnNavigation={true}
                           selection={true}
                           upward={false}
-                          value={null}
                           wrapSelection={true}
                         >
                           <Ref
@@ -3932,7 +3923,6 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -4365,7 +4355,6 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -4766,7 +4755,6 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -5065,7 +5053,6 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
-                              value={null}
                               wrapSelection={true}
                             >
                               <Ref
@@ -5606,7 +5593,6 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -5880,7 +5866,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                   onBlur={[Function]}
                                   onChange={[Function]}
                                   type="text"
-                                  value=""
                                 />
                                 <label
                                   key=".3"
@@ -6281,7 +6266,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -6580,7 +6564,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               selectOnNavigation={true}
                               selection={true}
                               upward={false}
-                              value={null}
                               wrapSelection={true}
                             >
                               <Ref
@@ -7189,7 +7172,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                           selectOnNavigation={true}
                           selection={true}
                           upward={false}
-                          value={null}
                           wrapSelection={true}
                         >
                           <Ref
@@ -7612,7 +7594,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               rows="8"
-                              value=""
                             />
                             <label
                               key=".3"

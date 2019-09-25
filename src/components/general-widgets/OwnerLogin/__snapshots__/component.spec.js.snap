@@ -170,7 +170,6 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -234,7 +233,6 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="password"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -652,7 +650,6 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -716,7 +713,6 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="password"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -1134,7 +1130,6 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="text"
-                              value=""
                             />
                             <label
                               key=".3"
@@ -1198,7 +1193,6 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                               onBlur={[Function]}
                               onChange={[Function]}
                               type="password"
-                              value=""
                             />
                             <label
                               key=".3"

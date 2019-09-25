@@ -36,9 +36,11 @@ const getDropdownContainer = extraProps =>
   getDropdown(extraProps).find('div.dropdown-container');
 
 const IS_OPEN = false;
+const CONTROLLED_VALUE = '🐑';
 
 getIsOpenAfterChange.mockReturnValue(IS_OPEN);
 getIcon.mockReturnValue(ICON_NAMES.CARET_DOWN);
+getControlledInputValue.mockReturnValue(CONTROLLED_VALUE);
 
 describe('<Dropdown />', () => {
   it('should render a single `div` with class `.dropdown-container`', () => {
@@ -278,19 +280,6 @@ describe('<Dropdown />', () => {
           value: undefined,
         });
       });
-
-      it('should not call `props.onChange`', () => {
-        const onChange = jest.fn();
-        const wrapper = getDropdown({ onChange });
-
-        getIsInputValueReset.mockReturnValueOnce(true);
-
-        wrapper
-          .instance()
-          .componentDidUpdate({}, { value: 'some changed value' });
-
-        expect(onChange).toHaveBeenCalledWith('', undefined);
-      });
     });
 
     describe('if `previousProps.value` !== `this.props.value`', () => {
@@ -298,7 +287,6 @@ describe('<Dropdown />', () => {
       const PROPS_INITIAL_VALUE = '🌲';
       const PREVIOUS_PROPS_VALUE = '🎄';
       const STATE_VALUE = '🌳';
-      const CONTROLLED_VALUE = '🐑';
 
       it('should call `getControlledInputValue` with the correct arguments', () => {
         const wrapper = getDropdown({
@@ -323,7 +311,6 @@ describe('<Dropdown />', () => {
       it('should call `some` with the correct arguments', () => {
         const PROPS_VALUE = '🌴';
 
-        getControlledInputValue.mockReturnValue(CONTROLLED_VALUE);
         const wrapper = getDropdown({
           value: PROPS_VALUE,
         });
@@ -405,7 +392,7 @@ describe('<Dropdown />', () => {
       expect(actual).toEqual({
         isBlurred: true,
         isOpen: false,
-        value: null,
+        value: CONTROLLED_VALUE,
       });
     });
   });
@@ -449,7 +436,7 @@ describe('<Dropdown />', () => {
       expect(actual).toEqual({
         isOpen: true,
         isBlurred: false,
-        value: null,
+        value: CONTROLLED_VALUE,
       });
     });
   });
@@ -465,7 +452,7 @@ describe('<Dropdown />', () => {
       expect(actual).toEqual({
         isOpen: true,
         isBlurred: false,
-        value: null,
+        value: CONTROLLED_VALUE,
       });
     });
   });

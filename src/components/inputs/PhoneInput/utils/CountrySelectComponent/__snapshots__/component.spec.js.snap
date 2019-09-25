@@ -86,7 +86,6 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
         selectOnNavigation={true}
         selection={true}
         upward={false}
-        value={null}
         wrapSelection={true}
       >
         <Ref

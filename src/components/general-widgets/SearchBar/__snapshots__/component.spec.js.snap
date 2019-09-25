@@ -214,7 +214,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   selectOnNavigation={true}
                   selection={true}
                   upward={false}
-                  value={null}
                   wrapSelection={true}
                 >
                   <Ref
@@ -829,7 +828,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="number"
-                      value=""
                     />
                     <label
                       key=".3"
@@ -1231,7 +1229,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             selectOnNavigation={true}
                             selection={true}
                             upward={true}
-                            value={null}
                             wrapSelection={true}
                           >
                             <Ref
@@ -1846,7 +1843,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 onBlur={[Function]}
                                 onChange={[Function]}
                                 type="number"
-                                value=""
                               />
                               <label
                                 key=".3"
@@ -2495,7 +2491,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   selectOnNavigation={true}
                   selection={true}
                   upward={false}
-                  value={null}
                   wrapSelection={true}
                 >
                   <Ref
@@ -3110,7 +3105,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="number"
-                      value=""
                     />
                     <label
                       key=".3"
@@ -3494,7 +3488,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   selectOnNavigation={true}
                   selection={true}
                   upward={false}
-                  value={null}
                   wrapSelection={true}
                 >
                   <Ref
@@ -4109,7 +4102,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="number"
-                      value=""
                     />
                     <label
                       key=".3"
@@ -4574,7 +4566,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="number"
-                      value=""
                     />
                     <label
                       key=".3"
@@ -4940,7 +4931,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   selectOnNavigation={true}
                   selection={true}
                   upward={false}
-                  value={null}
                   wrapSelection={true}
                 >
                   <Ref
@@ -5555,7 +5545,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="number"
-                      value=""
                     />
                     <label
                       key=".3"

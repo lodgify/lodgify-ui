@@ -42,7 +42,6 @@ exports[`<TextArea /> should render the right structure 1`] = `
           onBlur={[Function]}
           onChange={[Function]}
           rows="8"
-          value=""
         />
       </div>
     </Input>
