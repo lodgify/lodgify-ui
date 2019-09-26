@@ -1,3 +1,10 @@
+## [1.242.5](https://github.com/lodgify/lodgify-ui/compare/v1.242.4...v1.242.5) (2019-09-26)
+
+
+### Bug Fixes
+
+* **GoogleMapsReact:** trigger onBoundsChange on every interaction ([3a7cc50](https://github.com/lodgify/lodgify-ui/commit/3a7cc50))
+
 ## [1.242.4](https://github.com/lodgify/lodgify-ui/compare/v1.242.3...v1.242.4) (2019-09-26)
 
 
