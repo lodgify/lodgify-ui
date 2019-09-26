@@ -1,3 +1,11 @@
+## [1.242.4](https://github.com/lodgify/lodgify-ui/compare/v1.242.3...v1.242.4) (2019-09-26)
+
+
+### Bug Fixes
+
+* **Dropdown:** use initialValue and value in the first render ([e547328](https://github.com/lodgify/lodgify-ui/commit/e547328))
+* **Dropdown and InputController:** use props if state is null ([f8c0019](https://github.com/lodgify/lodgify-ui/commit/f8c0019))
+
 ## [1.242.3](https://github.com/lodgify/lodgify-ui/compare/v1.242.2...v1.242.3) (2019-09-25)
 
 
