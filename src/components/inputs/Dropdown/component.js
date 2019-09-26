@@ -103,7 +103,8 @@ export class Component extends PureComponent {
         className={getClassNames('dropdown-container', {
           'has-images': hasImages,
           'is-compact': isCompact,
-          dirty: some(value),
+          dirty:
+            some(value) || some(this.props.initialValue || this.props.value),
           error: error,
           focus: isOpen,
           valid: isValid,
