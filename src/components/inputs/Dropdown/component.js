@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 
+import { some } from 'utils/some';
 import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { getHasErrorMessage } from 'utils/get-has-error-message';
 import { Icon, ICON_NAMES } from 'elements/Icon';
@@ -15,7 +16,6 @@ import { ErrorMessage } from '../ErrorMessage';
 import { getIsOpenAfterChange } from './utils/getIsOpenAfterChange';
 import { adaptOptions } from './utils/adaptOptions';
 import { getHasImages } from './utils/getHasImages';
-import { isValueValid } from './utils/isValueValid';
 import { getIcon } from './utils/getIcon';
 
 /**
@@ -91,7 +91,7 @@ export class Component extends PureComponent {
     } = this.props;
     const value = getControlledInputValue(
       this.props.value,
-      undefined,
+      this.props.initialValue,
       this.state.value
     );
     const hasImages = getHasImages(options);
@@ -103,7 +103,7 @@ export class Component extends PureComponent {
         className={getClassNames('dropdown-container', {
           'has-images': hasImages,
           'is-compact': isCompact,
-          dirty: isValueValid(value),
+          dirty: some(value),
           error: error,
           focus: isOpen,
           valid: isValid,
