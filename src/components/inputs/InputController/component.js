@@ -79,7 +79,8 @@ export class Component extends PureComponent {
       <Input
         className={getClassNames({
           compact: isCompact,
-          dirty: some(value),
+          dirty:
+            some(value) || some(this.props.value || this.props.initialValue),
           error: error,
           focus: isFocused,
           valid: isValid,

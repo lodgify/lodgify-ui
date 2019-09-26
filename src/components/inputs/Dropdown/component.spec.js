@@ -1,7 +1,7 @@
 jest.mock('utils/get-is-input-value-reset');
 jest.mock('utils/get-controlled-input-value');
 jest.mock('./utils/getIsOpenAfterChange');
-jest.mock('./utils/isValueValid');
+jest.mock('/utils/some');
 jest.mock('./utils/getIcon');
 
 import React from 'react';
@@ -18,10 +18,11 @@ import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { Icon } from 'elements/Icon';
 import { getControlledInputValue } from 'utils/get-controlled-input-value';
 
+import { some } from '/utils/some';
+
 import { ErrorMessage } from '../ErrorMessage';
 import { ICON_NAMES } from '../../elements/Icon/constants';
 
-import { isValueValid } from './utils/isValueValid';
 import { getIsOpenAfterChange } from './utils/getIsOpenAfterChange';
 import { Component as Dropdown } from './component';
 import { getIcon } from './utils/getIcon';
@@ -319,14 +320,14 @@ describe('<Dropdown />', () => {
           .instance()
           .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
 
-        expect(isValueValid).toHaveBeenCalledWith(CONTROLLED_VALUE);
+        expect(some).toHaveBeenCalledWith(CONTROLLED_VALUE);
       });
 
       it('should call `this.setState` with the correct arguments', () => {
         const PROPS_VALUE = '🌴';
         const wrapper = getDropdown({ value: PROPS_VALUE });
 
-        isValueValid.mockReturnValueOnce(false);
+        some.mockReturnValueOnce(false);
         wrapper.instance().setState = jest.fn();
         wrapper
           .instance()
@@ -482,7 +483,7 @@ describe('<Dropdown />', () => {
 
       expect(getControlledInputValue).toHaveBeenCalledWith(
         PROPS_VALUE,
-        undefined,
+        null,
         STATE_VALUE
       );
     });
