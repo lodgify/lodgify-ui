@@ -45,18 +45,8 @@ export class Component extends PureComponent {
   };
 
   componentDidUpdate = ({ bounds: previousControlledBounds }) => {
-    const { areBoundsChanged, bounds, isDragged, isZoomed, size } = this.state;
-    const { bounds: controlledBounds, onBoundsChange } = this.props;
-
-    if (areBoundsChanged) {
-      onBoundsChange(adaptNESWtoENSW(bounds), isZoomed || isDragged);
-      this.setState({
-        areBoundsChanged: false,
-        areBoundsChangedProgramatically: false,
-        isDragged: false,
-        isZoomed: false,
-      });
-    }
+    const { size } = this.state;
+    const { bounds: controlledBounds } = this.props;
 
     if (isEqual(previousControlledBounds, controlledBounds)) return;
 
@@ -74,6 +64,19 @@ export class Component extends PureComponent {
   };
 
   handleChange = ({ bounds, center, size, zoom }) => {
+    const { onBoundsChange } = this.props;
+    const { areBoundsChanged, isDragged, isZoomed } = this.state;
+
+    if (areBoundsChanged) {
+      onBoundsChange(adaptNESWtoENSW(bounds), isZoomed || isDragged);
+      this.setState({
+        areBoundsChanged: false,
+        areBoundsChangedProgramatically: false,
+        isDragged: false,
+        isZoomed: false,
+      });
+    }
+
     if (!this.props.bounds) return;
     this.setState({ areBoundsChanged: true, bounds, center, size, zoom });
   };

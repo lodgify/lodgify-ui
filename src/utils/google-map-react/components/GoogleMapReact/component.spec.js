@@ -75,77 +75,6 @@ describe('<GoogleMapReacts />', () => {
   });
 
   describe('componentDidUpdate', () => {
-    describe('if `state.areBoundsChanged` is false', () => {
-      it('should not call `props.onBoundsChange`', () => {
-        const onBoundsChange = jest.fn();
-        const wrapper = getGoogleMapReact({ onBoundsChange });
-
-        wrapper.setState({ areBoundsChanged: false });
-        onBoundsChange.mockClear();
-        wrapper.instance().componentDidUpdate({ bounds: null });
-
-        expect(onBoundsChange).not.toHaveBeenCalled();
-      });
-    });
-
-    describe('if `state.areBoundsChanged` is true', () => {
-      it('should call `props.onBoundsChange` with the right arguments', () => {
-        const onBoundsChange = jest.fn();
-        const wrapper = getGoogleMapReact({ onBoundsChange });
-        const bounds = 'some bounds';
-        const ADAPTED_BOUNDS = 'adapted bounds';
-
-        adaptNESWtoENSW.mockClear();
-        adaptNESWtoENSW.mockReturnValueOnce(ADAPTED_BOUNDS);
-        wrapper.instance().setState({ areBoundsChanged: true, bounds });
-        wrapper.instance().componentDidUpdate({ bounds: null });
-
-        expect(adaptNESWtoENSW).toHaveBeenCalledWith(bounds);
-        expect(onBoundsChange).toHaveBeenCalledWith(ADAPTED_BOUNDS, false);
-      });
-
-      describe('if either `state.isZoomed` or `state.isDragged` is true', () => {
-        it('should call `props.onBoundsChange` with the right arguments', () => {
-          const testCases = [[true, false], [false, true]];
-
-          testCases.forEach(([isZoomed, isDragged]) => {
-            const onBoundsChange = jest.fn();
-            const wrapper = getGoogleMapReact({ onBoundsChange });
-            const bounds = 'some bounds';
-            const ADAPTED_BOUNDS = 'adapted bounds';
-
-            adaptNESWtoENSW.mockClear();
-            adaptNESWtoENSW.mockReturnValueOnce(ADAPTED_BOUNDS);
-            wrapper.instance().setState({
-              areBoundsChanged: true,
-              bounds,
-              isZoomed,
-              isDragged,
-            });
-            wrapper.instance().componentDidUpdate({ bounds: null });
-
-            expect(adaptNESWtoENSW).toHaveBeenCalledWith(bounds);
-            expect(onBoundsChange).toHaveBeenCalledWith(ADAPTED_BOUNDS, true);
-          });
-        });
-      });
-
-      it('should call `setState` with the right arguments', () => {
-        const wrapper = getGoogleMapReact();
-
-        wrapper.instance().setState = jest.fn(wrapper.instance().setState);
-        wrapper.instance().setState({ areBoundsChanged: true });
-        wrapper.instance().componentDidUpdate({ bounds: null });
-
-        expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          areBoundsChanged: false,
-          areBoundsChangedProgramatically: false,
-          isDragged: false,
-          isZoomed: false,
-        });
-      });
-    });
-
     describe('if `props.bounds` has not changed', () => {
       it('should not call `fitBounds`', () => {
         const bounds = {
@@ -208,9 +137,53 @@ describe('<GoogleMapReacts />', () => {
   });
 
   describe('handleChange', () => {
+    describe('if `state.areBoundsChanged` is false', () => {
+      it('should not call `props.onBoundsChange`', () => {
+        const onBoundsChange = jest.fn();
+        const wrapper = getGoogleMapReact({ onBoundsChange });
+
+        wrapper.setState({ areBoundsChanged: false });
+        onBoundsChange.mockClear();
+        wrapper.instance().handleChange({});
+
+        expect(onBoundsChange).not.toHaveBeenCalled();
+      });
+    });
+
+    describe('if `state.areBoundsChanged` is true', () => {
+      it('should call `props.onBoundsChange` with the right arguments', () => {
+        const onBoundsChange = jest.fn();
+        const wrapper = getGoogleMapReact({ onBoundsChange });
+        const bounds = 'some bounds';
+        const ADAPTED_BOUNDS = 'adapted bounds';
+
+        adaptNESWtoENSW.mockClear();
+        adaptNESWtoENSW.mockReturnValueOnce(ADAPTED_BOUNDS);
+        wrapper.instance().setState({ areBoundsChanged: true, bounds });
+        wrapper.instance().handleChange({ bounds });
+
+        expect(adaptNESWtoENSW).toHaveBeenCalledWith(bounds);
+        expect(onBoundsChange).toHaveBeenCalledWith(ADAPTED_BOUNDS, false);
+      });
+
+      it('should call `setState` with the right arguments', () => {
+        const wrapper = getGoogleMapReact();
+
+        wrapper.instance().setState = jest.fn(wrapper.instance().setState);
+        wrapper.instance().setState({ areBoundsChanged: true });
+        wrapper.instance().handleChange({ bounds: null });
+        expect(wrapper.instance().setState).toHaveBeenCalledWith({
+          areBoundsChanged: false,
+          areBoundsChangedProgramatically: false,
+          isDragged: false,
+          isZoomed: false,
+        });
+      });
+    });
+
     describe('if `props.bounds` is `null`', () => {
       it('should not call `setState`', () => {
-        const wrapper = getGoogleMapReact();
+        const wrapper = getGoogleMapReact({ areBoundsChanged: false });
 
         wrapper.instance().setState = jest.fn();
         wrapper.instance().handleChange({});
