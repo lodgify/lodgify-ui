@@ -32,6 +32,7 @@ const props = {
   description: 'yayayay',
   locationName: 'Catania',
   pricePerPeriod: '$280',
+  pricePerPeriodPrefix: 'morf',
   name: 'The Cat House',
   propertyType: 'Bed and breakfast',
   propertyUrl: '/',

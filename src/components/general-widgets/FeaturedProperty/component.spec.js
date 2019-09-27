@@ -10,6 +10,7 @@ const props = {
   imageUrl: '🐱🐱',
   locationName: 'Catania',
   pricePerPeriod: '$280',
+  pricePerPeriodPrefix: 'from',
   propertyName: 'The Cat House',
   propertyType: 'Bed and breakfast',
   propertyUrl: '/',
