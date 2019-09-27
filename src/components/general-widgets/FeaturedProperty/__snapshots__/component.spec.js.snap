@@ -78,7 +78,8 @@ exports[`<FeaturedProperty /> should render the right structure 1`] = `
     </CardDescription>
     <CardDescription>
       <span>
-        from 
+        from
+         
         <Heading
           className={null}
           hasMargin={true}

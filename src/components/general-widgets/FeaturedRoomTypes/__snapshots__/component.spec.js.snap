@@ -40,6 +40,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
     locationName="Catania"
     periodText="per night"
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
     roomTypeUrl="/"
@@ -150,7 +151,8 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 className="description"
               >
                 <span>
-                  from 
+                  from
+                   
                   <Heading
                     className={null}
                     hasMargin={true}
@@ -191,6 +193,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
     locationName="Catania"
     periodText="per night"
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
     roomTypeUrl="/"
@@ -301,7 +304,8 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
                 className="description"
               >
                 <span>
-                  from 
+                  from
+                   
                   <Heading
                     className={null}
                     hasMargin={true}
@@ -351,6 +355,7 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
     locationName=""
     periodText="per night"
     pricePerPeriod=""
+    pricePerPeriodPrefix="from"
     roomTypeName=""
     roomTypeUrl=""
     roomTypeUrlTarget="_self"
@@ -440,6 +445,7 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
     locationName=""
     periodText="per night"
     pricePerPeriod=""
+    pricePerPeriodPrefix="from"
     roomTypeName=""
     roomTypeUrl=""
     roomTypeUrlTarget="_self"
@@ -529,6 +535,7 @@ exports[`<FeaturedRoomTypes /> if \`props.featuredRoomTypes\` length === 0 and \
     locationName=""
     periodText="per night"
     pricePerPeriod=""
+    pricePerPeriodPrefix="from"
     roomTypeName=""
     roomTypeUrl=""
     roomTypeUrlTarget="_self"
@@ -670,6 +677,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
     locationName="Catania"
     periodText="per night"
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
     roomTypeUrl="/"
@@ -780,7 +788,8 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 className="description"
               >
                 <span>
-                  from 
+                  from
+                   
                   <Heading
                     className={null}
                     hasMargin={true}
@@ -821,6 +830,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
     locationName="Catania"
     periodText="per night"
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     ratingNumber={4.8}
     roomTypeName="The Cat House"
     roomTypeUrl="/"
@@ -931,7 +941,8 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
                 className="description"
               >
                 <span>
-                  from 
+                  from
+                   
                   <Heading
                     className={null}
                     hasMargin={true}

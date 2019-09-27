@@ -7,6 +7,7 @@ exports[`<Summary/> by default should render the right structure 1`] = `
   locationName="Catania"
   periodText="per night"
   pricePerPeriod="$280"
+  pricePerPeriodPrefix="morf"
   propertyName="The Cat House"
   ratingNumber={4.8}
 >
@@ -249,7 +250,8 @@ exports[`<Summary/> by default should render the right structure 1`] = `
               className="ui segment"
             >
               <span>
-                from 
+                morf
+                 
                 <Heading
                   className={null}
                   hasMargin={true}
@@ -288,6 +290,7 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
   locationName="Catania"
   periodText="per night"
   pricePerPeriod="$280"
+  pricePerPeriodPrefix="morf"
   propertyName="The Cat House"
   ratingNumber={4.8}
 >
@@ -310,7 +313,8 @@ exports[`<Summary/> if \`props.areOnlyNightPriceAndRatingDisplayed\` is true sho
               className="ui segment"
             >
               <span>
-                from 
+                morf
+                 
                 <Heading
                   className={null}
                   hasMargin={true}

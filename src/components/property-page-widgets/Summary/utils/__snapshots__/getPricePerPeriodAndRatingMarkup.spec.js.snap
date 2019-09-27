@@ -32,7 +32,8 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is falsy should re
       className="ui segment"
     >
       <span>
-        from 
+        morf
+         
         <Heading
           className={null}
           hasMargin={true}
@@ -67,7 +68,8 @@ exports[`getPricePerPeriodAndRatingMarkup if \`ratingNumber\` is truthy should r
       className="ui segment"
     >
       <span>
-        from 
+        morf
+         
         <Heading
           className={null}
           hasMargin={true}
