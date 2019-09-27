@@ -29,6 +29,7 @@ export const FAX = 'Fax';
 export const FIRST_NAME = 'First Name';
 export const FORGOT_PASSWORD = 'Forgot password';
 export const FORM_PROTECTION = 'This form is protected against bots';
+export const FROM_PRICE_PER_PERIOD = 'from';
 export const GUEST_TYPE = 'Guest Type';
 export const GUESTS = 'Guests';
 export const HOME_HIGHLIGHTS = 'Home highlights';
