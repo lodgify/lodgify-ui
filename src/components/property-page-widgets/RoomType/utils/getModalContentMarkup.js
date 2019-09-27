@@ -21,6 +21,7 @@ import { Slideshow } from 'media/Slideshow';
  * @param  {string}      name
  * @param  {string}      periodText
  * @param  {string}      pricePerPeriod
+ * @param  {string}      pricePerPeriodPrefix
  * @param  {number}      ratingNumber
  * @param  {Object[]}    slideShowImages
  * @param  {boolean}     isUserOnMobile
@@ -35,6 +36,7 @@ export const getModalContentMarkup = (
   name,
   periodText,
   pricePerPeriod,
+  pricePerPeriodPrefix,
   ratingNumber,
   slideShowImages,
   isUserOnMobile
@@ -70,7 +72,7 @@ export const getModalContentMarkup = (
     <Grid>
       <GridColumn verticalAlignContent="bottom" width={12}>
         <Paragraph>
-          from
+          {`${pricePerPeriodPrefix}`}
           <strong>{` ${pricePerPeriod} `}</strong>
           {`${periodText}`}
         </Paragraph>

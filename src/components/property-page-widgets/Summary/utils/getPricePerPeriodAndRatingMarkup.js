@@ -9,6 +9,7 @@ import { TextPlaceholder } from 'elements/TextPlaceholder';
  * @param  {boolean} isShowingPlaceholder
  * @param  {string}  periodText
  * @param  {string}  pricePerPeriod
+ * @param  {string}  pricePerPeriodPrefix
  * @param  {number}  ratingNumber
  * @return {Object}
  */
@@ -16,6 +17,7 @@ export const getPricePerPeriodAndRatingMarkup = (
   isShowingPlaceholder,
   periodText,
   pricePerPeriod,
+  pricePerPeriodPrefix,
   ratingNumber
 ) =>
   isShowingPlaceholder ? (
@@ -26,7 +28,12 @@ export const getPricePerPeriodAndRatingMarkup = (
   ) : (
     <Fragment>
       <Segment>
-        {getPricePerPeriodMarkup(pricePerPeriod, periodText, 'small')}
+        {getPricePerPeriodMarkup(
+          pricePerPeriod,
+          pricePerPeriodPrefix,
+          periodText,
+          'small'
+        )}
       </Segment>
       {!!ratingNumber && (
         <Segment className="is-rating">

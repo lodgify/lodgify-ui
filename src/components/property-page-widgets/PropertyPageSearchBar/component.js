@@ -1,10 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { PER_NIGHT } from 'utils/default-strings';
 import { Button } from 'elements/Button';
 import { ShowOn } from 'layout/ShowOn';
-import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
+import {
+  CHECK_OUR_AVAILABILITY,
+  PER_NIGHT,
+  FROM_PRICE_PER_PERIOD,
+} from 'utils/default-strings';
 import { SearchBar } from 'general-widgets/SearchBar';
 
 import { getSummaryMarkup } from './utils/getSummaryMarkup';
@@ -30,6 +33,7 @@ export const Component = ({
   summaryLocationName,
   summaryPeriodText,
   summaryPricePerPeriod,
+  summaryPricePerPeriodPrefix,
   summaryPropertyName,
   summaryRatingNumber,
 }) => {
@@ -57,6 +61,7 @@ export const Component = ({
     locationName: summaryLocationName,
     periodText: summaryPeriodText,
     pricePerPeriod: summaryPricePerPeriod,
+    pricePerPeriodPrefix: summaryPricePerPeriodPrefix,
     propertyName: summaryPropertyName,
     ratingNumber: summaryRatingNumber,
     isShowingPlaceholder,
@@ -112,6 +117,7 @@ Component.defaultProps = {
   ),
   summaryPeriodText: PER_NIGHT,
   summaryPricePerPeriod: undefined,
+  summaryPricePerPeriodPrefix: FROM_PRICE_PER_PERIOD,
   summaryRatingNumber: undefined,
 };
 
@@ -174,6 +180,8 @@ Component.propTypes = {
   summaryPeriodText: PropTypes.string,
   /** The price per night of the property, with currency symbol, displayed in the summary. */
   summaryPricePerPeriod: PropTypes.string,
+  /** The text prefix to display along with the price per period. */
+  summaryPricePerPeriodPrefix: PropTypes.string,
   /** The property name displayed in the summary. */
   summaryPropertyName: PropTypes.string.isRequired,
   /** The numeral rating for the property, out of 5, displayed in the summary. */

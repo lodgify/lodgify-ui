@@ -4,6 +4,7 @@ const PLACEHOLDER_DATA = {
   imageUrl: '',
   locationName: '',
   pricePerPeriod: '',
+  pricePerPeriodPrefix: '',
   propertyName: '',
   propertyType: '',
   propertyUrl: '',

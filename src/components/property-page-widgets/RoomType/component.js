@@ -2,7 +2,11 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
-import { PER_NIGHT, ROOM_AMENITIES } from 'utils/default-strings';
+import {
+  PER_NIGHT,
+  FROM_PRICE_PER_PERIOD,
+  ROOM_AMENITIES,
+} from 'utils/default-strings';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
@@ -36,6 +40,7 @@ const Component = ({
   name,
   periodText,
   pricePerPeriod,
+  pricePerPeriodPrefix,
   ratingNumber,
   slideShowImages,
 }) => (
@@ -99,6 +104,7 @@ const Component = ({
                       name,
                       periodText,
                       pricePerPeriod,
+                      pricePerPeriodPrefix,
                       ratingNumber,
                       slideShowImages,
                       isUserOnMobile
@@ -127,6 +133,7 @@ const Component = ({
                         name,
                         periodText,
                         pricePerPeriod,
+                        pricePerPeriodPrefix,
                         ratingNumber,
                         slideShowImages,
                         isUserOnMobile
@@ -138,7 +145,11 @@ const Component = ({
                     width={8}
                   >
                     <Card.Description>
-                      {getPricePerPeriodMarkup(pricePerPeriod, periodText)}
+                      {getPricePerPeriodMarkup(
+                        pricePerPeriod,
+                        pricePerPeriodPrefix,
+                        periodText
+                      )}
                     </Card.Description>
                     <ShowOn mobile parent={Divider} />
                   </GridColumn>
@@ -160,6 +171,7 @@ Component.defaultProps = {
   extraFeatures: [],
   isShowingPlaceholder: false,
   periodText: PER_NIGHT,
+  pricePerPeriodPrefix: FROM_PRICE_PER_PERIOD,
   ratingNumber: null,
 };
 
@@ -215,6 +227,8 @@ Component.propTypes = {
   periodText: PropTypes.string,
   /** The price per period of the room, with currency symbol. */
   pricePerPeriod: PropTypes.string.isRequired,
+  /** The text prefix to display along with the price per period. */
+  pricePerPeriodPrefix: PropTypes.string,
   /** The numeral rating for the property room given in the review, out of 5. */
   ratingNumber: PropTypes.number,
   /** The images to display for the slideshow */

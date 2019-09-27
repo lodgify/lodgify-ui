@@ -70,6 +70,7 @@ const roomTypeFeatures = [
 <RoomType
   description={description}
   pricePerPeriod="$280"
+  pricePerPeriodPrefix="from"
   name="The Cat House"
   ratingNumber={4.8}
   features={roomTypeFeatures}
@@ -89,6 +90,7 @@ const roomTypeFeatures = [
   features={[]}
   name=""
   pricePerPeriod=""
+  pricePerPeriodPrefix=""
   isShowingPlaceholder
   slideShowImages={[]}
 />

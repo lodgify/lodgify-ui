@@ -37,6 +37,7 @@ const props = {
   ),
   summaryLocationName: 'Location',
   summaryPricePerPeriod: '250€',
+  summaryPricePerPeriodPrefix: 'morf',
   summaryPropertyName: 'Property',
   summaryRatingNumber: 4.5,
 };

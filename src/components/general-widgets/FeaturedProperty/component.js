@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
-import { PER_NIGHT } from 'utils/default-strings';
+import { PER_NIGHT, FROM_PRICE_PER_PERIOD } from 'utils/default-strings';
 import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
 import { getPricePerPeriodMarkup } from 'utils/get-price-per-period-markup';
 import { Rating } from 'elements/Rating';
@@ -26,6 +26,7 @@ export const Component = ({
   isShowingPlaceholder,
   locationName,
   periodText,
+  pricePerPeriodPrefix,
   pricePerPeriod,
   placeholderImageUrl,
   propertyName,
@@ -64,7 +65,11 @@ export const Component = ({
             )}
           </Card.Description>
           <Card.Description>
-            {getPricePerPeriodMarkup(pricePerPeriod, periodText)}
+            {getPricePerPeriodMarkup(
+              pricePerPeriod,
+              pricePerPeriodPrefix,
+              periodText
+            )}
           </Card.Description>
         </Card.Content>
       </Fragment>
@@ -81,6 +86,7 @@ Component.defaultProps = {
   imageSrcSet: undefined,
   isShowingPlaceholder: false,
   periodText: PER_NIGHT,
+  pricePerPeriodPrefix: FROM_PRICE_PER_PERIOD,
   placeholderImageUrl: undefined,
   propertyUrlTarget: '_self',
   ratingNumber: null,
@@ -109,6 +115,8 @@ Component.propTypes = {
   placeholderImageUrl: PropTypes.string,
   /** The price per period of the property, with currency symbol. */
   pricePerPeriod: PropTypes.string.isRequired,
+  /** The text prefix to display along with the price per period. */
+  pricePerPeriodPrefix: PropTypes.string,
   /** The name of the property. */
   propertyName: PropTypes.string.isRequired,
   /** The name of the type of the property. */

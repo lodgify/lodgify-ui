@@ -23,6 +23,7 @@ class Controller extends React.Component {
             modalSummaryElement={<div>Property information for mobile modal</div>}
             summaryLocationName="Barcelona"
             summaryPricePerPeriod="$200"
+            summaryPricePerPeriodPrefix="from"
             summaryPropertyName="Property"
             summaryRatingNumber={2.3}
           />

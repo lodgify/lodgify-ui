@@ -12,6 +12,7 @@ import { getLocationNameMarkup } from './getLocationNameMarkup';
  * @param  {string} locationName
  * @param  {string} periodText
  * @param  {string} pricePerPeriod
+ * @param  {string} pricePerPeriodPrefix
  * @param  {number} ratingNumber
  * @return {Object}
  */
@@ -20,6 +21,7 @@ export const getPricePerPeriodAndLocationMarkup = (
   locationName,
   periodText,
   pricePerPeriod,
+  pricePerPeriodPrefix,
   ratingNumber
 ) => (
   <Fragment>
@@ -37,7 +39,12 @@ export const getPricePerPeriodAndLocationMarkup = (
           </Segment>
         )}
         <Segment>
-          {getPricePerPeriodMarkup(pricePerPeriod, periodText, 'small')}
+          {getPricePerPeriodMarkup(
+            pricePerPeriod,
+            pricePerPeriodPrefix,
+            periodText,
+            'small'
+          )}
         </Segment>
       </Fragment>
     )}

@@ -2,6 +2,7 @@
 <Summary
   locationName="Catania"
   pricePerPeriod="$280"
+  pricePerPeriodPrefix="from"
   propertyName="The Cat House"
   ratingNumber={4.8}
 />
@@ -27,6 +28,7 @@
   areOnlyNightPriceAndRatingDisplayed
   locationName="Catania"
   pricePerPeriod="$280"
+  pricePerPeriodPrefix="from"
   propertyName="The Cat House"
   ratingNumber={4.8}
 />
