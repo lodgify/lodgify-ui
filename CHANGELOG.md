@@ -1,3 +1,10 @@
+## [1.245.1](https://github.com/lodgify/lodgify-ui/compare/v1.245.0...v1.245.1) (2019-09-30)
+
+
+### Bug Fixes
+
+* **InputController:** remove the label behaviour ([a6b611a](https://github.com/lodgify/lodgify-ui/commit/a6b611a))
+
 # [1.245.0](https://github.com/lodgify/lodgify-ui/compare/v1.244.0...v1.245.0) (2019-09-30)
 
 
