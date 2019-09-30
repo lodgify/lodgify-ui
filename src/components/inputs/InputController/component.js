@@ -52,11 +52,6 @@ export class Component extends PureComponent {
     this.setState({ value });
   };
 
-  /**
-   * Force focus the input when the dynamic label is clicked.
-   */
-  handleClick = () => this.htmlInput.focus();
-
   render() {
     const {
       children,
@@ -91,11 +86,11 @@ export class Component extends PureComponent {
         {React.cloneElement(children, {
           [inputOnChangeFunctionName]: this.handleChange,
           ref: input => (this.htmlInput = input),
+          placeholder: label,
           ...mapValueToProps(value),
         })}
         {hasErrorMessage && <ErrorMessage errorMessage={error} />}
         {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
-        {label && <label onClick={this.handleClick}>{label}</label>}
         {icon}
       </Input>
     );

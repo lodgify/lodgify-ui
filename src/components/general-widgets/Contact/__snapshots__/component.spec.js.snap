@@ -139,14 +139,9 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Name"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Name
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -472,16 +467,11 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   }
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Phone"
                                   value=""
                                 >
                                   <div />
                                 </PhoneInput>
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Phone
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -548,14 +538,9 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   name="email"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Email"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Email
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -612,14 +597,9 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Guests"
                                   type="number"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Guests
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -773,6 +753,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   onDatesChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
+                                  placeholder={null}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -834,14 +815,9 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Comments"
                               rows="8"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Comments
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1071,14 +1047,9 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Name"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Name
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -1404,16 +1375,11 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   }
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Phone"
                                   value=""
                                 >
                                   <div />
                                 </PhoneInput>
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Phone
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -1480,14 +1446,9 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   name="email"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Email"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Email
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -1544,14 +1505,9 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Guests"
                                   type="number"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Guests
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -1705,6 +1661,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   onDatesChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
+                                  placeholder={null}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -1766,14 +1723,9 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Comments"
                               rows="8"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Comments
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1856,6 +1808,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                               }
                               onChange={[Function]}
                               onClick={[Function]}
+                              placeholder={null}
                               radio={false}
                               toggle={false}
                               type="checkbox"
@@ -1897,6 +1850,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                       checked={false}
                                       className="hidden"
                                       disabled={false}
+                                      placeholder={null}
                                       readOnly={true}
                                       tabIndex={0}
                                       type="checkbox"
@@ -2191,14 +2145,9 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Name"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Name
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -2524,16 +2473,11 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   }
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Phone"
                                   value=""
                                 >
                                   <div />
                                 </PhoneInput>
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Phone
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -2600,14 +2544,9 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   name="email"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Email"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Email
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -2664,14 +2603,9 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Guests"
                                   type="number"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Guests
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -2825,6 +2759,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   onDatesChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
+                                  placeholder={null}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -2886,14 +2821,9 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Comments"
                               rows="8"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Comments
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -3008,6 +2938,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                               },
                             ]
                           }
+                          placeholder="Property"
                           renderLabel={[Function]}
                           search={false}
                           searchInput="text"
@@ -3030,9 +2961,11 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   <div
                                     aria-atomic="true"
                                     aria-live="polite"
-                                    class="text"
+                                    class="default text"
                                     role="alert"
-                                  />
+                                  >
+                                    Property
+                                  </div>
                                   <i
                                     class="icon"
                                   >
@@ -3118,9 +3051,11 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                     <div
                                       aria-atomic="true"
                                       aria-live="polite"
-                                      class="text"
+                                      class="default text"
                                       role="alert"
-                                    />
+                                    >
+                                      Property
+                                    </div>
                                     <i
                                       class="icon"
                                     >
@@ -3208,9 +3143,11 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                 <div
                                   aria-atomic={true}
                                   aria-live="polite"
-                                  className="text"
+                                  className="default text"
                                   role="alert"
-                                />
+                                >
+                                  Property
+                                </div>
                                 <Icon
                                   className=""
                                   color={null}
@@ -3381,11 +3318,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                             </RefFindNode>
                           </Ref>
                         </Dropdown>
-                        <label
-                          onClick={[Function]}
-                        >
-                          Property
-                        </label>
                       </div>
                     </Dropdown>
                   </div>
@@ -3604,14 +3536,9 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Name"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Name
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -3937,16 +3864,11 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   }
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Phone"
                                   value=""
                                 >
                                   <div />
                                 </PhoneInput>
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Phone
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -4013,14 +3935,9 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   name="email"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Email"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Email
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -4077,14 +3994,9 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   name="guests"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Guests"
                                   type="number"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Guests
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -4238,6 +4150,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   onDatesChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
+                                  placeholder={null}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -4299,14 +4212,9 @@ exports[`<Contact /> should have the correct structure 1`] = `
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Comments"
                               rows="8"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Comments
-                            </label>
                           </div>
                         </Input>
                       </InputController>

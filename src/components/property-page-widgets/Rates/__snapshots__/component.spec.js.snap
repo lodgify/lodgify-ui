@@ -176,6 +176,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                 },
               ]
             }
+            placeholder=""
             renderLabel={[Function]}
             search={true}
             searchInput="text"
@@ -1960,6 +1961,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                     },
                                   ]
                                 }
+                                placeholder=""
                                 renderLabel={[Function]}
                                 search={true}
                                 searchInput="text"
@@ -3804,6 +3806,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                 },
               ]
             }
+            placeholder=""
             renderLabel={[Function]}
             search={false}
             searchInput="text"
@@ -4467,6 +4470,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                 },
               ]
             }
+            placeholder=""
             renderLabel={[Function]}
             search={true}
             searchInput="text"
@@ -6251,6 +6255,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                     },
                                   ]
                                 }
+                                placeholder=""
                                 renderLabel={[Function]}
                                 search={true}
                                 searchInput="text"

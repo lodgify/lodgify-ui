@@ -125,14 +125,9 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                               name="firstName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="First Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              First Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -188,14 +183,9 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                               name="lastName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Last Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Last Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -251,14 +241,9 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -474,14 +459,9 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               name="firstName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="First Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              First Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -537,14 +517,9 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               name="lastName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Last Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Last Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -600,14 +575,9 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -690,6 +660,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               }
                               onChange={[Function]}
                               onClick={[Function]}
+                              placeholder={null}
                               radio={false}
                               toggle={false}
                               type="checkbox"
@@ -731,6 +702,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                       checked={false}
                                       className="hidden"
                                       disabled={false}
+                                      placeholder={null}
                                       readOnly={true}
                                       tabIndex={0}
                                       type="checkbox"
@@ -992,14 +964,9 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                               name="firstName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="First Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              First Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1055,14 +1022,9 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                               name="lastName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Last Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Last Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1118,14 +1080,9 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1350,14 +1307,9 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                               name="firstName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="First Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              First Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1413,14 +1365,9 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                               name="lastName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Last Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Last Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1476,14 +1423,9 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1708,14 +1650,9 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                               name="firstName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="First Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              First Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1771,14 +1708,9 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                               name="lastName"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Last Name"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Last Name
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1834,14 +1766,9 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>

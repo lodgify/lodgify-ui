@@ -79,6 +79,7 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
             },
           ]
         }
+        placeholder=""
         renderLabel={[Function]}
         search={[Function]}
         searchInput="text"

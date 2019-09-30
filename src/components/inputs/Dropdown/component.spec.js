@@ -207,18 +207,15 @@ describe('<Dropdown />', () => {
     });
 
     describe('`label`', () => {
-      const getDropdownLabel = () => getDropdownContainer({ label: '🏷' });
+      const getSemanticDropdown = extraProps =>
+        getDropdown(extraProps).find(SemanticDropdown);
 
-      it('should render if `props.label` is passed', () => {
-        const wrapper = getDropdownLabel();
+      it('should have placeholder if `props.label` is passed', () => {
+        const semanticDropdown = getSemanticDropdown({ label: '🏷' });
 
-        expectComponentToHaveChildren(wrapper, SemanticDropdown, 'label');
-      });
-
-      it('should have the right props', () => {
-        const wrapper = getDropdownLabel().find('label');
-
-        expectComponentToHaveProps(wrapper, { onClick: expect.any(Function) });
+        expectComponentToHaveProps(semanticDropdown, {
+          placeholder: '🏷',
+        });
       });
     });
   });
@@ -430,22 +427,6 @@ describe('<Dropdown />', () => {
     it('should toggle `state.isOpen`', () => {
       const wrapper = getDropdown();
       const input = wrapper.find(SemanticDropdown);
-
-      input.simulate('click');
-      const actual = wrapper.state();
-
-      expect(actual).toEqual({
-        isOpen: true,
-        isBlurred: false,
-        value: CONTROLLED_VALUE,
-      });
-    });
-  });
-
-  describe('Interaction: onClick the dynamic label', () => {
-    it('should set `state.isOpen` to true', () => {
-      const wrapper = getDropdown({ label: 'click me' });
-      const input = wrapper.find('label');
 
       input.simulate('click');
       const actual = wrapper.state();

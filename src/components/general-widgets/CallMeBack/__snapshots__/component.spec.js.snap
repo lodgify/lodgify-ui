@@ -184,14 +184,9 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Name"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Name
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -517,16 +512,11 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                   }
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Phone"
                                   value=""
                                 >
                                   <div />
                                 </PhoneInput>
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Phone
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -584,14 +574,9 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -709,7 +694,7 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                   onDateChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
-                                  placeholder="Date"
+                                  placeholder={null}
                                   withPortal={true}
                                 >
                                   <div />
@@ -876,6 +861,7 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                   },
                                 ]
                               }
+                              placeholder="Time"
                               renderLabel={[Function]}
                               search={false}
                               searchInput="text"
@@ -898,9 +884,11 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                       <div
                                         aria-atomic="true"
                                         aria-live="polite"
-                                        class="text"
+                                        class="default text"
                                         role="alert"
-                                      />
+                                      >
+                                        Time
+                                      </div>
                                       <i
                                         class="icon"
                                       >
@@ -1012,9 +1000,11 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                         <div
                                           aria-atomic="true"
                                           aria-live="polite"
-                                          class="text"
+                                          class="default text"
                                           role="alert"
-                                        />
+                                        >
+                                          Time
+                                        </div>
                                         <i
                                           class="icon"
                                         >
@@ -1128,9 +1118,11 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                     <div
                                       aria-atomic={true}
                                       aria-live="polite"
-                                      className="text"
+                                      className="default text"
                                       role="alert"
-                                    />
+                                    >
+                                      Time
+                                    </div>
                                     <Icon
                                       className=""
                                       color={null}
@@ -1365,11 +1357,6 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                 </RefFindNode>
                               </Ref>
                             </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Time
-                            </label>
                           </div>
                         </Dropdown>
                       </div>
@@ -1484,6 +1471,7 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                               },
                             ]
                           }
+                          placeholder="Property"
                           renderLabel={[Function]}
                           search={false}
                           searchInput="text"
@@ -1506,9 +1494,11 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                   <div
                                     aria-atomic="true"
                                     aria-live="polite"
-                                    class="text"
+                                    class="default text"
                                     role="alert"
-                                  />
+                                  >
+                                    Property
+                                  </div>
                                   <i
                                     class="icon"
                                   >
@@ -1594,9 +1584,11 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                     <div
                                       aria-atomic="true"
                                       aria-live="polite"
-                                      class="text"
+                                      class="default text"
                                       role="alert"
-                                    />
+                                    >
+                                      Property
+                                    </div>
                                     <i
                                       class="icon"
                                     >
@@ -1684,9 +1676,11 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                 <div
                                   aria-atomic={true}
                                   aria-live="polite"
-                                  className="text"
+                                  className="default text"
                                   role="alert"
-                                />
+                                >
+                                  Property
+                                </div>
                                 <Icon
                                   className=""
                                   color={null}
@@ -1857,11 +1851,6 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                             </RefFindNode>
                           </Ref>
                         </Dropdown>
-                        <label
-                          onClick={[Function]}
-                        >
-                          Property
-                        </label>
                       </div>
                     </Dropdown>
                   </div>
@@ -1912,14 +1901,9 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Notes"
                               rows="8"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Notes
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -2194,14 +2178,9 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Name"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Name
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -2527,16 +2506,11 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   }
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Phone"
                                   value=""
                                 >
                                   <div />
                                 </PhoneInput>
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Phone
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -2594,14 +2568,9 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -2719,7 +2688,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   onDateChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
-                                  placeholder="Date"
+                                  placeholder={null}
                                   withPortal={true}
                                 >
                                   <div />
@@ -2886,6 +2855,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   },
                                 ]
                               }
+                              placeholder="Time"
                               renderLabel={[Function]}
                               search={false}
                               searchInput="text"
@@ -2908,9 +2878,11 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                       <div
                                         aria-atomic="true"
                                         aria-live="polite"
-                                        class="text"
+                                        class="default text"
                                         role="alert"
-                                      />
+                                      >
+                                        Time
+                                      </div>
                                       <i
                                         class="icon"
                                       >
@@ -3022,9 +2994,11 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                         <div
                                           aria-atomic="true"
                                           aria-live="polite"
-                                          class="text"
+                                          class="default text"
                                           role="alert"
-                                        />
+                                        >
+                                          Time
+                                        </div>
                                         <i
                                           class="icon"
                                         >
@@ -3138,9 +3112,11 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                     <div
                                       aria-atomic={true}
                                       aria-live="polite"
-                                      className="text"
+                                      className="default text"
                                       role="alert"
-                                    />
+                                    >
+                                      Time
+                                    </div>
                                     <Icon
                                       className=""
                                       color={null}
@@ -3375,11 +3351,6 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                 </RefFindNode>
                               </Ref>
                             </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Time
-                            </label>
                           </div>
                         </Dropdown>
                       </div>
@@ -3494,6 +3465,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                               },
                             ]
                           }
+                          placeholder="Property"
                           renderLabel={[Function]}
                           search={false}
                           searchInput="text"
@@ -3516,9 +3488,11 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   <div
                                     aria-atomic="true"
                                     aria-live="polite"
-                                    class="text"
+                                    class="default text"
                                     role="alert"
-                                  />
+                                  >
+                                    Property
+                                  </div>
                                   <i
                                     class="icon"
                                   >
@@ -3604,9 +3578,11 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                     <div
                                       aria-atomic="true"
                                       aria-live="polite"
-                                      class="text"
+                                      class="default text"
                                       role="alert"
-                                    />
+                                    >
+                                      Property
+                                    </div>
                                     <i
                                       class="icon"
                                     >
@@ -3694,9 +3670,11 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                 <div
                                   aria-atomic={true}
                                   aria-live="polite"
-                                  className="text"
+                                  className="default text"
                                   role="alert"
-                                />
+                                >
+                                  Property
+                                </div>
                                 <Icon
                                   className=""
                                   color={null}
@@ -3867,11 +3845,6 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                             </RefFindNode>
                           </Ref>
                         </Dropdown>
-                        <label
-                          onClick={[Function]}
-                        >
-                          Property
-                        </label>
                       </div>
                     </Dropdown>
                   </div>
@@ -3922,14 +3895,9 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Notes"
                               rows="8"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Notes
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -4012,6 +3980,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                               }
                               onChange={[Function]}
                               onClick={[Function]}
+                              placeholder={null}
                               radio={false}
                               toggle={false}
                               type="checkbox"
@@ -4053,6 +4022,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                       checked={false}
                                       className="hidden"
                                       disabled={false}
+                                      placeholder={null}
                                       readOnly={true}
                                       tabIndex={0}
                                       type="checkbox"
@@ -4354,14 +4324,9 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Name"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Name
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -4687,16 +4652,11 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                   }
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Phone"
                                   value=""
                                 >
                                   <div />
                                 </PhoneInput>
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Phone
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -4754,14 +4714,9 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -4879,7 +4834,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                   onDateChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
-                                  placeholder="Date"
+                                  placeholder={null}
                                   withPortal={true}
                                 >
                                   <div />
@@ -5046,6 +5001,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                   },
                                 ]
                               }
+                              placeholder="Time"
                               renderLabel={[Function]}
                               search={false}
                               searchInput="text"
@@ -5068,9 +5024,11 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                       <div
                                         aria-atomic="true"
                                         aria-live="polite"
-                                        class="text"
+                                        class="default text"
                                         role="alert"
-                                      />
+                                      >
+                                        Time
+                                      </div>
                                       <i
                                         class="icon"
                                       >
@@ -5182,9 +5140,11 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                         <div
                                           aria-atomic="true"
                                           aria-live="polite"
-                                          class="text"
+                                          class="default text"
                                           role="alert"
-                                        />
+                                        >
+                                          Time
+                                        </div>
                                         <i
                                           class="icon"
                                         >
@@ -5298,9 +5258,11 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                     <div
                                       aria-atomic={true}
                                       aria-live="polite"
-                                      className="text"
+                                      className="default text"
                                       role="alert"
-                                    />
+                                    >
+                                      Time
+                                    </div>
                                     <Icon
                                       className=""
                                       color={null}
@@ -5535,11 +5497,6 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                 </RefFindNode>
                               </Ref>
                             </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Time
-                            </label>
                           </div>
                         </Dropdown>
                       </div>
@@ -5592,14 +5549,9 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Notes"
                               rows="8"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Notes
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -5865,14 +5817,9 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                   name="name"
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Name"
                                   type="text"
                                 />
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Name
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -6198,16 +6145,11 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                   }
                                   onBlur={[Function]}
                                   onChange={[Function]}
+                                  placeholder="Phone"
                                   value=""
                                 >
                                   <div />
                                 </PhoneInput>
-                                <label
-                                  key=".3"
-                                  onClick={[Function]}
-                                >
-                                  Phone
-                                </label>
                               </div>
                             </Input>
                           </InputController>
@@ -6265,14 +6207,9 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -6390,7 +6327,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                   onDateChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
-                                  placeholder="Date"
+                                  placeholder={null}
                                   withPortal={true}
                                 >
                                   <div />
@@ -6557,6 +6494,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                   },
                                 ]
                               }
+                              placeholder="Time"
                               renderLabel={[Function]}
                               search={false}
                               searchInput="text"
@@ -6579,9 +6517,11 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                       <div
                                         aria-atomic="true"
                                         aria-live="polite"
-                                        class="text"
+                                        class="default text"
                                         role="alert"
-                                      />
+                                      >
+                                        Time
+                                      </div>
                                       <i
                                         class="icon"
                                       >
@@ -6693,9 +6633,11 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                         <div
                                           aria-atomic="true"
                                           aria-live="polite"
-                                          class="text"
+                                          class="default text"
                                           role="alert"
-                                        />
+                                        >
+                                          Time
+                                        </div>
                                         <i
                                           class="icon"
                                         >
@@ -6809,9 +6751,11 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                     <div
                                       aria-atomic={true}
                                       aria-live="polite"
-                                      className="text"
+                                      className="default text"
                                       role="alert"
-                                    />
+                                    >
+                                      Time
+                                    </div>
                                     <Icon
                                       className=""
                                       color={null}
@@ -7046,11 +6990,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                 </RefFindNode>
                               </Ref>
                             </Dropdown>
-                            <label
-                              onClick={[Function]}
-                            >
-                              Time
-                            </label>
                           </div>
                         </Dropdown>
                       </div>
@@ -7165,6 +7104,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               },
                             ]
                           }
+                          placeholder="Property"
                           renderLabel={[Function]}
                           search={false}
                           searchInput="text"
@@ -7187,9 +7127,11 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                   <div
                                     aria-atomic="true"
                                     aria-live="polite"
-                                    class="text"
+                                    class="default text"
                                     role="alert"
-                                  />
+                                  >
+                                    Property
+                                  </div>
                                   <i
                                     class="icon"
                                   >
@@ -7275,9 +7217,11 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                     <div
                                       aria-atomic="true"
                                       aria-live="polite"
-                                      class="text"
+                                      class="default text"
                                       role="alert"
-                                    />
+                                    >
+                                      Property
+                                    </div>
                                     <i
                                       class="icon"
                                     >
@@ -7365,9 +7309,11 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                 <div
                                   aria-atomic={true}
                                   aria-live="polite"
-                                  className="text"
+                                  className="default text"
                                   role="alert"
-                                />
+                                >
+                                  Property
+                                </div>
                                 <Icon
                                   className=""
                                   color={null}
@@ -7538,11 +7484,6 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             </RefFindNode>
                           </Ref>
                         </Dropdown>
-                        <label
-                          onClick={[Function]}
-                        >
-                          Property
-                        </label>
                       </div>
                     </Dropdown>
                   </div>
@@ -7593,14 +7534,9 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                               maxLength={800}
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Notes"
                               rows="8"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Notes
-                            </label>
                           </div>
                         </Input>
                       </InputController>

@@ -129,16 +129,13 @@ export class Component extends PureComponent {
           onClick={() => this.handleOpen(!isOpen)}
           open={isOpen}
           options={adaptedOptions}
-          placeholder={getPropOnCondition(label, isCompact)}
+          placeholder={label}
           search={getOptionsWithSearch || isSearchable}
           selectOnBlur={false}
           selection
           upward={willOpenAbove}
           value={value}
         />
-        {!hasImages && label && !isCompact && (
-          <label onClick={() => this.handleOpen(true)}>{label}</label>
-        )}
       </div>
     );
   }

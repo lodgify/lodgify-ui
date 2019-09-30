@@ -146,6 +146,7 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                                 label="yo"
                                 onChange={[Function]}
                                 onClick={[Function]}
+                                placeholder={null}
                                 radio={false}
                                 toggle={false}
                                 type="checkbox"
@@ -187,6 +188,7 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                                         checked={false}
                                         className="hidden"
                                         disabled={false}
+                                        placeholder={null}
                                         readOnly={true}
                                         tabIndex={0}
                                         type="checkbox"
@@ -381,6 +383,7 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                                 label="yo"
                                 onChange={[Function]}
                                 onClick={[Function]}
+                                placeholder={null}
                                 radio={false}
                                 toggle={false}
                                 type="checkbox"
@@ -422,6 +425,7 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                                         checked={false}
                                         className="hidden"
                                         disabled={false}
+                                        placeholder={null}
                                         readOnly={true}
                                         tabIndex={0}
                                         type="checkbox"

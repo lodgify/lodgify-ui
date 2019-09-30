@@ -407,6 +407,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             onDatesChange={[Function]}
                                             onFocusChange={[Function]}
                                             openDirection="up"
+                                            placeholder={null}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
                                             withPortal={false}
@@ -498,14 +499,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         name="guests"
                                         onBlur={[Function]}
                                         onChange={[Function]}
+                                        placeholder="Guests"
                                         type="number"
                                       />
-                                      <label
-                                        key=".3"
-                                        onClick={[Function]}
-                                      >
-                                        Guests
-                                      </label>
                                       <Icon
                                         className={null}
                                         color={null}
@@ -515,7 +511,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         isColorInverted={false}
                                         isDisabled={false}
                                         isLabelLeft={false}
-                                        key=".4"
+                                        key=".3"
                                         labelText={null}
                                         labelWeight={null}
                                         name="users"
@@ -1125,6 +1121,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             onDatesChange={[Function]}
                                             onFocusChange={[Function]}
                                             openDirection="up"
+                                            placeholder={null}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
                                             withPortal={false}
@@ -1216,14 +1213,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         name="guests"
                                         onBlur={[Function]}
                                         onChange={[Function]}
+                                        placeholder="Guests"
                                         type="number"
                                       />
-                                      <label
-                                        key=".3"
-                                        onClick={[Function]}
-                                      >
-                                        Guests
-                                      </label>
                                       <Icon
                                         className={null}
                                         color={null}
@@ -1233,7 +1225,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         isColorInverted={false}
                                         isDisabled={false}
                                         isLabelLeft={false}
-                                        key=".4"
+                                        key=".3"
                                         labelText={null}
                                         labelWeight={null}
                                         name="users"
@@ -2124,6 +2116,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             onDatesChange={[Function]}
                                             onFocusChange={[Function]}
                                             openDirection="up"
+                                            placeholder={null}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
                                             withPortal={false}
@@ -2215,14 +2208,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         name="guests"
                                         onBlur={[Function]}
                                         onChange={[Function]}
+                                        placeholder="Guests"
                                         type="number"
                                       />
-                                      <label
-                                        key=".3"
-                                        onClick={[Function]}
-                                      >
-                                        Guests
-                                      </label>
                                       <Icon
                                         className={null}
                                         color={null}
@@ -2232,7 +2220,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         isColorInverted={false}
                                         isDisabled={false}
                                         isLabelLeft={false}
-                                        key=".4"
+                                        key=".3"
                                         labelText={null}
                                         labelWeight={null}
                                         name="users"
@@ -3008,6 +2996,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             onDatesChange={[Function]}
                                             onFocusChange={[Function]}
                                             openDirection="up"
+                                            placeholder={null}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
                                             withPortal={false}
@@ -3099,14 +3088,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         name="guests"
                                         onBlur={[Function]}
                                         onChange={[Function]}
+                                        placeholder="Guests"
                                         type="number"
                                       />
-                                      <label
-                                        key=".3"
-                                        onClick={[Function]}
-                                      >
-                                        Guests
-                                      </label>
                                       <Icon
                                         className={null}
                                         color={null}
@@ -3116,7 +3100,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         isColorInverted={false}
                                         isDisabled={false}
                                         isLabelLeft={false}
-                                        key=".4"
+                                        key=".3"
                                         labelText={null}
                                         labelWeight={null}
                                         name="users"

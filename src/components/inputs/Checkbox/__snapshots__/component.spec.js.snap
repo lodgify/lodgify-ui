@@ -46,6 +46,7 @@ exports[`<Checkbox /> if \`props.isFluid\` is true should return the right struc
           label=""
           onChange={[Function]}
           onClick={[Function]}
+          placeholder={null}
           radio={false}
           toggle={false}
           type="checkbox"
@@ -87,6 +88,7 @@ exports[`<Checkbox /> if \`props.isFluid\` is true should return the right struc
                   checked={false}
                   className="hidden"
                   disabled={false}
+                  placeholder={null}
                   readOnly={true}
                   tabIndex={0}
                   type="checkbox"
@@ -164,6 +166,7 @@ exports[`<Checkbox /> if \`props.isLabelLeft\` is true should return the right s
           label=""
           onChange={[Function]}
           onClick={[Function]}
+          placeholder={null}
           radio={false}
           toggle={false}
           type="checkbox"
@@ -205,6 +208,7 @@ exports[`<Checkbox /> if \`props.isLabelLeft\` is true should return the right s
                   checked={false}
                   className="hidden"
                   disabled={false}
+                  placeholder={null}
                   readOnly={true}
                   tabIndex={0}
                   type="checkbox"
@@ -282,6 +286,7 @@ exports[`<Checkbox /> should return the right structure 1`] = `
           label=""
           onChange={[Function]}
           onClick={[Function]}
+          placeholder={null}
           radio={false}
           toggle={false}
           type="checkbox"
@@ -323,6 +328,7 @@ exports[`<Checkbox /> should return the right structure 1`] = `
                   checked={false}
                   className="hidden"
                   disabled={false}
+                  placeholder={null}
                   readOnly={true}
                   tabIndex={0}
                   type="checkbox"

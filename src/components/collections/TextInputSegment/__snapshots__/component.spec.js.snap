@@ -113,14 +113,9 @@ exports[`<TextInputSegment /> should render the right structure 1`] = `
                     name=""
                     onBlur={[Function]}
                     onChange={[Function]}
+                    placeholder="🏷"
                     type="text"
                   />
-                  <label
-                    key=".3"
-                    onClick={[Function]}
-                  >
-                    🏷
-                  </label>
                 </div>
               </Input>
             </InputController>
