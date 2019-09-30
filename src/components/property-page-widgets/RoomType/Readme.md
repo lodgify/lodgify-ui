@@ -77,6 +77,7 @@ const roomTypeFeatures = [
   extraFeatures={extraRoomTypeFeatures}
   slideShowImages={images}
   amenities={availableAmenities}
+  moreInfoText="More info"
 />
 ```
 
@@ -93,5 +94,6 @@ const roomTypeFeatures = [
   pricePerPeriodPrefix=""
   isShowingPlaceholder
   slideShowImages={[]}
+  moreInfoText=""
 />
 ```

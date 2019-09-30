@@ -34,6 +34,7 @@ const props = {
   pricePerPeriod: '$280',
   pricePerPeriodPrefix: 'morf',
   name: 'The Cat House',
+  moreInfoText: 'Oof',
   propertyType: 'Bed and breakfast',
   propertyUrl: '/',
   ratingNumber: 4,

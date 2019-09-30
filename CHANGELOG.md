@@ -1,3 +1,19 @@
+# [1.244.0](https://github.com/lodgify/lodgify-ui/compare/v1.243.0...v1.244.0) (2019-09-30)
+
+
+### Bug Fixes
+
+* **getFormattedAmenityItems:** subsitute hardcoded and string ([261bd53](https://github.com/lodgify/lodgify-ui/commit/261bd53))
+
+
+### Features
+
+* **Amenities:** add amenitiesConjunctionText prop ([9eb9e75](https://github.com/lodgify/lodgify-ui/commit/9eb9e75))
+* **default-strings:** add more info string ([105f4d7](https://github.com/lodgify/lodgify-ui/commit/105f4d7))
+* **getCategoryMarkup:** add amenitiesConjunctionText ([58cb362](https://github.com/lodgify/lodgify-ui/commit/58cb362))
+* **getExtraItemsMarkup:** add amenitiesConjunctionText ([ca6d762](https://github.com/lodgify/lodgify-ui/commit/ca6d762))
+* **RoomType*:** add moreInfoText prop ([b978b02](https://github.com/lodgify/lodgify-ui/commit/b978b02))
+
 # [1.243.0](https://github.com/lodgify/lodgify-ui/compare/v1.242.5...v1.243.0) (2019-09-30)
 
 

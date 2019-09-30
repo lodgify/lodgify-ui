@@ -690,6 +690,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
           },
         ]
       }
+      amenitiesConjunctionText="and"
       hasExtraItemsInModal={false}
       headingText="Room Amenities"
       isStacked={false}
@@ -1125,6 +1126,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
           },
         ]
       }
+      amenitiesConjunctionText="and"
       hasExtraItemsInModal={false}
       headingText="Room Amenities"
       isStacked={false}
@@ -1719,6 +1721,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
           },
         ]
       }
+      amenitiesConjunctionText="and"
       hasExtraItemsInModal={false}
       headingText="Room Amenities"
       isStacked={false}
@@ -2301,6 +2304,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
           },
         ]
       }
+      amenitiesConjunctionText="and"
       hasExtraItemsInModal={false}
       headingText="Room Amenities"
       isStacked={false}
