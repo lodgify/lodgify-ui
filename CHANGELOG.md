@@ -1,3 +1,15 @@
+# [1.245.0](https://github.com/lodgify/lodgify-ui/compare/v1.244.0...v1.245.0) (2019-09-30)
+
+
+### Bug Fixes
+
+* **styleguide:** logo import ([9541053](https://github.com/lodgify/lodgify-ui/commit/9541053))
+
+
+### Features
+
+* **GoogleMaps:** restrict google maps bounds ([8ca846a](https://github.com/lodgify/lodgify-ui/commit/8ca846a))
+
 # [1.244.0](https://github.com/lodgify/lodgify-ui/compare/v1.243.0...v1.244.0) (2019-09-30)
 
 
