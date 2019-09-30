@@ -37,11 +37,13 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
           key=".0"
           maxRating={5}
           onRate={[Function]}
+          placeholder={null}
           size="small"
         >
           <div
             className="ui small rating"
             onMouseLeave={[Function]}
+            placeholder={null}
             role="radiogroup"
             tabIndex={-1}
           >
@@ -226,11 +228,13 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
           key=".0"
           maxRating={5}
           onRate={[Function]}
+          placeholder={null}
           size="small"
         >
           <div
             className="ui small rating"
             onMouseLeave={[Function]}
+            placeholder={null}
             role="radiogroup"
             tabIndex={-1}
           >

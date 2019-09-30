@@ -1,6 +1,6 @@
-import React from 'react';
+import React from "react";
 
-import { getIsDevelopmentServer } from '../utils/getIsDevelopmentServer';
+import { getIsDevelopmentServer } from "../utils/getIsDevelopmentServer";
 
 import logo from './logo.png';
 

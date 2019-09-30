@@ -130,6 +130,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
               onDatesChange={[Function]}
               onFocusChange={[Function]}
               openDirection="down"
+              placeholder={null}
               startDate={null}
               startDateId="start_date_id_"
               startDatePlaceholderText=""
@@ -275,6 +276,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
               onDatesChange={[Function]}
               onFocusChange={[Function]}
               openDirection="down"
+              placeholder={null}
               startDate={null}
               startDateId="start_date_id_"
               startDatePlaceholderText=""

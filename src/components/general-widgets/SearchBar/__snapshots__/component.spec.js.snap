@@ -207,6 +207,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       },
                     ]
                   }
+                  placeholder="Location"
                   renderLabel={[Function]}
                   search={false}
                   searchInput="text"
@@ -229,9 +230,11 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           <div
                             aria-atomic="true"
                             aria-live="polite"
-                            class="text"
+                            class="default text"
                             role="alert"
-                          />
+                          >
+                            Location
+                          </div>
                           <i
                             class="icon"
                           >
@@ -317,9 +320,11 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                             <div
                               aria-atomic="true"
                               aria-live="polite"
-                              class="text"
+                              class="default text"
                               role="alert"
-                            />
+                            >
+                              Location
+                            </div>
                             <i
                               class="icon"
                             >
@@ -407,9 +412,11 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         <div
                           aria-atomic={true}
                           aria-live="polite"
-                          className="text"
+                          className="default text"
                           role="alert"
-                        />
+                        >
+                          Location
+                        </div>
                         <Icon
                           className=""
                           color={null}
@@ -580,11 +587,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     </RefFindNode>
                   </Ref>
                 </Dropdown>
-                <label
-                  onClick={[Function]}
-                >
-                  Location
-                </label>
               </div>
             </Dropdown>
           </div>
@@ -736,6 +738,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           onDatesChange={[Function]}
                           onFocusChange={[Function]}
                           openDirection="down"
+                          placeholder={null}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -827,14 +830,9 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       name="guests"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      placeholder="Guests"
                       type="number"
                     />
-                    <label
-                      key=".3"
-                      onClick={[Function]}
-                    >
-                      Guests
-                    </label>
                     <Icon
                       className={null}
                       color={null}
@@ -844,7 +842,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       isColorInverted={false}
                       isDisabled={false}
                       isLabelLeft={false}
-                      key=".4"
+                      key=".3"
                       labelText={null}
                       labelWeight={null}
                       name="users"
@@ -1222,6 +1220,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 },
                               ]
                             }
+                            placeholder="Location"
                             renderLabel={[Function]}
                             search={false}
                             searchInput="text"
@@ -1244,9 +1243,11 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     <div
                                       aria-atomic="true"
                                       aria-live="polite"
-                                      class="text"
+                                      class="default text"
                                       role="alert"
-                                    />
+                                    >
+                                      Location
+                                    </div>
                                     <i
                                       class="icon"
                                     >
@@ -1332,9 +1333,11 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                       <div
                                         aria-atomic="true"
                                         aria-live="polite"
-                                        class="text"
+                                        class="default text"
                                         role="alert"
-                                      />
+                                      >
+                                        Location
+                                      </div>
                                       <i
                                         class="icon"
                                       >
@@ -1422,9 +1425,11 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                   <div
                                     aria-atomic={true}
                                     aria-live="polite"
-                                    className="text"
+                                    className="default text"
                                     role="alert"
-                                  />
+                                  >
+                                    Location
+                                  </div>
                                   <Icon
                                     className=""
                                     color={null}
@@ -1595,11 +1600,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                               </RefFindNode>
                             </Ref>
                           </Dropdown>
-                          <label
-                            onClick={[Function]}
-                          >
-                            Location
-                          </label>
                         </div>
                       </Dropdown>
                     </div>
@@ -1751,6 +1751,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     onDatesChange={[Function]}
                                     onFocusChange={[Function]}
                                     openDirection="up"
+                                    placeholder={null}
                                     startDate={null}
                                     startDatePlaceholderText="Check in"
                                     withPortal={true}
@@ -1842,14 +1843,9 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 name="guests"
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                placeholder="Guests"
                                 type="number"
                               />
-                              <label
-                                key=".3"
-                                onClick={[Function]}
-                              >
-                                Guests
-                              </label>
                               <Icon
                                 className={null}
                                 color={null}
@@ -1859,7 +1855,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 isColorInverted={false}
                                 isDisabled={false}
                                 isLabelLeft={false}
-                                key=".4"
+                                key=".3"
                                 labelText={null}
                                 labelWeight={null}
                                 name="users"
@@ -2484,6 +2480,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       },
                     ]
                   }
+                  placeholder="Location"
                   renderLabel={[Function]}
                   search={false}
                   searchInput="text"
@@ -2506,9 +2503,11 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           <div
                             aria-atomic="true"
                             aria-live="polite"
-                            class="text"
+                            class="default text"
                             role="alert"
-                          />
+                          >
+                            Location
+                          </div>
                           <i
                             class="icon"
                           >
@@ -2594,9 +2593,11 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                             <div
                               aria-atomic="true"
                               aria-live="polite"
-                              class="text"
+                              class="default text"
                               role="alert"
-                            />
+                            >
+                              Location
+                            </div>
                             <i
                               class="icon"
                             >
@@ -2684,9 +2685,11 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         <div
                           aria-atomic={true}
                           aria-live="polite"
-                          className="text"
+                          className="default text"
                           role="alert"
-                        />
+                        >
+                          Location
+                        </div>
                         <Icon
                           className=""
                           color={null}
@@ -2857,11 +2860,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     </RefFindNode>
                   </Ref>
                 </Dropdown>
-                <label
-                  onClick={[Function]}
-                >
-                  Location
-                </label>
               </div>
             </Dropdown>
           </div>
@@ -3013,6 +3011,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           onDatesChange={[Function]}
                           onFocusChange={[Function]}
                           openDirection="down"
+                          placeholder={null}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -3104,14 +3103,9 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       name="guests"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      placeholder="Guests"
                       type="number"
                     />
-                    <label
-                      key=".3"
-                      onClick={[Function]}
-                    >
-                      Guests
-                    </label>
                     <Icon
                       className={null}
                       color={null}
@@ -3121,7 +3115,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       isColorInverted={false}
                       isDisabled={false}
                       isLabelLeft={false}
-                      key=".4"
+                      key=".3"
                       labelText={null}
                       labelWeight={null}
                       name="users"
@@ -3481,6 +3475,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       },
                     ]
                   }
+                  placeholder="Location"
                   renderLabel={[Function]}
                   search={false}
                   searchInput="text"
@@ -3503,9 +3498,11 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           <div
                             aria-atomic="true"
                             aria-live="polite"
-                            class="text"
+                            class="default text"
                             role="alert"
-                          />
+                          >
+                            Location
+                          </div>
                           <i
                             class="icon"
                           >
@@ -3591,9 +3588,11 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                             <div
                               aria-atomic="true"
                               aria-live="polite"
-                              class="text"
+                              class="default text"
                               role="alert"
-                            />
+                            >
+                              Location
+                            </div>
                             <i
                               class="icon"
                             >
@@ -3681,9 +3680,11 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                         <div
                           aria-atomic={true}
                           aria-live="polite"
-                          className="text"
+                          className="default text"
                           role="alert"
-                        />
+                        >
+                          Location
+                        </div>
                         <Icon
                           className=""
                           color={null}
@@ -3854,11 +3855,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                     </RefFindNode>
                   </Ref>
                 </Dropdown>
-                <label
-                  onClick={[Function]}
-                >
-                  Location
-                </label>
               </div>
             </Dropdown>
           </div>
@@ -4010,6 +4006,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           onDatesChange={[Function]}
                           onFocusChange={[Function]}
                           openDirection="down"
+                          placeholder={null}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -4101,14 +4098,9 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       name="guests"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      placeholder="Guests"
                       type="number"
                     />
-                    <label
-                      key=".3"
-                      onClick={[Function]}
-                    >
-                      Guests
-                    </label>
                     <Icon
                       className={null}
                       color={null}
@@ -4118,7 +4110,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       isColorInverted={false}
                       isDisabled={false}
                       isLabelLeft={false}
-                      key=".4"
+                      key=".3"
                       labelText={null}
                       labelWeight={null}
                       name="users"
@@ -4474,6 +4466,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           onDatesChange={[Function]}
                           onFocusChange={[Function]}
                           openDirection="down"
+                          placeholder={null}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -4565,14 +4558,9 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       name="guests"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      placeholder="Guests"
                       type="number"
                     />
-                    <label
-                      key=".3"
-                      onClick={[Function]}
-                    >
-                      Guests
-                    </label>
                     <Icon
                       className={null}
                       color={null}
@@ -4582,7 +4570,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       isColorInverted={false}
                       isDisabled={false}
                       isLabelLeft={false}
-                      key=".4"
+                      key=".3"
                       labelText={null}
                       labelWeight={null}
                       name="users"
@@ -4924,6 +4912,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       },
                     ]
                   }
+                  placeholder="Location"
                   renderLabel={[Function]}
                   search={false}
                   searchInput="text"
@@ -4946,9 +4935,11 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           <div
                             aria-atomic="true"
                             aria-live="polite"
-                            class="text"
+                            class="default text"
                             role="alert"
-                          />
+                          >
+                            Location
+                          </div>
                           <i
                             class="icon"
                           >
@@ -5034,9 +5025,11 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                             <div
                               aria-atomic="true"
                               aria-live="polite"
-                              class="text"
+                              class="default text"
                               role="alert"
-                            />
+                            >
+                              Location
+                            </div>
                             <i
                               class="icon"
                             >
@@ -5124,9 +5117,11 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         <div
                           aria-atomic={true}
                           aria-live="polite"
-                          className="text"
+                          className="default text"
                           role="alert"
-                        />
+                        >
+                          Location
+                        </div>
                         <Icon
                           className=""
                           color={null}
@@ -5297,11 +5292,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     </RefFindNode>
                   </Ref>
                 </Dropdown>
-                <label
-                  onClick={[Function]}
-                >
-                  Location
-                </label>
               </div>
             </Dropdown>
           </div>
@@ -5453,6 +5443,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           onDatesChange={[Function]}
                           onFocusChange={[Function]}
                           openDirection="down"
+                          placeholder={null}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -5544,14 +5535,9 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       name="guests"
                       onBlur={[Function]}
                       onChange={[Function]}
+                      placeholder="Guests"
                       type="number"
                     />
-                    <label
-                      key=".3"
-                      onClick={[Function]}
-                    >
-                      Guests
-                    </label>
                     <Icon
                       className={null}
                       color={null}
@@ -5561,7 +5547,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       isColorInverted={false}
                       isDisabled={false}
                       isLabelLeft={false}
-                      key=".4"
+                      key=".3"
                       labelText={null}
                       labelWeight={null}
                       name="users"

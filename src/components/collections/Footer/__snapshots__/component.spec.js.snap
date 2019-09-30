@@ -3501,14 +3501,9 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                                             name=""
                                             onBlur={[Function]}
                                             onChange={[Function]}
+                                            placeholder="Your email"
                                             type="text"
                                           />
-                                          <label
-                                            key=".3"
-                                            onClick={[Function]}
-                                          >
-                                            Your email
-                                          </label>
                                         </div>
                                       </Input>
                                     </InputController>

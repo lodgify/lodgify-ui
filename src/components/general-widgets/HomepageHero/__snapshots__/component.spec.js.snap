@@ -653,6 +653,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         },
                                                       ]
                                                     }
+                                                    placeholder="Location"
                                                     renderLabel={[Function]}
                                                     search={false}
                                                     searchInput="text"
@@ -675,9 +676,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             <div
                                                               aria-atomic="true"
                                                               aria-live="polite"
-                                                              class="text"
+                                                              class="default text"
                                                               role="alert"
-                                                            />
+                                                            >
+                                                              Location
+                                                            </div>
                                                             <i
                                                               class="icon"
                                                             >
@@ -724,9 +727,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                               <div
                                                                 aria-atomic="true"
                                                                 aria-live="polite"
-                                                                class="text"
+                                                                class="default text"
                                                                 role="alert"
-                                                              />
+                                                              >
+                                                                Location
+                                                              </div>
                                                               <i
                                                                 class="icon"
                                                               >
@@ -775,9 +780,11 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           <div
                                                             aria-atomic={true}
                                                             aria-live="polite"
-                                                            className="text"
+                                                            className="default text"
                                                             role="alert"
-                                                          />
+                                                          >
+                                                            Location
+                                                          </div>
                                                           <Icon
                                                             className=""
                                                             color={null}
@@ -852,11 +859,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       </RefFindNode>
                                                     </Ref>
                                                   </Dropdown>
-                                                  <label
-                                                    onClick={[Function]}
-                                                  >
-                                                    Location
-                                                  </label>
                                                 </div>
                                               </Dropdown>
                                             </div>
@@ -1006,6 +1008,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             onDatesChange={[Function]}
                                                             onFocusChange={[Function]}
                                                             openDirection="up"
+                                                            placeholder={null}
                                                             startDate={null}
                                                             startDatePlaceholderText="Check in"
                                                             withPortal={false}
@@ -1097,14 +1100,9 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         name="guests"
                                                         onBlur={[Function]}
                                                         onChange={[Function]}
+                                                        placeholder="Guests"
                                                         type="number"
                                                       />
-                                                      <label
-                                                        key=".3"
-                                                        onClick={[Function]}
-                                                      >
-                                                        Guests
-                                                      </label>
                                                       <Icon
                                                         className={null}
                                                         color={null}
@@ -1114,7 +1112,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         isColorInverted={false}
                                                         isDisabled={false}
                                                         isLabelLeft={false}
-                                                        key=".4"
+                                                        key=".3"
                                                         labelText={null}
                                                         labelWeight={null}
                                                         name="users"

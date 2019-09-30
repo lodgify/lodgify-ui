@@ -312,6 +312,7 @@ exports[`<PhoneInput /> should render the right structure 1`] = `
           }
           onBlur={[Function]}
           onChange={[Function]}
+          placeholder=""
         >
           <div />
         </PhoneInput>

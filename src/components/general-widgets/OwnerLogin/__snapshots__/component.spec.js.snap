@@ -169,14 +169,9 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -232,14 +227,9 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                               name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Password"
                               type="password"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Password
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -649,14 +639,9 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -712,14 +697,9 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                               name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Password"
                               type="password"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Password
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1129,14 +1109,9 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                               name="email"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Email"
                               type="text"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Email
-                            </label>
                           </div>
                         </Input>
                       </InputController>
@@ -1192,14 +1167,9 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                               name="password"
                               onBlur={[Function]}
                               onChange={[Function]}
+                              placeholder="Password"
                               type="password"
                             />
-                            <label
-                              key=".3"
-                              onClick={[Function]}
-                            >
-                              Password
-                            </label>
                           </div>
                         </Input>
                       </InputController>

@@ -44,6 +44,7 @@ exports[`<TextInput /> should render the right structure 1`] = `
           name=""
           onBlur={[Function]}
           onChange={[Function]}
+          placeholder=""
           type="text"
         />
       </div>
