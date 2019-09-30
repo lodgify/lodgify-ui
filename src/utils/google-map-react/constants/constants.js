@@ -11,3 +11,8 @@ export const MARKER_IMAGE_STYLE = { transform: 'translate(-50%, -100%)' };
 export const CIRCLE_IMAGE_SRC =
   'http://i1.cdbcdn.com/images/google-maps-approximate-location.png';
 export const CIRCLE_IMAGE_STYLE = { transform: 'translate(-50%, -50%)' };
+
+export const NORTH_BORDER_BOUNDS = 89;
+export const SOUTH_BORDER_BOUNDS = -89;
+export const EAST_BORDER_BOUNDS = 180;
+export const WEST_BORDER_BOUNDS = -179;
