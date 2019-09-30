@@ -1,3 +1,11 @@
+# [1.243.0](https://github.com/lodgify/lodgify-ui/compare/v1.242.5...v1.243.0) (2019-09-30)
+
+
+### Features
+
+* **Components:** implement pricePerPeriodPrefix ([b9eb1a1](https://github.com/lodgify/lodgify-ui/commit/b9eb1a1))
+* **constants:** implement from default-string ([6fadffb](https://github.com/lodgify/lodgify-ui/commit/6fadffb))
+
 ## [1.242.5](https://github.com/lodgify/lodgify-ui/compare/v1.242.4...v1.242.5) (2019-09-26)
 
 
