@@ -10,15 +10,17 @@ import { Modal } from 'elements/Modal';
 import { getCategoryMarkup } from './getCategoryMarkup';
 
 /**
- * @param {boolean} hasExtraItemsInModal
- * @param {string} modalTriggerText
+ * @param {boolean}  hasExtraItemsInModal
+ * @param {string}   modalTriggerText
  * @param {Object[]} amenities
+ * @param {string}   amenitiesConjunctionText
  * @return {Object}
  */
 export const getExtraItemsMarkup = (
   hasExtraItemsInModal,
   modalTriggerText,
-  amenities
+  amenities,
+  amenitiesConjunctionText
 ) =>
   hasExtraItemsInModal ? (
     <GridColumn width={12}>
@@ -31,5 +33,7 @@ export const getExtraItemsMarkup = (
       </Modal>
     </GridColumn>
   ) : (
-    amenities.map((amenity, index) => getCategoryMarkup(amenity, index))
+    amenities.map((amenity, index) =>
+      getCategoryMarkup(amenity, index, amenitiesConjunctionText)
+    )
   );

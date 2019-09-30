@@ -44,6 +44,7 @@ export const LOCATION = 'Location';
 export const LOGIN = 'Log in';
 export const MONTH = 'Month';
 export const MORE_FILTERS = 'More filters';
+export const MORE_INFO = 'More info';
 export const NAME = 'Name';
 export const NEXT = 'Next';
 export const NO_RESULTS = 'No results';

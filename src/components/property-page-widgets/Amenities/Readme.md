@@ -121,7 +121,7 @@ const amenities = [
   },
 ];
 
-<Amenities amenities={amenities} modalTriggerText="See more" />
+<Amenities amenities={amenities} modalTriggerText="See more" amenitiesConjunctionText="and"/>
 ```
 
 ### Variations
@@ -171,7 +171,7 @@ const amenities = [
   },
 ];
 
-<Amenities amenities={amenities} headingText="Property Amenities" />
+<Amenities amenities={amenities} headingText="Property Amenities" amenitiesConjunctionText="and"/>
 
 ```
 
@@ -196,7 +196,7 @@ const amenities = [
   },
 ];
 
-<Amenities amenities={amenities} headingText="Property Amenities" isStacked />
+<Amenities amenities={amenities} headingText="Property Amenities" amenitiesConjunctionText="and" isStacked />
 
 ```
 
@@ -246,6 +246,6 @@ const amenities = [
 ];
 
 
-<Amenities hasExtraItemsInModal amenities={amenities} headingText="Property Amenities" />
+<Amenities hasExtraItemsInModal amenities={amenities} headingText="Property Amenities" amenitiesConjunctionText="and"/>
 
 ```

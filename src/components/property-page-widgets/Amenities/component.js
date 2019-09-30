@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { VIEW_MORE } from 'utils/default-strings';
+import { AND, VIEW_MORE } from 'utils/default-strings';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
@@ -23,6 +23,7 @@ export const Component = ({
   headingText,
   isStacked,
   modalTriggerText,
+  amenitiesConjunctionText,
 }) => (
   <Grid className="is-amenities" columns={isStacked ? 1 : 3} isStackable>
     <GridRow>
@@ -32,13 +33,14 @@ export const Component = ({
         </GridColumn>
       )}
       {getDefaultItems(amenities, isStacked).map((amenity, index) =>
-        getCategoryMarkup(amenity, index, isStacked)
+        getCategoryMarkup(amenity, index, amenitiesConjunctionText, isStacked)
       )}
       {hasExtraItems(amenities, isStacked) &&
         getExtraItemsMarkup(
           hasExtraItemsInModal,
           modalTriggerText,
-          getExtraItems(amenities, isStacked)
+          getExtraItems(amenities, isStacked),
+          amenitiesConjunctionText
         )}
     </GridRow>
   </Grid>
@@ -51,6 +53,7 @@ Component.defaultProps = {
   headingText: null,
   isStacked: false,
   modalTriggerText: VIEW_MORE,
+  amenitiesConjunctionText: AND,
 };
 
 Component.propTypes = {
@@ -67,12 +70,14 @@ Component.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** The conjunction to display after the penultimate amenity in the array.  */
+  amenitiesConjunctionText: PropTypes.string,
   /** Are the extra items displayed in a modal. */
   hasExtraItemsInModal: PropTypes.bool,
   /** The text to display as a heading at the top of the amenities. */
   headingText: PropTypes.string,
-  /** Are the amenities displayed stacked on top of one another */
+  /** Are the amenities displayed stacked on top of one another. */
   isStacked: PropTypes.bool,
-  /** The text for the modal trigger */
+  /** The text for the modal trigger. */
   modalTriggerText: PropTypes.string,
 };

@@ -4,8 +4,9 @@ import { Card } from 'semantic-ui-react';
 
 import {
   PER_NIGHT,
-  FROM_PRICE_PER_PERIOD,
+  MORE_INFO,
   ROOM_AMENITIES,
+  FROM_PRICE_PER_PERIOD,
 } from 'utils/default-strings';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
@@ -38,6 +39,7 @@ const Component = ({
   isShowingPlaceholder,
   isUserOnMobile,
   name,
+  moreInfoText,
   periodText,
   pricePerPeriod,
   pricePerPeriodPrefix,
@@ -122,7 +124,7 @@ const Component = ({
                     <Modal
                       hasPadding
                       size="small"
-                      trigger={<Link>More Info</Link>}
+                      trigger={<Link>{moreInfoText}</Link>}
                     >
                       {getModalContentMarkup(
                         amenities,
@@ -170,6 +172,7 @@ Component.defaultProps = {
   amenitiesHeadingText: ROOM_AMENITIES,
   extraFeatures: [],
   isShowingPlaceholder: false,
+  moreInfoText: MORE_INFO,
   periodText: PER_NIGHT,
   pricePerPeriodPrefix: FROM_PRICE_PER_PERIOD,
   ratingNumber: null,
@@ -221,6 +224,8 @@ Component.propTypes = {
    * @ignore
    */
   isUserOnMobile: PropTypes.bool.isRequired,
+  /** The text to display for the more info button. */
+  moreInfoText: PropTypes.string,
   /** The name of the room. */
   name: PropTypes.string.isRequired,
   /** The text describing the pricing period. */

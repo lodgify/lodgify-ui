@@ -10,9 +10,14 @@ import { getFormattedAmenityItems } from './getFormattedAmenityItems';
 /**
  * @param  {Object}  category
  * @param  {number}  index
+ * @param  {string}  amenitiesConjunctionText
  * @return {Object}
  */
-export const getCategoryMarkup = (category, index) => (
+export const getCategoryMarkup = (
+  category,
+  index,
+  amenitiesConjunctionText
+) => (
   <GridColumn key={buildKeyFromStrings(category.name, index)}>
     <Icon
       isLabelLeft
@@ -20,6 +25,8 @@ export const getCategoryMarkup = (category, index) => (
       labelWeight="heavy"
       name={category.iconName}
     />
-    <Paragraph>{getFormattedAmenityItems(category.items)}</Paragraph>
+    <Paragraph>
+      {getFormattedAmenityItems(category.items, amenitiesConjunctionText)}
+    </Paragraph>
   </GridColumn>
 );

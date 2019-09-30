@@ -44,6 +44,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
   isShowingPlaceholder={false}
   isUserOnMobile={false}
   locationName="Catania"
+  moreInfoText="Oof"
   name="The Cat House"
   periodText="per night"
   pricePerPeriod="$280"
@@ -535,7 +536,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                 onClick={[Function]}
                                                 willOpenInNewTab={false}
                                               >
-                                                More Info
+                                                Oof
                                               </Link>
                                             }
                                           >
@@ -573,7 +574,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                   onClick={[Function]}
                                                   willOpenInNewTab={false}
                                                 >
-                                                  More Info
+                                                  Oof
                                                 </Link>
                                               }
                                             >
@@ -595,7 +596,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                     onClick={[Function]}
                                                     willOpenInNewTab={false}
                                                   >
-                                                    More Info
+                                                    Oof
                                                   </Link>
                                                 }
                                               >
@@ -634,7 +635,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                                 target="_self"
                                                                 type="button"
                                                               >
-                                                                More Info
+                                                                Oof
                                                               </button>,
                                                             }
                                                           }
@@ -647,7 +648,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                                   target="_self"
                                                                   type="button"
                                                                 >
-                                                                  More Info
+                                                                  Oof
                                                                 </button>,
                                                               }
                                                             }
@@ -659,7 +660,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                               target="_self"
                                                               type="button"
                                                             >
-                                                              More Info
+                                                              Oof
                                                             </button>
                                                           </RefFindNode>
                                                         </Ref>
@@ -808,6 +809,7 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
   isShowingPlaceholder={true}
   isUserOnMobile={false}
   locationName="Catania"
+  moreInfoText="Oof"
   name="The Cat House"
   periodText="per night"
   pricePerPeriod="$280"
@@ -1062,6 +1064,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
   isShowingPlaceholder={false}
   isUserOnMobile={true}
   locationName="Catania"
+  moreInfoText="Oof"
   name="The Cat House"
   periodText="per night"
   pricePerPeriod="$280"
@@ -1525,7 +1528,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                 onClick={[Function]}
                                                 willOpenInNewTab={false}
                                               >
-                                                More Info
+                                                Oof
                                               </Link>
                                             }
                                           >
@@ -1563,7 +1566,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                   onClick={[Function]}
                                                   willOpenInNewTab={false}
                                                 >
-                                                  More Info
+                                                  Oof
                                                 </Link>
                                               }
                                             >
@@ -1585,7 +1588,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                     onClick={[Function]}
                                                     willOpenInNewTab={false}
                                                   >
-                                                    More Info
+                                                    Oof
                                                   </Link>
                                                 }
                                               >
@@ -1624,7 +1627,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                                 target="_self"
                                                                 type="button"
                                                               >
-                                                                More Info
+                                                                Oof
                                                               </button>,
                                                             }
                                                           }
@@ -1637,7 +1640,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                                   target="_self"
                                                                   type="button"
                                                                 >
-                                                                  More Info
+                                                                  Oof
                                                                 </button>,
                                                               }
                                                             }
@@ -1649,7 +1652,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                                               target="_self"
                                                               type="button"
                                                             >
-                                                              More Info
+                                                              Oof
                                                             </button>
                                                           </RefFindNode>
                                                         </Ref>
