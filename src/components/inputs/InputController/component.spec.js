@@ -3,7 +3,7 @@ jest.mock('utils/get-controlled-input-value');
 jest.mock('utils/some');
 
 import React from 'react';
-import { shallow, mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { Input } from 'semantic-ui-react';
 import {
   expectComponentToBe,
@@ -35,7 +35,8 @@ const getInputController = extraProps =>
       {children}
     </InputController>
   );
-const getInputControllerInput = () => getInputController().find('Input');
+const getInputControllerInput = extraProps =>
+  getInputController(extraProps).find('Input');
 
 describe('<InputController />', () => {
   describe('default behaviour', () => {
@@ -229,26 +230,11 @@ describe('<InputController />', () => {
 
   describe('Variation: labelled', () => {
     it('should render a single html `label` inside `Input`', () => {
-      const semanticInput = getInputController({ label: 'yo' }).find('Input');
-      const actual = semanticInput.find('label').length;
+      const semanticInput = getInputController({ label: 'yo' }).find('input');
 
-      expect(actual).toBe(1);
-    });
-
-    it('should pass a function as `props.onClick` to `label`', () => {
-      const wrapper = getInputController({ label: 'yo' }).find('Input label');
-
-      expectComponentToHaveProps(wrapper, {
-        onClick: expect.any(Function),
+      expectComponentToHaveProps(semanticInput, {
+        placeholder: 'yo',
       });
-    });
-
-    it('should render the `props.label`', () => {
-      const semanticInput = getInputController({ label: 'yo' }).find('Input');
-      const label = semanticInput.find('label');
-      const actual = label.contains('yo');
-
-      expect(actual).toBe(true);
     });
   });
 
@@ -397,21 +383,6 @@ describe('<InputController />', () => {
 
       inputController.setState({ value });
       expect(handleChange).toHaveBeenCalledWith(props.name, value);
-    });
-  });
-
-  describe('Interaction: onClick dynamic `label`', () => {
-    it('should force focus on the html `input`', () => {
-      const inputController = mount(
-        <InputController {...props} label="someLabel">
-          {children}
-        </InputController>
-      );
-      const htmlInput = inputController.find('input').instance();
-      const htmlLabel = inputController.find('label');
-
-      htmlLabel.simulate('click');
-      expect(htmlInput).toBe(document.activeElement);
     });
   });
 
