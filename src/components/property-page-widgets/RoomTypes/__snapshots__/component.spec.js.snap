@@ -35,6 +35,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         features={Array []}
         isShowingPlaceholder={true}
         isUserOnMobile={false}
+        moreInfoText="More info"
         name=""
         periodText="per night"
         pricePerPeriod=""
@@ -256,6 +257,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         features={Array []}
         isShowingPlaceholder={true}
         isUserOnMobile={false}
+        moreInfoText="More info"
         name=""
         periodText="per night"
         pricePerPeriod=""
@@ -753,6 +755,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         guestsNumber={3}
         isShowingPlaceholder={true}
         isUserOnMobile={false}
+        moreInfoText="More info"
         name="The Cat House"
         onClickCheckAvailability={[Function]}
         periodText="per night"
@@ -1117,6 +1120,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         guestsNumber={3}
         isShowingPlaceholder={true}
         isUserOnMobile={false}
+        moreInfoText="More info"
         name="The Other Cat House"
         onClickCheckAvailability={[Function]}
         periodText="per night"
@@ -1628,6 +1632,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         guestsNumber={3}
         isShowingPlaceholder={false}
         isUserOnMobile={false}
+        moreInfoText="More info"
         name="The Cat House"
         onClickCheckAvailability={[Function]}
         periodText="per night"
@@ -2200,7 +2205,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       onClick={[Function]}
                                                       willOpenInNewTab={false}
                                                     >
-                                                      More Info
+                                                      More info
                                                     </Link>
                                                   }
                                                 >
@@ -2238,7 +2243,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                         onClick={[Function]}
                                                         willOpenInNewTab={false}
                                                       >
-                                                        More Info
+                                                        More info
                                                       </Link>
                                                     }
                                                   >
@@ -2260,7 +2265,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                           onClick={[Function]}
                                                           willOpenInNewTab={false}
                                                         >
-                                                          More Info
+                                                          More info
                                                         </Link>
                                                       }
                                                     >
@@ -2299,7 +2304,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                                       target="_self"
                                                                       type="button"
                                                                     >
-                                                                      More Info
+                                                                      More info
                                                                     </button>,
                                                                   }
                                                                 }
@@ -2312,7 +2317,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                                         target="_self"
                                                                         type="button"
                                                                       >
-                                                                        More Info
+                                                                        More info
                                                                       </button>,
                                                                     }
                                                                   }
@@ -2324,7 +2329,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                                     target="_self"
                                                                     type="button"
                                                                   >
-                                                                    More Info
+                                                                    More info
                                                                   </button>
                                                                 </RefFindNode>
                                                               </Ref>
@@ -2588,6 +2593,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         guestsNumber={3}
         isShowingPlaceholder={false}
         isUserOnMobile={false}
+        moreInfoText="More info"
         name="The Other Cat House"
         onClickCheckAvailability={[Function]}
         periodText="per night"
@@ -3160,7 +3166,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                       onClick={[Function]}
                                                       willOpenInNewTab={false}
                                                     >
-                                                      More Info
+                                                      More info
                                                     </Link>
                                                   }
                                                 >
@@ -3198,7 +3204,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                         onClick={[Function]}
                                                         willOpenInNewTab={false}
                                                       >
-                                                        More Info
+                                                        More info
                                                       </Link>
                                                     }
                                                   >
@@ -3220,7 +3226,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                           onClick={[Function]}
                                                           willOpenInNewTab={false}
                                                         >
-                                                          More Info
+                                                          More info
                                                         </Link>
                                                       }
                                                     >
@@ -3259,7 +3265,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                                       target="_self"
                                                                       type="button"
                                                                     >
-                                                                      More Info
+                                                                      More info
                                                                     </button>,
                                                                   }
                                                                 }
@@ -3272,7 +3278,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                                         target="_self"
                                                                         type="button"
                                                                       >
-                                                                        More Info
+                                                                        More info
                                                                       </button>,
                                                                     }
                                                                   }
@@ -3284,7 +3290,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                                     target="_self"
                                                                     type="button"
                                                                   >
-                                                                    More Info
+                                                                    More info
                                                                   </button>
                                                                 </RefFindNode>
                                                               </Ref>
