@@ -13,6 +13,7 @@ const props = {
   imageUrl: '🐱🐱',
   locationName: 'Catania',
   pricePerPeriod: '$280',
+  pricePerPeriodPrefix: 'morf',
   roomTypeName: 'The Cat House',
   roomTypeUrl: '/',
 };

@@ -33,6 +33,7 @@ const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
 const periodText = 'ich, burp...';
+const pricePerPeriodPrefix = 'morf';
 const pricePerPeriod = '$1010';
 const slideShowImage = [
   {
@@ -58,6 +59,7 @@ const getMarkup = ({
       name,
       periodText,
       pricePerPeriod,
+      pricePerPeriodPrefix,
       ratingNumber,
       slideShowImages
     )

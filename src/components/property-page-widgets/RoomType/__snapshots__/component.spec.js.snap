@@ -47,6 +47,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
   name="The Cat House"
   periodText="per night"
   pricePerPeriod="$280"
+  pricePerPeriodPrefix="morf"
   propertyType="Bed and breakfast"
   propertyUrl="/"
   ratingNumber={4}
@@ -690,7 +691,8 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                               className="description"
                                             >
                                               <span>
-                                                from 
+                                                morf
+                                                 
                                                 <Heading
                                                   className={null}
                                                   hasMargin={true}
@@ -809,6 +811,7 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
   name="The Cat House"
   periodText="per night"
   pricePerPeriod="$280"
+  pricePerPeriodPrefix="morf"
   propertyType="Bed and breakfast"
   propertyUrl="/"
   ratingNumber={4}
@@ -1062,6 +1065,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
   name="The Cat House"
   periodText="per night"
   pricePerPeriod="$280"
+  pricePerPeriodPrefix="morf"
   propertyType="Bed and breakfast"
   propertyUrl="/"
   ratingNumber={4}
@@ -1677,7 +1681,8 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                               className="description"
                                             >
                                               <span>
-                                                from 
+                                                morf
+                                                 
                                                 <Heading
                                                   className={null}
                                                   hasMargin={true}

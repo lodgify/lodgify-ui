@@ -49,6 +49,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
   summaryLocationName="Location"
   summaryPeriodText="per night"
   summaryPricePerPeriod="250€"
+  summaryPricePerPeriodPrefix="morf"
   summaryPropertyName="Property"
   summaryRatingNumber={4.5}
 >
@@ -109,6 +110,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               locationName="Location"
               periodText="per night"
               pricePerPeriod="250€"
+              pricePerPeriodPrefix="morf"
               propertyName="Property"
               ratingNumber={4.5}
             />
@@ -129,6 +131,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                     locationName="Location"
                     periodText="per night"
                     pricePerPeriod="250€"
+                    pricePerPeriodPrefix="morf"
                     propertyName="Property"
                     ratingNumber={4.5}
                   >
@@ -856,6 +859,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               locationName="Location"
               periodText="per night"
               pricePerPeriod="250€"
+              pricePerPeriodPrefix="morf"
               propertyName="Property"
               ratingNumber={4.5}
             />
@@ -889,6 +893,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
               locationName="Location"
               periodText="per night"
               pricePerPeriod="250€"
+              pricePerPeriodPrefix="morf"
               propertyName="Property"
               ratingNumber={4.5}
             />
@@ -909,6 +914,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                     locationName="Location"
                     periodText="per night"
                     pricePerPeriod="250€"
+                    pricePerPeriodPrefix="morf"
                     propertyName="Property"
                     ratingNumber={4.5}
                   >
@@ -1348,6 +1354,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                             locationName="Location"
                             periodText="per night"
                             pricePerPeriod="250€"
+                            pricePerPeriodPrefix="morf"
                             propertyName="Property"
                             ratingNumber={4.5}
                           />
@@ -1593,6 +1600,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
   summaryLocationName="Location"
   summaryPeriodText="per night"
   summaryPricePerPeriod="250€"
+  summaryPricePerPeriodPrefix="morf"
   summaryPropertyName="Property"
   summaryRatingNumber={4.5}
 >
@@ -1653,6 +1661,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               locationName="Location"
               periodText="per night"
               pricePerPeriod="250€"
+              pricePerPeriodPrefix="morf"
               propertyName="Property"
               ratingNumber={4.5}
             />
@@ -1673,6 +1682,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                     locationName="Location"
                     periodText="per night"
                     pricePerPeriod="250€"
+                    pricePerPeriodPrefix="morf"
                     propertyName="Property"
                     ratingNumber={4.5}
                   >
@@ -1915,7 +1925,8 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                 className="ui segment"
                               >
                                 <span>
-                                  from 
+                                  morf
+                                   
                                   <Heading
                                     className={null}
                                     hasMargin={true}
@@ -2565,6 +2576,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               locationName="Location"
               periodText="per night"
               pricePerPeriod="250€"
+              pricePerPeriodPrefix="morf"
               propertyName="Property"
               ratingNumber={4.5}
             />
@@ -2598,6 +2610,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
               locationName="Location"
               periodText="per night"
               pricePerPeriod="250€"
+              pricePerPeriodPrefix="morf"
               propertyName="Property"
               ratingNumber={4.5}
             />
@@ -2618,6 +2631,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                     locationName="Location"
                     periodText="per night"
                     pricePerPeriod="250€"
+                    pricePerPeriodPrefix="morf"
                     propertyName="Property"
                     ratingNumber={4.5}
                   >
@@ -2640,7 +2654,8 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                 className="ui segment"
                               >
                                 <span>
-                                  from 
+                                  morf
+                                   
                                   <Heading
                                     className={null}
                                     hasMargin={true}
@@ -3222,6 +3237,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                             locationName="Location"
                             periodText="per night"
                             pricePerPeriod="250€"
+                            pricePerPeriodPrefix="morf"
                             propertyName="Property"
                             ratingNumber={4.5}
                           />

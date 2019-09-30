@@ -40,6 +40,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
     locationName="Catania"
     periodText="per night"
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     propertyName="The Cat House"
     propertyType="Bed and breakfast"
     propertyUrl="/"
@@ -317,7 +318,8 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                 className="description"
               >
                 <span>
-                  from 
+                  from
+                   
                   <Heading
                     className={null}
                     hasMargin={true}
@@ -356,6 +358,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
     locationName="Catania"
     periodText="per night"
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     propertyName="The Cat House"
     propertyType="Bed and breakfast"
     propertyUrl="/"
@@ -633,7 +636,8 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                 className="description"
               >
                 <span>
-                  from 
+                  from
+                   
                   <Heading
                     className={null}
                     hasMargin={true}
@@ -726,6 +730,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
     locationName="Catania"
     periodText="per night"
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     propertyName="The Cat House"
     propertyType="Bed and breakfast"
     propertyUrl="/"
@@ -1003,7 +1008,8 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                 className="description"
               >
                 <span>
-                  from 
+                  from
+                   
                   <Heading
                     className={null}
                     hasMargin={true}
@@ -1042,6 +1048,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
     locationName="Catania"
     periodText="per night"
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     propertyName="The Cat House"
     propertyType="Bed and breakfast"
     propertyUrl="/"
@@ -1319,7 +1326,8 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                 className="description"
               >
                 <span>
-                  from 
+                  from
+                   
                   <Heading
                     className={null}
                     hasMargin={true}
@@ -1367,6 +1375,7 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
     locationName=""
     periodText="per night"
     pricePerPeriod=""
+    pricePerPeriodPrefix=""
     propertyName=""
     propertyType=""
     propertyUrl=""
@@ -1456,6 +1465,7 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
     locationName=""
     periodText="per night"
     pricePerPeriod=""
+    pricePerPeriodPrefix=""
     propertyName=""
     propertyType=""
     propertyUrl=""
@@ -1545,6 +1555,7 @@ exports[`<FeaturedProperties /> if \`props.isShowingPlaceholder\` === true and \
     locationName=""
     periodText="per night"
     pricePerPeriod=""
+    pricePerPeriodPrefix=""
     propertyName=""
     propertyType=""
     propertyUrl=""

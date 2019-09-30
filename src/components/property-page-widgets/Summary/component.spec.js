@@ -7,6 +7,7 @@ import { Component as Summary } from './component';
 const props = {
   locationName: 'Catania',
   pricePerPeriod: '$280',
+  pricePerPeriodPrefix: 'morf',
   propertyName: 'The Cat House',
   ratingNumber: 4.8,
 };

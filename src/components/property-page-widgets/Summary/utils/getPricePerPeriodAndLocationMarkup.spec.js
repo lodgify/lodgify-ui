@@ -4,6 +4,7 @@ import { shallow } from 'enzyme';
 import { getPricePerPeriodAndLocationMarkup } from './getPricePerPeriodAndLocationMarkup';
 
 const pricePerPeriod = '280$';
+const pricePerPeriodPrefix = 'morf';
 const locationName = 'someLocation';
 const periodText = 'night';
 
@@ -19,6 +20,7 @@ const getMarkupAsRenderedComponent = (
         locationName,
         periodText,
         pricePerPeriod,
+        pricePerPeriodPrefix,
         ratingNumber
       )}
     </div>

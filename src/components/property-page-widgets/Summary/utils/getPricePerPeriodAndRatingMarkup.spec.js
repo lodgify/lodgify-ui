@@ -4,6 +4,7 @@ import { mount } from 'enzyme';
 import { getPricePerPeriodAndRatingMarkup } from './getPricePerPeriodAndRatingMarkup';
 
 const pricePerPeriod = '280$';
+const pricePerPeriodPrefix = 'morf';
 const periodText = 'wooble';
 
 const getMarkupAsRenderedComponent = (ratingNumber, isShowingPlaceholder) =>
@@ -13,6 +14,7 @@ const getMarkupAsRenderedComponent = (ratingNumber, isShowingPlaceholder) =>
         isShowingPlaceholder,
         periodText,
         pricePerPeriod,
+        pricePerPeriodPrefix,
         ratingNumber
       )}
     </div>

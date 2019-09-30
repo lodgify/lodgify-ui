@@ -7,6 +7,7 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
   locationName="Location"
   periodText="per night"
   pricePerPeriod="200€"
+  pricePerPeriodPrefix="morf"
   propertyName="My property"
   ratingNumber={4.3}
 >
@@ -249,7 +250,8 @@ exports[`\`getSummaryMarkup\` should render the right structure 1`] = `
               className="ui segment"
             >
               <span>
-                from 
+                morf
+                 
                 <Heading
                   className={null}
                   hasMargin={true}
@@ -288,6 +290,7 @@ exports[`\`getSummaryMarkup\` should render the right structure if \`areOnlyNigh
   locationName="Location"
   periodText="per night"
   pricePerPeriod="200€"
+  pricePerPeriodPrefix="morf"
   propertyName="My property"
   ratingNumber={4.3}
 >
@@ -310,7 +313,8 @@ exports[`\`getSummaryMarkup\` should render the right structure if \`areOnlyNigh
               className="ui segment"
             >
               <span>
-                from 
+                morf
+                 
                 <Heading
                   className={null}
                   hasMargin={true}

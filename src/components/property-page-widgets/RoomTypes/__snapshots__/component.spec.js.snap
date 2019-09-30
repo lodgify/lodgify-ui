@@ -38,6 +38,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         name=""
         periodText="per night"
         pricePerPeriod=""
+        pricePerPeriodPrefix="from"
         ratingNumber={null}
         slideShowImages={Array []}
         windowInnerWidth={1024}
@@ -258,6 +259,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         name=""
         periodText="per night"
         pricePerPeriod=""
+        pricePerPeriodPrefix="from"
         ratingNumber={null}
         slideShowImages={Array []}
         windowInnerWidth={1024}
@@ -497,6 +499,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         "name": "The Cat House",
         "onClickCheckAvailability": [Function],
         "pricePerPeriod": "$280",
+        "pricePerPeriodPrefix": "from",
         "ratingNumber": 3.4,
         "slideShowImages": Array [
           Object {
@@ -546,6 +549,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         "name": "The Other Cat House",
         "onClickCheckAvailability": [Function],
         "pricePerPeriod": "$280",
+        "pricePerPeriodPrefix": "from",
         "ratingNumber": 3.4,
         "slideShowImages": Array [
           Object {
@@ -613,6 +617,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
     name="The Cat House"
     onClickCheckAvailability={[Function]}
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     ratingNumber={3.4}
     slideShowImages={
       Array [
@@ -682,6 +687,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
       onClickCheckAvailability={[Function]}
       onUpdate={[Function]}
       pricePerPeriod="$280"
+      pricePerPeriodPrefix="from"
       ratingNumber={3.4}
       slideShowImages={
         Array [
@@ -751,6 +757,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         onClickCheckAvailability={[Function]}
         periodText="per night"
         pricePerPeriod="$280"
+        pricePerPeriodPrefix="from"
         ratingNumber={3.4}
         slideShowImages={
           Array [
@@ -992,6 +999,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
     name="The Other Cat House"
     onClickCheckAvailability={[Function]}
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     ratingNumber={3.4}
     slideShowImages={
       Array [
@@ -1052,6 +1060,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
       onClickCheckAvailability={[Function]}
       onUpdate={[Function]}
       pricePerPeriod="$280"
+      pricePerPeriodPrefix="from"
       ratingNumber={3.4}
       slideShowImages={
         Array [
@@ -1112,6 +1121,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         onClickCheckAvailability={[Function]}
         periodText="per night"
         pricePerPeriod="$280"
+        pricePerPeriodPrefix="from"
         ratingNumber={3.4}
         slideShowImages={
           Array [
@@ -1364,6 +1374,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         "name": "The Cat House",
         "onClickCheckAvailability": [Function],
         "pricePerPeriod": "$280",
+        "pricePerPeriodPrefix": "from",
         "ratingNumber": 3.4,
         "slideShowImages": Array [
           Object {
@@ -1413,6 +1424,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         "name": "The Other Cat House",
         "onClickCheckAvailability": [Function],
         "pricePerPeriod": "$280",
+        "pricePerPeriodPrefix": "from",
         "ratingNumber": 3.4,
         "slideShowImages": Array [
           Object {
@@ -1480,6 +1492,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
     name="The Cat House"
     onClickCheckAvailability={[Function]}
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     ratingNumber={3.4}
     slideShowImages={
       Array [
@@ -1549,6 +1562,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
       onClickCheckAvailability={[Function]}
       onUpdate={[Function]}
       pricePerPeriod="$280"
+      pricePerPeriodPrefix="from"
       ratingNumber={3.4}
       slideShowImages={
         Array [
@@ -1618,6 +1632,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         onClickCheckAvailability={[Function]}
         periodText="per night"
         pricePerPeriod="$280"
+        pricePerPeriodPrefix="from"
         ratingNumber={3.4}
         slideShowImages={
           Array [
@@ -2341,7 +2356,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                     className="description"
                                                   >
                                                     <span>
-                                                      from 
+                                                      from
+                                                       
                                                       <Heading
                                                         className={null}
                                                         hasMargin={true}
@@ -2454,6 +2470,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
     name="The Other Cat House"
     onClickCheckAvailability={[Function]}
     pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
     ratingNumber={3.4}
     slideShowImages={
       Array [
@@ -2514,6 +2531,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
       onClickCheckAvailability={[Function]}
       onUpdate={[Function]}
       pricePerPeriod="$280"
+      pricePerPeriodPrefix="from"
       ratingNumber={3.4}
       slideShowImages={
         Array [
@@ -2574,6 +2592,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         onClickCheckAvailability={[Function]}
         periodText="per night"
         pricePerPeriod="$280"
+        pricePerPeriodPrefix="from"
         ratingNumber={3.4}
         slideShowImages={
           Array [
@@ -3297,7 +3316,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                     className="description"
                                                   >
                                                     <span>
-                                                      from 
+                                                      from
+                                                       
                                                       <Heading
                                                         className={null}
                                                         hasMargin={true}

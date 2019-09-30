@@ -3,12 +3,22 @@ import { shallow } from 'enzyme';
 
 import { getPricePerPeriodMarkup } from './getPricePerPeriodMarkup';
 
-const nightPrice = '$250';
+const pricePerPeriod = '$250';
+const pricePerPeriodPrefix = 'morf';
 const size = 'small';
 const periodText = 'century';
 
 const getPricePerPeriodMarkupWrapper = () =>
-  shallow(<div>{getPricePerPeriodMarkup(nightPrice, periodText, size)}</div>);
+  shallow(
+    <div>
+      {getPricePerPeriodMarkup(
+        pricePerPeriod,
+        pricePerPeriodPrefix,
+        periodText,
+        size
+      )}
+    </div>
+  );
 
 describe('getPricePerPeriodMarkup', () => {
   it('should have the right structure', () => {

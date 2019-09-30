@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { Segment } from 'semantic-ui-react';
 
-import { PER_NIGHT } from 'utils/default-strings';
+import { PER_NIGHT, FROM_PRICE_PER_PERIOD } from 'utils/default-strings';
 import { Heading } from 'typography/Heading';
 
 import { getPricePerPeriodAndRatingMarkup } from './utils/getPricePerPeriodAndRatingMarkup';
@@ -18,6 +18,7 @@ export const Component = ({
   locationName,
   periodText,
   pricePerPeriod,
+  pricePerPeriodPrefix,
   propertyName,
   ratingNumber,
 }) => (
@@ -36,6 +37,7 @@ export const Component = ({
             isShowingPlaceholder,
             periodText,
             pricePerPeriod,
+            pricePerPeriodPrefix,
             ratingNumber
           )
         : getPricePerPeriodAndLocationMarkup(
@@ -43,6 +45,7 @@ export const Component = ({
             locationName,
             periodText,
             pricePerPeriod,
+            pricePerPeriodPrefix,
             ratingNumber
           )}
     </Segment.Group>
@@ -55,7 +58,8 @@ Component.defaultProps = {
   areOnlyNightPriceAndRatingDisplayed: false,
   isShowingPlaceholder: false,
   periodText: PER_NIGHT,
-  pricePerPeriod: undefined,
+  pricePerPeriod: '',
+  pricePerPeriodPrefix: FROM_PRICE_PER_PERIOD,
   ratingNumber: undefined,
 };
 
@@ -70,6 +74,8 @@ Component.propTypes = {
   periodText: PropTypes.string,
   /** The price per night of the property, with currency symbol. */
   pricePerPeriod: PropTypes.string,
+  /** The text prefix to display along with the price per period. */
+  pricePerPeriodPrefix: PropTypes.string,
   /** The name of the property. */
   propertyName: PropTypes.string.isRequired,
   /** The numeral rating for the property, out of 5 */

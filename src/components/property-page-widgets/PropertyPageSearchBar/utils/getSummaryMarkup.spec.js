@@ -5,6 +5,7 @@ import { getSummaryMarkup } from './getSummaryMarkup';
 const props = {
   locationName: 'Location',
   pricePerPeriod: '200€',
+  pricePerPeriodPrefix: 'morf',
   propertyName: 'My property',
   ratingNumber: 4.3,
 };
