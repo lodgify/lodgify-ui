@@ -29,6 +29,7 @@ const props = {
       items: ['Bidet', 'Hair Dryer', 'Iron & Board'],
     },
   ],
+  amenitiesHeadingText: 'Stiff Stoff Stuff',
   description: 'yayayay',
   locationName: 'Catania',
   pricePerPeriod: '$280',

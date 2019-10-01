@@ -65,7 +65,7 @@ export const getModalContentMarkup = (
     {!!size(amenities) && (
       <Amenities
         amenities={amenities}
-        headingText="Room Amenities"
+        headingText={amenitiesHeadingText}
         isStacked={isUserOnMobile}
       />
     )}
