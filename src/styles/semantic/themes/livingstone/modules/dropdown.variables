@@ -116,8 +116,6 @@
 @iconPadding: @8px;
 @iconZIndex: @selectionZIndex + 1;
 
-@dropdownWithIconLabelWidth: ~"calc(100% - 75px)";
-
 @dropdownWithIconPaddingLeft: @40px;
 @dropdownWithIconPaddingRight: calc(@30px + @40px);
 
@@ -125,25 +123,6 @@
 
 @dropdownMinWidthWithImage: 118px;
 @dropdownWithImagesCaretPaddingTop: @15px;
-
-/* With Label */
-@labelColor: @itemColor;
-
-@labelDefaultWidth: ~"calc(100% - 55px)";
-@labelMinwWidth: 20px;
-
-@labelFocusColor: @textColor;
-@labelFocusFontSize: @10px;
-@labelFocusXTranslate: @15px;
-@labelFocusYTranslate: @30px;
-
-@withIconLabelLeftPosition: @dropdownWithIconPaddingLeft;
-@withIconLabelFocusXTranslate: @withIconLabelLeftPosition - @1px;
-
-@withLabelPadding: 5px;
-@withLabelFontSize: 14px;
-@withLabelTextMarginRight: 20px;
-@withLabelTextColor: @black;
 
 /*--------------
      Search
@@ -207,9 +186,6 @@
 @validIconOpacity: 1;
 @validIconPadding: @8px 0;
 @validIconRight: @40px;
-
-@validLabelWidthWithIcon: ~"calc(100% - 105px)";
-@validLabelWidthWithoutIcon: ~"calc(100% - 85px)";
 
 /*-------------------
       Variations

@@ -1,3 +1,11 @@
+## [1.245.2](https://github.com/lodgify/lodgify-ui/compare/v1.245.1...v1.245.2) (2019-10-01)
+
+
+### Bug Fixes
+
+* **InputController/Dropdown:** remove unused styles ([b7ead31](https://github.com/lodgify/lodgify-ui/commit/b7ead31))
+* **PhoneInput:** remove clear icon ([8b122fc](https://github.com/lodgify/lodgify-ui/commit/8b122fc))
+
 ## [1.245.1](https://github.com/lodgify/lodgify-ui/compare/v1.245.0...v1.245.1) (2019-09-30)
 
 

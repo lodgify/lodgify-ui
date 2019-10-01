@@ -15,6 +15,7 @@ export class Component extends PureComponent {
     return (
       <Dropdown
         getOptionsWithSearch={getOptionsWithSearch}
+        isClearable={false}
         isFluid
         onChange={this.handleChange}
         onFocus={onFocus}
