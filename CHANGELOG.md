@@ -1,3 +1,10 @@
+## [1.245.3](https://github.com/lodgify/lodgify-ui/compare/v1.245.2...v1.245.3) (2019-10-01)
+
+
+### Bug Fixes
+
+* **RoomType:** consume amenitiesHeadingText ([a6bcd44](https://github.com/lodgify/lodgify-ui/commit/a6bcd44))
+
 ## [1.245.2](https://github.com/lodgify/lodgify-ui/compare/v1.245.1...v1.245.2) (2019-10-01)
 
 
