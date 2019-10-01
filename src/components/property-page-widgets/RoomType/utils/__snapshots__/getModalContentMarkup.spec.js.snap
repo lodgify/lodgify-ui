@@ -692,7 +692,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
       }
       amenitiesConjunctionText="and"
       hasExtraItemsInModal={false}
-      headingText="Room Amenities"
+      headingText="bibip-bop"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -747,7 +747,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                             <h3
                               className="ui header"
                             >
-                              Room Amenities
+                              bibip-bop
                             </h3>
                           </Header>
                         </Heading>
@@ -1128,7 +1128,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
       }
       amenitiesConjunctionText="and"
       hasExtraItemsInModal={false}
-      headingText="Room Amenities"
+      headingText="bibip-bop"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -1183,7 +1183,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                             <h3
                               className="ui header"
                             >
-                              Room Amenities
+                              bibip-bop
                             </h3>
                           </Header>
                         </Heading>
@@ -1723,7 +1723,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
       }
       amenitiesConjunctionText="and"
       hasExtraItemsInModal={false}
-      headingText="Room Amenities"
+      headingText="bibip-bop"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -1778,7 +1778,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                             <h3
                               className="ui header"
                             >
-                              Room Amenities
+                              bibip-bop
                             </h3>
                           </Header>
                         </Heading>
@@ -2306,7 +2306,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
       }
       amenitiesConjunctionText="and"
       hasExtraItemsInModal={false}
-      headingText="Room Amenities"
+      headingText="bibip-bop"
       isStacked={false}
       modalTriggerText="View more"
     >
@@ -2361,7 +2361,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                             <h3
                               className="ui header"
                             >
-                              Room Amenities
+                              bibip-bop
                             </h3>
                           </Header>
                         </Heading>

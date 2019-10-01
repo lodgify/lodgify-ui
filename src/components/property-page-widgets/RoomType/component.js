@@ -4,9 +4,9 @@ import { Card } from 'semantic-ui-react';
 
 import {
   PER_NIGHT,
+  FROM_PRICE_PER_PERIOD,
   MORE_INFO,
   ROOM_AMENITIES,
-  FROM_PRICE_PER_PERIOD,
 } from 'utils/default-strings';
 import { Divider } from 'elements/Divider';
 import { Grid } from 'layout/Grid';
