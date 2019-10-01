@@ -21,18 +21,10 @@
 @flagIconScale: scale(1.2);
 
 @leftIconInputLabelLeftPosition: @iconWidth;
-@leftIconInputLabelFocusXTranslate: @leftIconInputLabelLeftPosition - @1px;
 
 /* Circular Icon Input */
 
 /* Labeled Input */
-@labelColor: @greySix;
-@labelWidth: 40%;
-@checkboxLabelColor: @black;
-@checkboxLabelLineHeight: @16px;
-@checkboxLabelLeftPosition: @22px;
-@checkboxToggleLabelLeftPosition: @45px;
-@checkboxToggleLabelTopPosition: @1px;
 @checkboxPrivacyConsentLabelButtonPadding:  0 0 0 @6px;
 @checkboxPrivacyConsentParagraphLineHeight: @17px;
 @checkboxPrivacyConsentButtonBottomMargin: @17px;
@@ -46,8 +38,6 @@
 @phoneInputFlagPositionTransform: translateY(2px);
 @phoneInputIconMarginTop: -2px;
 @phoneInputDropdownMenuWidth: 200px;
-@phoneInputLabelLeftPosition: @phoneInputDropdownWidth + 2px;
-@phoneInputLabelFocusXTranslate: @phoneInputLabelLeftPosition;
 
 /*-------------------
         States
@@ -60,12 +50,7 @@
 /* Focus */
 @focusBackground: @focusedInputBackground;
 
-@labelFocusColor: @black;
-@labelFocusFontSize: @10px;
-@labelFocusXTranslate: @15px;
-@labelFocusYTranslate: @30px;
-
-@iconFocusColor: @labelFocusColor;
+@iconFocusColor: @10px;
 
 /* Error */
 @errorBackground: @focusedInputBackground;

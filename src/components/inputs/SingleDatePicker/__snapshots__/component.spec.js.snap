@@ -22,7 +22,7 @@ exports[`<SingleDatePicker /> should render the right structure 1`] = `
     isFluid={false}
     isFocused={false}
     isValid={false}
-    label={null}
+    label=""
     mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
@@ -99,7 +99,7 @@ exports[`<SingleDatePicker /> should render the right structure 1`] = `
           onDateChange={[Function]}
           onFocusChange={[Function]}
           openDirection="down"
-          placeholder={null}
+          placeholder=""
           withPortal={false}
         >
           <div />
