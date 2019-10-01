@@ -74,6 +74,7 @@ export class Component extends PureComponent {
         inputOnChangeFunctionName="onDateChange"
         isFocused={!!isFocused}
         isValid={isValid}
+        label={placeholderText}
         mapValueToProps={mapValueToProps}
         name={name}
         onChange={onChange}
@@ -85,7 +86,6 @@ export class Component extends PureComponent {
           displayFormat={displayFormat}
           isDayBlocked={getIsDayBlocked}
           openDirection={getUpOrDownFromBoolean(willOpenAbove)}
-          placeholder={placeholderText}
           // Controlled props
           focused={isFocused}
           // NOTE onDateChange is required by SingleDatePicker but is set in `InputController`

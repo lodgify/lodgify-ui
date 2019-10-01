@@ -11,7 +11,7 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
     getOptionsWithSearch={[Function]}
     icon={null}
     initialValue={null}
-    isClearable={true}
+    isClearable={false}
     isCompact={false}
     isDisabled={false}
     isFluid={true}
@@ -39,7 +39,7 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
       <Dropdown
         additionLabel="Add "
         additionPosition="top"
-        clearable={true}
+        clearable={false}
         closeOnBlur={true}
         closeOnEscape={true}
         compact={false}

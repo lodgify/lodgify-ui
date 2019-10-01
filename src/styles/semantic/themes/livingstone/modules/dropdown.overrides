@@ -17,9 +17,7 @@
 
   /* Current Text */
   > .text,
-  > .text .text,
-  > label,
-  .has-label .label {
+  > .text .text {
     line-height: @textLineHeight;
     min-height: @textLineHeight;
     overflow: hidden;
@@ -55,30 +53,6 @@
         background: var(@themeActionColorIdentifier, @themeActionColorDefault);
         color: @themeActionContrastColorDefault;
         color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
-      }
-
-      /*With label*/
-      &.has-label {
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: flex-end;
-        align-items: center;
-
-        .ui.label {
-          background: transparent;
-          padding: @withLabelPadding;
-          color: @itemColor;
-          font-size: @withLabelFontSize;
-          text-align: left;
-          min-width: @labelMinwWidth;
-        }
-
-        .text {
-          margin-right: @withLabelTextMarginRight;
-          font-weight: bold;
-          color: @withLabelTextColor;
-          font-size: @withLabelFontSize;
-        }
       }
     }
   }
@@ -235,10 +209,6 @@
       overflow: hidden;
       white-space: nowrap;
     }
-
-    + label {
-      width: 100%;
-    }
   }
 
   /* Visible Hover */
@@ -263,12 +233,6 @@
         border-color: var(@themeActionLighterColorIdentifier, @themeActionLighterColorDefault);
       }
     }
-
-    label {
-      width: 100%;
-      text-overflow: clip;
-      overflow: visible;
-    }
   }
 
   /*  With Icon */
@@ -284,10 +248,6 @@
 
     &.green ~ .ui.dropdown {
       padding-right: @dropdownWithIconPaddingRight;
-    }
-
-    ~ label {
-      width: @dropdownWithIconLabelWidth;
     }
 
     &.dirty ~ label {
@@ -308,46 +268,6 @@
 
       > i.icon {
         padding-top: @dropdownWithImagesCaretPaddingTop;
-      }
-    }
-  }
-
-  /*  With Label */
-  label {
-    color: @labelColor;
-    left: @itemHorizontalPadding;
-    pointer-events: none;
-    position: absolute;
-    top: @itemVerticalPadding;
-    transition: transform @defaultDuration, font-size @defaultDuration;
-    width: @labelDefaultWidth;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    text-align: left;
-  }
-
-  // stylelint-disable-next-line no-duplicate-selectors
-  & > i.icon {
-
-    &:not(.green) ~ label {
-      left: @withIconLabelLeftPosition;
-    }
-  }
-
-  &.focus,
-  &.dirty {
-
-    label {
-      color: @labelFocusColor;
-      font-size: @labelFocusFontSize;
-      transform: translate(-(@labelFocusXTranslate), -(@labelFocusYTranslate));
-    }
-
-    & > i.icon {
-
-      &:not(.green) ~ label {
-        transform: translate(-(@withIconLabelFocusXTranslate), -(@labelFocusYTranslate));
       }
     }
   }
@@ -456,21 +376,6 @@
       padding: @validIconPadding;
       position: absolute;
       right: @validIconRight;
-    }
-
-    > i.icon {
-
-      &:not(.green) ~ label {
-        width: @validLabelWidthWithIcon;
-      }
-
-      ~ label {
-        width: @validLabelWidthWithoutIcon;
-      }
-
-      &.dirty ~ label {
-        width: 100%;
-      }
     }
   }
 }

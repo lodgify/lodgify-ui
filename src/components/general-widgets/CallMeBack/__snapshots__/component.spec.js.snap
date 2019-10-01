@@ -617,7 +617,7 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
-                            label={null}
+                            label="Date"
                             mapValueToProps={[Function]}
                             name="date"
                             onChange={[Function]}
@@ -694,7 +694,7 @@ exports[`<CallMeBack /> if \`isBotProtected\` === true should render the right s
                                   onDateChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
-                                  placeholder={null}
+                                  placeholder="Date"
                                   withPortal={true}
                                 >
                                   <div />
@@ -2611,7 +2611,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
-                            label={null}
+                            label="Date"
                             mapValueToProps={[Function]}
                             name="date"
                             onChange={[Function]}
@@ -2688,7 +2688,7 @@ exports[`<CallMeBack /> if \`isPrivacyConsentRequired\` is \`truthy\` should ren
                                   onDateChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
-                                  placeholder={null}
+                                  placeholder="Date"
                                   withPortal={true}
                                 >
                                   <div />
@@ -4757,7 +4757,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
-                            label={null}
+                            label="Date"
                             mapValueToProps={[Function]}
                             name="date"
                             onChange={[Function]}
@@ -4834,7 +4834,7 @@ exports[`<CallMeBack /> if there is no \`props.propertyOptions\` should have the
                                   onDateChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
-                                  placeholder={null}
+                                  placeholder="Date"
                                   withPortal={true}
                                 >
                                   <div />
@@ -6250,7 +6250,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                             isFluid={false}
                             isFocused={false}
                             isValid={false}
-                            label={null}
+                            label="Date"
                             mapValueToProps={[Function]}
                             name="date"
                             onChange={[Function]}
@@ -6327,7 +6327,7 @@ exports[`<CallMeBack /> should have the correct structure 1`] = `
                                   onDateChange={[Function]}
                                   onFocusChange={[Function]}
                                   openDirection="down"
-                                  placeholder={null}
+                                  placeholder="Date"
                                   withPortal={true}
                                 >
                                   <div />

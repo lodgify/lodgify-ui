@@ -34,7 +34,6 @@
   &.radio input:checked {
 
     & ~ label {
-      font-weight: bold;
 
       &:before {
         background-color: @themeActionColorDefault !important;
@@ -68,13 +67,6 @@
   /* Pressed */
 
   /* Focus */
-  input[type="checkbox"]:focus {
-
-    & + label {
-      font-size: inherit;
-      transform: none;
-    }
-  }
 
   /* Active */
 
