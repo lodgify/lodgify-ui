@@ -14,6 +14,7 @@ import { Slideshow } from 'media/Slideshow';
 
 /**
  * @param  {Object[]}    amenities
+ * @param  {string}      amenitiesConjunctionText
  * @param  {string}      amenitiesHeadingText
  * @param  {string}      description
  * @param  {Object[]}    extraFeatures
@@ -29,6 +30,7 @@ import { Slideshow } from 'media/Slideshow';
  */
 export const getModalContentMarkup = (
   amenities,
+  amenitiesConjunctionText,
   amenitiesHeadingText,
   description,
   extraFeatures,
@@ -65,6 +67,7 @@ export const getModalContentMarkup = (
     {!!size(amenities) && (
       <Amenities
         amenities={amenities}
+        amenitiesConjunctionText={amenitiesConjunctionText}
         headingText={amenitiesHeadingText}
         isStacked={isUserOnMobile}
       />

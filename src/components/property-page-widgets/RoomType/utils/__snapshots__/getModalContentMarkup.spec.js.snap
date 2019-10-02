@@ -690,7 +690,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
           },
         ]
       }
-      amenitiesConjunctionText="and"
+      amenitiesConjunctionText="WALL-E"
       hasExtraItemsInModal={false}
       headingText="bibip-bop"
       isStacked={false}
@@ -814,7 +814,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                             className=""
                           >
                             Toaster, 
-                            Microwave and 
+                            Microwave WALL-E 
                             Coffee Machine
                           </p>
                         </Paragraph>
@@ -881,7 +881,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                             className=""
                           >
                             Bidet, 
-                            Hair Dryer and 
+                            Hair Dryer WALL-E 
                             Iron & Board
                           </p>
                         </Paragraph>
@@ -1126,7 +1126,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
           },
         ]
       }
-      amenitiesConjunctionText="and"
+      amenitiesConjunctionText="WALL-E"
       hasExtraItemsInModal={false}
       headingText="bibip-bop"
       isStacked={false}
@@ -1250,7 +1250,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                             className=""
                           >
                             Toaster, 
-                            Microwave and 
+                            Microwave WALL-E 
                             Coffee Machine
                           </p>
                         </Paragraph>
@@ -1317,7 +1317,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                             className=""
                           >
                             Bidet, 
-                            Hair Dryer and 
+                            Hair Dryer WALL-E 
                             Iron & Board
                           </p>
                         </Paragraph>
@@ -1721,7 +1721,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
           },
         ]
       }
-      amenitiesConjunctionText="and"
+      amenitiesConjunctionText="WALL-E"
       hasExtraItemsInModal={false}
       headingText="bibip-bop"
       isStacked={false}
@@ -1845,7 +1845,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                             className=""
                           >
                             Toaster, 
-                            Microwave and 
+                            Microwave WALL-E 
                             Coffee Machine
                           </p>
                         </Paragraph>
@@ -1912,7 +1912,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
                             className=""
                           >
                             Bidet, 
-                            Hair Dryer and 
+                            Hair Dryer WALL-E 
                             Iron & Board
                           </p>
                         </Paragraph>
@@ -2304,7 +2304,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
           },
         ]
       }
-      amenitiesConjunctionText="and"
+      amenitiesConjunctionText="WALL-E"
       hasExtraItemsInModal={false}
       headingText="bibip-bop"
       isStacked={false}
@@ -2428,7 +2428,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                             className=""
                           >
                             Toaster, 
-                            Microwave and 
+                            Microwave WALL-E 
                             Coffee Machine
                           </p>
                         </Paragraph>
@@ -2495,7 +2495,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                             className=""
                           >
                             Bidet, 
-                            Hair Dryer and 
+                            Hair Dryer WALL-E 
                             Iron & Board
                           </p>
                         </Paragraph>

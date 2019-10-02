@@ -29,6 +29,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
     >
       <RoomType
         amenities={Array []}
+        amenitiesConjunctionText="and"
         amenitiesHeadingText="Room Amenities"
         description={null}
         extraFeatures={Array []}
@@ -251,6 +252,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
     >
       <RoomType
         amenities={Array []}
+        amenitiesConjunctionText="and"
         amenitiesHeadingText="Room Amenities"
         description={null}
         extraFeatures={Array []}
@@ -730,6 +732,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
             },
           ]
         }
+        amenitiesConjunctionText="and"
         amenitiesHeadingText="Room Amenities"
         bathroomsNumber={2}
         bedsNumber={3}
@@ -1095,6 +1098,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
             },
           ]
         }
+        amenitiesConjunctionText="and"
         amenitiesHeadingText="Room Amenities"
         bathroomsNumber={2}
         bedsNumber={3}
@@ -1607,6 +1611,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
             },
           ]
         }
+        amenitiesConjunctionText="and"
         amenitiesHeadingText="Room Amenities"
         bathroomsNumber={2}
         bedsNumber={3}
@@ -2568,6 +2573,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
             },
           ]
         }
+        amenitiesConjunctionText="and"
         amenitiesHeadingText="Room Amenities"
         bathroomsNumber={2}
         bedsNumber={3}

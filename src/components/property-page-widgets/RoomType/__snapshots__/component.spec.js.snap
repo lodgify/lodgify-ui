@@ -24,6 +24,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
       },
     ]
   }
+  amenitiesConjunctionText="and"
   amenitiesHeadingText="Stiff Stoff Stuff"
   description="yayayay"
   extraFeatures={
@@ -789,6 +790,7 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
       },
     ]
   }
+  amenitiesConjunctionText="and"
   amenitiesHeadingText="Stiff Stoff Stuff"
   description="yayayay"
   extraFeatures={
@@ -1044,6 +1046,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
       },
     ]
   }
+  amenitiesConjunctionText="and"
   amenitiesHeadingText="Stiff Stoff Stuff"
   description="yayayay"
   extraFeatures={

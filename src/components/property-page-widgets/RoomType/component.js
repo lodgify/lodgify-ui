@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
 import {
+  AND,
   PER_NIGHT,
   FROM_PRICE_PER_PERIOD,
   MORE_INFO,
@@ -32,6 +33,7 @@ import { getModalContentMarkup } from './utils/getModalContentMarkup';
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
   amenities,
+  amenitiesConjunctionText,
   amenitiesHeadingText,
   description,
   extraFeatures,
@@ -99,6 +101,7 @@ const Component = ({
                   >
                     {getModalContentMarkup(
                       amenities,
+                      amenitiesConjunctionText,
                       amenitiesHeadingText,
                       description,
                       extraFeatures,
@@ -128,6 +131,7 @@ const Component = ({
                     >
                       {getModalContentMarkup(
                         amenities,
+                        amenitiesConjunctionText,
                         amenitiesHeadingText,
                         description,
                         extraFeatures,
@@ -169,6 +173,7 @@ Component.displayName = 'RoomType';
 
 Component.defaultProps = {
   description: null,
+  amenitiesConjunctionText: AND,
   amenitiesHeadingText: ROOM_AMENITIES,
   extraFeatures: [],
   isShowingPlaceholder: false,
@@ -193,6 +198,8 @@ Component.propTypes = {
       name: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** The conjunction to display after the penultimate amenity in the array. */
+  amenitiesConjunctionText: PropTypes.string,
   /** The text displayed when amenities are available. */
   amenitiesHeadingText: PropTypes.string,
   /** A description to be displayed in the modal */

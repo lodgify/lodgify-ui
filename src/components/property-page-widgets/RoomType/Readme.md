@@ -77,6 +77,7 @@ const roomTypeFeatures = [
   extraFeatures={extraRoomTypeFeatures}
   slideShowImages={images}
   amenities={availableAmenities}
+  amenitiesConjunctionText="and"
   amenitiesHeadingText="House Amenities"
   moreInfoText="More info"
 />
