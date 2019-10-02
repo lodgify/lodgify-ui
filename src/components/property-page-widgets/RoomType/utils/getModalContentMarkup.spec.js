@@ -29,6 +29,7 @@ const amenities = [
 ];
 
 const amenitiesHeadingText = 'bibip-bop';
+const amenitiesConjunctionText = 'WALL-E';
 const extraFeatures = [{ labelText: '1 Dining-Room' }];
 const features = [{ iconName: 'double bed', labelText: '1 Bedroom' }];
 const name = 'yoyo name';
@@ -52,6 +53,7 @@ const getMarkup = ({
   mount(
     getModalContentMarkup(
       amenities,
+      amenitiesConjunctionText,
       amenitiesHeadingText,
       description,
       extraFeatures,
