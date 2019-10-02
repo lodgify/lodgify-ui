@@ -1,3 +1,10 @@
+## [1.245.4](https://github.com/lodgify/lodgify-ui/compare/v1.245.3...v1.245.4) (2019-10-02)
+
+
+### Bug Fixes
+
+* **RoomTypes:** add amenitiesConjunctionText to RoomType ([f324a00](https://github.com/lodgify/lodgify-ui/commit/f324a00))
+
 ## [1.245.3](https://github.com/lodgify/lodgify-ui/compare/v1.245.2...v1.245.3) (2019-10-01)
 
 
