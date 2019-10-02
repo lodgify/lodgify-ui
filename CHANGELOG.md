@@ -1,3 +1,15 @@
+# [1.246.0](https://github.com/lodgify/lodgify-ui/compare/v1.245.4...v1.246.0) (2019-10-02)
+
+
+### Bug Fixes
+
+* **Range:** remove react warning ([82ed38b](https://github.com/lodgify/lodgify-ui/commit/82ed38b))
+
+
+### Features
+
+* **GoogleMaps:** expose onApiLoad ([592afa2](https://github.com/lodgify/lodgify-ui/commit/592afa2))
+
 ## [1.245.4](https://github.com/lodgify/lodgify-ui/compare/v1.245.3...v1.245.4) (2019-10-02)
 
 
