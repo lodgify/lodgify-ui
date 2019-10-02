@@ -220,6 +220,34 @@ describe('<GoogleMapReacts />', () => {
     });
   });
 
+  describe('handleApiLoaded', () => {
+    describe('if `onApiLoad` is truthy', () => {
+      it('should call onApiLoad with the correct arguments', () => {
+        const maps = 'lols';
+        const map = 'lol';
+        const onApiLoad = jest.fn();
+        const wrapper = getGoogleMapReact({ onApiLoad });
+
+        wrapper.instance().handleApiLoaded({ map, maps });
+
+        expect(onApiLoad).toHaveBeenCalledWith({ map, maps });
+      });
+    });
+
+    describe('if `onApiLoad` is falsy', () => {
+      it('should not call onApiLoad', () => {
+        const maps = 'lols';
+        const map = 'lol';
+        const onApiLoad = jest.fn();
+        const wrapper = getGoogleMapReact();
+
+        wrapper.instance().handleApiLoaded({ map, maps });
+
+        expect(onApiLoad).not.toHaveBeenCalled();
+      });
+    });
+  });
+
   describe('handleDrag', () => {
     it('should be debounced', () => {
       const DEBOUNCED = 'yep, got debounced';

@@ -197,7 +197,7 @@ exports[`Range render should render the right structure 1`] = `
       >
         <div
           className="handle-clickable-area active"
-          key="$$-0"
+          key="0"
           onKeyDown={[Function]}
           onMouseDown={[Function]}
           onTouchStart={[Function]}
@@ -223,7 +223,7 @@ exports[`Range render should render the right structure 1`] = `
         </div>
         <div
           className="handle-clickable-area"
-          key="$$-1"
+          key="1"
           onKeyDown={[Function]}
           onMouseDown={[Function]}
           onTouchStart={[Function]}

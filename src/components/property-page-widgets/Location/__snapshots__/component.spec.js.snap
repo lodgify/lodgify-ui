@@ -453,6 +453,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
                 longitude={2.158105}
                 markers={Array []}
                 onBoundsChange={[Function]}
+                onGoogleMapsLoad={null}
               >
                 <Card
                   fluid={true}

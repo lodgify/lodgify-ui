@@ -81,6 +81,12 @@ export class Component extends PureComponent {
     this.setState({ areBoundsChanged: true, bounds, center, size, zoom });
   };
 
+  handleApiLoaded = ({ map, maps }) => {
+    const { onApiLoad } = this.props;
+
+    if (onApiLoad) onApiLoad({ map, maps });
+  };
+
   handleDrag = debounce(() => {
     this.setState({ isDragged: true });
   });
@@ -111,6 +117,7 @@ export class Component extends PureComponent {
         center={center}
         onChange={this.handleChange}
         onDrag={this.handleDrag}
+        onGoogleApiLoaded={this.handleApiLoaded}
         onZoomAnimationEnd={this.handleZoomAnimationEnd}
         options={getMapOptions(hasDefaultStyles)}
         ref={this.createRef}
@@ -146,6 +153,7 @@ Component.defaultProps = {
   bounds: null,
   latitude: null,
   longitude: null,
+  onApiLoad: null,
 };
 
 Component.propTypes = {
@@ -181,6 +189,7 @@ Component.propTypes = {
       longitude: PropTypes.number,
     })
   ).isRequired,
+  onApiLoad: PropTypes.func,
   /**
    * A function called when the bounds of a dynamic map change.
    * @param {Object}  bounds
