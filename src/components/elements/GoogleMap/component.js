@@ -80,6 +80,7 @@ export class Component extends PureComponent {
       latitude,
       longitude,
       markers,
+      onGoogleMapsLoad,
       onBoundsChange,
     } = this.props;
 
@@ -95,6 +96,7 @@ export class Component extends PureComponent {
         latitude={latitude}
         longitude={longitude}
         markers={markers}
+        onApiLoad={onGoogleMapsLoad}
         onBoundsChange={onBoundsChange}
       />
     ) : (
@@ -109,6 +111,7 @@ export class Component extends PureComponent {
             latitude={latitude}
             longitude={longitude}
             markers={markers}
+            onApiLoad={onGoogleMapsLoad}
             onBoundsChange={onBoundsChange}
           />
         ) : (
@@ -136,6 +139,7 @@ Component.defaultProps = {
   latitude: null,
   longitude: null,
   markers: [],
+  onGoogleMapsLoad: null,
   onBoundsChange: Function.prototype,
 };
 
@@ -188,4 +192,5 @@ Component.propTypes = {
    * @param {boolean} isUserAction
    */
   onBoundsChange: PropTypes.func,
+  onGoogleMapsLoad: PropTypes.func,
 };

@@ -14,6 +14,7 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
   longitude={0}
   markers={Array []}
   onBoundsChange={[Function]}
+  onGoogleMapsLoad={null}
 >
   <Card
     fluid={true}
@@ -43,6 +44,7 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
         latitude={0}
         longitude={0}
         markers={Array []}
+        onApiLoad={null}
         onBoundsChange={[Function]}
       >
         <div />
@@ -66,6 +68,7 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
   longitude={0}
   markers={Array []}
   onBoundsChange={[Function]}
+  onGoogleMapsLoad={null}
 >
   <GoogleMapReact
     apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
@@ -76,6 +79,7 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
     latitude={0}
     longitude={0}
     markers={Array []}
+    onApiLoad={null}
     onBoundsChange={[Function]}
   >
     <div />
@@ -97,6 +101,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` shou
   longitude={0}
   markers={Array []}
   onBoundsChange={[Function]}
+  onGoogleMapsLoad={null}
 >
   <Card
     fluid={true}
@@ -139,6 +144,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
   longitude={0}
   markers={Array []}
   onBoundsChange={[Function]}
+  onGoogleMapsLoad={null}
 >
   <Card
     fluid={true}
@@ -168,6 +174,7 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
         latitude={0}
         longitude={0}
         markers={Array []}
+        onApiLoad={null}
         onBoundsChange={[Function]}
       >
         <div />
