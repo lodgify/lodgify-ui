@@ -88,12 +88,12 @@ export class Component extends PureComponent {
         <Handles>
           {({ handles, getHandleProps }) => (
             <Fragment>
-              {handles.map(({ id, percent, value }) => (
+              {handles.map(({ id, percent, value }, key) => (
                 <div
                   className={getClassNames('handle-clickable-area', {
                     active: id === this.state.activeHandleID,
                   })}
-                  key={id}
+                  key={key}
                   style={{ left: `calc(${percent}% - 10px)` }}
                   {...getHandleProps(id)}
                 >
