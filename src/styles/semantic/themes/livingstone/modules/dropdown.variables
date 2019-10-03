@@ -124,6 +124,13 @@
 @dropdownMinWidthWithImage: 118px;
 @dropdownWithImagesCaretPaddingTop: @15px;
 
+@labelMinWidth: 20px;
+
+@withLabelPadding: 5px;
+@withLabelFontSize: 14px;
+@withLabelTextMarginRight: 20px;
+@withLabelTextColor: @black;
+
 /*--------------
      Search
 --------------*/

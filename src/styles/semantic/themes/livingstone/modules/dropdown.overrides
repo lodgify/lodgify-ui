@@ -54,6 +54,30 @@
         color: @themeActionContrastColorDefault;
         color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
       }
+
+      /*With label*/
+      &.has-label {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        align-items: center;
+
+        .ui.label {
+          background: transparent;
+          padding: @withLabelPadding;
+          color: @itemColor;
+          font-size: @withLabelFontSize;
+          text-align: left;
+          min-width: @labelMinWidth;
+        }
+
+        .text {
+          margin-right: @withLabelTextMarginRight;
+          font-weight: bold;
+          color: @withLabelTextColor;
+          font-size: @withLabelFontSize;
+        }
+      }
     }
   }
 
