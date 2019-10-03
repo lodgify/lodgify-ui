@@ -37,6 +37,7 @@ export const getRoomTypeDropdownMarkup = (
           {getStringWithColonSuffix(roomTypeInputLabel)}
         </Paragraph>
         <Dropdown
+          isClearable={false}
           onChange={onChange}
           options={options}
           value={roomTypesValue}
