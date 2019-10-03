@@ -1,3 +1,10 @@
+## [1.246.3](https://github.com/lodgify/lodgify-ui/compare/v1.246.2...v1.246.3) (2019-10-03)
+
+
+### Bug Fixes
+
+* **GoogleMapReact:** set marker width ([a4007fe](https://github.com/lodgify/lodgify-ui/commit/a4007fe))
+
 ## [1.246.2](https://github.com/lodgify/lodgify-ui/compare/v1.246.1...v1.246.2) (2019-10-03)
 
 
