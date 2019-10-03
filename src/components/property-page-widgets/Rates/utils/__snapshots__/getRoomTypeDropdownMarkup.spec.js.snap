@@ -40,7 +40,7 @@ Array [
         getOptionsWithSearch={null}
         icon={null}
         initialValue={null}
-        isClearable={true}
+        isClearable={false}
         isCompact={false}
         isDisabled={false}
         isSearchable={false}
@@ -76,7 +76,7 @@ Array [
           <Dropdown
             additionLabel="Add "
             additionPosition="top"
-            clearable={true}
+            clearable={false}
             closeOnBlur={true}
             closeOnEscape={true}
             compact={false}
@@ -94,7 +94,7 @@ Array [
                 isLabelLeft={false}
                 labelText={null}
                 labelWeight={null}
-                name="close"
+                name="caret down"
                 path={null}
                 size={null}
               />
@@ -158,13 +158,13 @@ Array [
                       EUR €
                     </div>
                     <i
-                      class="icon clear"
+                      class="icon"
                     >
                       <svg
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
+                          d="M20,8.5l-8,7-8-7Z"
                           fill="currentColor"
                         />
                       </svg>
@@ -235,13 +235,13 @@ Array [
                         EUR €
                       </div>
                       <i
-                        class="icon clear"
+                        class="icon"
                       >
                         <svg
                           viewBox="0 0 24 24"
                         >
                           <path
-                            d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
+                            d="M20,8.5l-8,7-8-7Z"
                             fill="currentColor"
                           />
                         </svg>
@@ -314,7 +314,7 @@ Array [
                     EUR €
                   </div>
                   <Icon
-                    className="clear"
+                    className=""
                     color={null}
                     hasBorder={false}
                     isButton={false}
@@ -324,20 +324,20 @@ Array [
                     isLabelLeft={false}
                     labelText={null}
                     labelWeight={null}
-                    name="close"
+                    name="caret down"
                     onClick={[Function]}
                     path={null}
                     size={null}
                   >
                     <i
-                      className="icon clear"
+                      className="icon"
                       onClick={[Function]}
                     >
                       <svg
                         viewBox="0 0 24 24"
                       >
                         <path
-                          d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
+                          d="M20,8.5l-8,7-8-7Z"
                           fill="currentColor"
                         />
                       </svg>
