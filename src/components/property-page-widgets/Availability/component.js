@@ -116,6 +116,7 @@ class Component extends PureComponent {
                   <GridColumn computer={7} mobile={7} tablet={12}>
                     <Dropdown
                       icon={ICON_NAMES.MAP_PIN}
+                      isClearable={false}
                       label={propertyDropdownPlaceholderLabel}
                       onChange={this.reloadCalendarOnRoomSelection}
                       options={roomOptionsWithImages}
