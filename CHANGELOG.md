@@ -1,3 +1,10 @@
+## [1.246.2](https://github.com/lodgify/lodgify-ui/compare/v1.246.1...v1.246.2) (2019-10-03)
+
+
+### Bug Fixes
+
+* **Rates:** roomtype dropdown is not clearable ([ad54c2f](https://github.com/lodgify/lodgify-ui/commit/ad54c2f))
+
 ## [1.246.1](https://github.com/lodgify/lodgify-ui/compare/v1.246.0...v1.246.1) (2019-10-03)
 
 
