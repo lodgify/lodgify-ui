@@ -53,6 +53,7 @@ export const Component = ({
         getCurrencyDropdownPlaceholderMarkup()
       ) : (
         <Dropdown
+          isClearable={false}
           isSearchable
           noResultsText={currencyNoResultsText}
           onChange={onChangeCurrency}
@@ -100,6 +101,7 @@ export const Component = ({
           ])}
           tableHeadings={[
             <Dropdown
+              isClearable={false}
               isSearchable
               noResultsText={currencyNoResultsText}
               onChange={onChangeCurrency}
