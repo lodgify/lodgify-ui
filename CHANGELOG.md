@@ -1,3 +1,12 @@
+## [1.246.1](https://github.com/lodgify/lodgify-ui/compare/v1.246.0...v1.246.1) (2019-10-03)
+
+
+### Bug Fixes
+
+* **Availability:** dropdown is not clearable ([67b2942](https://github.com/lodgify/lodgify-ui/commit/67b2942))
+* **Dropdown:** add text label styles ([54d368d](https://github.com/lodgify/lodgify-ui/commit/54d368d))
+* **Rates:** dropdown is not clearable ([fa63d31](https://github.com/lodgify/lodgify-ui/commit/fa63d31))
+
 # [1.246.0](https://github.com/lodgify/lodgify-ui/compare/v1.245.4...v1.246.0) (2019-10-02)
 
 
