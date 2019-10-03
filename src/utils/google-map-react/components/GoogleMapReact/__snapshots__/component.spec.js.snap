@@ -90,11 +90,15 @@ exports[`<GoogleMapReacts /> render if \`getCenter\` returns a value if \`props.
     key="a"
     lat={41.38}
     lng={2.15}
+    seLat={1041.38}
+    seLng={1002.15}
   />
   <div
     key="b"
     lat={41.375}
     lng={2.16}
+    seLat={1041.375}
+    seLng={1002.16}
   />
 </Component>
 `;

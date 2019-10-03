@@ -140,7 +140,13 @@ export class Component extends PureComponent {
           />
         )}
         {markers.map(({ component, key, latitude, longitude }) =>
-          React.cloneElement(component, { key, lat: latitude, lng: longitude })
+          React.cloneElement(component, {
+            key,
+            lat: latitude,
+            lng: longitude,
+            seLat: latitude + 1000,
+            seLng: longitude + 1000,
+          })
         )}
       </GoogleMapReact>
     );
