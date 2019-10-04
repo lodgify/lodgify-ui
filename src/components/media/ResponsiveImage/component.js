@@ -3,7 +3,7 @@ import getClassNames from 'classnames';
 import PropTypes from 'prop-types';
 
 import { withLazyLoad } from 'utils/with-lazy-load';
-import { IMAGE_TITLE, IMAGE_WIDGET } from 'utils/default-strings';
+import { IMAGE_TITLE } from 'utils/default-strings';
 import { Paragraph } from 'typography/Paragraph';
 
 import { IMAGE_URL, SRC_SET } from './constants';
@@ -75,7 +75,7 @@ export class Component extends PureComponent {
 Component.displayName = 'ResponsiveImage';
 
 Component.defaultProps = {
-  alternativeText: IMAGE_WIDGET,
+  alternativeText: '',
   hasRoundedCorners: false,
   imageHeight: null,
   imageTitle: IMAGE_TITLE,
