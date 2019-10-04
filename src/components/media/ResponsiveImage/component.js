@@ -75,7 +75,6 @@ export class Component extends PureComponent {
 Component.displayName = 'ResponsiveImage';
 
 Component.defaultProps = {
-  alternativeText: '',
   hasRoundedCorners: false,
   imageHeight: null,
   imageTitle: IMAGE_TITLE,
@@ -92,9 +91,6 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** Alternative text to show if the image can't be loaded by the browser. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  alternativeText: PropTypes.string,
   /** Is the image rounded on the corners. */
   hasRoundedCorners: PropTypes.bool,
   /** The natural height of the image. */

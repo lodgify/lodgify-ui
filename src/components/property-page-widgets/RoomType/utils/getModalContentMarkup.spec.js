@@ -38,7 +38,6 @@ const pricePerPeriodPrefix = 'morf';
 const pricePerPeriod = '$1010';
 const slideShowImage = [
   {
-    alternativeText: 'Two cats',
     url: 'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
     title: 'Two cats',
   },
@@ -113,7 +112,6 @@ describe('getModalContentMarkup', () => {
         slideShowImages: [
           ...slideShowImage,
           {
-            alternativeText: 'Two cats',
             url:
               'https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg',
             title: 'Two cats',

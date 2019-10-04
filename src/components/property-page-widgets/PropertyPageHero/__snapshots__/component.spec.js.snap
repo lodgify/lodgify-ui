@@ -114,7 +114,6 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
             >
               <div />
               <ResponsiveImage
-                alternativeText=""
                 hasRoundedCorners={false}
                 imageHeight={null}
                 imageTitle="Image Title"
@@ -460,7 +459,6 @@ exports[`PropertyPageHero should render the right structure 1`] = `
             >
               <div />
               <ResponsiveImage
-                alternativeText=""
                 hasRoundedCorners={false}
                 imageHeight={null}
                 imageTitle="Image Title"

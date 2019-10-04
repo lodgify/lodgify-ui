@@ -507,12 +507,10 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         "ratingNumber": 3.4,
         "slideShowImages": Array [
           Object {
-            "alternativeText": "Two more cats",
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
           Object {
-            "alternativeText": "Some cats",
             "title": "Some cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -557,12 +555,10 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         "ratingNumber": 3.4,
         "slideShowImages": Array [
           Object {
-            "alternativeText": "Two more cats",
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
           Object {
-            "alternativeText": "Some cats",
             "title": "Some cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -626,12 +622,10 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
     slideShowImages={
       Array [
         Object {
-          "alternativeText": "Two more cats",
           "title": "Two more cats",
           "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         },
         Object {
-          "alternativeText": "Some cats",
           "title": "Some cats",
           "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         },
@@ -696,12 +690,10 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
       slideShowImages={
         Array [
           Object {
-            "alternativeText": "Two more cats",
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
           Object {
-            "alternativeText": "Some cats",
             "title": "Some cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -768,12 +760,10 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         slideShowImages={
           Array [
             Object {
-              "alternativeText": "Two more cats",
               "title": "Two more cats",
               "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
             },
             Object {
-              "alternativeText": "Some cats",
               "title": "Some cats",
               "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
             },
@@ -1010,12 +1000,10 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
     slideShowImages={
       Array [
         Object {
-          "alternativeText": "Two more cats",
           "title": "Two more cats",
           "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         },
         Object {
-          "alternativeText": "Some cats",
           "title": "Some cats",
           "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         },
@@ -1071,12 +1059,10 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
       slideShowImages={
         Array [
           Object {
-            "alternativeText": "Two more cats",
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
           Object {
-            "alternativeText": "Some cats",
             "title": "Some cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -1134,12 +1120,10 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         slideShowImages={
           Array [
             Object {
-              "alternativeText": "Two more cats",
               "title": "Two more cats",
               "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
             },
             Object {
-              "alternativeText": "Some cats",
               "title": "Some cats",
               "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
             },
@@ -1386,12 +1370,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         "ratingNumber": 3.4,
         "slideShowImages": Array [
           Object {
-            "alternativeText": "Two more cats",
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
           Object {
-            "alternativeText": "Some cats",
             "title": "Some cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -1436,12 +1418,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         "ratingNumber": 3.4,
         "slideShowImages": Array [
           Object {
-            "alternativeText": "Two more cats",
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
           Object {
-            "alternativeText": "Some cats",
             "title": "Some cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -1505,12 +1485,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
     slideShowImages={
       Array [
         Object {
-          "alternativeText": "Two more cats",
           "title": "Two more cats",
           "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         },
         Object {
-          "alternativeText": "Some cats",
           "title": "Some cats",
           "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         },
@@ -1575,12 +1553,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
       slideShowImages={
         Array [
           Object {
-            "alternativeText": "Two more cats",
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
           Object {
-            "alternativeText": "Some cats",
             "title": "Some cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -1647,12 +1623,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         slideShowImages={
           Array [
             Object {
-              "alternativeText": "Two more cats",
               "title": "Two more cats",
               "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
             },
             Object {
-              "alternativeText": "Some cats",
               "title": "Some cats",
               "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
             },
@@ -1709,12 +1683,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 images={
                                   Array [
                                     Object {
-                                      "alternativeText": "Two more cats",
                                       "title": "Two more cats",
                                       "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                     },
                                     Object {
-                                      "alternativeText": "Some cats",
                                       "title": "Some cats",
                                       "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                     },
@@ -2485,12 +2457,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
     slideShowImages={
       Array [
         Object {
-          "alternativeText": "Two more cats",
           "title": "Two more cats",
           "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         },
         Object {
-          "alternativeText": "Some cats",
           "title": "Some cats",
           "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
         },
@@ -2546,12 +2516,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
       slideShowImages={
         Array [
           Object {
-            "alternativeText": "Two more cats",
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
           Object {
-            "alternativeText": "Some cats",
             "title": "Some cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -2609,12 +2577,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         slideShowImages={
           Array [
             Object {
-              "alternativeText": "Two more cats",
               "title": "Two more cats",
               "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
             },
             Object {
-              "alternativeText": "Some cats",
               "title": "Some cats",
               "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
             },
@@ -2671,12 +2637,10 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 images={
                                   Array [
                                     Object {
-                                      "alternativeText": "Two more cats",
                                       "title": "Two more cats",
                                       "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                     },
                                     Object {
-                                      "alternativeText": "Some cats",
                                       "title": "Some cats",
                                       "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                     },

@@ -42,7 +42,6 @@ exports[`<FeaturedRoomType /> should render the right structure 1`] = `
   target="_self"
 >
   <withLazyLoad(ResponsiveImage)
-    alternativeText="this alt tag"
     imageUrl="🐱🐱"
     isFluid={true}
     isLazyLoaded={true}

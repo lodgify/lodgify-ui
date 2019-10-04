@@ -56,17 +56,14 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
   slideShowImages={
     Array [
       Object {
-        "alternativeText": "Two cats",
         "title": "Two cats",
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Two more cats",
         "title": "Two more cats",
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Much cats",
         "title": "Much cats",
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
@@ -122,17 +119,14 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                           images={
                             Array [
                               Object {
-                                "alternativeText": "Two cats",
                                 "title": "Two cats",
                                 "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                               },
                               Object {
-                                "alternativeText": "Two more cats",
                                 "title": "Two more cats",
                                 "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                               },
                               Object {
-                                "alternativeText": "Much cats",
                                 "title": "Much cats",
                                 "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                               },
@@ -822,17 +816,14 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
   slideShowImages={
     Array [
       Object {
-        "alternativeText": "Two cats",
         "title": "Two cats",
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Two more cats",
         "title": "Two more cats",
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Much cats",
         "title": "Much cats",
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
@@ -1078,17 +1069,14 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
   slideShowImages={
     Array [
       Object {
-        "alternativeText": "Two cats",
         "title": "Two cats",
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Two more cats",
         "title": "Two more cats",
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Much cats",
         "title": "Much cats",
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
@@ -1144,17 +1132,14 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                           images={
                             Array [
                               Object {
-                                "alternativeText": "Two cats",
                                 "title": "Two cats",
                                 "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                               },
                               Object {
-                                "alternativeText": "Two more cats",
                                 "title": "Two more cats",
                                 "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                               },
                               Object {
-                                "alternativeText": "Much cats",
                                 "title": "Much cats",
                                 "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                               },

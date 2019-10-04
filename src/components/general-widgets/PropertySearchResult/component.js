@@ -47,7 +47,6 @@ export class Component extends PureComponent {
       bedsText,
       guestsNumber,
       guestsText,
-      imageAlternativeText,
       imageSizes,
       imageSrcSet,
       imageTitle,
@@ -83,7 +82,6 @@ export class Component extends PureComponent {
             <Fragment>
               <FlexContainer>
                 <ResponsiveImage
-                  alternativeText={imageAlternativeText}
                   imageTitle={imageTitle}
                   imageUrl={imageUrl}
                   isFluid
@@ -157,7 +155,6 @@ Component.defaultProps = {
   bedroomsText: '',
   bedsNumber: null,
   bedsText: '',
-  imageAlternativeText: undefined,
   imageSizes: undefined,
   imageSrcSet: undefined,
   imageTitle: '',
@@ -191,8 +188,6 @@ Component.propTypes = {
   guestsNumber: PropTypes.number.isRequired,
   /** The text to describe the amount of guests.*/
   guestsText: PropTypes.string.isRequired,
-  /** The alternative text for the image to display. */
-  imageAlternativeText: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   imageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */

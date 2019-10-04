@@ -66,7 +66,6 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
           <LazyLoader
             componentProps={
               Object {
-                "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
                 "placeholderImageUrl": undefined,
@@ -82,7 +81,6 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
           >
             <div />
             <ResponsiveImage
-              alternativeText=""
               hasRoundedCorners={false}
               imageHeight={null}
               imageTitle="Image Title"
@@ -384,7 +382,6 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
           <LazyLoader
             componentProps={
               Object {
-                "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
                 "placeholderImageUrl": undefined,
@@ -400,7 +397,6 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
           >
             <div />
             <ResponsiveImage
-              alternativeText=""
               hasRoundedCorners={false}
               imageHeight={null}
               imageTitle="Image Title"
@@ -756,7 +752,6 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
           <LazyLoader
             componentProps={
               Object {
-                "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
                 "placeholderImageUrl": undefined,
@@ -772,7 +767,6 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
           >
             <div />
             <ResponsiveImage
-              alternativeText=""
               hasRoundedCorners={false}
               imageHeight={null}
               imageTitle="Image Title"
@@ -1074,7 +1068,6 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
           <LazyLoader
             componentProps={
               Object {
-                "alternativeText": undefined,
                 "isFluid": true,
                 "isLazyLoaded": true,
                 "placeholderImageUrl": undefined,
@@ -1090,7 +1083,6 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
           >
             <div />
             <ResponsiveImage
-              alternativeText=""
               hasRoundedCorners={false}
               imageHeight={null}
               imageTitle="Image Title"

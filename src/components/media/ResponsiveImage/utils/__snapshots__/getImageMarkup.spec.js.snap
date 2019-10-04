@@ -2,7 +2,7 @@
 
 exports[`\`getImageMarkup\` should render the right structure 1`] = `
 <Image
-  alt="someAltText"
+  alt="someTitle"
   as="img"
   avatar={false}
   fluid={false}
@@ -14,7 +14,7 @@ exports[`\`getImageMarkup\` should render the right structure 1`] = `
   ui={true}
 >
   <img
-    alt="someAltText"
+    alt="someTitle"
     className="ui image"
     onLoad={[Function]}
     sizes="someSizes"

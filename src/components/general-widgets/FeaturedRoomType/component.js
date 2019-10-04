@@ -24,7 +24,6 @@ export const Component = ({
   bedsNumber,
   guestsLabel,
   guestsNumber,
-  imageAlternativeText,
   imageSizes,
   imageSrcSet,
   imageUrl,
@@ -44,7 +43,6 @@ export const Component = ({
     ) : (
       <Fragment>
         <ResponsiveImage
-          alternativeText={imageAlternativeText}
           imageUrl={imageUrl}
           isFluid
           placeholderImageUrl={placeholderImageUrl}
@@ -82,7 +80,6 @@ Component.displayName = 'FeaturedRoomType';
 Component.defaultProps = {
   bedsLabel: BEDS,
   guestsLabel: GUESTS,
-  imageAlternativeText: undefined,
   imageSizes: undefined,
   imageSrcSet: undefined,
   periodText: PER_NIGHT,
@@ -101,8 +98,6 @@ Component.propTypes = {
   guestsLabel: PropTypes.string,
   /** The number of guests the room can accommodate. */
   guestsNumber: PropTypes.number.isRequired,
-  /** The alternative text for the image to display. */
-  imageAlternativeText: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   imageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */

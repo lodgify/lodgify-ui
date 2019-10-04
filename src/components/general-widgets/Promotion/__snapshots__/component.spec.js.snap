@@ -88,7 +88,6 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                           >
                             <div />
                             <ResponsiveImage
-                              alternativeText=""
                               hasRoundedCorners={false}
                               imageHeight={null}
                               imageTitle="Image Title"

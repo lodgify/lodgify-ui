@@ -7,7 +7,6 @@ exports[`<Slideshow /> by default should return the right structure 1`] = `
   images={
     Array [
       Object {
-        "alternativeText": "Two cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -16,7 +15,6 @@ exports[`<Slideshow /> by default should return the right structure 1`] = `
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Two more cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -25,7 +23,6 @@ exports[`<Slideshow /> by default should return the right structure 1`] = `
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Much cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -34,7 +31,6 @@ exports[`<Slideshow /> by default should return the right structure 1`] = `
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "No dogs",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -104,7 +100,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
   images={
     Array [
       Object {
-        "alternativeText": "Two cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -113,7 +108,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Two more cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -122,7 +116,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Much cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -131,7 +124,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "No dogs",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -201,7 +193,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
   images={
     Array [
       Object {
-        "alternativeText": "Two cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -210,7 +201,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Two more cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -219,7 +209,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Much cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -228,7 +217,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "No dogs",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -298,7 +286,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
   images={
     Array [
       Object {
-        "alternativeText": "Two cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -307,7 +294,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Two more cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -316,7 +302,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Much cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -325,7 +310,6 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "No dogs",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -471,7 +455,6 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
   images={
     Array [
       Object {
-        "alternativeText": "Two cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -480,7 +463,6 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Two more cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -489,7 +471,6 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "Much cats",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,
@@ -498,7 +479,6 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
         "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "alternativeText": "No dogs",
         "sizes": "100w",
         "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w,
         https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=800&h=800&mode=max 768w,

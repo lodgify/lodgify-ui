@@ -25,7 +25,6 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
       <LazyLoader
         componentProps={
           Object {
-            "alternativeText": undefined,
             "hasRoundedCorners": false,
             "isCircular": false,
             "isFluid": true,
@@ -44,7 +43,6 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
       >
         <div />
         <ResponsiveImage
-          alternativeText=""
           hasRoundedCorners={false}
           imageHeight={null}
           imageTitle="Image Title"
@@ -95,7 +93,6 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
       <LazyLoader
         componentProps={
           Object {
-            "alternativeText": undefined,
             "hasRoundedCorners": false,
             "isCircular": true,
             "isFluid": true,
@@ -114,7 +111,6 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
       >
         <div />
         <ResponsiveImage
-          alternativeText=""
           hasRoundedCorners={false}
           imageHeight={null}
           imageTitle="Image Title"
@@ -165,7 +161,6 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
       <LazyLoader
         componentProps={
           Object {
-            "alternativeText": undefined,
             "hasRoundedCorners": false,
             "isCircular": false,
             "isFluid": false,
@@ -184,7 +179,6 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
       >
         <div />
         <ResponsiveImage
-          alternativeText=""
           hasRoundedCorners={false}
           imageHeight={null}
           imageTitle="Image Title"
@@ -235,7 +229,6 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
       <LazyLoader
         componentProps={
           Object {
-            "alternativeText": undefined,
             "hasRoundedCorners": false,
             "isCircular": false,
             "isFluid": true,
@@ -254,7 +247,6 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
       >
         <div />
         <ResponsiveImage
-          alternativeText=""
           hasRoundedCorners={false}
           imageHeight={null}
           imageTitle="Image Title"

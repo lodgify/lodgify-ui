@@ -3,7 +3,6 @@ import { mount } from 'enzyme';
 import { getImageMarkup } from './getImageMarkup';
 
 const props = {
-  alternativeText: 'someAltText',
   imageHeight: 'someHeight',
   imageNotFoundLabelText: 'someLabel',
   imageTitle: 'someTitle',

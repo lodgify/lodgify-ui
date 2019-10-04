@@ -13,7 +13,6 @@ export const Component = ({
   className,
   hasMargin,
   hasRoundedCorners,
-  imageAlternativeText,
   imageSizes,
   imageSrcSet,
   imageUrl,
@@ -31,7 +30,6 @@ export const Component = ({
     })}
   >
     <ResponsiveImage
-      alternativeText={imageAlternativeText}
       hasRoundedCorners={hasRoundedCorners}
       imageUrl={imageUrl}
       isCircular={isCircular}
@@ -52,7 +50,6 @@ Component.defaultProps = {
   className: '',
   hasMargin: false,
   hasRoundedCorners: false,
-  imageAlternativeText: undefined,
   imageSizes: undefined,
   imageSrcSet: undefined,
   isCircular: false,
@@ -73,8 +70,6 @@ Component.propTypes = {
   hasMargin: PropTypes.bool,
   /** Is the thumbnail rounded on the corners */
   hasRoundedCorners: PropTypes.bool,
-  /** Text to help visually impaired users understand the content of the image. */
-  imageAlternativeText: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   imageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
