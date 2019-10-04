@@ -99,7 +99,7 @@ exports[`<ResponsiveImage /> should get wrapped by \`withLazyLoad\` 1`] = `
   >
     <div />
     <ResponsiveImage
-      alternativeText="Image Widget"
+      alternativeText=""
       hasRoundedCorners={false}
       imageHeight={null}
       imageTitle="Image Title"

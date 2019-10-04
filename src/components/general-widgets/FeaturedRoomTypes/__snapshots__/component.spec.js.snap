@@ -81,7 +81,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
           >
             <div />
             <ResponsiveImage
-              alternativeText="Image Widget"
+              alternativeText=""
               hasRoundedCorners={false}
               imageHeight={null}
               imageTitle="Image Title"
@@ -234,7 +234,7 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
           >
             <div />
             <ResponsiveImage
-              alternativeText="Image Widget"
+              alternativeText=""
               hasRoundedCorners={false}
               imageHeight={null}
               imageTitle="Image Title"
@@ -718,7 +718,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
           >
             <div />
             <ResponsiveImage
-              alternativeText="Image Widget"
+              alternativeText=""
               hasRoundedCorners={false}
               imageHeight={null}
               imageTitle="Image Title"
@@ -871,7 +871,7 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
           >
             <div />
             <ResponsiveImage
-              alternativeText="Image Widget"
+              alternativeText=""
               hasRoundedCorners={false}
               imageHeight={null}
               imageTitle="Image Title"

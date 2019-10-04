@@ -124,7 +124,7 @@ exports[`HomepageHero should render the right structure 1`] = `
             >
               <div />
               <ResponsiveImage
-                alternativeText="Image Widget"
+                alternativeText=""
                 hasRoundedCorners={false}
                 imageHeight={null}
                 imageTitle="Image Title"

@@ -158,7 +158,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
+                                  alternativeText=""
                                   hasRoundedCorners={false}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -490,7 +490,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
+                                  alternativeText=""
                                   hasRoundedCorners={false}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -815,7 +815,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
+                                  alternativeText=""
                                   hasRoundedCorners={false}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -1144,7 +1144,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
+                                  alternativeText=""
                                   hasRoundedCorners={false}
                                   imageHeight={null}
                                   imageTitle="Image Title"

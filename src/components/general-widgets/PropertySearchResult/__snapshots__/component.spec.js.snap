@@ -18,6 +18,7 @@ exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should ren
       justifyContent={null}
     >
       <withLazyLoad(ResponsiveImage)
+        imageTitle=""
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
         isFluid={true}
         isLazyLoaded={true}
@@ -100,6 +101,7 @@ exports[`<PropertySearchResult /> if \`props.isCompact\` is passed should return
       justifyContent={null}
     >
       <withLazyLoad(ResponsiveImage)
+        imageTitle=""
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
         isFluid={true}
         isLazyLoaded={true}
@@ -226,6 +228,7 @@ exports[`<PropertySearchResult /> if \`ratingNumber\` is a truthy value should r
       justifyContent={null}
     >
       <withLazyLoad(ResponsiveImage)
+        imageTitle=""
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
         isFluid={true}
         isLazyLoaded={true}
@@ -303,6 +306,7 @@ exports[`<PropertySearchResult /> should render the right structure 1`] = `
       justifyContent={null}
     >
       <withLazyLoad(ResponsiveImage)
+        imageTitle=""
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
         isFluid={true}
         isLazyLoaded={true}

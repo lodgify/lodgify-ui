@@ -44,7 +44,7 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
       >
         <div />
         <ResponsiveImage
-          alternativeText="Image Widget"
+          alternativeText=""
           hasRoundedCorners={false}
           imageHeight={null}
           imageTitle="Image Title"
@@ -114,7 +114,7 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
       >
         <div />
         <ResponsiveImage
-          alternativeText="Image Widget"
+          alternativeText=""
           hasRoundedCorners={false}
           imageHeight={null}
           imageTitle="Image Title"
@@ -184,7 +184,7 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
       >
         <div />
         <ResponsiveImage
-          alternativeText="Image Widget"
+          alternativeText=""
           hasRoundedCorners={false}
           imageHeight={null}
           imageTitle="Image Title"
@@ -254,7 +254,7 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
       >
         <div />
         <ResponsiveImage
-          alternativeText="Image Widget"
+          alternativeText=""
           hasRoundedCorners={false}
           imageHeight={null}
           imageTitle="Image Title"
