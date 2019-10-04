@@ -1,3 +1,16 @@
+# [1.247.0](https://github.com/lodgify/lodgify-ui/compare/v1.246.3...v1.247.0) (2019-10-04)
+
+
+### Bug Fixes
+
+* **Components*:** remove alternativeText from ResponsiveImage ([492fde7](https://github.com/lodgify/lodgify-ui/commit/492fde7))
+* **ResponsiveImage:** set alternativeText to empty string ([7e44154](https://github.com/lodgify/lodgify-ui/commit/7e44154))
+
+
+### Features
+
+* **PropertyPageHero:** consume imageTitle ([d9f418e](https://github.com/lodgify/lodgify-ui/commit/d9f418e))
+
 ## [1.246.3](https://github.com/lodgify/lodgify-ui/compare/v1.246.2...v1.246.3) (2019-10-03)
 
 
