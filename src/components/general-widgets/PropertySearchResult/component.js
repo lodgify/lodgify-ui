@@ -50,6 +50,7 @@ export class Component extends PureComponent {
       imageAlternativeText,
       imageSizes,
       imageSrcSet,
+      imageTitle,
       imageUrl,
       isActive,
       isCompact,
@@ -83,6 +84,7 @@ export class Component extends PureComponent {
               <FlexContainer>
                 <ResponsiveImage
                   alternativeText={imageAlternativeText}
+                  imageTitle={imageTitle}
                   imageUrl={imageUrl}
                   isFluid
                   placeholderImageUrl={placeholderImageUrl}
@@ -158,6 +160,7 @@ Component.defaultProps = {
   imageAlternativeText: undefined,
   imageSizes: undefined,
   imageSrcSet: undefined,
+  imageTitle: '',
   isActive: false,
   isCompact: false,
   isShowingPlaceholder: false,
@@ -194,6 +197,8 @@ Component.propTypes = {
   imageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   imageSrcSet: PropTypes.string,
+  /** Title of the image to show when hovering it on desktop browsers */
+  imageTitle: PropTypes.string,
   /** URL pointing to the image to display. */
   imageUrl: PropTypes.string.isRequired,
   /** Is the property search result in an active state. */
