@@ -246,8 +246,6 @@ Component.propTypes = {
   /** The images to display for the slideshow */
   slideShowImages: PropTypes.arrayOf(
     PropTypes.shape({
-      /** Alternative text to show if the image can't be loaded by the browser. */
-      alternativeText: PropTypes.string,
       /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
       sizes: PropTypes.string,
       /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */

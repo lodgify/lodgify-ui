@@ -3,7 +3,6 @@ const url =
 
 export const images = [
   {
-    alternativeText: 'Two cats',
     url,
     sizes: '100w',
     srcSet: `${url}?w=400&h=400&mode=max 320w,
@@ -12,7 +11,6 @@ export const images = [
     title: 'Two cats',
   },
   {
-    alternativeText: 'Two more cats',
     url,
     sizes: '100w',
     srcSet: `${url}?w=400&h=400&mode=max 320w,
@@ -21,7 +19,6 @@ export const images = [
     title: 'Two more cats',
   },
   {
-    alternativeText: 'Much cats',
     url,
     sizes: '100w',
     srcSet: `${url}?w=400&h=400&mode=max 320w,
@@ -30,7 +27,6 @@ export const images = [
     title: 'Much cats',
   },
   {
-    alternativeText: 'No dogs',
     url,
     sizes: '100w',
     srcSet: `${url}?w=400&h=400&mode=max 320w,
@@ -81,7 +77,6 @@ export const adaptedImages = [
 
 export const adaptedImagesAndBlockPlaceholders = [
   {
-    alternativeText: 'Two cats',
     url,
     sizes: '100w',
     srcSet: `${url}?w=400&h=400&mode=max 320w,

@@ -195,7 +195,6 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
       images={
         Array [
           Object {
-            "alternativeText": "Two cats",
             "title": "Two cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -550,7 +549,6 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
       images={
         Array [
           Object {
-            "alternativeText": "Two cats",
             "title": "Two cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -990,7 +988,6 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
       images={
         Array [
           Object {
-            "alternativeText": "Two cats",
             "title": "Two cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
@@ -1573,12 +1570,10 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
       images={
         Array [
           Object {
-            "alternativeText": "Two cats",
             "title": "Two cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
           Object {
-            "alternativeText": "Two cats",
             "title": "Two cats",
             "url": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
           },
@@ -2168,7 +2163,6 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
       images={
         Array [
           Object {
-            "alternativeText": "Two cats",
             "title": "Two cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },

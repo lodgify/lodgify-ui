@@ -13,7 +13,6 @@ A fluid image fills its container.
 ```jsx
 <div style={{ height: 400 }}>
   <ResponsiveImage
-    alternativeText="Seamlessly fluid image loading amuses me"
     imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
     isFluid
   />
@@ -24,7 +23,6 @@ A fluid image fills its container.
 ```jsx
 <ResponsiveImage
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
-  alternativeText="Seamlessly non-fluid image loading amuses me"
   imageWidth={100}
   imageHeight={67}
 />

@@ -47,9 +47,9 @@ export class Component extends PureComponent {
       bedsText,
       guestsNumber,
       guestsText,
-      imageAlternativeText,
       imageSizes,
       imageSrcSet,
+      imageTitle,
       imageUrl,
       isActive,
       isCompact,
@@ -82,7 +82,7 @@ export class Component extends PureComponent {
             <Fragment>
               <FlexContainer>
                 <ResponsiveImage
-                  alternativeText={imageAlternativeText}
+                  imageTitle={imageTitle}
                   imageUrl={imageUrl}
                   isFluid
                   placeholderImageUrl={placeholderImageUrl}
@@ -155,9 +155,9 @@ Component.defaultProps = {
   bedroomsText: '',
   bedsNumber: null,
   bedsText: '',
-  imageAlternativeText: undefined,
   imageSizes: undefined,
   imageSrcSet: undefined,
+  imageTitle: '',
   isActive: false,
   isCompact: false,
   isShowingPlaceholder: false,
@@ -188,12 +188,12 @@ Component.propTypes = {
   guestsNumber: PropTypes.number.isRequired,
   /** The text to describe the amount of guests.*/
   guestsText: PropTypes.string.isRequired,
-  /** The alternative text for the image to display. */
-  imageAlternativeText: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   imageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   imageSrcSet: PropTypes.string,
+  /** Title of the image to show when hovering it on desktop browsers */
+  imageTitle: PropTypes.string,
   /** URL pointing to the image to display. */
   imageUrl: PropTypes.string.isRequired,
   /** Is the property search result in an active state. */

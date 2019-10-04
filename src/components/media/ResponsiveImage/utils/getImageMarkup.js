@@ -5,7 +5,6 @@ import { getIsFluid } from './getIsFluid';
 
 /**
  * @param  {Object}        imageProps
- * @param  {string}        imageProps.alternativeText
  * @param  {number|string} imageProps.imageHeight
  * @param  {string}        imageProps.imageTitle
  * @param  {string}        imageProps.imageUrl
@@ -17,7 +16,6 @@ import { getIsFluid } from './getIsFluid';
 export const getImageMarkup = (
   {
     /* eslint-disable react/prop-types */
-    alternativeText,
     imageHeight,
     imageTitle,
     imageUrl,
@@ -32,7 +30,7 @@ export const getImageMarkup = (
 ) =>
   (!!imageUrl || !!srcSet) && (
     <Image
-      alt={alternativeText}
+      alt={imageTitle}
       avatar={isAvatar}
       fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
       onLoad={handleImageLoad}

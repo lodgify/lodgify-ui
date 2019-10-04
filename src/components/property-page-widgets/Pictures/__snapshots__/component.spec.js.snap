@@ -174,7 +174,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -193,7 +192,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={false}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -266,7 +264,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -285,7 +282,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={true}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -394,7 +390,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -413,7 +408,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={false}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -486,7 +480,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -505,7 +498,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={true}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -614,7 +606,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -633,7 +624,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={false}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -706,7 +696,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -725,7 +714,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={true}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -834,7 +822,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -853,7 +840,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={false}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -926,7 +912,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -945,7 +930,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={true}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -1054,7 +1038,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": false,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -1073,7 +1056,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={false}
                                   imageHeight={null}
                                   imageTitle="Image Title"
@@ -1146,7 +1128,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               <LazyLoader
                                 componentProps={
                                   Object {
-                                    "alternativeText": undefined,
                                     "hasRoundedCorners": true,
                                     "isCircular": false,
                                     "isFluid": true,
@@ -1165,7 +1146,6 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                               >
                                 <div />
                                 <ResponsiveImage
-                                  alternativeText="Image Widget"
                                   hasRoundedCorners={true}
                                   imageHeight={null}
                                   imageTitle="Image Title"

@@ -4,9 +4,9 @@
  * @return {Object[]}
  */
 export const adaptImages = images =>
-  images.map(({ alternativeText, url, sizes, srcSet, title }) => ({
+  images.map(({ url, sizes, srcSet, title }) => ({
     original: url,
-    originalAlt: alternativeText,
+    originalAlt: title,
     originalTitle: title,
     sizes,
     srcSet,
