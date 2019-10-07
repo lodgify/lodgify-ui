@@ -1,3 +1,10 @@
+## [1.247.1](https://github.com/lodgify/lodgify-ui/compare/v1.247.0...v1.247.1) (2019-10-07)
+
+
+### Bug Fixes
+
+* **search-bar*:** add static width for guests and location inputs ([f9e0c9b](https://github.com/lodgify/lodgify-ui/commit/f9e0c9b))
+
 # [1.247.0](https://github.com/lodgify/lodgify-ui/compare/v1.246.3...v1.247.0) (2019-10-04)
 
 
