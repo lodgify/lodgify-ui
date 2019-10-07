@@ -16,6 +16,8 @@
 @searchBarInputSpacing: @10px;
 @searchBarStandardInputFlexBasis: 150px;
 @searchBarWideInputFlexBasis: 300px;
+@searchBarLocationInputWidth: 220px;
+@searchBarLocationGuestsWidth: 130px;
 
 @searchBarTabletScreenLocationInputOrder: -2;
 @searchBarTabletScreenGuestsInputOrder: -1;
