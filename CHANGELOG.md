@@ -1,3 +1,10 @@
+## [1.247.2](https://github.com/lodgify/lodgify-ui/compare/v1.247.1...v1.247.2) (2019-10-07)
+
+
+### Bug Fixes
+
+* **flex-container:** remove margin from h1 ([b1258f5](https://github.com/lodgify/lodgify-ui/commit/b1258f5))
+
 ## [1.247.1](https://github.com/lodgify/lodgify-ui/compare/v1.247.0...v1.247.1) (2019-10-07)
 
 
