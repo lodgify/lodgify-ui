@@ -17,17 +17,20 @@
     display: flex;
 
     .input-container {
-      flex-grow: 1;
       padding-right: @searchBarInputSpacing;
+
+      &.location-input-container {
+        max-width: @searchBarLocationInputWidth;
+        min-width: @searchBarLocationInputWidth;
+      }
+
+      &.guests-input-container {
+        width: @searchBarLocationGuestsWidth;
+      }
 
       > * {
         max-width: none !important;
       }
-    }
-
-    .location-input-container,
-    .guests-input-container {
-      flex-basis: @searchBarStandardInputFlexBasis;
     }
 
     .dates-input-container {
