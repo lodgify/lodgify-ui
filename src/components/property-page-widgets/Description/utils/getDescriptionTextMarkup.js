@@ -2,8 +2,7 @@ import React, { Fragment } from 'react';
 import { Button } from 'semantic-ui-react';
 
 import { Modal } from 'elements/Modal';
-
-import { getParagraphMarkup } from './getParagraphMarkup';
+import { getParagraphMarkup } from 'utils/get-paragraph-markup';
 
 /**
  * @param  {string} descriptionText
