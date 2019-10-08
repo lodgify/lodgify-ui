@@ -1,5 +1,6 @@
 import React from 'react';
 import { Modal, List } from 'semantic-ui-react';
+import isValidHTML from 'is-html';
 
 import { size } from 'utils/size';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
@@ -11,6 +12,8 @@ import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Rating } from 'elements/Rating';
 import { Slideshow } from 'media/Slideshow';
+import { HTML } from 'general-widgets/HTML';
+import { getParagraphMarkup } from 'utils/get-paragraph-markup';
 
 /**
  * @param  {Object[]}    amenities
@@ -52,7 +55,15 @@ export const getModalContentMarkup = (
       isShowingBulletNavigation={size(slideShowImages) > 1}
     />
     {!!description ? (
-      <Paragraph>{description}</Paragraph>
+      <Grid>
+        <GridColumn>
+          {isValidHTML(description) ? (
+            <HTML htmlString={description} />
+          ) : (
+            getParagraphMarkup(description)
+          )}
+        </GridColumn>
+      </Grid>
     ) : (
       <Divider size="small" />
     )}
