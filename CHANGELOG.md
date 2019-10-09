@@ -1,3 +1,10 @@
+## [1.247.5](https://github.com/lodgify/lodgify-ui/compare/v1.247.4...v1.247.5) (2019-10-09)
+
+
+### Bug Fixes
+
+* **SearchBar:** guests is full width when no locations ([3452ed3](https://github.com/lodgify/lodgify-ui/commit/3452ed3))
+
 ## [1.247.4](https://github.com/lodgify/lodgify-ui/compare/v1.247.3...v1.247.4) (2019-10-09)
 
 
