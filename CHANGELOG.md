@@ -1,3 +1,10 @@
+## [1.247.4](https://github.com/lodgify/lodgify-ui/compare/v1.247.3...v1.247.4) (2019-10-09)
+
+
+### Bug Fixes
+
+* **SearchBar:** isStackable input widths fill the container ([d66bed1](https://github.com/lodgify/lodgify-ui/commit/d66bed1))
+
 ## [1.247.3](https://github.com/lodgify/lodgify-ui/compare/v1.247.2...v1.247.3) (2019-10-09)
 
 
