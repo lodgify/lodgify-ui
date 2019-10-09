@@ -1,3 +1,10 @@
+## [1.247.3](https://github.com/lodgify/lodgify-ui/compare/v1.247.2...v1.247.3) (2019-10-09)
+
+
+### Bug Fixes
+
+* **getModalContentMarkup:** format paragraphs and HTML ([4e4f245](https://github.com/lodgify/lodgify-ui/commit/4e4f245))
+
 ## [1.247.2](https://github.com/lodgify/lodgify-ui/compare/v1.247.1...v1.247.2) (2019-10-07)
 
 
