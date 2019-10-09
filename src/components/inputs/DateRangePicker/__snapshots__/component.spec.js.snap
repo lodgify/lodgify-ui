@@ -131,6 +131,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
               onFocusChange={[Function]}
               openDirection="down"
               placeholder={null}
+              showClearDates={true}
               startDate={null}
               startDateId="start_date_id_"
               startDatePlaceholderText=""
@@ -277,6 +278,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
               onFocusChange={[Function]}
               openDirection="down"
               placeholder={null}
+              showClearDates={true}
               startDate={null}
               startDateId="start_date_id_"
               startDatePlaceholderText=""

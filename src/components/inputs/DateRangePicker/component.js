@@ -144,6 +144,7 @@ class Component extends PureComponent {
             navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
             numberOfMonths={getNumberOfMonths(windowInnerWidth)}
             withPortal={isDisplayedAsModal(this.state.windowHeight)}
+            showClearDates
             /* eslint-enable react/jsx-sort-props */
           />
         </InputController>
