@@ -10,10 +10,15 @@ jest.mock('react-image-gallery', () => {
   return ImageGallery;
 });
 
+jest.mock('is-html');
+
+import isValidHTML from 'is-html';
 import React from 'react';
 import { mount } from 'enzyme';
 
 import { getModalContentMarkup } from './getModalContentMarkup';
+
+isValidHTML.mockReturnValue(true);
 
 const amenities = [
   {

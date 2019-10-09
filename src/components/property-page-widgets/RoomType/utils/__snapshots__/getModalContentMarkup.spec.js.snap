@@ -230,17 +230,46 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
         <div />
       </ImageGallery>
     </Slideshow>
-    <Paragraph
-      isCompact={false}
-      size="medium"
-      weight={null}
+    <Grid
+      areColumnsCentered={false}
+      isStackable={false}
     >
-      <p
-        className=""
+      <Grid
+        centered={false}
+        stackable={false}
       >
-        yoyo description
-      </p>
-    </Paragraph>
+        <div
+          className="ui grid"
+        >
+          <GridColumn
+            verticalAlignContent="top"
+            width={null}
+          >
+            <GridColumn
+              verticalAlign="top"
+              width={null}
+            >
+              <div
+                className="top aligned column"
+              >
+                <HTML
+                  htmlString="yoyo description"
+                >
+                  <div
+                    className="html-container"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "yoyo description",
+                      }
+                    }
+                  />
+                </HTML>
+              </div>
+            </GridColumn>
+          </GridColumn>
+        </div>
+      </Grid>
+    </Grid>
     <List
       horizontal={true}
     >
@@ -1023,17 +1052,46 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
         <div />
       </ImageGallery>
     </Slideshow>
-    <Paragraph
-      isCompact={false}
-      size="medium"
-      weight={null}
+    <Grid
+      areColumnsCentered={false}
+      isStackable={false}
     >
-      <p
-        className=""
+      <Grid
+        centered={false}
+        stackable={false}
       >
-        yoyo description
-      </p>
-    </Paragraph>
+        <div
+          className="ui grid"
+        >
+          <GridColumn
+            verticalAlignContent="top"
+            width={null}
+          >
+            <GridColumn
+              verticalAlign="top"
+              width={null}
+            >
+              <div
+                className="top aligned column"
+              >
+                <HTML
+                  htmlString="yoyo description"
+                >
+                  <div
+                    className="html-container"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "yoyo description",
+                      }
+                    }
+                  />
+                </HTML>
+              </div>
+            </GridColumn>
+          </GridColumn>
+        </div>
+      </Grid>
+    </Grid>
     <List
       horizontal={true}
     >
@@ -1616,17 +1674,46 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
         <div />
       </ImageGallery>
     </Slideshow>
-    <Paragraph
-      isCompact={false}
-      size="medium"
-      weight={null}
+    <Grid
+      areColumnsCentered={false}
+      isStackable={false}
     >
-      <p
-        className=""
+      <Grid
+        centered={false}
+        stackable={false}
       >
-        yoyo description
-      </p>
-    </Paragraph>
+        <div
+          className="ui grid"
+        >
+          <GridColumn
+            verticalAlignContent="top"
+            width={null}
+          >
+            <GridColumn
+              verticalAlign="top"
+              width={null}
+            >
+              <div
+                className="top aligned column"
+              >
+                <HTML
+                  htmlString="yoyo description"
+                >
+                  <div
+                    className="html-container"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "yoyo description",
+                      }
+                    }
+                  />
+                </HTML>
+              </div>
+            </GridColumn>
+          </GridColumn>
+        </div>
+      </Grid>
+    </Grid>
     <List
       horizontal={true}
     >
@@ -2198,17 +2285,46 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
         <div />
       </ImageGallery>
     </Slideshow>
-    <Paragraph
-      isCompact={false}
-      size="medium"
-      weight={null}
+    <Grid
+      areColumnsCentered={false}
+      isStackable={false}
     >
-      <p
-        className=""
+      <Grid
+        centered={false}
+        stackable={false}
       >
-        yoyo description
-      </p>
-    </Paragraph>
+        <div
+          className="ui grid"
+        >
+          <GridColumn
+            verticalAlignContent="top"
+            width={null}
+          >
+            <GridColumn
+              verticalAlign="top"
+              width={null}
+            >
+              <div
+                className="top aligned column"
+              >
+                <HTML
+                  htmlString="yoyo description"
+                >
+                  <div
+                    className="html-container"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "yoyo description",
+                      }
+                    }
+                  />
+                </HTML>
+              </div>
+            </GridColumn>
+          </GridColumn>
+        </div>
+      </Grid>
+    </Grid>
     <List
       horizontal={true}
     >
