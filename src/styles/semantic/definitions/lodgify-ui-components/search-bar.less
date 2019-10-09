@@ -53,6 +53,9 @@
         flex-wrap: wrap;
 
         .input-container {
+          width: 100%;
+          min-width: auto;
+          max-width: none;
           padding-bottom: @searchBarInputSpacing;
           padding-right: 0;
         }
@@ -73,11 +76,15 @@
       @media @searchBarTabletScreen {
 
         .location-input-container {
+          width: 50%;
+          max-width: 50%;
+          min-width: 50%;
           order: @searchBarTabletScreenLocationInputOrder;
           padding-right: @searchBarInputSpacing;
         }
 
         .guests-input-container {
+          width: 50%;
           order: @searchBarTabletScreenGuestsInputOrder;
         }
       }
