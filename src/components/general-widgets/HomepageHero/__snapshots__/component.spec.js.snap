@@ -892,6 +892,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     endDatePlaceholderText="Check out"
                                                     error={false}
                                                     getIsDayBlocked={[Function]}
+                                                    isLoading={false}
                                                     isUserOnMobile={false}
                                                     isValid={false}
                                                     localeCode="en"

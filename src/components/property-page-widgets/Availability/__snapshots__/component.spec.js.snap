@@ -106,6 +106,8 @@ exports[`<Availability /> the wrapped component by default should render the rig
               Object {
                 "chooseAvailableDate": [Function],
                 "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
                 "dateIsUnavailable": [Function],
               }
             }
@@ -146,6 +148,8 @@ exports[`<Availability /> the wrapped component by default should render the rig
               Object {
                 "chooseAvailableDate": [Function],
                 "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
                 "dateIsUnavailable": [Function],
               }
             }
@@ -186,6 +190,8 @@ exports[`<Availability /> the wrapped component by default should render the rig
               Object {
                 "chooseAvailableDate": [Function],
                 "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
                 "dateIsUnavailable": [Function],
               }
             }
@@ -226,6 +232,8 @@ exports[`<Availability /> the wrapped component by default should render the rig
               Object {
                 "chooseAvailableDate": [Function],
                 "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
                 "dateIsUnavailable": [Function],
               }
             }
@@ -473,6 +481,8 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
               Object {
                 "chooseAvailableDate": [Function],
                 "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
                 "dateIsUnavailable": [Function],
               }
             }
@@ -513,6 +523,8 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
               Object {
                 "chooseAvailableDate": [Function],
                 "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
                 "dateIsUnavailable": [Function],
               }
             }
@@ -553,6 +565,8 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
               Object {
                 "chooseAvailableDate": [Function],
                 "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
                 "dateIsUnavailable": [Function],
               }
             }
@@ -593,6 +607,8 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
               Object {
                 "chooseAvailableDate": [Function],
                 "dateIsSelected": [Function],
+                "dateIsSelectedAsEndDate": [Function],
+                "dateIsSelectedAsStartDate": [Function],
                 "dateIsUnavailable": [Function],
               }
             }

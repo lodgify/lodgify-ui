@@ -11,6 +11,7 @@ import { getUpOrDownFromBoolean } from 'utils/get-up-or-down-from-boolean';
 import { withResponsive } from 'utils/with-responsive';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { InputController } from 'inputs/InputController';
+import { TextPlaceholder } from 'elements/TextPlaceholder';
 import { isBlurEvent } from 'utils/is-blur-event';
 import { returnFirstArgument } from 'utils/return-first-argument';
 import { getWindowHeight } from 'utils/get-window-height';
@@ -93,6 +94,7 @@ class Component extends PureComponent {
       getIsDayBlocked,
       initialValue,
       isValid,
+      isLoading,
       name,
       onChange,
       startDatePlaceholderText,
@@ -107,46 +109,50 @@ class Component extends PureComponent {
 
     return (
       <Fragment>
-        <InputController
-          adaptOnChangeEvent={returnFirstArgument}
-          error={error}
-          initialValue={initialValue}
-          inputOnChangeFunctionName="onDatesChange"
-          isFocused={!!focusedInput}
-          isValid={isValid}
-          mapValueToProps={mapValueToProps}
-          name={name}
-          onChange={onChange}
-          value={value}
-        >
-          <DateRangePicker
-            /* eslint-disable react/jsx-sort-props */
-            // Consumer defined props.
-            displayFormat={displayFormat}
-            endDatePlaceholderText={endDatePlaceholderText}
-            isDayBlocked={getIsDayBlocked}
-            openDirection={getUpOrDownFromBoolean(willOpenAbove)}
-            startDatePlaceholderText={startDatePlaceholderText}
-            // Controlled props
-            focusedInput={focusedInput}
-            // NOTE onDatesChange is required by DateRangePicker but is set in `InputController`
-            onDatesChange={Function.prototype}
-            onFocusChange={this.handleFocusChange}
-            // Static required props.
-            endDateId={endDateId}
-            startDateId={startDateId}
-            // Static custom appearance props.
-            customArrowIcon={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
-            customInputIcon={<Icon name={ICON_NAMES.CALENDAR} />}
-            daySize={52}
-            hideKeyboardShortcutsPanel
-            navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
-            navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
-            numberOfMonths={getNumberOfMonths(windowInnerWidth)}
-            withPortal={isDisplayedAsModal(this.state.windowHeight)}
-            /* eslint-enable react/jsx-sort-props */
-          />
-        </InputController>
+        {isLoading ? (
+          <TextPlaceholder />
+        ) : (
+          <InputController
+            adaptOnChangeEvent={returnFirstArgument}
+            error={error}
+            initialValue={initialValue}
+            inputOnChangeFunctionName="onDatesChange"
+            isFocused={!!focusedInput}
+            isValid={isValid}
+            mapValueToProps={mapValueToProps}
+            name={name}
+            onChange={onChange}
+            value={value}
+          >
+            <DateRangePicker
+              /* eslint-disable react/jsx-sort-props */
+              // Consumer defined props.
+              displayFormat={displayFormat}
+              endDatePlaceholderText={endDatePlaceholderText}
+              isDayBlocked={getIsDayBlocked}
+              openDirection={getUpOrDownFromBoolean(willOpenAbove)}
+              startDatePlaceholderText={startDatePlaceholderText}
+              // Controlled props
+              focusedInput={focusedInput}
+              // NOTE onDatesChange is required by DateRangePicker but is set in `InputController`
+              onDatesChange={Function.prototype}
+              onFocusChange={this.handleFocusChange}
+              // Static required props.
+              endDateId={endDateId}
+              startDateId={startDateId}
+              // Static custom appearance props.
+              customArrowIcon={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
+              customInputIcon={<Icon name={ICON_NAMES.CALENDAR} />}
+              daySize={52}
+              hideKeyboardShortcutsPanel
+              navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
+              navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
+              numberOfMonths={getNumberOfMonths(windowInnerWidth)}
+              withPortal={isDisplayedAsModal(this.state.windowHeight)}
+              /* eslint-enable react/jsx-sort-props */
+            />
+          </InputController>
+        )}
         <div ref={this.createRef} />
       </Fragment>
     );
@@ -162,6 +168,7 @@ Component.defaultProps = {
   focusedInput: undefined,
   getIsDayBlocked: Function.prototype,
   initialValue: undefined,
+  isLoading: false,
   isValid: false,
   localeCode: 'en',
   name: '',
@@ -194,6 +201,8 @@ Component.propTypes = {
     endDate: PropTypes.object,
     startDate: PropTypes.object,
   }),
+  /** Is waiting for dynamic parameters: it will shows the placeholder */
+  isLoading: PropTypes.bool,
   /** Is the date range picker in a valid state. */
   isValid: PropTypes.bool,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year. */

@@ -14,6 +14,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
       endDatePlaceholderText=""
       error={false}
       getIsDayBlocked={[Function]}
+      isLoading={false}
       isUserOnMobile={false}
       isValid={false}
       localeCode="en"
@@ -160,6 +161,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
       endDatePlaceholderText=""
       error={false}
       getIsDayBlocked={[Function]}
+      isLoading={false}
       isUserOnMobile={false}
       isValid={false}
       localeCode="en"
@@ -286,6 +288,49 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
           </div>
         </Input>
       </InputController>
+      <div />
+    </DateRangePicker>
+  </Responsive>
+</WithResponsive(DateRangePicker)>
+`;
+
+exports[`<DateRangePicker /> \`render\` if \`isLoading\` set \`true\` should render the textPlaceholder 1`] = `
+<WithResponsive(DateRangePicker)
+  isLoading={true}
+>
+  <Responsive
+    as={[Function]}
+    getWidth={[Function]}
+    isLoading={true}
+    isUserOnMobile={false}
+    onUpdate={[Function]}
+    windowInnerWidth={1024}
+  >
+    <DateRangePicker
+      displayFormat="DD/MM/YYYY"
+      endDatePlaceholderText=""
+      error={false}
+      getIsDayBlocked={[Function]}
+      isLoading={true}
+      isUserOnMobile={false}
+      isValid={false}
+      localeCode="en"
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocusChange={[Function]}
+      startDatePlaceholderText=""
+      willOpenAbove={false}
+      windowInnerWidth={1024}
+    >
+      <TextPlaceholder
+        isFluid={true}
+        length="full"
+      >
+        <div
+          className="placeholder text full fluid"
+        />
+      </TextPlaceholder>
       <div />
     </DateRangePicker>
   </Responsive>

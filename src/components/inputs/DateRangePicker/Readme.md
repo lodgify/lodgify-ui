@@ -54,8 +54,15 @@
 
 ```jsx
 <DateRangePicker
-  getIsDayBlocked={
-    moment => moment.format('dddd') === 'Friday'
-  }
+  getIsDayBlocked={moment => moment.format('dddd') === 'Friday'}
+/>
+```
+
+#### Loading
+
+```jsx
+<DateRangePicker
+  isLoading
+  getIsDayBlocked={moment => moment.format('dddd') === 'Friday'}
 />
 ```

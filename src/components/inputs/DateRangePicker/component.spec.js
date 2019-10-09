@@ -392,6 +392,14 @@ describe('<DateRangePicker />', () => {
         expect(wrapper).toMatchSnapshot();
       });
     });
+
+    describe('if `isLoading` set `true`', () => {
+      it('should render the textPlaceholder', () => {
+        const wrapper = getDateRangePicker({ isLoading: true });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
   });
 
   it('should have displayName `DateRangePicker`', () => {
