@@ -4,7 +4,7 @@ import getClassNames from 'classnames';
 
 import { Paragraph } from 'typography/Paragraph';
 
-import { ICON_NAMES_LIST } from './constants';
+import { ICON_NAMES_LIST, ICON_NAMES } from './constants';
 import { getPath } from './utils/getPath';
 import { getButtonProps } from './utils/getButtonProps';
 
@@ -36,6 +36,7 @@ export const Component = ({
       'has-label': !!labelText,
       inverted: isColorInverted,
       'is-button': isButton,
+      spinner: name === ICON_NAMES.SPINNER,
     })}
     {...getButtonProps(isButton)}
     // Passing through props is required for

@@ -58,6 +58,8 @@ Library icons
 <Divider />
 <Icon labelText="search" name="search" />
 <Divider />
+<Icon labelText="spinner" name="spinner" />
+<Divider />
 <Icon labelText="square" name="square" />
 <Divider />
 <Icon labelText="star" name="star" />
