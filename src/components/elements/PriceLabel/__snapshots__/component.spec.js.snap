@@ -1,5 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`the \`PriceLabel\` component if \`hasShadow\` is true should have the right class 1`] = `
+<div
+  className="ui label price-label is-clickable"
+  onClick={[Function]}
+  onMouseOut={[Function]}
+  onMouseOver={[Function]}
+>
+  <Label>
+    <Grid
+      areColumnsCentered={false}
+      className=""
+      isStackable={false}
+    >
+      <GridColumn>
+        <GridRow>
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            €999
+          </Heading>
+        </GridRow>
+        <GridRow />
+      </GridColumn>
+    </Grid>
+  </Label>
+</div>
+`;
+
 exports[`the \`PriceLabel\` component if there is \`periodText\` if \`isPointing\` is true should return the right structure 1`] = `
 <div
   className="ui label price-label is-clickable is-pointing has-period-text"
@@ -8,33 +40,44 @@ exports[`the \`PriceLabel\` component if there is \`periodText\` if \`isPointing
   onMouseOver={[Function]}
 >
   <Label>
-    <FlexContainer
-      alignContent={null}
-      alignItems="center"
-      flexDirection="row"
-      flexWrap={null}
-      justifyContent={null}
+    <Grid
+      areColumnsCentered={false}
+      className="has-period-text is-pointing"
+      isStackable={false}
     >
-      <Paragraph
-        isCompact={false}
-        size="medium"
-        weight={null}
-      />
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="medium"
-        textAlign={null}
-      >
-        €999
-      </Heading>
-    </FlexContainer>
-    <Label>
-      (ಠ益ಠ)
-    </Label>
+      <GridColumn>
+        <FlexContainer
+          alignContent={null}
+          alignItems="center"
+          flexDirection="row"
+          flexWrap={null}
+          justifyContent="center"
+        >
+          <Paragraph
+            isCompact={false}
+            size="medium"
+            weight={null}
+          />
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            €999
+          </Heading>
+        </FlexContainer>
+        <Label>
+          (ಠ益ಠ)
+        </Label>
+      </GridColumn>
+    </Grid>
     <div
-      className="pointer-arrow"
+      className="pointer-arrow is-pointing"
+    />
+    <div
+      className="label-shadow is-pointing"
     />
   </Label>
 </div>
@@ -48,31 +91,39 @@ exports[`the \`PriceLabel\` component if there is \`periodText\` should return t
   onMouseOver={[Function]}
 >
   <Label>
-    <FlexContainer
-      alignContent={null}
-      alignItems="center"
-      flexDirection="row"
-      flexWrap={null}
-      justifyContent={null}
+    <Grid
+      areColumnsCentered={false}
+      className="has-period-text"
+      isStackable={false}
     >
-      <Paragraph
-        isCompact={false}
-        size="medium"
-        weight={null}
-      />
-      <Heading
-        className={null}
-        hasMargin={true}
-        isColorInverted={false}
-        size="medium"
-        textAlign={null}
-      >
-        €999
-      </Heading>
-    </FlexContainer>
-    <Label>
-      (ಠ益ಠ)
-    </Label>
+      <GridColumn>
+        <FlexContainer
+          alignContent={null}
+          alignItems="center"
+          flexDirection="row"
+          flexWrap={null}
+          justifyContent="center"
+        >
+          <Paragraph
+            isCompact={false}
+            size="medium"
+            weight={null}
+          />
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            €999
+          </Heading>
+        </FlexContainer>
+        <Label>
+          (ಠ益ಠ)
+        </Label>
+      </GridColumn>
+    </Grid>
   </Label>
 </div>
 `;
@@ -85,18 +136,30 @@ exports[`the \`PriceLabel\` component if there is no \`periodText\` if \`isPoint
   onMouseOver={[Function]}
 >
   <Label>
-    <Heading
-      className={null}
-      hasMargin={true}
-      isColorInverted={false}
-      size="medium"
-      textAlign={null}
+    <Grid
+      areColumnsCentered={false}
+      className="is-pointing"
+      isStackable={false}
     >
-      €999
-    </Heading>
-    <div
-      className="pointer-arrow"
-    />
+      <GridColumn>
+        <GridRow>
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            €999
+          </Heading>
+        </GridRow>
+        <GridRow>
+          <div
+            className="pointer-arrow is-pointing"
+          />
+        </GridRow>
+      </GridColumn>
+    </Grid>
   </Label>
 </div>
 `;
@@ -109,15 +172,26 @@ exports[`the \`PriceLabel\` component if there is no \`periodText\` should retur
   onMouseOver={[Function]}
 >
   <Label>
-    <Heading
-      className={null}
-      hasMargin={true}
-      isColorInverted={false}
-      size="medium"
-      textAlign={null}
+    <Grid
+      areColumnsCentered={false}
+      className=""
+      isStackable={false}
     >
-      €999
-    </Heading>
+      <GridColumn>
+        <GridRow>
+          <Heading
+            className={null}
+            hasMargin={true}
+            isColorInverted={false}
+            size="medium"
+            textAlign={null}
+          >
+            €999
+          </Heading>
+        </GridRow>
+        <GridRow />
+      </GridColumn>
+    </Grid>
   </Label>
 </div>
 `;

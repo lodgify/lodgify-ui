@@ -20,7 +20,7 @@
 ```jsx
 <div style={{
   backgroundColor: '#888',
-  height: '75px',
+  height: '100px',
   padding: '10px',
   boxSizing: 'content-box',
   paddingBottom: 0,
