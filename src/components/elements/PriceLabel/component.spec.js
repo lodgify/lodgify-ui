@@ -58,7 +58,7 @@ describe('the `PriceLabel` component', () => {
     it('should have the right class', () => {
       const actual = getLabel({ hasShadow: true });
 
-      expect(actual.hasClass('has-shadow')).toBe(true);
+      expect(actual).toMatchSnapshot();
     });
   });
 

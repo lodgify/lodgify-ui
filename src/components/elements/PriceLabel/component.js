@@ -1,8 +1,9 @@
 import React, { Fragment, PureComponent } from 'react';
-import { Label } from 'semantic-ui-react';
+import { Label, GridColumn, GridRow } from 'semantic-ui-react';
 import getClassNames from 'classnames';
 import PropTypes from 'prop-types';
 
+import { Grid } from 'layout/Grid';
 import { Heading } from 'typography/Heading';
 import { FlexContainer } from 'layout/FlexContainer';
 import { Paragraph } from 'typography/Paragraph';
@@ -53,7 +54,6 @@ export class Component extends PureComponent {
           'is-clickable': onClick !== Function.prototype,
           'is-pointing': isPointing,
           'has-period-text': periodText,
-          'has-shadow': hasShadow,
         })}
         onClick={this.handleClick}
         onMouseOut={this.toggleActive}
@@ -61,18 +61,65 @@ export class Component extends PureComponent {
       >
         <Label>
           {!!pricePerPeriod && !periodText ? (
-            <Fragment>
-              <Heading size="medium">{pricePerPeriod}</Heading>
-              {isPointing && <div className="pointer-arrow" />}
-            </Fragment>
+            <Grid
+              className={getClassNames({
+                active: isActive || this.state.isActive,
+                'is-pointing': isPointing,
+              })}
+            >
+              <GridColumn>
+                <GridRow>
+                  <Heading size="medium">{pricePerPeriod}</Heading>
+                </GridRow>
+                <GridRow>
+                  {isPointing && (
+                    <div
+                      className={getClassNames('pointer-arrow', 'is-pointing', {
+                        active: isActive || this.state.isActive,
+                        'has-shadow': hasShadow,
+                      })}
+                    />
+                  )}
+                </GridRow>
+              </GridColumn>
+            </Grid>
           ) : (
             <Fragment>
-              <FlexContainer alignItems="center" flexDirection="row">
-                <Paragraph>{pricePerPeriodPrefix}</Paragraph>
-                <Heading size="medium">{pricePerPeriod}</Heading>
-              </FlexContainer>
-              <Label>{periodText}</Label>
-              {isPointing && <div className="pointer-arrow" />}
+              <Grid
+                className={getClassNames({
+                  active: isActive || this.state.isActive,
+                  'has-period-text': periodText,
+                  'is-pointing': isPointing,
+                })}
+              >
+                <GridColumn>
+                  <FlexContainer
+                    alignItems="center"
+                    flexDirection="row"
+                    justifyContent="center"
+                  >
+                    <Paragraph>{pricePerPeriodPrefix}</Paragraph>
+                    <Heading size="medium">{pricePerPeriod}</Heading>
+                  </FlexContainer>
+                  <Label>{periodText}</Label>
+                </GridColumn>
+              </Grid>
+              {isPointing && (
+                <div
+                  className={getClassNames('pointer-arrow', 'is-pointing', {
+                    active: isActive || this.state.isActive,
+                    'has-shadow': hasShadow,
+                  })}
+                />
+              )}
+              {isPointing && (
+                <div
+                  className={getClassNames('label-shadow', 'is-pointing', {
+                    active: isActive || this.state.isActive,
+                    'has-shadow': hasShadow,
+                  })}
+                />
+              )}
             </Fragment>
           )}
         </Label>
