@@ -143,6 +143,7 @@ Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
   guestsInputLabel: GUESTS,
   guestsInputValue: undefined,
+  isDateRangePickerLoading: undefined,
   isDisplayedAsModal: false,
   isFixed: false,
   isModalOpen: undefined,
@@ -206,6 +207,9 @@ Component.propTypes = {
   guestsInputLabel: PropTypes.string,
   /** The value for the guests input. Used when consuming `SearchBar` as a controlled component. */
   guestsInputValue: PropTypes.number,
+  /** Is the date range picker in loading state. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  isDateRangePickerLoading: PropTypes.bool,
   /** Is the Search Bar displayed in a modal*/
   isDisplayedAsModal: PropTypes.bool,
   /** Is the Search Bar fixed to the bottom of the window */

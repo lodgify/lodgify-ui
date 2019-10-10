@@ -484,6 +484,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                       "getIsDayBlocked": [Function],
                                       "guestsInputLabel": undefined,
                                       "guestsInputValue": undefined,
+                                      "isDateRangePickerLoading": undefined,
                                       "locationInputLabel": undefined,
                                       "locationInputValue": undefined,
                                       "locationOptions": Array [
@@ -892,6 +893,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     endDatePlaceholderText="Check out"
                                                     error={false}
                                                     getIsDayBlocked={[Function]}
+                                                    isClearable={false}
                                                     isLoading={false}
                                                     isUserOnMobile={false}
                                                     isValid={false}
@@ -1010,7 +1012,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             onFocusChange={[Function]}
                                                             openDirection="up"
                                                             placeholder={null}
-                                                            showClearDates={true}
+                                                            showClearDates={false}
                                                             startDate={null}
                                                             startDatePlaceholderText="Check in"
                                                             withPortal={false}

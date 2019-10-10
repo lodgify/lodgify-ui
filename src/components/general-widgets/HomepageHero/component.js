@@ -31,6 +31,7 @@ export const Component = ({
   headerPrimaryCTA,
   headerLogoSubText,
   headingText,
+  isSearchBarDateRangePickerLoading,
   placeholderBackgroundImageUrl,
   searchBarDateRangePickerLocaleCode,
   searchBarDatesCheckOutLabel,
@@ -65,6 +66,7 @@ export const Component = ({
     onChangeInput: searchBarOnChangeInput,
     onSubmit: searchBarOnSubmit,
     searchButton: searchBarSearchButton,
+    isDateRangePickerLoading: isSearchBarDateRangePickerLoading,
   };
 
   return (
@@ -161,6 +163,7 @@ Component.defaultProps = {
   headerPrimaryCTA: null,
   headerLogoSubText: undefined,
   headingText: null,
+  isSearchBarDateRangePickerLoading: undefined,
   searchBarLocationInputValue: undefined,
   placeholderBackgroundImageUrl: null,
   searchBarDateRangePickerLocaleCode: undefined,
@@ -237,6 +240,8 @@ Component.propTypes = {
   }),
   /** The text for the heading displayed in the middle of the hero. */
   headingText: PropTypes.string,
+  /** Is the search bar date range picker in a state of loading. */
+  isSearchBarDateRangePickerLoading: PropTypes.bool,
   /** The background placeholder image url of the hero. */
   placeholderBackgroundImageUrl: PropTypes.string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the search bars date range picker. */

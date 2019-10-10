@@ -32,6 +32,7 @@ export const getFormFieldMarkup = (
     getIsDayBlocked,
     guestsInputLabel,
     guestsInputValue,
+    isDateRangePickerLoading,
     locationInputLabel,
     locationInputValue,
     locationOptions,
@@ -60,6 +61,7 @@ export const getFormFieldMarkup = (
         endDatePlaceholderText={datesCheckOutLabel}
         focusedInput={datesInputFocusedInput}
         getIsDayBlocked={getIsDayBlocked}
+        isLoading={isDateRangePickerLoading}
         localeCode={dateRangePickerLocaleCode}
         name="dates"
         onChange={persistInputChange}

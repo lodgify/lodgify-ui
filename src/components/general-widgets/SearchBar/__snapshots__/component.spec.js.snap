@@ -623,6 +623,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isClearable={false}
                   isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
@@ -741,7 +742,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
-                          showClearDates={true}
+                          showClearDates={false}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -1639,6 +1640,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             endDatePlaceholderText="Check out"
                             error={false}
                             getIsDayBlocked={[Function]}
+                            isClearable={false}
                             isLoading={false}
                             isUserOnMobile={false}
                             isValid={false}
@@ -1757,7 +1759,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     onFocusChange={[Function]}
                                     openDirection="up"
                                     placeholder={null}
-                                    showClearDates={true}
+                                    showClearDates={false}
                                     startDate={null}
                                     startDatePlaceholderText="Check in"
                                     withPortal={true}
@@ -2902,6 +2904,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isClearable={false}
                   isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
@@ -3020,7 +3023,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
-                          showClearDates={true}
+                          showClearDates={false}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -3900,6 +3903,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isClearable={false}
                   isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
@@ -4018,7 +4022,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
-                          showClearDates={true}
+                          showClearDates={false}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -4363,6 +4367,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isClearable={false}
                   isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
@@ -4481,7 +4486,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
-                          showClearDates={true}
+                          showClearDates={false}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -5343,6 +5348,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isClearable={false}
                   isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
@@ -5461,7 +5467,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
-                          showClearDates={true}
+                          showClearDates={false}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
