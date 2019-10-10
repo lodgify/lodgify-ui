@@ -282,6 +282,7 @@
   .image-gallery {
 
     .image-gallery-content {
+      height: initial;
 
       .image-gallery-image {
         position: relative;
