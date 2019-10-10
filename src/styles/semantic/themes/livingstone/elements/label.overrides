@@ -79,11 +79,9 @@
   /* Price Label */
 
   &.price-label {
-    background-color: @themeActionColorDefault;
-    background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+    background-color: transparent;
     border-radius: @priceLabelBorderRadius;
-    padding: @priceLabelPadding;
-    padding-top: @priceLabelPaddingTop;
+    padding: 0;
     display: inline-flex;
     flex-direction: column;
     align-items: center;
@@ -92,103 +90,74 @@
     word-break: break-word;
     transition: @priceLabelTransitionOnHover;
 
-    &.is-clickable {
-      cursor: pointer;
+    &.is-pointing.active {
+      transform: translateY(@pointerHoverTranslationY);
+      transition: @priceLabelTransitionOnHover;
     }
 
-    &.has-shadow {
+    &:not(.is-pointing) {
 
-      &.is-pointing {
-        box-shadow: @pointerLabelBoxShadow;
+      .ui.label .ui.grid {
 
-        .pointer-arrow:after {
-          box-shadow: @pointerArrowBoxShadow;
+        .column {
+          padding: @priceLabelGridColumnContainerPadding;
+          padding-top: @priceLabelPaddingTop;
         }
       }
     }
 
-    &:not(.is-pointing),
-    &.is-pointing.active,
-    &.is-pointing:hover {
+    .ui.label .ui.grid.is-pointing {
+      background: @white;
 
-      .ui.label {
-        color: @themeActionContrastColorDefault;
-        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+      .column .row:first-child {
+        background-color: @white;
 
-        .ui.label,
-        p,
-        h3 {
-          color: @themeActionContrastColorDefault;
-          color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+        .active& {
+          background-color: @themeActionColorDefault !important;
+          background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
         }
       }
     }
 
-    &.is-pointing {
-      background-color: @white !important;
+    .ui.label .ui.grid .column .row:first-child {
+      background-color: @themeActionColorDefault;
+      background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+    }
 
-      .pointer-arrow {
-        width: @pointerArrowContainerWidth;
-        height: @pointerArrowContainerHeight;
-        overflow: hidden;
-        transform: rotate(@pointerArrowContainerRotationDegrees);
-        position: absolute;
-        top: @pointerArrowContainerWithPeriodTextTopOffset;
-        display: flex;
-        justify-content: center;
+    &:not(.has-period-text) {
+      padding: @priceLabelPaddingWithoutPricePerPeriod;
 
-        &:after {
-          content: "";
-          position: absolute;
-          width: @pointerArrowWidth;
-          height: @pointerArrowHeight;
-          background: @white !important;
-          transform: rotate(@pointerArrowRotationDegrees);
-          top: @pointerArrowTopOverflow;
-        }
+      .ui.grid {
+        background-color: transparent !important;
       }
 
-      &.has-period-text .pointer-arrow {
-        top: @pointerArrowContainerWithoutPeriodTextTopOffset;
-      }
+      .ui.label .ui.grid {
 
-      &.active,
-      &.is-pointing:hover {
-        background-color: @themeActionColorDefault;
-        background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
-        transform: translateY(@pointerHoverTranslationY);
-        transition: @priceLabelTransitionOnHover;
+        .column {
+          padding-bottom: 5px;
 
-        .ui.label {
-          color: @themeActionContrastColorDefault;
-          color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+          .row:first-child {
+            padding: @pointerArrowContainerPaddingWithoutPeriodText;
+            border-radius: @priceLabelBorderRadius;
+          }
 
-          .ui.label,
-          p,
-          h3 {
-            color: @themeActionContrastColorDefault;
-            color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+          .row:nth-child(2) {
+            display: flex;
+            justify-content: center;
           }
         }
-
-        .pointer-arrow:after {
-          background-color: @themeActionColorDefault;
-          background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
-          transition: @priceLabelTransitionOnHover;
-        }
-      }
-
-      .ui.label {
-        box-shadow: none;
       }
     }
 
     .ui.label {
-      background-color: transparent;
-      padding: 0;
+      position: relative;
+      width: auto;
       display: flex;
+      box-shadow: none;
       flex-direction: column;
       align-items: center;
+      padding: 0;
+      background-color: transparent;
 
       > .flex-container {
         min-height: @priceLabelPricePerPeriodContainerMaxHeight;
@@ -213,6 +182,103 @@
         color: @black;
         box-shadow: @priceLabelPeriodBoxShadow;
       }
+
+      .ui.grid {
+        position: relative;
+        z-index: @priceLabelGridContainerZIndex;
+        border-radius: @priceLabelBorderRadius;
+        top: 0;
+        left: 0;
+        margin: 0;
+        transition: @priceLabelBackgroundTransitionOnHover;
+
+        &:not(.is-pointing),
+        &.is-pointing.active,
+        &.is-pointing:hover {
+          background-color: @themeActionColorDefault;
+          background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+          transition: @priceLabelBackgroundTransitionOnHover;
+
+          .ui.label {
+            color: @themeActionContrastColorDefault;
+            color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+
+            .ui.label,
+            p,
+            h3 {
+              color: @themeActionContrastColorDefault;
+              color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+            }
+          }
+        }
+
+        > .column {
+          display: grid;
+          padding: @priceLabelGridColumnContainerPadding;
+          padding-top: @priceLabelGridColumnContainerPaddingTop;
+
+          .flex-container > p {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .pointer-arrow {
+        width: @pointerArrowContainerWidth;
+        height: @pointerArrowContainerHeight;
+        overflow: hidden;
+        transform: rotate(@pointerArrowContainerRotationDegrees);
+        display: flex;
+        justify-content: center;
+        position: relative;
+        top: 0;
+        z-index: @pointerArrowZIndex;
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: @pointerArrowWidth;
+          height: @pointerArrowHeight;
+          background: @white !important;
+          transform: rotate(@pointerArrowRotationDegrees);
+          top: @pointerArrowTopOverflow;
+        }
+
+        &.has-shadow:after {
+          box-shadow: @pointerArrowBoxShadow;
+        }
+
+        &.active:after {
+          background-color: @themeActionColorDefault !important;
+          background-color: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+          transition: @priceLabelBackgroundTransitionOnHover;
+        }
+      }
+
+      .label-shadow {
+        width: 100%;
+        position: absolute;
+        z-index: @labelShadowZIndex;
+        border-radius: @priceLabelBorderRadius;
+        transition: @priceLabelBackgroundTransitionOnHover;
+        height: @labelShadowHeight;
+
+        &.has-shadow {
+          box-shadow: @pointerLabelBoxShadow;
+
+          &.is-pointing {
+            box-shadow: @pointerLabelBoxShadow;
+
+            .pointer-arrow:after {
+              box-shadow: @pointerArrowBoxShadow;
+            }
+          }
+        }
+      }
+    }
+
+    &.is-clickable {
+      cursor: pointer;
     }
   }
 

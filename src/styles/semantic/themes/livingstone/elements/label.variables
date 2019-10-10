@@ -68,7 +68,6 @@
 
 @priceLabelMinWidth: 50px;
 @priceLabelBorderRadius: 5px;
-@priceLabelPadding: 8px;
 @priceLabelPaddingTop: 5px;
 @priceLabelPriceFontSize: 16px;
 @priceLabelPriceHeight: 24px;
@@ -77,8 +76,14 @@
 @priceLabelPeriodTextPadding: 5px;
 @priceLabelPeriodBorderRadius: 2px;
 @priceLabelPeriodBoxShadow: 0 0 0 1px;
+@priceLabelBackgroundTransitionOnHover: 0s all ease-in-out;
 @priceLabelTransitionOnHover: all 0.2s cubic-bezier(0.48, 0.73, 0.49, 1.29) 0s;
 @priceLabelPricePerPeriodContainerMaxHeight: 26px;
+@priceLabelPaddingWithoutPricePerPeriod: 5px;
+
+@priceLabelGridContainerZIndex: 2;
+@priceLabelGridColumnContainerPaddingTop: 5px;
+@priceLabelGridColumnContainerPadding: 10px;
 
 @pointerLabelBoxShadow: 0 2px 4px 0 rgba(0, 0, 0, 0.3);
 @pointerHoverTranslationY: -4px;
@@ -88,12 +93,17 @@
 @pointerArrowContainerRotationDegrees: 180deg;
 @pointerArrowContainerWithPeriodTextTopOffset: 37px;
 @pointerArrowContainerWithoutPeriodTextTopOffset: 61px;
+@pointerArrowContainerPaddingWithoutPeriodText: 5px;
 
-@pointerArrowBoxShadow: 0 1px 3px 3px rgba(0, 0, 0, 0.2);
+@pointerArrowBoxShadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.68);
 @pointerArrowWidth: 10px;
 @pointerArrowHeight: 10px;
 @pointerArrowRotationDegrees: 45deg;
 @pointerArrowTopOverflow: 7px;
+@pointerArrowZIndex: 1;
+
+@labelShadowHeight: ~"calc(100% - 12px)";
+@labelShadowZIndex: 0;
 
 /* Tag */
 
