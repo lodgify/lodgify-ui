@@ -1,3 +1,12 @@
+## [1.248.1](https://github.com/lodgify/lodgify-ui/compare/v1.248.0...v1.248.1) (2019-10-10)
+
+
+### Bug Fixes
+
+* **label.*:** refactor and add missing styles ([19e05e6](https://github.com/lodgify/lodgify-ui/commit/19e05e6))
+* **PriceLabel:** add precise class for each label element ([5526c5c](https://github.com/lodgify/lodgify-ui/commit/5526c5c))
+* **search-bar:** justify search-bar ([e6e89e7](https://github.com/lodgify/lodgify-ui/commit/e6e89e7))
+
 # [1.248.0](https://github.com/lodgify/lodgify-ui/compare/v1.247.5...v1.248.0) (2019-10-10)
 
 
