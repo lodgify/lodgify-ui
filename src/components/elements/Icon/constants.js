@@ -61,6 +61,7 @@ export const ICON_NAMES = {
   ROAD: 'road',
   SEARCH: 'search',
   SINGLE_BED: 'single bed',
+  SPINNER: 'spinner',
   SQUARE: 'square',
   STAR: 'star',
   SUN: 'sun',

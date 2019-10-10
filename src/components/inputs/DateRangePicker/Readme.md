@@ -21,6 +21,12 @@
 <DateRangePicker isValid />
 ```
 
+#### Loading
+
+```jsx
+<DateRangePicker isLoading />
+```
+
 ### Variations
 
 #### Display format

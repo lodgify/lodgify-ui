@@ -20,7 +20,10 @@ import { getIsFocusControlled } from './utils/getIsFocusControlled';
 import { mapValueToProps } from './utils/mapValueToProps';
 import { getNumberOfMonths } from './utils/getNumberOfMonths';
 import { getIsVisible } from './utils/getIsVisible';
-import { MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR } from './constants';
+import {
+  MAXIMUM_SCREEN_WIDTH_FOR_TWO_MONTH_CALENDAR,
+  LOADING_PLACEHOLDER_TEXT,
+} from './constants';
 
 /**
  * A date range picker lets a user pick a date range.
@@ -92,6 +95,8 @@ class Component extends PureComponent {
       error,
       getIsDayBlocked,
       initialValue,
+      isClearable,
+      isLoading,
       isValid,
       name,
       onChange,
@@ -123,10 +128,14 @@ class Component extends PureComponent {
             /* eslint-disable react/jsx-sort-props */
             // Consumer defined props.
             displayFormat={displayFormat}
-            endDatePlaceholderText={endDatePlaceholderText}
+            endDatePlaceholderText={
+              isLoading ? LOADING_PLACEHOLDER_TEXT : endDatePlaceholderText
+            }
             isDayBlocked={getIsDayBlocked}
             openDirection={getUpOrDownFromBoolean(willOpenAbove)}
-            startDatePlaceholderText={startDatePlaceholderText}
+            startDatePlaceholderText={
+              isLoading ? LOADING_PLACEHOLDER_TEXT : startDatePlaceholderText
+            }
             // Controlled props
             focusedInput={focusedInput}
             // NOTE onDatesChange is required by DateRangePicker but is set in `InputController`
@@ -136,7 +145,14 @@ class Component extends PureComponent {
             endDateId={endDateId}
             startDateId={startDateId}
             // Static custom appearance props.
-            customArrowIcon={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
+            customArrowIcon={
+              isLoading ? (
+                <Icon name={ICON_NAMES.SPINNER} />
+              ) : (
+                <Icon name={ICON_NAMES.ARROW_RIGHT} />
+              )
+            }
+            disabled={isLoading}
             customInputIcon={<Icon name={ICON_NAMES.CALENDAR} />}
             daySize={52}
             hideKeyboardShortcutsPanel
@@ -144,6 +160,7 @@ class Component extends PureComponent {
             navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
             numberOfMonths={getNumberOfMonths(windowInnerWidth)}
             withPortal={isDisplayedAsModal(this.state.windowHeight)}
+            showClearDates={isClearable}
             /* eslint-enable react/jsx-sort-props */
           />
         </InputController>
@@ -162,6 +179,8 @@ Component.defaultProps = {
   focusedInput: undefined,
   getIsDayBlocked: Function.prototype,
   initialValue: undefined,
+  isLoading: false,
+  isClearable: false,
   isValid: false,
   localeCode: 'en',
   name: '',
@@ -194,6 +213,10 @@ Component.propTypes = {
     endDate: PropTypes.object,
     startDate: PropTypes.object,
   }),
+  /**  */
+  isClearable: PropTypes.bool,
+  /** Is the date range picker in a loading state. */
+  isLoading: PropTypes.bool,
   /** Is the date range picker in a valid state. */
   isValid: PropTypes.bool,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year. */

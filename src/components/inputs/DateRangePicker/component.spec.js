@@ -384,6 +384,22 @@ describe('<DateRangePicker />', () => {
       });
     });
 
+    describe('if `isClearable` === `true`', () => {
+      it('should render the right structure', () => {
+        const wrapper = getDateRangePicker({ isClearable: true });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
+    describe('if `isLoading` === `true`', () => {
+      it('should render the right structure', () => {
+        const wrapper = getDateRangePicker({ isLoading: true });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
     describe('if `getIsFocusControlled` returns `false`', () => {
       it('should render the right structure', () => {
         getIsFocusControlled.mockReturnValueOnce(false);

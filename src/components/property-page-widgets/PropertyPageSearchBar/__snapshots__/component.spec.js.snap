@@ -292,6 +292,8 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                     endDatePlaceholderText="Check out"
                                     error={false}
                                     getIsDayBlocked={[Function]}
+                                    isClearable={false}
+                                    isLoading={false}
                                     isUserOnMobile={false}
                                     isValid={false}
                                     localeCode="en"
@@ -363,6 +365,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                               />
                                             }
                                             daySize={52}
+                                            disabled={false}
                                             displayFormat="DD/MM/YYYY"
                                             endDate={null}
                                             endDatePlaceholderText="Check out"
@@ -408,6 +411,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             onFocusChange={[Function]}
                                             openDirection="up"
                                             placeholder={null}
+                                            showClearDates={false}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
                                             withPortal={false}
@@ -1006,6 +1010,8 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                     endDatePlaceholderText="Check out"
                                     error={false}
                                     getIsDayBlocked={[Function]}
+                                    isClearable={false}
+                                    isLoading={false}
                                     isUserOnMobile={false}
                                     isValid={false}
                                     localeCode="en"
@@ -1077,6 +1083,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                               />
                                             }
                                             daySize={52}
+                                            disabled={false}
                                             displayFormat="DD/MM/YYYY"
                                             endDate={null}
                                             endDatePlaceholderText="Check out"
@@ -1122,6 +1129,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             onFocusChange={[Function]}
                                             openDirection="up"
                                             placeholder={null}
+                                            showClearDates={false}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
                                             withPortal={false}
@@ -2001,6 +2009,8 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                     endDatePlaceholderText="Check out"
                                     error={false}
                                     getIsDayBlocked={[Function]}
+                                    isClearable={false}
+                                    isLoading={false}
                                     isUserOnMobile={false}
                                     isValid={false}
                                     localeCode="en"
@@ -2072,6 +2082,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               />
                                             }
                                             daySize={52}
+                                            disabled={false}
                                             displayFormat="DD/MM/YYYY"
                                             endDate={null}
                                             endDatePlaceholderText="Check out"
@@ -2117,6 +2128,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             onFocusChange={[Function]}
                                             openDirection="up"
                                             placeholder={null}
+                                            showClearDates={false}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
                                             withPortal={false}
@@ -2881,6 +2893,8 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                     endDatePlaceholderText="Check out"
                                     error={false}
                                     getIsDayBlocked={[Function]}
+                                    isClearable={false}
+                                    isLoading={false}
                                     isUserOnMobile={false}
                                     isValid={false}
                                     localeCode="en"
@@ -2952,6 +2966,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                               />
                                             }
                                             daySize={52}
+                                            disabled={false}
                                             displayFormat="DD/MM/YYYY"
                                             endDate={null}
                                             endDatePlaceholderText="Check out"
@@ -2997,6 +3012,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             onFocusChange={[Function]}
                                             openDirection="up"
                                             placeholder={null}
+                                            showClearDates={false}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
                                             withPortal={false}

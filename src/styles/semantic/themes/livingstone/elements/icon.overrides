@@ -35,6 +35,16 @@ i.icon {
     }
   }
 
+  &.spinner {
+
+    svg {
+      animation-name: spin;
+      animation-duration: 1000ms;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+    }
+  }
+
   /* Variations */
 
   p {
@@ -115,5 +125,16 @@ i.icon {
     padding: @iconPaddingWithBorder;
     border-radius: @50px;
     margin: @iconMarginWithBorder;
+  }
+}
+
+@keyframes spin {
+
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
   }
 }

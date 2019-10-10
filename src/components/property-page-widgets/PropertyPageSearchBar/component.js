@@ -23,6 +23,7 @@ export const Component = ({
   datesInputValue,
   getIsDayBlocked,
   guestsInputValue,
+  isDateRangePickerLoading,
   isShowingPlaceholder,
   onChangeInput,
   onSubmit,
@@ -52,6 +53,7 @@ export const Component = ({
     getIsDayBlocked,
     guestsInputLabel: searchBarGuestsInputLabel,
     guestsInputValue,
+    isDateRangePickerLoading,
     isFixed: true,
     onChangeInput,
     onSubmit,
@@ -104,6 +106,7 @@ Component.defaultProps = {
   datesInputValue: undefined,
   getIsDayBlocked: undefined,
   guestsInputValue: undefined,
+  isDateRangePickerLoading: undefined,
   isShowingPlaceholder: false,
   onChangeInput: undefined,
   onSubmit: undefined,
@@ -149,6 +152,8 @@ Component.propTypes = {
     PropTypes.number,
     PropTypes.string,
   ]),
+  /** Is the date range picker in a loading state. */
+  isDateRangePickerLoading: PropTypes.bool,
   /** A function called when a change in an input occurs in the search bar.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates

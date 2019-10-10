@@ -372,6 +372,16 @@
       background: @focusedInputBackground;
       border-color: @hoveredInputBorderColor;
     }
+
+    .DateRangePickerInput__disabled {
+      border-color: @background;
+      background: @background;
+
+      .DateInput,
+      input {
+        background: none;
+      }
+    }
   }
 
   &.dirty:not(.error):not(.valid) {
@@ -381,6 +391,16 @@
       background: @focusedInputBackground;
       border-color: @focusedFormBorderColor;
       color: @focusColor;
+    }
+  }
+
+  .DateRangePickerInput_clearDates {
+
+    &:focus,
+    &:hover {
+      color: black;
+      background: inherit;
+      border-radius: inherit;
     }
   }
 
