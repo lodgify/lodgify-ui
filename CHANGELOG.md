@@ -1,3 +1,13 @@
+# [1.248.0](https://github.com/lodgify/lodgify-ui/compare/v1.247.5...v1.248.0) (2019-10-10)
+
+
+### Features
+
+* **components:** expose date range picker is loading prop to remaining components ([2c58da4](https://github.com/lodgify/lodgify-ui/commit/2c58da4))
+* **DateRangePicker:** add clear dates button ([3a2e02b](https://github.com/lodgify/lodgify-ui/commit/3a2e02b))
+* **DateRangePicker:** add loading state ([47eac27](https://github.com/lodgify/lodgify-ui/commit/47eac27))
+* **Icon:** add spinner icon ([b7587c3](https://github.com/lodgify/lodgify-ui/commit/b7587c3))
+
 ## [1.247.5](https://github.com/lodgify/lodgify-ui/compare/v1.247.4...v1.247.5) (2019-10-09)
 
 
