@@ -623,6 +623,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
                   localeCode="ko"
@@ -694,6 +695,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                             />
                           }
                           daySize={52}
+                          disabled={false}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
                           endDatePlaceholderText="Check out"
@@ -739,6 +741,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
+                          showClearDates={true}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -1636,6 +1639,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             endDatePlaceholderText="Check out"
                             error={false}
                             getIsDayBlocked={[Function]}
+                            isLoading={false}
                             isUserOnMobile={false}
                             isValid={false}
                             localeCode="ko"
@@ -1707,6 +1711,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                       />
                                     }
                                     daySize={52}
+                                    disabled={false}
                                     displayFormat="DD/MM/YYYY"
                                     endDate={null}
                                     endDatePlaceholderText="Check out"
@@ -1752,6 +1757,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     onFocusChange={[Function]}
                                     openDirection="up"
                                     placeholder={null}
+                                    showClearDates={true}
                                     startDate={null}
                                     startDatePlaceholderText="Check in"
                                     withPortal={true}
@@ -2896,6 +2902,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
                   localeCode="ko"
@@ -2967,6 +2974,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                             />
                           }
                           daySize={52}
+                          disabled={false}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
                           endDatePlaceholderText="Check out"
@@ -3012,6 +3020,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
+                          showClearDates={true}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -3891,6 +3900,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
                   localeCode="ko"
@@ -3962,6 +3972,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                             />
                           }
                           daySize={52}
+                          disabled={false}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
                           endDatePlaceholderText="Check out"
@@ -4007,6 +4018,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
+                          showClearDates={true}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -4351,6 +4363,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
                   localeCode="ko"
@@ -4422,6 +4435,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                             />
                           }
                           daySize={52}
+                          disabled={false}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
                           endDatePlaceholderText="Check out"
@@ -4467,6 +4481,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
+                          showClearDates={true}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
@@ -5328,6 +5343,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   endDatePlaceholderText="Check out"
                   error={false}
                   getIsDayBlocked={[Function]}
+                  isLoading={false}
                   isUserOnMobile={false}
                   isValid={false}
                   localeCode="ko"
@@ -5399,6 +5415,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                             />
                           }
                           daySize={52}
+                          disabled={false}
                           displayFormat="DD/MM/YYYY"
                           endDate={null}
                           endDatePlaceholderText="Check out"
@@ -5444,6 +5461,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           onFocusChange={[Function]}
                           openDirection="down"
                           placeholder={null}
+                          showClearDates={true}
                           startDate={null}
                           startDatePlaceholderText="Check in"
                           withPortal={true}

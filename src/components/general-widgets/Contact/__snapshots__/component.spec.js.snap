@@ -638,6 +638,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
+                          isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
                           localeCode="en"
@@ -709,6 +710,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                     />
                                   }
                                   daySize={52}
+                                  disabled={false}
                                   displayFormat="DD/MM/YYYY"
                                   endDate={null}
                                   endDatePlaceholderText="Departure"
@@ -754,6 +756,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   placeholder={null}
+                                  showClearDates={true}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -1546,6 +1549,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
+                          isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
                           localeCode="en"
@@ -1617,6 +1621,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                     />
                                   }
                                   daySize={52}
+                                  disabled={false}
                                   displayFormat="DD/MM/YYYY"
                                   endDate={null}
                                   endDatePlaceholderText="Departure"
@@ -1662,6 +1667,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   placeholder={null}
+                                  showClearDates={true}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -2644,6 +2650,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
+                          isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
                           localeCode="en"
@@ -2715,6 +2722,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                     />
                                   }
                                   daySize={52}
+                                  disabled={false}
                                   displayFormat="DD/MM/YYYY"
                                   endDate={null}
                                   endDatePlaceholderText="Departure"
@@ -2760,6 +2768,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   placeholder={null}
+                                  showClearDates={true}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -4035,6 +4044,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
+                          isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
                           localeCode="en"
@@ -4106,6 +4116,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                     />
                                   }
                                   daySize={52}
+                                  disabled={false}
                                   displayFormat="DD/MM/YYYY"
                                   endDate={null}
                                   endDatePlaceholderText="Departure"
@@ -4151,6 +4162,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   placeholder={null}
+                                  showClearDates={true}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}

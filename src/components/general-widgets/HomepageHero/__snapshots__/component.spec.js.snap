@@ -892,6 +892,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     endDatePlaceholderText="Check out"
                                                     error={false}
                                                     getIsDayBlocked={[Function]}
+                                                    isLoading={false}
                                                     isUserOnMobile={false}
                                                     isValid={false}
                                                     localeCode="en"
@@ -963,6 +964,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                               />
                                                             }
                                                             daySize={52}
+                                                            disabled={false}
                                                             displayFormat="DD/MM/YYYY"
                                                             endDate={null}
                                                             endDatePlaceholderText="Check out"
@@ -1008,6 +1010,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             onFocusChange={[Function]}
                                                             openDirection="up"
                                                             placeholder={null}
+                                                            showClearDates={true}
                                                             startDate={null}
                                                             startDatePlaceholderText="Check in"
                                                             withPortal={false}
