@@ -1,3 +1,10 @@
+## [1.248.3](https://github.com/lodgify/lodgify-ui/compare/v1.248.2...v1.248.3) (2019-10-11)
+
+
+### Bug Fixes
+
+* **inputs:** remove validation tick ([a51162d](https://github.com/lodgify/lodgify-ui/commit/a51162d))
+
 ## [1.248.2](https://github.com/lodgify/lodgify-ui/compare/v1.248.1...v1.248.2) (2019-10-11)
 
 
