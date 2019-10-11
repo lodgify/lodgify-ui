@@ -1,3 +1,10 @@
+## [1.248.2](https://github.com/lodgify/lodgify-ui/compare/v1.248.1...v1.248.2) (2019-10-11)
+
+
+### Bug Fixes
+
+* **overrides.*:** set roomType image height to responsive container ([0fc4fcf](https://github.com/lodgify/lodgify-ui/commit/0fc4fcf))
+
 ## [1.248.1](https://github.com/lodgify/lodgify-ui/compare/v1.248.0...v1.248.1) (2019-10-10)
 
 
