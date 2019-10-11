@@ -163,10 +163,18 @@
 /* Derived Responsive Sizes */
 
 /* Room Type Image Gallery */
-.ui.modal > .content.has-room-type-gallery {
+.ui.modal .content.has-room-type-gallery {
 
   .image-gallery-image {
-    height: @roomTypeModalSlideshowImageHeight;
+    height: @roomTypeModalImageHeight;
+
+    @media @tabletViewport {
+      height: @roomTypeModalImageTabletHeight;
+    }
+
+    @media @mobileViewport {
+      height: @roomTypeModalImageMobileHeight;
+    }
 
     > img {
       height: auto;
@@ -180,7 +188,7 @@
       width: auto;
 
       > img {
-        height: @roomTypeModalSlideshowImageHeight;
+        height: 100%;
         object-fit: cover;
         position: static;
         width: 100%;

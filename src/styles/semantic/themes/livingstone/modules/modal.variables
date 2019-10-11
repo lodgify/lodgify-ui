@@ -77,7 +77,9 @@
 @halfContainerWidthWithPadding: (@horizontalGutterMaxWidth / 2) - (@horizontalGutterLeftRightPadding * 2);
 @withHorizontalCloseIconLeft: ~"calc(50% + @{halfContainerWidthWithPadding})";
 
-@roomTypeModalSlideshowImageHeight: 270px;
+@roomTypeModalImageHeight: 390px;
+@roomTypeModalImageTabletHeight: 325px;
+@roomTypeModalImageMobileHeight: 245px;
 
 /*Has rounded corners*/
 @modalBorderRadius: 5px;

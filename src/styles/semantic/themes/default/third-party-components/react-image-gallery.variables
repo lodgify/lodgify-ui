@@ -7,11 +7,9 @@
 --------------------*/
 @imageGalleryBottomMargin: @30px;
 @imageGalleryZindex: @zIndexLevelOne;
+@imageGalleryImageMaxHeight: 390px;
 
 @imageGalleryImagesBorderRadius: @4px;
-@imageGalleryImageMaxHeight: 390px;
-@imageGalleryImageMaxHeightTablet: 325px;
-@imageGalleryImageMaxHeightMobile: 245px;
 
 @imageGalleryButtonHorizontalPadding: @30px;
 @imageGalleryButtonHeightOffset: (@38px / 2);
