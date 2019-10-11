@@ -95,7 +95,6 @@ class Component extends PureComponent {
       error,
       getIsDayBlocked,
       initialValue,
-      isClearable,
       isLoading,
       isValid,
       name,
@@ -160,7 +159,7 @@ class Component extends PureComponent {
             navPrev={<Icon name={ICON_NAMES.ARROW_LEFT} />}
             numberOfMonths={getNumberOfMonths(windowInnerWidth)}
             withPortal={isDisplayedAsModal(this.state.windowHeight)}
-            showClearDates={isClearable}
+            showClearDates
             /* eslint-enable react/jsx-sort-props */
           />
         </InputController>
@@ -180,7 +179,6 @@ Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
   initialValue: undefined,
   isLoading: false,
-  isClearable: false,
   isValid: false,
   localeCode: 'en',
   name: '',
@@ -213,8 +211,6 @@ Component.propTypes = {
     endDate: PropTypes.object,
     startDate: PropTypes.object,
   }),
-  /**  */
-  isClearable: PropTypes.bool,
   /** Is the date range picker in a loading state. */
   isLoading: PropTypes.bool,
   /** Is the date range picker in a valid state. */

@@ -196,25 +196,6 @@ describe('<InputController />', () => {
 
       expect(actual).toBe(true);
     });
-
-    it('should render a single `Icon` component', () => {
-      const inputController = getInputController({ isValid: true });
-      const actual = inputController.find('Icon').length;
-
-      expect(actual).toBe(1);
-    });
-
-    it('should pass the `Icon` component the right props', () => {
-      const inputController = getInputController({ isValid: true });
-      const actual = inputController.find('Icon').props();
-
-      expect(actual).toEqual(
-        expect.objectContaining({
-          color: 'green',
-          name: 'checkmark',
-        })
-      );
-    });
   });
 
   describe('State: focused', () => {

@@ -638,7 +638,6 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
-                          isClearable={false}
                           isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
@@ -757,7 +756,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   placeholder={null}
-                                  showClearDates={false}
+                                  showClearDates={true}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -1550,7 +1549,6 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
-                          isClearable={false}
                           isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
@@ -1669,7 +1667,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   placeholder={null}
-                                  showClearDates={false}
+                                  showClearDates={true}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -2652,7 +2650,6 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
-                          isClearable={false}
                           isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
@@ -2771,7 +2768,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   placeholder={null}
-                                  showClearDates={false}
+                                  showClearDates={true}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}
@@ -4047,7 +4044,6 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
-                          isClearable={false}
                           isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
@@ -4166,7 +4162,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                                   onFocusChange={[Function]}
                                   openDirection="down"
                                   placeholder={null}
-                                  showClearDates={false}
+                                  showClearDates={true}
                                   startDate={null}
                                   startDatePlaceholderText="Arrival"
                                   withPortal={false}

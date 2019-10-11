@@ -7,7 +7,6 @@ import isEqual from 'fast-deep-equal';
 import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { getControlledInputValue } from 'utils/get-controlled-input-value';
 import { getHasErrorMessage } from 'utils/get-has-error-message';
-import { Icon, ICON_NAMES } from 'elements/Icon';
 import { some } from 'utils/some';
 
 import { ErrorMessage } from '../ErrorMessage';
@@ -90,7 +89,6 @@ export class Component extends PureComponent {
           ...mapValueToProps(value),
         })}
         {hasErrorMessage && <ErrorMessage errorMessage={error} />}
-        {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
         {icon}
       </Input>
     );

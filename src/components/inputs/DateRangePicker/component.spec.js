@@ -384,14 +384,6 @@ describe('<DateRangePicker />', () => {
       });
     });
 
-    describe('if `isClearable` === `true`', () => {
-      it('should render the right structure', () => {
-        const wrapper = getDateRangePicker({ isClearable: true });
-
-        expect(wrapper).toMatchSnapshot();
-      });
-    });
-
     describe('if `isLoading` === `true`', () => {
       it('should render the right structure', () => {
         const wrapper = getDateRangePicker({ isLoading: true });
