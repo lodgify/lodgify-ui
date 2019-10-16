@@ -73,7 +73,6 @@ export const Component = ({
       <GridRow>
         <GridColumn width={12}>
           <Heading size="small">{notesHeadingText}</Heading>
-
           <HTML htmlString={notesText} />
         </GridColumn>
       </GridRow>
