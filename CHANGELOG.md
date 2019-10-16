@@ -1,3 +1,10 @@
+# [1.249.0](https://github.com/lodgify/lodgify-ui/compare/v1.248.3...v1.249.0) (2019-10-16)
+
+
+### Features
+
+* **PolicyAndNotes:** parse html in notes ([773c371](https://github.com/lodgify/lodgify-ui/commit/773c371))
+
 ## [1.248.3](https://github.com/lodgify/lodgify-ui/compare/v1.248.2...v1.248.3) (2019-10-11)
 
 
