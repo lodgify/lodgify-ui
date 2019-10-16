@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import { HTML } from 'general-widgets/HTML';
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
@@ -72,7 +73,7 @@ export const Component = ({
       <GridRow>
         <GridColumn width={12}>
           <Heading size="small">{notesHeadingText}</Heading>
-          <Paragraph size="medium">{notesText}</Paragraph>
+          <HTML htmlString={notesText} />
         </GridColumn>
       </GridRow>
     )}
