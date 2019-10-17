@@ -1,3 +1,10 @@
+## [1.249.1](https://github.com/lodgify/lodgify-ui/compare/v1.249.0...v1.249.1) (2019-10-17)
+
+
+### Bug Fixes
+
+* **DateRangePicker:** remove padding to allow more space for text ([6272e76](https://github.com/lodgify/lodgify-ui/commit/6272e76))
+
 # [1.249.0](https://github.com/lodgify/lodgify-ui/compare/v1.248.3...v1.249.0) (2019-10-16)
 
 
