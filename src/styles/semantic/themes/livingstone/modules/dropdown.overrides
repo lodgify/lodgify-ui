@@ -344,6 +344,24 @@
 
 /* Selection Label */
 
+/*--------------
+     Counter
+--------------*/
+
+.counter-dropdown {
+
+  .visible.menu {
+    padding: @counterDropdownMenuPadding;
+
+    .flex-container {
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
 /*-------------------
       States
 --------------------*/
