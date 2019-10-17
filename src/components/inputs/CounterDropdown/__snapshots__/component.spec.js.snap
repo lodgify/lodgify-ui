@@ -1,0 +1,200 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CounterDropdown interaction: onBlur should render the right structure 1`] = `
+<Dropdown
+  additionLabel="Add "
+  additionPosition="top"
+  clearable={true}
+  closeOnBlur={true}
+  closeOnEscape={true}
+  deburr={false}
+  icon={
+    <Icon
+      className={null}
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="caret down"
+      path={null}
+      size={null}
+    />
+  }
+  minCharacters={1}
+  noResultsMessage="No results found."
+  onBlur={[Function]}
+  onFocus={[Function]}
+  open={false}
+  openOnFocus={true}
+  options={
+    Array [
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection="row"
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <Paragraph
+          isCompact={false}
+          size="medium"
+          weight={null}
+        >
+          counterLabel
+        </Paragraph>
+        <Counter
+          name=""
+          onChange={[Function]}
+          renderValue={[Function]}
+        />
+      </FlexContainer>,
+    ]
+  }
+  renderLabel={[Function]}
+  searchInput="text"
+  selectOnBlur={true}
+  selectOnNavigation={true}
+  selection={true}
+  text="dropdownLabel"
+  wrapSelection={true}
+/>
+`;
+
+exports[`CounterDropdown interaction: onFocus should render the right structure 1`] = `
+<Dropdown
+  additionLabel="Add "
+  additionPosition="top"
+  clearable={true}
+  closeOnBlur={true}
+  closeOnEscape={true}
+  deburr={false}
+  icon={
+    <Icon
+      className={null}
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="caret down"
+      path={null}
+      size={null}
+    />
+  }
+  minCharacters={1}
+  noResultsMessage="No results found."
+  onBlur={[Function]}
+  onFocus={[Function]}
+  open={false}
+  openOnFocus={true}
+  options={
+    Array [
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        flexDirection="row"
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <Paragraph
+          isCompact={false}
+          size="medium"
+          weight={null}
+        >
+          counterLabel
+        </Paragraph>
+        <Counter
+          name=""
+          onChange={[Function]}
+          renderValue={[Function]}
+        />
+      </FlexContainer>,
+    ]
+  }
+  renderLabel={[Function]}
+  searchInput="text"
+  selectOnBlur={true}
+  selectOnNavigation={true}
+  selection={true}
+  text="dropdownLabel"
+  wrapSelection={true}
+/>
+`;
+
+exports[`CounterDropdown should render the right structure 1`] = `
+<div
+  className="dropdown-container counter-dropdown"
+>
+  <Dropdown
+    additionLabel="Add "
+    additionPosition="top"
+    clearable={true}
+    closeOnBlur={true}
+    closeOnEscape={true}
+    deburr={false}
+    icon={
+      <Icon
+        className={null}
+        color={null}
+        hasBorder={false}
+        isButton={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="caret down"
+        path={null}
+        size={null}
+      />
+    }
+    minCharacters={1}
+    noResultsMessage="No results found."
+    onBlur={[Function]}
+    onFocus={[Function]}
+    open={false}
+    openOnFocus={true}
+    options={
+      Array [
+        <FlexContainer
+          alignContent={null}
+          alignItems={null}
+          flexDirection="row"
+          flexWrap={null}
+          justifyContent="space-between"
+        >
+          <Paragraph
+            isCompact={false}
+            size="medium"
+            weight={null}
+          >
+            counterLabel
+          </Paragraph>
+          <Counter
+            name=""
+            onChange={[Function]}
+            renderValue={[Function]}
+          />
+        </FlexContainer>,
+      ]
+    }
+    renderLabel={[Function]}
+    searchInput="text"
+    selectOnBlur={true}
+    selectOnNavigation={true}
+    selection={true}
+    text="dropdownLabel"
+    wrapSelection={true}
+  />
+</div>
+`;
