@@ -49,6 +49,7 @@ exports[`the \`PriceLabel\` component if there is \`periodText\` if \`isPointing
         <FlexContainer
           alignContent={null}
           alignItems="center"
+          className={null}
           flexDirection="row"
           flexWrap={null}
           justifyContent="center"
@@ -100,6 +101,7 @@ exports[`the \`PriceLabel\` component if there is \`periodText\` should return t
         <FlexContainer
           alignContent={null}
           alignItems="center"
+          className={null}
           flexDirection="row"
           flexWrap={null}
           justifyContent="center"

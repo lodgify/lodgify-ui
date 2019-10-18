@@ -169,6 +169,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                         <FlexContainer
                           alignContent={null}
                           alignItems={null}
+                          className={null}
                           flexDirection="column"
                           flexWrap={null}
                           justifyContent="center"

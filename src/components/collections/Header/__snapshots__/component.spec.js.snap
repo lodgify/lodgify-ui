@@ -81,6 +81,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                 <FlexContainer
                   alignContent={null}
                   alignItems={null}
+                  className={null}
                   flexDirection="column"
                   flexWrap={null}
                   justifyContent="center"
@@ -722,6 +723,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                 <FlexContainer
                   alignContent={null}
                   alignItems={null}
+                  className={null}
                   flexDirection="column"
                   flexWrap={null}
                   justifyContent="center"
@@ -836,6 +838,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                             <FlexContainer
                               alignContent={null}
                               alignItems={null}
+                              className={null}
                               flexDirection="column"
                               flexWrap={null}
                               justifyContent="center"
@@ -1088,6 +1091,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                 <FlexContainer
                   alignContent={null}
                   alignItems={null}
+                  className={null}
                   flexDirection="column"
                   flexWrap={null}
                   justifyContent="center"

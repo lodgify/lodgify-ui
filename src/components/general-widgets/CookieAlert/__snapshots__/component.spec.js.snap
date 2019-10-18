@@ -428,6 +428,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                                   <FlexContainer
                                     alignContent={null}
                                     alignItems="center"
+                                    className={null}
                                     flexDirection="column"
                                     flexWrap={null}
                                     justifyContent="center"
@@ -1578,6 +1579,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                                   <FlexContainer
                                     alignContent={null}
                                     alignItems="center"
+                                    className={null}
                                     flexDirection="column"
                                     flexWrap={null}
                                     justifyContent="center"

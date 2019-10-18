@@ -22,6 +22,7 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
       <FlexContainer
         alignContent={null}
         alignItems="baseline"
+        className={null}
         flexDirection="column"
         flexWrap={null}
         justifyContent="space-between"
@@ -259,6 +260,7 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
       <FlexContainer
         alignContent={null}
         alignItems="baseline"
+        className={null}
         flexDirection="column"
         flexWrap={null}
         justifyContent="space-between"

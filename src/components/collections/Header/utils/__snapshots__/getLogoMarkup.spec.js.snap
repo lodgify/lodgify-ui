@@ -14,6 +14,7 @@ exports[`getLogoMarkup by default should render the right structure 1`] = `
     <FlexContainer
       alignContent={null}
       alignItems={null}
+      className={null}
       flexDirection="column"
       flexWrap={null}
       justifyContent="center"
@@ -84,6 +85,7 @@ exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are pass
     <FlexContainer
       alignContent={null}
       alignItems={null}
+      className={null}
       flexDirection="column"
       flexWrap={null}
       justifyContent="center"

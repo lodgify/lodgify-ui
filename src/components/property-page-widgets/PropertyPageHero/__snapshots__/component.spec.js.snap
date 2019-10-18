@@ -192,6 +192,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                           <FlexContainer
                             alignContent={null}
                             alignItems={null}
+                            className={null}
                             flexDirection="column"
                             flexWrap={null}
                             justifyContent="center"
@@ -537,6 +538,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                           <FlexContainer
                             alignContent={null}
                             alignItems={null}
+                            className={null}
                             flexDirection="column"
                             flexWrap={null}
                             justifyContent="center"
@@ -682,6 +684,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
           <FlexContainer
             alignContent={null}
             alignItems="flex-end"
+            className={null}
             flexDirection={null}
             flexWrap={null}
             justifyContent={null}

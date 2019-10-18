@@ -21,6 +21,7 @@ exports[`Component by default should render the right structure 1`] = `
       <FlexContainer
         alignContent={null}
         alignItems="baseline"
+        className={null}
         flexDirection="row"
         flexWrap={null}
         justifyContent="space-between"
@@ -214,6 +215,7 @@ exports[`Component if \`props.description\` is passed should render the right st
       <FlexContainer
         alignContent={null}
         alignItems="baseline"
+        className={null}
         flexDirection="row"
         flexWrap={null}
         justifyContent="space-between"
