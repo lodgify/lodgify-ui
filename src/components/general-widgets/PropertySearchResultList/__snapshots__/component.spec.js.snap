@@ -74,13 +74,13 @@ exports[`<PropertySearchResultList /> render by default should render the right 
       <FlexContainer
         alignContent={null}
         alignItems="center"
-        className={null}
+        className="sort-results-wrapper"
         flexDirection={null}
         flexWrap={null}
         justifyContent="space-between"
       >
         <div
-          className="flex-container"
+          className="flex-container sort-results-wrapper"
           style={
             Object {
               "alignContent": null,
@@ -293,13 +293,13 @@ exports[`<PropertySearchResultList /> render if \`isUserOnMobile\` === true shou
       <FlexContainer
         alignContent={null}
         alignItems="center"
-        className={null}
+        className="sort-results-wrapper"
         flexDirection={null}
         flexWrap={null}
         justifyContent="space-between"
       >
         <div
-          className="flex-container"
+          className="flex-container sort-results-wrapper"
           style={
             Object {
               "alignContent": null,
@@ -513,13 +513,13 @@ exports[`<PropertySearchResultList /> render if \`props.activePage\` is defined 
       <FlexContainer
         alignContent={null}
         alignItems="center"
-        className={null}
+        className="sort-results-wrapper"
         flexDirection={null}
         flexWrap={null}
         justifyContent="space-between"
       >
         <div
-          className="flex-container"
+          className="flex-container sort-results-wrapper"
           style={
             Object {
               "alignContent": null,
@@ -741,13 +741,13 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
       <FlexContainer
         alignContent={null}
         alignItems="center"
-        className={null}
+        className="sort-results-wrapper"
         flexDirection={null}
         flexWrap={null}
         justifyContent="space-between"
       >
         <div
-          className="flex-container"
+          className="flex-container sort-results-wrapper"
           style={
             Object {
               "alignContent": null,
@@ -1196,13 +1196,13 @@ exports[`<PropertySearchResultList /> render if \`props.isShowingPlaceholder\` i
       <FlexContainer
         alignContent={null}
         alignItems="center"
-        className={null}
+        className="sort-results-wrapper"
         flexDirection={null}
         flexWrap={null}
         justifyContent="space-between"
       >
         <div
-          className="flex-container"
+          className="flex-container sort-results-wrapper"
           style={
             Object {
               "alignContent": null,
@@ -1526,13 +1526,13 @@ exports[`<PropertySearchResultList /> render if \`props.messageText\` is passed 
       <FlexContainer
         alignContent={null}
         alignItems="center"
-        className={null}
+        className="sort-results-wrapper"
         flexDirection={null}
         flexWrap={null}
         justifyContent="space-between"
       >
         <div
-          className="flex-container"
+          className="flex-container sort-results-wrapper"
           style={
             Object {
               "alignContent": null,
@@ -2090,13 +2090,13 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
       <FlexContainer
         alignContent={null}
         alignItems="center"
-        className={null}
+        className="sort-results-wrapper"
         flexDirection={null}
         flexWrap={null}
         justifyContent="space-between"
       >
         <div
-          className="flex-container"
+          className="flex-container sort-results-wrapper"
           style={
             Object {
               "alignContent": null,
@@ -3026,13 +3026,13 @@ exports[`<PropertySearchResultList /> render if \`props.resultsCountText\` is pa
       <FlexContainer
         alignContent={null}
         alignItems="center"
-        className={null}
+        className="sort-results-wrapper"
         flexDirection={null}
         flexWrap={null}
         justifyContent="space-between"
       >
         <div
-          className="flex-container"
+          className="flex-container sort-results-wrapper"
           style={
             Object {
               "alignContent": null,
