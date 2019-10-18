@@ -71,10 +71,10 @@ export class Component extends PureComponent {
         >
           {({ tracks, getTrackProps }) => (
             <Fragment>
-              {tracks.map(({ id, source, target }) => (
+              {tracks.map(({ source, target }, key) => (
                 <div
                   className="track"
-                  key={id}
+                  key={key}
                   style={{
                     left: `${source.percent}%`,
                     width: `${target.percent - source.percent}%`,

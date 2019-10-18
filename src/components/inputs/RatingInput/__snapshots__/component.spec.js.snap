@@ -12,22 +12,23 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
     adaptOnChangeEvent={[Function]}
     error={false}
     icon={null}
-    initialValue=""
     inputOnChangeFunctionName="onRate"
     isCompact={false}
     isFluid={false}
     isFocused={false}
     isValid={false}
-    label={null}
     mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
+    value={null}
   >
     <Input
       className=""
       fluid={false}
       iconPosition={null}
+      name=""
       type="text"
+      value={null}
     >
       <div
         className="ui input"
@@ -37,15 +38,15 @@ exports[`the \`RatingInput\` component should have the right structure 1`] = `
           key=".0"
           maxRating={5}
           onRate={[Function]}
-          placeholder={null}
           size="small"
+          value={null}
         >
           <div
             className="ui small rating"
             onMouseLeave={[Function]}
-            placeholder={null}
             role="radiogroup"
             tabIndex={-1}
+            value={null}
           >
             <RatingIcon
               active={false}
@@ -203,22 +204,23 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
     adaptOnChangeEvent={[Function]}
     error={false}
     icon={null}
-    initialValue=""
     inputOnChangeFunctionName="onRate"
     isCompact={false}
     isFluid={false}
     isFocused={false}
     isValid={false}
-    label={null}
     mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
+    value={null}
   >
     <Input
       className=""
       fluid={false}
       iconPosition={null}
+      name=""
       type="text"
+      value={null}
     >
       <div
         className="ui input"
@@ -228,15 +230,15 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
           key=".0"
           maxRating={5}
           onRate={[Function]}
-          placeholder={null}
           size="small"
+          value={null}
         >
           <div
             className="ui small rating"
             onMouseLeave={[Function]}
-            placeholder={null}
             role="radiogroup"
             tabIndex={-1}
+            value={null}
           >
             <RatingIcon
               active={false}

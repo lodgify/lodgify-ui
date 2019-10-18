@@ -36,9 +36,7 @@
 #### Placeholders
 
 ```jsx
-<SingleDatePicker
-  placeholderText="Pick a date"
-/>
+<SingleDatePicker placeholderText="Pick a date" />
 ```
 
 #### Calendar opens above input
@@ -53,8 +51,22 @@
 
 ```jsx
 <SingleDatePicker
-  getIsDayBlocked={
-    moment => moment.format('dddd') === 'Friday'
-  }
+  getIsDayBlocked={moment => moment.format('dddd') === 'Friday'}
 />
+```
+
+#### Controlled
+
+```jsx
+const Controller = () => {
+  const [value, setValue] = React.useState(null);
+  return (
+    <SingleDatePicker
+      onChange={setValue}
+      value={value}
+      getIsDayBlocked={moment => moment.format('dddd') === 'Friday'}
+    />
+  );
+};
+<Controller />;
 ```

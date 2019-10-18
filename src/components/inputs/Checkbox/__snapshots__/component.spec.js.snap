@@ -18,22 +18,23 @@ exports[`<Checkbox /> if \`props.isFluid\` is true should return the right struc
     adaptOnChangeEvent={[Function]}
     error={false}
     icon={null}
-    initialValue=""
     inputOnChangeFunctionName="onChange"
     isCompact={false}
     isFluid={true}
     isFocused={false}
     isValid={false}
-    label={null}
     mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
+    value={null}
   >
     <Input
       className=""
       fluid={true}
       iconPosition={null}
+      name=""
       type="text"
+      value={null}
     >
       <div
         className="ui fluid input"
@@ -44,9 +45,9 @@ exports[`<Checkbox /> if \`props.isFluid\` is true should return the right struc
           disabled={false}
           key=".0"
           label=""
+          name=""
           onChange={[Function]}
           onClick={[Function]}
-          placeholder={null}
           radio={false}
           toggle={false}
           type="checkbox"
@@ -63,6 +64,7 @@ exports[`<Checkbox /> if \`props.isFluid\` is true should return the right struc
                 Object {
                   "current": <input
                     class="hidden"
+                    name=""
                     readonly=""
                     tabindex="0"
                     type="checkbox"
@@ -76,6 +78,7 @@ exports[`<Checkbox /> if \`props.isFluid\` is true should return the right struc
                   Object {
                     "current": <input
                       class="hidden"
+                      name=""
                       readonly=""
                       tabindex="0"
                       type="checkbox"
@@ -88,7 +91,7 @@ exports[`<Checkbox /> if \`props.isFluid\` is true should return the right struc
                   checked={false}
                   className="hidden"
                   disabled={false}
-                  placeholder={null}
+                  name=""
                   readOnly={true}
                   tabIndex={0}
                   type="checkbox"
@@ -138,22 +141,23 @@ exports[`<Checkbox /> if \`props.isLabelLeft\` is true should return the right s
     adaptOnChangeEvent={[Function]}
     error={false}
     icon={null}
-    initialValue=""
     inputOnChangeFunctionName="onChange"
     isCompact={false}
     isFluid={false}
     isFocused={false}
     isValid={false}
-    label={null}
     mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
+    value={null}
   >
     <Input
       className=""
       fluid={false}
       iconPosition={null}
+      name=""
       type="text"
+      value={null}
     >
       <div
         className="ui input"
@@ -164,9 +168,9 @@ exports[`<Checkbox /> if \`props.isLabelLeft\` is true should return the right s
           disabled={false}
           key=".0"
           label=""
+          name=""
           onChange={[Function]}
           onClick={[Function]}
-          placeholder={null}
           radio={false}
           toggle={false}
           type="checkbox"
@@ -183,6 +187,7 @@ exports[`<Checkbox /> if \`props.isLabelLeft\` is true should return the right s
                 Object {
                   "current": <input
                     class="hidden"
+                    name=""
                     readonly=""
                     tabindex="0"
                     type="checkbox"
@@ -196,6 +201,7 @@ exports[`<Checkbox /> if \`props.isLabelLeft\` is true should return the right s
                   Object {
                     "current": <input
                       class="hidden"
+                      name=""
                       readonly=""
                       tabindex="0"
                       type="checkbox"
@@ -208,7 +214,7 @@ exports[`<Checkbox /> if \`props.isLabelLeft\` is true should return the right s
                   checked={false}
                   className="hidden"
                   disabled={false}
-                  placeholder={null}
+                  name=""
                   readOnly={true}
                   tabIndex={0}
                   type="checkbox"
@@ -258,22 +264,23 @@ exports[`<Checkbox /> should return the right structure 1`] = `
     adaptOnChangeEvent={[Function]}
     error={false}
     icon={null}
-    initialValue=""
     inputOnChangeFunctionName="onChange"
     isCompact={false}
     isFluid={false}
     isFocused={false}
     isValid={false}
-    label={null}
     mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
+    value={null}
   >
     <Input
       className=""
       fluid={false}
       iconPosition={null}
+      name=""
       type="text"
+      value={null}
     >
       <div
         className="ui input"
@@ -284,9 +291,9 @@ exports[`<Checkbox /> should return the right structure 1`] = `
           disabled={false}
           key=".0"
           label=""
+          name=""
           onChange={[Function]}
           onClick={[Function]}
-          placeholder={null}
           radio={false}
           toggle={false}
           type="checkbox"
@@ -303,6 +310,7 @@ exports[`<Checkbox /> should return the right structure 1`] = `
                 Object {
                   "current": <input
                     class="hidden"
+                    name=""
                     readonly=""
                     tabindex="0"
                     type="checkbox"
@@ -316,6 +324,7 @@ exports[`<Checkbox /> should return the right structure 1`] = `
                   Object {
                     "current": <input
                       class="hidden"
+                      name=""
                       readonly=""
                       tabindex="0"
                       type="checkbox"
@@ -328,7 +337,7 @@ exports[`<Checkbox /> should return the right structure 1`] = `
                   checked={false}
                   className="hidden"
                   disabled={false}
-                  placeholder={null}
+                  name=""
                   readOnly={true}
                   tabIndex={0}
                   type="checkbox"

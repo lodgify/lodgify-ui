@@ -1,4 +1,3 @@
-
 ```jsx
 <Checkbox />
 ```
@@ -42,15 +41,34 @@
 </div>
 ```
 
-
 #### Disabled
 
 ```jsx
-<Checkbox isDisabled label="I am disabled"/>
+<Checkbox isDisabled label="I am disabled" />
 ```
 
 #### Disabled and checked
 
 ```jsx
-<Checkbox isDisabled isChecked label="I am disabled and checked"/>
+<Checkbox isDisabled isChecked label="I am disabled and checked" />
+```
+
+### Controlled checkbox
+
+```jsx
+const Controller = () => {
+  const [value, setValue] = React.useState(false);
+  return (
+    <Checkbox
+      isChecked={value}
+      onChange={({ value: _value }) => {
+        console.log(_value);
+        setValue(_value);
+      }}
+      label={`the checkbox is ${value ? 'checked' : 'unchecked'}`}
+    />
+  );
+};
+
+<Controller />;
 ```

@@ -5,4 +5,7 @@ import get from 'get-value';
  * @param  {Object} target
  * @return {boolean|string}
  */
-export const adaptOnChangeEvent = (event, target) => get(target, 'checked');
+export const adaptOnChangeEvent = (event, target) => ({
+  name: get(target, 'name'),
+  value: get(target, 'checked'),
+});

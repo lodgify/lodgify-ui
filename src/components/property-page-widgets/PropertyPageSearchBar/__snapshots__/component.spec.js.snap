@@ -308,22 +308,23 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                       adaptOnChangeEvent={[Function]}
                                       error={false}
                                       icon={null}
-                                      initialValue=""
                                       inputOnChangeFunctionName="onDatesChange"
                                       isCompact={false}
                                       isFluid={false}
                                       isFocused={false}
                                       isValid={false}
-                                      label={null}
                                       mapValueToProps={[Function]}
                                       name="dates"
                                       onChange={[Function]}
+                                      value={null}
                                     >
                                       <Input
                                         className=""
                                         fluid={false}
                                         iconPosition={null}
+                                        name="dates"
                                         type="text"
+                                        value={null}
                                       >
                                         <div
                                           className="ui input"
@@ -409,7 +410,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             onDatesChange={[Function]}
                                             onFocusChange={[Function]}
                                             openDirection="up"
-                                            placeholder={null}
                                             showClearDates={true}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
@@ -454,6 +454,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                 name="guests"
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                value=""
                               >
                                 <InputController
                                   adaptOnChangeEvent={[Function]}
@@ -475,22 +476,23 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                       size={null}
                                     />
                                   }
-                                  initialValue=""
                                   inputOnChangeFunctionName="onChange"
                                   isCompact={false}
                                   isFluid={false}
                                   isFocused={false}
                                   isValid={false}
-                                  label="Guests"
                                   mapValueToProps={[Function]}
                                   name="guests"
                                   onChange={[Function]}
+                                  value=""
                                 >
                                   <Input
                                     className=""
                                     fluid={false}
                                     iconPosition="left"
+                                    name="guests"
                                     type="text"
+                                    value=""
                                   >
                                     <div
                                       className="ui left icon input"
@@ -504,6 +506,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         onChange={[Function]}
                                         placeholder="Guests"
                                         type="number"
+                                        value=""
                                       />
                                       <Icon
                                         className={null}
@@ -1025,22 +1028,23 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                       adaptOnChangeEvent={[Function]}
                                       error={false}
                                       icon={null}
-                                      initialValue=""
                                       inputOnChangeFunctionName="onDatesChange"
                                       isCompact={false}
                                       isFluid={false}
                                       isFocused={false}
                                       isValid={false}
-                                      label={null}
                                       mapValueToProps={[Function]}
                                       name="dates"
                                       onChange={[Function]}
+                                      value={null}
                                     >
                                       <Input
                                         className=""
                                         fluid={false}
                                         iconPosition={null}
+                                        name="dates"
                                         type="text"
+                                        value={null}
                                       >
                                         <div
                                           className="ui input"
@@ -1126,7 +1130,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             onDatesChange={[Function]}
                                             onFocusChange={[Function]}
                                             openDirection="up"
-                                            placeholder={null}
                                             showClearDates={true}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
@@ -1171,6 +1174,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                 name="guests"
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                value=""
                               >
                                 <InputController
                                   adaptOnChangeEvent={[Function]}
@@ -1192,22 +1196,23 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                       size={null}
                                     />
                                   }
-                                  initialValue=""
                                   inputOnChangeFunctionName="onChange"
                                   isCompact={false}
                                   isFluid={false}
                                   isFocused={false}
                                   isValid={false}
-                                  label="Guests"
                                   mapValueToProps={[Function]}
                                   name="guests"
                                   onChange={[Function]}
+                                  value=""
                                 >
                                   <Input
                                     className=""
                                     fluid={false}
                                     iconPosition="left"
+                                    name="guests"
                                     type="text"
+                                    value=""
                                   >
                                     <div
                                       className="ui left icon input"
@@ -1221,6 +1226,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         onChange={[Function]}
                                         placeholder="Guests"
                                         type="number"
+                                        value=""
                                       />
                                       <Icon
                                         className={null}
@@ -2023,22 +2029,23 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                       adaptOnChangeEvent={[Function]}
                                       error={false}
                                       icon={null}
-                                      initialValue=""
                                       inputOnChangeFunctionName="onDatesChange"
                                       isCompact={false}
                                       isFluid={false}
                                       isFocused={false}
                                       isValid={false}
-                                      label={null}
                                       mapValueToProps={[Function]}
                                       name="dates"
                                       onChange={[Function]}
+                                      value={null}
                                     >
                                       <Input
                                         className=""
                                         fluid={false}
                                         iconPosition={null}
+                                        name="dates"
                                         type="text"
+                                        value={null}
                                       >
                                         <div
                                           className="ui input"
@@ -2124,7 +2131,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             onDatesChange={[Function]}
                                             onFocusChange={[Function]}
                                             openDirection="up"
-                                            placeholder={null}
                                             showClearDates={true}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
@@ -2169,6 +2175,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                 name="guests"
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                value=""
                               >
                                 <InputController
                                   adaptOnChangeEvent={[Function]}
@@ -2190,22 +2197,23 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                       size={null}
                                     />
                                   }
-                                  initialValue=""
                                   inputOnChangeFunctionName="onChange"
                                   isCompact={false}
                                   isFluid={false}
                                   isFocused={false}
                                   isValid={false}
-                                  label="Guests"
                                   mapValueToProps={[Function]}
                                   name="guests"
                                   onChange={[Function]}
+                                  value=""
                                 >
                                   <Input
                                     className=""
                                     fluid={false}
                                     iconPosition="left"
+                                    name="guests"
                                     type="text"
+                                    value=""
                                   >
                                     <div
                                       className="ui left icon input"
@@ -2219,6 +2227,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         onChange={[Function]}
                                         placeholder="Guests"
                                         type="number"
+                                        value=""
                                       />
                                       <Icon
                                         className={null}
@@ -2906,22 +2915,23 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                       adaptOnChangeEvent={[Function]}
                                       error={false}
                                       icon={null}
-                                      initialValue=""
                                       inputOnChangeFunctionName="onDatesChange"
                                       isCompact={false}
                                       isFluid={false}
                                       isFocused={false}
                                       isValid={false}
-                                      label={null}
                                       mapValueToProps={[Function]}
                                       name="dates"
                                       onChange={[Function]}
+                                      value={null}
                                     >
                                       <Input
                                         className=""
                                         fluid={false}
                                         iconPosition={null}
+                                        name="dates"
                                         type="text"
+                                        value={null}
                                       >
                                         <div
                                           className="ui input"
@@ -3007,7 +3017,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             onDatesChange={[Function]}
                                             onFocusChange={[Function]}
                                             openDirection="up"
-                                            placeholder={null}
                                             showClearDates={true}
                                             startDate={null}
                                             startDatePlaceholderText="Check in"
@@ -3052,6 +3061,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                 name="guests"
                                 onBlur={[Function]}
                                 onChange={[Function]}
+                                value=""
                               >
                                 <InputController
                                   adaptOnChangeEvent={[Function]}
@@ -3073,22 +3083,23 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                       size={null}
                                     />
                                   }
-                                  initialValue=""
                                   inputOnChangeFunctionName="onChange"
                                   isCompact={false}
                                   isFluid={false}
                                   isFocused={false}
                                   isValid={false}
-                                  label="Guests"
                                   mapValueToProps={[Function]}
                                   name="guests"
                                   onChange={[Function]}
+                                  value=""
                                 >
                                   <Input
                                     className=""
                                     fluid={false}
                                     iconPosition="left"
+                                    name="guests"
                                     type="text"
+                                    value=""
                                   >
                                     <div
                                       className="ui left icon input"
@@ -3102,6 +3113,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         onChange={[Function]}
                                         placeholder="Guests"
                                         type="number"
+                                        value=""
                                       />
                                       <Icon
                                         className={null}

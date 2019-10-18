@@ -83,6 +83,7 @@ export class Component extends PureComponent {
         <SingleDatePicker
           /* eslint-disable react/jsx-sort-props */
           // Consumer defined props.
+          placeholder={placeholderText}
           displayFormat={displayFormat}
           isDayBlocked={getIsDayBlocked}
           openDirection={getUpOrDownFromBoolean(willOpenAbove)}
@@ -116,7 +117,7 @@ Component.defaultProps = {
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
-  placeholderText: '',
+  placeholderText: undefined,
   value: undefined,
   willOpenAbove: false,
 };

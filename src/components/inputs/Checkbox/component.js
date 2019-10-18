@@ -44,6 +44,7 @@ export const Component = ({
       })}
       disabled={isDisabled}
       label={label}
+      name={name}
       onClick={onClick}
       radio={isRadioButton}
       toggle={isToggle}

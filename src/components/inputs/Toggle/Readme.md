@@ -15,7 +15,6 @@ Please refer to it for more information.
 
 ### States
 
-
 #### Checked
 
 ```jsx
@@ -25,12 +24,31 @@ Please refer to it for more information.
 #### Disabled
 
 ```jsx
-<Toggle isDisabled label="I am disabled and Off"/>
+<Toggle isDisabled label="I am disabled and Off" />
 ```
 
 #### Disabled and checked
 
 ```jsx
-<Toggle isDisabled isChecked label="I am disabled and On"/>
+<Toggle isDisabled isChecked label="I am disabled and On" />
 ```
 
+### Controlled toggle
+
+```jsx
+const Controller = () => {
+  const [value, setValue] = React.useState(false);
+  return (
+    <Toggle
+      isChecked={value}
+      onChange={({ value: _value }) => {
+        console.log(_value);
+        setValue(_value);
+      }}
+      label={`the toggle is ${value ? 'on' : 'off'}`}
+    />
+  );
+};
+
+<Controller />;
+```

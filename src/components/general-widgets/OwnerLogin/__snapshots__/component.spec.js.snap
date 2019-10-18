@@ -57,6 +57,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
               onBlur={[Function]}
               onChange={[Function]}
               type="text"
+              value=""
             />
           </Form>
         </Modal>,
@@ -137,12 +138,12 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -152,12 +153,15 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                         mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="email"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -171,6 +175,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -195,12 +200,12 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="password"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -210,12 +215,15 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                         mapValueToProps={[Function]}
                         name="password"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="password"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -229,6 +237,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                               onChange={[Function]}
                               placeholder="Password"
                               type="password"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -527,6 +536,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
               onBlur={[Function]}
               onChange={[Function]}
               type="text"
+              value=""
             />
           </Form>
         </Modal>,
@@ -607,12 +617,12 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -622,12 +632,15 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                         mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="email"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -641,6 +654,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -665,12 +679,12 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="password"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -680,12 +694,15 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                         mapValueToProps={[Function]}
                         name="password"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="password"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -699,6 +716,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                               onChange={[Function]}
                               placeholder="Password"
                               type="password"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -997,6 +1015,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
               onBlur={[Function]}
               onChange={[Function]}
               type="text"
+              value=""
             />
           </Form>
         </Modal>,
@@ -1077,12 +1096,12 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1092,12 +1111,15 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                         mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="email"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1111,6 +1133,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -1135,12 +1158,12 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="password"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1150,12 +1173,15 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                         mapValueToProps={[Function]}
                         name="password"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="password"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1169,6 +1195,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                               onChange={[Function]}
                               placeholder="Password"
                               type="password"
+                              value=""
                             />
                           </div>
                         </Input>

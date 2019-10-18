@@ -32,11 +32,24 @@
 #### Display format
 
 ```jsx
+const moment = require('moment');
 <div>
-  <DateRangePicker displayFormat="D.M.YY" />
+  <DateRangePicker
+    displayFormat="D.M.YY"
+    value={{
+      endDate: moment(),
+      startDate: moment(),
+    }}
+  />
   <Divider />
-  <DateRangePicker displayFormat="DD MMM YY" />
-</div>
+  <DateRangePicker
+    value={{
+      endDate: moment(),
+      startDate: moment(),
+    }}
+    displayFormat="DD MMM YY"
+  />
+</div>;
 ```
 
 #### Placeholders
@@ -60,8 +73,22 @@
 
 ```jsx
 <DateRangePicker
-  getIsDayBlocked={
-    moment => moment.format('dddd') === 'Friday'
-  }
+  getIsDayBlocked={moment => moment.format('dddd') === 'Friday'}
 />
+```
+
+#### Controlled
+
+```jsx
+const Controller = () => {
+  const [value, setValue] = React.useState(null);
+  return (
+    <DateRangePicker
+      onChange={setValue}
+      value={value}
+      getIsDayBlocked={moment => moment.format('dddd') === 'Friday'}
+    />
+  );
+};
+<Controller />;
 ```

@@ -3469,12 +3469,12 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                                     onBlur={[Function]}
                                     onChange={[Function]}
                                     type="text"
+                                    value=""
                                   >
                                     <InputController
                                       adaptOnChangeEvent={[Function]}
                                       error={false}
                                       icon={null}
-                                      initialValue=""
                                       inputOnChangeFunctionName="onChange"
                                       isCompact={false}
                                       isFluid={true}
@@ -3484,12 +3484,15 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                                       mapValueToProps={[Function]}
                                       name=""
                                       onChange={[Function]}
+                                      value=""
                                     >
                                       <Input
                                         className=""
                                         fluid={true}
                                         iconPosition={null}
+                                        name=""
                                         type="text"
+                                        value=""
                                       >
                                         <div
                                           className="ui fluid input"
@@ -3503,6 +3506,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                                             onChange={[Function]}
                                             placeholder="Your email"
                                             type="text"
+                                            value=""
                                           />
                                         </div>
                                       </Input>

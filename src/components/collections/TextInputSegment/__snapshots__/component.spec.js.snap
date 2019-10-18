@@ -82,12 +82,12 @@ exports[`<TextInputSegment /> should render the right structure 1`] = `
             onBlur={[Function]}
             onChange={[Function]}
             type="text"
+            value=""
           >
             <InputController
               adaptOnChangeEvent={[Function]}
               error={false}
               icon={null}
-              initialValue=""
               inputOnChangeFunctionName="onChange"
               isCompact={false}
               isFluid={false}
@@ -97,12 +97,15 @@ exports[`<TextInputSegment /> should render the right structure 1`] = `
               mapValueToProps={[Function]}
               name=""
               onChange={[Function]}
+              value=""
             >
               <Input
                 className=""
                 fluid={false}
                 iconPosition={null}
+                name=""
                 type="text"
+                value=""
               >
                 <div
                   className="ui input"
@@ -116,6 +119,7 @@ exports[`<TextInputSegment /> should render the right structure 1`] = `
                     onChange={[Function]}
                     placeholder="🏷"
                     type="text"
+                    value=""
                   />
                 </div>
               </Input>

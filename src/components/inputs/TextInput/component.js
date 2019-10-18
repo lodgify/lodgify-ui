@@ -34,6 +34,7 @@ export const Component = ({
       maxLength={maxCharacters}
       name={name}
       onBlur={onBlur}
+      placeholder={label}
       type={type}
     />
   </InputController>
@@ -52,7 +53,7 @@ Component.defaultProps = {
   onBlur: Function.prototype,
   onChange: Function.prototype,
   type: 'text',
-  value: undefined,
+  value: '',
 };
 
 Component.propTypes = {

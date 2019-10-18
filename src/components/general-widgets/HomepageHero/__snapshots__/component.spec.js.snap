@@ -911,22 +911,23 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       adaptOnChangeEvent={[Function]}
                                                       error={false}
                                                       icon={null}
-                                                      initialValue=""
                                                       inputOnChangeFunctionName="onDatesChange"
                                                       isCompact={false}
                                                       isFluid={false}
                                                       isFocused={false}
                                                       isValid={false}
-                                                      label={null}
                                                       mapValueToProps={[Function]}
                                                       name="dates"
                                                       onChange={[Function]}
+                                                      value={null}
                                                     >
                                                       <Input
                                                         className=""
                                                         fluid={false}
                                                         iconPosition={null}
+                                                        name="dates"
                                                         type="text"
+                                                        value={null}
                                                       >
                                                         <div
                                                           className="ui input"
@@ -1012,7 +1013,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             onDatesChange={[Function]}
                                                             onFocusChange={[Function]}
                                                             openDirection="up"
-                                                            placeholder={null}
                                                             showClearDates={true}
                                                             startDate={null}
                                                             startDatePlaceholderText="Check in"
@@ -1057,6 +1057,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                 name="guests"
                                                 onBlur={[Function]}
                                                 onChange={[Function]}
+                                                value=""
                                               >
                                                 <InputController
                                                   adaptOnChangeEvent={[Function]}
@@ -1078,22 +1079,23 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       size={null}
                                                     />
                                                   }
-                                                  initialValue=""
                                                   inputOnChangeFunctionName="onChange"
                                                   isCompact={false}
                                                   isFluid={false}
                                                   isFocused={false}
                                                   isValid={false}
-                                                  label="Guests"
                                                   mapValueToProps={[Function]}
                                                   name="guests"
                                                   onChange={[Function]}
+                                                  value=""
                                                 >
                                                   <Input
                                                     className=""
                                                     fluid={false}
                                                     iconPosition="left"
+                                                    name="guests"
                                                     type="text"
+                                                    value=""
                                                   >
                                                     <div
                                                       className="ui left icon input"
@@ -1107,6 +1109,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                         onChange={[Function]}
                                                         placeholder="Guests"
                                                         type="number"
+                                                        value=""
                                                       />
                                                       <Icon
                                                         className={null}

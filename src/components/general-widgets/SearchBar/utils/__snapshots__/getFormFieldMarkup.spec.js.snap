@@ -73,6 +73,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
         name="guests"
         onBlur={[Function]}
         onChange={[Function]}
+        value=""
       />
     </div>
     <div
@@ -128,6 +129,7 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
         name="guests"
         onBlur={[Function]}
         onChange={[Function]}
+        value=""
       />
     </div>
     <div

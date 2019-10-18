@@ -119,22 +119,23 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                           adaptOnChangeEvent={[Function]}
                           error={false}
                           icon={null}
-                          initialValue=""
                           inputOnChangeFunctionName="onChange"
                           isCompact={false}
                           isFluid={false}
                           isFocused={false}
                           isValid={false}
-                          label={null}
                           mapValueToProps={[Function]}
                           name=""
                           onChange={[Function]}
+                          value={null}
                         >
                           <Input
                             className=""
                             fluid={false}
                             iconPosition={null}
+                            name=""
                             type="text"
+                            value={null}
                           >
                             <div
                               className="ui input"
@@ -145,9 +146,9 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                                 disabled={false}
                                 key=".0"
                                 label="yo"
+                                name=""
                                 onChange={[Function]}
                                 onClick={[Function]}
-                                placeholder={null}
                                 radio={false}
                                 toggle={false}
                                 type="checkbox"
@@ -164,6 +165,7 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                                       Object {
                                         "current": <input
                                           class="hidden"
+                                          name=""
                                           readonly=""
                                           tabindex="0"
                                           type="checkbox"
@@ -177,6 +179,7 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                                         Object {
                                           "current": <input
                                             class="hidden"
+                                            name=""
                                             readonly=""
                                             tabindex="0"
                                             type="checkbox"
@@ -189,7 +192,7 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                                         checked={false}
                                         className="hidden"
                                         disabled={false}
-                                        placeholder={null}
+                                        name=""
                                         readOnly={true}
                                         tabIndex={0}
                                         type="checkbox"
@@ -357,22 +360,23 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                           adaptOnChangeEvent={[Function]}
                           error={false}
                           icon={null}
-                          initialValue=""
                           inputOnChangeFunctionName="onChange"
                           isCompact={false}
                           isFluid={true}
                           isFocused={false}
                           isValid={false}
-                          label={null}
                           mapValueToProps={[Function]}
                           name=""
                           onChange={[Function]}
+                          value={null}
                         >
                           <Input
                             className=""
                             fluid={true}
                             iconPosition={null}
+                            name=""
                             type="text"
+                            value={null}
                           >
                             <div
                               className="ui fluid input"
@@ -383,9 +387,9 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                                 disabled={false}
                                 key=".0"
                                 label="yo"
+                                name=""
                                 onChange={[Function]}
                                 onClick={[Function]}
-                                placeholder={null}
                                 radio={false}
                                 toggle={false}
                                 type="checkbox"
@@ -402,6 +406,7 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                                       Object {
                                         "current": <input
                                           class="hidden"
+                                          name=""
                                           readonly=""
                                           tabindex="0"
                                           type="checkbox"
@@ -415,6 +420,7 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                                         Object {
                                           "current": <input
                                             class="hidden"
+                                            name=""
                                             readonly=""
                                             tabindex="0"
                                             type="checkbox"
@@ -427,7 +433,7 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                                         checked={false}
                                         className="hidden"
                                         disabled={false}
-                                        placeholder={null}
+                                        name=""
                                         readOnly={true}
                                         tabIndex={0}
                                         type="checkbox"
