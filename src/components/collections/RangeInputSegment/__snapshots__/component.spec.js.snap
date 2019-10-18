@@ -28,6 +28,7 @@ exports[`<RangeInputSegment /> should return the right structure 1`] = `
       <FlexContainer
         alignContent={null}
         alignItems="baseline"
+        className={null}
         flexDirection="column"
         flexWrap={null}
         justifyContent="space-between"

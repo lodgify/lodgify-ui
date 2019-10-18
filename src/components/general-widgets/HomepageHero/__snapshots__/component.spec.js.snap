@@ -202,6 +202,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                           <FlexContainer
                             alignContent={null}
                             alignItems={null}
+                            className={null}
                             flexDirection="column"
                             flexWrap={null}
                             justifyContent="center"
@@ -347,6 +348,7 @@ exports[`HomepageHero should render the right structure 1`] = `
           <FlexContainer
             alignContent={null}
             alignItems="center"
+            className={null}
             flexDirection="column"
             flexWrap={null}
             justifyContent="space-evenly"

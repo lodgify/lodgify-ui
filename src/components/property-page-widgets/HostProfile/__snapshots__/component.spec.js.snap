@@ -96,6 +96,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                     <FlexContainer
                       alignContent={null}
                       alignItems="center"
+                      className={null}
                       flexDirection={null}
                       flexWrap={null}
                       justifyContent={null}
@@ -426,6 +427,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                     <FlexContainer
                       alignContent={null}
                       alignItems="center"
+                      className={null}
                       flexDirection={null}
                       flexWrap={null}
                       justifyContent={null}
@@ -749,6 +751,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                     <FlexContainer
                       alignContent={null}
                       alignItems="center"
+                      className={null}
                       flexDirection={null}
                       flexWrap={null}
                       justifyContent={null}
@@ -1076,6 +1079,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                     <FlexContainer
                       alignContent={null}
                       alignItems="center"
+                      className={null}
                       flexDirection={null}
                       flexWrap={null}
                       justifyContent={null}

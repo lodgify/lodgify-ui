@@ -12,6 +12,7 @@ exports[`Counter render should render the right structure 1`] = `
     <FlexContainer
       alignContent={null}
       alignItems="center"
+      className={null}
       flexDirection={null}
       flexWrap={null}
       justifyContent="space-between"

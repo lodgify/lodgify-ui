@@ -13,6 +13,7 @@ exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should ren
     <FlexContainer
       alignContent={null}
       alignItems={null}
+      className={null}
       flexDirection={null}
       flexWrap={null}
       justifyContent={null}
@@ -54,6 +55,7 @@ exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should ren
         <FlexContainer
           alignContent={null}
           alignItems="center"
+          className={null}
           flexDirection="row"
           flexWrap={null}
           justifyContent={null}
@@ -96,6 +98,7 @@ exports[`<PropertySearchResult /> if \`props.isCompact\` is passed should return
     <FlexContainer
       alignContent={null}
       alignItems={null}
+      className={null}
       flexDirection={null}
       flexWrap={null}
       justifyContent={null}
@@ -123,6 +126,7 @@ exports[`<PropertySearchResult /> if \`props.isCompact\` is passed should return
         <FlexContainer
           alignContent={null}
           alignItems="center"
+          className={null}
           flexDirection="row"
           flexWrap={null}
           justifyContent={null}
@@ -150,6 +154,7 @@ exports[`<PropertySearchResult /> if \`props.isCompact\` is passed should return
       <FlexContainer
         alignContent={null}
         alignItems={null}
+        className={null}
         flexDirection={null}
         flexWrap={null}
         justifyContent="flex-end"
@@ -223,6 +228,7 @@ exports[`<PropertySearchResult /> if \`ratingNumber\` is a truthy value should r
     <FlexContainer
       alignContent={null}
       alignItems={null}
+      className={null}
       flexDirection={null}
       flexWrap={null}
       justifyContent={null}
@@ -264,6 +270,7 @@ exports[`<PropertySearchResult /> if \`ratingNumber\` is a truthy value should r
         <FlexContainer
           alignContent={null}
           alignItems="center"
+          className={null}
           flexDirection="row"
           flexWrap={null}
           justifyContent={null}
@@ -301,6 +308,7 @@ exports[`<PropertySearchResult /> should render the right structure 1`] = `
     <FlexContainer
       alignContent={null}
       alignItems={null}
+      className={null}
       flexDirection={null}
       flexWrap={null}
       justifyContent={null}
@@ -342,6 +350,7 @@ exports[`<PropertySearchResult /> should render the right structure 1`] = `
         <FlexContainer
           alignContent={null}
           alignItems="center"
+          className={null}
           flexDirection="row"
           flexWrap={null}
           justifyContent={null}

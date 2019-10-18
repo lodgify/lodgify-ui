@@ -26,6 +26,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
       <FlexContainer
         alignContent={null}
         alignItems="baseline"
+        className={null}
         flexDirection="column"
         flexWrap={null}
         justifyContent="space-between"
@@ -83,6 +84,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
           <FlexContainer
             alignContent={null}
             alignItems={null}
+            className={null}
             flexDirection="row"
             flexWrap={null}
             justifyContent="space-between"
@@ -124,6 +126,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
                   <FlexContainer
                     alignContent={null}
                     alignItems="center"
+                    className={null}
                     flexDirection={null}
                     flexWrap={null}
                     justifyContent="space-between"
@@ -406,6 +409,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
           <FlexContainer
             alignContent={null}
             alignItems={null}
+            className={null}
             flexDirection="row"
             flexWrap={null}
             justifyContent="space-between"
@@ -447,6 +451,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
                   <FlexContainer
                     alignContent={null}
                     alignItems="center"
+                    className={null}
                     flexDirection={null}
                     flexWrap={null}
                     justifyContent="space-between"
