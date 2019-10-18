@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import getClassNames from 'classnames';
 
 /**
  * A container for laying out children using the
@@ -11,12 +12,13 @@ export const Component = ({
   alignContent,
   alignItems,
   children,
+  className,
   flexDirection,
   flexWrap,
   justifyContent,
 }) => (
   <div
-    className="flex-container"
+    className={getClassNames('flex-container', className)}
     style={{
       display: 'flex',
       flexGrow: '1',
@@ -37,6 +39,7 @@ Component.displayName = 'FlexContainer';
 Component.defaultProps = {
   alignContent: null,
   alignItems: null,
+  className: null,
   flexDirection: null,
   flexWrap: null,
   justifyContent: null,
@@ -62,6 +65,8 @@ Component.propTypes = {
   ]),
   /** The children to be wrapped with a flex container. */
   children: PropTypes.node.isRequired,
+  /** A custom class name. */
+  className: PropTypes.string,
   /** The orientation of the main axis of the flex container. */
   flexDirection: PropTypes.oneOf([
     'row',
