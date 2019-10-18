@@ -78,7 +78,11 @@ class Component extends PureComponent {
     return (
       <div className="property-search-result-list">
         <div className="result-list-container">
-          <FlexContainer alignItems="center" justifyContent="space-between">
+          <FlexContainer
+            alignItems="center"
+            className="sort-results-wrapper"
+            justifyContent="space-between"
+          >
             {isShowingPlaceholder ? (
               <FlexContainer>
                 <TextPlaceholder length="short" />
