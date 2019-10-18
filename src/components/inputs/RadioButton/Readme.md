@@ -20,7 +20,7 @@ RadioButtons in a group must be [controlled components](https://reactjs.org/docs
 ```jsx
 const GroupedRadiosDemo = () => {
   const [selectedRadio, setSelectedRadio] = React.useState('plane');
-  const change = ({ name }) => {
+  const change = name => {
     setSelectedRadio(name);
   };
   return (

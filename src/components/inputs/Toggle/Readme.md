@@ -41,8 +41,7 @@ const Controller = () => {
   return (
     <Toggle
       isChecked={value}
-      onChange={({ value: _value }) => {
-        console.log(_value);
+      onChange={(name, _value) => {
         setValue(_value);
       }}
       label={`the toggle is ${value ? 'on' : 'off'}`}

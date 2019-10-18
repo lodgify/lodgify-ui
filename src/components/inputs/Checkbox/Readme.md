@@ -61,8 +61,7 @@ const Controller = () => {
   return (
     <Checkbox
       isChecked={value}
-      onChange={({ value: _value }) => {
-        console.log(_value);
+      onChange={(name, _value) => {
         setValue(_value);
       }}
       label={`the checkbox is ${value ? 'checked' : 'unchecked'}`}

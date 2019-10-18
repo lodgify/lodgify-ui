@@ -38,7 +38,7 @@ export const Component = ({
   const showError = !!error && typeof error === 'string';
   const inputRef = createRef();
   const handleChange = (...args) => {
-    onChange(adaptOnChangeEvent(...args));
+    onChange(name, adaptOnChangeEvent(...args));
   };
 
   return (
