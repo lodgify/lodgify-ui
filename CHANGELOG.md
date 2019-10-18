@@ -1,3 +1,10 @@
+## [1.249.2](https://github.com/lodgify/lodgify-ui/compare/v1.249.1...v1.249.2) (2019-10-18)
+
+
+### Bug Fixes
+
+* **FlexContainer:** expose className prop ([54e1bc8](https://github.com/lodgify/lodgify-ui/commit/54e1bc8))
+
 ## [1.249.1](https://github.com/lodgify/lodgify-ui/compare/v1.249.0...v1.249.1) (2019-10-17)
 
 
