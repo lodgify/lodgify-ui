@@ -1,5 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
+import moment from 'moment';
 
 import { getSearchBarModal } from './getSearchBarModal';
 
@@ -20,6 +21,14 @@ const getModalMarkup = extraProps =>
         {
           ...props,
           ...extraProps,
+        },
+        {
+          localtion: '',
+          dates: {
+            startDate: moment(),
+            endDate: moment(),
+          },
+          guests: 1,
         },
         handleSubmit,
         persistInputChange

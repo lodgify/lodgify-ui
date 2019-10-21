@@ -7,12 +7,20 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
   datesCheckInLabel="Check in"
   datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
+  datesInputValue={
+    Object {
+      "endDtate": "1970-01-01T00:00:00.000Z",
+      "startDate": "1970-01-01T00:00:00.000Z",
+    }
+  }
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
+  guestsInputValue={1}
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={false}
   locationInputLabel="Location"
+  locationInputValue="some value"
   locationOptions={
     Array [
       Object {
@@ -113,10 +121,11 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   },
                 ]
               }
+              value="some value"
               willOpenAbove={false}
             >
               <div
-                className="dropdown-container"
+                className="dropdown-container dirty"
               >
                 <Icon
                   className={null}
@@ -167,7 +176,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       isLabelLeft={false}
                       labelText={null}
                       labelWeight={null}
-                      name="caret down"
+                      name="close"
                       path={null}
                       size={null}
                     />
@@ -215,6 +224,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   selectOnNavigation={true}
                   selection={true}
                   upward={false}
+                  value="some value"
                   wrapSelection={true}
                 >
                   <Ref
@@ -230,19 +240,17 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           <div
                             aria-atomic="true"
                             aria-live="polite"
-                            class="default text"
+                            class="text"
                             role="alert"
-                          >
-                            Location
-                          </div>
+                          />
                           <i
-                            class="icon"
+                            class="icon clear"
                           >
                             <svg
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M20,8.5l-8,7-8-7Z"
+                                d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                 fill="currentColor"
                               />
                             </svg>
@@ -320,19 +328,17 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                             <div
                               aria-atomic="true"
                               aria-live="polite"
-                              class="default text"
+                              class="text"
                               role="alert"
-                            >
-                              Location
-                            </div>
+                            />
                             <i
-                              class="icon"
+                              class="icon clear"
                             >
                               <svg
                                 viewBox="0 0 24 24"
                               >
                                 <path
-                                  d="M20,8.5l-8,7-8-7Z"
+                                  d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -412,13 +418,11 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         <div
                           aria-atomic={true}
                           aria-live="polite"
-                          className="default text"
+                          className="text"
                           role="alert"
-                        >
-                          Location
-                        </div>
+                        />
                         <Icon
-                          className=""
+                          className="clear"
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -428,20 +432,20 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           isLabelLeft={false}
                           labelText={null}
                           labelWeight={null}
-                          name="caret down"
+                          name="close"
                           onClick={[Function]}
                           path={null}
                           size={null}
                         >
                           <i
-                            className="icon"
+                            className="icon clear"
                             onClick={[Function]}
                           >
                             <svg
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M20,8.5l-8,7-8-7Z"
+                                d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                 fill="currentColor"
                               />
                             </svg>
@@ -601,6 +605,12 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
               onChange={[Function]}
               onFocusChange={[Function]}
               startDatePlaceholderText="Check in"
+              value={
+                Object {
+                  "endDtate": "1970-01-01T00:00:00.000Z",
+                  "startDate": "1970-01-01T00:00:00.000Z",
+                }
+              }
               willOpenAbove={false}
             >
               <Responsive
@@ -615,6 +625,12 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
                 startDatePlaceholderText="Check in"
+                value={
+                  Object {
+                    "endDtate": "1970-01-01T00:00:00.000Z",
+                    "startDate": "1970-01-01T00:00:00.000Z",
+                  }
+                }
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
@@ -632,6 +648,12 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   onChange={[Function]}
                   onFocusChange={[Function]}
                   startDatePlaceholderText="Check in"
+                  value={
+                    Object {
+                      "endDtate": "1970-01-01T00:00:00.000Z",
+                      "startDate": "1970-01-01T00:00:00.000Z",
+                    }
+                  }
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -647,18 +669,28 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     mapValueToProps={[Function]}
                     name="dates"
                     onChange={[Function]}
-                    value={null}
+                    value={
+                      Object {
+                        "endDtate": "1970-01-01T00:00:00.000Z",
+                        "startDate": "1970-01-01T00:00:00.000Z",
+                      }
+                    }
                   >
                     <Input
-                      className=""
+                      className="dirty"
                       fluid={false}
                       iconPosition={null}
                       name="dates"
                       type="text"
-                      value={null}
+                      value={
+                        Object {
+                          "endDtate": "1970-01-01T00:00:00.000Z",
+                          "startDate": "1970-01-01T00:00:00.000Z",
+                        }
+                      }
                     >
                       <div
-                        className="ui input"
+                        className="ui input dirty"
                       >
                         <DateRangePicker
                           customArrowIcon={
@@ -698,7 +730,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           daySize={52}
                           disabled={false}
                           displayFormat="DD/MM/YYYY"
-                          endDate={null}
                           endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
@@ -742,7 +773,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           onFocusChange={[Function]}
                           openDirection="down"
                           showClearDates={true}
-                          startDate={null}
+                          startDate={"1970-01-01T00:00:00.000Z"}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
@@ -785,7 +816,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
               name="guests"
               onBlur={[Function]}
               onChange={[Function]}
-              value=""
+              value={1}
             >
               <InputController
                 adaptOnChangeEvent={[Function]}
@@ -815,18 +846,18 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 mapValueToProps={[Function]}
                 name="guests"
                 onChange={[Function]}
-                value=""
+                value={1}
               >
                 <Input
-                  className=""
+                  className="dirty"
                   fluid={false}
                   iconPosition="left"
                   name="guests"
                   type="text"
-                  value=""
+                  value={1}
                 >
                   <div
-                    className="ui left icon input"
+                    className="ui left icon input dirty"
                   >
                     <input
                       autoComplete={null}
@@ -837,7 +868,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       onChange={[Function]}
                       placeholder="Guests"
                       type="number"
-                      value=""
+                      value={1}
                     />
                     <Icon
                       className={null}
@@ -1010,12 +1041,20 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
   datesCheckInLabel="Check in"
   datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
+  datesInputValue={
+    Object {
+      "endDtate": "1970-01-01T00:00:00.000Z",
+      "startDate": "1970-01-01T00:00:00.000Z",
+    }
+  }
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
+  guestsInputValue={1}
   isDisplayedAsModal={false}
   isFixed={true}
   isStackable={false}
   locationInputLabel="Location"
+  locationInputValue="some value"
   locationOptions={
     Array [
       Object {
@@ -1132,10 +1171,11 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             },
                           ]
                         }
+                        value="some value"
                         willOpenAbove={true}
                       >
                         <div
-                          className="dropdown-container"
+                          className="dropdown-container dirty"
                         >
                           <Icon
                             className={null}
@@ -1186,7 +1226,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 isLabelLeft={false}
                                 labelText={null}
                                 labelWeight={null}
-                                name="caret down"
+                                name="close"
                                 path={null}
                                 size={null}
                               />
@@ -1234,6 +1274,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             selectOnNavigation={true}
                             selection={true}
                             upward={true}
+                            value="some value"
                             wrapSelection={true}
                           >
                             <Ref
@@ -1249,19 +1290,17 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     <div
                                       aria-atomic="true"
                                       aria-live="polite"
-                                      class="default text"
+                                      class="text"
                                       role="alert"
-                                    >
-                                      Location
-                                    </div>
+                                    />
                                     <i
-                                      class="icon"
+                                      class="icon clear"
                                     >
                                       <svg
                                         viewBox="0 0 24 24"
                                       >
                                         <path
-                                          d="M20,8.5l-8,7-8-7Z"
+                                          d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                           fill="currentColor"
                                         />
                                       </svg>
@@ -1339,19 +1378,17 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                       <div
                                         aria-atomic="true"
                                         aria-live="polite"
-                                        class="default text"
+                                        class="text"
                                         role="alert"
-                                      >
-                                        Location
-                                      </div>
+                                      />
                                       <i
-                                        class="icon"
+                                        class="icon clear"
                                       >
                                         <svg
                                           viewBox="0 0 24 24"
                                         >
                                           <path
-                                            d="M20,8.5l-8,7-8-7Z"
+                                            d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                             fill="currentColor"
                                           />
                                         </svg>
@@ -1431,13 +1468,11 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                   <div
                                     aria-atomic={true}
                                     aria-live="polite"
-                                    className="default text"
+                                    className="text"
                                     role="alert"
-                                  >
-                                    Location
-                                  </div>
+                                  />
                                   <Icon
-                                    className=""
+                                    className="clear"
                                     color={null}
                                     hasBorder={false}
                                     isButton={false}
@@ -1447,20 +1482,20 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     isLabelLeft={false}
                                     labelText={null}
                                     labelWeight={null}
-                                    name="caret down"
+                                    name="close"
                                     onClick={[Function]}
                                     path={null}
                                     size={null}
                                   >
                                     <i
-                                      className="icon"
+                                      className="icon clear"
                                       onClick={[Function]}
                                     >
                                       <svg
                                         viewBox="0 0 24 24"
                                       >
                                         <path
-                                          d="M20,8.5l-8,7-8-7Z"
+                                          d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                           fill="currentColor"
                                         />
                                       </svg>
@@ -1620,6 +1655,12 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                         onChange={[Function]}
                         onFocusChange={[Function]}
                         startDatePlaceholderText="Check in"
+                        value={
+                          Object {
+                            "endDtate": "1970-01-01T00:00:00.000Z",
+                            "startDate": "1970-01-01T00:00:00.000Z",
+                          }
+                        }
                         willOpenAbove={true}
                       >
                         <Responsive
@@ -1634,6 +1675,12 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           onFocusChange={[Function]}
                           onUpdate={[Function]}
                           startDatePlaceholderText="Check in"
+                          value={
+                            Object {
+                              "endDtate": "1970-01-01T00:00:00.000Z",
+                              "startDate": "1970-01-01T00:00:00.000Z",
+                            }
+                          }
                           willOpenAbove={true}
                           windowInnerWidth={1024}
                         >
@@ -1651,6 +1698,12 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             onChange={[Function]}
                             onFocusChange={[Function]}
                             startDatePlaceholderText="Check in"
+                            value={
+                              Object {
+                                "endDtate": "1970-01-01T00:00:00.000Z",
+                                "startDate": "1970-01-01T00:00:00.000Z",
+                              }
+                            }
                             willOpenAbove={true}
                             windowInnerWidth={1024}
                           >
@@ -1666,18 +1719,28 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                               mapValueToProps={[Function]}
                               name="dates"
                               onChange={[Function]}
-                              value={null}
+                              value={
+                                Object {
+                                  "endDtate": "1970-01-01T00:00:00.000Z",
+                                  "startDate": "1970-01-01T00:00:00.000Z",
+                                }
+                              }
                             >
                               <Input
-                                className=""
+                                className="dirty"
                                 fluid={false}
                                 iconPosition={null}
                                 name="dates"
                                 type="text"
-                                value={null}
+                                value={
+                                  Object {
+                                    "endDtate": "1970-01-01T00:00:00.000Z",
+                                    "startDate": "1970-01-01T00:00:00.000Z",
+                                  }
+                                }
                               >
                                 <div
-                                  className="ui input"
+                                  className="ui input dirty"
                                 >
                                   <DateRangePicker
                                     customArrowIcon={
@@ -1717,7 +1780,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     daySize={52}
                                     disabled={false}
                                     displayFormat="DD/MM/YYYY"
-                                    endDate={null}
                                     endDatePlaceholderText="Check out"
                                     focusedInput={null}
                                     hideKeyboardShortcutsPanel={true}
@@ -1761,7 +1823,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     onFocusChange={[Function]}
                                     openDirection="up"
                                     showClearDates={true}
-                                    startDate={null}
+                                    startDate={"1970-01-01T00:00:00.000Z"}
                                     startDatePlaceholderText="Check in"
                                     withPortal={true}
                                   >
@@ -1804,7 +1866,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                         name="guests"
                         onBlur={[Function]}
                         onChange={[Function]}
-                        value=""
+                        value={1}
                       >
                         <InputController
                           adaptOnChangeEvent={[Function]}
@@ -1834,18 +1896,18 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           mapValueToProps={[Function]}
                           name="guests"
                           onChange={[Function]}
-                          value=""
+                          value={1}
                         >
                           <Input
-                            className=""
+                            className="dirty"
                             fluid={false}
                             iconPosition="left"
                             name="guests"
                             type="text"
-                            value=""
+                            value={1}
                           >
                             <div
-                              className="ui left icon input"
+                              className="ui left icon input dirty"
                             >
                               <input
                                 autoComplete={null}
@@ -1856,7 +1918,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 onChange={[Function]}
                                 placeholder="Guests"
                                 type="number"
-                                value=""
+                                value={1}
                               />
                               <Icon
                                 className={null}
@@ -2291,13 +2353,21 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
   datesCheckInLabel="Check in"
   datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
+  datesInputValue={
+    Object {
+      "endDtate": "1970-01-01T00:00:00.000Z",
+      "startDate": "1970-01-01T00:00:00.000Z",
+    }
+  }
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
+  guestsInputValue={1}
   isDisplayedAsModal={false}
   isFixed={false}
   isShowingSummary={true}
   isStackable={false}
   locationInputLabel="Location"
+  locationInputValue="some value"
   locationOptions={
     Array [
       Object {
@@ -2398,10 +2468,11 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   },
                 ]
               }
+              value="some value"
               willOpenAbove={false}
             >
               <div
-                className="dropdown-container"
+                className="dropdown-container dirty"
               >
                 <Icon
                   className={null}
@@ -2452,7 +2523,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       isLabelLeft={false}
                       labelText={null}
                       labelWeight={null}
-                      name="caret down"
+                      name="close"
                       path={null}
                       size={null}
                     />
@@ -2500,6 +2571,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   selectOnNavigation={true}
                   selection={true}
                   upward={false}
+                  value="some value"
                   wrapSelection={true}
                 >
                   <Ref
@@ -2515,19 +2587,17 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           <div
                             aria-atomic="true"
                             aria-live="polite"
-                            class="default text"
+                            class="text"
                             role="alert"
-                          >
-                            Location
-                          </div>
+                          />
                           <i
-                            class="icon"
+                            class="icon clear"
                           >
                             <svg
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M20,8.5l-8,7-8-7Z"
+                                d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                 fill="currentColor"
                               />
                             </svg>
@@ -2605,19 +2675,17 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                             <div
                               aria-atomic="true"
                               aria-live="polite"
-                              class="default text"
+                              class="text"
                               role="alert"
-                            >
-                              Location
-                            </div>
+                            />
                             <i
-                              class="icon"
+                              class="icon clear"
                             >
                               <svg
                                 viewBox="0 0 24 24"
                               >
                                 <path
-                                  d="M20,8.5l-8,7-8-7Z"
+                                  d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -2697,13 +2765,11 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         <div
                           aria-atomic={true}
                           aria-live="polite"
-                          className="default text"
+                          className="text"
                           role="alert"
-                        >
-                          Location
-                        </div>
+                        />
                         <Icon
-                          className=""
+                          className="clear"
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -2713,20 +2779,20 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           isLabelLeft={false}
                           labelText={null}
                           labelWeight={null}
-                          name="caret down"
+                          name="close"
                           onClick={[Function]}
                           path={null}
                           size={null}
                         >
                           <i
-                            className="icon"
+                            className="icon clear"
                             onClick={[Function]}
                           >
                             <svg
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M20,8.5l-8,7-8-7Z"
+                                d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                 fill="currentColor"
                               />
                             </svg>
@@ -2886,6 +2952,12 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
               onChange={[Function]}
               onFocusChange={[Function]}
               startDatePlaceholderText="Check in"
+              value={
+                Object {
+                  "endDtate": "1970-01-01T00:00:00.000Z",
+                  "startDate": "1970-01-01T00:00:00.000Z",
+                }
+              }
               willOpenAbove={false}
             >
               <Responsive
@@ -2900,6 +2972,12 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
                 startDatePlaceholderText="Check in"
+                value={
+                  Object {
+                    "endDtate": "1970-01-01T00:00:00.000Z",
+                    "startDate": "1970-01-01T00:00:00.000Z",
+                  }
+                }
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
@@ -2917,6 +2995,12 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   onChange={[Function]}
                   onFocusChange={[Function]}
                   startDatePlaceholderText="Check in"
+                  value={
+                    Object {
+                      "endDtate": "1970-01-01T00:00:00.000Z",
+                      "startDate": "1970-01-01T00:00:00.000Z",
+                    }
+                  }
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -2932,18 +3016,28 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     mapValueToProps={[Function]}
                     name="dates"
                     onChange={[Function]}
-                    value={null}
+                    value={
+                      Object {
+                        "endDtate": "1970-01-01T00:00:00.000Z",
+                        "startDate": "1970-01-01T00:00:00.000Z",
+                      }
+                    }
                   >
                     <Input
-                      className=""
+                      className="dirty"
                       fluid={false}
                       iconPosition={null}
                       name="dates"
                       type="text"
-                      value={null}
+                      value={
+                        Object {
+                          "endDtate": "1970-01-01T00:00:00.000Z",
+                          "startDate": "1970-01-01T00:00:00.000Z",
+                        }
+                      }
                     >
                       <div
-                        className="ui input"
+                        className="ui input dirty"
                       >
                         <DateRangePicker
                           customArrowIcon={
@@ -2983,7 +3077,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           daySize={52}
                           disabled={false}
                           displayFormat="DD/MM/YYYY"
-                          endDate={null}
                           endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
@@ -3027,7 +3120,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           onFocusChange={[Function]}
                           openDirection="down"
                           showClearDates={true}
-                          startDate={null}
+                          startDate={"1970-01-01T00:00:00.000Z"}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
@@ -3070,7 +3163,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
               name="guests"
               onBlur={[Function]}
               onChange={[Function]}
-              value=""
+              value={1}
             >
               <InputController
                 adaptOnChangeEvent={[Function]}
@@ -3100,18 +3193,18 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 mapValueToProps={[Function]}
                 name="guests"
                 onChange={[Function]}
-                value=""
+                value={1}
               >
                 <Input
-                  className=""
+                  className="dirty"
                   fluid={false}
                   iconPosition="left"
                   name="guests"
                   type="text"
-                  value=""
+                  value={1}
                 >
                   <div
-                    className="ui left icon input"
+                    className="ui left icon input dirty"
                   >
                     <input
                       autoComplete={null}
@@ -3122,7 +3215,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       onChange={[Function]}
                       placeholder="Guests"
                       type="number"
-                      value=""
+                      value={1}
                     />
                     <Icon
                       className={null}
@@ -3293,12 +3386,20 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
   datesCheckInLabel="Check in"
   datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
+  datesInputValue={
+    Object {
+      "endDtate": "1970-01-01T00:00:00.000Z",
+      "startDate": "1970-01-01T00:00:00.000Z",
+    }
+  }
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
+  guestsInputValue={1}
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={true}
   locationInputLabel="Location"
+  locationInputValue="some value"
   locationOptions={
     Array [
       Object {
@@ -3399,10 +3500,11 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   },
                 ]
               }
+              value="some value"
               willOpenAbove={false}
             >
               <div
-                className="dropdown-container"
+                className="dropdown-container dirty"
               >
                 <Icon
                   className={null}
@@ -3453,7 +3555,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       isLabelLeft={false}
                       labelText={null}
                       labelWeight={null}
-                      name="caret down"
+                      name="close"
                       path={null}
                       size={null}
                     />
@@ -3501,6 +3603,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   selectOnNavigation={true}
                   selection={true}
                   upward={false}
+                  value="some value"
                   wrapSelection={true}
                 >
                   <Ref
@@ -3516,19 +3619,17 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           <div
                             aria-atomic="true"
                             aria-live="polite"
-                            class="default text"
+                            class="text"
                             role="alert"
-                          >
-                            Location
-                          </div>
+                          />
                           <i
-                            class="icon"
+                            class="icon clear"
                           >
                             <svg
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M20,8.5l-8,7-8-7Z"
+                                d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                 fill="currentColor"
                               />
                             </svg>
@@ -3606,19 +3707,17 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                             <div
                               aria-atomic="true"
                               aria-live="polite"
-                              class="default text"
+                              class="text"
                               role="alert"
-                            >
-                              Location
-                            </div>
+                            />
                             <i
-                              class="icon"
+                              class="icon clear"
                             >
                               <svg
                                 viewBox="0 0 24 24"
                               >
                                 <path
-                                  d="M20,8.5l-8,7-8-7Z"
+                                  d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -3698,13 +3797,11 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                         <div
                           aria-atomic={true}
                           aria-live="polite"
-                          className="default text"
+                          className="text"
                           role="alert"
-                        >
-                          Location
-                        </div>
+                        />
                         <Icon
-                          className=""
+                          className="clear"
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -3714,20 +3811,20 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           isLabelLeft={false}
                           labelText={null}
                           labelWeight={null}
-                          name="caret down"
+                          name="close"
                           onClick={[Function]}
                           path={null}
                           size={null}
                         >
                           <i
-                            className="icon"
+                            className="icon clear"
                             onClick={[Function]}
                           >
                             <svg
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M20,8.5l-8,7-8-7Z"
+                                d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                 fill="currentColor"
                               />
                             </svg>
@@ -3887,6 +3984,12 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
               onChange={[Function]}
               onFocusChange={[Function]}
               startDatePlaceholderText="Check in"
+              value={
+                Object {
+                  "endDtate": "1970-01-01T00:00:00.000Z",
+                  "startDate": "1970-01-01T00:00:00.000Z",
+                }
+              }
               willOpenAbove={false}
             >
               <Responsive
@@ -3901,6 +4004,12 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
                 startDatePlaceholderText="Check in"
+                value={
+                  Object {
+                    "endDtate": "1970-01-01T00:00:00.000Z",
+                    "startDate": "1970-01-01T00:00:00.000Z",
+                  }
+                }
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
@@ -3918,6 +4027,12 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   onChange={[Function]}
                   onFocusChange={[Function]}
                   startDatePlaceholderText="Check in"
+                  value={
+                    Object {
+                      "endDtate": "1970-01-01T00:00:00.000Z",
+                      "startDate": "1970-01-01T00:00:00.000Z",
+                    }
+                  }
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -3933,18 +4048,28 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                     mapValueToProps={[Function]}
                     name="dates"
                     onChange={[Function]}
-                    value={null}
+                    value={
+                      Object {
+                        "endDtate": "1970-01-01T00:00:00.000Z",
+                        "startDate": "1970-01-01T00:00:00.000Z",
+                      }
+                    }
                   >
                     <Input
-                      className=""
+                      className="dirty"
                       fluid={false}
                       iconPosition={null}
                       name="dates"
                       type="text"
-                      value={null}
+                      value={
+                        Object {
+                          "endDtate": "1970-01-01T00:00:00.000Z",
+                          "startDate": "1970-01-01T00:00:00.000Z",
+                        }
+                      }
                     >
                       <div
-                        className="ui input"
+                        className="ui input dirty"
                       >
                         <DateRangePicker
                           customArrowIcon={
@@ -3984,7 +4109,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           daySize={52}
                           disabled={false}
                           displayFormat="DD/MM/YYYY"
-                          endDate={null}
                           endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
@@ -4028,7 +4152,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           onFocusChange={[Function]}
                           openDirection="down"
                           showClearDates={true}
-                          startDate={null}
+                          startDate={"1970-01-01T00:00:00.000Z"}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
@@ -4071,7 +4195,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
               name="guests"
               onBlur={[Function]}
               onChange={[Function]}
-              value=""
+              value={1}
             >
               <InputController
                 adaptOnChangeEvent={[Function]}
@@ -4101,18 +4225,18 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 mapValueToProps={[Function]}
                 name="guests"
                 onChange={[Function]}
-                value=""
+                value={1}
               >
                 <Input
-                  className=""
+                  className="dirty"
                   fluid={false}
                   iconPosition="left"
                   name="guests"
                   type="text"
-                  value=""
+                  value={1}
                 >
                   <div
-                    className="ui left icon input"
+                    className="ui left icon input dirty"
                   >
                     <input
                       autoComplete={null}
@@ -4123,7 +4247,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       onChange={[Function]}
                       placeholder="Guests"
                       type="number"
-                      value=""
+                      value={1}
                     />
                     <Icon
                       className={null}
@@ -4294,12 +4418,20 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
   datesCheckInLabel="Check in"
   datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
+  datesInputValue={
+    Object {
+      "endDtate": "1970-01-01T00:00:00.000Z",
+      "startDate": "1970-01-01T00:00:00.000Z",
+    }
+  }
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
+  guestsInputValue={1}
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={false}
   locationInputLabel="Location"
+  locationInputValue="some value"
   locationOptions={null}
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
@@ -4353,6 +4485,12 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
               onChange={[Function]}
               onFocusChange={[Function]}
               startDatePlaceholderText="Check in"
+              value={
+                Object {
+                  "endDtate": "1970-01-01T00:00:00.000Z",
+                  "startDate": "1970-01-01T00:00:00.000Z",
+                }
+              }
               willOpenAbove={false}
             >
               <Responsive
@@ -4367,6 +4505,12 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
                 startDatePlaceholderText="Check in"
+                value={
+                  Object {
+                    "endDtate": "1970-01-01T00:00:00.000Z",
+                    "startDate": "1970-01-01T00:00:00.000Z",
+                  }
+                }
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
@@ -4384,6 +4528,12 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   onChange={[Function]}
                   onFocusChange={[Function]}
                   startDatePlaceholderText="Check in"
+                  value={
+                    Object {
+                      "endDtate": "1970-01-01T00:00:00.000Z",
+                      "startDate": "1970-01-01T00:00:00.000Z",
+                    }
+                  }
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -4399,18 +4549,28 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     mapValueToProps={[Function]}
                     name="dates"
                     onChange={[Function]}
-                    value={null}
+                    value={
+                      Object {
+                        "endDtate": "1970-01-01T00:00:00.000Z",
+                        "startDate": "1970-01-01T00:00:00.000Z",
+                      }
+                    }
                   >
                     <Input
-                      className=""
+                      className="dirty"
                       fluid={false}
                       iconPosition={null}
                       name="dates"
                       type="text"
-                      value={null}
+                      value={
+                        Object {
+                          "endDtate": "1970-01-01T00:00:00.000Z",
+                          "startDate": "1970-01-01T00:00:00.000Z",
+                        }
+                      }
                     >
                       <div
-                        className="ui input"
+                        className="ui input dirty"
                       >
                         <DateRangePicker
                           customArrowIcon={
@@ -4450,7 +4610,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           daySize={52}
                           disabled={false}
                           displayFormat="DD/MM/YYYY"
-                          endDate={null}
                           endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
@@ -4494,7 +4653,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           onFocusChange={[Function]}
                           openDirection="down"
                           showClearDates={true}
-                          startDate={null}
+                          startDate={"1970-01-01T00:00:00.000Z"}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
@@ -4537,7 +4696,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
               name="guests"
               onBlur={[Function]}
               onChange={[Function]}
-              value=""
+              value={1}
             >
               <InputController
                 adaptOnChangeEvent={[Function]}
@@ -4567,18 +4726,18 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 mapValueToProps={[Function]}
                 name="guests"
                 onChange={[Function]}
-                value=""
+                value={1}
               >
                 <Input
-                  className=""
+                  className="dirty"
                   fluid={false}
                   iconPosition="left"
                   name="guests"
                   type="text"
-                  value=""
+                  value={1}
                 >
                   <div
-                    className="ui left icon input"
+                    className="ui left icon input dirty"
                   >
                     <input
                       autoComplete={null}
@@ -4589,7 +4748,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       onChange={[Function]}
                       placeholder="Guests"
                       type="number"
-                      value=""
+                      value={1}
                     />
                     <Icon
                       className={null}
@@ -4760,12 +4919,20 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
   datesCheckInLabel="Check in"
   datesCheckOutLabel="Check out"
   datesInputOnFocusChange={[Function]}
+  datesInputValue={
+    Object {
+      "endDtate": "1970-01-01T00:00:00.000Z",
+      "startDate": "1970-01-01T00:00:00.000Z",
+    }
+  }
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
+  guestsInputValue={1}
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={false}
   locationInputLabel="Location"
+  locationInputValue="some value"
   locationOptions={
     Array [
       Object {
@@ -4848,10 +5015,11 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   },
                 ]
               }
+              value="some value"
               willOpenAbove={false}
             >
               <div
-                className="dropdown-container"
+                className="dropdown-container dirty"
               >
                 <Icon
                   className={null}
@@ -4902,7 +5070,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       isLabelLeft={false}
                       labelText={null}
                       labelWeight={null}
-                      name="caret down"
+                      name="close"
                       path={null}
                       size={null}
                     />
@@ -4950,6 +5118,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   selectOnNavigation={true}
                   selection={true}
                   upward={false}
+                  value="some value"
                   wrapSelection={true}
                 >
                   <Ref
@@ -4965,19 +5134,17 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           <div
                             aria-atomic="true"
                             aria-live="polite"
-                            class="default text"
+                            class="text"
                             role="alert"
-                          >
-                            Location
-                          </div>
+                          />
                           <i
-                            class="icon"
+                            class="icon clear"
                           >
                             <svg
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M20,8.5l-8,7-8-7Z"
+                                d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                 fill="currentColor"
                               />
                             </svg>
@@ -5055,19 +5222,17 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                             <div
                               aria-atomic="true"
                               aria-live="polite"
-                              class="default text"
+                              class="text"
                               role="alert"
-                            >
-                              Location
-                            </div>
+                            />
                             <i
-                              class="icon"
+                              class="icon clear"
                             >
                               <svg
                                 viewBox="0 0 24 24"
                               >
                                 <path
-                                  d="M20,8.5l-8,7-8-7Z"
+                                  d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                   fill="currentColor"
                                 />
                               </svg>
@@ -5147,13 +5312,11 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         <div
                           aria-atomic={true}
                           aria-live="polite"
-                          className="default text"
+                          className="text"
                           role="alert"
-                        >
-                          Location
-                        </div>
+                        />
                         <Icon
-                          className=""
+                          className="clear"
                           color={null}
                           hasBorder={false}
                           isButton={false}
@@ -5163,20 +5326,20 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           isLabelLeft={false}
                           labelText={null}
                           labelWeight={null}
-                          name="caret down"
+                          name="close"
                           onClick={[Function]}
                           path={null}
                           size={null}
                         >
                           <i
-                            className="icon"
+                            className="icon clear"
                             onClick={[Function]}
                           >
                             <svg
                               viewBox="0 0 24 24"
                             >
                               <path
-                                d="M20,8.5l-8,7-8-7Z"
+                                d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                 fill="currentColor"
                               />
                             </svg>
@@ -5336,6 +5499,12 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
               onChange={[Function]}
               onFocusChange={[Function]}
               startDatePlaceholderText="Check in"
+              value={
+                Object {
+                  "endDtate": "1970-01-01T00:00:00.000Z",
+                  "startDate": "1970-01-01T00:00:00.000Z",
+                }
+              }
               willOpenAbove={false}
             >
               <Responsive
@@ -5350,6 +5519,12 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 onFocusChange={[Function]}
                 onUpdate={[Function]}
                 startDatePlaceholderText="Check in"
+                value={
+                  Object {
+                    "endDtate": "1970-01-01T00:00:00.000Z",
+                    "startDate": "1970-01-01T00:00:00.000Z",
+                  }
+                }
                 willOpenAbove={false}
                 windowInnerWidth={1024}
               >
@@ -5367,6 +5542,12 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   onChange={[Function]}
                   onFocusChange={[Function]}
                   startDatePlaceholderText="Check in"
+                  value={
+                    Object {
+                      "endDtate": "1970-01-01T00:00:00.000Z",
+                      "startDate": "1970-01-01T00:00:00.000Z",
+                    }
+                  }
                   willOpenAbove={false}
                   windowInnerWidth={1024}
                 >
@@ -5382,18 +5563,28 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     mapValueToProps={[Function]}
                     name="dates"
                     onChange={[Function]}
-                    value={null}
+                    value={
+                      Object {
+                        "endDtate": "1970-01-01T00:00:00.000Z",
+                        "startDate": "1970-01-01T00:00:00.000Z",
+                      }
+                    }
                   >
                     <Input
-                      className=""
+                      className="dirty"
                       fluid={false}
                       iconPosition={null}
                       name="dates"
                       type="text"
-                      value={null}
+                      value={
+                        Object {
+                          "endDtate": "1970-01-01T00:00:00.000Z",
+                          "startDate": "1970-01-01T00:00:00.000Z",
+                        }
+                      }
                     >
                       <div
-                        className="ui input"
+                        className="ui input dirty"
                       >
                         <DateRangePicker
                           customArrowIcon={
@@ -5433,7 +5624,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           daySize={52}
                           disabled={false}
                           displayFormat="DD/MM/YYYY"
-                          endDate={null}
                           endDatePlaceholderText="Check out"
                           focusedInput={null}
                           hideKeyboardShortcutsPanel={true}
@@ -5477,7 +5667,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           onFocusChange={[Function]}
                           openDirection="down"
                           showClearDates={true}
-                          startDate={null}
+                          startDate={"1970-01-01T00:00:00.000Z"}
                           startDatePlaceholderText="Check in"
                           withPortal={true}
                         >
@@ -5520,7 +5710,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
               name="guests"
               onBlur={[Function]}
               onChange={[Function]}
-              value=""
+              value={1}
             >
               <InputController
                 adaptOnChangeEvent={[Function]}
@@ -5550,18 +5740,18 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 mapValueToProps={[Function]}
                 name="guests"
                 onChange={[Function]}
-                value=""
+                value={1}
               >
                 <Input
-                  className=""
+                  className="dirty"
                   fluid={false}
                   iconPosition="left"
                   name="guests"
                   type="text"
-                  value=""
+                  value={1}
                 >
                   <div
-                    className="ui left icon input"
+                    className="ui left icon input dirty"
                   >
                     <input
                       autoComplete={null}
@@ -5572,7 +5762,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       onChange={[Function]}
                       placeholder="Guests"
                       type="number"
-                      value=""
+                      value={1}
                     />
                     <Icon
                       className={null}

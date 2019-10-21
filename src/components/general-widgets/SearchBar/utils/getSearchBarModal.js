@@ -9,11 +9,17 @@ import { getFormFieldMarkup } from './getFormFieldMarkup';
 
 /**
  * @param {Object}    props
+ * @param {Object}    state
  * @param {Function}  handleSubmit
  * @param {Function}  persistInputChange
  * @return {Object}
  */
-export const getSearchBarModal = (props, handleSubmit, persistInputChange) => {
+export const getSearchBarModal = (
+  props,
+  state,
+  handleSubmit,
+  persistInputChange
+) => {
   /* eslint-disable react/prop-types */
   const {
     isModalOpen,
@@ -42,7 +48,7 @@ export const getSearchBarModal = (props, handleSubmit, persistInputChange) => {
       <div className="search-bar is-stackable">
         <HorizontalGutters>
           <Form onSubmit={handleSubmit}>
-            {getFormFieldMarkup(props, persistInputChange, false)}
+            {getFormFieldMarkup(props, state, persistInputChange, false)}
           </Form>
         </HorizontalGutters>
       </div>

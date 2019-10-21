@@ -18,26 +18,33 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import { Form } from 'semantic-ui-react';
 import { debounce } from 'debounce';
+import moment from 'moment';
 
 import { Dropdown } from 'inputs/Dropdown';
 import { GridColumn } from 'layout/GridColumn';
 
 import { Component as SearchBar } from './component';
 import { locationOptions } from './mock-data/options';
-import { getInitialValue } from './utils/getInitialValue';
 import { getWillLocationDropdownOpenAbove } from './utils/getWillLocationDropdownOpenAbove';
 
 const INITIAL_VALUE = 'some value';
+const DATE_INITIAL_VALUE = {
+  startDate: moment(0),
+  endDtate: moment(0),
+};
+const GUEST_INITIAL_VALUE = 1;
 const WILL_THEY_OPEN_ABOVE = false;
 
 global.document.addEventListener = jest.fn();
 debounce.mockImplementation(func => func);
-getInitialValue.mockReturnValue(INITIAL_VALUE);
 getWillLocationDropdownOpenAbove.mockReturnValue(WILL_THEY_OPEN_ABOVE);
 
 const props = {
   dateRangePickerLocaleCode: 'ko',
   locationOptions,
+  datesInputValue: DATE_INITIAL_VALUE,
+  guestsInputValue: GUEST_INITIAL_VALUE,
+  locationInputValue: INITIAL_VALUE,
 };
 
 const getSearchBar = overrideProps =>
@@ -48,29 +55,13 @@ const getSearchBarShallow = overrideProps =>
 
 describe('<SearchBar />', () => {
   describe('by default', () => {
-    it('should call `getInitialValue` with the right arguments', () => {
-      const datesInputValue = {};
-      const guestsInputValue = 1;
-      const locationInputValue = 'some locationInputValue ';
-
-      getSearchBarShallow({
-        datesInputValue,
-        guestsInputValue,
-        locationInputValue,
-      });
-
-      expect(getInitialValue).toHaveBeenNthCalledWith(1, datesInputValue);
-      expect(getInitialValue).toHaveBeenNthCalledWith(2, guestsInputValue);
-      expect(getInitialValue).toHaveBeenNthCalledWith(3, locationInputValue);
-    });
-
     it('should set the initial state with the right values', () => {
-      const wrapper = getSearchBarShallow();
+      const wrapper = getSearchBar();
       const actual = wrapper.state();
 
       expect(actual).toEqual({
-        dates: INITIAL_VALUE,
-        guests: INITIAL_VALUE,
+        dates: DATE_INITIAL_VALUE,
+        guests: GUEST_INITIAL_VALUE,
         location: INITIAL_VALUE,
         willLocationDropdownOpenAbove: false,
       });
@@ -315,8 +306,8 @@ describe('<SearchBar />', () => {
       input.simulate('change', name, value);
 
       expect(onChangeInput).toHaveBeenCalledWith({
-        dates: INITIAL_VALUE,
-        guests: INITIAL_VALUE,
+        dates: DATE_INITIAL_VALUE,
+        guests: GUEST_INITIAL_VALUE,
         location: '🍰',
         willLocationDropdownOpenAbove: false,
       });

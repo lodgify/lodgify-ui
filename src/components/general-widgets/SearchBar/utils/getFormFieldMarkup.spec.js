@@ -19,6 +19,7 @@ const getMarkup = overrideProps =>
           ...componentProps,
           ...overrideProps,
         },
+        { localtion: '', dates: {}, guests: 1 },
         Function.prototype,
         willLocationDropdownOpenAbove
       )}

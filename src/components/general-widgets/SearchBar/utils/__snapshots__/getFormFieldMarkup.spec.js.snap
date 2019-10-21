@@ -41,6 +41,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
         getIsDayBlocked={[Function]}
         name="dates"
         onChange={[Function]}
+        value={Object {}}
         willOpenAbove={true}
       />
     </div>
@@ -73,7 +74,7 @@ exports[`getFormFieldMarkup if \`props.locationOptions\` size is greater than 0 
         name="guests"
         onBlur={[Function]}
         onChange={[Function]}
-        value=""
+        value={1}
       />
     </div>
     <div
@@ -97,6 +98,7 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
         getIsDayBlocked={[Function]}
         name="dates"
         onChange={[Function]}
+        value={Object {}}
         willOpenAbove={true}
       />
     </div>
@@ -129,7 +131,7 @@ exports[`getFormFieldMarkup should render the right structure\` 1`] = `
         name="guests"
         onBlur={[Function]}
         onChange={[Function]}
-        value=""
+        value={1}
       />
     </div>
     <div

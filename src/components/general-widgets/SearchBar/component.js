@@ -12,7 +12,6 @@ import { ICON_NAMES } from 'elements/Icon';
 import { Button } from 'elements/Button';
 import { CHECK_IN, CHECK_OUT, GUESTS, LOCATION } from 'utils/default-strings';
 
-import { getInitialValue } from './utils/getInitialValue';
 import { getWillLocationDropdownOpenAbove } from './utils/getWillLocationDropdownOpenAbove';
 import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
 import { getSearchBarModal } from './utils/getSearchBarModal';
@@ -22,12 +21,22 @@ import { getSearchBarModal } from './utils/getSearchBarModal';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
-  state = {
-    dates: getInitialValue(this.props.datesInputValue),
-    guests: getInitialValue(this.props.guestsInputValue),
-    location: getInitialValue(this.props.locationInputValue),
-    willLocationDropdownOpenAbove: this.props.willLocationDropdownOpenAbove,
-  };
+  constructor(props) {
+    super(props);
+    const {
+      datesInputValue,
+      guestsInputValue,
+      locationInputValue,
+      willLocationDropdownOpenAbove,
+    } = this.props;
+
+    this.state = {
+      dates: datesInputValue,
+      guests: guestsInputValue,
+      location: locationInputValue,
+      willLocationDropdownOpenAbove: willLocationDropdownOpenAbove,
+    };
+  }
 
   componentDidMount = () => {
     if (this.props.isDisplayedAsModal) return;
@@ -105,12 +114,18 @@ export class Component extends PureComponent {
             {summaryElement}
             <ShowOn computer widescreen>
               <Form onSubmit={this.handleSubmit}>
-                {getFormFieldMarkup(this.props, this.persistInputChange, true)}
+                {getFormFieldMarkup(
+                  this.props,
+                  this.state,
+                  this.persistInputChange,
+                  true
+                )}
               </Form>
             </ShowOn>
             <ShowOn mobile tablet>
               {getSearchBarModal(
                 this.props,
+                this.state,
                 this.handleSubmit,
                 this.persistInputChange
               )}
@@ -120,6 +135,7 @@ export class Component extends PureComponent {
           <Form onSubmit={this.handleSubmit}>
             {getFormFieldMarkup(
               this.props,
+              this.state,
               this.persistInputChange,
               this.state.willLocationDropdownOpenAbove
             )}

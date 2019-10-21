@@ -9,15 +9,16 @@ import { DateRangePicker } from 'inputs/DateRangePicker';
 /**
  * @param  {Object}   props
  * @param  {string}   props.dateRangePickerLocaleCode
- * @param  {Object}   props.datesInputValue
  * @param  {Function} props.datesInputOnFocusChange
  * @param  {Function} props.getIsDayBlocked
- * @param  {string}   props.guestsInputValue
- * @param  {string}   props.locationInputValue
  * @param  {Object[]} props.locationOptions
  * @param  {Node}     props.searchButton
+ * @param  {Object} state
+ * @param  {string} state.location
+ * @param  {Object} state.dates
+ * @param  {number} state.guests
  * @param  {Function} persistInputChange
- * @param  {boolean}  willLocationDropdownOpenAbove
+ * @param  {boolean} willLocationDropdownOpenAbove
  * @return {Object}
  */
 export const getFormFieldMarkup = (
@@ -28,17 +29,15 @@ export const getFormFieldMarkup = (
     datesCheckOutLabel,
     datesInputFocusedInput,
     datesInputOnFocusChange,
-    datesInputValue,
     getIsDayBlocked,
     guestsInputLabel,
-    guestsInputValue,
     isDateRangePickerLoading,
     locationInputLabel,
-    locationInputValue,
     locationOptions,
     searchButton,
     /* eslint-enable react/prop-types */
   },
+  { location, dates, guests },
   persistInputChange,
   willLocationDropdownOpenAbove
 ) => (
@@ -51,7 +50,7 @@ export const getFormFieldMarkup = (
           name="location"
           onChange={persistInputChange}
           options={locationOptions}
-          value={locationInputValue}
+          value={location}
           willOpenAbove={willLocationDropdownOpenAbove}
         />
       </div>
@@ -67,7 +66,7 @@ export const getFormFieldMarkup = (
         onChange={persistInputChange}
         onFocusChange={datesInputOnFocusChange}
         startDatePlaceholderText={datesCheckInLabel}
-        value={datesInputValue}
+        value={dates}
         willOpenAbove={willLocationDropdownOpenAbove}
       />
     </div>
@@ -78,7 +77,7 @@ export const getFormFieldMarkup = (
         min={0}
         name="guests"
         onChange={persistInputChange}
-        value={guestsInputValue}
+        value={guests}
       />
     </div>
     <div className="button-container">{searchButton}</div>
