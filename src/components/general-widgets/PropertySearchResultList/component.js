@@ -68,6 +68,7 @@ class Component extends PureComponent {
       resultsCountText,
       renderResultsCountText,
       renderShowingResultsText,
+      sortResultsWrapperClassName,
     } = this.props;
     const propertySearchResultsToDisplay = getPropertySearchResultsToDisplay(
       activePage,
@@ -78,7 +79,11 @@ class Component extends PureComponent {
     return (
       <div className="property-search-result-list">
         <div className="result-list-container">
-          <FlexContainer alignItems="center" justifyContent="space-between">
+          <FlexContainer
+            alignItems="center"
+            className={sortResultsWrapperClassName}
+            justifyContent="space-between"
+          >
             {isShowingPlaceholder ? (
               <FlexContainer>
                 <TextPlaceholder length="short" />
@@ -173,6 +178,7 @@ Component.defaultProps = {
   renderResultsCountText: getResultsCountText,
   renderShowingResultsText: getShowingResultsText,
   resultsCountText: RESULTS,
+  sortResultsWrapperClassName: null,
 };
 
 Component.propTypes = {
@@ -240,6 +246,8 @@ Component.propTypes = {
   renderShowingResultsText: PropTypes.func,
   /** The text to display alongside the results count. */
   resultsCountText: PropTypes.string,
+  /** A class name to control the styles of the sort dropdown wrapper. */
+  sortResultsWrapperClassName: PropTypes.string,
 };
 
 export const ComponentWithResponsive = withResponsive(Component);
