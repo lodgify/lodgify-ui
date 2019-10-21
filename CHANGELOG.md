@@ -1,3 +1,10 @@
+# [1.250.0](https://github.com/lodgify/lodgify-ui/compare/v1.249.2...v1.250.0) (2019-10-21)
+
+
+### Features
+
+* **PropertySearchResultList:** expose class prop for sort wrapper ([4d9e716](https://github.com/lodgify/lodgify-ui/commit/4d9e716))
+
 ## [1.249.2](https://github.com/lodgify/lodgify-ui/compare/v1.249.1...v1.249.2) (2019-10-18)
 
 
