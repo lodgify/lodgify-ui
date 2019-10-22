@@ -11,13 +11,13 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
+import classnames from 'classnames';
 import Heading from 'rsg-components/Heading';
 import Styled from 'rsg-components/Styled';
 
 function SectionHeadingRenderer({ classes, children, toolbar, id, href, depth, deprecated }) {
 	const headingLevel = Math.min(6, depth);
-	const sectionNameClasses = cx(classes.sectionName, {
+	const sectionNameClasses = classnames(classes.sectionName, {
 		[classes.isDeprecated]: deprecated,
 	});
 

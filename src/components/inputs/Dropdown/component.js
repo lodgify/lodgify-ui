@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { some } from 'utils/some';
 import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
@@ -100,7 +100,7 @@ export class Component extends PureComponent {
 
     return (
       <div
-        className={getClassNames('dropdown-container', {
+        className={classnames('dropdown-container', {
           'has-images': hasImages,
           'is-compact': isCompact,
           dirty:

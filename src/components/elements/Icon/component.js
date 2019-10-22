@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { Paragraph } from 'typography/Paragraph';
 
@@ -29,7 +29,7 @@ export const Component = ({
   ...otherProps
 }) => (
   <i
-    className={getClassNames('icon', color, size, className, {
+    className={classnames('icon', color, size, className, {
       circular: isCircular,
       'has-border': hasBorder,
       'inverted grey': isDisabled,

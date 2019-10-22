@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { debounce } from 'debounce';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 import { Menu } from 'semantic-ui-react';
 
 import { HorizontalGutters } from 'layout/HorizontalGutters';
@@ -73,7 +73,7 @@ export class Component extends PureComponent {
 
     return (
       <header
-        className={getClassNames({
+        className={classnames({
           'is-background-filled': isBackgroundFilled,
           'is-opaque': isOpaque,
         })}

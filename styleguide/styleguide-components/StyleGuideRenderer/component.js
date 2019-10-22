@@ -14,7 +14,7 @@ import PropTypes from 'prop-types';
 import Logo from 'rsg-components/Logo';
 import Markdown from 'rsg-components/Markdown';
 import Styled from 'rsg-components/Styled';
-import cx from 'classnames';
+import classnames from 'classnames';
 import Ribbon from 'rsg-components/Ribbon';
 
 // Lodgify UI import start
@@ -83,11 +83,11 @@ const styles = ({ color, fontFamily, fontSize, sidebarWidth, mq, space, maxWidth
 	},
 	codeToggle: {
 		cursor: 'pointer',
-    position: 'fixed',
-    right: 0,
-    bottom: 0,
-    padding: space[2],
-    color: color.white,
+		position: 'fixed',
+		right: 0,
+		bottom: 0,
+		padding: space[2],
+		color: color.white,
 		transition: 'color 0.15s ease 0.15s',
 		zIndex: zIndices.codeToggle,
 	},
@@ -148,7 +148,7 @@ export class StyleGuideRenderer extends React.Component {
 		this.setState({ isCodeVisible: !this.state.isCodeVisible });
 	}
 
-	render () {
+	render() {
 		const {
 			classes,
 			title,
@@ -168,40 +168,42 @@ export class StyleGuideRenderer extends React.Component {
 		// Lodgify UI script end
 
 		return (
-			<div className={cx(classes.root, hasSidebar && classes.hasSidebar)}>
+			<div className={classnames(classes.root, hasSidebar && classes.hasSidebar)}>
 				{/* Lodgify UI markup start */}
 				{getIsDevelopmentServer() || <MobilePlaceholder />}
 				<AlphaFlag />
-				<main className={cx(
+				<main className={classnames(
 					classes.content, {
-						[classes.hasDarkPanel]: getIsXLargeScreen() && isCodeVisible
-					})}>
+					[classes.hasDarkPanel]: getIsXLargeScreen() && isCodeVisible
+				})}>
 					{getIsXLargeScreen() &&
 						<div
-							className={cx(
+							className={classnames(
 								classes.codeToggle,
 								{ [classes.isDarkText]: !isCodeVisible }
 							)}
 							onClick={this.handleClickViewCode}
 						>
 							{`${this.state.isCodeVisible ? 'Hide' : 'Show'} code`}
-						</div>}
-				{/* Lodgify UI markup end */}
+						</div >}
+					{/* Lodgify UI markup end */}
 					{children}
 					<footer className={classes.footer}>
 						<Markdown text={`Generated with [React Styleguidist](${homepageUrl})`} />
 					</footer>
-				</main>
-				{hasSidebar && (
-					<div className={classes.sidebar}>
-						<div className={classes.logo}>
-							<Logo>{title}</Logo>
+				</main >
+				{
+					hasSidebar && (
+						<div className={classes.sidebar}>
+							<div className={classes.logo}>
+								<Logo>{title}</Logo>
+							</div>
+							{toc}
 						</div>
-						{toc}
-					</div>
-				)}
+					)
+				}
 				<Ribbon />
-			</div>
+			</div >
 		);
 	}
 }
@@ -221,8 +223,8 @@ StyleGuideRenderer.propTypes = {
 
 // Lodgify UI script start
 StyleGuideRenderer.childContextTypes = {
-  handleClickViewCode: PropTypes.func,
-  isCodeVisible: PropTypes.bool,
+	handleClickViewCode: PropTypes.func,
+	isCodeVisible: PropTypes.bool,
 };
 // Lodgify UI script end
 

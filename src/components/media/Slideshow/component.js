@@ -2,7 +2,7 @@ import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import ImageGallery from 'react-image-gallery';
 import get from 'get-value';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
@@ -49,7 +49,7 @@ export class Component extends PureComponent {
         {headingText && <Heading>{headingText}</Heading>}
         {descriptionText && <Paragraph>{descriptionText}</Paragraph>}
         <ImageGallery
-          additionalClass={getClassNames('', {
+          additionalClass={classnames({
             'fit-height': isStretched,
             'no-shadow': !hasShadow,
             'no-border-radius': !isRounded,

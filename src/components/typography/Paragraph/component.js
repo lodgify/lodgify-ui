@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 const MEDIUM = 'medium';
 const TINY = 'tiny';
@@ -11,7 +11,7 @@ const TINY = 'tiny';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ children, isCompact, size, weight }) => (
   <p
-    className={getClassNames(weight, {
+    className={classnames(weight, {
       tiny: size === TINY,
       'is-compact': isCompact,
     })}

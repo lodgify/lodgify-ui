@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Header } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { getHeadingNumber } from './getHeadingNumber';
 
@@ -21,7 +21,7 @@ export const Component = ({
 }) => (
   <Header
     as={`h${getHeadingNumber(SIZES, size)}`}
-    className={getClassNames(className, { 'has-no-margin': !hasMargin })}
+    className={classnames(className, { 'has-no-margin': !hasMargin })}
     inverted={isColorInverted}
     textAlign={textAlign}
   >

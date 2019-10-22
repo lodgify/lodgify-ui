@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 import { Form } from 'semantic-ui-react';
 import { debounce } from 'debounce';
 import isEqual from 'fast-deep-equal';
@@ -103,7 +103,7 @@ export class Component extends PureComponent {
       getSearchBarModal(this.props, this.handleSubmit, this.persistInputChange)
     ) : (
       <div
-        className={getClassNames(className, 'search-bar', {
+        className={classnames(className, 'search-bar', {
           'is-fixed': isFixed,
           'is-stackable': isStackable,
         })}

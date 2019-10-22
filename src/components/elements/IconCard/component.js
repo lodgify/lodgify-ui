@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Label } from 'semantic-ui-react';
-import cx from 'classnames';
+import classnames from 'classnames';
 
 import { getParagraphsFromStrings } from 'utils/get-paragraphs-from-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
@@ -22,7 +22,7 @@ export const Component = ({
 }) => (
   <Label
     basic={!isFilled}
-    className={cx('icon-card', {
+    className={classnames('icon-card', {
       'is-large': size === 'large',
       'left aligned': isLeftAligned,
     })}

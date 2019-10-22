@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Checkbox } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { InputController } from '../InputController';
 
@@ -38,7 +38,7 @@ export const Component = ({
     value={isChecked}
   >
     <Checkbox
-      className={getClassNames({
+      className={classnames({
         'is-label-left': isLabelLeft,
         'is-fluid': isFluid,
       })}

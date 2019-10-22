@@ -1,7 +1,7 @@
 import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Card, Segment } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { getToggledIsActiveState } from 'utils/get-toggled-is-active-state';
 import { getCardPlaceholderMarkup } from 'utils/get-card-placeholder-markup';
@@ -68,7 +68,7 @@ export class Component extends PureComponent {
 
     return (
       <div
-        className={getClassNames('ui', 'card', 'has-search-result', {
+        className={classnames('ui', 'card', 'has-search-result', {
           active: isActive || this.state.isActive,
           'is-compact': isCompact,
         })}

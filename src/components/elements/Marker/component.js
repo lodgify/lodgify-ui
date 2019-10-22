@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { getToggledIsActiveState } from 'utils/get-toggled-is-active-state';
 
@@ -33,7 +33,7 @@ export class Component extends PureComponent {
 
   render = () => (
     <div
-      className={getClassNames('ui', 'marker', {
+      className={classnames('ui', 'marker', {
         active: this.props.isActive || this.state.isActive,
       })}
       onClick={this.handleClick}

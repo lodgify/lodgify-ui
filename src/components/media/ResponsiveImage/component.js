@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
 import { withLazyLoad } from 'utils/with-lazy-load';
@@ -55,7 +55,7 @@ export class Component extends PureComponent {
 
     return (
       <figure
-        className={getClassNames('responsive-image', {
+        className={classnames('responsive-image', {
           'has-blurred-children': !!placeholderImageUrl && !isImageLoaded,
           'has-placeholder': !!placeholderImageUrl,
           'is-fluid': isFluid,

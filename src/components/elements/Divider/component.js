@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Divider } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { getIsSizeLarge } from './utils/getIsSizeLarge';
 
@@ -11,7 +11,7 @@ import { getIsSizeLarge } from './utils/getIsSizeLarge';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ className, hasLine, size }) => (
   <Divider
-    className={getClassNames(className, {
+    className={classnames(className, {
       'is-size-small': size === 'small',
       'is-size-huge': size === 'huge',
     })}

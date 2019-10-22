@@ -1,5 +1,5 @@
 import React from 'react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { getHasObjectProperty } from 'utils/get-has-object-property';
@@ -37,7 +37,7 @@ export const adaptOptions = (options, hasImages) => {
   }
   if (getHasObjectProperty(options, 'indent')) {
     return options.map(({ indent, label, ...otherProps }, index) => ({
-      className: getClassNames({
+      className: classnames({
         [`indent-${indent}`]: indent,
       }),
       key: buildKeyFromStrings(label, index),
@@ -48,7 +48,7 @@ export const adaptOptions = (options, hasImages) => {
 
   if (getHasObjectProperty(options, 'label')) {
     return options.map(({ label, text, ...otherProps }, index) => ({
-      className: getClassNames({
+      className: classnames({
         'has-label': true,
       }),
       key: buildKeyFromStrings(label, index),

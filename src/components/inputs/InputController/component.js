@@ -9,7 +9,7 @@ import {
   object,
   func,
 } from 'prop-types';
-import cx from 'classnames';
+import classnames from 'classnames';
 import { Input } from 'semantic-ui-react';
 
 import { returnFirstArgument } from 'utils/return-first-argument';
@@ -43,7 +43,7 @@ export const Component = ({
 
   return (
     <Input
-      className={cx({
+      className={classnames({
         dirty: !!value,
         compact: isCompact,
         error: !!error,
@@ -55,14 +55,15 @@ export const Component = ({
       name={name}
       value={value}
     >
-      {cloneElement(children, {
-        [inputOnChangeFunctionName]: handleChange,
-        ref: inputRef,
-        ...mapValueToProps(value),
-      })}
+      {
+        cloneElement(children, {
+          [inputOnChangeFunctionName]: handleChange,
+          ref: inputRef,
+          ...mapValueToProps(value),
+        })}
       {showError && <ErrorMessage errorMessage={error} />}
       {icon}
-    </Input>
+    </Input >
   );
 };
 

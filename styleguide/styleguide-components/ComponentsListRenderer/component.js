@@ -11,7 +11,7 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
+import classnames from 'classnames';
 import Link from 'rsg-components/Link';
 import Styled from 'rsg-components/Styled';
 
@@ -67,7 +67,7 @@ export function ComponentsListRenderer({ classes, items }) {
 			{items.map(({ heading, name, href, content }) => (
 				<li
 					// Lodgify UI custom markup start
-					className={cx(
+					className={classnames(
 						classes.item,
 						{
 							[classes.isChild]: (!content || !content.props.items.length),
@@ -86,8 +86,9 @@ export function ComponentsListRenderer({ classes, items }) {
 					{/* Lodgify UI custom markup end */}
 					{content}
 				</li>
-			))}
-		</ul>
+			))
+			}
+		</ul >
 	);
 }
 

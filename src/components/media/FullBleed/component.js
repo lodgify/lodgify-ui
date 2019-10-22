@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 import { Segment } from 'semantic-ui-react';
 
 import { size } from 'utils/size';
@@ -25,7 +25,7 @@ export const Component = ({
   srcSet,
 }) => (
   <Segment
-    className={getClassNames('full-bleed', {
+    className={classnames('full-bleed', {
       'has-gradient': hasGradient,
       'has-children': size(children) > 0,
     })}

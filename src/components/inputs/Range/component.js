@@ -2,7 +2,7 @@ import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import { Slider, Rail, Tracks, Handles } from 'react-compound-slider';
 import { Label } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { getControlledInputValue } from 'utils/get-controlled-input-value';
 
@@ -90,7 +90,7 @@ export class Component extends PureComponent {
             <Fragment>
               {handles.map(({ id, percent, value }, key) => (
                 <div
-                  className={getClassNames('handle-clickable-area', {
+                  className={classnames('handle-clickable-area', {
                     active: id === this.state.activeHandleID,
                   })}
                   key={key}
