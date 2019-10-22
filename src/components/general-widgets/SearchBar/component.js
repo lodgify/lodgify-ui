@@ -13,8 +13,8 @@ import { Button } from 'elements/Button';
 import { CHECK_IN, CHECK_OUT, GUESTS, LOCATION } from 'utils/default-strings';
 
 import { getWillLocationDropdownOpenAbove } from './utils/getWillLocationDropdownOpenAbove';
-import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
-import { getSearchBarModal } from './utils/getSearchBarModal';
+import { SearchFields } from './components/SearchFields';
+import { SearchModal } from './components/SearchModal';
 
 /**
  * The standard widget for property search.
@@ -34,7 +34,7 @@ export class Component extends PureComponent {
     this.handleScroll();
   };
 
-  componentDidUpdate(previousProps, previousState) {
+  componentDidUpdate(previousProps) {
     const previousInputValueProps = {
       dates: previousProps.datesInputValue,
       guests: previousProps.guestsInputValue,
@@ -50,8 +50,6 @@ export class Component extends PureComponent {
     if (!isEqual(previousInputValueProps, currentInputValueProps)) {
       this.setState(currentInputValueProps);
     }
-
-    !isEqual(previousState, this.state) && this.props.onChangeInput(this.state);
   }
 
   componentWillUnmount = () => {
@@ -73,7 +71,11 @@ export class Component extends PureComponent {
   }, 100);
 
   persistInputChange = (name, value) => {
-    this.setState({ [name]: value });
+    const { onChangeInput } = this.props;
+
+    this.setState({ [name]: value }, () => {
+      onChangeInput(this.state);
+    });
   };
 
   handleSubmit = () => {
@@ -88,9 +90,22 @@ export class Component extends PureComponent {
       isStackable,
       summaryElement,
     } = this.props;
+    const {
+      dates,
+      location,
+      guests,
+      willLocationDropdownOpenAbove,
+    } = this.state;
 
     return isDisplayedAsModal ? (
-      getSearchBarModal(this.props, this.handleSubmit, this.persistInputChange)
+      <SearchModal
+        {...this.props}
+        datesInputValue={dates}
+        guestsInputValue={guests}
+        locationInputValue={location}
+        onInputChange={this.persistInputChange}
+        willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
+      />
     ) : (
       <div
         className={classnames(className, 'search-bar', {
@@ -104,31 +119,37 @@ export class Component extends PureComponent {
             {summaryElement}
             <ShowOn computer widescreen>
               <Form onSubmit={this.handleSubmit}>
-                {getFormFieldMarkup(
-                  this.props,
-                  this.state,
-                  this.persistInputChange,
-                  true
-                )}
+                <SearchFields
+                  {...this.props}
+                  datesInputValue={dates}
+                  guestsInputValue={guests}
+                  locationInputValue={location}
+                  onInputChange={this.persistInputChange}
+                  willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
+                />
               </Form>
             </ShowOn>
             <ShowOn mobile tablet>
-              {getSearchBarModal(
-                this.props,
-                this.state,
-                this.handleSubmit,
-                this.persistInputChange
-              )}
+              <SearchModal
+                {...this.props}
+                datesInputValue={dates}
+                guestsInputValue={guests}
+                locationInputValue={location}
+                onInputChange={this.persistInputChange}
+                willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
+              />
             </ShowOn>
           </HorizontalGutters>
         ) : (
           <Form onSubmit={this.handleSubmit}>
-            {getFormFieldMarkup(
-              this.props,
-              this.state,
-              this.persistInputChange,
-              this.state.willLocationDropdownOpenAbove
-            )}
+            <SearchFields
+              {...this.props}
+              datesInputValue={dates}
+              guestsInputValue={guests}
+              locationInputValue={location}
+              onInputChange={this.persistInputChange}
+              willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
+            />
           </Form>
         )}
       </div>

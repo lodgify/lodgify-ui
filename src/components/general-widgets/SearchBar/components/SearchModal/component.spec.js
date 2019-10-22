@@ -1,8 +1,7 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import moment from 'moment';
 
-import { getSearchBarModal } from './getSearchBarModal';
+import { Component as SearchModal } from './component';
 
 const props = {
   isModalOpen: false,
@@ -10,31 +9,12 @@ const props = {
   modalSummaryElement: null,
   onCloseModal: Function.prototype,
   searchButton: <div />,
+  handleSubmit: () => {},
+  onInputChange: f => f,
 };
-const handleSubmit = () => {};
-const persistInputChange = () => {};
 
 const getModalMarkup = extraProps =>
-  mount(
-    <div>
-      {getSearchBarModal(
-        {
-          ...props,
-          ...extraProps,
-        },
-        {
-          localtion: '',
-          dates: {
-            startDate: moment(),
-            endDate: moment(),
-          },
-          guests: 1,
-        },
-        handleSubmit,
-        persistInputChange
-      )}
-    </div>
-  );
+  mount(<SearchModal {...props} {...extraProps} />);
 
 describe('getSearchBarModal', () => {
   it('should return the right structure', () => {

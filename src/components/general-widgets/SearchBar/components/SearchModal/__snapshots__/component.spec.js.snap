@@ -1,7 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should return the right structure 1`] = `
-<div>
+<SearchModal
+  handleSubmit={[Function]}
+  isModalOpen={false}
+  modalHeadingText="Hello world"
+  modalSummaryElement={<div />}
+  onCloseModal={[Function]}
+  onInputChange={[Function]}
+  searchButton={<div />}
+>
   <Modal
     hasCloseIcon={true}
     hasPadding={true}
@@ -73,11 +81,19 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
       </Portal>
     </Modal>
   </Modal>
-</div>
+</SearchModal>
 `;
 
 exports[`getSearchBarModal should return the right structure 1`] = `
-<div>
+<SearchModal
+  handleSubmit={[Function]}
+  isModalOpen={false}
+  modalHeadingText="Hello world"
+  modalSummaryElement={null}
+  onCloseModal={[Function]}
+  onInputChange={[Function]}
+  searchButton={<div />}
+>
   <Modal
     hasCloseIcon={true}
     hasPadding={true}
@@ -159,5 +175,5 @@ exports[`getSearchBarModal should return the right structure 1`] = `
       </Portal>
     </Modal>
   </Modal>
-</div>
+</SearchModal>
 `;
