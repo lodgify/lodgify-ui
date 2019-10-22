@@ -21,22 +21,12 @@ import { getSearchBarModal } from './utils/getSearchBarModal';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
-  constructor(props) {
-    super(props);
-    const {
-      datesInputValue,
-      guestsInputValue,
-      locationInputValue,
-      willLocationDropdownOpenAbove,
-    } = this.props;
-
-    this.state = {
-      dates: datesInputValue,
-      guests: guestsInputValue,
-      location: locationInputValue,
-      willLocationDropdownOpenAbove: willLocationDropdownOpenAbove,
-    };
-  }
+  state = {
+    dates: this.props.datesInputValue,
+    guests: this.props.guestsInputValue,
+    location: this.props.locationInputValue,
+    willLocationDropdownOpenAbove: this.props.willLocationDropdownOpenAbove,
+  };
 
   componentDidMount = () => {
     if (this.props.isDisplayedAsModal) return;

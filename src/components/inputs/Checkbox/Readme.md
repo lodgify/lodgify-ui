@@ -57,14 +57,14 @@
 
 ```jsx
 const Controller = () => {
-  const [value, setValue] = React.useState(false);
+  const [currentValue, setCurrentValue] = React.useState(false);
   return (
     <Checkbox
-      isChecked={value}
-      onChange={(name, _value) => {
-        setValue(_value);
+      isChecked={currentValue}
+      onChange={(name, value) => {
+        setValue(value);
       }}
-      label={`the checkbox is ${value ? 'checked' : 'unchecked'}`}
+      label={`the checkbox is ${currentValue ? 'checked' : 'unchecked'}`}
     />
   );
 };

@@ -25,27 +25,27 @@ export const Component = ({
   onClick,
   size,
 }) => (
-    <Button
-      basic={isOutlined}
-      circular={isRounded}
-      className={classnames({
-        'has-shadow': !!hasShadow,
-        'has-outline': !!isOutlined,
-      })}
-      compact={isCompact}
-      disabled={isDisabled}
-      floated={isPositionedRight ? 'right' : 'left'}
-      fluid={isFluid}
-      loading={isLoading}
-      onClick={onClick}
-      secondary={isSecondary}
-      size={size}
-      type={isFormSubmit ? 'submit' : 'button'}
-    >
-      {!!icon && <Icon name={icon} />}
-      {children}
-    </Button >
-  );
+  <Button
+    basic={isOutlined}
+    circular={isRounded}
+    className={classnames({
+      'has-shadow': !!hasShadow,
+      'has-outline': !!isOutlined,
+    })}
+    compact={isCompact}
+    disabled={isDisabled}
+    floated={isPositionedRight ? 'right' : 'left'}
+    fluid={isFluid}
+    loading={isLoading}
+    onClick={onClick}
+    secondary={isSecondary}
+    size={size}
+    type={isFormSubmit ? 'submit' : 'button'}
+  >
+    {!!icon && <Icon name={icon} />}
+    {children}
+  </Button>
+);
 
 Component.displayName = 'Button';
 

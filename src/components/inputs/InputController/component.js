@@ -55,15 +55,14 @@ export const Component = ({
       name={name}
       value={value}
     >
-      {
-        cloneElement(children, {
-          [inputOnChangeFunctionName]: handleChange,
-          ref: inputRef,
-          ...mapValueToProps(value),
-        })}
+      {cloneElement(children, {
+        [inputOnChangeFunctionName]: handleChange,
+        ref: inputRef,
+        ...mapValueToProps(value),
+      })}
       {showError && <ErrorMessage errorMessage={error} />}
       {icon}
-    </Input >
+    </Input>
   );
 };
 
