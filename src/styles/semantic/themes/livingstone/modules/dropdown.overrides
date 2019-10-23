@@ -360,6 +360,14 @@
       }
     }
   }
+
+  .visible.menu.transition {
+    width: auto;
+
+    & > .flex-container > p {
+      margin-right: @counterDropdownLabelMarginRight;
+    }
+  }
 }
 
 /*-------------------
