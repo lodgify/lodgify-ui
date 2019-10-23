@@ -1,3 +1,15 @@
+## [1.250.1](https://github.com/lodgify/lodgify-ui/compare/v1.250.0...v1.250.1) (2019-10-23)
+
+
+### Bug Fixes
+
+* renaming variables for better consistency ([7d77d71](https://github.com/lodgify/lodgify-ui/commit/7d77d71))
+* **Checkbox:** allow to use value as a generic input ([88f9360](https://github.com/lodgify/lodgify-ui/commit/88f9360))
+* **InputController:** make controlled by default ([4b9ba20](https://github.com/lodgify/lodgify-ui/commit/4b9ba20))
+* **InputController:** restore onChange interface with name and value ([9c627ab](https://github.com/lodgify/lodgify-ui/commit/9c627ab))
+* **SearchBar:** adapt to controlled form ([34c6022](https://github.com/lodgify/lodgify-ui/commit/34c6022))
+* **SearchBar:** refactor function markup to component ([ef8e566](https://github.com/lodgify/lodgify-ui/commit/ef8e566))
+
 # [1.250.0](https://github.com/lodgify/lodgify-ui/compare/v1.249.2...v1.250.0) (2019-10-21)
 
 
