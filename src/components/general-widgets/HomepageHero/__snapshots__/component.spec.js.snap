@@ -484,6 +484,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                       "datesInputOnFocusChange": [Function],
                                       "datesInputValue": undefined,
                                       "getIsDayBlocked": [Function],
+                                      "guestsCounterLabel": undefined,
                                       "guestsInputLabel": undefined,
                                       "guestsInputValue": undefined,
                                       "isDateRangePickerLoading": undefined,
@@ -512,6 +513,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     datesCheckOutLabel="Check out"
                                     datesInputOnFocusChange={[Function]}
                                     getIsDayBlocked={[Function]}
+                                    guestsCounterLabel="Guests"
                                     guestsInputLabel="Guests"
                                     isDisplayedAsModal={false}
                                     isFixed={false}
@@ -555,6 +557,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                             datesCheckOutLabel="Check out"
                                             datesInputOnFocusChange={[Function]}
                                             getIsDayBlocked={[Function]}
+                                            guestsCounterLabel="Guests"
                                             guestsInputLabel="Guests"
                                             isDisplayedAsModal={false}
                                             isFixed={false}
@@ -1209,6 +1212,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                       datesCheckOutLabel="Check out"
                                       datesInputOnFocusChange={[Function]}
                                       getIsDayBlocked={[Function]}
+                                      guestsCounterLabel="Guests"
                                       guestsInputLabel="Guests"
                                       isDisplayedAsModal={true}
                                       isFixed={false}
@@ -1241,6 +1245,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                         datesCheckOutLabel="Check out"
                                         datesInputOnFocusChange={[Function]}
                                         getIsDayBlocked={[Function]}
+                                        guestsCounterLabel="Guests"
                                         guestsInputLabel="Guests"
                                         handleSubmit={[Function]}
                                         isDisplayedAsModal={true}

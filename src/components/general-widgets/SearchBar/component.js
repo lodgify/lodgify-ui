@@ -168,6 +168,7 @@ Component.defaultProps = {
   datesInputOnFocusChange: Function.prototype,
   datesInputValue: undefined,
   getIsDayBlocked: Function.prototype,
+  guestsCounterLabel: GUESTS,
   guestsInputLabel: GUESTS,
   guestsInputValue: undefined,
   isDateRangePickerLoading: undefined,
@@ -229,7 +230,10 @@ Component.propTypes = {
    */
   // eslint-disable-next-line react/no-unused-prop-types
   getIsDayBlocked: PropTypes.func,
-  /** The label that goes inside the guests input when there is no value. */
+  /** The label that goes along side the guests counter. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  guestsCounterLabel: PropTypes.string,
+  /** The label that goes inside the guests input. */
   // eslint-disable-next-line react/no-unused-prop-types
   guestsInputLabel: PropTypes.string,
   /** The value for the guests input. Used when consuming `SearchBar` as a controlled component. */

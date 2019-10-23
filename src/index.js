@@ -68,6 +68,8 @@ export { SearchBar } from './components/general-widgets/SearchBar';
 
 // Inputs
 export { Checkbox } from './components/inputs/Checkbox';
+export { Counter } from './components/inputs/Counter';
+export { CounterDropdown } from './components/inputs/CounterDropdown';
 export { DateRangePicker } from './components/inputs/DateRangePicker';
 export { Dropdown } from './components/inputs/Dropdown';
 export { ErrorMessage } from './components/inputs/ErrorMessage';

@@ -40,6 +40,7 @@ export const Component = ({
   searchBarDatesInputOnFocusChange,
   searchBarDatesInputValue,
   searchBarGetIsDayBlocked,
+  searchBarGuestsInputCounterLabel,
   searchBarGuestsInputLabel,
   searchBarGuestsInputValue,
   searchBarLocationInputValue,
@@ -67,6 +68,7 @@ export const Component = ({
     onSubmit: searchBarOnSubmit,
     searchButton: searchBarSearchButton,
     isDateRangePickerLoading: isSearchBarDateRangePickerLoading,
+    guestsCounterLabel: searchBarGuestsInputCounterLabel,
   };
 
   return (
@@ -172,6 +174,7 @@ Component.defaultProps = {
   searchBarDatesInputFocusedInput: undefined,
   searchBarDatesInputOnFocusChange: Function.prototype,
   searchBarGetIsDayBlocked: undefined,
+  searchBarGuestsInputCounterLabel: undefined,
   searchBarGuestsInputLabel: undefined,
   searchBarLocationInputLabel: undefined,
   searchBarLocationOptions: undefined,
@@ -273,7 +276,9 @@ Component.propTypes = {
    * @returns {boolean}     - Is the day blocked.
    */
   searchBarGetIsDayBlocked: PropTypes.func,
-  /** The label for the guests input of the search bar when there is no value. */
+  /** The label for the guests input counter of the search bar. */
+  searchBarGuestsInputCounterLabel: PropTypes.string,
+  /** The label for the guests input of the search bar. */
   searchBarGuestsInputLabel: PropTypes.string,
   /** The value for the guests input of the search bar. Used when consuming `HomepageHero` as a controlled component. */
   searchBarGuestsInputValue: PropTypes.number,
