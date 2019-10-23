@@ -14,6 +14,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
     }
   }
   getIsDayBlocked={[Function]}
+  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -92,6 +93,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
             }
           }
           getIsDayBlocked={[Function]}
+          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
@@ -1117,6 +1119,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
     }
   }
   getIsDayBlocked={[Function]}
+  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -1211,6 +1214,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                       }
                     }
                     getIsDayBlocked={[Function]}
+                    guestsCounterLabel="Guests"
                     guestsInputLabel="Guests"
                     guestsInputValue={1}
                     isDisplayedAsModal={false}
@@ -2242,6 +2246,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                   }
                 }
                 getIsDayBlocked={[Function]}
+                guestsCounterLabel="Guests"
                 guestsInputLabel="Guests"
                 guestsInputValue={1}
                 handleSubmit={[Function]}
@@ -2572,6 +2577,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
     }
   }
   getIsDayBlocked={[Function]}
+  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -2651,6 +2657,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
             }
           }
           getIsDayBlocked={[Function]}
+          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
@@ -3675,6 +3682,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
     }
   }
   getIsDayBlocked={[Function]}
+  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -3753,6 +3761,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
             }
           }
           getIsDayBlocked={[Function]}
+          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
@@ -4776,6 +4785,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
     }
   }
   getIsDayBlocked={[Function]}
+  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -4835,6 +4845,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
             }
           }
           getIsDayBlocked={[Function]}
+          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
@@ -5327,6 +5338,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
     }
   }
   getIsDayBlocked={[Function]}
+  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -5387,6 +5399,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
             }
           }
           getIsDayBlocked={[Function]}
+          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
