@@ -1,3 +1,14 @@
+# [1.251.0](https://github.com/lodgify/lodgify-ui/compare/v1.250.1...v1.251.0) (2019-10-23)
+
+
+### Features
+
+* **CounterDropdown:** expose component to api ([67cfba2](https://github.com/lodgify/lodgify-ui/commit/67cfba2))
+* **Dropdown:** add style for counter dropdown ([fd0d775](https://github.com/lodgify/lodgify-ui/commit/fd0d775))
+* **HomepageHero:** expose counter props ([0657fc3](https://github.com/lodgify/lodgify-ui/commit/0657fc3))
+* **PropertyPageSearchBar:** expose counter props ([3bde855](https://github.com/lodgify/lodgify-ui/commit/3bde855))
+* **SearchBar:** expose counter props ([a0e4548](https://github.com/lodgify/lodgify-ui/commit/a0e4548))
+
 ## [1.250.1](https://github.com/lodgify/lodgify-ui/compare/v1.250.0...v1.250.1) (2019-10-23)
 
 
