@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 /**
  * A TextPlaceholder indicates that text content will soon appear in a layout.
@@ -8,7 +8,7 @@ import getClassNames from 'classnames';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ isFluid, length }) => (
   <div
-    className={getClassNames('placeholder text', length, {
+    className={classnames('placeholder text', length, {
       fluid: isFluid,
     })}
   />

@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Checkbox } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { InputController } from '../InputController';
 
@@ -25,6 +25,7 @@ export const Component = ({
   name,
   onChange,
   onClick,
+  value,
 }) => (
   <InputController
     adaptOnChangeEvent={adaptOnChangeEvent}
@@ -35,15 +36,16 @@ export const Component = ({
     mapValueToProps={mapValueToProps}
     name={name}
     onChange={onChange}
-    value={isChecked}
+    value={isChecked === undefined ? value : isChecked}
   >
     <Checkbox
-      className={getClassNames({
+      className={classnames({
         'is-label-left': isLabelLeft,
         'is-fluid': isFluid,
       })}
       disabled={isDisabled}
       label={label}
+      name={name}
       onClick={onClick}
       radio={isRadioButton}
       toggle={isToggle}
@@ -66,6 +68,7 @@ Component.defaultProps = {
   name: '',
   onChange: Function.prototype,
   onClick: Function.prototype,
+  value: undefined,
 };
 
 Component.propTypes = {
@@ -100,4 +103,5 @@ Component.propTypes = {
    * @param {Object} event
    */
   onClick: PropTypes.func,
+  value: PropTypes.oneOfType([PropTypes.bool, PropTypes.string]),
 };

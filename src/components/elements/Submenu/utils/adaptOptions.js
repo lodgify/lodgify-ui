@@ -1,4 +1,4 @@
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { getHasObjectProperty } from 'utils/get-has-object-property';
 
@@ -11,7 +11,7 @@ import { getHasObjectProperty } from 'utils/get-has-object-property';
 export const adaptOptions = options => {
   if (getHasObjectProperty(options, 'label')) {
     return options.map(({ label, text, ...otherProps }) => ({
-      className: getClassNames({
+      className: classnames({
         'has-label': true,
       }),
       label,

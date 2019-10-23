@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 /**
  * A container for laying out children using the
@@ -18,7 +18,7 @@ export const Component = ({
   justifyContent,
 }) => (
   <div
-    className={getClassNames('flex-container', className)}
+    className={classnames('flex-container', className)}
     style={{
       display: 'flex',
       flexGrow: '1',

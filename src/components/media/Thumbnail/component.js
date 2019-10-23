@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { ResponsiveImage } from 'media/ResponsiveImage';
 import { Paragraph } from 'typography/Paragraph';
@@ -23,7 +23,7 @@ export const Component = ({
   size,
 }) => (
   <div
-    className={getClassNames('ui', 'thumbnail', size, className, {
+    className={classnames('ui', 'thumbnail', size, className, {
       'has-margin': hasMargin,
       'is-square': isSquare,
       'is-circular': isCircular,

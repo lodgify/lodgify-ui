@@ -93,12 +93,12 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -108,12 +108,15 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                         mapValueToProps={[Function]}
                         name="firstName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="firstName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -127,6 +130,7 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                               onChange={[Function]}
                               placeholder="First Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -151,12 +155,12 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -166,12 +170,15 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                         mapValueToProps={[Function]}
                         name="lastName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="lastName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -185,6 +192,7 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                               onChange={[Function]}
                               placeholder="Last Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -209,12 +217,12 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -224,12 +232,15 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                         mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="email"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -243,6 +254,7 @@ exports[`<OwnerSignUp /> if \`isBotProtected\` === true should render the right 
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -427,12 +439,12 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -442,12 +454,15 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                         mapValueToProps={[Function]}
                         name="firstName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="firstName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -461,6 +476,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               onChange={[Function]}
                               placeholder="First Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -485,12 +501,12 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -500,12 +516,15 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                         mapValueToProps={[Function]}
                         name="lastName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="lastName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -519,6 +538,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               onChange={[Function]}
                               placeholder="Last Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -543,12 +563,12 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -558,12 +578,15 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                         mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="email"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -577,6 +600,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -620,22 +644,23 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
                         isFocused={false}
                         isValid={false}
-                        label={null}
                         mapValueToProps={[Function]}
                         name="privacyConsent"
                         onChange={[Function]}
+                        value={null}
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="privacyConsent"
                           type="text"
+                          value={null}
                         >
                           <div
                             className="ui input"
@@ -658,9 +683,9 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                   </Paragraph>
                                 </label>
                               }
+                              name="privacyConsent"
                               onChange={[Function]}
                               onClick={[Function]}
-                              placeholder={null}
                               radio={false}
                               toggle={false}
                               type="checkbox"
@@ -677,6 +702,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                     Object {
                                       "current": <input
                                         class="hidden"
+                                        name="privacyConsent"
                                         readonly=""
                                         tabindex="0"
                                         type="checkbox"
@@ -690,6 +716,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                       Object {
                                         "current": <input
                                           class="hidden"
+                                          name="privacyConsent"
                                           readonly=""
                                           tabindex="0"
                                           type="checkbox"
@@ -702,7 +729,7 @@ exports[`<OwnerSignUp /> if \`isPrivacyConsentRequired\` is \`truthy\` should re
                                       checked={false}
                                       className="hidden"
                                       disabled={false}
-                                      placeholder={null}
+                                      name="privacyConsent"
                                       readOnly={true}
                                       tabIndex={0}
                                       type="checkbox"
@@ -932,12 +959,12 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -947,12 +974,15 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                         mapValueToProps={[Function]}
                         name="firstName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="firstName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -966,6 +996,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                               onChange={[Function]}
                               placeholder="First Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -990,12 +1021,12 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1005,12 +1036,15 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                         mapValueToProps={[Function]}
                         name="lastName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="lastName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1024,6 +1058,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                               onChange={[Function]}
                               placeholder="Last Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -1048,12 +1083,12 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1063,12 +1098,15 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                         mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="email"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1082,6 +1120,7 @@ exports[`<OwnerSignUp /> if \`props.errorMessage\` is passed should render the e
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -1275,12 +1314,12 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1290,12 +1329,15 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                         mapValueToProps={[Function]}
                         name="firstName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="firstName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1309,6 +1351,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                               onChange={[Function]}
                               placeholder="First Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -1333,12 +1376,12 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1348,12 +1391,15 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                         mapValueToProps={[Function]}
                         name="lastName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="lastName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1367,6 +1413,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                               onChange={[Function]}
                               placeholder="Last Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -1391,12 +1438,12 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1406,12 +1453,15 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                         mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="email"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1425,6 +1475,7 @@ exports[`<OwnerSignUp /> if \`props.successMessage\` is passed should render the
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -1618,12 +1669,12 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1633,12 +1684,15 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                         mapValueToProps={[Function]}
                         name="firstName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="firstName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1652,6 +1706,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                               onChange={[Function]}
                               placeholder="First Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -1676,12 +1731,12 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1691,12 +1746,15 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                         mapValueToProps={[Function]}
                         name="lastName"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="lastName"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1710,6 +1768,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                               onChange={[Function]}
                               placeholder="Last Name"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>
@@ -1734,12 +1793,12 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                       onBlur={[Function]}
                       onChange={[Function]}
                       type="text"
+                      value=""
                     >
                       <InputController
                         adaptOnChangeEvent={[Function]}
                         error={false}
                         icon={null}
-                        initialValue=""
                         inputOnChangeFunctionName="onChange"
                         isCompact={false}
                         isFluid={false}
@@ -1749,12 +1808,15 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                         mapValueToProps={[Function]}
                         name="email"
                         onChange={[Function]}
+                        value=""
                       >
                         <Input
                           className=""
                           fluid={false}
                           iconPosition={null}
+                          name="email"
                           type="text"
+                          value=""
                         >
                           <div
                             className="ui input"
@@ -1768,6 +1830,7 @@ exports[`<OwnerSignUp /> should render the correct structure 1`] = `
                               onChange={[Function]}
                               placeholder="Email"
                               type="text"
+                              value=""
                             />
                           </div>
                         </Input>

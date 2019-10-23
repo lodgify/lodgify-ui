@@ -1,6 +1,6 @@
 import React, { Fragment, PureComponent } from 'react';
 import { Label, GridColumn, GridRow } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
 import { Grid } from 'layout/Grid';
@@ -49,7 +49,7 @@ export class Component extends PureComponent {
 
     return (
       <div
-        className={getClassNames('ui', 'label', 'price-label', {
+        className={classnames('ui', 'label', 'price-label', {
           active: isActive || this.state.isActive,
           'is-clickable': onClick !== Function.prototype,
           'is-pointing': isPointing,
@@ -62,7 +62,7 @@ export class Component extends PureComponent {
         <Label>
           {!!pricePerPeriod && !periodText ? (
             <Grid
-              className={getClassNames({
+              className={classnames({
                 active: isActive || this.state.isActive,
                 'is-pointing': isPointing,
               })}
@@ -74,7 +74,7 @@ export class Component extends PureComponent {
                 <GridRow>
                   {isPointing && (
                     <div
-                      className={getClassNames('pointer-arrow', 'is-pointing', {
+                      className={classnames('pointer-arrow', 'is-pointing', {
                         active: isActive || this.state.isActive,
                         'has-shadow': hasShadow,
                       })}
@@ -86,7 +86,7 @@ export class Component extends PureComponent {
           ) : (
             <Fragment>
               <Grid
-                className={getClassNames({
+                className={classnames({
                   active: isActive || this.state.isActive,
                   'has-period-text': periodText,
                   'is-pointing': isPointing,
@@ -106,7 +106,7 @@ export class Component extends PureComponent {
               </Grid>
               {isPointing && (
                 <div
-                  className={getClassNames('pointer-arrow', 'is-pointing', {
+                  className={classnames('pointer-arrow', 'is-pointing', {
                     active: isActive || this.state.isActive,
                     'has-shadow': hasShadow,
                   })}
@@ -114,7 +114,7 @@ export class Component extends PureComponent {
               )}
               {isPointing && (
                 <div
-                  className={getClassNames('label-shadow', 'is-pointing', {
+                  className={classnames('label-shadow', 'is-pointing', {
                     active: isActive || this.state.isActive,
                     'has-shadow': hasShadow,
                   })}

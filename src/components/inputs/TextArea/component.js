@@ -30,6 +30,7 @@ export const Component = ({
       autoComplete={autoComplete}
       maxLength={maxCharacters}
       onBlur={onBlur}
+      placeholder={label}
       rows="8"
     />
   </InputController>
@@ -46,7 +47,7 @@ Component.defaultProps = {
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
-  value: undefined,
+  value: '',
 };
 
 Component.propTypes = {

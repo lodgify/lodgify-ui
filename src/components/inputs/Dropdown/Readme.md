@@ -21,7 +21,7 @@ const { options } = require('./mock-data/options');
   <Divider />
   <Divider />
   <Dropdown error="Something's not right" label="Location" options={options} />
-</div>
+</div>;
 ```
 
 #### Disabled
@@ -29,7 +29,7 @@ const { options } = require('./mock-data/options');
 ```jsx
 const { options } = require('./mock-data/options');
 
-<Dropdown isDisabled label="Location" options={options} />
+<Dropdown isDisabled label="Location" options={options} />;
 ```
 
 #### Valid
@@ -37,7 +37,7 @@ const { options } = require('./mock-data/options');
 ```jsx
 const { options } = require('./mock-data/options');
 
-<Dropdown isValid label="Location" options={options} />
+<Dropdown isValid label="Location" options={options} />;
 ```
 
 ##### Valid with Icon
@@ -45,8 +45,7 @@ const { options } = require('./mock-data/options');
 ```jsx
 const { options } = require('./mock-data/options');
 
-
-<Dropdown isValid label="Location" options={options} icon="map pin" />
+<Dropdown isValid label="Location" options={options} icon="map pin" />;
 ```
 
 ### Variations
@@ -64,7 +63,7 @@ const { options } = require('./mock-data/options');
 ```jsx
 const { options } = require('./mock-data/options');
 
-<Dropdown willOpenAbove label="Location" options={options} />
+<Dropdown willOpenAbove label="Location" options={options} />;
 ```
 
 #### Icon
@@ -118,16 +117,16 @@ Options can display different content in the dropdown menu to the text displayed
 
 ```jsx
 const optionsWithContent = [
- {
-   content: 'Paris is great',
-   text: 'France',
-   value: 'fr',
- },
- {
-   content: 'Berlin is awesome',
-   text: 'Germany',
-   value: 'de',
- }
+  {
+    content: 'Paris is great',
+    text: 'France',
+    value: 'fr',
+  },
+  {
+    content: 'Berlin is awesome',
+    text: 'Germany',
+    value: 'de',
+  },
 ];
 
 <Dropdown label="Places" options={optionsWithContent} />;
@@ -195,27 +194,40 @@ const { currencyOptions } = require('./mock-data/options');
 #### Controlled
 
 ```jsx
-const {useState} = require('react');
+const { useState } = require('react');
 
 const Controller = () => {
   const [value, setValue] = useState('1');
-  
-  const options = [{
-    value: '1',
-    text: 'Unu',
-  }, {
-    value: '2',
-    text: 'Du'
-  }, {
-    value: '3',
-    text: 'Tri'
-  }];
+
+  const options = [
+    {
+      value: '1',
+      text: 'Unu',
+    },
+    {
+      value: '2',
+      text: 'Du',
+    },
+    {
+      value: '3',
+      text: 'Tri',
+    },
+  ];
 
   const onChange = (name, value) => setValue(value);
 
-  return <Dropdown value={value} onChange={onChange} options={options} label="Nombro" />
+  return (
+    <React.Fragment>
+      <Dropdown
+        value={value}
+        onChange={onChange}
+        options={options}
+        label="Nombro"
+      />
+      <p>you selected {value}</p>
+    </React.Fragment>
+  );
+};
 
-}
-
-<Controller />
+<Controller />;
 ```

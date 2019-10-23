@@ -9,7 +9,6 @@ exports[`<SingleDatePicker /> should render the right structure 1`] = `
   name=""
   onBlur={[Function]}
   onChange={[Function]}
-  placeholderText=""
   willOpenAbove={false}
 >
   <InputController
@@ -22,16 +21,18 @@ exports[`<SingleDatePicker /> should render the right structure 1`] = `
     isFluid={false}
     isFocused={false}
     isValid={false}
-    label=""
     mapValueToProps={[Function]}
     name=""
     onChange={[Function]}
+    value={null}
   >
     <Input
       className=""
       fluid={false}
       iconPosition={null}
+      name=""
       type="text"
+      value={null}
     >
       <div
         className="ui input"
@@ -99,7 +100,6 @@ exports[`<SingleDatePicker /> should render the right structure 1`] = `
           onDateChange={[Function]}
           onFocusChange={[Function]}
           openDirection="down"
-          placeholder=""
           withPortal={false}
         >
           <div />

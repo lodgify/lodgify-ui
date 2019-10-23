@@ -3,7 +3,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import isValidUrl from 'is-url';
 import isValidHTML from 'is-html';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { getPlayerCss } from './utils/getPlayerCss';
 import { getReactPlayerProps } from './utils/getReactPlayerProps';
@@ -16,7 +16,7 @@ import { logWarning } from './utils/logWarning';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ height, isResponsive, videoSource, width }) => {
   const playerWrapperProps = {
-    className: getClassNames('video', 'player-wrapper', {
+    className: classnames('video', 'player-wrapper', {
       'is-url': isValidUrl(videoSource),
       'is-html': isValidHTML(videoSource),
       'is-responsive': isResponsive,

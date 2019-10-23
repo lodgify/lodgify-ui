@@ -28,3 +28,13 @@
 ```jsx
 <TextArea label="Search" />
 ```
+
+#### Controlled
+
+```jsx
+const Controller = () => {
+  const [value, setValue] = React.useState(null);
+  return <TextArea value={value} onChange={setValue} />;
+};
+<Controller />;
+```

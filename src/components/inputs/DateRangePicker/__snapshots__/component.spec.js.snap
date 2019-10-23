@@ -30,22 +30,23 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
         adaptOnChangeEvent={[Function]}
         error={false}
         icon={null}
-        initialValue=""
         inputOnChangeFunctionName="onDatesChange"
         isCompact={false}
         isFluid={false}
         isFocused={false}
         isValid={false}
-        label={null}
         mapValueToProps={[Function]}
         name=""
         onChange={[Function]}
+        value={null}
       >
         <Input
           className=""
           fluid={false}
           iconPosition={null}
+          name=""
           type="text"
+          value={null}
         >
           <div
             className="ui input"
@@ -132,7 +133,6 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
               onDatesChange={[Function]}
               onFocusChange={[Function]}
               openDirection="down"
-              placeholder={null}
               showClearDates={true}
               startDate={null}
               startDateId="start_date_id_"
@@ -179,22 +179,23 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
         adaptOnChangeEvent={[Function]}
         error={false}
         icon={null}
-        initialValue=""
         inputOnChangeFunctionName="onDatesChange"
         isCompact={false}
         isFluid={false}
         isFocused={false}
         isValid={false}
-        label={null}
         mapValueToProps={[Function]}
         name=""
         onChange={[Function]}
+        value={null}
       >
         <Input
           className=""
           fluid={false}
           iconPosition={null}
+          name=""
           type="text"
+          value={null}
         >
           <div
             className="ui input"
@@ -281,7 +282,6 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
               onDatesChange={[Function]}
               onFocusChange={[Function]}
               openDirection="down"
-              placeholder={null}
               showClearDates={true}
               startDate={null}
               startDateId="start_date_id_"
@@ -331,22 +331,23 @@ exports[`<DateRangePicker /> \`render\` if \`isLoading\` === \`true\` should ren
         adaptOnChangeEvent={[Function]}
         error={false}
         icon={null}
-        initialValue=""
         inputOnChangeFunctionName="onDatesChange"
         isCompact={false}
         isFluid={false}
         isFocused={false}
         isValid={false}
-        label={null}
         mapValueToProps={[Function]}
         name=""
         onChange={[Function]}
+        value={null}
       >
         <Input
           className=""
           fluid={false}
           iconPosition={null}
+          name=""
           type="text"
+          value={null}
         >
           <div
             className="ui input"
@@ -433,7 +434,6 @@ exports[`<DateRangePicker /> \`render\` if \`isLoading\` === \`true\` should ren
               onDatesChange={[Function]}
               onFocusChange={[Function]}
               openDirection="down"
-              placeholder={null}
               showClearDates={true}
               startDate={null}
               startDateId="start_date_id_"

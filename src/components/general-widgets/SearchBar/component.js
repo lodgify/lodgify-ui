@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 import { Form } from 'semantic-ui-react';
 import { debounce } from 'debounce';
 import isEqual from 'fast-deep-equal';
@@ -12,10 +12,9 @@ import { ICON_NAMES } from 'elements/Icon';
 import { Button } from 'elements/Button';
 import { CHECK_IN, CHECK_OUT, GUESTS, LOCATION } from 'utils/default-strings';
 
-import { getInitialValue } from './utils/getInitialValue';
 import { getWillLocationDropdownOpenAbove } from './utils/getWillLocationDropdownOpenAbove';
-import { getFormFieldMarkup } from './utils/getFormFieldMarkup';
-import { getSearchBarModal } from './utils/getSearchBarModal';
+import { SearchFields } from './components/SearchFields';
+import { SearchModal } from './components/SearchModal';
 
 /**
  * The standard widget for property search.
@@ -23,9 +22,9 @@ import { getSearchBarModal } from './utils/getSearchBarModal';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export class Component extends PureComponent {
   state = {
-    dates: getInitialValue(this.props.datesInputValue),
-    guests: getInitialValue(this.props.guestsInputValue),
-    location: getInitialValue(this.props.locationInputValue),
+    dates: this.props.datesInputValue,
+    guests: this.props.guestsInputValue,
+    location: this.props.locationInputValue,
     willLocationDropdownOpenAbove: this.props.willLocationDropdownOpenAbove,
   };
 
@@ -35,7 +34,7 @@ export class Component extends PureComponent {
     this.handleScroll();
   };
 
-  componentDidUpdate(previousProps, previousState) {
+  componentDidUpdate(previousProps) {
     const previousInputValueProps = {
       dates: previousProps.datesInputValue,
       guests: previousProps.guestsInputValue,
@@ -51,8 +50,6 @@ export class Component extends PureComponent {
     if (!isEqual(previousInputValueProps, currentInputValueProps)) {
       this.setState(currentInputValueProps);
     }
-
-    !isEqual(previousState, this.state) && this.props.onChangeInput(this.state);
   }
 
   componentWillUnmount = () => {
@@ -74,7 +71,11 @@ export class Component extends PureComponent {
   }, 100);
 
   persistInputChange = (name, value) => {
-    this.setState({ [name]: value });
+    const { onChangeInput } = this.props;
+
+    this.setState({ [name]: value }, () => {
+      onChangeInput(this.state);
+    });
   };
 
   handleSubmit = () => {
@@ -89,12 +90,25 @@ export class Component extends PureComponent {
       isStackable,
       summaryElement,
     } = this.props;
+    const {
+      dates,
+      location,
+      guests,
+      willLocationDropdownOpenAbove,
+    } = this.state;
 
     return isDisplayedAsModal ? (
-      getSearchBarModal(this.props, this.handleSubmit, this.persistInputChange)
+      <SearchModal
+        {...this.props}
+        datesInputValue={dates}
+        guestsInputValue={guests}
+        locationInputValue={location}
+        onInputChange={this.persistInputChange}
+        willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
+      />
     ) : (
       <div
-        className={getClassNames(className, 'search-bar', {
+        className={classnames(className, 'search-bar', {
           'is-fixed': isFixed,
           'is-stackable': isStackable,
         })}
@@ -105,24 +119,37 @@ export class Component extends PureComponent {
             {summaryElement}
             <ShowOn computer widescreen>
               <Form onSubmit={this.handleSubmit}>
-                {getFormFieldMarkup(this.props, this.persistInputChange, true)}
+                <SearchFields
+                  {...this.props}
+                  datesInputValue={dates}
+                  guestsInputValue={guests}
+                  locationInputValue={location}
+                  onInputChange={this.persistInputChange}
+                  willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
+                />
               </Form>
             </ShowOn>
             <ShowOn mobile tablet>
-              {getSearchBarModal(
-                this.props,
-                this.handleSubmit,
-                this.persistInputChange
-              )}
+              <SearchModal
+                {...this.props}
+                datesInputValue={dates}
+                guestsInputValue={guests}
+                locationInputValue={location}
+                onInputChange={this.persistInputChange}
+                willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
+              />
             </ShowOn>
           </HorizontalGutters>
         ) : (
           <Form onSubmit={this.handleSubmit}>
-            {getFormFieldMarkup(
-              this.props,
-              this.persistInputChange,
-              this.state.willLocationDropdownOpenAbove
-            )}
+            <SearchFields
+              {...this.props}
+              datesInputValue={dates}
+              guestsInputValue={guests}
+              locationInputValue={location}
+              onInputChange={this.persistInputChange}
+              willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
+            />
           </Form>
         )}
       </div>

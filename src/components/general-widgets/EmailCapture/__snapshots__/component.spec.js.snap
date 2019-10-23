@@ -216,12 +216,12 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                             onBlur={[Function]}
                             onChange={[Function]}
                             type="text"
+                            value=""
                           >
                             <InputController
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={true}
@@ -231,12 +231,15 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
+                              value=""
                             >
                               <Input
                                 className=""
                                 fluid={true}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value=""
                               >
                                 <div
                                   className="ui fluid input"
@@ -250,6 +253,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                                     onChange={[Function]}
                                     placeholder="Your email"
                                     type="text"
+                                    value=""
                                   />
                                 </div>
                               </Input>
@@ -556,12 +560,12 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                             onBlur={[Function]}
                             onChange={[Function]}
                             type="text"
+                            value=""
                           >
                             <InputController
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={true}
@@ -571,12 +575,15 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
+                              value=""
                             >
                               <Input
                                 className=""
                                 fluid={true}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value=""
                               >
                                 <div
                                   className="ui fluid input"
@@ -590,6 +597,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                     onChange={[Function]}
                                     placeholder="Your email"
                                     type="text"
+                                    value=""
                                   />
                                 </div>
                               </Input>
@@ -959,12 +967,12 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                             onBlur={[Function]}
                             onChange={[Function]}
                             type="text"
+                            value=""
                           >
                             <InputController
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={true}
@@ -974,12 +982,15 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
+                              value=""
                             >
                               <Input
                                 className=""
                                 fluid={true}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value=""
                               >
                                 <div
                                   className="ui fluid input"
@@ -993,6 +1004,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                     onChange={[Function]}
                                     placeholder="Your email"
                                     type="text"
+                                    value=""
                                   />
                                 </div>
                               </Input>
@@ -1188,13 +1200,11 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={false}
                               isFocused={false}
                               isValid={false}
-                              label={null}
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
@@ -1204,7 +1214,9 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                 className=""
                                 fluid={false}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value={false}
                               >
                                 <div
                                   className="ui input"
@@ -1227,9 +1239,9 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                         </Paragraph>
                                       </label>
                                     }
+                                    name=""
                                     onChange={[Function]}
                                     onClick={[Function]}
-                                    placeholder={null}
                                     radio={false}
                                     toggle={false}
                                     type="checkbox"
@@ -1246,6 +1258,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                           Object {
                                             "current": <input
                                               class="hidden"
+                                              name=""
                                               readonly=""
                                               tabindex="0"
                                               type="checkbox"
@@ -1259,6 +1272,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                             Object {
                                               "current": <input
                                                 class="hidden"
+                                                name=""
                                                 readonly=""
                                                 tabindex="0"
                                                 type="checkbox"
@@ -1271,7 +1285,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                             checked={false}
                                             className="hidden"
                                             disabled={false}
-                                            placeholder={null}
+                                            name=""
                                             readOnly={true}
                                             tabIndex={0}
                                             type="checkbox"
@@ -1519,12 +1533,12 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                             onBlur={[Function]}
                             onChange={[Function]}
                             type="text"
+                            value=""
                           >
                             <InputController
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={true}
@@ -1534,12 +1548,15 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
+                              value=""
                             >
                               <Input
                                 className=""
                                 fluid={true}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value=""
                               >
                                 <div
                                   className="ui fluid input"
@@ -1553,6 +1570,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                     onChange={[Function]}
                                     placeholder="Your email"
                                     type="text"
+                                    value=""
                                   />
                                 </div>
                               </Input>
@@ -1905,12 +1923,12 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                             onBlur={[Function]}
                             onChange={[Function]}
                             type="text"
+                            value=""
                           >
                             <InputController
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={true}
@@ -1920,12 +1938,15 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
+                              value=""
                             >
                               <Input
                                 className=""
                                 fluid={true}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value=""
                               >
                                 <div
                                   className="ui fluid input"
@@ -1939,6 +1960,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                     onChange={[Function]}
                                     placeholder="Your email"
                                     type="text"
+                                    value=""
                                   />
                                 </div>
                               </Input>
@@ -2037,13 +2059,11 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={false}
                               isFocused={false}
                               isValid={false}
-                              label={null}
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
@@ -2053,7 +2073,9 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                 className=""
                                 fluid={false}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value={false}
                               >
                                 <div
                                   className="ui input"
@@ -2076,9 +2098,9 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                         </Paragraph>
                                       </label>
                                     }
+                                    name=""
                                     onChange={[Function]}
                                     onClick={[Function]}
-                                    placeholder={null}
                                     radio={false}
                                     toggle={false}
                                     type="checkbox"
@@ -2095,6 +2117,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                           Object {
                                             "current": <input
                                               class="hidden"
+                                              name=""
                                               readonly=""
                                               tabindex="0"
                                               type="checkbox"
@@ -2108,6 +2131,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                             Object {
                                               "current": <input
                                                 class="hidden"
+                                                name=""
                                                 readonly=""
                                                 tabindex="0"
                                                 type="checkbox"
@@ -2120,7 +2144,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                             checked={false}
                                             className="hidden"
                                             disabled={false}
-                                            placeholder={null}
+                                            name=""
                                             readOnly={true}
                                             tabIndex={0}
                                             type="checkbox"
@@ -2448,12 +2472,12 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                             onBlur={[Function]}
                             onChange={[Function]}
                             type="text"
+                            value=""
                           >
                             <InputController
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={true}
@@ -2463,12 +2487,15 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
+                              value=""
                             >
                               <Input
                                 className=""
                                 fluid={true}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value=""
                               >
                                 <div
                                   className="ui fluid input"
@@ -2482,6 +2509,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                     onChange={[Function]}
                                     placeholder="Your email"
                                     type="text"
+                                    value=""
                                   />
                                 </div>
                               </Input>
@@ -2836,12 +2864,12 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                             onBlur={[Function]}
                             onChange={[Function]}
                             type="text"
+                            value=""
                           >
                             <InputController
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={true}
@@ -2851,12 +2879,15 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
+                              value=""
                             >
                               <Input
                                 className=""
                                 fluid={true}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value=""
                               >
                                 <div
                                   className="ui fluid input"
@@ -2870,6 +2901,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                                     onChange={[Function]}
                                     placeholder="Your email"
                                     type="text"
+                                    value=""
                                   />
                                 </div>
                               </Input>
@@ -3176,12 +3208,12 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                             onBlur={[Function]}
                             onChange={[Function]}
                             type="text"
+                            value=""
                           >
                             <InputController
                               adaptOnChangeEvent={[Function]}
                               error={false}
                               icon={null}
-                              initialValue=""
                               inputOnChangeFunctionName="onChange"
                               isCompact={false}
                               isFluid={true}
@@ -3191,12 +3223,15 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                               mapValueToProps={[Function]}
                               name=""
                               onChange={[Function]}
+                              value=""
                             >
                               <Input
                                 className=""
                                 fluid={true}
                                 iconPosition={null}
+                                name=""
                                 type="text"
+                                value=""
                               >
                                 <div
                                   className="ui fluid input"
@@ -3210,6 +3245,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                                     onChange={[Function]}
                                     placeholder="Your email"
                                     type="text"
+                                    value=""
                                   />
                                 </div>
                               </Input>

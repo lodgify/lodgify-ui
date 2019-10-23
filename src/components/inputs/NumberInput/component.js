@@ -24,7 +24,6 @@ export const Component = ({
     error={error}
     icon={icon}
     isValid={isValid}
-    label={label}
     name={name}
     onChange={onChange}
     value={value}
@@ -35,6 +34,7 @@ export const Component = ({
       min={min}
       name={name}
       onBlur={onBlur}
+      placeholder={label}
       type="number"
     />
   </InputController>
@@ -53,7 +53,7 @@ Component.defaultProps = {
   name: '',
   onBlur: Function.prototype,
   onChange: Function.prototype,
-  value: undefined,
+  value: '',
 };
 
 Component.propTypes = {

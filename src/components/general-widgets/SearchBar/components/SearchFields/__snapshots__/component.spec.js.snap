@@ -1,0 +1,144 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SearchFields /> if \`locationOptions\` size is greater than 0 should render the right structure 1`] = `
+<div
+  className="inputs-container"
+>
+  <div
+    className="input-container location-input-container"
+  >
+    <Dropdown
+      error={false}
+      getOptionsWithSearch={null}
+      icon="map pin"
+      initialValue={null}
+      isClearable={true}
+      isCompact={false}
+      isDisabled={false}
+      isSearchable={false}
+      isValid={false}
+      label="Location"
+      name="location"
+      noResultsText="No results"
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocus={[Function]}
+      options={
+        Array [
+          Object {
+            "text": "yo",
+          },
+        ]
+      }
+      willOpenAbove={false}
+    />
+  </div>
+  <div
+    className="input-container dates-input-container"
+  >
+    <WithResponsive(DateRangePicker)
+      endDatePlaceholderText="Check out"
+      getIsDayBlocked={[Function]}
+      name="dates"
+      onChange={[Function]}
+      onFocusChange={[Function]}
+      startDatePlaceholderText="Check in"
+      willOpenAbove={false}
+    />
+  </div>
+  <div
+    className="input-container guests-input-container"
+  >
+    <NumberInput
+      autoComplete={null}
+      error={false}
+      icon={
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="users"
+          path={null}
+          size={null}
+        />
+      }
+      isValid={false}
+      label="Guests"
+      min={0}
+      name="guests"
+      onBlur={[Function]}
+      onChange={[Function]}
+      value=""
+    />
+  </div>
+  <div
+    className="button-container"
+  >
+    <div />
+  </div>
+</div>
+`;
+
+exports[`<SearchFields /> should render the right structure 1`] = `
+<div
+  className="inputs-container"
+>
+  <div
+    className="input-container dates-input-container"
+  >
+    <WithResponsive(DateRangePicker)
+      endDatePlaceholderText="Check out"
+      getIsDayBlocked={[Function]}
+      name="dates"
+      onChange={[Function]}
+      onFocusChange={[Function]}
+      startDatePlaceholderText="Check in"
+      willOpenAbove={false}
+    />
+  </div>
+  <div
+    className="input-container guests-input-container"
+  >
+    <NumberInput
+      autoComplete={null}
+      error={false}
+      icon={
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText={null}
+          labelWeight={null}
+          name="users"
+          path={null}
+          size={null}
+        />
+      }
+      isValid={false}
+      label="Guests"
+      min={0}
+      name="guests"
+      onBlur={[Function]}
+      onChange={[Function]}
+      value=""
+    />
+  </div>
+  <div
+    className="button-container"
+  >
+    <div />
+  </div>
+</div>
+`;

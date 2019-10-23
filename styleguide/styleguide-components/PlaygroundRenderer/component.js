@@ -11,7 +11,7 @@
  */
 import React from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
+import classnames from 'classnames';
 import Styled from 'rsg-components/Styled';
 
 // Lodgify UI import start
@@ -24,10 +24,10 @@ import { withResponsive } from 'utils/with-responsive';
 export const styles = ({ space, color, borderRadius, mq }) => ({
 	root: {
 		marginBottom: space[4],
-  	// Lodgify UI styles start
-  	marginTop: space[2],
+		// Lodgify UI styles start
+		marginTop: space[2],
 		[mq.xlarge]: {
-	  	width: `calc(200% + ${space[4] * 2}px)`,
+			width: `calc(200% + ${space[4] * 2}px)`,
 		},
 		// Lodgify UI styles end
 	},
@@ -36,15 +36,15 @@ export const styles = ({ space, color, borderRadius, mq }) => ({
 		border: [[1, color.border, 'solid']],
 		borderRadius,
 		// the next 2 lines are required to contain floated components
-	  width: '100%',
-	  display: 'inline-block',
-	  // Lodgify UI styles start
-	  [mq.xlarge]: {
-		  marginRight: space[4],
-		  verticalAlign: 'top',
-		  width: `calc(50% - ${space[4]}px)`,
+		width: '100%',
+		display: 'inline-block',
+		// Lodgify UI styles start
+		[mq.xlarge]: {
+			marginRight: space[4],
+			verticalAlign: 'top',
+			width: `calc(50% - ${space[4]}px)`,
 		},
-	// Lodgify UI styles end
+		// Lodgify UI styles end
 	},
 	controls: {
 		display: 'flex',
@@ -54,8 +54,8 @@ export const styles = ({ space, color, borderRadius, mq }) => ({
 		marginLeft: 'auto',
 	},
 	tab: {
-	  // Lodgify UI styles start
-	  [mq.xlarge]: {
+		// Lodgify UI styles start
+		[mq.xlarge]: {
 			display: 'inline-block',
 			marginLeft: space[4],
 			opacity: 0,
@@ -82,38 +82,40 @@ export function PlaygroundRenderer({
 	tabButtons,
 	tabBody,
 	toolbar,
-// Lodgify UI script start
+	// Lodgify UI script start
 	windowInnerWidth,
 }, {
 	handleClickViewCode,
 	isCodeVisible
 }) {
-// Lodgify UI script end
+	// Lodgify UI script end
 	const { className, ...props } = previewProps;
 	return (
 		<div className={classes.root}>
-			<div className={cx(classes.preview, className)} {...props} data-preview={name}>
+			<div className={classnames(classes.preview, className)} {...props} data-preview={name}>
 				{preview}
 			</div>
-    {/* Lodgify UI markup start */}
-		{windowInnerWidth < 1200 ? (
-			[
-				<div key="iHateKeys" className={classes.controls}>
-					<div className={classes.tabs}>{tabButtons}</div>
-					<div className={classes.toolbar}>{toolbar}</div>
-				</div>,
-				<div key="iReallyDo" className={classes.tab}>{tabBody}</div>
-			]
-		) : (
-			<Transition in={isCodeVisible} timeout={{ enter: 850, exit: 150 }}>
-				{status => React.cloneElement(tabBody, {
-					active: 'rsg-code-editor',
-					className: cx(classes.tab, classes[`tab-${status}`]),
-				})}
-			</Transition>
-		)}
-    {/* Lodgify UI markup end */}
-		</div>
+			{/* Lodgify UI markup start */}
+			{
+				windowInnerWidth < 1200 ? (
+					[
+						<div key="iHateKeys" className={classes.controls}>
+							<div className={classes.tabs}>{tabButtons}</div>
+							<div className={classes.toolbar}>{toolbar}</div>
+						</div>,
+						<div key="iReallyDo" className={classes.tab}>{tabBody}</div>
+					]
+				) : (
+						<Transition in={isCodeVisible} timeout={{ enter: 850, exit: 150 }}>
+							{status => React.cloneElement(tabBody, {
+								active: 'rsg-code-editor',
+								className: classnames(classes.tab, classes[`tab-${status}`]),
+							})}
+						</Transition>
+					)
+			}
+			{/* Lodgify UI markup end */}
+		</div >
 	);
 }
 
@@ -132,8 +134,8 @@ PlaygroundRenderer.propTypes = {
 
 // Lodgify UI script start
 PlaygroundRenderer.contextTypes = {
-  handleClickViewCode: PropTypes.func,
-  isCodeVisible: PropTypes.bool,
+	handleClickViewCode: PropTypes.func,
+	isCodeVisible: PropTypes.bool,
 };
 // Lodgify UI script end
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import { PropTypes } from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 /**
  * A BlockPlaceholder indicates that a block of content will soon appear in a layout.
@@ -8,7 +8,7 @@ import getClassNames from 'classnames';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({ isFluid, isRectangular, isSquare }) => (
   <div
-    className={getClassNames('placeholder block', {
+    className={classnames('placeholder block', {
       fluid: isFluid,
       rectangle: isRectangular,
       square: isSquare,

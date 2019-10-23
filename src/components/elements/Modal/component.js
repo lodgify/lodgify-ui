@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Modal } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { HorizontalGutters } from 'layout/HorizontalGutters';
@@ -24,7 +24,7 @@ export const Component = ({
   trigger,
 }) => (
   <Modal
-    className={getClassNames({
+    className={classnames({
       'has-padding': hasPadding,
       'has-rounded-corners': hasRoundedCorners,
     })}

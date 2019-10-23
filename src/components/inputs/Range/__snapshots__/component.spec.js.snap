@@ -137,7 +137,7 @@ exports[`Range render should render the right structure 1`] = `
       >
         <div
           className="track"
-          key="$-$$-0"
+          key="0"
           onMouseDown={[Function]}
           onTouchStart={[Function]}
           style={
@@ -149,7 +149,7 @@ exports[`Range render should render the right structure 1`] = `
         />
         <div
           className="track"
-          key="$$-0-$$-1"
+          key="1"
           onMouseDown={[Function]}
           onTouchStart={[Function]}
           style={

@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 /**
  * Shows child components on specified screen sizes.
@@ -19,7 +19,7 @@ export const Component = ({
     parent,
     {
       ...parentProps,
-      className: getClassNames(parentProps.className, {
+      className: classnames(parentProps.className, {
         'show-on-mobile': mobile,
         'show-on-tablet': tablet,
         'show-on-computer': computer,

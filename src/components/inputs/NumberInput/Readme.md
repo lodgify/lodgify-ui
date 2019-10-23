@@ -32,7 +32,11 @@
 #### Minimum and Maximum
 
 ```jsx
-<NumberInput min={0} max={3} />
+const Controller = () => {
+  const [value, setValue] = React.useState();
+  return <NumberInput min={0} max={3} onChange={setValue} value={value} />;
+};
+<Controller />;
 ```
 
 #### Initialize with Value and Label

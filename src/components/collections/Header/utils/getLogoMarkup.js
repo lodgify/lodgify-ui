@@ -1,6 +1,6 @@
 import React from 'react';
 import { Menu, Image } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import classnames from 'classnames';
 
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
@@ -24,7 +24,7 @@ export const getLogoMarkup = (
   logoSrcSet
 ) => (
   <Menu.Item
-    className={getClassNames({
+    className={classnames({
       'has-sub-text': !!logoSubText,
     })}
     href={logoHref}

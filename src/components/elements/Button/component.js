@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import cx from 'classnames';
+import classnames from 'classnames';
 import { Button } from 'semantic-ui-react';
 
 import { Icon } from 'elements/Icon';
@@ -28,7 +28,7 @@ export const Component = ({
   <Button
     basic={isOutlined}
     circular={isRounded}
-    className={cx({
+    className={classnames({
       'has-shadow': !!hasShadow,
       'has-outline': !!isOutlined,
     })}
