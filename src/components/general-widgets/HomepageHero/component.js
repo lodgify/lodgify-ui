@@ -33,6 +33,7 @@ export const Component = ({
   headingText,
   isSearchBarDateRangePickerLoading,
   placeholderBackgroundImageUrl,
+  searchBarMaximumGuestsInputValue,
   searchBarDateRangePickerLocaleCode,
   searchBarDatesCheckOutLabel,
   searchBarDatesCheckInLabel,
@@ -64,6 +65,7 @@ export const Component = ({
     locationInputLabel: searchBarLocationInputLabel,
     locationInputValue: searchBarLocationInputValue,
     locationOptions: searchBarLocationOptions,
+    maximumGuestsInputValue: searchBarMaximumGuestsInputValue,
     onChangeInput: searchBarOnChangeInput,
     onSubmit: searchBarOnSubmit,
     searchButton: searchBarSearchButton,
@@ -167,6 +169,7 @@ Component.defaultProps = {
   headingText: null,
   isSearchBarDateRangePickerLoading: undefined,
   searchBarLocationInputValue: undefined,
+  searchBarMaximumGuestsInputValue: undefined,
   placeholderBackgroundImageUrl: null,
   searchBarDateRangePickerLocaleCode: undefined,
   searchBarDatesCheckInLabel: undefined,
@@ -301,6 +304,8 @@ Component.propTypes = {
       ]),
     })
   ),
+  /** The maximum number the guests input counter can increase to. */
+  searchBarMaximumGuestsInputValue: PropTypes.number,
   /* The heading displayed in the search bar modal. */
   searchBarModalHeadingText: PropTypes.string,
   /** A function called when a change in an input occurs in the search bar.

@@ -31,6 +31,7 @@ export const Component = ({
   searchBarDatesCheckOutLabel,
   searchBarGuestsInputCounterLabel,
   searchBarGuestsInputLabel,
+  searchBarMaximumGuestsInputValue,
   searchButton,
   summaryLocationName,
   summaryPeriodText,
@@ -57,6 +58,7 @@ export const Component = ({
     guestsInputValue,
     isDateRangePickerLoading,
     isFixed: true,
+    maximumGuestsInputValue: searchBarMaximumGuestsInputValue,
     onChangeInput,
     onSubmit,
     searchButton,
@@ -116,6 +118,7 @@ Component.defaultProps = {
   searchBarDatesCheckOutLabel: undefined,
   searchBarGuestsInputCounterLabel: undefined,
   searchBarGuestsInputLabel: undefined,
+  searchBarMaximumGuestsInputValue: undefined,
   searchButton: (
     <Button isFormSubmit isPositionedRight isRounded>
       {CHECK_OUR_AVAILABILITY}
@@ -182,6 +185,8 @@ Component.propTypes = {
   searchBarGuestsInputCounterLabel: PropTypes.string,
   /** The label for the guests input of the search bar when there is no value. */
   searchBarGuestsInputLabel: PropTypes.string,
+  /** The maximum number the guests input counter can increase to. */
+  searchBarMaximumGuestsInputValue: PropTypes.number,
   /** The Search Button the Search Bar displays. */
   searchButton: PropTypes.node,
   /** The location name displayed in the summary. */
