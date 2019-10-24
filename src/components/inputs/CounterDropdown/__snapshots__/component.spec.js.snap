@@ -49,9 +49,11 @@ exports[`CounterDropdown interaction: onBlur should render the right structure 1
           counterLabel
         </Paragraph>
         <Counter
+          min={0}
           name=""
           onChange={[Function]}
           renderValue={[Function]}
+          value={0}
         />
       </FlexContainer>,
     ]
@@ -115,9 +117,11 @@ exports[`CounterDropdown interaction: onFocus should render the right structure 
           counterLabel
         </Paragraph>
         <Counter
+          min={0}
           name=""
           onChange={[Function]}
           renderValue={[Function]}
+          value={0}
         />
       </FlexContainer>,
     ]
@@ -184,9 +188,11 @@ exports[`CounterDropdown should render the right structure 1`] = `
             counterLabel
           </Paragraph>
           <Counter
+            min={0}
             name=""
             onChange={[Function]}
             renderValue={[Function]}
+            value={0}
           />
         </FlexContainer>,
       ]
