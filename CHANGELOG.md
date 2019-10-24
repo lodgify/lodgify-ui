@@ -1,3 +1,17 @@
+# [1.252.0](https://github.com/lodgify/lodgify-ui/compare/v1.251.0...v1.252.0) (2019-10-24)
+
+
+### Bug Fixes
+
+* **CounterDropdown:** use popup instead of dropdown ([d74134d](https://github.com/lodgify/lodgify-ui/commit/d74134d))
+
+
+### Features
+
+* **HomepageHero:** expose counter maximum value prop ([1ffb412](https://github.com/lodgify/lodgify-ui/commit/1ffb412))
+* **PropertyPageSearchBar:** expose counter maximum value prop ([7abb2cd](https://github.com/lodgify/lodgify-ui/commit/7abb2cd))
+* **SearchBar:** expose counter props ([ae2e999](https://github.com/lodgify/lodgify-ui/commit/ae2e999))
+
 # [1.251.0](https://github.com/lodgify/lodgify-ui/compare/v1.250.1...v1.251.0) (2019-10-23)
 
 
