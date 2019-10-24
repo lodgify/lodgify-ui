@@ -2,9 +2,11 @@
 
 exports[`Counter render should render the right structure 1`] = `
 <Counter
+  min={0}
   name=""
   onChange={[Function]}
   renderValue={[Function]}
+  value={0}
 >
   <div
     className="ui counter"
