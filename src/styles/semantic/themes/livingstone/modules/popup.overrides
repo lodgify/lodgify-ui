@@ -53,3 +53,17 @@
 /* Inverted */
 
 /* Arrow color by position */
+
+/* Counter popup */
+.ui.popup.counter-dropdown {
+  box-shadow: @subMenuShadow;
+  width: @inputWidth;
+
+  &:before {
+    display: none;
+  }
+
+  & > .flex-container > p {
+    margin: 0;
+  }
+}

@@ -108,6 +108,7 @@
 
 @inputMaxWidth: 350px;
 @inputWidth: 100%;
+@inputHeight: @inputWidth;
 
 /* Input Text Color */
 @inputPlaceholderColor: @greySix;

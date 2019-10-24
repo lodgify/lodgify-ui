@@ -1,38 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`CounterDropdown interaction: onBlur should render the right structure 1`] = `
-<Dropdown
-  additionLabel="Add "
-  additionPosition="top"
-  clearable={true}
-  closeOnBlur={true}
-  closeOnEscape={true}
-  deburr={false}
-  icon={
-    <Icon
-      className={null}
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={false}
-      isLabelLeft={false}
-      labelText={null}
-      labelWeight={null}
-      name="caret down"
-      path={null}
-      size={null}
-    />
-  }
-  minCharacters={1}
-  noResultsMessage="No results found."
-  onBlur={[Function]}
-  onFocus={[Function]}
-  open={false}
-  openOnFocus={true}
-  options={
-    Array [
+exports[`CounterDropdown if \`props.willOpenAbove\` is true should render the right structure 1`] = `
+<CounterDropdown
+  counterLabel="counterLabel"
+  dropdownLabel="dropdownLabel"
+  willOpenAbove={true}
+>
+  <Popup
+    className="counter-dropdown"
+    content={
       <FlexContainer
         alignContent={null}
         alignItems={null}
@@ -55,155 +31,355 @@ exports[`CounterDropdown interaction: onBlur should render the right structure 1
           renderValue={[Function]}
           value={0}
         />
-      </FlexContainer>,
-    ]
-  }
-  renderLabel={[Function]}
-  searchInput="text"
-  selectOnBlur={true}
-  selectOnNavigation={true}
-  selection={true}
-  text="dropdownLabel"
-  wrapSelection={true}
-/>
-`;
-
-exports[`CounterDropdown interaction: onFocus should render the right structure 1`] = `
-<Dropdown
-  additionLabel="Add "
-  additionPosition="top"
-  clearable={true}
-  closeOnBlur={true}
-  closeOnEscape={true}
-  deburr={false}
-  icon={
-    <Icon
-      className={null}
-      color={null}
-      hasBorder={false}
-      isButton={false}
-      isCircular={false}
-      isColorInverted={false}
-      isDisabled={false}
-      isLabelLeft={false}
-      labelText={null}
-      labelWeight={null}
-      name="caret down"
-      path={null}
-      size={null}
-    />
-  }
-  minCharacters={1}
-  noResultsMessage="No results found."
-  onBlur={[Function]}
-  onFocus={[Function]}
-  open={false}
-  openOnFocus={true}
-  options={
-    Array [
-      <FlexContainer
-        alignContent={null}
-        alignItems={null}
-        className={null}
-        flexDirection="row"
-        flexWrap={null}
-        justifyContent="space-between"
+      </FlexContainer>
+    }
+    disabled={false}
+    eventsEnabled={true}
+    offset={0}
+    on="click"
+    onClose={[Function]}
+    onOpen={[Function]}
+    open={false}
+    pinned={false}
+    position="top left"
+    text="dropdownLabel"
+    trigger={
+      <div
+        className="dropdown-container"
+        role="button"
       >
-        <Paragraph
-          isCompact={false}
-          size="medium"
-          weight={null}
+        <div
+          className="ui selection dropdown counter-dropdown-trigger"
         >
-          counterLabel
-        </Paragraph>
-        <Counter
-          min={0}
-          name=""
-          onChange={[Function]}
-          renderValue={[Function]}
-          value={0}
-        />
-      </FlexContainer>,
-    ]
-  }
-  renderLabel={[Function]}
-  searchInput="text"
-  selectOnBlur={true}
-  selectOnNavigation={true}
-  selection={true}
-  text="dropdownLabel"
-  wrapSelection={true}
-/>
+          dropdownLabel
+          <Icon
+            className={null}
+            color={null}
+            hasBorder={false}
+            isButton={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText={null}
+            labelWeight={null}
+            name="caret down"
+            path={null}
+            size={null}
+          />
+        </div>
+      </div>
+    }
+  >
+    <Portal
+      closeOnDocumentClick={true}
+      closeOnEscape={true}
+      closeOnTriggerClick={true}
+      eventPool="default"
+      onClose={[Function]}
+      onMount={[Function]}
+      onOpen={[Function]}
+      onUnmount={[Function]}
+      open={false}
+      openOnTriggerClick={true}
+      trigger={
+        <div
+          className="dropdown-container"
+          role="button"
+        >
+          <div
+            className="ui selection dropdown counter-dropdown-trigger"
+          >
+            dropdownLabel
+            <Icon
+              className={null}
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="caret down"
+              path={null}
+              size={null}
+            />
+          </div>
+        </div>
+      }
+      triggerRef={
+        Object {
+          "current": <div
+            class="dropdown-container"
+            role="button"
+          >
+            <div
+              class="ui selection dropdown counter-dropdown-trigger"
+            >
+              dropdownLabel
+              <i
+                class="icon"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20,8.5l-8,7-8-7Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <Ref
+        innerRef={[Function]}
+      >
+        <RefFindNode
+          innerRef={[Function]}
+        >
+          <div
+            className="dropdown-container"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            role="button"
+          >
+            <div
+              className="ui selection dropdown counter-dropdown-trigger"
+            >
+              dropdownLabel
+              <Icon
+                className={null}
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="caret down"
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20,8.5l-8,7-8-7Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </i>
+              </Icon>
+            </div>
+          </div>
+        </RefFindNode>
+      </Ref>
+    </Portal>
+  </Popup>
+</CounterDropdown>
 `;
 
 exports[`CounterDropdown should render the right structure 1`] = `
-<div
-  className="dropdown-container counter-dropdown"
+<CounterDropdown
+  counterLabel="counterLabel"
+  dropdownLabel="dropdownLabel"
+  willOpenAbove={false}
 >
-  <Dropdown
-    additionLabel="Add "
-    additionPosition="top"
-    clearable={true}
-    closeOnBlur={true}
-    closeOnEscape={true}
-    deburr={false}
-    icon={
-      <Icon
+  <Popup
+    className="counter-dropdown"
+    content={
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
         className={null}
-        color={null}
-        hasBorder={false}
-        isButton={false}
-        isCircular={false}
-        isColorInverted={false}
-        isDisabled={false}
-        isLabelLeft={false}
-        labelText={null}
-        labelWeight={null}
-        name="caret down"
-        path={null}
-        size={null}
-      />
-    }
-    minCharacters={1}
-    noResultsMessage="No results found."
-    onBlur={[Function]}
-    onFocus={[Function]}
-    open={false}
-    openOnFocus={true}
-    options={
-      Array [
-        <FlexContainer
-          alignContent={null}
-          alignItems={null}
-          className={null}
-          flexDirection="row"
-          flexWrap={null}
-          justifyContent="space-between"
+        flexDirection="row"
+        flexWrap={null}
+        justifyContent="space-between"
+      >
+        <Paragraph
+          isCompact={false}
+          size="medium"
+          weight={null}
         >
-          <Paragraph
-            isCompact={false}
-            size="medium"
-            weight={null}
-          >
-            counterLabel
-          </Paragraph>
-          <Counter
-            min={0}
-            name=""
-            onChange={[Function]}
-            renderValue={[Function]}
-            value={0}
-          />
-        </FlexContainer>,
-      ]
+          counterLabel
+        </Paragraph>
+        <Counter
+          min={0}
+          name=""
+          onChange={[Function]}
+          renderValue={[Function]}
+          value={0}
+        />
+      </FlexContainer>
     }
-    renderLabel={[Function]}
-    searchInput="text"
-    selectOnBlur={true}
-    selectOnNavigation={true}
-    selection={true}
+    disabled={false}
+    eventsEnabled={true}
+    offset={0}
+    on="click"
+    onClose={[Function]}
+    onOpen={[Function]}
+    open={false}
+    pinned={false}
+    position="bottom left"
     text="dropdownLabel"
-    wrapSelection={true}
-  />
-</div>
+    trigger={
+      <div
+        className="dropdown-container"
+        role="button"
+      >
+        <div
+          className="ui selection dropdown counter-dropdown-trigger"
+        >
+          dropdownLabel
+          <Icon
+            className={null}
+            color={null}
+            hasBorder={false}
+            isButton={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText={null}
+            labelWeight={null}
+            name="caret down"
+            path={null}
+            size={null}
+          />
+        </div>
+      </div>
+    }
+  >
+    <Portal
+      closeOnDocumentClick={true}
+      closeOnEscape={true}
+      closeOnTriggerClick={true}
+      eventPool="default"
+      onClose={[Function]}
+      onMount={[Function]}
+      onOpen={[Function]}
+      onUnmount={[Function]}
+      open={false}
+      openOnTriggerClick={true}
+      trigger={
+        <div
+          className="dropdown-container"
+          role="button"
+        >
+          <div
+            className="ui selection dropdown counter-dropdown-trigger"
+          >
+            dropdownLabel
+            <Icon
+              className={null}
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="caret down"
+              path={null}
+              size={null}
+            />
+          </div>
+        </div>
+      }
+      triggerRef={
+        Object {
+          "current": <div
+            class="dropdown-container"
+            role="button"
+          >
+            <div
+              class="ui selection dropdown counter-dropdown-trigger"
+            >
+              dropdownLabel
+              <i
+                class="icon"
+              >
+                <svg
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20,8.5l-8,7-8-7Z"
+                    fill="currentColor"
+                  />
+                </svg>
+              </i>
+            </div>
+          </div>,
+        }
+      }
+    >
+      <Ref
+        innerRef={[Function]}
+      >
+        <RefFindNode
+          innerRef={[Function]}
+        >
+          <div
+            className="dropdown-container"
+            onBlur={[Function]}
+            onClick={[Function]}
+            onFocus={[Function]}
+            onMouseEnter={[Function]}
+            onMouseLeave={[Function]}
+            role="button"
+          >
+            <div
+              className="ui selection dropdown counter-dropdown-trigger"
+            >
+              dropdownLabel
+              <Icon
+                className={null}
+                color={null}
+                hasBorder={false}
+                isButton={false}
+                isCircular={false}
+                isColorInverted={false}
+                isDisabled={false}
+                isLabelLeft={false}
+                labelText={null}
+                labelWeight={null}
+                name="caret down"
+                path={null}
+                size={null}
+              >
+                <i
+                  className="icon"
+                >
+                  <svg
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20,8.5l-8,7-8-7Z"
+                      fill="currentColor"
+                    />
+                  </svg>
+                </i>
+              </Icon>
+            </div>
+          </div>
+        </RefFindNode>
+      </Ref>
+    </Portal>
+  </Popup>
+</CounterDropdown>
 `;

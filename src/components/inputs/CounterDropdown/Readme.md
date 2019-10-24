@@ -53,3 +53,12 @@ const Controller = () => {
   counterLabel="number of guests"
   dropdownLabel="pick guests"
 />
+```
+
+### Dropdown opens above
+
+```jsx
+<CounterDropdown
+  willOpenAbove
+/>
+```

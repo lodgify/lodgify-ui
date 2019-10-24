@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
-import { Dropdown } from 'semantic-ui-react';
-import getClassNames from 'classnames';
+import { Popup } from 'semantic-ui-react';
+import classnames from 'classnames';
 
 import { GUESTS } from 'utils/default-strings';
 import { Counter } from 'inputs/Counter';
@@ -20,36 +20,47 @@ export const Component = ({
   dropdownLabel,
   maximumCounterValue,
   onChange,
+  willOpenAbove,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div
-      className={getClassNames('dropdown-container', 'counter-dropdown', {
-        focus: isOpen,
-      })}
-    >
-      <Dropdown
-        clearable
-        icon={<Icon name={ICON_NAMES.CARET_DOWN} />}
-        onBlur={() => setIsOpen(false)}
-        onFocus={() => setIsOpen(true)}
-        open={isOpen}
-        options={[
-          <FlexContainer flexDirection="row" justifyContent="space-between">
-            <Paragraph>{counterLabel}</Paragraph>
-            <Counter
-              max={maximumCounterValue}
-              name={counterName}
-              onChange={onChange}
-              value={counterValue}
-            />
-          </FlexContainer>,
-        ]}
-        selection
-        text={dropdownLabel}
-      />
-    </div>
+    <Popup
+      className="counter-dropdown"
+      content={
+        <FlexContainer flexDirection="row" justifyContent="space-between">
+          <Paragraph>{counterLabel}</Paragraph>
+          <Counter
+            max={maximumCounterValue}
+            name={counterName}
+            onChange={onChange}
+            value={counterValue}
+          />
+        </FlexContainer>
+      }
+      on="click"
+      onClose={() => setIsOpen(false)}
+      onOpen={() => setIsOpen(true)}
+      open={isOpen}
+      position={willOpenAbove ? 'top left' : 'bottom left'}
+      text={dropdownLabel}
+      trigger={
+        <div className="dropdown-container" role="button">
+          <div
+            className={classnames(
+              'ui selection dropdown',
+              'counter-dropdown-trigger',
+              {
+                active: isOpen,
+              }
+            )}
+          >
+            {dropdownLabel}
+            <Icon name={ICON_NAMES.CARET_DOWN}></Icon>
+          </div>
+        </div>
+      }
+    />
   );
 };
 
@@ -62,6 +73,7 @@ Component.defaultProps = {
   dropdownLabel: GUESTS,
   maximumCounterValue: undefined,
   onChange: undefined,
+  willOpenAbove: false,
 };
 
 Component.propTypes = {
@@ -77,4 +89,6 @@ Component.propTypes = {
   maximumCounterValue: PropTypes.number,
   /** A function called when the counter value changes. */
   onChange: PropTypes.func,
+  /** Will the dropdown open above or below the trigger */
+  willOpenAbove: PropTypes.bool,
 };
