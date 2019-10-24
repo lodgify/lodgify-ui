@@ -486,91 +486,121 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                   counterName="guests"
                                   dropdownLabel="Guests"
                                   onChange={[Function]}
+                                  willOpenAbove={false}
                                 >
-                                  <div
-                                    className="dropdown-container counter-dropdown"
-                                  >
-                                    <Dropdown
-                                      additionLabel="Add "
-                                      additionPosition="top"
-                                      clearable={true}
-                                      closeOnBlur={true}
-                                      closeOnEscape={true}
-                                      deburr={false}
-                                      icon={
-                                        <Icon
-                                          className={null}
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="caret down"
-                                          path={null}
-                                          size={null}
+                                  <Popup
+                                    className="counter-dropdown"
+                                    content={
+                                      <FlexContainer
+                                        alignContent={null}
+                                        alignItems={null}
+                                        className={null}
+                                        flexDirection="row"
+                                        flexWrap={null}
+                                        justifyContent="space-between"
+                                      >
+                                        <Paragraph
+                                          isCompact={false}
+                                          size="medium"
+                                          weight={null}
+                                        >
+                                          Guests
+                                        </Paragraph>
+                                        <Counter
+                                          min={0}
+                                          name="guests"
+                                          onChange={[Function]}
+                                          renderValue={[Function]}
+                                          value={0}
                                         />
-                                      }
-                                      minCharacters={1}
-                                      noResultsMessage="No results found."
-                                      onBlur={[Function]}
-                                      onFocus={[Function]}
-                                      open={false}
-                                      openOnFocus={true}
-                                      options={
-                                        Array [
-                                          <FlexContainer
-                                            alignContent={null}
-                                            alignItems={null}
+                                      </FlexContainer>
+                                    }
+                                    disabled={false}
+                                    eventsEnabled={true}
+                                    offset={0}
+                                    on="click"
+                                    onClose={[Function]}
+                                    onOpen={[Function]}
+                                    open={false}
+                                    pinned={false}
+                                    position="bottom left"
+                                    text="Guests"
+                                    trigger={
+                                      <div
+                                        className="dropdown-container"
+                                        role="button"
+                                      >
+                                        <div
+                                          className="ui selection dropdown counter-dropdown-trigger"
+                                        >
+                                          Guests
+                                          <Icon
                                             className={null}
-                                            flexDirection="row"
-                                            flexWrap={null}
-                                            justifyContent="space-between"
+                                            color={null}
+                                            hasBorder={false}
+                                            isButton={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="caret down"
+                                            path={null}
+                                            size={null}
+                                          />
+                                        </div>
+                                      </div>
+                                    }
+                                  >
+                                    <Portal
+                                      closeOnDocumentClick={true}
+                                      closeOnEscape={true}
+                                      closeOnTriggerClick={true}
+                                      eventPool="default"
+                                      onClose={[Function]}
+                                      onMount={[Function]}
+                                      onOpen={[Function]}
+                                      onUnmount={[Function]}
+                                      open={false}
+                                      openOnTriggerClick={true}
+                                      trigger={
+                                        <div
+                                          className="dropdown-container"
+                                          role="button"
+                                        >
+                                          <div
+                                            className="ui selection dropdown counter-dropdown-trigger"
                                           >
-                                            <Paragraph
-                                              isCompact={false}
-                                              size="medium"
-                                              weight={null}
+                                            Guests
+                                            <Icon
+                                              className={null}
+                                              color={null}
+                                              hasBorder={false}
+                                              isButton={false}
+                                              isCircular={false}
+                                              isColorInverted={false}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="caret down"
+                                              path={null}
+                                              size={null}
+                                            />
+                                          </div>
+                                        </div>
+                                      }
+                                      triggerRef={
+                                        Object {
+                                          "current": <div
+                                            class="dropdown-container"
+                                            role="button"
+                                          >
+                                            <div
+                                              class="ui selection dropdown counter-dropdown-trigger"
                                             >
                                               Guests
-                                            </Paragraph>
-                                            <Counter
-                                              name="guests"
-                                              onChange={[Function]}
-                                              renderValue={[Function]}
-                                              value={0}
-                                            />
-                                          </FlexContainer>,
-                                        ]
-                                      }
-                                      renderLabel={[Function]}
-                                      searchInput="text"
-                                      selectOnBlur={true}
-                                      selectOnNavigation={true}
-                                      selection={true}
-                                      text="Guests"
-                                      wrapSelection={true}
-                                    >
-                                      <Ref
-                                        innerRef={
-                                          Object {
-                                            "current": <div
-                                              aria-expanded="false"
-                                              class="ui selection dropdown"
-                                              role="listbox"
-                                              tabindex="0"
-                                            >
-                                              <div
-                                                aria-atomic="true"
-                                                aria-live="polite"
-                                                class="text"
-                                                role="alert"
-                                              >
-                                                Guests
-                                              </div>
                                               <i
                                                 class="icon"
                                               >
@@ -583,91 +613,47 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                   />
                                                 </svg>
                                               </i>
-                                              <div
-                                                class="menu transition"
-                                              >
-                                                <div
-                                                  class="flex-container"
-                                                  style="display: flex; flex-grow: 1; height: 100%; flex-direction: row; justify-content: space-between;"
-                                                >
-                                                  <p
-                                                    class=""
-                                                  >
-                                                    Guests
-                                                  </p>
-                                                  <div
-                                                    class="ui counter"
-                                                  >
-                                                    <div
-                                                      class="flex-container"
-                                                      style="display: flex; flex-grow: 1; height: 100%; align-items: center; justify-content: space-between;"
-                                                    >
-                                                      <button
-                                                        class="ui basic circular left floated button has-outline"
-                                                        type="button"
-                                                      >
-                                                        <i
-                                                          class="icon"
-                                                        >
-                                                          <svg
-                                                            viewBox="0 0 24 24"
-                                                          >
-                                                            <path
-                                                              d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                              fill="currentColor"
-                                                            />
-                                                          </svg>
-                                                        </i>
-                                                      </button>
-                                                      <p
-                                                        class=""
-                                                      >
-                                                        0
-                                                      </p>
-                                                      <button
-                                                        class="ui basic circular left floated button has-outline"
-                                                        type="button"
-                                                      >
-                                                        <i
-                                                          class="icon"
-                                                        >
-                                                          <svg
-                                                            viewBox="0 0 24 24"
-                                                          >
-                                                            <path
-                                                              d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                              fill="currentColor"
-                                                            />
-                                                          </svg>
-                                                        </i>
-                                                      </button>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>,
-                                          }
+                                            </div>
+                                          </div>,
                                         }
+                                      }
+                                    >
+                                      <Ref
+                                        innerRef={[Function]}
                                       >
                                         <RefFindNode
-                                          innerRef={
-                                            Object {
-                                              "current": <div
-                                                aria-expanded="false"
-                                                class="ui selection dropdown"
-                                                role="listbox"
-                                                tabindex="0"
+                                          innerRef={[Function]}
+                                        >
+                                          <div
+                                            className="dropdown-container"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            role="button"
+                                          >
+                                            <div
+                                              className="ui selection dropdown counter-dropdown-trigger"
+                                            >
+                                              Guests
+                                              <Icon
+                                                className={null}
+                                                color={null}
+                                                hasBorder={false}
+                                                isButton={false}
+                                                isCircular={false}
+                                                isColorInverted={false}
+                                                isDisabled={false}
+                                                isLabelLeft={false}
+                                                labelText={null}
+                                                labelWeight={null}
+                                                name="caret down"
+                                                path={null}
+                                                size={null}
                                               >
-                                                <div
-                                                  aria-atomic="true"
-                                                  aria-live="polite"
-                                                  class="text"
-                                                  role="alert"
-                                                >
-                                                  Guests
-                                                </div>
                                                 <i
-                                                  class="icon"
+                                                  className="icon"
                                                 >
                                                   <svg
                                                     viewBox="0 0 24 24"
@@ -678,445 +664,13 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                     />
                                                   </svg>
                                                 </i>
-                                                <div
-                                                  class="menu transition"
-                                                >
-                                                  <div
-                                                    class="flex-container"
-                                                    style="display: flex; flex-grow: 1; height: 100%; flex-direction: row; justify-content: space-between;"
-                                                  >
-                                                    <p
-                                                      class=""
-                                                    >
-                                                      Guests
-                                                    </p>
-                                                    <div
-                                                      class="ui counter"
-                                                    >
-                                                      <div
-                                                        class="flex-container"
-                                                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; justify-content: space-between;"
-                                                      >
-                                                        <button
-                                                          class="ui basic circular left floated button has-outline"
-                                                          type="button"
-                                                        >
-                                                          <i
-                                                            class="icon"
-                                                          >
-                                                            <svg
-                                                              viewBox="0 0 24 24"
-                                                            >
-                                                              <path
-                                                                d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                                fill="currentColor"
-                                                              />
-                                                            </svg>
-                                                          </i>
-                                                        </button>
-                                                        <p
-                                                          class=""
-                                                        >
-                                                          0
-                                                        </p>
-                                                        <button
-                                                          class="ui basic circular left floated button has-outline"
-                                                          type="button"
-                                                        >
-                                                          <i
-                                                            class="icon"
-                                                          >
-                                                            <svg
-                                                              viewBox="0 0 24 24"
-                                                            >
-                                                              <path
-                                                                d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                                fill="currentColor"
-                                                              />
-                                                            </svg>
-                                                          </i>
-                                                        </button>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>,
-                                            }
-                                          }
-                                        >
-                                          <div
-                                            aria-expanded={false}
-                                            className="ui selection dropdown"
-                                            onBlur={[Function]}
-                                            onChange={[Function]}
-                                            onClick={[Function]}
-                                            onFocus={[Function]}
-                                            onMouseDown={[Function]}
-                                            role="listbox"
-                                            tabIndex={0}
-                                          >
-                                            <div
-                                              aria-atomic={true}
-                                              aria-live="polite"
-                                              className="text"
-                                              role="alert"
-                                            >
-                                              Guests
+                                              </Icon>
                                             </div>
-                                            <Icon
-                                              className=""
-                                              color={null}
-                                              hasBorder={false}
-                                              isButton={false}
-                                              isCircular={false}
-                                              isColorInverted={false}
-                                              isDisabled={false}
-                                              isLabelLeft={false}
-                                              labelText={null}
-                                              labelWeight={null}
-                                              name="caret down"
-                                              onClick={[Function]}
-                                              path={null}
-                                              size={null}
-                                            >
-                                              <i
-                                                className="icon"
-                                                onClick={[Function]}
-                                              >
-                                                <svg
-                                                  viewBox="0 0 24 24"
-                                                >
-                                                  <path
-                                                    d="M20,8.5l-8,7-8-7Z"
-                                                    fill="currentColor"
-                                                  />
-                                                </svg>
-                                              </i>
-                                            </Icon>
-                                            <DropdownMenu
-                                              open={false}
-                                            >
-                                              <div
-                                                className="menu transition"
-                                              >
-                                                <FlexContainer
-                                                  alignContent={null}
-                                                  alignItems={null}
-                                                  className={null}
-                                                  flexDirection="row"
-                                                  flexWrap={null}
-                                                  justifyContent="space-between"
-                                                >
-                                                  <div
-                                                    className="flex-container"
-                                                    style={
-                                                      Object {
-                                                        "alignContent": null,
-                                                        "alignItems": null,
-                                                        "display": "flex",
-                                                        "flexDirection": "row",
-                                                        "flexGrow": "1",
-                                                        "flexWrap": null,
-                                                        "height": "100%",
-                                                        "justifyContent": "space-between",
-                                                      }
-                                                    }
-                                                  >
-                                                    <Paragraph
-                                                      isCompact={false}
-                                                      size="medium"
-                                                      weight={null}
-                                                    >
-                                                      <p
-                                                        className=""
-                                                      >
-                                                        Guests
-                                                      </p>
-                                                    </Paragraph>
-                                                    <Counter
-                                                      name="guests"
-                                                      onChange={[Function]}
-                                                      renderValue={[Function]}
-                                                      value={0}
-                                                    >
-                                                      <div
-                                                        className="ui counter"
-                                                      >
-                                                        <FlexContainer
-                                                          alignContent={null}
-                                                          alignItems="center"
-                                                          className={null}
-                                                          flexDirection={null}
-                                                          flexWrap={null}
-                                                          justifyContent="space-between"
-                                                        >
-                                                          <div
-                                                            className="flex-container"
-                                                            style={
-                                                              Object {
-                                                                "alignContent": null,
-                                                                "alignItems": "center",
-                                                                "display": "flex",
-                                                                "flexDirection": null,
-                                                                "flexGrow": "1",
-                                                                "flexWrap": null,
-                                                                "height": "100%",
-                                                                "justifyContent": "space-between",
-                                                              }
-                                                            }
-                                                          >
-                                                            <Button
-                                                              hasShadow={false}
-                                                              icon="minus"
-                                                              isCompact={false}
-                                                              isDisabled={false}
-                                                              isFluid={false}
-                                                              isFormSubmit={false}
-                                                              isLoading={false}
-                                                              isOutlined={true}
-                                                              isPositionedRight={false}
-                                                              isRounded={true}
-                                                              isSecondary={false}
-                                                              onClick={[Function]}
-                                                              size={null}
-                                                            >
-                                                              <Button
-                                                                as="button"
-                                                                basic={true}
-                                                                circular={true}
-                                                                className="has-outline"
-                                                                compact={false}
-                                                                disabled={false}
-                                                                floated="left"
-                                                                fluid={false}
-                                                                loading={false}
-                                                                onClick={[Function]}
-                                                                secondary={false}
-                                                                size={null}
-                                                                type="button"
-                                                              >
-                                                                <Ref
-                                                                  innerRef={
-                                                                    Object {
-                                                                      "current": <button
-                                                                        class="ui basic circular left floated button has-outline"
-                                                                        type="button"
-                                                                      >
-                                                                        <i
-                                                                          class="icon"
-                                                                        >
-                                                                          <svg
-                                                                            viewBox="0 0 24 24"
-                                                                          >
-                                                                            <path
-                                                                              d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                                              fill="currentColor"
-                                                                            />
-                                                                          </svg>
-                                                                        </i>
-                                                                      </button>,
-                                                                    }
-                                                                  }
-                                                                >
-                                                                  <RefFindNode
-                                                                    innerRef={
-                                                                      Object {
-                                                                        "current": <button
-                                                                          class="ui basic circular left floated button has-outline"
-                                                                          type="button"
-                                                                        >
-                                                                          <i
-                                                                            class="icon"
-                                                                          >
-                                                                            <svg
-                                                                              viewBox="0 0 24 24"
-                                                                            >
-                                                                              <path
-                                                                                d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                                                fill="currentColor"
-                                                                              />
-                                                                            </svg>
-                                                                          </i>
-                                                                        </button>,
-                                                                      }
-                                                                    }
-                                                                  >
-                                                                    <button
-                                                                      className="ui basic circular left floated button has-outline"
-                                                                      onClick={[Function]}
-                                                                      type="button"
-                                                                    >
-                                                                      <Icon
-                                                                        className={null}
-                                                                        color={null}
-                                                                        hasBorder={false}
-                                                                        isButton={false}
-                                                                        isCircular={false}
-                                                                        isColorInverted={false}
-                                                                        isDisabled={false}
-                                                                        isLabelLeft={false}
-                                                                        labelText={null}
-                                                                        labelWeight={null}
-                                                                        name="minus"
-                                                                        path={null}
-                                                                        size={null}
-                                                                      >
-                                                                        <i
-                                                                          className="icon"
-                                                                        >
-                                                                          <svg
-                                                                            viewBox="0 0 24 24"
-                                                                          >
-                                                                            <path
-                                                                              d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                                              fill="currentColor"
-                                                                            />
-                                                                          </svg>
-                                                                        </i>
-                                                                      </Icon>
-                                                                    </button>
-                                                                  </RefFindNode>
-                                                                </Ref>
-                                                              </Button>
-                                                            </Button>
-                                                            <Paragraph
-                                                              isCompact={false}
-                                                              size="medium"
-                                                              weight={null}
-                                                            >
-                                                              <p
-                                                                className=""
-                                                              >
-                                                                0
-                                                              </p>
-                                                            </Paragraph>
-                                                            <Button
-                                                              hasShadow={false}
-                                                              icon="plus"
-                                                              isCompact={false}
-                                                              isDisabled={false}
-                                                              isFluid={false}
-                                                              isFormSubmit={false}
-                                                              isLoading={false}
-                                                              isOutlined={true}
-                                                              isPositionedRight={false}
-                                                              isRounded={true}
-                                                              isSecondary={false}
-                                                              onClick={[Function]}
-                                                              size={null}
-                                                            >
-                                                              <Button
-                                                                as="button"
-                                                                basic={true}
-                                                                circular={true}
-                                                                className="has-outline"
-                                                                compact={false}
-                                                                disabled={false}
-                                                                floated="left"
-                                                                fluid={false}
-                                                                loading={false}
-                                                                onClick={[Function]}
-                                                                secondary={false}
-                                                                size={null}
-                                                                type="button"
-                                                              >
-                                                                <Ref
-                                                                  innerRef={
-                                                                    Object {
-                                                                      "current": <button
-                                                                        class="ui basic circular left floated button has-outline"
-                                                                        type="button"
-                                                                      >
-                                                                        <i
-                                                                          class="icon"
-                                                                        >
-                                                                          <svg
-                                                                            viewBox="0 0 24 24"
-                                                                          >
-                                                                            <path
-                                                                              d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                                              fill="currentColor"
-                                                                            />
-                                                                          </svg>
-                                                                        </i>
-                                                                      </button>,
-                                                                    }
-                                                                  }
-                                                                >
-                                                                  <RefFindNode
-                                                                    innerRef={
-                                                                      Object {
-                                                                        "current": <button
-                                                                          class="ui basic circular left floated button has-outline"
-                                                                          type="button"
-                                                                        >
-                                                                          <i
-                                                                            class="icon"
-                                                                          >
-                                                                            <svg
-                                                                              viewBox="0 0 24 24"
-                                                                            >
-                                                                              <path
-                                                                                d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                                                fill="currentColor"
-                                                                              />
-                                                                            </svg>
-                                                                          </i>
-                                                                        </button>,
-                                                                      }
-                                                                    }
-                                                                  >
-                                                                    <button
-                                                                      className="ui basic circular left floated button has-outline"
-                                                                      onClick={[Function]}
-                                                                      type="button"
-                                                                    >
-                                                                      <Icon
-                                                                        className={null}
-                                                                        color={null}
-                                                                        hasBorder={false}
-                                                                        isButton={false}
-                                                                        isCircular={false}
-                                                                        isColorInverted={false}
-                                                                        isDisabled={false}
-                                                                        isLabelLeft={false}
-                                                                        labelText={null}
-                                                                        labelWeight={null}
-                                                                        name="plus"
-                                                                        path={null}
-                                                                        size={null}
-                                                                      >
-                                                                        <i
-                                                                          className="icon"
-                                                                        >
-                                                                          <svg
-                                                                            viewBox="0 0 24 24"
-                                                                          >
-                                                                            <path
-                                                                              d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                                              fill="currentColor"
-                                                                            />
-                                                                          </svg>
-                                                                        </i>
-                                                                      </Icon>
-                                                                    </button>
-                                                                  </RefFindNode>
-                                                                </Ref>
-                                                              </Button>
-                                                            </Button>
-                                                          </div>
-                                                        </FlexContainer>
-                                                      </div>
-                                                    </Counter>
-                                                  </div>
-                                                </FlexContainer>
-                                              </div>
-                                            </DropdownMenu>
                                           </div>
                                         </RefFindNode>
                                       </Ref>
-                                    </Dropdown>
-                                  </div>
+                                    </Portal>
+                                  </Popup>
                                 </CounterDropdown>
                               </div>
                               <div
@@ -1853,91 +1407,121 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                   counterName="guests"
                                   dropdownLabel="Guests"
                                   onChange={[Function]}
+                                  willOpenAbove={false}
                                 >
-                                  <div
-                                    className="dropdown-container counter-dropdown"
-                                  >
-                                    <Dropdown
-                                      additionLabel="Add "
-                                      additionPosition="top"
-                                      clearable={true}
-                                      closeOnBlur={true}
-                                      closeOnEscape={true}
-                                      deburr={false}
-                                      icon={
-                                        <Icon
-                                          className={null}
-                                          color={null}
-                                          hasBorder={false}
-                                          isButton={false}
-                                          isCircular={false}
-                                          isColorInverted={false}
-                                          isDisabled={false}
-                                          isLabelLeft={false}
-                                          labelText={null}
-                                          labelWeight={null}
-                                          name="caret down"
-                                          path={null}
-                                          size={null}
+                                  <Popup
+                                    className="counter-dropdown"
+                                    content={
+                                      <FlexContainer
+                                        alignContent={null}
+                                        alignItems={null}
+                                        className={null}
+                                        flexDirection="row"
+                                        flexWrap={null}
+                                        justifyContent="space-between"
+                                      >
+                                        <Paragraph
+                                          isCompact={false}
+                                          size="medium"
+                                          weight={null}
+                                        >
+                                          Guests
+                                        </Paragraph>
+                                        <Counter
+                                          min={0}
+                                          name="guests"
+                                          onChange={[Function]}
+                                          renderValue={[Function]}
+                                          value={0}
                                         />
-                                      }
-                                      minCharacters={1}
-                                      noResultsMessage="No results found."
-                                      onBlur={[Function]}
-                                      onFocus={[Function]}
-                                      open={false}
-                                      openOnFocus={true}
-                                      options={
-                                        Array [
-                                          <FlexContainer
-                                            alignContent={null}
-                                            alignItems={null}
+                                      </FlexContainer>
+                                    }
+                                    disabled={false}
+                                    eventsEnabled={true}
+                                    offset={0}
+                                    on="click"
+                                    onClose={[Function]}
+                                    onOpen={[Function]}
+                                    open={false}
+                                    pinned={false}
+                                    position="bottom left"
+                                    text="Guests"
+                                    trigger={
+                                      <div
+                                        className="dropdown-container"
+                                        role="button"
+                                      >
+                                        <div
+                                          className="ui selection dropdown counter-dropdown-trigger"
+                                        >
+                                          Guests
+                                          <Icon
                                             className={null}
-                                            flexDirection="row"
-                                            flexWrap={null}
-                                            justifyContent="space-between"
+                                            color={null}
+                                            hasBorder={false}
+                                            isButton={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="caret down"
+                                            path={null}
+                                            size={null}
+                                          />
+                                        </div>
+                                      </div>
+                                    }
+                                  >
+                                    <Portal
+                                      closeOnDocumentClick={true}
+                                      closeOnEscape={true}
+                                      closeOnTriggerClick={true}
+                                      eventPool="default"
+                                      onClose={[Function]}
+                                      onMount={[Function]}
+                                      onOpen={[Function]}
+                                      onUnmount={[Function]}
+                                      open={false}
+                                      openOnTriggerClick={true}
+                                      trigger={
+                                        <div
+                                          className="dropdown-container"
+                                          role="button"
+                                        >
+                                          <div
+                                            className="ui selection dropdown counter-dropdown-trigger"
                                           >
-                                            <Paragraph
-                                              isCompact={false}
-                                              size="medium"
-                                              weight={null}
+                                            Guests
+                                            <Icon
+                                              className={null}
+                                              color={null}
+                                              hasBorder={false}
+                                              isButton={false}
+                                              isCircular={false}
+                                              isColorInverted={false}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="caret down"
+                                              path={null}
+                                              size={null}
+                                            />
+                                          </div>
+                                        </div>
+                                      }
+                                      triggerRef={
+                                        Object {
+                                          "current": <div
+                                            class="dropdown-container"
+                                            role="button"
+                                          >
+                                            <div
+                                              class="ui selection dropdown counter-dropdown-trigger"
                                             >
                                               Guests
-                                            </Paragraph>
-                                            <Counter
-                                              name="guests"
-                                              onChange={[Function]}
-                                              renderValue={[Function]}
-                                              value={0}
-                                            />
-                                          </FlexContainer>,
-                                        ]
-                                      }
-                                      renderLabel={[Function]}
-                                      searchInput="text"
-                                      selectOnBlur={true}
-                                      selectOnNavigation={true}
-                                      selection={true}
-                                      text="Guests"
-                                      wrapSelection={true}
-                                    >
-                                      <Ref
-                                        innerRef={
-                                          Object {
-                                            "current": <div
-                                              aria-expanded="false"
-                                              class="ui selection dropdown"
-                                              role="listbox"
-                                              tabindex="0"
-                                            >
-                                              <div
-                                                aria-atomic="true"
-                                                aria-live="polite"
-                                                class="text"
-                                                role="alert"
-                                              >
-                                                Guests
-                                              </div>
                                               <i
                                                 class="icon"
                                               >
@@ -1950,91 +1534,47 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                   />
                                                 </svg>
                                               </i>
-                                              <div
-                                                class="menu transition"
-                                              >
-                                                <div
-                                                  class="flex-container"
-                                                  style="display: flex; flex-grow: 1; height: 100%; flex-direction: row; justify-content: space-between;"
-                                                >
-                                                  <p
-                                                    class=""
-                                                  >
-                                                    Guests
-                                                  </p>
-                                                  <div
-                                                    class="ui counter"
-                                                  >
-                                                    <div
-                                                      class="flex-container"
-                                                      style="display: flex; flex-grow: 1; height: 100%; align-items: center; justify-content: space-between;"
-                                                    >
-                                                      <button
-                                                        class="ui basic circular left floated button has-outline"
-                                                        type="button"
-                                                      >
-                                                        <i
-                                                          class="icon"
-                                                        >
-                                                          <svg
-                                                            viewBox="0 0 24 24"
-                                                          >
-                                                            <path
-                                                              d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                              fill="currentColor"
-                                                            />
-                                                          </svg>
-                                                        </i>
-                                                      </button>
-                                                      <p
-                                                        class=""
-                                                      >
-                                                        0
-                                                      </p>
-                                                      <button
-                                                        class="ui basic circular left floated button has-outline"
-                                                        type="button"
-                                                      >
-                                                        <i
-                                                          class="icon"
-                                                        >
-                                                          <svg
-                                                            viewBox="0 0 24 24"
-                                                          >
-                                                            <path
-                                                              d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                              fill="currentColor"
-                                                            />
-                                                          </svg>
-                                                        </i>
-                                                      </button>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>
-                                            </div>,
-                                          }
+                                            </div>
+                                          </div>,
                                         }
+                                      }
+                                    >
+                                      <Ref
+                                        innerRef={[Function]}
                                       >
                                         <RefFindNode
-                                          innerRef={
-                                            Object {
-                                              "current": <div
-                                                aria-expanded="false"
-                                                class="ui selection dropdown"
-                                                role="listbox"
-                                                tabindex="0"
+                                          innerRef={[Function]}
+                                        >
+                                          <div
+                                            className="dropdown-container"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            role="button"
+                                          >
+                                            <div
+                                              className="ui selection dropdown counter-dropdown-trigger"
+                                            >
+                                              Guests
+                                              <Icon
+                                                className={null}
+                                                color={null}
+                                                hasBorder={false}
+                                                isButton={false}
+                                                isCircular={false}
+                                                isColorInverted={false}
+                                                isDisabled={false}
+                                                isLabelLeft={false}
+                                                labelText={null}
+                                                labelWeight={null}
+                                                name="caret down"
+                                                path={null}
+                                                size={null}
                                               >
-                                                <div
-                                                  aria-atomic="true"
-                                                  aria-live="polite"
-                                                  class="text"
-                                                  role="alert"
-                                                >
-                                                  Guests
-                                                </div>
                                                 <i
-                                                  class="icon"
+                                                  className="icon"
                                                 >
                                                   <svg
                                                     viewBox="0 0 24 24"
@@ -2045,445 +1585,13 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                                     />
                                                   </svg>
                                                 </i>
-                                                <div
-                                                  class="menu transition"
-                                                >
-                                                  <div
-                                                    class="flex-container"
-                                                    style="display: flex; flex-grow: 1; height: 100%; flex-direction: row; justify-content: space-between;"
-                                                  >
-                                                    <p
-                                                      class=""
-                                                    >
-                                                      Guests
-                                                    </p>
-                                                    <div
-                                                      class="ui counter"
-                                                    >
-                                                      <div
-                                                        class="flex-container"
-                                                        style="display: flex; flex-grow: 1; height: 100%; align-items: center; justify-content: space-between;"
-                                                      >
-                                                        <button
-                                                          class="ui basic circular left floated button has-outline"
-                                                          type="button"
-                                                        >
-                                                          <i
-                                                            class="icon"
-                                                          >
-                                                            <svg
-                                                              viewBox="0 0 24 24"
-                                                            >
-                                                              <path
-                                                                d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                                fill="currentColor"
-                                                              />
-                                                            </svg>
-                                                          </i>
-                                                        </button>
-                                                        <p
-                                                          class=""
-                                                        >
-                                                          0
-                                                        </p>
-                                                        <button
-                                                          class="ui basic circular left floated button has-outline"
-                                                          type="button"
-                                                        >
-                                                          <i
-                                                            class="icon"
-                                                          >
-                                                            <svg
-                                                              viewBox="0 0 24 24"
-                                                            >
-                                                              <path
-                                                                d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                                fill="currentColor"
-                                                              />
-                                                            </svg>
-                                                          </i>
-                                                        </button>
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                              </div>,
-                                            }
-                                          }
-                                        >
-                                          <div
-                                            aria-expanded={false}
-                                            className="ui selection dropdown"
-                                            onBlur={[Function]}
-                                            onChange={[Function]}
-                                            onClick={[Function]}
-                                            onFocus={[Function]}
-                                            onMouseDown={[Function]}
-                                            role="listbox"
-                                            tabIndex={0}
-                                          >
-                                            <div
-                                              aria-atomic={true}
-                                              aria-live="polite"
-                                              className="text"
-                                              role="alert"
-                                            >
-                                              Guests
+                                              </Icon>
                                             </div>
-                                            <Icon
-                                              className=""
-                                              color={null}
-                                              hasBorder={false}
-                                              isButton={false}
-                                              isCircular={false}
-                                              isColorInverted={false}
-                                              isDisabled={false}
-                                              isLabelLeft={false}
-                                              labelText={null}
-                                              labelWeight={null}
-                                              name="caret down"
-                                              onClick={[Function]}
-                                              path={null}
-                                              size={null}
-                                            >
-                                              <i
-                                                className="icon"
-                                                onClick={[Function]}
-                                              >
-                                                <svg
-                                                  viewBox="0 0 24 24"
-                                                >
-                                                  <path
-                                                    d="M20,8.5l-8,7-8-7Z"
-                                                    fill="currentColor"
-                                                  />
-                                                </svg>
-                                              </i>
-                                            </Icon>
-                                            <DropdownMenu
-                                              open={false}
-                                            >
-                                              <div
-                                                className="menu transition"
-                                              >
-                                                <FlexContainer
-                                                  alignContent={null}
-                                                  alignItems={null}
-                                                  className={null}
-                                                  flexDirection="row"
-                                                  flexWrap={null}
-                                                  justifyContent="space-between"
-                                                >
-                                                  <div
-                                                    className="flex-container"
-                                                    style={
-                                                      Object {
-                                                        "alignContent": null,
-                                                        "alignItems": null,
-                                                        "display": "flex",
-                                                        "flexDirection": "row",
-                                                        "flexGrow": "1",
-                                                        "flexWrap": null,
-                                                        "height": "100%",
-                                                        "justifyContent": "space-between",
-                                                      }
-                                                    }
-                                                  >
-                                                    <Paragraph
-                                                      isCompact={false}
-                                                      size="medium"
-                                                      weight={null}
-                                                    >
-                                                      <p
-                                                        className=""
-                                                      >
-                                                        Guests
-                                                      </p>
-                                                    </Paragraph>
-                                                    <Counter
-                                                      name="guests"
-                                                      onChange={[Function]}
-                                                      renderValue={[Function]}
-                                                      value={0}
-                                                    >
-                                                      <div
-                                                        className="ui counter"
-                                                      >
-                                                        <FlexContainer
-                                                          alignContent={null}
-                                                          alignItems="center"
-                                                          className={null}
-                                                          flexDirection={null}
-                                                          flexWrap={null}
-                                                          justifyContent="space-between"
-                                                        >
-                                                          <div
-                                                            className="flex-container"
-                                                            style={
-                                                              Object {
-                                                                "alignContent": null,
-                                                                "alignItems": "center",
-                                                                "display": "flex",
-                                                                "flexDirection": null,
-                                                                "flexGrow": "1",
-                                                                "flexWrap": null,
-                                                                "height": "100%",
-                                                                "justifyContent": "space-between",
-                                                              }
-                                                            }
-                                                          >
-                                                            <Button
-                                                              hasShadow={false}
-                                                              icon="minus"
-                                                              isCompact={false}
-                                                              isDisabled={false}
-                                                              isFluid={false}
-                                                              isFormSubmit={false}
-                                                              isLoading={false}
-                                                              isOutlined={true}
-                                                              isPositionedRight={false}
-                                                              isRounded={true}
-                                                              isSecondary={false}
-                                                              onClick={[Function]}
-                                                              size={null}
-                                                            >
-                                                              <Button
-                                                                as="button"
-                                                                basic={true}
-                                                                circular={true}
-                                                                className="has-outline"
-                                                                compact={false}
-                                                                disabled={false}
-                                                                floated="left"
-                                                                fluid={false}
-                                                                loading={false}
-                                                                onClick={[Function]}
-                                                                secondary={false}
-                                                                size={null}
-                                                                type="button"
-                                                              >
-                                                                <Ref
-                                                                  innerRef={
-                                                                    Object {
-                                                                      "current": <button
-                                                                        class="ui basic circular left floated button has-outline"
-                                                                        type="button"
-                                                                      >
-                                                                        <i
-                                                                          class="icon"
-                                                                        >
-                                                                          <svg
-                                                                            viewBox="0 0 24 24"
-                                                                          >
-                                                                            <path
-                                                                              d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                                              fill="currentColor"
-                                                                            />
-                                                                          </svg>
-                                                                        </i>
-                                                                      </button>,
-                                                                    }
-                                                                  }
-                                                                >
-                                                                  <RefFindNode
-                                                                    innerRef={
-                                                                      Object {
-                                                                        "current": <button
-                                                                          class="ui basic circular left floated button has-outline"
-                                                                          type="button"
-                                                                        >
-                                                                          <i
-                                                                            class="icon"
-                                                                          >
-                                                                            <svg
-                                                                              viewBox="0 0 24 24"
-                                                                            >
-                                                                              <path
-                                                                                d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                                                fill="currentColor"
-                                                                              />
-                                                                            </svg>
-                                                                          </i>
-                                                                        </button>,
-                                                                      }
-                                                                    }
-                                                                  >
-                                                                    <button
-                                                                      className="ui basic circular left floated button has-outline"
-                                                                      onClick={[Function]}
-                                                                      type="button"
-                                                                    >
-                                                                      <Icon
-                                                                        className={null}
-                                                                        color={null}
-                                                                        hasBorder={false}
-                                                                        isButton={false}
-                                                                        isCircular={false}
-                                                                        isColorInverted={false}
-                                                                        isDisabled={false}
-                                                                        isLabelLeft={false}
-                                                                        labelText={null}
-                                                                        labelWeight={null}
-                                                                        name="minus"
-                                                                        path={null}
-                                                                        size={null}
-                                                                      >
-                                                                        <i
-                                                                          className="icon"
-                                                                        >
-                                                                          <svg
-                                                                            viewBox="0 0 24 24"
-                                                                          >
-                                                                            <path
-                                                                              d="M16.35,11.27H7.65v1.57h8.7Z"
-                                                                              fill="currentColor"
-                                                                            />
-                                                                          </svg>
-                                                                        </i>
-                                                                      </Icon>
-                                                                    </button>
-                                                                  </RefFindNode>
-                                                                </Ref>
-                                                              </Button>
-                                                            </Button>
-                                                            <Paragraph
-                                                              isCompact={false}
-                                                              size="medium"
-                                                              weight={null}
-                                                            >
-                                                              <p
-                                                                className=""
-                                                              >
-                                                                0
-                                                              </p>
-                                                            </Paragraph>
-                                                            <Button
-                                                              hasShadow={false}
-                                                              icon="plus"
-                                                              isCompact={false}
-                                                              isDisabled={false}
-                                                              isFluid={false}
-                                                              isFormSubmit={false}
-                                                              isLoading={false}
-                                                              isOutlined={true}
-                                                              isPositionedRight={false}
-                                                              isRounded={true}
-                                                              isSecondary={false}
-                                                              onClick={[Function]}
-                                                              size={null}
-                                                            >
-                                                              <Button
-                                                                as="button"
-                                                                basic={true}
-                                                                circular={true}
-                                                                className="has-outline"
-                                                                compact={false}
-                                                                disabled={false}
-                                                                floated="left"
-                                                                fluid={false}
-                                                                loading={false}
-                                                                onClick={[Function]}
-                                                                secondary={false}
-                                                                size={null}
-                                                                type="button"
-                                                              >
-                                                                <Ref
-                                                                  innerRef={
-                                                                    Object {
-                                                                      "current": <button
-                                                                        class="ui basic circular left floated button has-outline"
-                                                                        type="button"
-                                                                      >
-                                                                        <i
-                                                                          class="icon"
-                                                                        >
-                                                                          <svg
-                                                                            viewBox="0 0 24 24"
-                                                                          >
-                                                                            <path
-                                                                              d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                                              fill="currentColor"
-                                                                            />
-                                                                          </svg>
-                                                                        </i>
-                                                                      </button>,
-                                                                    }
-                                                                  }
-                                                                >
-                                                                  <RefFindNode
-                                                                    innerRef={
-                                                                      Object {
-                                                                        "current": <button
-                                                                          class="ui basic circular left floated button has-outline"
-                                                                          type="button"
-                                                                        >
-                                                                          <i
-                                                                            class="icon"
-                                                                          >
-                                                                            <svg
-                                                                              viewBox="0 0 24 24"
-                                                                            >
-                                                                              <path
-                                                                                d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                                                fill="currentColor"
-                                                                              />
-                                                                            </svg>
-                                                                          </i>
-                                                                        </button>,
-                                                                      }
-                                                                    }
-                                                                  >
-                                                                    <button
-                                                                      className="ui basic circular left floated button has-outline"
-                                                                      onClick={[Function]}
-                                                                      type="button"
-                                                                    >
-                                                                      <Icon
-                                                                        className={null}
-                                                                        color={null}
-                                                                        hasBorder={false}
-                                                                        isButton={false}
-                                                                        isCircular={false}
-                                                                        isColorInverted={false}
-                                                                        isDisabled={false}
-                                                                        isLabelLeft={false}
-                                                                        labelText={null}
-                                                                        labelWeight={null}
-                                                                        name="plus"
-                                                                        path={null}
-                                                                        size={null}
-                                                                      >
-                                                                        <i
-                                                                          className="icon"
-                                                                        >
-                                                                          <svg
-                                                                            viewBox="0 0 24 24"
-                                                                          >
-                                                                            <path
-                                                                              d="M13,11.27V7.71H11.4v3.56H7.83v1.57H11.4V16.4H13V12.84h3.57V11.27Z"
-                                                                              fill="currentColor"
-                                                                            />
-                                                                          </svg>
-                                                                        </i>
-                                                                      </Icon>
-                                                                    </button>
-                                                                  </RefFindNode>
-                                                                </Ref>
-                                                              </Button>
-                                                            </Button>
-                                                          </div>
-                                                        </FlexContainer>
-                                                      </div>
-                                                    </Counter>
-                                                  </div>
-                                                </FlexContainer>
-                                              </div>
-                                            </DropdownMenu>
                                           </div>
                                         </RefFindNode>
                                       </Ref>
-                                    </Dropdown>
-                                  </div>
+                                    </Portal>
+                                  </Popup>
                                 </CounterDropdown>
                               </div>
                               <div
@@ -3501,10 +2609,191 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                   counterName="guests"
                                   dropdownLabel="Guests"
                                   onChange={[Function]}
+                                  willOpenAbove={false}
                                 >
-                                  <div
-                                    className="dropdown-container counter-dropdown"
-                                  />
+                                  <Popup
+                                    className="counter-dropdown"
+                                    content={
+                                      <FlexContainer
+                                        alignContent={null}
+                                        alignItems={null}
+                                        className={null}
+                                        flexDirection="row"
+                                        flexWrap={null}
+                                        justifyContent="space-between"
+                                      >
+                                        <Paragraph
+                                          isCompact={false}
+                                          size="medium"
+                                          weight={null}
+                                        >
+                                          Guests
+                                        </Paragraph>
+                                        <Counter
+                                          min={0}
+                                          name="guests"
+                                          onChange={[Function]}
+                                          renderValue={[Function]}
+                                          value={0}
+                                        />
+                                      </FlexContainer>
+                                    }
+                                    disabled={false}
+                                    eventsEnabled={true}
+                                    offset={0}
+                                    on="click"
+                                    onClose={[Function]}
+                                    onOpen={[Function]}
+                                    open={false}
+                                    pinned={false}
+                                    position="bottom left"
+                                    text="Guests"
+                                    trigger={
+                                      <div
+                                        className="dropdown-container"
+                                        role="button"
+                                      >
+                                        <div
+                                          className="ui selection dropdown counter-dropdown-trigger"
+                                        >
+                                          Guests
+                                          <Icon
+                                            className={null}
+                                            color={null}
+                                            hasBorder={false}
+                                            isButton={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="caret down"
+                                            path={null}
+                                            size={null}
+                                          />
+                                        </div>
+                                      </div>
+                                    }
+                                  >
+                                    <Portal
+                                      closeOnDocumentClick={true}
+                                      closeOnEscape={true}
+                                      closeOnTriggerClick={true}
+                                      eventPool="default"
+                                      onClose={[Function]}
+                                      onMount={[Function]}
+                                      onOpen={[Function]}
+                                      onUnmount={[Function]}
+                                      open={false}
+                                      openOnTriggerClick={true}
+                                      trigger={
+                                        <div
+                                          className="dropdown-container"
+                                          role="button"
+                                        >
+                                          <div
+                                            className="ui selection dropdown counter-dropdown-trigger"
+                                          >
+                                            Guests
+                                            <Icon
+                                              className={null}
+                                              color={null}
+                                              hasBorder={false}
+                                              isButton={false}
+                                              isCircular={false}
+                                              isColorInverted={false}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="caret down"
+                                              path={null}
+                                              size={null}
+                                            />
+                                          </div>
+                                        </div>
+                                      }
+                                      triggerRef={
+                                        Object {
+                                          "current": <div
+                                            class="dropdown-container"
+                                            role="button"
+                                          >
+                                            <div
+                                              class="ui selection dropdown counter-dropdown-trigger"
+                                            >
+                                              Guests
+                                              <i
+                                                class="icon"
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M20,8.5l-8,7-8-7Z"
+                                                    fill="currentColor"
+                                                  />
+                                                </svg>
+                                              </i>
+                                            </div>
+                                          </div>,
+                                        }
+                                      }
+                                    >
+                                      <Ref
+                                        innerRef={[Function]}
+                                      >
+                                        <RefFindNode
+                                          innerRef={[Function]}
+                                        >
+                                          <div
+                                            className="dropdown-container"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            role="button"
+                                          >
+                                            <div
+                                              className="ui selection dropdown counter-dropdown-trigger"
+                                            >
+                                              Guests
+                                              <Icon
+                                                className={null}
+                                                color={null}
+                                                hasBorder={false}
+                                                isButton={false}
+                                                isCircular={false}
+                                                isColorInverted={false}
+                                                isDisabled={false}
+                                                isLabelLeft={false}
+                                                labelText={null}
+                                                labelWeight={null}
+                                                name="caret down"
+                                                path={null}
+                                                size={null}
+                                              >
+                                                <i
+                                                  className="icon"
+                                                >
+                                                  <svg
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <path
+                                                      d="M20,8.5l-8,7-8-7Z"
+                                                      fill="currentColor"
+                                                    />
+                                                  </svg>
+                                                </i>
+                                              </Icon>
+                                            </div>
+                                          </div>
+                                        </RefFindNode>
+                                      </Ref>
+                                    </Portal>
+                                  </Popup>
                                 </CounterDropdown>
                               </div>
                               <div
@@ -4407,10 +3696,191 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                   counterName="guests"
                                   dropdownLabel="Guests"
                                   onChange={[Function]}
+                                  willOpenAbove={false}
                                 >
-                                  <div
-                                    className="dropdown-container counter-dropdown"
-                                  />
+                                  <Popup
+                                    className="counter-dropdown"
+                                    content={
+                                      <FlexContainer
+                                        alignContent={null}
+                                        alignItems={null}
+                                        className={null}
+                                        flexDirection="row"
+                                        flexWrap={null}
+                                        justifyContent="space-between"
+                                      >
+                                        <Paragraph
+                                          isCompact={false}
+                                          size="medium"
+                                          weight={null}
+                                        >
+                                          Guests
+                                        </Paragraph>
+                                        <Counter
+                                          min={0}
+                                          name="guests"
+                                          onChange={[Function]}
+                                          renderValue={[Function]}
+                                          value={0}
+                                        />
+                                      </FlexContainer>
+                                    }
+                                    disabled={false}
+                                    eventsEnabled={true}
+                                    offset={0}
+                                    on="click"
+                                    onClose={[Function]}
+                                    onOpen={[Function]}
+                                    open={false}
+                                    pinned={false}
+                                    position="bottom left"
+                                    text="Guests"
+                                    trigger={
+                                      <div
+                                        className="dropdown-container"
+                                        role="button"
+                                      >
+                                        <div
+                                          className="ui selection dropdown counter-dropdown-trigger"
+                                        >
+                                          Guests
+                                          <Icon
+                                            className={null}
+                                            color={null}
+                                            hasBorder={false}
+                                            isButton={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="caret down"
+                                            path={null}
+                                            size={null}
+                                          />
+                                        </div>
+                                      </div>
+                                    }
+                                  >
+                                    <Portal
+                                      closeOnDocumentClick={true}
+                                      closeOnEscape={true}
+                                      closeOnTriggerClick={true}
+                                      eventPool="default"
+                                      onClose={[Function]}
+                                      onMount={[Function]}
+                                      onOpen={[Function]}
+                                      onUnmount={[Function]}
+                                      open={false}
+                                      openOnTriggerClick={true}
+                                      trigger={
+                                        <div
+                                          className="dropdown-container"
+                                          role="button"
+                                        >
+                                          <div
+                                            className="ui selection dropdown counter-dropdown-trigger"
+                                          >
+                                            Guests
+                                            <Icon
+                                              className={null}
+                                              color={null}
+                                              hasBorder={false}
+                                              isButton={false}
+                                              isCircular={false}
+                                              isColorInverted={false}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="caret down"
+                                              path={null}
+                                              size={null}
+                                            />
+                                          </div>
+                                        </div>
+                                      }
+                                      triggerRef={
+                                        Object {
+                                          "current": <div
+                                            class="dropdown-container"
+                                            role="button"
+                                          >
+                                            <div
+                                              class="ui selection dropdown counter-dropdown-trigger"
+                                            >
+                                              Guests
+                                              <i
+                                                class="icon"
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M20,8.5l-8,7-8-7Z"
+                                                    fill="currentColor"
+                                                  />
+                                                </svg>
+                                              </i>
+                                            </div>
+                                          </div>,
+                                        }
+                                      }
+                                    >
+                                      <Ref
+                                        innerRef={[Function]}
+                                      >
+                                        <RefFindNode
+                                          innerRef={[Function]}
+                                        >
+                                          <div
+                                            className="dropdown-container"
+                                            onBlur={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseEnter={[Function]}
+                                            onMouseLeave={[Function]}
+                                            role="button"
+                                          >
+                                            <div
+                                              className="ui selection dropdown counter-dropdown-trigger"
+                                            >
+                                              Guests
+                                              <Icon
+                                                className={null}
+                                                color={null}
+                                                hasBorder={false}
+                                                isButton={false}
+                                                isCircular={false}
+                                                isColorInverted={false}
+                                                isDisabled={false}
+                                                isLabelLeft={false}
+                                                labelText={null}
+                                                labelWeight={null}
+                                                name="caret down"
+                                                path={null}
+                                                size={null}
+                                              >
+                                                <i
+                                                  className="icon"
+                                                >
+                                                  <svg
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <path
+                                                      d="M20,8.5l-8,7-8-7Z"
+                                                      fill="currentColor"
+                                                    />
+                                                  </svg>
+                                                </i>
+                                              </Icon>
+                                            </div>
+                                          </div>
+                                        </RefFindNode>
+                                      </Ref>
+                                    </Portal>
+                                  </Popup>
                                 </CounterDropdown>
                               </div>
                               <div

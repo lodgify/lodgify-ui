@@ -1073,10 +1073,191 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   counterName="guests"
                                                   dropdownLabel="Guests"
                                                   onChange={[Function]}
+                                                  willOpenAbove={false}
                                                 >
-                                                  <div
-                                                    className="dropdown-container counter-dropdown"
-                                                  />
+                                                  <Popup
+                                                    className="counter-dropdown"
+                                                    content={
+                                                      <FlexContainer
+                                                        alignContent={null}
+                                                        alignItems={null}
+                                                        className={null}
+                                                        flexDirection="row"
+                                                        flexWrap={null}
+                                                        justifyContent="space-between"
+                                                      >
+                                                        <Paragraph
+                                                          isCompact={false}
+                                                          size="medium"
+                                                          weight={null}
+                                                        >
+                                                          Guests
+                                                        </Paragraph>
+                                                        <Counter
+                                                          min={0}
+                                                          name="guests"
+                                                          onChange={[Function]}
+                                                          renderValue={[Function]}
+                                                          value={0}
+                                                        />
+                                                      </FlexContainer>
+                                                    }
+                                                    disabled={false}
+                                                    eventsEnabled={true}
+                                                    offset={0}
+                                                    on="click"
+                                                    onClose={[Function]}
+                                                    onOpen={[Function]}
+                                                    open={false}
+                                                    pinned={false}
+                                                    position="bottom left"
+                                                    text="Guests"
+                                                    trigger={
+                                                      <div
+                                                        className="dropdown-container"
+                                                        role="button"
+                                                      >
+                                                        <div
+                                                          className="ui selection dropdown counter-dropdown-trigger"
+                                                        >
+                                                          Guests
+                                                          <Icon
+                                                            className={null}
+                                                            color={null}
+                                                            hasBorder={false}
+                                                            isButton={false}
+                                                            isCircular={false}
+                                                            isColorInverted={false}
+                                                            isDisabled={false}
+                                                            isLabelLeft={false}
+                                                            labelText={null}
+                                                            labelWeight={null}
+                                                            name="caret down"
+                                                            path={null}
+                                                            size={null}
+                                                          />
+                                                        </div>
+                                                      </div>
+                                                    }
+                                                  >
+                                                    <Portal
+                                                      closeOnDocumentClick={true}
+                                                      closeOnEscape={true}
+                                                      closeOnTriggerClick={true}
+                                                      eventPool="default"
+                                                      onClose={[Function]}
+                                                      onMount={[Function]}
+                                                      onOpen={[Function]}
+                                                      onUnmount={[Function]}
+                                                      open={false}
+                                                      openOnTriggerClick={true}
+                                                      trigger={
+                                                        <div
+                                                          className="dropdown-container"
+                                                          role="button"
+                                                        >
+                                                          <div
+                                                            className="ui selection dropdown counter-dropdown-trigger"
+                                                          >
+                                                            Guests
+                                                            <Icon
+                                                              className={null}
+                                                              color={null}
+                                                              hasBorder={false}
+                                                              isButton={false}
+                                                              isCircular={false}
+                                                              isColorInverted={false}
+                                                              isDisabled={false}
+                                                              isLabelLeft={false}
+                                                              labelText={null}
+                                                              labelWeight={null}
+                                                              name="caret down"
+                                                              path={null}
+                                                              size={null}
+                                                            />
+                                                          </div>
+                                                        </div>
+                                                      }
+                                                      triggerRef={
+                                                        Object {
+                                                          "current": <div
+                                                            class="dropdown-container"
+                                                            role="button"
+                                                          >
+                                                            <div
+                                                              class="ui selection dropdown counter-dropdown-trigger"
+                                                            >
+                                                              Guests
+                                                              <i
+                                                                class="icon"
+                                                              >
+                                                                <svg
+                                                                  viewBox="0 0 24 24"
+                                                                >
+                                                                  <path
+                                                                    d="M20,8.5l-8,7-8-7Z"
+                                                                    fill="currentColor"
+                                                                  />
+                                                                </svg>
+                                                              </i>
+                                                            </div>
+                                                          </div>,
+                                                        }
+                                                      }
+                                                    >
+                                                      <Ref
+                                                        innerRef={[Function]}
+                                                      >
+                                                        <RefFindNode
+                                                          innerRef={[Function]}
+                                                        >
+                                                          <div
+                                                            className="dropdown-container"
+                                                            onBlur={[Function]}
+                                                            onClick={[Function]}
+                                                            onFocus={[Function]}
+                                                            onMouseEnter={[Function]}
+                                                            onMouseLeave={[Function]}
+                                                            role="button"
+                                                          >
+                                                            <div
+                                                              className="ui selection dropdown counter-dropdown-trigger"
+                                                            >
+                                                              Guests
+                                                              <Icon
+                                                                className={null}
+                                                                color={null}
+                                                                hasBorder={false}
+                                                                isButton={false}
+                                                                isCircular={false}
+                                                                isColorInverted={false}
+                                                                isDisabled={false}
+                                                                isLabelLeft={false}
+                                                                labelText={null}
+                                                                labelWeight={null}
+                                                                name="caret down"
+                                                                path={null}
+                                                                size={null}
+                                                              >
+                                                                <i
+                                                                  className="icon"
+                                                                >
+                                                                  <svg
+                                                                    viewBox="0 0 24 24"
+                                                                  >
+                                                                    <path
+                                                                      d="M20,8.5l-8,7-8-7Z"
+                                                                      fill="currentColor"
+                                                                    />
+                                                                  </svg>
+                                                                </i>
+                                                              </Icon>
+                                                            </div>
+                                                          </div>
+                                                        </RefFindNode>
+                                                      </Ref>
+                                                    </Portal>
+                                                  </Popup>
                                                 </CounterDropdown>
                                               </div>
                                               <div

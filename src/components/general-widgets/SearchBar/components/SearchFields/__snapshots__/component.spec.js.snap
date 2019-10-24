@@ -54,6 +54,7 @@ exports[`<SearchFields /> if \`locationOptions\` size is greater than 0 should r
       counterName="guests"
       dropdownLabel="Guests"
       onChange={[Function]}
+      willOpenAbove={false}
     />
   </div>
   <div
@@ -89,6 +90,7 @@ exports[`<SearchFields /> should render the right structure 1`] = `
       counterName="guests"
       dropdownLabel="Guests"
       onChange={[Function]}
+      willOpenAbove={false}
     />
   </div>
   <div
