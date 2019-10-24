@@ -179,6 +179,7 @@ Component.defaultProps = {
   locationInputLabel: LOCATION,
   locationInputValue: undefined,
   locationOptions: null,
+  maximumGuestsInputValue: undefined,
   modalHeadingText: CHECK_OUR_AVAILABILITY,
   modalSummaryElement: null,
   onChangeInput: Function.prototype,
@@ -271,6 +272,9 @@ Component.propTypes = {
       ]),
     })
   ),
+  /** The maximum number the guests input counter can increase to. */
+  // eslint-disable-next-line react/no-unused-prop-types
+  maximumGuestsInputValue: PropTypes.number,
   /** The heading text to display in the modal */
   // eslint-disable-next-line react/no-unused-prop-types
   modalHeadingText: PropTypes.string,

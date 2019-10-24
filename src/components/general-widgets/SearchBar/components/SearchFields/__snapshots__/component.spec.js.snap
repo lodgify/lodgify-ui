@@ -49,33 +49,11 @@ exports[`<SearchFields /> if \`locationOptions\` size is greater than 0 should r
   <div
     className="input-container guests-input-container"
   >
-    <NumberInput
-      autoComplete={null}
-      error={false}
-      icon={
-        <Icon
-          className={null}
-          color={null}
-          hasBorder={false}
-          isButton={false}
-          isCircular={false}
-          isColorInverted={false}
-          isDisabled={false}
-          isLabelLeft={false}
-          labelText={null}
-          labelWeight={null}
-          name="users"
-          path={null}
-          size={null}
-        />
-      }
-      isValid={false}
-      label="Guests"
-      min={0}
-      name="guests"
-      onBlur={[Function]}
+    <CounterDropdown
+      counterLabel="Guests"
+      counterName="guests"
+      dropdownLabel="Guests"
       onChange={[Function]}
-      value=""
     />
   </div>
   <div
@@ -106,33 +84,11 @@ exports[`<SearchFields /> should render the right structure 1`] = `
   <div
     className="input-container guests-input-container"
   >
-    <NumberInput
-      autoComplete={null}
-      error={false}
-      icon={
-        <Icon
-          className={null}
-          color={null}
-          hasBorder={false}
-          isButton={false}
-          isCircular={false}
-          isColorInverted={false}
-          isDisabled={false}
-          isLabelLeft={false}
-          labelText={null}
-          labelWeight={null}
-          name="users"
-          path={null}
-          size={null}
-        />
-      }
-      isValid={false}
-      label="Guests"
-      min={0}
-      name="guests"
-      onBlur={[Function]}
+    <CounterDropdown
+      counterLabel="Guests"
+      counterName="guests"
+      dropdownLabel="Guests"
       onChange={[Function]}
-      value=""
     />
   </div>
   <div

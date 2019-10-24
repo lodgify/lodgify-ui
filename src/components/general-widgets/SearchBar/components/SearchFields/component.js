@@ -21,9 +21,9 @@ import {
   LOCATION,
   SEARCH,
 } from 'utils/default-strings';
-import { Icon, ICON_NAMES } from 'elements/Icon';
+import { ICON_NAMES } from 'elements/Icon';
 import { Dropdown } from 'inputs/Dropdown';
-import { NumberInput } from 'inputs/NumberInput';
+import { CounterDropdown } from 'inputs/CounterDropdown';
 import { DateRangePicker } from 'inputs/DateRangePicker';
 
 export const Component = ({
@@ -32,16 +32,18 @@ export const Component = ({
   datesCheckOutLabel,
   datesInputFocusedInput,
   datesInputOnFocusChange,
+  datesInputValue,
   getIsDayBlocked,
+  guestsCounterLabel,
   guestsInputLabel,
+  guestsInputValue,
   isDateRangePickerLoading,
   locationInputLabel,
-  locationOptions,
-  searchButton,
   locationInputValue,
-  datesInputValue,
-  guestsInputValue,
+  locationOptions,
+  maximumGuestsInputValue,
   onInputChange,
+  searchButton,
   willLocationDropdownOpenAbove,
 }) => (
   <div className="inputs-container">
@@ -74,13 +76,13 @@ export const Component = ({
       />
     </div>
     <div className="input-container guests-input-container">
-      <NumberInput
-        icon={<Icon name={ICON_NAMES.USERS} />}
-        label={guestsInputLabel}
-        min={0}
-        name="guests"
+      <CounterDropdown
+        counterLabel={guestsCounterLabel}
+        counterName="guests"
+        counterValue={guestsInputValue}
+        dropdownLabel={guestsInputLabel}
+        maximumCounterValue={maximumGuestsInputValue}
         onChange={onInputChange}
-        value={guestsInputValue}
       />
     </div>
     <div className="button-container">{searchButton}</div>
@@ -97,12 +99,14 @@ Component.defaultProps = {
   datesInputOnFocusChange: Function.prototype,
   datesInputValue: undefined,
   getIsDayBlocked: Function.prototype,
+  guestsCounterLabel: GUESTS,
   guestsInputLabel: GUESTS,
   guestsInputValue: undefined,
   isDateRangePickerLoading: undefined,
   locationInputLabel: LOCATION,
   locationInputValue: undefined,
   locationOptions: null,
+  maximumGuestsInputValue: undefined,
   searchButton: (
     <Button icon={ICON_NAMES.SEARCH} isFormSubmit isRounded>
       {SEARCH}
@@ -123,6 +127,7 @@ Component.propTypes = {
     startDate: object,
   }),
   getIsDayBlocked: func,
+  guestsCounterLabel: string,
   guestsInputLabel: string,
   guestsInputValue: oneOfType([string, number]),
   isDateRangePickerLoading: bool,
@@ -138,6 +143,7 @@ Component.propTypes = {
       value: oneOfType([bool, number, string]),
     })
   ),
+  maximumGuestsInputValue: number,
   onInputChange: func,
   searchButton: node,
   willLocationDropdownOpenAbove: bool,
