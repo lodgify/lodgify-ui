@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { Popup } from 'semantic-ui-react';
 import classnames from 'classnames';
 
+import { some } from 'utils/some';
 import { GUESTS } from 'utils/default-strings';
 import { Counter } from 'inputs/Counter';
 import { Icon, ICON_NAMES } from 'elements/Icon';
@@ -45,7 +46,12 @@ export const Component = ({
       position={willOpenAbove ? 'top left' : 'bottom left'}
       text={dropdownLabel}
       trigger={
-        <div className="dropdown-container" role="button">
+        <div
+          className={classnames('dropdown-container', {
+            dirty: some(counterValue),
+          })}
+          role="button"
+        >
           <div
             className={classnames(
               'ui selection dropdown',
