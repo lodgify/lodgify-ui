@@ -1,3 +1,10 @@
+# [1.253.0](https://github.com/lodgify/lodgify-ui/compare/v1.252.0...v1.253.0) (2019-10-25)
+
+
+### Features
+
+* **CounterDropdown:** add dirty styles ([29424c2](https://github.com/lodgify/lodgify-ui/commit/29424c2))
+
 # [1.252.0](https://github.com/lodgify/lodgify-ui/compare/v1.251.0...v1.252.0) (2019-10-24)
 
 
