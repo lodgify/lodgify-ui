@@ -907,7 +907,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   text="Guests"
                   trigger={
                     <div
-                      className="dropdown-container"
+                      className="dropdown-container dirty"
                       role="button"
                     >
                       <div
@@ -946,7 +946,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     openOnTriggerClick={true}
                     trigger={
                       <div
-                        className="dropdown-container"
+                        className="dropdown-container dirty"
                         role="button"
                       >
                         <div
@@ -974,7 +974,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     triggerRef={
                       Object {
                         "current": <div
-                          class="dropdown-container"
+                          class="dropdown-container dirty"
                           role="button"
                         >
                           <div
@@ -1005,7 +1005,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         innerRef={[Function]}
                       >
                         <div
-                          className="dropdown-container"
+                          className="dropdown-container dirty"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onFocus={[Function]}
@@ -2107,7 +2107,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             text="Guests"
                             trigger={
                               <div
-                                className="dropdown-container"
+                                className="dropdown-container dirty"
                                 role="button"
                               >
                                 <div
@@ -2146,7 +2146,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                               openOnTriggerClick={true}
                               trigger={
                                 <div
-                                  className="dropdown-container"
+                                  className="dropdown-container dirty"
                                   role="button"
                                 >
                                   <div
@@ -2174,7 +2174,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                               triggerRef={
                                 Object {
                                   "current": <div
-                                    class="dropdown-container"
+                                    class="dropdown-container dirty"
                                     role="button"
                                   >
                                     <div
@@ -2205,7 +2205,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                   innerRef={[Function]}
                                 >
                                   <div
-                                    className="dropdown-container"
+                                    className="dropdown-container dirty"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     onFocus={[Function]}
@@ -3630,7 +3630,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   text="Guests"
                   trigger={
                     <div
-                      className="dropdown-container"
+                      className="dropdown-container dirty"
                       role="button"
                     >
                       <div
@@ -3669,7 +3669,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     openOnTriggerClick={true}
                     trigger={
                       <div
-                        className="dropdown-container"
+                        className="dropdown-container dirty"
                         role="button"
                       >
                         <div
@@ -3697,7 +3697,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     triggerRef={
                       Object {
                         "current": <div
-                          class="dropdown-container"
+                          class="dropdown-container dirty"
                           role="button"
                         >
                           <div
@@ -3728,7 +3728,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         innerRef={[Function]}
                       >
                         <div
-                          className="dropdown-container"
+                          className="dropdown-container dirty"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onFocus={[Function]}
@@ -4812,7 +4812,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   text="Guests"
                   trigger={
                     <div
-                      className="dropdown-container"
+                      className="dropdown-container dirty"
                       role="button"
                     >
                       <div
@@ -4851,7 +4851,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                     openOnTriggerClick={true}
                     trigger={
                       <div
-                        className="dropdown-container"
+                        className="dropdown-container dirty"
                         role="button"
                       >
                         <div
@@ -4879,7 +4879,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                     triggerRef={
                       Object {
                         "current": <div
-                          class="dropdown-container"
+                          class="dropdown-container dirty"
                           role="button"
                         >
                           <div
@@ -4910,7 +4910,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                         innerRef={[Function]}
                       >
                         <div
-                          className="dropdown-container"
+                          className="dropdown-container dirty"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onFocus={[Function]}
@@ -5444,7 +5444,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   text="Guests"
                   trigger={
                     <div
-                      className="dropdown-container"
+                      className="dropdown-container dirty"
                       role="button"
                     >
                       <div
@@ -5483,7 +5483,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     openOnTriggerClick={true}
                     trigger={
                       <div
-                        className="dropdown-container"
+                        className="dropdown-container dirty"
                         role="button"
                       >
                         <div
@@ -5511,7 +5511,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                     triggerRef={
                       Object {
                         "current": <div
-                          class="dropdown-container"
+                          class="dropdown-container dirty"
                           role="button"
                         >
                           <div
@@ -5542,7 +5542,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         innerRef={[Function]}
                       >
                         <div
-                          className="dropdown-container"
+                          className="dropdown-container dirty"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onFocus={[Function]}
@@ -6590,7 +6590,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   text="Guests"
                   trigger={
                     <div
-                      className="dropdown-container"
+                      className="dropdown-container dirty"
                       role="button"
                     >
                       <div
@@ -6629,7 +6629,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     openOnTriggerClick={true}
                     trigger={
                       <div
-                        className="dropdown-container"
+                        className="dropdown-container dirty"
                         role="button"
                       >
                         <div
@@ -6657,7 +6657,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     triggerRef={
                       Object {
                         "current": <div
-                          class="dropdown-container"
+                          class="dropdown-container dirty"
                           role="button"
                         >
                           <div
@@ -6688,7 +6688,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         innerRef={[Function]}
                       >
                         <div
-                          className="dropdown-container"
+                          className="dropdown-container dirty"
                           onBlur={[Function]}
                           onClick={[Function]}
                           onFocus={[Function]}
