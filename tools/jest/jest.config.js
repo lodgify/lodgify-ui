@@ -22,7 +22,11 @@ module.exports = {
     '\\.(css|less)$': 'identity-obj-proxy',
   },
   rootDir: '../../',
-  roots: ['<rootDir>/src/components', '<rootDir>/src/utils'],
+  roots: [
+    '<rootDir>/src/components',
+    '<rootDir>/src/utils',
+    '<rootDir>/src/hooks',
+  ],
   setupTestFrameworkScriptFile: '<rootDir>/tools/jest/jest.framework-setup.js',
   snapshotSerializers: ['enzyme-to-json/serializer'],
   testURL: 'http://some.url/',

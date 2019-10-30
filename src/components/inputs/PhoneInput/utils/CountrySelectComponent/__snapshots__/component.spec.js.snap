@@ -10,7 +10,6 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
     error={false}
     getOptionsWithSearch={[Function]}
     icon={null}
-    initialValue={null}
     isClearable={false}
     isCompact={false}
     isDisabled={false}
@@ -20,7 +19,6 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
     label=""
     name=""
     noResultsText="No results"
-    onBlur={[Function]}
     onChange={[Function]}
     onFocus={[Function]}
     options={
@@ -34,7 +32,7 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
     willOpenAbove={false}
   >
     <div
-      className="dropdown-container"
+      className="dropdown-container dirty"
     >
       <Dropdown
         additionLabel="Add "
@@ -64,10 +62,9 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
         }
         minCharacters={1}
         noResultsMessage="No results"
-        onBlur={[Function]}
         onChange={[Function]}
-        onClick={[Function]}
-        open={false}
+        onClose={[Function]}
+        onOpen={[Function]}
         openOnFocus={true}
         options={
           Array [
@@ -309,7 +306,6 @@ exports[`CountrySelectComponent render should render the right structure 1`] = `
                 </i>
               </Icon>
               <DropdownMenu
-                open={false}
                 role="listbox"
               >
                 <div

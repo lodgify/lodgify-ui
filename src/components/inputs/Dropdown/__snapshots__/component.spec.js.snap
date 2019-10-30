@@ -2,7 +2,7 @@
 
 exports[`<Dropdown /> if \`props.isCompact\` is \`true\` should render the right structure 1`] = `
 <div
-  className="dropdown-container is-compact"
+  className="dropdown-container is-compact dirty"
 >
   <Dropdown
     additionLabel="Add "
@@ -25,17 +25,16 @@ exports[`<Dropdown /> if \`props.isCompact\` is \`true\` should render the right
         isLabelLeft={false}
         labelText={null}
         labelWeight={null}
-        name="caret down"
+        name="close"
         path={null}
         size="small"
       />
     }
     minCharacters={1}
     noResultsMessage="No results"
-    onBlur={[Function]}
     onChange={[Function]}
-    onClick={[Function]}
-    open={false}
+    onClose={[Function]}
+    onOpen={[Function]}
     openOnFocus={true}
     options={Array []}
     placeholder=""
@@ -46,7 +45,6 @@ exports[`<Dropdown /> if \`props.isCompact\` is \`true\` should render the right
     selectOnNavigation={true}
     selection={true}
     upward={false}
-    value="🐑"
     wrapSelection={true}
   />
 </div>

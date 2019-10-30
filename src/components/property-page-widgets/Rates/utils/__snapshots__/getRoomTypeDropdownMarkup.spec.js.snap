@@ -40,7 +40,6 @@ Array [
         error={false}
         getOptionsWithSearch={null}
         icon={null}
-        initialValue={null}
         isClearable={false}
         isCompact={false}
         isDisabled={false}
@@ -49,9 +48,7 @@ Array [
         label=""
         name=""
         noResultsText="No results"
-        onBlur={[Function]}
         onChange={[Function]}
-        onFocus={[Function]}
         options={
           Array [
             Object {
@@ -102,10 +99,9 @@ Array [
             }
             minCharacters={1}
             noResultsMessage="No results"
-            onBlur={[Function]}
             onChange={[Function]}
-            onClick={[Function]}
-            open={false}
+            onClose={[Function]}
+            onOpen={[Function]}
             openOnFocus={true}
             options={
               Array [
@@ -344,9 +340,7 @@ Array [
                       </svg>
                     </i>
                   </Icon>
-                  <DropdownMenu
-                    open={false}
-                  >
+                  <DropdownMenu>
                     <div
                       className="menu transition"
                     >

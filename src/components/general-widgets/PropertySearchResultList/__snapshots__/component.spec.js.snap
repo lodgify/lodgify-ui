@@ -789,7 +789,6 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
             error={false}
             getOptionsWithSearch={null}
             icon={null}
-            initialValue={null}
             isClearable={true}
             isCompact={true}
             isDisabled={false}
@@ -798,9 +797,7 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
             label="some label"
             name=""
             noResultsText="No results"
-            onBlur={[Function]}
             onChange={[Function]}
-            onFocus={[Function]}
             options={
               Array [
                 Object {
@@ -844,10 +841,9 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
                 }
                 minCharacters={1}
                 noResultsMessage="No results"
-                onBlur={[Function]}
                 onChange={[Function]}
-                onClick={[Function]}
-                open={false}
+                onClose={[Function]}
+                onOpen={[Function]}
                 openOnFocus={true}
                 options={
                   Array [
@@ -1023,9 +1019,7 @@ exports[`<PropertySearchResultList /> render if \`props.dropdownOptions\` is pas
                           </svg>
                         </i>
                       </Icon>
-                      <DropdownMenu
-                        open={false}
-                      >
+                      <DropdownMenu>
                         <div
                           className="menu transition"
                         >

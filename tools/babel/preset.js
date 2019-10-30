@@ -57,6 +57,7 @@ module.exports = () => ({
           typography: './src/components/typography',
           'semantic-ui-styles': './src/styles/semantic',
           utils: './src/utils',
+          hooks: './src/hooks',
         },
       },
     ],

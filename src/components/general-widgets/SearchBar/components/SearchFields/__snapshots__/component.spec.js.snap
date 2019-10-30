@@ -11,7 +11,6 @@ exports[`<SearchFields /> if \`locationOptions\` size is greater than 0 should r
       error={false}
       getOptionsWithSearch={null}
       icon="map pin"
-      initialValue={null}
       isClearable={true}
       isCompact={false}
       isDisabled={false}
@@ -20,9 +19,7 @@ exports[`<SearchFields /> if \`locationOptions\` size is greater than 0 should r
       label="Location"
       name="location"
       noResultsText="No results"
-      onBlur={[Function]}
       onChange={[Function]}
-      onFocus={[Function]}
       options={
         Array [
           Object {

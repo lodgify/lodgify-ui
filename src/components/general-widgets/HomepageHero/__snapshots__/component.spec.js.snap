@@ -584,7 +584,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                               </button>
                                             }
                                             summaryElement={null}
-                                            willLocationDropdownOpenAbove={true}
+                                            willLocationDropdownOpenAbove={false}
                                           >
                                             <div
                                               className="inputs-container"
@@ -596,7 +596,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   error={false}
                                                   getOptionsWithSearch={null}
                                                   icon="map pin"
-                                                  initialValue={null}
                                                   isClearable={true}
                                                   isCompact={false}
                                                   isDisabled={false}
@@ -605,9 +604,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   label="Location"
                                                   name="location"
                                                   noResultsText="No results"
-                                                  onBlur={[Function]}
                                                   onChange={[Function]}
-                                                  onFocus={[Function]}
                                                   options={
                                                     Array [
                                                       Object {
@@ -616,10 +613,10 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       },
                                                     ]
                                                   }
-                                                  willOpenAbove={true}
+                                                  willOpenAbove={false}
                                                 >
                                                   <div
-                                                    className="dropdown-container"
+                                                    className="dropdown-container dirty"
                                                   >
                                                     <Icon
                                                       className={null}
@@ -670,17 +667,16 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           isLabelLeft={false}
                                                           labelText={null}
                                                           labelWeight={null}
-                                                          name="caret down"
+                                                          name="close"
                                                           path={null}
                                                           size={null}
                                                         />
                                                       }
                                                       minCharacters={1}
                                                       noResultsMessage="No results"
-                                                      onBlur={[Function]}
                                                       onChange={[Function]}
-                                                      onClick={[Function]}
-                                                      open={false}
+                                                      onClose={[Function]}
+                                                      onOpen={[Function]}
                                                       openOnFocus={true}
                                                       options={
                                                         Array [
@@ -699,7 +695,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       selectOnBlur={false}
                                                       selectOnNavigation={true}
                                                       selection={true}
-                                                      upward={true}
+                                                      upward={false}
                                                       wrapSelection={true}
                                                     >
                                                       <Ref
@@ -708,7 +704,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                             "current": <div
                                                               aria-disabled="false"
                                                               aria-expanded="false"
-                                                              class="ui selection upward dropdown"
+                                                              class="ui selection dropdown"
                                                               role="listbox"
                                                               tabindex="0"
                                                             >
@@ -727,7 +723,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                                   viewBox="0 0 24 24"
                                                                 >
                                                                   <path
-                                                                    d="M20,8.5l-8,7-8-7Z"
+                                                                    d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                                                     fill="currentColor"
                                                                   />
                                                                 </svg>
@@ -759,7 +755,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                               "current": <div
                                                                 aria-disabled="false"
                                                                 aria-expanded="false"
-                                                                class="ui selection upward dropdown"
+                                                                class="ui selection dropdown"
                                                                 role="listbox"
                                                                 tabindex="0"
                                                               >
@@ -778,7 +774,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                                     viewBox="0 0 24 24"
                                                                   >
                                                                     <path
-                                                                      d="M20,8.5l-8,7-8-7Z"
+                                                                      d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                                                       fill="currentColor"
                                                                     />
                                                                   </svg>
@@ -807,7 +803,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                           <div
                                                             aria-disabled={false}
                                                             aria-expanded={false}
-                                                            className="ui selection upward dropdown"
+                                                            className="ui selection dropdown"
                                                             onBlur={[Function]}
                                                             onChange={[Function]}
                                                             onClick={[Function]}
@@ -835,7 +831,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                               isLabelLeft={false}
                                                               labelText={null}
                                                               labelWeight={null}
-                                                              name="caret down"
+                                                              name="close"
                                                               onClick={[Function]}
                                                               path={null}
                                                               size={null}
@@ -848,15 +844,13 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                                   viewBox="0 0 24 24"
                                                                 >
                                                                   <path
-                                                                    d="M20,8.5l-8,7-8-7Z"
+                                                                    d="M17.44,16.73a.51.51,0,0,1,0,.71.52.52,0,0,1-.71,0L12,12.71,7.27,17.44a.52.52,0,0,1-.71,0,.51.51,0,0,1,0-.71L11.29,12,6.56,7.27a.5.5,0,1,1,.71-.71L12,11.29l4.73-4.73a.5.5,0,1,1,.71.71L12.71,12Z"
                                                                     fill="currentColor"
                                                                   />
                                                                 </svg>
                                                               </i>
                                                             </Icon>
-                                                            <DropdownMenu
-                                                              open={false}
-                                                            >
+                                                            <DropdownMenu>
                                                               <div
                                                                 className="menu transition"
                                                               >
@@ -911,7 +905,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                   onChange={[Function]}
                                                   onFocusChange={[Function]}
                                                   startDatePlaceholderText="Check in"
-                                                  willOpenAbove={true}
+                                                  willOpenAbove={false}
                                                 >
                                                   <Responsive
                                                     as={[Function]}
@@ -924,7 +918,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                     onFocusChange={[Function]}
                                                     onUpdate={[Function]}
                                                     startDatePlaceholderText="Check in"
-                                                    willOpenAbove={true}
+                                                    willOpenAbove={false}
                                                     windowInnerWidth={1024}
                                                   >
                                                     <DateRangePicker
@@ -941,7 +935,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                       onChange={[Function]}
                                                       onFocusChange={[Function]}
                                                       startDatePlaceholderText="Check in"
-                                                      willOpenAbove={true}
+                                                      willOpenAbove={false}
                                                       windowInnerWidth={1024}
                                                     >
                                                       <InputController
@@ -1049,7 +1043,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                               }
                                                               onDatesChange={[Function]}
                                                               onFocusChange={[Function]}
-                                                              openDirection="up"
+                                                              openDirection="down"
                                                               showClearDates={true}
                                                               startDate={null}
                                                               startDatePlaceholderText="Check in"
@@ -1352,7 +1346,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                           </button>
                                         }
                                         summaryElement={null}
-                                        willLocationDropdownOpenAbove={false}
                                       >
                                         <Modal
                                           hasCloseIcon={true}

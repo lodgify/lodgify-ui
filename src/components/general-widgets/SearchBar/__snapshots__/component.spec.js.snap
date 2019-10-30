@@ -159,7 +159,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 error={false}
                 getOptionsWithSearch={null}
                 icon="map pin"
-                initialValue={null}
                 isClearable={true}
                 isCompact={false}
                 isDisabled={false}
@@ -168,9 +167,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 label="Location"
                 name="location"
                 noResultsText="No results"
-                onBlur={[Function]}
                 onChange={[Function]}
-                onFocus={[Function]}
                 options={
                   Array [
                     Object {
@@ -253,10 +250,9 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                     }
                     minCharacters={1}
                     noResultsMessage="No results"
-                    onBlur={[Function]}
                     onChange={[Function]}
-                    onClick={[Function]}
-                    open={false}
+                    onClose={[Function]}
+                    onOpen={[Function]}
                     openOnFocus={true}
                     options={
                       Array [
@@ -521,9 +517,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                               </svg>
                             </i>
                           </Icon>
-                          <DropdownMenu
-                            open={false}
-                          >
+                          <DropdownMenu>
                             <div
                               className="menu transition"
                             >
@@ -1359,7 +1353,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           error={false}
                           getOptionsWithSearch={null}
                           icon="map pin"
-                          initialValue={null}
                           isClearable={true}
                           isCompact={false}
                           isDisabled={false}
@@ -1368,9 +1361,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           label="Location"
                           name="location"
                           noResultsText="No results"
-                          onBlur={[Function]}
                           onChange={[Function]}
-                          onFocus={[Function]}
                           options={
                             Array [
                               Object {
@@ -1453,10 +1444,9 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                               }
                               minCharacters={1}
                               noResultsMessage="No results"
-                              onBlur={[Function]}
                               onChange={[Function]}
-                              onClick={[Function]}
-                              open={false}
+                              onClose={[Function]}
+                              onOpen={[Function]}
                               openOnFocus={true}
                               options={
                                 Array [
@@ -1721,9 +1711,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                         </svg>
                                       </i>
                                     </Icon>
-                                    <DropdownMenu
-                                      open={false}
-                                    >
+                                    <DropdownMenu>
                                       <div
                                         className="menu transition"
                                       >
@@ -2460,7 +2448,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                   </Button>
                 }
                 summaryElement={null}
-                willLocationDropdownOpenAbove={false}
               >
                 <Modal
                   hasCloseIcon={true}
@@ -2882,7 +2869,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 error={false}
                 getOptionsWithSearch={null}
                 icon="map pin"
-                initialValue={null}
                 isClearable={true}
                 isCompact={false}
                 isDisabled={false}
@@ -2891,9 +2877,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 label="Location"
                 name="location"
                 noResultsText="No results"
-                onBlur={[Function]}
                 onChange={[Function]}
-                onFocus={[Function]}
                 options={
                   Array [
                     Object {
@@ -2976,10 +2960,9 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                     }
                     minCharacters={1}
                     noResultsMessage="No results"
-                    onBlur={[Function]}
                     onChange={[Function]}
-                    onClick={[Function]}
-                    open={false}
+                    onClose={[Function]}
+                    onOpen={[Function]}
                     openOnFocus={true}
                     options={
                       Array [
@@ -3244,9 +3227,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                               </svg>
                             </i>
                           </Icon>
-                          <DropdownMenu
-                            open={false}
-                          >
+                          <DropdownMenu>
                             <div
                               className="menu transition"
                             >
@@ -4064,7 +4045,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 error={false}
                 getOptionsWithSearch={null}
                 icon="map pin"
-                initialValue={null}
                 isClearable={true}
                 isCompact={false}
                 isDisabled={false}
@@ -4073,9 +4053,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 label="Location"
                 name="location"
                 noResultsText="No results"
-                onBlur={[Function]}
                 onChange={[Function]}
-                onFocus={[Function]}
                 options={
                   Array [
                     Object {
@@ -4158,10 +4136,9 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                     }
                     minCharacters={1}
                     noResultsMessage="No results"
-                    onBlur={[Function]}
                     onChange={[Function]}
-                    onClick={[Function]}
-                    open={false}
+                    onClose={[Function]}
+                    onOpen={[Function]}
                     openOnFocus={true}
                     options={
                       Array [
@@ -4426,9 +4403,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                               </svg>
                             </i>
                           </Icon>
-                          <DropdownMenu
-                            open={false}
-                          >
+                          <DropdownMenu>
                             <div
                               className="menu transition"
                             >
@@ -5842,7 +5817,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 error={false}
                 getOptionsWithSearch={null}
                 icon="map pin"
-                initialValue={null}
                 isClearable={true}
                 isCompact={false}
                 isDisabled={false}
@@ -5851,9 +5825,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 label="Location"
                 name="location"
                 noResultsText="No results"
-                onBlur={[Function]}
                 onChange={[Function]}
-                onFocus={[Function]}
                 options={
                   Array [
                     Object {
@@ -5936,10 +5908,9 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                     }
                     minCharacters={1}
                     noResultsMessage="No results"
-                    onBlur={[Function]}
                     onChange={[Function]}
-                    onClick={[Function]}
-                    open={false}
+                    onClose={[Function]}
+                    onOpen={[Function]}
                     openOnFocus={true}
                     options={
                       Array [
@@ -6204,9 +6175,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                               </svg>
                             </i>
                           </Icon>
-                          <DropdownMenu
-                            open={false}
-                          >
+                          <DropdownMenu>
                             <div
                               className="menu transition"
                             >

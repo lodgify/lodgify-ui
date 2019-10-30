@@ -5,6 +5,7 @@ jest.mock('/utils/some');
 jest.mock('./utils/getIcon');
 
 import React from 'react';
+import { act } from 'react-dom/test-utils';
 import { shallow } from 'enzyme';
 import { Dropdown as SemanticDropdown } from 'semantic-ui-react';
 import {
@@ -14,11 +15,8 @@ import {
   expectComponentToHaveProps,
 } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { Icon } from 'elements/Icon';
 import { getControlledInputValue } from 'utils/get-controlled-input-value';
-
-import { some } from '/utils/some';
 
 import { ErrorMessage } from '../ErrorMessage';
 import { ICON_NAMES } from '../../elements/Icon/constants';
@@ -247,233 +245,18 @@ describe('<Dropdown />', () => {
       });
     });
   });
+  describe('if Dropdown will trigger onChange', () => {
+    it('it will call the onChange props', () => {
+      const onChange = jest.fn();
+      const wrapper = getDropdown({ onChange });
 
-  describe('`componentDidUpdate`', () => {
-    it('should call `getIsInputValueReset` with the right arguments', () => {
-      const PROPS_VALUE = '🌴';
-      const PREVIOUS_PROPS_VALUE = '🌲';
-      const wrapper = getDropdown({ value: PROPS_VALUE });
+      const semanticDropdown = wrapper.find(SemanticDropdown);
 
-      wrapper
-        .instance()
-        .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
-
-      expect(getIsInputValueReset).toHaveBeenCalledWith(
-        PREVIOUS_PROPS_VALUE,
-        PROPS_VALUE
-      );
-    });
-
-    describe('if `getIsInputValueReset` returns `true`', () => {
-      it('should call `setState` with the right arguments', () => {
-        const wrapper = getDropdown();
-
-        getIsInputValueReset.mockReturnValueOnce(true);
-
-        wrapper.instance().setState = jest.fn();
-        wrapper.update();
-        wrapper.instance().componentDidUpdate({}, {});
-
-        expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          value: undefined,
-        });
-      });
-    });
-
-    describe('if `previousProps.value` !== `this.props.value`', () => {
-      const PROPS_VALUE = '🌴';
-      const PROPS_INITIAL_VALUE = '🌲';
-      const PREVIOUS_PROPS_VALUE = '🎄';
-      const STATE_VALUE = '🌳';
-
-      it('should call `getControlledInputValue` with the correct arguments', () => {
-        const wrapper = getDropdown({
-          value: PROPS_VALUE,
-          initialValue: PROPS_INITIAL_VALUE,
-        });
-
-        wrapper.instance().state = {
-          value: STATE_VALUE,
-        };
-        wrapper
-          .instance()
-          .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
-
-        expect(getControlledInputValue).toHaveBeenCalledWith(
-          PROPS_VALUE,
-          PROPS_INITIAL_VALUE,
-          STATE_VALUE
-        );
+      act(() => {
+        semanticDropdown.simulate('change', {}, { value: '' });
       });
 
-      it('should call `some` with the correct arguments', () => {
-        const PROPS_VALUE = '🌴';
-
-        const wrapper = getDropdown({
-          value: PROPS_VALUE,
-        });
-
-        wrapper
-          .instance()
-          .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
-
-        expect(some).toHaveBeenCalledWith(CONTROLLED_VALUE);
-      });
-
-      it('should call `this.setState` with the correct arguments', () => {
-        const PROPS_VALUE = '🌴';
-        const wrapper = getDropdown({ value: PROPS_VALUE });
-
-        some.mockReturnValueOnce(false);
-        wrapper.instance().setState = jest.fn();
-        wrapper
-          .instance()
-          .componentDidUpdate({ value: PREVIOUS_PROPS_VALUE }, {});
-
-        expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          value: CONTROLLED_VALUE,
-        });
-      });
-    });
-
-    describe('if `state.value` has changed', () => {
-      it('should call `props.onChange` with the right arguments', () => {
-        const value = '🆎';
-        const name = 'naaaame';
-        const onChange = jest.fn();
-        const wrapper = getDropdown({ name, onChange });
-
-        wrapper.setState({ value });
-        wrapper.instance().componentDidUpdate({}, {});
-
-        expect(onChange).toHaveBeenCalledWith(name, value);
-      });
-    });
-
-    describe('if `previousState.Blurred` is false and `state.isBlurred` is true', () => {
-      it('should call `props.onBlur`', () => {
-        const name = 'naaaame';
-        const onBlur = jest.fn();
-        const wrapper = getDropdown({ name, onBlur });
-
-        wrapper.setState({ isBlurred: true });
-        wrapper.instance().componentDidUpdate({}, { isBlurred: false });
-
-        expect(onBlur).toHaveBeenCalledWith(name);
-      });
-    });
-
-    describe('if `previousState.Blurred` is true and `state.isBlurred` is false', () => {
-      it('should call `props.onFocus`', () => {
-        const name = 'naaaame';
-        const onFocus = jest.fn();
-        const wrapper = getDropdown({ name, onFocus });
-
-        wrapper.setState({ isBlurred: false });
-        wrapper.instance().componentDidUpdate({}, { isBlurred: true });
-
-        expect(onFocus).toHaveBeenCalledWith(name);
-      });
-    });
-  });
-
-  describe('Interaction: onBlur', () => {
-    it('should set `state.isOpen` to false', () => {
-      const wrapper = getDropdown();
-
-      wrapper.setState({ isOpen: true });
-      const input = wrapper.find(SemanticDropdown);
-
-      input.simulate('blur');
-      const actual = wrapper.state();
-
-      expect(actual).toEqual({
-        isBlurred: true,
-        isOpen: false,
-        value: CONTROLLED_VALUE,
-      });
-    });
-  });
-
-  describe('Interaction: onChange', () => {
-    it('should call `getIsOpenAfterChange` with the right arguments', () => {
-      const key = '🔑';
-      const wrapper = getDropdown();
-
-      wrapper.instance().handleChange({ key }, {});
-
-      expect(getIsOpenAfterChange).toHaveBeenCalledWith(key);
-    });
-
-    it('should persist the value in component state and set `state.isOpen` to whatever `getIsOpenAfterChange` returns', () => {
-      const data = { value: '🐯' };
-      const wrapper = getDropdown();
-
-      wrapper.setState({ isOpen: true });
-      const input = wrapper.find(SemanticDropdown);
-
-      input.simulate('change', {}, data);
-      const actual = wrapper.state();
-
-      expect(actual).toEqual({
-        isBlurred: true,
-        isOpen: IS_OPEN,
-        value: data.value,
-      });
-    });
-  });
-
-  describe('Interaction: onClick the dropdown input', () => {
-    it('should toggle `state.isOpen`', () => {
-      const wrapper = getDropdown();
-      const input = wrapper.find(SemanticDropdown);
-
-      input.simulate('click');
-      const actual = wrapper.state();
-
-      expect(actual).toEqual({
-        isOpen: true,
-        isBlurred: false,
-        value: CONTROLLED_VALUE,
-      });
-    });
-  });
-
-  describe('State change: value', () => {
-    it('should call the function passed as `props.onChange`', () => {
-      const name = 'someName';
-      const value = 'someValue';
-      const handleChange = jest.fn();
-      const dropdown = shallow(
-        <Dropdown name={name} onChange={handleChange} options={OPTIONS} />
-      );
-
-      dropdown.setState({ value });
-      expect(handleChange).toHaveBeenCalledWith(name, value);
-    });
-  });
-
-  describe('`render`', () => {
-    it('should call `getControlledInputValue` with the right arguments', () => {
-      const PROPS_VALUE = '🎅';
-      const STATE_VALUE = '😎';
-      const wrapper = getDropdown({ value: PROPS_VALUE });
-
-      wrapper.setState({ value: STATE_VALUE });
-      wrapper.instance().render();
-
-      expect(getControlledInputValue).toHaveBeenCalledWith(
-        PROPS_VALUE,
-        null,
-        STATE_VALUE
-      );
-    });
-
-    it('should call getIcon with the correct values', () => {
-      const value = '🐑';
-
-      getDropdown();
-      expect(getIcon).toHaveBeenCalledWith(value, true);
+      expect(onChange).toHaveBeenCalled();
     });
   });
 

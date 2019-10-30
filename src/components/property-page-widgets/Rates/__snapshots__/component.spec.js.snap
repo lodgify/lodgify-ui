@@ -88,7 +88,6 @@ exports[`<Rates /> by default should have the right structure 1`] = `
         error={false}
         getOptionsWithSearch={null}
         icon={null}
-        initialValue={null}
         isClearable={false}
         isCompact={false}
         isDisabled={false}
@@ -97,9 +96,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
         label=""
         name=""
         noResultsText="No results"
-        onBlur={[Function]}
         onChange={[Function]}
-        onFocus={[Function]}
         options={
           Array [
             Object {
@@ -119,7 +116,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
         willOpenAbove={false}
       >
         <div
-          className="dropdown-container"
+          className="dropdown-container dirty"
         >
           <Dropdown
             additionLabel="Add "
@@ -149,10 +146,9 @@ exports[`<Rates /> by default should have the right structure 1`] = `
             }
             minCharacters={1}
             noResultsMessage="No results"
-            onBlur={[Function]}
             onChange={[Function]}
-            onClick={[Function]}
-            open={false}
+            onClose={[Function]}
+            onOpen={[Function]}
             openOnFocus={true}
             options={
               Array [
@@ -458,7 +454,6 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                     </i>
                   </Icon>
                   <DropdownMenu
-                    open={false}
                     role="listbox"
                   >
                     <div
@@ -1796,7 +1791,6 @@ exports[`<Rates /> by default should have the right structure 1`] = `
               error={false}
               getOptionsWithSearch={null}
               icon={null}
-              initialValue={null}
               isClearable={false}
               isCompact={false}
               isDisabled={false}
@@ -1805,9 +1799,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
               label=""
               name=""
               noResultsText="No results"
-              onBlur={[Function]}
               onChange={[Function]}
-              onFocus={[Function]}
               options={
                 Array [
                   Object {
@@ -1873,7 +1865,6 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                             error={false}
                             getOptionsWithSearch={null}
                             icon={null}
-                            initialValue={null}
                             isClearable={false}
                             isCompact={false}
                             isDisabled={false}
@@ -1882,9 +1873,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                             label=""
                             name=""
                             noResultsText="No results"
-                            onBlur={[Function]}
                             onChange={[Function]}
-                            onFocus={[Function]}
                             options={
                               Array [
                                 Object {
@@ -1904,7 +1893,7 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                             willOpenAbove={false}
                           >
                             <div
-                              className="dropdown-container"
+                              className="dropdown-container dirty"
                             >
                               <Dropdown
                                 additionLabel="Add "
@@ -1934,10 +1923,9 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                 }
                                 minCharacters={1}
                                 noResultsMessage="No results"
-                                onBlur={[Function]}
                                 onChange={[Function]}
-                                onClick={[Function]}
-                                open={false}
+                                onClose={[Function]}
+                                onOpen={[Function]}
                                 openOnFocus={true}
                                 options={
                                   Array [
@@ -2243,7 +2231,6 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                                         </i>
                                       </Icon>
                                       <DropdownMenu
-                                        open={false}
                                         role="listbox"
                                       >
                                         <div
@@ -3661,7 +3648,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         error={false}
         getOptionsWithSearch={null}
         icon={null}
-        initialValue={null}
         isClearable={false}
         isCompact={false}
         isDisabled={false}
@@ -3670,9 +3656,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         label=""
         name=""
         noResultsText="No results"
-        onBlur={[Function]}
         onChange={[Function]}
-        onFocus={[Function]}
         options={
           Array [
             Object {
@@ -3700,7 +3684,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         willOpenAbove={false}
       >
         <div
-          className="dropdown-container has-images"
+          className="dropdown-container has-images dirty"
         >
           <Dropdown
             additionLabel="Add "
@@ -3730,10 +3714,9 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             }
             minCharacters={1}
             noResultsMessage="No results"
-            onBlur={[Function]}
             onChange={[Function]}
-            onClick={[Function]}
-            open={false}
+            onClose={[Function]}
+            onOpen={[Function]}
             openOnFocus={true}
             options={
               Array [
@@ -4113,9 +4096,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                       </svg>
                     </i>
                   </Icon>
-                  <DropdownMenu
-                    open={false}
-                  >
+                  <DropdownMenu>
                     <div
                       className="menu transition"
                     >
@@ -4383,7 +4364,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         error={false}
         getOptionsWithSearch={null}
         icon={null}
-        initialValue={null}
         isClearable={false}
         isCompact={false}
         isDisabled={false}
@@ -4392,9 +4372,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         label=""
         name=""
         noResultsText="No results"
-        onBlur={[Function]}
         onChange={[Function]}
-        onFocus={[Function]}
         options={
           Array [
             Object {
@@ -4414,7 +4392,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
         willOpenAbove={false}
       >
         <div
-          className="dropdown-container"
+          className="dropdown-container dirty"
         >
           <Dropdown
             additionLabel="Add "
@@ -4444,10 +4422,9 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
             }
             minCharacters={1}
             noResultsMessage="No results"
-            onBlur={[Function]}
             onChange={[Function]}
-            onClick={[Function]}
-            open={false}
+            onClose={[Function]}
+            onOpen={[Function]}
             openOnFocus={true}
             options={
               Array [
@@ -4753,7 +4730,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                     </i>
                   </Icon>
                   <DropdownMenu
-                    open={false}
                     role="listbox"
                   >
                     <div
@@ -6091,7 +6067,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
               error={false}
               getOptionsWithSearch={null}
               icon={null}
-              initialValue={null}
               isClearable={false}
               isCompact={false}
               isDisabled={false}
@@ -6100,9 +6075,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
               label=""
               name=""
               noResultsText="No results"
-              onBlur={[Function]}
               onChange={[Function]}
-              onFocus={[Function]}
               options={
                 Array [
                   Object {
@@ -6168,7 +6141,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             error={false}
                             getOptionsWithSearch={null}
                             icon={null}
-                            initialValue={null}
                             isClearable={false}
                             isCompact={false}
                             isDisabled={false}
@@ -6177,9 +6149,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             label=""
                             name=""
                             noResultsText="No results"
-                            onBlur={[Function]}
                             onChange={[Function]}
-                            onFocus={[Function]}
                             options={
                               Array [
                                 Object {
@@ -6199,7 +6169,7 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                             willOpenAbove={false}
                           >
                             <div
-                              className="dropdown-container"
+                              className="dropdown-container dirty"
                             >
                               <Dropdown
                                 additionLabel="Add "
@@ -6229,10 +6199,9 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                 }
                                 minCharacters={1}
                                 noResultsMessage="No results"
-                                onBlur={[Function]}
                                 onChange={[Function]}
-                                onClick={[Function]}
-                                open={false}
+                                onClose={[Function]}
+                                onOpen={[Function]}
                                 openOnFocus={true}
                                 options={
                                   Array [
@@ -6538,7 +6507,6 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                                         </i>
                                       </Icon>
                                       <DropdownMenu
-                                        open={false}
                                         role="listbox"
                                       >
                                         <div

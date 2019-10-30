@@ -1,145 +1,93 @@
-import React, { PureComponent } from 'react';
+import React, { useMemo, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import { Dropdown } from 'semantic-ui-react';
 import classnames from 'classnames';
 
-import { some } from 'utils/some';
-import { getIsInputValueReset } from 'utils/get-is-input-value-reset';
 import { getHasErrorMessage } from 'utils/get-has-error-message';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { NO_RESULTS } from 'utils/default-strings';
-import { getControlledInputValue } from 'utils/get-controlled-input-value';
 import { getPropOnCondition } from 'utils/get-prop-on-condition';
+import { useIsOpen } from 'hooks/useIsOpen';
 
 import { ErrorMessage } from '../ErrorMessage';
 
-import { getIsOpenAfterChange } from './utils/getIsOpenAfterChange';
 import { adaptOptions } from './utils/adaptOptions';
 import { getHasImages } from './utils/getHasImages';
-import { getIcon } from './utils/getIcon';
 
-/**
- * A dropdown allows a user to select a value from a series of options.
- */
-// eslint-disable-next-line jsdoc/require-jsdoc
-export class Component extends PureComponent {
-  state = {
-    isBlurred: true,
-    isOpen: false,
-    value: getControlledInputValue(this.props.value, this.props.initialValue),
-  };
+export const Component = ({
+  options,
+  isCompact,
+  value,
+  error,
+  isValid,
+  icon,
+  isClearable,
+  isDisabled,
+  noResultsText,
+  getOptionsWithSearch,
+  isSearchable,
+  label,
+  willOpenAbove,
+  onChange,
+  name,
+}) => {
+  const [isDropdownOpen, toggleDropdownOpen] = useIsOpen(false);
+  const hasImages = useMemo(() => getHasImages(options), [options]);
+  const adaptedOptions = useMemo(() => adaptOptions(options, hasImages), [
+    options,
+  ]);
+  const hasErrorMessage = useMemo(() => getHasErrorMessage(error), [error]);
+  const change = useCallback(({}, { value: newValue }) => {
+    onChange(name, newValue), [];
+  });
 
-  componentDidUpdate(previousProps, previousState) {
-    if (getIsInputValueReset(previousProps.value, this.props.value)) {
-      this.setState({ value: undefined });
-      return;
-    }
+  const dropDownIcon = useMemo(
+    () =>
+      (value !== undefined || value !== null) && isClearable
+        ? ICON_NAMES.CLOSE
+        : ICON_NAMES.CARET_DOWN,
+    [value, isClearable]
+  );
 
-    const { value, isBlurred } = this.state;
-    const { name, onChange, onBlur, onFocus } = this.props;
-
-    if (previousProps.value !== this.props.value) {
-      const value = getControlledInputValue(
-        this.props.value,
-        this.props.initialValue,
-        this.state.value
-      );
-
-      this.setState({ value });
-      return;
-    }
-
-    if (previousState.value !== value) {
-      onChange(name, value);
-    }
-
-    if (!previousState.isBlurred && isBlurred) {
-      onBlur(name);
-    }
-
-    if (previousState.isBlurred && !isBlurred) {
-      onFocus(name);
-    }
-  }
-
-  handleChange = ({ key }, { value }) => {
-    this.setState({
-      value,
-      isOpen: getIsOpenAfterChange(key),
-    });
-  };
-
-  handleOpen = isOpen => this.setState({ isOpen, isBlurred: false });
-
-  handleBlur = isBlurred => this.setState({ isBlurred, isOpen: false });
-
-  render() {
-    const { isOpen } = this.state;
-    const {
-      getOptionsWithSearch,
-      error,
-      icon,
-      isClearable,
-      isCompact,
-      isDisabled,
-      isSearchable,
-      isValid,
-      noResultsText,
-      label,
-      options,
-      willOpenAbove,
-    } = this.props;
-    const value = getControlledInputValue(
-      this.props.value,
-      this.props.initialValue,
-      this.state.value
-    );
-    const hasImages = getHasImages(options);
-    const adaptedOptions = adaptOptions(options, hasImages);
-    const hasErrorMessage = getHasErrorMessage(error);
-
-    return (
-      <div
-        className={classnames('dropdown-container', {
-          'has-images': hasImages,
-          'is-compact': isCompact,
-          dirty:
-            some(value) || some(this.props.initialValue || this.props.value),
-          error: error,
-          focus: isOpen,
-          valid: isValid,
-        })}
-      >
-        {hasErrorMessage && <ErrorMessage errorMessage={error} />}
-        {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
-        {!hasImages && icon && <Icon name={icon} />}
-        <Dropdown
-          clearable={isClearable}
-          compact={isCompact}
-          disabled={isDisabled || !adaptedOptions.length}
-          icon={
-            <Icon
-              name={getIcon(value, isClearable)}
-              size={getPropOnCondition('small', isCompact)}
-            />
-          }
-          noResultsMessage={noResultsText}
-          onBlur={() => this.handleBlur(true)}
-          onChange={this.handleChange}
-          onClick={() => this.handleOpen(!isOpen)}
-          open={isOpen}
-          options={adaptedOptions}
-          placeholder={label}
-          search={getOptionsWithSearch || isSearchable}
-          selectOnBlur={false}
-          selection
-          upward={willOpenAbove}
-          value={value}
-        />
-      </div>
-    );
-  }
-}
+  return (
+    <div
+      className={classnames('dropdown-container', {
+        'has-images': hasImages,
+        'is-compact': isCompact,
+        dirty: value !== undefined || value !== null,
+        error: error,
+        focus: isDropdownOpen,
+        valid: isValid,
+      })}
+    >
+      {hasErrorMessage && <ErrorMessage errorMessage={error} />}
+      {isValid && <Icon color="green" name={ICON_NAMES.CHECKMARK} />}
+      {!hasImages && icon && <Icon name={icon} />}
+      <Dropdown
+        clearable={isClearable}
+        compact={isCompact}
+        disabled={isDisabled || !adaptedOptions.length}
+        icon={
+          <Icon
+            name={dropDownIcon}
+            size={getPropOnCondition('small', isCompact)}
+          />
+        }
+        noResultsMessage={noResultsText}
+        onChange={change}
+        onClose={toggleDropdownOpen}
+        onOpen={toggleDropdownOpen}
+        options={adaptedOptions}
+        placeholder={label}
+        search={getOptionsWithSearch || isSearchable}
+        selectOnBlur={false}
+        selection
+        upward={willOpenAbove}
+        value={value}
+      />
+    </div>
+  );
+};
 
 Component.displayName = 'Dropdown';
 
@@ -155,13 +103,10 @@ Component.defaultProps = {
   label: '',
   name: '',
   noResultsText: NO_RESULTS,
-  onBlur: Function.prototype,
   onChange: Function.prototype,
-  onFocus: Function.prototype,
   options: [],
   value: undefined,
   willOpenAbove: false,
-  initialValue: null,
 };
 
 Component.propTypes = {
@@ -171,12 +116,6 @@ Component.propTypes = {
   getOptionsWithSearch: PropTypes.func,
   /** Icon for the dropdown. Not displayed if options have images. */
   icon: PropTypes.string,
-  /** The dropdown's value can be cleared. */
-  initialValue: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.number,
-    PropTypes.string,
-  ]),
   /** A dropdown is clearable  */
   isClearable: PropTypes.bool,
   /** A compact dropdown occupies less space. */
@@ -193,18 +132,8 @@ Component.propTypes = {
   name: PropTypes.string,
   /** The text to display when no results are returned from a searchable dropdown. */
   noResultsText: PropTypes.string,
-  /**
-   * Used internally by `Form` so ignored in the styleguide.
-   * @ignore
-   */
-  onBlur: PropTypes.func,
   /** A function called when the dropdown value changes. */
   onChange: PropTypes.func,
-  /**
-   * Used internally by `PhoneInput` so ignored in the styleguide.
-   * @ignore
-   */
-  onFocus: PropTypes.func,
   /** The options which the user can select. Dropdown is disabled if options is an empty array. */
   options: PropTypes.arrayOf(
     PropTypes.shape({
