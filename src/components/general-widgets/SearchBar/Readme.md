@@ -1,5 +1,5 @@
 ```jsx
-<SearchBar />
+<SearchBar onSubmit={console.log} />
 ```
 
 ### Variations
