@@ -108,6 +108,7 @@ exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are pass
         <Image
           alt="someLogoText"
           as="img"
+          className="someLogoSize-logo"
           sizes="someSizes"
           src="someLogoSrc"
           srcSet="someSrcSet"
@@ -115,7 +116,7 @@ exports[`getLogoMarkup if \`logoSrc\`, \`logoSizes\` and \`logoSrcSet\` are pass
         >
           <img
             alt="someLogoText"
-            className="ui image"
+            className="ui image someLogoSize-logo"
             sizes="someSizes"
             src="someLogoSrc"
             srcSet="someSrcSet"

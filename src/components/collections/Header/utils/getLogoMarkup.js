@@ -11,6 +11,7 @@ import { FlexContainer } from 'layout/FlexContainer';
  * @param  {string} logoSubText
  * @param  {string} logoText
  * @param  {string} logoSrc
+ * @param  {string} logoSize
  * @param  {string} logoSizes
  * @param  {string} logoSrcSet
  * @return {Object}
@@ -20,6 +21,7 @@ export const getLogoMarkup = (
   logoSubText,
   logoText,
   logoSrc,
+  logoSize,
   logoSizes,
   logoSrcSet
 ) => (
@@ -34,6 +36,7 @@ export const getLogoMarkup = (
       {logoSrc ? (
         <Image
           alt={logoText}
+          className={`${logoSize}-logo`}
           sizes={logoSizes}
           src={logoSrc}
           srcSet={logoSrcSet}
