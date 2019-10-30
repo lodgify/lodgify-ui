@@ -58,6 +58,7 @@
 .ui.popup.counter-dropdown {
   box-shadow: @subMenuShadow;
   width: @inputWidth;
+  height: @inputHeight;
 
   &:before {
     display: none;
