@@ -21,6 +21,7 @@ const Component = ({
   backgroundImageWidth,
   galleryImages,
   headerLogoHref,
+  headerLogoSize,
   headerLogoSizes,
   headerLogoSrc,
   headerLogoSrcSet,
@@ -42,6 +43,7 @@ const Component = ({
     backgroundImageWidth={backgroundImageWidth}
     bottomOffset={BOTTOM_OFFSET}
     headerLogoHref={headerLogoHref}
+    headerLogoSize={headerLogoSize}
     headerLogoSizes={headerLogoSizes}
     headerLogoSrc={headerLogoSrc}
     headerLogoSrcSet={headerLogoSrcSet}
@@ -71,6 +73,7 @@ Component.defaultProps = {
   backgroundImageWidth: undefined,
   galleryImages: [],
   headerLogoHref: undefined,
+  headerLogoSize: undefined,
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
@@ -132,6 +135,8 @@ Component.propTypes = {
   ),
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,
+  /** The maximum size of the logo in the header. */
+  headerLogoSize: PropTypes.oneOf(['medium', 'large', 'huge']),
   /** A list of one or more strings separated by commas indicating a set of source sizes for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   headerLogoSizes: PropTypes.string,
   /** The src url for the logo in the header. */
