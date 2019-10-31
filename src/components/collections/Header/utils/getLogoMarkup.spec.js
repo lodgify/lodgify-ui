@@ -6,6 +6,7 @@ const logoHref = 'someLogoHref';
 const logoSubText = 'someLogoTagline';
 const logoText = 'someLogoText';
 const logoSrc = 'someLogoSrc';
+const logoSize = 'someLogoSize';
 const sizes = 'someSizes';
 const srcSet = 'someSrcSet';
 
@@ -23,7 +24,12 @@ describe('getLogoMarkup', () => {
 
   describe('if `logoSrc`, `logoSizes` and `logoSrcSet` are passed', () => {
     it('should render the right structure', () => {
-      const actual = getLogoMarkupAsComponent([logoSrc, sizes, srcSet]);
+      const actual = getLogoMarkupAsComponent([
+        logoSrc,
+        logoSize,
+        sizes,
+        srcSet,
+      ]);
 
       expect(actual).toMatchSnapshot();
     });

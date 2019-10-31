@@ -139,6 +139,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
             activeNavigationItemIndex={1}
             isBackgroundFilled={false}
             logoHref="/"
+            logoSize="medium"
             logoSizes="a load of logo sizes"
             logoSrc="src"
             logoSrcSet="a load of logo src sets"
@@ -215,6 +216,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                               <Image
                                 alt="text"
                                 as="img"
+                                className="medium-logo"
                                 sizes="a load of logo sizes"
                                 src="src"
                                 srcSet="a load of logo src sets"
@@ -222,7 +224,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                               >
                                 <img
                                   alt="text"
-                                  className="ui image"
+                                  className="ui image medium-logo"
                                   sizes="a load of logo sizes"
                                   src="src"
                                   srcSet="a load of logo src sets"
@@ -485,6 +487,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
             activeNavigationItemIndex={1}
             isBackgroundFilled={false}
             logoHref="/"
+            logoSize="medium"
             logoSizes="a load of logo sizes"
             logoSrc="src"
             logoSrcSet="a load of logo src sets"
@@ -561,6 +564,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                               <Image
                                 alt="text"
                                 as="img"
+                                className="medium-logo"
                                 sizes="a load of logo sizes"
                                 src="src"
                                 srcSet="a load of logo src sets"
@@ -568,7 +572,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                               >
                                 <img
                                   alt="text"
-                                  className="ui image"
+                                  className="ui image medium-logo"
                                   sizes="a load of logo sizes"
                                   src="src"
                                   srcSet="a load of logo src sets"

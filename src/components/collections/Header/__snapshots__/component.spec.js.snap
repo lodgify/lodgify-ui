@@ -6,6 +6,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
   dateRangePickerLocaleCode="ko"
   isBackgroundFilled={false}
   logoHref="/"
+  logoSize="medium"
   logoSrc={null}
   logoSubText={null}
   logoText="someLogoText"
@@ -648,6 +649,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
   dateRangePickerLocaleCode="ko"
   isBackgroundFilled={false}
   logoHref="/"
+  logoSize="medium"
   logoSrc={null}
   logoSubText={null}
   logoText="someLogoText"
@@ -778,6 +780,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                   dateRangePickerLocaleCode="ko"
                   isBackgroundFilled={false}
                   logoHref="/"
+                  logoSize="medium"
                   logoSrc={null}
                   logoSubText={null}
                   logoText="someLogoText"
@@ -1016,6 +1019,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
   dateRangePickerLocaleCode="ko"
   isBackgroundFilled={true}
   logoHref="/"
+  logoSize="medium"
   logoSrc={null}
   logoSubText={null}
   logoText="someLogoText"

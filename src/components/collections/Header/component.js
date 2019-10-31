@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import PropTypes from 'prop-types';
+import { arrayOf, bool, func, number, oneOf, shape, string } from 'prop-types';
 import { debounce } from 'debounce';
 import classnames from 'classnames';
 import { Menu } from 'semantic-ui-react';
@@ -13,6 +13,7 @@ import { getIsMenuHidden } from './utils/getIsMenuHidden';
 import { getStandardMenuMarkup } from './utils/getStandardMenuMarkup';
 import { HiddenMenu } from './utils/HiddenMenu';
 import { getLogoWidth } from './utils/getLogoWidth';
+import { MEDIUM_LOGO_SIZE } from './constants';
 
 /**
  * A header displays a logo, grouped navigation items
@@ -64,6 +65,7 @@ export class Component extends PureComponent {
       isBackgroundFilled,
       logoHref,
       logoSizes,
+      logoSize,
       logoSrc,
       logoSrcSet,
       logoSubText,
@@ -85,6 +87,7 @@ export class Component extends PureComponent {
             logoSubText,
             logoText,
             logoSrc,
+            logoSize,
             logoSizes,
             logoSrcSet
           )}
@@ -110,6 +113,7 @@ Component.defaultProps = {
   activeNavigationItemIndex: null,
   isBackgroundFilled: false,
   logoHref: '/',
+  logoSize: MEDIUM_LOGO_SIZE,
   logoSizes: undefined,
   logoSrc: null,
   logoSrcSet: undefined,
@@ -119,45 +123,47 @@ Component.defaultProps = {
 
 Component.propTypes = {
   /** The index of the active navigation item. */
-  activeNavigationItemIndex: PropTypes.number,
+  activeNavigationItemIndex: number,
   /** Is the background filled with a color defined in CSS. */
-  isBackgroundFilled: PropTypes.bool,
+  isBackgroundFilled: bool,
   /** The href for the logo link. */
-  logoHref: PropTypes.string,
+  logoHref: string,
+  /** The maximum size of the headers logo. */
+  logoSize: oneOf(['medium', 'large', 'huge']),
   /** A list of one or more strings separated by commas indicating a set of source sizes for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-  logoSizes: PropTypes.string,
+  logoSizes: string,
   /** The src url for the logo. */
-  logoSrc: PropTypes.string,
+  logoSrc: string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-  logoSrcSet: PropTypes.string,
+  logoSrcSet: string,
   /** The text that appears under the logo or logo text. */
-  logoSubText: PropTypes.string,
+  logoSubText: string,
   /** The text for the logo. */
-  logoText: PropTypes.string.isRequired,
+  logoText: string.isRequired,
   /** The items for a user to navigate the site. */
-  navigationItems: PropTypes.arrayOf(
-    PropTypes.shape({
+  navigationItems: arrayOf(
+    shape({
       /** The href url for an item which is a link. */
-      href: PropTypes.string,
+      href: string,
       /** Sub navigation items to display as a [`<Submenu />`](#submenu) under an item. */
-      subItems: PropTypes.arrayOf(
-        PropTypes.shape({
-          href: PropTypes.string.isRequired,
-          target: PropTypes.string,
-          text: PropTypes.string.isRequired,
+      subItems: arrayOf(
+        shape({
+          href: string.isRequired,
+          target: string,
+          text: string.isRequired,
         })
       ),
       /** Specifies where to display the linked navigation items URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
-      target: PropTypes.string,
+      target: string,
       /** The visible text for an item. */
-      text: PropTypes.string.isRequired,
+      text: string.isRequired,
     })
   ).isRequired,
   /** An optional primary call to action to display as a [`<Button />`](#button). */
-  primaryCTA: PropTypes.shape({
+  primaryCTA: shape({
     /** The on click handler for the call to action. */
-    onClick: PropTypes.func.isRequired,
+    onClick: func.isRequired,
     /** The visible text for the call to action. */
-    text: PropTypes.string.isRequired,
+    text: string.isRequired,
   }),
 };

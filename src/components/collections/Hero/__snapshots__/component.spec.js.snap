@@ -116,6 +116,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
           activeNavigationItemIndex={1}
           isBackgroundFilled={false}
           logoHref="/"
+          logoSize="medium"
           logoSizes="a load of logo sizes"
           logoSrc="https://darkgreen.com"
           logoSrcSet="a load of logo src sets"
@@ -192,6 +193,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                             <Image
                               alt="Livingstone Cottage"
                               as="img"
+                              className="medium-logo"
                               sizes="a load of logo sizes"
                               src="https://darkgreen.com"
                               srcSet="a load of logo src sets"
@@ -199,7 +201,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                             >
                               <img
                                 alt="Livingstone Cottage"
-                                className="ui image"
+                                className="ui image medium-logo"
                                 sizes="a load of logo sizes"
                                 src="https://darkgreen.com"
                                 srcSet="a load of logo src sets"
