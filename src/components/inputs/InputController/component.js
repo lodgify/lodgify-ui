@@ -12,6 +12,7 @@ import {
 import classnames from 'classnames';
 import { Input } from 'semantic-ui-react';
 
+import { some } from 'utils/some';
 import { returnFirstArgument } from 'utils/return-first-argument';
 
 import { ErrorMessage } from '../ErrorMessage';
@@ -44,7 +45,7 @@ export const Component = ({
   return (
     <Input
       className={classnames({
-        dirty: !!value,
+        dirty: some(value),
         compact: isCompact,
         error: !!error,
         focus: isFocused,
