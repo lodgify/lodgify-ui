@@ -1,3 +1,19 @@
+# [1.254.0](https://github.com/lodgify/lodgify-ui/compare/v1.253.0...v1.254.0) (2019-10-31)
+
+
+### Bug Fixes
+
+* **CounterDropdown:** trigger height is input height ([9cb6d58](https://github.com/lodgify/lodgify-ui/commit/9cb6d58))
+* **InputController:** empty objects are dirty values ([404a627](https://github.com/lodgify/lodgify-ui/commit/404a627))
+
+
+### Features
+
+* **Header:** expose logo size prop ([3ee9e48](https://github.com/lodgify/lodgify-ui/commit/3ee9e48))
+* **Hero:** expose header logo size props ([be17bb4](https://github.com/lodgify/lodgify-ui/commit/be17bb4))
+* **HomepageHero:** expose header logo size props ([fe09466](https://github.com/lodgify/lodgify-ui/commit/fe09466))
+* **PropertyPageHero:** expose header logo size props ([594270a](https://github.com/lodgify/lodgify-ui/commit/594270a))
+
 # [1.253.0](https://github.com/lodgify/lodgify-ui/compare/v1.252.0...v1.253.0) (2019-10-25)
 
 
