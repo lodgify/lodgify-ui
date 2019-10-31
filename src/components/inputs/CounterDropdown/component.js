@@ -8,14 +8,12 @@ import { GUESTS } from 'utils/default-strings';
 import { Counter } from 'inputs/Counter';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { FlexContainer } from 'layout/FlexContainer';
-import { Paragraph } from 'typography/Paragraph';
 
 /**
  * A counter dropdown allows a user to select a value from a counter input.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
-  counterLabel,
   counterName,
   counterValue,
   dropdownLabel,
@@ -30,7 +28,6 @@ export const Component = ({
       className="counter-dropdown"
       content={
         <FlexContainer flexDirection="row" justifyContent="space-between">
-          <Paragraph>{counterLabel}</Paragraph>
           <Counter
             max={maximumCounterValue}
             name={counterName}
@@ -73,7 +70,6 @@ export const Component = ({
 Component.displayName = 'CounterDropdown';
 
 Component.defaultProps = {
-  counterLabel: GUESTS,
   counterName: undefined,
   counterValue: undefined,
   dropdownLabel: GUESTS,
@@ -83,8 +79,6 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
-  /** The label that is positioned next to the counter. */
-  counterLabel: PropTypes.string,
   /** The name for the counter. */
   counterName: PropTypes.string,
   /** The value of the counter. Minimum 0. */

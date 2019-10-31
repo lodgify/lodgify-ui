@@ -14,7 +14,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
     }
   }
   getIsDayBlocked={[Function]}
-  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -93,7 +92,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
             }
           }
           getIsDayBlocked={[Function]}
-          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
@@ -861,7 +859,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
               className="input-container guests-input-container"
             >
               <CounterDropdown
-                counterLabel="Guests"
                 counterName="guests"
                 counterValue={1}
                 dropdownLabel="Guests"
@@ -879,13 +876,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       flexWrap={null}
                       justifyContent="space-between"
                     >
-                      <Paragraph
-                        isCompact={false}
-                        size="medium"
-                        weight={null}
-                      >
-                        Guests
-                      </Paragraph>
                       <Counter
                         min={0}
                         name="guests"
@@ -1198,7 +1188,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
     }
   }
   getIsDayBlocked={[Function]}
-  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -1293,7 +1282,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                       }
                     }
                     getIsDayBlocked={[Function]}
-                    guestsCounterLabel="Guests"
                     guestsInputLabel="Guests"
                     guestsInputValue={1}
                     isDisplayedAsModal={false}
@@ -2061,7 +2049,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                         className="input-container guests-input-container"
                       >
                         <CounterDropdown
-                          counterLabel="Guests"
                           counterName="guests"
                           counterValue={1}
                           dropdownLabel="Guests"
@@ -2079,13 +2066,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 flexWrap={null}
                                 justifyContent="space-between"
                               >
-                                <Paragraph
-                                  isCompact={false}
-                                  size="medium"
-                                  weight={null}
-                                >
-                                  Guests
-                                </Paragraph>
                                 <Counter
                                   min={0}
                                   name="guests"
@@ -2404,7 +2384,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                   }
                 }
                 getIsDayBlocked={[Function]}
-                guestsCounterLabel="Guests"
                 guestsInputLabel="Guests"
                 guestsInputValue={1}
                 handleSubmit={[Function]}
@@ -2735,7 +2714,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
     }
   }
   getIsDayBlocked={[Function]}
-  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -2815,7 +2793,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
             }
           }
           getIsDayBlocked={[Function]}
-          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
@@ -3584,7 +3561,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
               className="input-container guests-input-container"
             >
               <CounterDropdown
-                counterLabel="Guests"
                 counterName="guests"
                 counterValue={1}
                 dropdownLabel="Guests"
@@ -3602,13 +3578,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       flexWrap={null}
                       justifyContent="space-between"
                     >
-                      <Paragraph
-                        isCompact={false}
-                        size="medium"
-                        weight={null}
-                      >
-                        Guests
-                      </Paragraph>
                       <Counter
                         min={0}
                         name="guests"
@@ -3919,7 +3888,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
     }
   }
   getIsDayBlocked={[Function]}
-  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -3998,7 +3966,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
             }
           }
           getIsDayBlocked={[Function]}
-          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
@@ -4766,7 +4733,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
               className="input-container guests-input-container"
             >
               <CounterDropdown
-                counterLabel="Guests"
                 counterName="guests"
                 counterValue={1}
                 dropdownLabel="Guests"
@@ -4784,13 +4750,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       flexWrap={null}
                       justifyContent="space-between"
                     >
-                      <Paragraph
-                        isCompact={false}
-                        size="medium"
-                        weight={null}
-                      >
-                        Guests
-                      </Paragraph>
                       <Counter
                         min={0}
                         name="guests"
@@ -5101,7 +5060,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
     }
   }
   getIsDayBlocked={[Function]}
-  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -5161,7 +5119,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
             }
           }
           getIsDayBlocked={[Function]}
-          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
@@ -5398,7 +5355,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
               className="input-container guests-input-container"
             >
               <CounterDropdown
-                counterLabel="Guests"
                 counterName="guests"
                 counterValue={1}
                 dropdownLabel="Guests"
@@ -5416,13 +5372,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       flexWrap={null}
                       justifyContent="space-between"
                     >
-                      <Paragraph
-                        isCompact={false}
-                        size="medium"
-                        weight={null}
-                      >
-                        Guests
-                      </Paragraph>
                       <Counter
                         min={0}
                         name="guests"
@@ -5733,7 +5682,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
     }
   }
   getIsDayBlocked={[Function]}
-  guestsCounterLabel="Guests"
   guestsInputLabel="Guests"
   guestsInputValue={1}
   isDisplayedAsModal={false}
@@ -5794,7 +5742,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
             }
           }
           getIsDayBlocked={[Function]}
-          guestsCounterLabel="Guests"
           guestsInputLabel="Guests"
           guestsInputValue={1}
           isDisplayedAsModal={false}
@@ -6544,7 +6491,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
               className="input-container guests-input-container"
             >
               <CounterDropdown
-                counterLabel="Guests"
                 counterName="guests"
                 counterValue={1}
                 dropdownLabel="Guests"
@@ -6562,13 +6508,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       flexWrap={null}
                       justifyContent="space-between"
                     >
-                      <Paragraph
-                        isCompact={false}
-                        size="medium"
-                        weight={null}
-                      >
-                        Guests
-                      </Paragraph>
                       <Counter
                         min={0}
                         name="guests"

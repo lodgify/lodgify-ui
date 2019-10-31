@@ -29,7 +29,6 @@ export const Component = ({
   onSubmit,
   searchBarDatesCheckInLabel,
   searchBarDatesCheckOutLabel,
-  searchBarGuestsInputCounterLabel,
   searchBarGuestsInputLabel,
   searchBarMaximumGuestsInputValue,
   searchButton,
@@ -53,7 +52,6 @@ export const Component = ({
     datesInputValue,
     datesInputOnFocusChange,
     getIsDayBlocked,
-    guestsCounterLabel: searchBarGuestsInputCounterLabel,
     guestsInputLabel: searchBarGuestsInputLabel,
     guestsInputValue,
     isDateRangePickerLoading,
@@ -116,7 +114,6 @@ Component.defaultProps = {
   onSubmit: undefined,
   searchBarDatesCheckInLabel: undefined,
   searchBarDatesCheckOutLabel: undefined,
-  searchBarGuestsInputCounterLabel: undefined,
   searchBarGuestsInputLabel: undefined,
   searchBarMaximumGuestsInputValue: undefined,
   searchButton: (
@@ -181,8 +178,6 @@ Component.propTypes = {
   searchBarDatesCheckInLabel: PropTypes.string,
   /** The label for the date picker check out input of the search bar when there is no value selected. */
   searchBarDatesCheckOutLabel: PropTypes.string,
-  /** The label for the guests input counter of the search bar. */
-  searchBarGuestsInputCounterLabel: PropTypes.string,
   /** The label for the guests input of the search bar when there is no value. */
   searchBarGuestsInputLabel: PropTypes.string,
   /** The maximum number the guests input counter can increase to. */

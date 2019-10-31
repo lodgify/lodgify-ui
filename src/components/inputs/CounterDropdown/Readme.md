@@ -50,7 +50,6 @@ const Controller = () => {
 
 ```jsx
 <CounterDropdown
-  counterLabel="number of guests"
   dropdownLabel="pick guests"
 />
 ```
