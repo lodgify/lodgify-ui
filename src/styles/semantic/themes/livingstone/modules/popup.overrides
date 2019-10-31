@@ -57,7 +57,6 @@
 /* Counter popup */
 .ui.popup.counter-dropdown {
   box-shadow: @subMenuShadow;
-  width: @inputWidth;
 
   &:before {
     display: none;
