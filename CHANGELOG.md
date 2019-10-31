@@ -1,3 +1,10 @@
+## [1.254.2](https://github.com/lodgify/lodgify-ui/compare/v1.254.1...v1.254.2) (2019-10-31)
+
+
+### Bug Fixes
+
+* **CounterDropdown:** input width fits children ([cdcc117](https://github.com/lodgify/lodgify-ui/commit/cdcc117))
+
 ## [1.254.1](https://github.com/lodgify/lodgify-ui/compare/v1.254.0...v1.254.1) (2019-10-31)
 
 
