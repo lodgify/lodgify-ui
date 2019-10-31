@@ -180,6 +180,10 @@
       }
     }
 
+    &.counter-dropdown-trigger {
+      height: @inputHeight;
+    }
+
     /*  Selection Menu */
     &:not(.upward) .menu {
       margin-top: @menuVerticalMargin;

@@ -8,7 +8,6 @@ import { GUESTS } from 'utils/default-strings';
 import { Counter } from 'inputs/Counter';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { FlexContainer } from 'layout/FlexContainer';
-import { Paragraph } from 'typography/Paragraph';
 
 /**
  * A counter dropdown allows a user to select a value from a counter input.
