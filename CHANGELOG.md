@@ -1,3 +1,11 @@
+## [1.254.1](https://github.com/lodgify/lodgify-ui/compare/v1.254.0...v1.254.1) (2019-10-31)
+
+
+### Bug Fixes
+
+* **CounterDropdown:** input height fits container ([47d3353](https://github.com/lodgify/lodgify-ui/commit/47d3353))
+* **CounterDropdown:** remove counter label ([9f1d2e7](https://github.com/lodgify/lodgify-ui/commit/9f1d2e7))
+
 # [1.254.0](https://github.com/lodgify/lodgify-ui/compare/v1.253.0...v1.254.0) (2019-10-31)
 
 
