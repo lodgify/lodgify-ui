@@ -34,7 +34,6 @@ export const Component = ({
   datesInputOnFocusChange,
   datesInputValue,
   getIsDayBlocked,
-  guestsCounterLabel,
   guestsInputLabel,
   guestsInputValue,
   isDateRangePickerLoading,
@@ -77,7 +76,6 @@ export const Component = ({
     </div>
     <div className="input-container guests-input-container">
       <CounterDropdown
-        counterLabel={guestsCounterLabel}
         counterName="guests"
         counterValue={guestsInputValue}
         dropdownLabel={guestsInputLabel}
@@ -99,7 +97,6 @@ Component.defaultProps = {
   datesInputOnFocusChange: Function.prototype,
   datesInputValue: undefined,
   getIsDayBlocked: Function.prototype,
-  guestsCounterLabel: GUESTS,
   guestsInputLabel: GUESTS,
   guestsInputValue: undefined,
   isDateRangePickerLoading: undefined,
@@ -127,7 +124,6 @@ Component.propTypes = {
     startDate: object,
   }),
   getIsDayBlocked: func,
-  guestsCounterLabel: string,
   guestsInputLabel: string,
   guestsInputValue: oneOfType([string, number]),
   isDateRangePickerLoading: bool,

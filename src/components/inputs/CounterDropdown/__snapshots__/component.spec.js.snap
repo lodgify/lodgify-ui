@@ -17,13 +17,6 @@ exports[`CounterDropdown if \`props.willOpenAbove\` is true should render the ri
         flexWrap={null}
         justifyContent="space-between"
       >
-        <Paragraph
-          isCompact={false}
-          size="medium"
-          weight={null}
-        >
-          counterLabel
-        </Paragraph>
         <Counter
           min={0}
           name=""
@@ -209,13 +202,6 @@ exports[`CounterDropdown should render the right structure 1`] = `
         flexWrap={null}
         justifyContent="space-between"
       >
-        <Paragraph
-          isCompact={false}
-          size="medium"
-          weight={null}
-        >
-          counterLabel
-        </Paragraph>
         <Counter
           min={0}
           name=""

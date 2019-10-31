@@ -50,7 +50,6 @@ exports[`<SearchFields /> if \`locationOptions\` size is greater than 0 should r
     className="input-container guests-input-container"
   >
     <CounterDropdown
-      counterLabel="Guests"
       counterName="guests"
       dropdownLabel="Guests"
       onChange={[Function]}
@@ -86,7 +85,6 @@ exports[`<SearchFields /> should render the right structure 1`] = `
     className="input-container guests-input-container"
   >
     <CounterDropdown
-      counterLabel="Guests"
       counterName="guests"
       dropdownLabel="Guests"
       onChange={[Function]}
