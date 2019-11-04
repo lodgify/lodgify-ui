@@ -106,8 +106,12 @@
       }
     }
 
-    img {
-      flex-grow: @featuredImageFlexGrow;
+    & > figure.responsive-image.is-fluid {
+      max-height: @featuredImageMaxHeight;
+
+      img {
+        flex-grow: @featuredImageFlexGrow;
+      }
     }
 
     &:first-child {

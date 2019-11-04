@@ -1,3 +1,10 @@
+## [1.254.3](https://github.com/lodgify/lodgify-ui/compare/v1.254.2...v1.254.3) (2019-11-04)
+
+
+### Bug Fixes
+
+* **FeaturedRoomType:** undefined roomvalues are not rendered ([404680c](https://github.com/lodgify/lodgify-ui/commit/404680c))
+
 ## [1.254.2](https://github.com/lodgify/lodgify-ui/compare/v1.254.1...v1.254.2) (2019-10-31)
 
 
