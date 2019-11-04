@@ -1,3 +1,10 @@
+## [1.254.4](https://github.com/lodgify/lodgify-ui/compare/v1.254.3...v1.254.4) (2019-11-04)
+
+
+### Bug Fixes
+
+* **Featured*:** cards without heading align vertically ([45e42c2](https://github.com/lodgify/lodgify-ui/commit/45e42c2))
+
 ## [1.254.3](https://github.com/lodgify/lodgify-ui/compare/v1.254.2...v1.254.3) (2019-11-04)
 
 
