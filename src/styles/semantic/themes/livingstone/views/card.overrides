@@ -109,6 +109,10 @@
     img {
       flex-grow: @featuredImageFlexGrow;
     }
+
+    &:first-child {
+      margin-top: @featuredMarginTop;
+    }
   }
 
   /* Search Result */
