@@ -104,6 +104,7 @@ export class Component extends PureComponent {
         guestsInputValue={guests}
         locationInputValue={location}
         onInputChange={this.persistInputChange}
+        onSubmit={this.handleSubmit}
         willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
       />
     ) : (
@@ -136,6 +137,7 @@ export class Component extends PureComponent {
                 guestsInputValue={guests}
                 locationInputValue={location}
                 onInputChange={this.persistInputChange}
+                onSubmit={this.handleSubmit}
                 willLocationDropdownOpenAbove={willLocationDropdownOpenAbove}
               />
             </ShowOn>
@@ -182,7 +184,6 @@ Component.defaultProps = {
   modalHeadingText: CHECK_OUR_AVAILABILITY,
   modalSummaryElement: null,
   onChangeInput: Function.prototype,
-  onCloseModal: Function.prototype,
   onSubmit: Function.prototype,
   searchButton: (
     <Button icon={ICON_NAMES.SEARCH} isFormSubmit isRounded>
@@ -284,9 +285,6 @@ Component.propTypes = {
    *  @param {String} values.location
    */
   onChangeInput: PropTypes.func,
-  /** A function called when a close event happens on the modal. Used when consuming `SearchBar` as a controlled component. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  onCloseModal: PropTypes.func,
   /** The function to call when the search bar is submitted.
    *  @param {Object} values - The values of the inputs in the search bar.
    *  @param {Object} values.dates
