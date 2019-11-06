@@ -531,7 +531,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                     modalHeadingText="Check our availability"
                                     modalSummaryElement={null}
                                     onChangeInput={[Function]}
-                                    onCloseModal={[Function]}
                                     onSubmit={[Function]}
                                     searchButton={
                                       <button>
@@ -574,7 +573,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                             modalHeadingText="Check our availability"
                                             modalSummaryElement={null}
                                             onChangeInput={[Function]}
-                                            onCloseModal={[Function]}
                                             onInputChange={[Function]}
                                             onSubmit={[Function]}
                                             searchButton={
@@ -1298,7 +1296,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                       modalHeadingText="Check our availability"
                                       modalSummaryElement={null}
                                       onChangeInput={[Function]}
-                                      onCloseModal={[Function]}
                                       onSubmit={[Function]}
                                       searchButton={
                                         <button>
@@ -1315,7 +1312,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                         datesInputOnFocusChange={[Function]}
                                         getIsDayBlocked={[Function]}
                                         guestsInputLabel="Guests"
-                                        handleSubmit={[Function]}
                                         isDisplayedAsModal={true}
                                         isFixed={false}
                                         isModalOpen={false}
@@ -1332,7 +1328,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                         modalHeadingText="Check our availability"
                                         modalSummaryElement={null}
                                         onChangeInput={[Function]}
-                                        onCloseModal={[Function]}
                                         onInputChange={[Function]}
                                         onSubmit={[Function]}
                                         searchButton={
@@ -1363,9 +1358,14 @@ exports[`HomepageHero should render the right structure 1`] = `
                                           onClose={[Function]}
                                           size="tiny"
                                           trigger={
-                                            <button>
-                                              search button
-                                            </button>
+                                            <div
+                                              data-test-id="search-bar-search-modal-trigger"
+                                              onClick={[Function]}
+                                            >
+                                              <button>
+                                                search button
+                                              </button>
+                                            </div>
                                           }
                                         >
                                           <Modal
@@ -1396,9 +1396,14 @@ exports[`HomepageHero should render the right structure 1`] = `
                                             open={false}
                                             size="fullscreen"
                                             trigger={
-                                              <button>
-                                                search button
-                                              </button>
+                                              <div
+                                                data-test-id="search-bar-search-modal-trigger"
+                                                onClick={[Function]}
+                                              >
+                                                <button>
+                                                  search button
+                                                </button>
+                                              </div>
                                             }
                                           >
                                             <Portal
@@ -1413,9 +1418,14 @@ exports[`HomepageHero should render the right structure 1`] = `
                                               open={false}
                                               openOnTriggerClick={true}
                                               trigger={
-                                                <button>
-                                                  search button
-                                                </button>
+                                                <div
+                                                  data-test-id="search-bar-search-modal-trigger"
+                                                  onClick={[Function]}
+                                                >
+                                                  <button>
+                                                    search button
+                                                  </button>
+                                                </div>
                                               }
                                             >
                                               <Ref
@@ -1424,15 +1434,18 @@ exports[`HomepageHero should render the right structure 1`] = `
                                                 <RefFindNode
                                                   innerRef={[Function]}
                                                 >
-                                                  <button
+                                                  <div
+                                                    data-test-id="search-bar-search-modal-trigger"
                                                     onBlur={[Function]}
                                                     onClick={[Function]}
                                                     onFocus={[Function]}
                                                     onMouseEnter={[Function]}
                                                     onMouseLeave={[Function]}
                                                   >
-                                                    search button
-                                                  </button>
+                                                    <button>
+                                                      search button
+                                                    </button>
+                                                  </div>
                                                 </RefFindNode>
                                               </Ref>
                                             </Portal>

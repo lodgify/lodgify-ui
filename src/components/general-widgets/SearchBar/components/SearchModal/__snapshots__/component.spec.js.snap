@@ -8,6 +8,7 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
   modalSummaryElement={<div />}
   onCloseModal={[Function]}
   onInputChange={[Function]}
+  onSubmit={[Function]}
   searchButton={<div />}
 >
   <Modal
@@ -19,7 +20,14 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
     isOpen={false}
     onClose={[Function]}
     size="tiny"
-    trigger={<div />}
+    trigger={
+      <div
+        data-test-id="search-bar-search-modal-trigger"
+        onClick={[Function]}
+      >
+        <div />
+      </div>
+    }
   >
     <Modal
       centered={true}
@@ -48,7 +56,14 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
       onClose={[Function]}
       open={false}
       size="fullscreen"
-      trigger={<div />}
+      trigger={
+        <div
+          data-test-id="search-bar-search-modal-trigger"
+          onClick={[Function]}
+        >
+          <div />
+        </div>
+      }
     >
       <Portal
         closeOnDocumentClick={false}
@@ -61,7 +76,14 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
         onUnmount={[Function]}
         open={false}
         openOnTriggerClick={true}
-        trigger={<div />}
+        trigger={
+          <div
+            data-test-id="search-bar-search-modal-trigger"
+            onClick={[Function]}
+          >
+            <div />
+          </div>
+        }
       >
         <Ref
           innerRef={[Function]}
@@ -70,12 +92,15 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
             innerRef={[Function]}
           >
             <div
+              data-test-id="search-bar-search-modal-trigger"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-            />
+            >
+              <div />
+            </div>
           </RefFindNode>
         </Ref>
       </Portal>
@@ -92,6 +117,7 @@ exports[`getSearchBarModal should return the right structure 1`] = `
   modalSummaryElement={null}
   onCloseModal={[Function]}
   onInputChange={[Function]}
+  onSubmit={[Function]}
   searchButton={<div />}
 >
   <Modal
@@ -113,7 +139,14 @@ exports[`getSearchBarModal should return the right structure 1`] = `
     isOpen={false}
     onClose={[Function]}
     size="tiny"
-    trigger={<div />}
+    trigger={
+      <div
+        data-test-id="search-bar-search-modal-trigger"
+        onClick={[Function]}
+      >
+        <div />
+      </div>
+    }
   >
     <Modal
       centered={true}
@@ -142,7 +175,14 @@ exports[`getSearchBarModal should return the right structure 1`] = `
       onClose={[Function]}
       open={false}
       size="fullscreen"
-      trigger={<div />}
+      trigger={
+        <div
+          data-test-id="search-bar-search-modal-trigger"
+          onClick={[Function]}
+        >
+          <div />
+        </div>
+      }
     >
       <Portal
         closeOnDocumentClick={false}
@@ -155,7 +195,14 @@ exports[`getSearchBarModal should return the right structure 1`] = `
         onUnmount={[Function]}
         open={false}
         openOnTriggerClick={true}
-        trigger={<div />}
+        trigger={
+          <div
+            data-test-id="search-bar-search-modal-trigger"
+            onClick={[Function]}
+          >
+            <div />
+          </div>
+        }
       >
         <Ref
           innerRef={[Function]}
@@ -164,12 +211,15 @@ exports[`getSearchBarModal should return the right structure 1`] = `
             innerRef={[Function]}
           >
             <div
+              data-test-id="search-bar-search-modal-trigger"
               onBlur={[Function]}
               onClick={[Function]}
               onFocus={[Function]}
               onMouseEnter={[Function]}
               onMouseLeave={[Function]}
-            />
+            >
+              <div />
+            </div>
           </RefFindNode>
         </Ref>
       </Portal>
