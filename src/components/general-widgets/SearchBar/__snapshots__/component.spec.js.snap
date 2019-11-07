@@ -44,7 +44,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
   onChangeInput={[Function]}
-  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -122,7 +121,6 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
           onChangeInput={[Function]}
-          onCloseModal={[Function]}
           onInputChange={[Function]}
           onSubmit={[Function]}
           searchButton={
@@ -1218,7 +1216,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
   onChangeInput={[Function]}
-  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -1312,7 +1309,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                     modalHeadingText="Check our availability"
                     modalSummaryElement={null}
                     onChangeInput={[Function]}
-                    onCloseModal={[Function]}
                     onInputChange={[Function]}
                     onSubmit={[Function]}
                     searchButton={
@@ -2386,7 +2382,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                 getIsDayBlocked={[Function]}
                 guestsInputLabel="Guests"
                 guestsInputValue={1}
-                handleSubmit={[Function]}
                 isDisplayedAsModal={false}
                 isFixed={true}
                 isModalOpen={false}
@@ -2416,7 +2411,6 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                 modalHeadingText="Check our availability"
                 modalSummaryElement={null}
                 onChangeInput={[Function]}
-                onCloseModal={[Function]}
                 onInputChange={[Function]}
                 onSubmit={[Function]}
                 searchButton={
@@ -2461,23 +2455,28 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                   onClose={[Function]}
                   size="tiny"
                   trigger={
-                    <Button
-                      hasShadow={false}
-                      icon="search"
-                      isCompact={false}
-                      isDisabled={false}
-                      isFluid={false}
-                      isFormSubmit={true}
-                      isLoading={false}
-                      isOutlined={false}
-                      isPositionedRight={false}
-                      isRounded={true}
-                      isSecondary={false}
+                    <div
+                      data-test-id="search-bar-search-modal-trigger"
                       onClick={[Function]}
-                      size={null}
                     >
-                      Search
-                    </Button>
+                      <Button
+                        hasShadow={false}
+                        icon="search"
+                        isCompact={false}
+                        isDisabled={false}
+                        isFluid={false}
+                        isFormSubmit={true}
+                        isLoading={false}
+                        isOutlined={false}
+                        isPositionedRight={false}
+                        isRounded={true}
+                        isSecondary={false}
+                        onClick={[Function]}
+                        size={null}
+                      >
+                        Search
+                      </Button>
+                    </div>
                   }
                 >
                   <Modal
@@ -2508,37 +2507,10 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                     open={false}
                     size="fullscreen"
                     trigger={
-                      <Button
-                        hasShadow={false}
-                        icon="search"
-                        isCompact={false}
-                        isDisabled={false}
-                        isFluid={false}
-                        isFormSubmit={true}
-                        isLoading={false}
-                        isOutlined={false}
-                        isPositionedRight={false}
-                        isRounded={true}
-                        isSecondary={false}
+                      <div
+                        data-test-id="search-bar-search-modal-trigger"
                         onClick={[Function]}
-                        size={null}
                       >
-                        Search
-                      </Button>
-                    }
-                  >
-                    <Portal
-                      closeOnDocumentClick={false}
-                      closeOnEscape={true}
-                      eventPool="Modal"
-                      mountNode={<body />}
-                      onClose={[Function]}
-                      onMount={[Function]}
-                      onOpen={[Function]}
-                      onUnmount={[Function]}
-                      open={false}
-                      openOnTriggerClick={true}
-                      trigger={
                         <Button
                           hasShadow={false}
                           icon="search"
@@ -2556,13 +2528,24 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                         >
                           Search
                         </Button>
-                      }
-                    >
-                      <Ref
-                        innerRef={[Function]}
-                      >
-                        <RefFindNode
-                          innerRef={[Function]}
+                      </div>
+                    }
+                  >
+                    <Portal
+                      closeOnDocumentClick={false}
+                      closeOnEscape={true}
+                      eventPool="Modal"
+                      mountNode={<body />}
+                      onClose={[Function]}
+                      onMount={[Function]}
+                      onOpen={[Function]}
+                      onUnmount={[Function]}
+                      open={false}
+                      openOnTriggerClick={true}
+                      trigger={
+                        <div
+                          data-test-id="search-bar-search-modal-trigger"
+                          onClick={[Function]}
                         >
                           <Button
                             hasShadow={false}
@@ -2576,53 +2559,59 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             isPositionedRight={false}
                             isRounded={true}
                             isSecondary={false}
+                            onClick={[Function]}
+                            size={null}
+                          >
+                            Search
+                          </Button>
+                        </div>
+                      }
+                    >
+                      <Ref
+                        innerRef={[Function]}
+                      >
+                        <RefFindNode
+                          innerRef={[Function]}
+                        >
+                          <div
+                            data-test-id="search-bar-search-modal-trigger"
                             onBlur={[Function]}
                             onClick={[Function]}
                             onFocus={[Function]}
                             onMouseEnter={[Function]}
                             onMouseLeave={[Function]}
-                            size={null}
                           >
                             <Button
-                              as="button"
-                              basic={false}
-                              circular={true}
-                              className=""
-                              compact={false}
-                              disabled={false}
-                              floated="left"
-                              fluid={false}
-                              loading={false}
+                              hasShadow={false}
+                              icon="search"
+                              isCompact={false}
+                              isDisabled={false}
+                              isFluid={false}
+                              isFormSubmit={true}
+                              isLoading={false}
+                              isOutlined={false}
+                              isPositionedRight={false}
+                              isRounded={true}
+                              isSecondary={false}
                               onClick={[Function]}
-                              secondary={false}
                               size={null}
-                              type="submit"
                             >
-                              <Ref
-                                innerRef={
-                                  Object {
-                                    "current": <button
-                                      class="ui circular left floated button"
-                                      type="submit"
-                                    >
-                                      <i
-                                        class="icon"
-                                      >
-                                        <svg
-                                          viewBox="0 0 24 24"
-                                        >
-                                          <path
-                                            d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
-                                            fill="currentColor"
-                                          />
-                                        </svg>
-                                      </i>
-                                      Search
-                                    </button>,
-                                  }
-                                }
+                              <Button
+                                as="button"
+                                basic={false}
+                                circular={true}
+                                className=""
+                                compact={false}
+                                disabled={false}
+                                floated="left"
+                                fluid={false}
+                                loading={false}
+                                onClick={[Function]}
+                                secondary={false}
+                                size={null}
+                                type="submit"
                               >
-                                <RefFindNode
+                                <Ref
                                   innerRef={
                                     Object {
                                       "current": <button
@@ -2646,45 +2635,70 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     }
                                   }
                                 >
-                                  <button
-                                    className="ui circular left floated button"
-                                    onClick={[Function]}
-                                    type="submit"
-                                  >
-                                    <Icon
-                                      className={null}
-                                      color={null}
-                                      hasBorder={false}
-                                      isButton={false}
-                                      isCircular={false}
-                                      isColorInverted={false}
-                                      isDisabled={false}
-                                      isLabelLeft={false}
-                                      labelText={null}
-                                      labelWeight={null}
-                                      name="search"
-                                      path={null}
-                                      size={null}
-                                    >
-                                      <i
-                                        className="icon"
-                                      >
-                                        <svg
-                                          viewBox="0 0 24 24"
+                                  <RefFindNode
+                                    innerRef={
+                                      Object {
+                                        "current": <button
+                                          class="ui circular left floated button"
+                                          type="submit"
                                         >
-                                          <path
-                                            d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
-                                            fill="currentColor"
-                                          />
-                                        </svg>
-                                      </i>
-                                    </Icon>
-                                    Search
-                                  </button>
-                                </RefFindNode>
-                              </Ref>
+                                          <i
+                                            class="icon"
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                          Search
+                                        </button>,
+                                      }
+                                    }
+                                  >
+                                    <button
+                                      className="ui circular left floated button"
+                                      onClick={[Function]}
+                                      type="submit"
+                                    >
+                                      <Icon
+                                        className={null}
+                                        color={null}
+                                        hasBorder={false}
+                                        isButton={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="search"
+                                        path={null}
+                                        size={null}
+                                      >
+                                        <i
+                                          className="icon"
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                      </Icon>
+                                      Search
+                                    </button>
+                                  </RefFindNode>
+                                </Ref>
+                              </Button>
                             </Button>
-                          </Button>
+                          </div>
                         </RefFindNode>
                       </Ref>
                     </Portal>
@@ -2745,7 +2759,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
   onChangeInput={[Function]}
-  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -2824,7 +2837,6 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
           onChangeInput={[Function]}
-          onCloseModal={[Function]}
           onInputChange={[Function]}
           onSubmit={[Function]}
           searchButton={
@@ -3918,7 +3930,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
   onChangeInput={[Function]}
-  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -3996,7 +4007,6 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
           onChangeInput={[Function]}
-          onCloseModal={[Function]}
           onInputChange={[Function]}
           onSubmit={[Function]}
           searchButton={
@@ -5071,7 +5081,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
   onChangeInput={[Function]}
-  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={
     <Button
@@ -5130,7 +5139,6 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
           onChangeInput={[Function]}
-          onCloseModal={[Function]}
           onInputChange={[Function]}
           onSubmit={[Function]}
           searchButton={
@@ -5712,7 +5720,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
   modalHeadingText="Check our availability"
   modalSummaryElement={null}
   onChangeInput={[Function]}
-  onCloseModal={[Function]}
   onSubmit={[Function]}
   searchButton={<div />}
   summaryElement={null}
@@ -5772,7 +5779,6 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
           onChangeInput={[Function]}
-          onCloseModal={[Function]}
           onInputChange={[Function]}
           onSubmit={[Function]}
           searchButton={<div />}

@@ -82,7 +82,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
           onChangeInput={[Function]}
-          onCloseModal={[Function]}
           onSubmit={[Function]}
           searchButton={
             <Button
@@ -273,7 +272,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                             modalHeadingText="Check our availability"
                             modalSummaryElement={null}
                             onChangeInput={[Function]}
-                            onCloseModal={[Function]}
                             onInputChange={[Function]}
                             onSubmit={[Function]}
                             searchButton={
@@ -756,7 +754,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                         datesInputOnFocusChange={[Function]}
                         getIsDayBlocked={[Function]}
                         guestsInputLabel="Guests"
-                        handleSubmit={[Function]}
                         isDisplayedAsModal={false}
                         isFixed={true}
                         isModalOpen={false}
@@ -766,7 +763,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                         modalHeadingText="Check our availability"
                         modalSummaryElement={null}
                         onChangeInput={[Function]}
-                        onCloseModal={[Function]}
                         onInputChange={[Function]}
                         onSubmit={[Function]}
                         searchButton={
@@ -822,23 +818,28 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                           onClose={[Function]}
                           size="tiny"
                           trigger={
-                            <Button
-                              hasShadow={false}
-                              icon={null}
-                              isCompact={false}
-                              isDisabled={false}
-                              isFluid={false}
-                              isFormSubmit={false}
-                              isLoading={false}
-                              isOutlined={false}
-                              isPositionedRight={true}
-                              isRounded={true}
-                              isSecondary={false}
+                            <div
+                              data-test-id="search-bar-search-modal-trigger"
                               onClick={[Function]}
-                              size={null}
                             >
-                              Check our availability
-                            </Button>
+                              <Button
+                                hasShadow={false}
+                                icon={null}
+                                isCompact={false}
+                                isDisabled={false}
+                                isFluid={false}
+                                isFormSubmit={false}
+                                isLoading={false}
+                                isOutlined={false}
+                                isPositionedRight={true}
+                                isRounded={true}
+                                isSecondary={false}
+                                onClick={[Function]}
+                                size={null}
+                              >
+                                Check our availability
+                              </Button>
+                            </div>
                           }
                         >
                           <Modal
@@ -869,37 +870,10 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                             open={false}
                             size="fullscreen"
                             trigger={
-                              <Button
-                                hasShadow={false}
-                                icon={null}
-                                isCompact={false}
-                                isDisabled={false}
-                                isFluid={false}
-                                isFormSubmit={false}
-                                isLoading={false}
-                                isOutlined={false}
-                                isPositionedRight={true}
-                                isRounded={true}
-                                isSecondary={false}
+                              <div
+                                data-test-id="search-bar-search-modal-trigger"
                                 onClick={[Function]}
-                                size={null}
                               >
-                                Check our availability
-                              </Button>
-                            }
-                          >
-                            <Portal
-                              closeOnDocumentClick={false}
-                              closeOnEscape={true}
-                              eventPool="Modal"
-                              mountNode={<body />}
-                              onClose={[Function]}
-                              onMount={[Function]}
-                              onOpen={[Function]}
-                              onUnmount={[Function]}
-                              open={false}
-                              openOnTriggerClick={true}
-                              trigger={
                                 <Button
                                   hasShadow={false}
                                   icon={null}
@@ -917,13 +891,24 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                 >
                                   Check our availability
                                 </Button>
-                              }
-                            >
-                              <Ref
-                                innerRef={[Function]}
-                              >
-                                <RefFindNode
-                                  innerRef={[Function]}
+                              </div>
+                            }
+                          >
+                            <Portal
+                              closeOnDocumentClick={false}
+                              closeOnEscape={true}
+                              eventPool="Modal"
+                              mountNode={<body />}
+                              onClose={[Function]}
+                              onMount={[Function]}
+                              onOpen={[Function]}
+                              onUnmount={[Function]}
+                              open={false}
+                              openOnTriggerClick={true}
+                              trigger={
+                                <div
+                                  data-test-id="search-bar-search-modal-trigger"
+                                  onClick={[Function]}
                                 >
                                   <Button
                                     hasShadow={false}
@@ -937,41 +922,59 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                     isPositionedRight={true}
                                     isRounded={true}
                                     isSecondary={false}
+                                    onClick={[Function]}
+                                    size={null}
+                                  >
+                                    Check our availability
+                                  </Button>
+                                </div>
+                              }
+                            >
+                              <Ref
+                                innerRef={[Function]}
+                              >
+                                <RefFindNode
+                                  innerRef={[Function]}
+                                >
+                                  <div
+                                    data-test-id="search-bar-search-modal-trigger"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     onFocus={[Function]}
                                     onMouseEnter={[Function]}
                                     onMouseLeave={[Function]}
-                                    size={null}
                                   >
                                     <Button
-                                      as="button"
-                                      basic={false}
-                                      circular={true}
-                                      className=""
-                                      compact={false}
-                                      disabled={false}
-                                      floated="right"
-                                      fluid={false}
-                                      loading={false}
+                                      hasShadow={false}
+                                      icon={null}
+                                      isCompact={false}
+                                      isDisabled={false}
+                                      isFluid={false}
+                                      isFormSubmit={false}
+                                      isLoading={false}
+                                      isOutlined={false}
+                                      isPositionedRight={true}
+                                      isRounded={true}
+                                      isSecondary={false}
                                       onClick={[Function]}
-                                      secondary={false}
                                       size={null}
-                                      type="button"
                                     >
-                                      <Ref
-                                        innerRef={
-                                          Object {
-                                            "current": <button
-                                              class="ui circular right floated button"
-                                              type="button"
-                                            >
-                                              Check our availability
-                                            </button>,
-                                          }
-                                        }
+                                      <Button
+                                        as="button"
+                                        basic={false}
+                                        circular={true}
+                                        className=""
+                                        compact={false}
+                                        disabled={false}
+                                        floated="right"
+                                        fluid={false}
+                                        loading={false}
+                                        onClick={[Function]}
+                                        secondary={false}
+                                        size={null}
+                                        type="button"
                                       >
-                                        <RefFindNode
+                                        <Ref
                                           innerRef={
                                             Object {
                                               "current": <button
@@ -983,17 +986,30 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             }
                                           }
                                         >
-                                          <button
-                                            className="ui circular right floated button"
-                                            onClick={[Function]}
-                                            type="button"
+                                          <RefFindNode
+                                            innerRef={
+                                              Object {
+                                                "current": <button
+                                                  class="ui circular right floated button"
+                                                  type="button"
+                                                >
+                                                  Check our availability
+                                                </button>,
+                                              }
+                                            }
                                           >
-                                            Check our availability
-                                          </button>
-                                        </RefFindNode>
-                                      </Ref>
+                                            <button
+                                              className="ui circular right floated button"
+                                              onClick={[Function]}
+                                              type="button"
+                                            >
+                                              Check our availability
+                                            </button>
+                                          </RefFindNode>
+                                        </Ref>
+                                      </Button>
                                     </Button>
-                                  </Button>
+                                  </div>
                                 </RefFindNode>
                               </Ref>
                             </Portal>
@@ -1046,7 +1062,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
             />
           }
           onChangeInput={[Function]}
-          onCloseModal={[Function]}
           onSubmit={[Function]}
           searchButton={
             <Button
@@ -1183,7 +1198,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                               />
                             }
                             onChangeInput={[Function]}
-                            onCloseModal={[Function]}
                             onInputChange={[Function]}
                             onSubmit={[Function]}
                             searchButton={
@@ -1666,7 +1680,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                         datesInputOnFocusChange={[Function]}
                         getIsDayBlocked={[Function]}
                         guestsInputLabel="Guests"
-                        handleSubmit={[Function]}
                         isDisplayedAsModal={false}
                         isFixed={true}
                         isModalOpen={false}
@@ -1687,7 +1700,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                           />
                         }
                         onChangeInput={[Function]}
-                        onCloseModal={[Function]}
                         onInputChange={[Function]}
                         onSubmit={[Function]}
                         searchButton={
@@ -1744,23 +1756,28 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                           onClose={[Function]}
                           size="tiny"
                           trigger={
-                            <Button
-                              hasShadow={false}
-                              icon={null}
-                              isCompact={false}
-                              isDisabled={false}
-                              isFluid={false}
-                              isFormSubmit={false}
-                              isLoading={false}
-                              isOutlined={false}
-                              isPositionedRight={true}
-                              isRounded={true}
-                              isSecondary={false}
+                            <div
+                              data-test-id="search-bar-search-modal-trigger"
                               onClick={[Function]}
-                              size={null}
                             >
-                              Check our availability
-                            </Button>
+                              <Button
+                                hasShadow={false}
+                                icon={null}
+                                isCompact={false}
+                                isDisabled={false}
+                                isFluid={false}
+                                isFormSubmit={false}
+                                isLoading={false}
+                                isOutlined={false}
+                                isPositionedRight={true}
+                                isRounded={true}
+                                isSecondary={false}
+                                onClick={[Function]}
+                                size={null}
+                              >
+                                Check our availability
+                              </Button>
+                            </div>
                           }
                         >
                           <Modal
@@ -1791,37 +1808,10 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                             open={false}
                             size="fullscreen"
                             trigger={
-                              <Button
-                                hasShadow={false}
-                                icon={null}
-                                isCompact={false}
-                                isDisabled={false}
-                                isFluid={false}
-                                isFormSubmit={false}
-                                isLoading={false}
-                                isOutlined={false}
-                                isPositionedRight={true}
-                                isRounded={true}
-                                isSecondary={false}
+                              <div
+                                data-test-id="search-bar-search-modal-trigger"
                                 onClick={[Function]}
-                                size={null}
                               >
-                                Check our availability
-                              </Button>
-                            }
-                          >
-                            <Portal
-                              closeOnDocumentClick={false}
-                              closeOnEscape={true}
-                              eventPool="Modal"
-                              mountNode={<body />}
-                              onClose={[Function]}
-                              onMount={[Function]}
-                              onOpen={[Function]}
-                              onUnmount={[Function]}
-                              open={false}
-                              openOnTriggerClick={true}
-                              trigger={
                                 <Button
                                   hasShadow={false}
                                   icon={null}
@@ -1839,13 +1829,24 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                 >
                                   Check our availability
                                 </Button>
-                              }
-                            >
-                              <Ref
-                                innerRef={[Function]}
-                              >
-                                <RefFindNode
-                                  innerRef={[Function]}
+                              </div>
+                            }
+                          >
+                            <Portal
+                              closeOnDocumentClick={false}
+                              closeOnEscape={true}
+                              eventPool="Modal"
+                              mountNode={<body />}
+                              onClose={[Function]}
+                              onMount={[Function]}
+                              onOpen={[Function]}
+                              onUnmount={[Function]}
+                              open={false}
+                              openOnTriggerClick={true}
+                              trigger={
+                                <div
+                                  data-test-id="search-bar-search-modal-trigger"
+                                  onClick={[Function]}
                                 >
                                   <Button
                                     hasShadow={false}
@@ -1859,41 +1860,59 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                     isPositionedRight={true}
                                     isRounded={true}
                                     isSecondary={false}
+                                    onClick={[Function]}
+                                    size={null}
+                                  >
+                                    Check our availability
+                                  </Button>
+                                </div>
+                              }
+                            >
+                              <Ref
+                                innerRef={[Function]}
+                              >
+                                <RefFindNode
+                                  innerRef={[Function]}
+                                >
+                                  <div
+                                    data-test-id="search-bar-search-modal-trigger"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     onFocus={[Function]}
                                     onMouseEnter={[Function]}
                                     onMouseLeave={[Function]}
-                                    size={null}
                                   >
                                     <Button
-                                      as="button"
-                                      basic={false}
-                                      circular={true}
-                                      className=""
-                                      compact={false}
-                                      disabled={false}
-                                      floated="right"
-                                      fluid={false}
-                                      loading={false}
+                                      hasShadow={false}
+                                      icon={null}
+                                      isCompact={false}
+                                      isDisabled={false}
+                                      isFluid={false}
+                                      isFormSubmit={false}
+                                      isLoading={false}
+                                      isOutlined={false}
+                                      isPositionedRight={true}
+                                      isRounded={true}
+                                      isSecondary={false}
                                       onClick={[Function]}
-                                      secondary={false}
                                       size={null}
-                                      type="button"
                                     >
-                                      <Ref
-                                        innerRef={
-                                          Object {
-                                            "current": <button
-                                              class="ui circular right floated button"
-                                              type="button"
-                                            >
-                                              Check our availability
-                                            </button>,
-                                          }
-                                        }
+                                      <Button
+                                        as="button"
+                                        basic={false}
+                                        circular={true}
+                                        className=""
+                                        compact={false}
+                                        disabled={false}
+                                        floated="right"
+                                        fluid={false}
+                                        loading={false}
+                                        onClick={[Function]}
+                                        secondary={false}
+                                        size={null}
+                                        type="button"
                                       >
-                                        <RefFindNode
+                                        <Ref
                                           innerRef={
                                             Object {
                                               "current": <button
@@ -1905,17 +1924,30 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             }
                                           }
                                         >
-                                          <button
-                                            className="ui circular right floated button"
-                                            onClick={[Function]}
-                                            type="button"
+                                          <RefFindNode
+                                            innerRef={
+                                              Object {
+                                                "current": <button
+                                                  class="ui circular right floated button"
+                                                  type="button"
+                                                >
+                                                  Check our availability
+                                                </button>,
+                                              }
+                                            }
                                           >
-                                            Check our availability
-                                          </button>
-                                        </RefFindNode>
-                                      </Ref>
+                                            <button
+                                              className="ui circular right floated button"
+                                              onClick={[Function]}
+                                              type="button"
+                                            >
+                                              Check our availability
+                                            </button>
+                                          </RefFindNode>
+                                        </Ref>
+                                      </Button>
                                     </Button>
-                                  </Button>
+                                  </div>
                                 </RefFindNode>
                               </Ref>
                             </Portal>
@@ -2017,7 +2049,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
           modalHeadingText="Check our availability"
           modalSummaryElement={null}
           onChangeInput={[Function]}
-          onCloseModal={[Function]}
           onSubmit={[Function]}
           searchButton={
             <Button
@@ -2374,7 +2405,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                             modalHeadingText="Check our availability"
                             modalSummaryElement={null}
                             onChangeInput={[Function]}
-                            onCloseModal={[Function]}
                             onInputChange={[Function]}
                             onSubmit={[Function]}
                             searchButton={
@@ -2857,7 +2887,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                         datesInputOnFocusChange={[Function]}
                         getIsDayBlocked={[Function]}
                         guestsInputLabel="Guests"
-                        handleSubmit={[Function]}
                         isDisplayedAsModal={false}
                         isFixed={true}
                         isModalOpen={false}
@@ -2867,7 +2896,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                         modalHeadingText="Check our availability"
                         modalSummaryElement={null}
                         onChangeInput={[Function]}
-                        onCloseModal={[Function]}
                         onInputChange={[Function]}
                         onSubmit={[Function]}
                         searchButton={
@@ -2923,23 +2951,28 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                           onClose={[Function]}
                           size="tiny"
                           trigger={
-                            <Button
-                              hasShadow={false}
-                              icon={null}
-                              isCompact={false}
-                              isDisabled={false}
-                              isFluid={false}
-                              isFormSubmit={false}
-                              isLoading={false}
-                              isOutlined={false}
-                              isPositionedRight={true}
-                              isRounded={true}
-                              isSecondary={false}
+                            <div
+                              data-test-id="search-bar-search-modal-trigger"
                               onClick={[Function]}
-                              size={null}
                             >
-                              Check our availability
-                            </Button>
+                              <Button
+                                hasShadow={false}
+                                icon={null}
+                                isCompact={false}
+                                isDisabled={false}
+                                isFluid={false}
+                                isFormSubmit={false}
+                                isLoading={false}
+                                isOutlined={false}
+                                isPositionedRight={true}
+                                isRounded={true}
+                                isSecondary={false}
+                                onClick={[Function]}
+                                size={null}
+                              >
+                                Check our availability
+                              </Button>
+                            </div>
                           }
                         >
                           <Modal
@@ -2970,37 +3003,10 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                             open={false}
                             size="fullscreen"
                             trigger={
-                              <Button
-                                hasShadow={false}
-                                icon={null}
-                                isCompact={false}
-                                isDisabled={false}
-                                isFluid={false}
-                                isFormSubmit={false}
-                                isLoading={false}
-                                isOutlined={false}
-                                isPositionedRight={true}
-                                isRounded={true}
-                                isSecondary={false}
+                              <div
+                                data-test-id="search-bar-search-modal-trigger"
                                 onClick={[Function]}
-                                size={null}
                               >
-                                Check our availability
-                              </Button>
-                            }
-                          >
-                            <Portal
-                              closeOnDocumentClick={false}
-                              closeOnEscape={true}
-                              eventPool="Modal"
-                              mountNode={<body />}
-                              onClose={[Function]}
-                              onMount={[Function]}
-                              onOpen={[Function]}
-                              onUnmount={[Function]}
-                              open={false}
-                              openOnTriggerClick={true}
-                              trigger={
                                 <Button
                                   hasShadow={false}
                                   icon={null}
@@ -3018,13 +3024,24 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                 >
                                   Check our availability
                                 </Button>
-                              }
-                            >
-                              <Ref
-                                innerRef={[Function]}
-                              >
-                                <RefFindNode
-                                  innerRef={[Function]}
+                              </div>
+                            }
+                          >
+                            <Portal
+                              closeOnDocumentClick={false}
+                              closeOnEscape={true}
+                              eventPool="Modal"
+                              mountNode={<body />}
+                              onClose={[Function]}
+                              onMount={[Function]}
+                              onOpen={[Function]}
+                              onUnmount={[Function]}
+                              open={false}
+                              openOnTriggerClick={true}
+                              trigger={
+                                <div
+                                  data-test-id="search-bar-search-modal-trigger"
+                                  onClick={[Function]}
                                 >
                                   <Button
                                     hasShadow={false}
@@ -3038,41 +3055,59 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                     isPositionedRight={true}
                                     isRounded={true}
                                     isSecondary={false}
+                                    onClick={[Function]}
+                                    size={null}
+                                  >
+                                    Check our availability
+                                  </Button>
+                                </div>
+                              }
+                            >
+                              <Ref
+                                innerRef={[Function]}
+                              >
+                                <RefFindNode
+                                  innerRef={[Function]}
+                                >
+                                  <div
+                                    data-test-id="search-bar-search-modal-trigger"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     onFocus={[Function]}
                                     onMouseEnter={[Function]}
                                     onMouseLeave={[Function]}
-                                    size={null}
                                   >
                                     <Button
-                                      as="button"
-                                      basic={false}
-                                      circular={true}
-                                      className=""
-                                      compact={false}
-                                      disabled={false}
-                                      floated="right"
-                                      fluid={false}
-                                      loading={false}
+                                      hasShadow={false}
+                                      icon={null}
+                                      isCompact={false}
+                                      isDisabled={false}
+                                      isFluid={false}
+                                      isFormSubmit={false}
+                                      isLoading={false}
+                                      isOutlined={false}
+                                      isPositionedRight={true}
+                                      isRounded={true}
+                                      isSecondary={false}
                                       onClick={[Function]}
-                                      secondary={false}
                                       size={null}
-                                      type="button"
                                     >
-                                      <Ref
-                                        innerRef={
-                                          Object {
-                                            "current": <button
-                                              class="ui circular right floated button"
-                                              type="button"
-                                            >
-                                              Check our availability
-                                            </button>,
-                                          }
-                                        }
+                                      <Button
+                                        as="button"
+                                        basic={false}
+                                        circular={true}
+                                        className=""
+                                        compact={false}
+                                        disabled={false}
+                                        floated="right"
+                                        fluid={false}
+                                        loading={false}
+                                        onClick={[Function]}
+                                        secondary={false}
+                                        size={null}
+                                        type="button"
                                       >
-                                        <RefFindNode
+                                        <Ref
                                           innerRef={
                                             Object {
                                               "current": <button
@@ -3084,17 +3119,30 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             }
                                           }
                                         >
-                                          <button
-                                            className="ui circular right floated button"
-                                            onClick={[Function]}
-                                            type="button"
+                                          <RefFindNode
+                                            innerRef={
+                                              Object {
+                                                "current": <button
+                                                  class="ui circular right floated button"
+                                                  type="button"
+                                                >
+                                                  Check our availability
+                                                </button>,
+                                              }
+                                            }
                                           >
-                                            Check our availability
-                                          </button>
-                                        </RefFindNode>
-                                      </Ref>
+                                            <button
+                                              className="ui circular right floated button"
+                                              onClick={[Function]}
+                                              type="button"
+                                            >
+                                              Check our availability
+                                            </button>
+                                          </RefFindNode>
+                                        </Ref>
+                                      </Button>
                                     </Button>
-                                  </Button>
+                                  </div>
                                 </RefFindNode>
                               </Ref>
                             </Portal>
@@ -3147,7 +3195,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
             />
           }
           onChangeInput={[Function]}
-          onCloseModal={[Function]}
           onSubmit={[Function]}
           searchButton={
             <Button
@@ -3450,7 +3497,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                               />
                             }
                             onChangeInput={[Function]}
-                            onCloseModal={[Function]}
                             onInputChange={[Function]}
                             onSubmit={[Function]}
                             searchButton={
@@ -3933,7 +3979,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                         datesInputOnFocusChange={[Function]}
                         getIsDayBlocked={[Function]}
                         guestsInputLabel="Guests"
-                        handleSubmit={[Function]}
                         isDisplayedAsModal={false}
                         isFixed={true}
                         isModalOpen={false}
@@ -3954,7 +3999,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                           />
                         }
                         onChangeInput={[Function]}
-                        onCloseModal={[Function]}
                         onInputChange={[Function]}
                         onSubmit={[Function]}
                         searchButton={
@@ -4011,23 +4055,28 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                           onClose={[Function]}
                           size="tiny"
                           trigger={
-                            <Button
-                              hasShadow={false}
-                              icon={null}
-                              isCompact={false}
-                              isDisabled={false}
-                              isFluid={false}
-                              isFormSubmit={false}
-                              isLoading={false}
-                              isOutlined={false}
-                              isPositionedRight={true}
-                              isRounded={true}
-                              isSecondary={false}
+                            <div
+                              data-test-id="search-bar-search-modal-trigger"
                               onClick={[Function]}
-                              size={null}
                             >
-                              Check our availability
-                            </Button>
+                              <Button
+                                hasShadow={false}
+                                icon={null}
+                                isCompact={false}
+                                isDisabled={false}
+                                isFluid={false}
+                                isFormSubmit={false}
+                                isLoading={false}
+                                isOutlined={false}
+                                isPositionedRight={true}
+                                isRounded={true}
+                                isSecondary={false}
+                                onClick={[Function]}
+                                size={null}
+                              >
+                                Check our availability
+                              </Button>
+                            </div>
                           }
                         >
                           <Modal
@@ -4058,37 +4107,10 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                             open={false}
                             size="fullscreen"
                             trigger={
-                              <Button
-                                hasShadow={false}
-                                icon={null}
-                                isCompact={false}
-                                isDisabled={false}
-                                isFluid={false}
-                                isFormSubmit={false}
-                                isLoading={false}
-                                isOutlined={false}
-                                isPositionedRight={true}
-                                isRounded={true}
-                                isSecondary={false}
+                              <div
+                                data-test-id="search-bar-search-modal-trigger"
                                 onClick={[Function]}
-                                size={null}
                               >
-                                Check our availability
-                              </Button>
-                            }
-                          >
-                            <Portal
-                              closeOnDocumentClick={false}
-                              closeOnEscape={true}
-                              eventPool="Modal"
-                              mountNode={<body />}
-                              onClose={[Function]}
-                              onMount={[Function]}
-                              onOpen={[Function]}
-                              onUnmount={[Function]}
-                              open={false}
-                              openOnTriggerClick={true}
-                              trigger={
                                 <Button
                                   hasShadow={false}
                                   icon={null}
@@ -4106,13 +4128,24 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                 >
                                   Check our availability
                                 </Button>
-                              }
-                            >
-                              <Ref
-                                innerRef={[Function]}
-                              >
-                                <RefFindNode
-                                  innerRef={[Function]}
+                              </div>
+                            }
+                          >
+                            <Portal
+                              closeOnDocumentClick={false}
+                              closeOnEscape={true}
+                              eventPool="Modal"
+                              mountNode={<body />}
+                              onClose={[Function]}
+                              onMount={[Function]}
+                              onOpen={[Function]}
+                              onUnmount={[Function]}
+                              open={false}
+                              openOnTriggerClick={true}
+                              trigger={
+                                <div
+                                  data-test-id="search-bar-search-modal-trigger"
+                                  onClick={[Function]}
                                 >
                                   <Button
                                     hasShadow={false}
@@ -4126,41 +4159,59 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                     isPositionedRight={true}
                                     isRounded={true}
                                     isSecondary={false}
+                                    onClick={[Function]}
+                                    size={null}
+                                  >
+                                    Check our availability
+                                  </Button>
+                                </div>
+                              }
+                            >
+                              <Ref
+                                innerRef={[Function]}
+                              >
+                                <RefFindNode
+                                  innerRef={[Function]}
+                                >
+                                  <div
+                                    data-test-id="search-bar-search-modal-trigger"
                                     onBlur={[Function]}
                                     onClick={[Function]}
                                     onFocus={[Function]}
                                     onMouseEnter={[Function]}
                                     onMouseLeave={[Function]}
-                                    size={null}
                                   >
                                     <Button
-                                      as="button"
-                                      basic={false}
-                                      circular={true}
-                                      className=""
-                                      compact={false}
-                                      disabled={false}
-                                      floated="right"
-                                      fluid={false}
-                                      loading={false}
+                                      hasShadow={false}
+                                      icon={null}
+                                      isCompact={false}
+                                      isDisabled={false}
+                                      isFluid={false}
+                                      isFormSubmit={false}
+                                      isLoading={false}
+                                      isOutlined={false}
+                                      isPositionedRight={true}
+                                      isRounded={true}
+                                      isSecondary={false}
                                       onClick={[Function]}
-                                      secondary={false}
                                       size={null}
-                                      type="button"
                                     >
-                                      <Ref
-                                        innerRef={
-                                          Object {
-                                            "current": <button
-                                              class="ui circular right floated button"
-                                              type="button"
-                                            >
-                                              Check our availability
-                                            </button>,
-                                          }
-                                        }
+                                      <Button
+                                        as="button"
+                                        basic={false}
+                                        circular={true}
+                                        className=""
+                                        compact={false}
+                                        disabled={false}
+                                        floated="right"
+                                        fluid={false}
+                                        loading={false}
+                                        onClick={[Function]}
+                                        secondary={false}
+                                        size={null}
+                                        type="button"
                                       >
-                                        <RefFindNode
+                                        <Ref
                                           innerRef={
                                             Object {
                                               "current": <button
@@ -4172,17 +4223,30 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             }
                                           }
                                         >
-                                          <button
-                                            className="ui circular right floated button"
-                                            onClick={[Function]}
-                                            type="button"
+                                          <RefFindNode
+                                            innerRef={
+                                              Object {
+                                                "current": <button
+                                                  class="ui circular right floated button"
+                                                  type="button"
+                                                >
+                                                  Check our availability
+                                                </button>,
+                                              }
+                                            }
                                           >
-                                            Check our availability
-                                          </button>
-                                        </RefFindNode>
-                                      </Ref>
+                                            <button
+                                              className="ui circular right floated button"
+                                              onClick={[Function]}
+                                              type="button"
+                                            >
+                                              Check our availability
+                                            </button>
+                                          </RefFindNode>
+                                        </Ref>
+                                      </Button>
                                     </Button>
-                                  </Button>
+                                  </div>
                                 </RefFindNode>
                               </Ref>
                             </Portal>
