@@ -1,3 +1,10 @@
+## [1.254.5](https://github.com/lodgify/lodgify-ui/compare/v1.254.4...v1.254.5) (2019-11-07)
+
+
+### Bug Fixes
+
+* **SearchBar:** modal on click ([ff7bc8d](https://github.com/lodgify/lodgify-ui/commit/ff7bc8d))
+
 ## [1.254.4](https://github.com/lodgify/lodgify-ui/compare/v1.254.3...v1.254.4) (2019-11-04)
 
 
