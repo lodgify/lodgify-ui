@@ -1,5 +1,5 @@
 /*----------------------
           HTML
 -----------------------*/
-@htmlContainerImmediateImageChildMaxWidth: 100%;
-@htmlContainerImageChildWidth: 100%;
+@htmlContainerImmediateChildImageMaxWidth: 100%;
+@htmlContainerChildWidth: 100%;
