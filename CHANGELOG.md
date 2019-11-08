@@ -1,3 +1,10 @@
+## [1.254.6](https://github.com/lodgify/lodgify-ui/compare/v1.254.5...v1.254.6) (2019-11-08)
+
+
+### Bug Fixes
+
+* **HostProfile:** try always to convert description to html ([f18836e](https://github.com/lodgify/lodgify-ui/commit/f18836e))
+
 ## [1.254.5](https://github.com/lodgify/lodgify-ui/compare/v1.254.4...v1.254.5) (2019-11-07)
 
 
