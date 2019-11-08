@@ -16,13 +16,17 @@
   overflow-x: auto;
 
   > img {
-    max-width: @htmlContainerImmediateImageChildMaxWidth;
+    max-width: @htmlContainerImmediateChildMaxWidth;
   }
 
   & * {
 
-    img {
-      width: @htmlContainerImageChildWidth;
+    img,
+    figure,
+    object,
+    iframe {
+      width: @htmlContainerChildWidth;
+      max-width: @htmlContainerChildWidth;
     }
   }
 }
