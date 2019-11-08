@@ -9,15 +9,16 @@ import {
   PHONE,
   YOUR_HOST,
 } from 'utils/default-strings';
+import { size } from 'utils/size';
 import { Heading } from 'typography/Heading';
 import { Grid } from 'layout/Grid';
 import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { Thumbnail } from 'media/Thumbnail';
 import { FlexContainer } from 'layout/FlexContainer';
+import { HTML } from 'general-widgets/HTML';
 import { getHrefTelString } from 'utils/get-href-tel-string';
 
-import { getDescription } from './utils/getDescription';
 import { getStringWithColonSuffix } from './utils/getStringWithColonSuffix';
 
 /**
@@ -52,7 +53,11 @@ export const Component = ({
       </GridColumn>
     </GridRow>
     <GridRow verticalAlign="top">
-      {getDescription(description)}
+      {size(description) > 0 && (
+        <GridColumn computer={7} mobile={12} tablet={12}>
+          <HTML htmlString={description} />
+        </GridColumn>
+      )}
       <GridColumn computer={5} mobile={12} tablet={12}>
         <Heading size="small">{contactInformationHeadingText}</Heading>
         <List relaxed size="medium">

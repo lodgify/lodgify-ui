@@ -237,17 +237,18 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                   <div
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
                   >
-                    <Paragraph
-                      isCompact={false}
-                      size="medium"
-                      weight={null}
+                    <HTML
+                      htmlString="We do love cats"
                     >
-                      <p
-                        className=""
-                      >
-                        We do love cats
-                      </p>
-                    </Paragraph>
+                      <div
+                        className="html-container"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "We do love cats",
+                          }
+                        }
+                      />
+                    </HTML>
                   </div>
                 </GridColumn>
               </GridColumn>
@@ -568,17 +569,18 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                   <div
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
                   >
-                    <Paragraph
-                      isCompact={false}
-                      size="medium"
-                      weight={null}
+                    <HTML
+                      htmlString="We do love cats"
                     >
-                      <p
-                        className=""
-                      >
-                        We do love cats
-                      </p>
-                    </Paragraph>
+                      <div
+                        className="html-container"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "We do love cats",
+                          }
+                        }
+                      />
+                    </HTML>
                   </div>
                 </GridColumn>
               </GridColumn>
@@ -892,17 +894,18 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                   <div
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
                   >
-                    <Paragraph
-                      isCompact={false}
-                      size="medium"
-                      weight={null}
+                    <HTML
+                      htmlString="We do love cats"
                     >
-                      <p
-                        className=""
-                      >
-                        We do love cats
-                      </p>
-                    </Paragraph>
+                      <div
+                        className="html-container"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "We do love cats",
+                          }
+                        }
+                      />
+                    </HTML>
                   </div>
                 </GridColumn>
               </GridColumn>
@@ -1220,17 +1223,18 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                   <div
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
                   >
-                    <Paragraph
-                      isCompact={false}
-                      size="medium"
-                      weight={null}
+                    <HTML
+                      htmlString="We do love cats"
                     >
-                      <p
-                        className=""
-                      >
-                        We do love cats
-                      </p>
-                    </Paragraph>
+                      <div
+                        className="html-container"
+                        dangerouslySetInnerHTML={
+                          Object {
+                            "__html": "We do love cats",
+                          }
+                        }
+                      />
+                    </HTML>
                   </div>
                 </GridColumn>
               </GridColumn>
