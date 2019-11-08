@@ -1,3 +1,10 @@
+## [1.254.8](https://github.com/lodgify/lodgify-ui/compare/v1.254.7...v1.254.8) (2019-11-08)
+
+
+### Bug Fixes
+
+* **RoomTypes:** icon paragraph font-size matches paragraphs ([ed88b52](https://github.com/lodgify/lodgify-ui/commit/ed88b52))
+
 ## [1.254.7](https://github.com/lodgify/lodgify-ui/compare/v1.254.6...v1.254.7) (2019-11-08)
 
 
