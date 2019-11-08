@@ -17,3 +17,14 @@
     margin-right: @horizontalSpacing;
   }
 }
+
+.ui.list {
+
+  .item {
+
+    i.icon.has-label {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
