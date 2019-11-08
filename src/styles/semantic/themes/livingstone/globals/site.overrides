@@ -138,6 +138,10 @@ p.is-compact {
   }
 }
 
+i.small.icon p {
+  font-size: 1rem;
+}
+
 /*-------------------
        Links
 --------------------*/
