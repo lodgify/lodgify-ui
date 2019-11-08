@@ -1,3 +1,10 @@
+## [1.254.7](https://github.com/lodgify/lodgify-ui/compare/v1.254.6...v1.254.7) (2019-11-08)
+
+
+### Bug Fixes
+
+* **HTML:** all image based media fits width ([b83e462](https://github.com/lodgify/lodgify-ui/commit/b83e462))
+
 ## [1.254.6](https://github.com/lodgify/lodgify-ui/compare/v1.254.5...v1.254.6) (2019-11-08)
 
 
