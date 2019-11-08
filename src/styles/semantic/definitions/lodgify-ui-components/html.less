@@ -2,9 +2,9 @@
             Theme
 *******************************/
 
-@type     : 'lodgify-ui-component';
+@type : 'lodgify-ui-component';
 
-@element  : 'html';
+@element : 'html';
 
 @import (multiple) '../../theme.config';
 
@@ -20,7 +20,6 @@
   }
 
   & * {
-
     img,
     figure,
     object,
@@ -28,5 +27,15 @@
       width: @htmlContainerChildWidth;
       max-width: @htmlContainerChildWidth;
     }
+  }
+  table,
+  th,
+  td {
+    border: @htmlContainerTableBorderThickness solid
+      @htmlContainerTableBorderColor;
+    border-collapse: collapse;
+  }
+  td {
+    padding: @htmlContainerTableCellPadding;
   }
 }
