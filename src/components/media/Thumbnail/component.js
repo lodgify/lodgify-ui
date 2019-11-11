@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import classnames from 'classnames';
 
@@ -15,6 +15,7 @@ export const Component = ({
   hasRoundedCorners,
   imageSizes,
   imageSrcSet,
+  imageTitle,
   imageUrl,
   isCircular,
   isSquare,
@@ -22,26 +23,29 @@ export const Component = ({
   placeholderImageUrl,
   size,
 }) => (
-  <div
-    className={classnames('ui', 'thumbnail', size, className, {
-      'has-margin': hasMargin,
-      'is-square': isSquare,
-      'is-circular': isCircular,
-    })}
-  >
-    <ResponsiveImage
-      hasRoundedCorners={hasRoundedCorners}
-      imageUrl={imageUrl}
-      isCircular={isCircular}
-      isFluid={!isSquare}
-      isLazyLoaded
-      isSquare={isSquare}
-      placeholderImageUrl={placeholderImageUrl}
-      sizes={imageSizes}
-      srcSet={imageSrcSet}
-    />
+  <Fragment>
+    <div
+      className={classnames('ui', 'thumbnail', size, className, {
+        'has-margin': hasMargin,
+        'is-square': isSquare,
+        'is-circular': isCircular,
+      })}
+    >
+      <ResponsiveImage
+        hasRoundedCorners={hasRoundedCorners}
+        imageTitle={imageTitle || label || undefined}
+        imageUrl={imageUrl}
+        isCircular={isCircular}
+        isFluid={!isSquare}
+        isLazyLoaded
+        isSquare={isSquare}
+        placeholderImageUrl={placeholderImageUrl}
+        sizes={imageSizes}
+        srcSet={imageSrcSet}
+      />
+    </div>
     {!!label && <Paragraph>{label}</Paragraph>}
-  </div>
+  </Fragment>
 );
 
 Component.displayName = 'Thumbnail';
@@ -52,6 +56,7 @@ Component.defaultProps = {
   hasRoundedCorners: false,
   imageSizes: undefined,
   imageSrcSet: undefined,
+  imageTitle: undefined,
   isCircular: false,
   isSquare: false,
   label: null,
@@ -74,6 +79,8 @@ Component.propTypes = {
   imageSizes: PropTypes.string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   imageSrcSet: PropTypes.string,
+  /** The title of the thumbnail */
+  imageTitle: PropTypes.string,
   /** URL pointing to the image to render. */
   imageUrl: PropTypes.string.isRequired,
   /** Is the thumbnail circular */
