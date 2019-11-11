@@ -1,3 +1,10 @@
+## [1.254.10](https://github.com/lodgify/lodgify-ui/compare/v1.254.9...v1.254.10) (2019-11-11)
+
+
+### Bug Fixes
+
+* **Header:** expose logo color css var ([07c1e46](https://github.com/lodgify/lodgify-ui/commit/07c1e46))
+
 ## [1.254.9](https://github.com/lodgify/lodgify-ui/compare/v1.254.8...v1.254.9) (2019-11-11)
 
 
