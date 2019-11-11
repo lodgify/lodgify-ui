@@ -23,7 +23,8 @@
 
   /* Header */
   .item .ui.header {
-    color: @offWhite;
+    color: @themeLogoColorDefault;
+    color: var(@themeLogoColorIdentifier, @themeLogoColorDefault);
 
     .ui.modal & {
       color: @textColor;
@@ -378,7 +379,8 @@ header {
 
         p {
           margin: @headerLogoSubTextMargin;
-          color: @offWhite;
+          color: @themeLogoColorDefault;
+          color: var(@themeLogoColorIdentifier, @themeLogoColorDefault);
           font-family: var(@subtitleFontIdentifier, @subtitleFontDefault);
         }
       }
