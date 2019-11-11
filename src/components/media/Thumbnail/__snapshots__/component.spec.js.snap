@@ -26,6 +26,7 @@ exports[`<Thumbnail /> by default should render the right structure 1`] = `
         componentProps={
           Object {
             "hasRoundedCorners": false,
+            "imageTitle": undefined,
             "isCircular": false,
             "isFluid": true,
             "isLazyLoaded": true,
@@ -94,6 +95,7 @@ exports[`<Thumbnail /> if \`props.isCircular\` is true should render the right s
         componentProps={
           Object {
             "hasRoundedCorners": false,
+            "imageTitle": undefined,
             "isCircular": true,
             "isFluid": true,
             "isLazyLoaded": true,
@@ -162,6 +164,7 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
         componentProps={
           Object {
             "hasRoundedCorners": false,
+            "imageTitle": undefined,
             "isCircular": false,
             "isFluid": false,
             "isLazyLoaded": true,
@@ -230,6 +233,7 @@ exports[`<Thumbnail /> if \`props.size\` is supplied should render the right str
         componentProps={
           Object {
             "hasRoundedCorners": false,
+            "imageTitle": undefined,
             "isCircular": false,
             "isFluid": true,
             "isLazyLoaded": true,

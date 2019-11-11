@@ -141,6 +141,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": false,
+                                    "imageTitle": undefined,
                                     "isCircular": true,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -473,6 +474,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": false,
+                                    "imageTitle": undefined,
                                     "isCircular": true,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -798,6 +800,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": false,
+                                    "imageTitle": undefined,
                                     "isCircular": true,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -1127,6 +1130,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": false,
+                                    "imageTitle": undefined,
                                     "isCircular": true,
                                     "isFluid": true,
                                     "isLazyLoaded": true,

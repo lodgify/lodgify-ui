@@ -165,6 +165,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={false}
+                              imageTitle="Entrance"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -175,6 +176,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": false,
+                                    "imageTitle": "Entrance",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -194,7 +196,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={false}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Entrance"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -213,18 +215,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Entrance
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Entrance
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
@@ -255,6 +257,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
+                              imageTitle="Entrance"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -265,6 +268,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": true,
+                                    "imageTitle": "Entrance",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -284,7 +288,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={true}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Entrance"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -303,18 +307,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Entrance
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Entrance
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
@@ -381,6 +385,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={false}
+                              imageTitle="Kitchen"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -391,6 +396,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": false,
+                                    "imageTitle": "Kitchen",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -410,7 +416,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={false}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Kitchen"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -429,18 +435,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Kitchen
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Kitchen
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
@@ -471,6 +477,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
+                              imageTitle="Kitchen"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -481,6 +488,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": true,
+                                    "imageTitle": "Kitchen",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -500,7 +508,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={true}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Kitchen"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -519,18 +527,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Kitchen
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Kitchen
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
@@ -597,6 +605,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={false}
+                              imageTitle="Living room"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -607,6 +616,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": false,
+                                    "imageTitle": "Living room",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -626,7 +636,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={false}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Living room"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -645,18 +655,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Living room
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Living room
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
@@ -687,6 +697,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
+                              imageTitle="Living room"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -697,6 +708,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": true,
+                                    "imageTitle": "Living room",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -716,7 +728,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={true}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Living room"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -735,18 +747,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Living room
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Living room
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
@@ -813,6 +825,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={false}
+                              imageTitle="Studio"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -823,6 +836,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": false,
+                                    "imageTitle": "Studio",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -842,7 +856,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={false}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Studio"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -861,18 +875,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Studio
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Studio
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
@@ -903,6 +917,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
+                              imageTitle="Studio"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -913,6 +928,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": true,
+                                    "imageTitle": "Studio",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -932,7 +948,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={true}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Studio"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -951,18 +967,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Studio
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Studio
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
@@ -1029,6 +1045,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={false}
+                              imageTitle="Garden room"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -1039,6 +1056,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": false,
+                                    "imageTitle": "Garden room",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -1058,7 +1076,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={false}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Garden room"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -1077,18 +1095,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Garden room
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Garden room
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
@@ -1119,6 +1137,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                           >
                             <withLazyLoad(ResponsiveImage)
                               hasRoundedCorners={true}
+                              imageTitle="Garden room"
                               imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
                               isCircular={false}
                               isFluid={true}
@@ -1129,6 +1148,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 componentProps={
                                   Object {
                                     "hasRoundedCorners": true,
+                                    "imageTitle": "Garden room",
                                     "isCircular": false,
                                     "isFluid": true,
                                     "isLazyLoaded": true,
@@ -1148,7 +1168,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <ResponsiveImage
                                   hasRoundedCorners={true}
                                   imageHeight={null}
-                                  imageTitle="Image Title"
+                                  imageTitle="Garden room"
                                   imageUrl=""
                                   imageWidth={null}
                                   isAvatar={false}
@@ -1167,18 +1187,18 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                 <div />
                               </LazyLoader>
                             </withLazyLoad(ResponsiveImage)>
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight={null}
-                            >
-                              <p
-                                className=""
-                              >
-                                Garden room
-                              </p>
-                            </Paragraph>
                           </div>
+                          <Paragraph
+                            isCompact={false}
+                            size="medium"
+                            weight={null}
+                          >
+                            <p
+                              className=""
+                            >
+                              Garden room
+                            </p>
+                          </Paragraph>
                         </Thumbnail>
                       </div>
                     </ShowOn>
