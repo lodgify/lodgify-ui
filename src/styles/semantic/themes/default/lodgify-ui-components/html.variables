@@ -3,3 +3,6 @@
 -----------------------*/
 @htmlContainerImmediateChildMaxWidth: 100%;
 @htmlContainerChildWidth: 100%;
+@htmlContainerTableBorderThickness: 1px;
+@htmlContainerTableBorderColor: @greyEight;
+@htmlContainerTableCellPadding: 1em;
