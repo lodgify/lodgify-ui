@@ -1,3 +1,11 @@
+# [1.255.0](https://github.com/lodgify/lodgify-ui/compare/v1.254.10...v1.255.0) (2019-11-11)
+
+
+### Features
+
+* **Picture:** add title and margin ([b53d08c](https://github.com/lodgify/lodgify-ui/commit/b53d08c))
+* **Thumbnail:** change the height of the huge size ([b8a32f3](https://github.com/lodgify/lodgify-ui/commit/b8a32f3))
+
 ## [1.254.10](https://github.com/lodgify/lodgify-ui/compare/v1.254.9...v1.254.10) (2019-11-11)
 
 
