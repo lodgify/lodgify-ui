@@ -1,3 +1,10 @@
+## [1.254.9](https://github.com/lodgify/lodgify-ui/compare/v1.254.8...v1.254.9) (2019-11-11)
+
+
+### Bug Fixes
+
+* **HTML:** add basic table border style ([8dda5ee](https://github.com/lodgify/lodgify-ui/commit/8dda5ee))
+
 ## [1.254.8](https://github.com/lodgify/lodgify-ui/compare/v1.254.7...v1.254.8) (2019-11-08)
 
 
