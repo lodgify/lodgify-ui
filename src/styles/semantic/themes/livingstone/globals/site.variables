@@ -77,6 +77,9 @@
 @themeActionContrastColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-contrast-color";
 @themeActionContrastColorDefault: @black;
 
+@themeLogoColorIdentifier: ~"@{themeCustomPropertyPrefix}-logo-color";
+@themeLogoColorDefault: @offWhite;
+
 /*--------------
   Page Heading
 ---------------*/
@@ -160,6 +163,7 @@
 
 @linkColor: @primaryColor;
 @linkUnderline: underline;
+@logoLinkColor: @offWhite;
 
 /*-------------------
     Scroll Bars
