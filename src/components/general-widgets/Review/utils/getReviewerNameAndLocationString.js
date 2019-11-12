@@ -1,9 +1,9 @@
 /**
- * @param  {string} reviewerLocation
  * @param  {string} reviewerName
+ * @param  {string} reviewerLocation
  * @return {string}
  */
 export const getReviewerNameAndLocationString = (
-  reviewerLocation,
-  reviewerName
-) => `${reviewerLocation} (${reviewerName})`;
+  reviewerName,
+  reviewerLocation
+) => `${reviewerName} ${reviewerLocation ? `(${reviewerLocation})` : ``}`;

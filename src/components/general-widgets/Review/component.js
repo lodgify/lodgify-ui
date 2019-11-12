@@ -108,6 +108,9 @@ Component.displayName = 'Review';
 Component.defaultProps = {
   isShowingPlaceholder: false,
   reviewResponse: null,
+  reviewerLocation: undefined,
+  reviewerStayDate: '',
+  reviewerCategory: '',
 };
 
 Component.propTypes = {
@@ -129,11 +132,11 @@ Component.propTypes = {
   /** The title of the review. */
   reviewTitle: PropTypes.string.isRequired,
   /** The category of the reviewer. */
-  reviewerCategory: PropTypes.string.isRequired,
+  reviewerCategory: PropTypes.string,
   /** The location of the reviewer. */
-  reviewerLocation: PropTypes.string.isRequired,
+  reviewerLocation: PropTypes.string,
   /** The name of the reviewer. */
   reviewerName: PropTypes.string.isRequired,
   /** The date the reviewer stayed. */
-  reviewerStayDate: PropTypes.string.isRequired,
+  reviewerStayDate: PropTypes.string,
 };

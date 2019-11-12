@@ -9,6 +9,13 @@ describe('getReviewerCategoryAndStayDateString', () => {
       reviewerStayDate
     );
 
-    expect(actual).toBe(`${reviewerCategory} | stayed in ${reviewerStayDate}`);
+    expect(actual).toContain(reviewerCategory);
+    expect(actual).toContain(reviewerStayDate);
+  });
+  it("shouldn't return a separator if reviewerStaysDate is missing", () => {
+    const reviewerCategory = 'someMarritalStatus';
+    const actual = getReviewerCategoryAndStayDateString(reviewerCategory);
+
+    expect(actual).not.toContain('|');
   });
 });

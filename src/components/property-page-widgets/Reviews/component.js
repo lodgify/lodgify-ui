@@ -18,6 +18,7 @@ import {
   GUEST_TYPE,
   MONTH,
   REVIEWS,
+  REVIEWS_STAY_DATE_PREFIX,
   ROOM,
   SUBMIT_REVIEW,
   TITLE,
@@ -30,6 +31,7 @@ import {
 
 import { PLACEHOLDERS } from './constants';
 import { getModalFormMarkup } from './utils/getModalFormMarkup';
+import { transformReviewFactory } from './utils/transformReviewFactory';
 
 /**
  * The standard widget for displaying a collection of reviews.
@@ -40,6 +42,7 @@ export const Component = ({
   isShowingPlaceholder,
   ratingAverage,
   reviews,
+  reviewsStayDatePrefix,
   ...props
 }) => {
   const reviewsToMap =
@@ -77,14 +80,20 @@ export const Component = ({
           {getModalFormMarkup(props, isShowingPlaceholder)}
         </GridColumn>
       </GridRow>
-      {reviewsToMap.map((review, index) => (
-        <GridRow key={buildKeyFromStrings(review.reviewText, index)}>
-          <GridColumn width={12}>
-            <Review isShowingPlaceholder={isShowingPlaceholder} {...review} />
-            <Divider />
-          </GridColumn>
-        </GridRow>
-      ))}
+      {reviewsToMap
+        .map(
+          transformReviewFactory({
+            stayDatePrefix: reviewsStayDatePrefix,
+          })
+        )
+        .map((review, index) => (
+          <GridRow key={buildKeyFromStrings(review.reviewText, index)}>
+            <GridColumn width={12}>
+              <Review isShowingPlaceholder={isShowingPlaceholder} {...review} />
+              <Divider />
+            </GridColumn>
+          </GridRow>
+        ))}
     </Grid>
   );
 };
@@ -115,6 +124,7 @@ Component.defaultProps = {
   ratingInputLabel: YOUR_REVIEW,
   reviewFormHeading: ADD_A_REVIEW,
   reviews: [],
+  reviewsStayDatePrefix: REVIEWS_STAY_DATE_PREFIX,
   submitButtonText: SUBMIT_REVIEW,
   successMessage: '',
   titleInputLabel: TITLE,
@@ -230,6 +240,8 @@ Component.propTypes = {
       reviewerStayDate: PropTypes.string.isRequired,
     })
   ),
+  /** The prefix to the stay date of a reviewer. */
+  reviewsStayDatePrefix: PropTypes.string,
   /** The label for the room type input. */
   // eslint-disable-next-line react/no-unused-prop-types
   roomTypeInputLabel: PropTypes.string,

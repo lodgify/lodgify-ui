@@ -65,6 +65,7 @@ export const PROPERTY_PICTURES = 'Property pictures';
 export const PROPERTY_URL_TARGET = '_self';
 export const RESULTS = 'results';
 export const REVIEWS = 'Reviews';
+export const REVIEWS_STAY_DATE_PREFIX = 'stayed on';
 export const ROOM = 'Room';
 export const ROOM_AMENITIES = 'Room Amenities';
 export const SAVE_UP_TO = 'Save up to';
