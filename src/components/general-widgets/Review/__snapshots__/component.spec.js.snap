@@ -651,7 +651,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
             <div
               className="right aligned description"
             >
-              someCategory | stayed in someDate
+              someCategory | someDate
             </div>
           </CardDescription>
         </div>
@@ -993,7 +993,7 @@ exports[`<Review /> should render the right structure 1`] = `
             <div
               className="right aligned description"
             >
-              someCategory | stayed in someDate
+              someCategory | someDate
             </div>
           </CardDescription>
         </div>
