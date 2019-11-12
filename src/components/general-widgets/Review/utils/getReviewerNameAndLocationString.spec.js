@@ -5,10 +5,18 @@ describe('getReviewerNameAndLocationString', () => {
     const reviewerLocation = 'someLabel';
     const reviewerName = '🚣';
     const actual = getReviewerNameAndLocationString(
-      reviewerLocation,
-      reviewerName
+      reviewerName,
+      reviewerLocation
     );
 
-    expect(actual).toBe(`${reviewerLocation} (${reviewerName})`);
+    expect(actual).toContain(reviewerLocation);
+    expect(actual).toContain(reviewerName);
+  });
+  it("should' return parenthesis if the location is missing", () => {
+    const reviewerName = '🚣';
+    const actual = getReviewerNameAndLocationString(reviewerName);
+
+    expect(actual).not.toContain('(');
+    expect(actual).not.toContain(')');
   });
 });
