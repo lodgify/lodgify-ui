@@ -1,3 +1,17 @@
+# [1.256.0](https://github.com/lodgify/lodgify-ui/compare/v1.255.0...v1.256.0) (2019-11-12)
+
+
+### Bug Fixes
+
+* **Review:** allow to avoid some review field ([88feee2](https://github.com/lodgify/lodgify-ui/commit/88feee2))
+* **Reviews:** change a field description ([740dbf1](https://github.com/lodgify/lodgify-ui/commit/740dbf1))
+* **Reviews:** fix weird comment ([82c8d7d](https://github.com/lodgify/lodgify-ui/commit/82c8d7d))
+
+
+### Features
+
+* **Review:** make StayDate prefix a props not fixed ([fc66b4f](https://github.com/lodgify/lodgify-ui/commit/fc66b4f))
+
 # [1.255.0](https://github.com/lodgify/lodgify-ui/compare/v1.254.10...v1.255.0) (2019-11-11)
 
 
