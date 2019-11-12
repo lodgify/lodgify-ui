@@ -240,7 +240,7 @@ Component.propTypes = {
       reviewerStayDate: PropTypes.string.isRequired,
     })
   ),
-  /** the prefix to put before of the StayDate of each Reviewer */
+  /** the prefix to put before of the stayDate of each reviewer */
   reviewsStayDatePrefix: PropTypes.string,
   /** The label for the room type input. */
   // eslint-disable-next-line react/no-unused-prop-types
