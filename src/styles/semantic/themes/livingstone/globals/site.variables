@@ -62,8 +62,11 @@
 @themeLinkDarkerColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-darker-color";
 @themeLinkDarkerColorDefault: @darkPrimaryColor;
 
-@themeBackgroundColorIdentifier:  ~"@{themeCustomPropertyPrefix}-background-color";
-@themeBackgroundColorDefault: @black;
+@themeHeaderColorIdentifier:  ~"@{themeCustomPropertyPrefix}-header-color";
+@themeHeaderColorDefault: @black;
+
+@themeHeaderLinkColorIdentifier: ~"@{themeCustomPropertyPrefix}-header-link-color";
+@themeHeaderLinkColorDefault: @white;
 
 @themeActionColorIdentifier: ~"@{themeCustomPropertyPrefix}-action-color";
 @themeActionColorDefault: @primaryColor;
