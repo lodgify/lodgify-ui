@@ -1,3 +1,10 @@
+# [1.257.0](https://github.com/lodgify/lodgify-ui/compare/v1.256.0...v1.257.0) (2019-11-12)
+
+
+### Features
+
+* **Header:** expose css variables to set colors ([3c3c93b](https://github.com/lodgify/lodgify-ui/commit/3c3c93b))
+
 # [1.256.0](https://github.com/lodgify/lodgify-ui/compare/v1.255.0...v1.256.0) (2019-11-12)
 
 
