@@ -349,8 +349,14 @@
 header {
 
   &.is-background-filled {
-    background-color: @themeBackgroundColorDefault;
-    background-color: var(@themeBackgroundColorIdentifier, @themeBackgroundColorDefault);
+    background-color: @themeHeaderColorDefault;
+    background-color: var(@themeHeaderColorIdentifier, @themeHeaderColorDefault);
+
+    .right.menu .link.item,
+    > .ui.menu.text .item, {
+      color: @themeHeaderLinkColorDefault;
+      color: var(@themeHeaderLinkColorIdentifier, @themeHeaderLinkColorDefault);
+    }
   }
 
   > * {
@@ -388,7 +394,8 @@ header {
       &,
       &:hover,
       &.active {
-        color: @headerMenuItemTextColor;
+        color: @themeHeaderLinkColorDefault;
+        color: var(@themeHeaderLinkColorIdentifier, @themeHeaderLinkColorDefault);
       }
 
       &.right {
