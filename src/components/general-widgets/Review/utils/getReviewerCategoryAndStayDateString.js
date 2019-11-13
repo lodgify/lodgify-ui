@@ -6,4 +6,9 @@
 export const getReviewerCategoryAndStayDateString = (
   reviewerCategory,
   reviewerStayDate
-) => `${reviewerCategory} ${reviewerStayDate ? `| ${reviewerStayDate}` : ''}`;
+) =>
+  `${reviewerCategory} ${
+    reviewerStayDate
+      ? `${reviewerCategory ? '| ' : ''} ${reviewerStayDate}`
+      : ''
+  }`;
