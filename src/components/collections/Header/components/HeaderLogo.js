@@ -1,4 +1,5 @@
 import React from 'react';
+import { string, oneOf } from 'prop-types';
 import { Menu, Image } from 'semantic-ui-react';
 import classnames from 'classnames';
 
@@ -6,25 +7,15 @@ import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { FlexContainer } from 'layout/FlexContainer';
 
-/**
- * @param  {string} logoHref
- * @param  {string} logoSubText
- * @param  {string} logoText
- * @param  {string} logoSrc
- * @param  {string} logoSize
- * @param  {string} logoSizes
- * @param  {string} logoSrcSet
- * @return {Object}
- */
-export const getLogoMarkup = (
+export const HeaderLogo = ({
   logoHref,
   logoSubText,
   logoText,
   logoSrc,
   logoSize,
   logoSizes,
-  logoSrcSet
-) => (
+  logoSrcSet,
+}) => (
   <Menu.Item
     className={classnames({
       'has-sub-text': !!logoSubText,
@@ -42,9 +33,33 @@ export const getLogoMarkup = (
           srcSet={logoSrcSet}
         />
       ) : (
-        <Heading size="small">{logoText}</Heading>
+        <Heading className="header-title" size="small">
+          {logoText}
+        </Heading>
       )}
       {logoSubText && <Paragraph size="tiny">{logoSubText}</Paragraph>}
     </FlexContainer>
   </Menu.Item>
 );
+
+HeaderLogo.displayName = 'HeaderLogo';
+
+HeaderLogo.defaultProps = {
+  logoHref: '',
+  logoSubText: '',
+  logoSize: 'medium',
+  logoSrc: undefined,
+  logoSizes: undefined,
+  logoText: '',
+  logoSrcSet: undefined,
+};
+
+HeaderLogo.propTypes = {
+  logoHref: string,
+  logoSize: oneOf(['medium', 'large', 'huge']),
+  logoSizes: string,
+  logoSrc: string,
+  logoSrcSet: string,
+  logoSubText: string,
+  logoText: string,
+};

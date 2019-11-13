@@ -1,0 +1,138 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeaderLogo passing \`logoSrc\` should return an image with the sub text 1`] = `
+<HeaderLogo
+  logoHref=""
+  logoSize="medium"
+  logoSrc="foo"
+  logoSubText=""
+  logoText=""
+>
+  <MenuItem
+    className=""
+    href=""
+    link={true}
+  >
+    <div
+      className="link item"
+      href=""
+      onClick={[Function]}
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        className={null}
+        flexDirection="column"
+        flexWrap={null}
+        justifyContent="center"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": null,
+              "display": "flex",
+              "flexDirection": "column",
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Image
+            alt=""
+            as="img"
+            className="medium-logo"
+            src="foo"
+            ui={true}
+          >
+            <img
+              alt=""
+              className="ui image medium-logo"
+              src="foo"
+            />
+          </Image>
+        </div>
+      </FlexContainer>
+    </div>
+  </MenuItem>
+</HeaderLogo>
+`;
+
+exports[`HeaderLogo passing \`logoSubText\` should return a paragraph with the sub text 1`] = `
+<HeaderLogo
+  logoHref=""
+  logoSize="medium"
+  logoSubText="foo"
+  logoText=""
+>
+  <MenuItem
+    className="has-sub-text"
+    href=""
+    link={true}
+  >
+    <div
+      className="link item has-sub-text"
+      href=""
+      onClick={[Function]}
+    >
+      <FlexContainer
+        alignContent={null}
+        alignItems={null}
+        className={null}
+        flexDirection="column"
+        flexWrap={null}
+        justifyContent="center"
+      >
+        <div
+          className="flex-container"
+          style={
+            Object {
+              "alignContent": null,
+              "alignItems": null,
+              "display": "flex",
+              "flexDirection": "column",
+              "flexGrow": "1",
+              "flexWrap": null,
+              "height": "100%",
+              "justifyContent": "center",
+            }
+          }
+        >
+          <Heading
+            className="header-title"
+            hasMargin={true}
+            isColorInverted={false}
+            size="small"
+            textAlign={null}
+          >
+            <Header
+              as="h4"
+              className="header-title"
+              inverted={false}
+              textAlign={null}
+            >
+              <h4
+                className="ui header header-title"
+              />
+            </Header>
+          </Heading>
+          <Paragraph
+            isCompact={false}
+            size="tiny"
+            weight={null}
+          >
+            <p
+              className="tiny"
+            >
+              foo
+            </p>
+          </Paragraph>
+        </div>
+      </FlexContainer>
+    </div>
+  </MenuItem>
+</HeaderLogo>
+`;
