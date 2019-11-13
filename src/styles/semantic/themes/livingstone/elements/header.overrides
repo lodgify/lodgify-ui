@@ -29,6 +29,10 @@
 
 /* Sizing */
 
+.ui.header.header-title {
+  font-size: @headingTitleFontSize;
+}
+
 /* Sub Header */
 
 /* Icon Header */

@@ -8,8 +8,8 @@ import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Divider } from 'elements/Divider';
 
-import { getLogoMarkup } from '../getLogoMarkup';
-import { getLinkMarkup } from '../getLinkMarkup';
+import { getLinkMarkup } from '../../utils/getLinkMarkup';
+import { HeaderLogo } from '../HeaderLogo';
 
 import { getScrollToHeight } from './utils/getScrollToHeight';
 import { getIsAccordionInView } from './utils/getIsAccordionInView';
@@ -58,14 +58,15 @@ export class Component extends React.PureComponent {
     return (
       <Menu.Item>
         <Modal
-          header={getLogoMarkup(
-            logoHref,
-            null,
-            logoText,
-            logoSrc,
-            logoSizes,
-            logoSrcSet
-          )}
+          header={
+            <HeaderLogo
+              logoHref={logoHref}
+              logoSizes={logoSizes}
+              logoSrc={logoSrc}
+              logoSrcSet={logoSrcSet}
+              logoText={logoText}
+            />
+          }
           isFullscreen
           trigger={<Icon name={ICON_NAMES.BARS} />}
         >
