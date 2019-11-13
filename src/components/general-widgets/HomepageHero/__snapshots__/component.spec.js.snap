@@ -190,60 +190,70 @@ exports[`HomepageHero should render the right structure 1`] = `
                     <div
                       className="ui borderless ui text container menu"
                     >
-                      <MenuItem
-                        className=""
-                        href="/"
-                        link={true}
+                      <HeaderLogo
+                        logoHref="/"
+                        logoSize="medium"
+                        logoSizes="a load of logo sizes"
+                        logoSrc="src"
+                        logoSrcSet="a load of logo src sets"
+                        logoSubText={null}
+                        logoText="text"
                       >
-                        <a
-                          className="link item"
+                        <MenuItem
+                          className=""
                           href="/"
-                          onClick={[Function]}
+                          link={true}
                         >
-                          <FlexContainer
-                            alignContent={null}
-                            alignItems={null}
-                            className={null}
-                            flexDirection="column"
-                            flexWrap={null}
-                            justifyContent="center"
+                          <a
+                            className="link item"
+                            href="/"
+                            onClick={[Function]}
                           >
-                            <div
-                              className="flex-container"
-                              style={
-                                Object {
-                                  "alignContent": null,
-                                  "alignItems": null,
-                                  "display": "flex",
-                                  "flexDirection": "column",
-                                  "flexGrow": "1",
-                                  "flexWrap": null,
-                                  "height": "100%",
-                                  "justifyContent": "center",
-                                }
-                              }
+                            <FlexContainer
+                              alignContent={null}
+                              alignItems={null}
+                              className={null}
+                              flexDirection="column"
+                              flexWrap={null}
+                              justifyContent="center"
                             >
-                              <Image
-                                alt="text"
-                                as="img"
-                                className="medium-logo"
-                                sizes="a load of logo sizes"
-                                src="src"
-                                srcSet="a load of logo src sets"
-                                ui={true}
+                              <div
+                                className="flex-container"
+                                style={
+                                  Object {
+                                    "alignContent": null,
+                                    "alignItems": null,
+                                    "display": "flex",
+                                    "flexDirection": "column",
+                                    "flexGrow": "1",
+                                    "flexWrap": null,
+                                    "height": "100%",
+                                    "justifyContent": "center",
+                                  }
+                                }
                               >
-                                <img
+                                <Image
                                   alt="text"
-                                  className="ui image medium-logo"
+                                  as="img"
+                                  className="medium-logo"
                                   sizes="a load of logo sizes"
                                   src="src"
                                   srcSet="a load of logo src sets"
-                                />
-                              </Image>
-                            </div>
-                          </FlexContainer>
-                        </a>
-                      </MenuItem>
+                                  ui={true}
+                                >
+                                  <img
+                                    alt="text"
+                                    className="ui image medium-logo"
+                                    sizes="a load of logo sizes"
+                                    src="src"
+                                    srcSet="a load of logo src sets"
+                                  />
+                                </Image>
+                              </div>
+                            </FlexContainer>
+                          </a>
+                        </MenuItem>
+                      </HeaderLogo>
                       <MenuMenu
                         position="right"
                       >

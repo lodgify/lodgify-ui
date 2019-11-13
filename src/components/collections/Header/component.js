@@ -8,12 +8,12 @@ import { HorizontalGutters } from 'layout/HorizontalGutters';
 
 import { getNavigationItemsWidth } from './utils/getNavigationItemsWidth';
 import { getMenuWidth } from './utils/getMenuWidth';
-import { getLogoMarkup } from './utils/getLogoMarkup';
 import { getIsMenuHidden } from './utils/getIsMenuHidden';
 import { getStandardMenuMarkup } from './utils/getStandardMenuMarkup';
-import { HiddenMenu } from './utils/HiddenMenu';
+import { HiddenMenu } from './components/HiddenMenu';
 import { getLogoWidth } from './utils/getLogoWidth';
 import { MEDIUM_LOGO_SIZE } from './constants';
+import { HeaderLogo } from './components/HeaderLogo';
 
 /**
  * A header displays a logo, grouped navigation items
@@ -82,15 +82,15 @@ export class Component extends PureComponent {
         ref={this.createHeaderRef}
       >
         <HorizontalGutters as={Menu} borderless text>
-          {getLogoMarkup(
-            logoHref,
-            logoSubText,
-            logoText,
-            logoSrc,
-            logoSize,
-            logoSizes,
-            logoSrcSet
-          )}
+          <HeaderLogo
+            logoHref={logoHref}
+            logoSize={logoSize}
+            logoSizes={logoSizes}
+            logoSrc={logoSrc}
+            logoSrcSet={logoSrcSet}
+            logoSubText={logoSubText}
+            logoText={logoText}
+          />
           <Menu.Menu position="right">
             {isMenuHidden ? (
               <HiddenMenu

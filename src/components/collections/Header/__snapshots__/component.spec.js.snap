@@ -69,63 +69,71 @@ exports[`<Header /> by default should render the right structure 1`] = `
           <div
             className="ui borderless ui text container menu"
           >
-            <MenuItem
-              className=""
-              href="/"
-              link={true}
+            <HeaderLogo
+              logoHref="/"
+              logoSize="medium"
+              logoSrc={null}
+              logoSubText={null}
+              logoText="someLogoText"
             >
-              <a
-                className="link item"
+              <MenuItem
+                className=""
                 href="/"
-                onClick={[Function]}
+                link={true}
               >
-                <FlexContainer
-                  alignContent={null}
-                  alignItems={null}
-                  className={null}
-                  flexDirection="column"
-                  flexWrap={null}
-                  justifyContent="center"
+                <a
+                  className="link item"
+                  href="/"
+                  onClick={[Function]}
                 >
-                  <div
-                    className="flex-container"
-                    style={
-                      Object {
-                        "alignContent": null,
-                        "alignItems": null,
-                        "display": "flex",
-                        "flexDirection": "column",
-                        "flexGrow": "1",
-                        "flexWrap": null,
-                        "height": "100%",
-                        "justifyContent": "center",
-                      }
-                    }
+                  <FlexContainer
+                    alignContent={null}
+                    alignItems={null}
+                    className={null}
+                    flexDirection="column"
+                    flexWrap={null}
+                    justifyContent="center"
                   >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="small"
-                      textAlign={null}
+                    <div
+                      className="flex-container"
+                      style={
+                        Object {
+                          "alignContent": null,
+                          "alignItems": null,
+                          "display": "flex",
+                          "flexDirection": "column",
+                          "flexGrow": "1",
+                          "flexWrap": null,
+                          "height": "100%",
+                          "justifyContent": "center",
+                        }
+                      }
                     >
-                      <Header
-                        as="h4"
-                        className=""
-                        inverted={false}
+                      <Heading
+                        className={null}
+                        hasMargin={true}
+                        isColorInverted={false}
+                        size="small"
                         textAlign={null}
                       >
-                        <h4
-                          className="ui header"
+                        <Header
+                          as="h4"
+                          className=""
+                          inverted={false}
+                          textAlign={null}
                         >
-                          someLogoText
-                        </h4>
-                      </Header>
-                    </Heading>
-                  </div>
-                </FlexContainer>
-              </a>
-            </MenuItem>
+                          <h4
+                            className="ui header"
+                          >
+                            someLogoText
+                          </h4>
+                        </Header>
+                      </Heading>
+                    </div>
+                  </FlexContainer>
+                </a>
+              </MenuItem>
+            </HeaderLogo>
             <MenuMenu
               position="right"
             >
@@ -712,63 +720,71 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
           <div
             className="ui borderless ui text container menu"
           >
-            <MenuItem
-              className=""
-              href="/"
-              link={true}
+            <HeaderLogo
+              logoHref="/"
+              logoSize="medium"
+              logoSrc={null}
+              logoSubText={null}
+              logoText="someLogoText"
             >
-              <a
-                className="link item"
+              <MenuItem
+                className=""
                 href="/"
-                onClick={[Function]}
+                link={true}
               >
-                <FlexContainer
-                  alignContent={null}
-                  alignItems={null}
-                  className={null}
-                  flexDirection="column"
-                  flexWrap={null}
-                  justifyContent="center"
+                <a
+                  className="link item"
+                  href="/"
+                  onClick={[Function]}
                 >
-                  <div
-                    className="flex-container"
-                    style={
-                      Object {
-                        "alignContent": null,
-                        "alignItems": null,
-                        "display": "flex",
-                        "flexDirection": "column",
-                        "flexGrow": "1",
-                        "flexWrap": null,
-                        "height": "100%",
-                        "justifyContent": "center",
-                      }
-                    }
+                  <FlexContainer
+                    alignContent={null}
+                    alignItems={null}
+                    className={null}
+                    flexDirection="column"
+                    flexWrap={null}
+                    justifyContent="center"
                   >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="small"
-                      textAlign={null}
+                    <div
+                      className="flex-container"
+                      style={
+                        Object {
+                          "alignContent": null,
+                          "alignItems": null,
+                          "display": "flex",
+                          "flexDirection": "column",
+                          "flexGrow": "1",
+                          "flexWrap": null,
+                          "height": "100%",
+                          "justifyContent": "center",
+                        }
+                      }
                     >
-                      <Header
-                        as="h4"
-                        className=""
-                        inverted={false}
+                      <Heading
+                        className={null}
+                        hasMargin={true}
+                        isColorInverted={false}
+                        size="small"
                         textAlign={null}
                       >
-                        <h4
-                          className="ui header"
+                        <Header
+                          as="h4"
+                          className=""
+                          inverted={false}
+                          textAlign={null}
                         >
-                          someLogoText
-                        </h4>
-                      </Header>
-                    </Heading>
-                  </div>
-                </FlexContainer>
-              </a>
-            </MenuItem>
+                          <h4
+                            className="ui header"
+                          >
+                            someLogoText
+                          </h4>
+                        </Header>
+                      </Heading>
+                    </div>
+                  </FlexContainer>
+                </a>
+              </MenuItem>
+            </HeaderLogo>
             <MenuMenu
               position="right"
             >
@@ -833,30 +849,13 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                         hasPadding={false}
                         hasRoundedCorners={false}
                         header={
-                          <MenuItem
-                            className=""
-                            href="/"
-                            link={true}
-                          >
-                            <FlexContainer
-                              alignContent={null}
-                              alignItems={null}
-                              className={null}
-                              flexDirection="column"
-                              flexWrap={null}
-                              justifyContent="center"
-                            >
-                              <Heading
-                                className={null}
-                                hasMargin={true}
-                                isColorInverted={false}
-                                size="small"
-                                textAlign={null}
-                              >
-                                someLogoText
-                              </Heading>
-                            </FlexContainer>
-                          </MenuItem>
+                          <HeaderLogo
+                            logoHref="/"
+                            logoSize="medium"
+                            logoSrc={null}
+                            logoSubText=""
+                            logoText="someLogoText"
+                          />
                         }
                         isFullscreen={true}
                         onClose={[Function]}
@@ -1082,63 +1081,71 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
           <div
             className="ui borderless ui text container menu"
           >
-            <MenuItem
-              className=""
-              href="/"
-              link={true}
+            <HeaderLogo
+              logoHref="/"
+              logoSize="medium"
+              logoSrc={null}
+              logoSubText={null}
+              logoText="someLogoText"
             >
-              <a
-                className="link item"
+              <MenuItem
+                className=""
                 href="/"
-                onClick={[Function]}
+                link={true}
               >
-                <FlexContainer
-                  alignContent={null}
-                  alignItems={null}
-                  className={null}
-                  flexDirection="column"
-                  flexWrap={null}
-                  justifyContent="center"
+                <a
+                  className="link item"
+                  href="/"
+                  onClick={[Function]}
                 >
-                  <div
-                    className="flex-container"
-                    style={
-                      Object {
-                        "alignContent": null,
-                        "alignItems": null,
-                        "display": "flex",
-                        "flexDirection": "column",
-                        "flexGrow": "1",
-                        "flexWrap": null,
-                        "height": "100%",
-                        "justifyContent": "center",
-                      }
-                    }
+                  <FlexContainer
+                    alignContent={null}
+                    alignItems={null}
+                    className={null}
+                    flexDirection="column"
+                    flexWrap={null}
+                    justifyContent="center"
                   >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="small"
-                      textAlign={null}
+                    <div
+                      className="flex-container"
+                      style={
+                        Object {
+                          "alignContent": null,
+                          "alignItems": null,
+                          "display": "flex",
+                          "flexDirection": "column",
+                          "flexGrow": "1",
+                          "flexWrap": null,
+                          "height": "100%",
+                          "justifyContent": "center",
+                        }
+                      }
                     >
-                      <Header
-                        as="h4"
-                        className=""
-                        inverted={false}
+                      <Heading
+                        className={null}
+                        hasMargin={true}
+                        isColorInverted={false}
+                        size="small"
                         textAlign={null}
                       >
-                        <h4
-                          className="ui header"
+                        <Header
+                          as="h4"
+                          className=""
+                          inverted={false}
+                          textAlign={null}
                         >
-                          someLogoText
-                        </h4>
-                      </Header>
-                    </Heading>
-                  </div>
-                </FlexContainer>
-              </a>
-            </MenuItem>
+                          <h4
+                            className="ui header"
+                          >
+                            someLogoText
+                          </h4>
+                        </Header>
+                      </Heading>
+                    </div>
+                  </FlexContainer>
+                </a>
+              </MenuItem>
+            </HeaderLogo>
             <MenuMenu
               position="right"
             >

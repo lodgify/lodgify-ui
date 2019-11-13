@@ -60,30 +60,13 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
         hasPadding={false}
         hasRoundedCorners={false}
         header={
-          <MenuItem
-            className=""
-            href="/"
-            link={true}
-          >
-            <FlexContainer
-              alignContent={null}
-              alignItems={null}
-              className={null}
-              flexDirection="column"
-              flexWrap={null}
-              justifyContent="center"
-            >
-              <Heading
-                className={null}
-                hasMargin={true}
-                isColorInverted={false}
-                size="small"
-                textAlign={null}
-              >
-                yo
-              </Heading>
-            </FlexContainer>
-          </MenuItem>
+          <HeaderLogo
+            logoHref="/"
+            logoSize="medium"
+            logoSrc={null}
+            logoSubText=""
+            logoText="yo"
+          />
         }
         isFullscreen={true}
         onClose={[Function]}
