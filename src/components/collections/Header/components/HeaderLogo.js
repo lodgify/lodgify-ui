@@ -33,7 +33,9 @@ export const HeaderLogo = ({
           srcSet={logoSrcSet}
         />
       ) : (
-        <Heading size="small">{logoText}</Heading>
+        <Heading className="header-title" size="small">
+          {logoText}
+        </Heading>
       )}
       {logoSubText && <Paragraph size="tiny">{logoSubText}</Paragraph>}
     </FlexContainer>

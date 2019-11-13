@@ -102,7 +102,7 @@ exports[`HeaderLogo passing \`logoSubText\` should return a paragraph with the s
           }
         >
           <Heading
-            className={null}
+            className="header-title"
             hasMargin={true}
             isColorInverted={false}
             size="small"
@@ -110,12 +110,12 @@ exports[`HeaderLogo passing \`logoSubText\` should return a paragraph with the s
           >
             <Header
               as="h4"
-              className=""
+              className="header-title"
               inverted={false}
               textAlign={null}
             >
               <h4
-                className="ui header"
+                className="ui header header-title"
               />
             </Header>
           </Heading>

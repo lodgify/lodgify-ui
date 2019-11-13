@@ -110,7 +110,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       }
                     >
                       <Heading
-                        className={null}
+                        className="header-title"
                         hasMargin={true}
                         isColorInverted={false}
                         size="small"
@@ -118,12 +118,12 @@ exports[`<Header /> by default should render the right structure 1`] = `
                       >
                         <Header
                           as="h4"
-                          className=""
+                          className="header-title"
                           inverted={false}
                           textAlign={null}
                         >
                           <h4
-                            className="ui header"
+                            className="ui header header-title"
                           >
                             someLogoText
                           </h4>
@@ -761,7 +761,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                       }
                     >
                       <Heading
-                        className={null}
+                        className="header-title"
                         hasMargin={true}
                         isColorInverted={false}
                         size="small"
@@ -769,12 +769,12 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                       >
                         <Header
                           as="h4"
-                          className=""
+                          className="header-title"
                           inverted={false}
                           textAlign={null}
                         >
                           <h4
-                            className="ui header"
+                            className="ui header header-title"
                           >
                             someLogoText
                           </h4>
@@ -1122,7 +1122,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       }
                     >
                       <Heading
-                        className={null}
+                        className="header-title"
                         hasMargin={true}
                         isColorInverted={false}
                         size="small"
@@ -1130,12 +1130,12 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                       >
                         <Header
                           as="h4"
-                          className=""
+                          className="header-title"
                           inverted={false}
                           textAlign={null}
                         >
                           <h4
-                            className="ui header"
+                            className="ui header header-title"
                           >
                             someLogoText
                           </h4>
