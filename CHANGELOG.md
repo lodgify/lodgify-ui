@@ -1,3 +1,10 @@
+## [1.258.2](https://github.com/lodgify/lodgify-ui/compare/v1.258.1...v1.258.2) (2019-11-13)
+
+
+### Bug Fixes
+
+* **Reviews:** remove | when there aren't two value ([6828740](https://github.com/lodgify/lodgify-ui/commit/6828740))
+
 ## [1.258.1](https://github.com/lodgify/lodgify-ui/compare/v1.258.0...v1.258.1) (2019-11-13)
 
 
