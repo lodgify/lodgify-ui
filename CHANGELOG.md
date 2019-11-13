@@ -1,3 +1,10 @@
+## [1.258.3](https://github.com/lodgify/lodgify-ui/compare/v1.258.2...v1.258.3) (2019-11-13)
+
+
+### Bug Fixes
+
+* **HTML:** add width rules for iframes ([bdd118d](https://github.com/lodgify/lodgify-ui/commit/bdd118d))
+
 ## [1.258.2](https://github.com/lodgify/lodgify-ui/compare/v1.258.1...v1.258.2) (2019-11-13)
 
 
