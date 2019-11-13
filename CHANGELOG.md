@@ -1,3 +1,10 @@
+## [1.258.1](https://github.com/lodgify/lodgify-ui/compare/v1.258.0...v1.258.1) (2019-11-13)
+
+
+### Bug Fixes
+
+* **Header:** only filled headers take theme color ([353de9f](https://github.com/lodgify/lodgify-ui/commit/353de9f))
+
 # [1.258.0](https://github.com/lodgify/lodgify-ui/compare/v1.257.0...v1.258.0) (2019-11-13)
 
 
