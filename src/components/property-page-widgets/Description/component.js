@@ -1,19 +1,17 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
-import { List } from 'semantic-ui-react';
 import isValidHTML from 'is-html';
 
 import { size } from 'utils/size';
 import { HOME_HIGHLIGHTS, VIEW_MORE } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
-import { getFirstFourItems } from 'utils/get-first-four-items';
 import { Grid } from 'layout/Grid';
 import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 import { Subheading } from 'typography/Subheading';
-import { ShowOn } from 'layout/ShowOn';
 import { HTML } from 'general-widgets/HTML';
+import { Characteristics } from 'collections/Characteristics';
 
 import { getDescriptionTextMarkup } from './utils/getDescriptionTextMarkup';
 
@@ -26,7 +24,7 @@ export const Component = ({
   extraDescriptionButtonText,
   homeHighlights,
   homeHighlightsHeadingText,
-  propertyMainCharacteristics,
+  mainCharacteristics,
   propertyName,
   propertyType,
 }) => (
@@ -35,36 +33,9 @@ export const Component = ({
       <Subheading>{propertyType}</Subheading>
       <Heading size="large">{propertyName}</Heading>
     </GridColumn>
-    <GridColumn width={12}>
-      <ShowOn
-        computer
-        parent={List}
-        parentProps={{ horizontal: true }}
-        tablet
-        widescreen
-      >
-        {getFirstFourItems(propertyMainCharacteristics).map(
-          ({ iconName, text }, index) => (
-            <List.Item key={buildKeyFromStrings(text, index)}>
-              <Icon labelText={text} name={iconName} />
-            </List.Item>
-          )
-        )}
-      </ShowOn>
-      <ShowOn mobile parent={Grid} parentProps={{ columns: 1 }}>
-        {getFirstFourItems(propertyMainCharacteristics).map(
-          ({ iconName, text }, index) => (
-            <GridColumn
-              computer={3}
-              key={buildKeyFromStrings(text, index)}
-              mobile={6}
-            >
-              <Icon labelText={text} name={iconName} />
-            </GridColumn>
-          )
-        )}
-      </ShowOn>
-    </GridColumn>
+    {!!size(mainCharacteristics) && (
+      <Characteristics spaceCharacteristics={mainCharacteristics} />
+    )}
     {descriptionText && (
       <GridColumn width={12}>
         {isValidHTML(descriptionText) ? (
@@ -99,6 +70,7 @@ Component.displayName = 'Description';
 Component.defaultProps = {
   descriptionText: null,
   homeHighlightsHeadingText: HOME_HIGHLIGHTS,
+  mainCharacteristics: [],
   extraDescriptionButtonText: VIEW_MORE,
 };
 
@@ -122,7 +94,7 @@ Component.propTypes = {
   /** The heading displayed above the home highlights. */
   homeHighlightsHeadingText: PropTypes.string,
   /** The main characteristics to display. Maximum four. */
-  propertyMainCharacteristics: PropTypes.arrayOf(
+  mainCharacteristics: PropTypes.arrayOf(
     PropTypes.shape({
       /**
        * The name of the icon to display.
@@ -132,7 +104,7 @@ Component.propTypes = {
       /** A visible label to display for the key fact. */
       text: PropTypes.string.isRequired,
     })
-  ).isRequired,
+  ),
   /** The name of the property to display. */
   propertyName: PropTypes.string.isRequired,
   /** The name of the type of the property to display. */

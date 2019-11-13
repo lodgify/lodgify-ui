@@ -35,7 +35,7 @@ export const homeHighlights = [
   { iconName: 'paw', text: 'pets allowed' },
 ];
 
-export const propertyMainCharacteristics = [
+export const propertyCharacteristics = [
   { iconName: 'users', text: '2 guests' },
   { iconName: 'home', text: '1 bedroom' },
   { iconName: 'single bed', text: '2 beds' },
