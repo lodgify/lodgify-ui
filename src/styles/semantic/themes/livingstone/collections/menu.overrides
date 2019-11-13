@@ -353,9 +353,17 @@ header {
     background-color: var(@themeHeaderColorIdentifier, @themeHeaderColorDefault);
 
     .right.menu .link.item,
-    > .ui.menu.text .item, {
-      color: @themeHeaderLinkColorDefault;
-      color: var(@themeHeaderLinkColorIdentifier, @themeHeaderLinkColorDefault);
+    > .ui.menu.text {
+
+      .item {
+
+        &,
+        &:hover,
+        &.active {
+          color: @themeHeaderLinkColorDefault;
+          color: var(@themeHeaderLinkColorIdentifier, @themeHeaderLinkColorDefault);
+        }
+      }
     }
   }
 
@@ -394,8 +402,7 @@ header {
       &,
       &:hover,
       &.active {
-        color: @themeHeaderLinkColorDefault;
-        color: var(@themeHeaderLinkColorIdentifier, @themeHeaderLinkColorDefault);
+        color: @headerMenuItemTextColor;
       }
 
       &.right {
