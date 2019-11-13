@@ -22,6 +22,7 @@ import { getDescriptionTextMarkup } from './utils/getDescriptionTextMarkup';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  arePropertyMainCharacteristicsShown,
   descriptionText,
   extraDescriptionButtonText,
   homeHighlights,
@@ -35,36 +36,38 @@ export const Component = ({
       <Subheading>{propertyType}</Subheading>
       <Heading size="large">{propertyName}</Heading>
     </GridColumn>
-    <GridColumn width={12}>
-      <ShowOn
-        computer
-        parent={List}
-        parentProps={{ horizontal: true }}
-        tablet
-        widescreen
-      >
-        {getFirstFourItems(propertyMainCharacteristics).map(
-          ({ iconName, text }, index) => (
-            <List.Item key={buildKeyFromStrings(text, index)}>
-              <Icon labelText={text} name={iconName} />
-            </List.Item>
-          )
-        )}
-      </ShowOn>
-      <ShowOn mobile parent={Grid} parentProps={{ columns: 1 }}>
-        {getFirstFourItems(propertyMainCharacteristics).map(
-          ({ iconName, text }, index) => (
-            <GridColumn
-              computer={3}
-              key={buildKeyFromStrings(text, index)}
-              mobile={6}
-            >
-              <Icon labelText={text} name={iconName} />
-            </GridColumn>
-          )
-        )}
-      </ShowOn>
-    </GridColumn>
+    {arePropertyMainCharacteristicsShown && (
+      <GridColumn width={12}>
+        <ShowOn
+          computer
+          parent={List}
+          parentProps={{ horizontal: true }}
+          tablet
+          widescreen
+        >
+          {getFirstFourItems(propertyMainCharacteristics).map(
+            ({ iconName, text }, index) => (
+              <List.Item key={buildKeyFromStrings(text, index)}>
+                <Icon labelText={text} name={iconName} />
+              </List.Item>
+            )
+          )}
+        </ShowOn>
+        <ShowOn mobile parent={Grid} parentProps={{ columns: 1 }}>
+          {getFirstFourItems(propertyMainCharacteristics).map(
+            ({ iconName, text }, index) => (
+              <GridColumn
+                computer={3}
+                key={buildKeyFromStrings(text, index)}
+                mobile={6}
+              >
+                <Icon labelText={text} name={iconName} />
+              </GridColumn>
+            )
+          )}
+        </ShowOn>
+      </GridColumn>
+    )}
     {descriptionText && (
       <GridColumn width={12}>
         {isValidHTML(descriptionText) ? (
@@ -97,12 +100,15 @@ export const Component = ({
 Component.displayName = 'Description';
 
 Component.defaultProps = {
+  arePropertyMainCharacteristicsShown: true,
   descriptionText: null,
   homeHighlightsHeadingText: HOME_HIGHLIGHTS,
   extraDescriptionButtonText: VIEW_MORE,
 };
 
 Component.propTypes = {
+  /** Are the property main characteristics being shown. */
+  arePropertyMainCharacteristicsShown: PropTypes.bool,
   /** The description text to display. Long text will be partially displayed in a modal. HTML strings of any length will be respected. */
   descriptionText: PropTypes.string,
   /** The text for the button that opens the extra description modal. */

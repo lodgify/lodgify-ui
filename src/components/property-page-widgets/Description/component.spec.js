@@ -78,6 +78,16 @@ describe('<Description />', () => {
     });
   });
 
+  describe('if `props.arePropertyMainCharacteristicsShown` is false', () => {
+    it('should not render the property main characteristics', () => {
+      const wrapper = getDescription({
+        arePropertyMainCharacteristicsShown: false,
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   it('should have `displayName` `Description`', () => {
     expectComponentToHaveDisplayName(Description, 'Description');
   });
