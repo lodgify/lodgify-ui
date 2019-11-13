@@ -19,6 +19,13 @@
     max-width: @htmlContainerImmediateChildMaxWidth;
   }
 
+  iframe {
+    max-width: @htmlContainerChildWidth;
+    @media @tabletScreen {
+      width: @htmlContainerChildWidth;
+    }
+  }
+
   & * {
     img,
     figure,
