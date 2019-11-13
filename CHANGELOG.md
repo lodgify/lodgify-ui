@@ -1,3 +1,16 @@
+# [1.258.0](https://github.com/lodgify/lodgify-ui/compare/v1.257.0...v1.258.0) (2019-11-13)
+
+
+### Bug Fixes
+
+* **Header:** fix mispelled key ([8368139](https://github.com/lodgify/lodgify-ui/commit/8368139))
+* **Header:** linting fix ([90452cd](https://github.com/lodgify/lodgify-ui/commit/90452cd))
+
+
+### Features
+
+* **Header:** increase the text title font size ([6a79b6d](https://github.com/lodgify/lodgify-ui/commit/6a79b6d))
+
 # [1.257.0](https://github.com/lodgify/lodgify-ui/compare/v1.256.0...v1.257.0) (2019-11-12)
 
 
