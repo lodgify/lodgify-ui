@@ -6,7 +6,7 @@ import {
   descriptionText,
   longDescriptionText,
   htmlDescriptionText,
-  propertyMainCharacteristics,
+  propertyCharacteristics,
 } from './mock-data/props';
 import { Component as Description } from './component';
 
@@ -29,7 +29,7 @@ const props = {
     path: null,
     size: null,
   },
-  propertyMainCharacteristics,
+  mainCharacteristics: propertyCharacteristics,
   propertyName: 'Yolo',
   propertyType: 'Bed & Breakfast',
 };
@@ -72,6 +72,16 @@ describe('<Description />', () => {
     it('should not render the home highlights', () => {
       const wrapper = getDescription({
         homeHighlights: [],
+      });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.mainCharacteristics` is empty', () => {
+    it('should not render the `Characteristics` component', () => {
+      const wrapper = getDescription({
+        mainCharacteristics: [],
       });
 
       expect(wrapper).toMatchSnapshot();

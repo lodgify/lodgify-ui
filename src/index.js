@@ -1,4 +1,5 @@
 // Collections
+export { Characteristics } from './components/collections/Characteristics';
 export {
   CheckboxInputSegment,
 } from './components/collections/CheckboxInputSegment';

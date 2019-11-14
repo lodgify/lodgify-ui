@@ -1,5 +1,8 @@
 ```jsx
-const { homeHighlights, propertyMainCharacteristics } = require('./mock-data/props');
+const {
+  homeHighlights,
+  propertyCharacteristics
+} = require("./mock-data/props");
 
 // const homeHighlights = [
 //   { iconName: 'credit card', text: 'credit cards' },
@@ -8,10 +11,10 @@ const { homeHighlights, propertyMainCharacteristics } = require('./mock-data/pro
 
 <Description
   homeHighlights={homeHighlights}
-  propertyMainCharacteristics={propertyMainCharacteristics}
+  mainCharacteristics={propertyCharacteristics}
   propertyName="Lonely Lodge"
   propertyType="Bed & Breakfast"
-/>
+/>;
 ```
 
 ### Content
@@ -22,16 +25,16 @@ const { homeHighlights, propertyMainCharacteristics } = require('./mock-data/pro
 const {
   descriptionText,
   homeHighlights,
-  propertyMainCharacteristics,
-} = require('./mock-data/props');
+  propertyCharacteristics
+} = require("./mock-data/props");
 
 <Description
   descriptionText={descriptionText}
   homeHighlights={homeHighlights}
-  propertyMainCharacteristics={propertyMainCharacteristics}
+  mainCharacteristics={propertyCharacteristics}
   propertyName="Lonely Lodge"
   propertyType="Bed & Breakfast"
-/>
+/>;
 ```
 
 #### Long description text
@@ -40,16 +43,16 @@ const {
 const {
   longDescriptionText,
   homeHighlights,
-  propertyMainCharacteristics,
-} = require('./mock-data/props');
+  propertyCharacteristics
+} = require("./mock-data/props");
 
 <Description
   descriptionText={longDescriptionText}
   homeHighlights={homeHighlights}
-  propertyMainCharacteristics={propertyMainCharacteristics}
+  mainCharacteristics={propertyCharacteristics}
   propertyName="Lonely Lodge"
   propertyType="Bed & Breakfast"
-/>
+/>;
 ```
 
 #### HTML description text
@@ -58,16 +61,16 @@ const {
 const {
   htmlDescriptionText,
   homeHighlights,
-  propertyMainCharacteristics,
-} = require('./mock-data/props');
+  propertyCharacteristics
+} = require("./mock-data/props");
 
 <Description
   descriptionText={htmlDescriptionText}
   homeHighlights={homeHighlights}
-  propertyMainCharacteristics={propertyMainCharacteristics}
+  mainCharacteristics={propertyCharacteristics}
   propertyName="Lonely Lodge"
   propertyType="Bed & Breakfast"
-/>
+/>;
 ```
 
 #### Strings
@@ -77,8 +80,8 @@ const {
   descriptionText,
   extraDescriptionText,
   homeHighlights,
-  propertyMainCharacteristics,
-} = require('./mock-data/props');
+  propertyCharacteristics
+} = require("./mock-data/props");
 
 <Description
   descriptionText={descriptionText}
@@ -86,8 +89,8 @@ const {
   extraDescriptionText={extraDescriptionText}
   homeHighlights={homeHighlights}
   homeHighlightsHeadingText="Highlights"
-  propertyMainCharacteristics={propertyMainCharacteristics}
+  mainCharacteristics={propertyCharacteristics}
   propertyName="Lonely Lodge"
   propertyType="Bed & Breakfast"
-/>
+/>;
 ```
