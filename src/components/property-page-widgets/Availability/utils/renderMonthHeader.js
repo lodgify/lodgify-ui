@@ -1,21 +1,22 @@
 import React from 'react';
 import moment from 'moment';
 
-import { WEEKDAY_LENGTH } from '../constants';
+import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 
 const buildWeekDayMappingMarkup = () => (
   <ul className="DayPicker_weekHeader_ul">
-    {Array(WEEKDAY_LENGTH)
-      .fill()
-      .map((_, index) => (
-        <li className="DayPicker_weekHeader_li" key={index}>
-          <small>
-            {moment()
-              .day(index)
-              .format('dd')}
-          </small>
-        </li>
-      ))}
+    {moment.weekdays(true).map((weekday, index) => (
+      <li
+        className="DayPicker_weekHeader_li"
+        key={buildKeyFromStrings(weekday, index)}
+      >
+        <small>
+          {moment()
+            .day(weekday)
+            .format('dd')}
+        </small>
+      </li>
+    ))}
   </ul>
 );
 

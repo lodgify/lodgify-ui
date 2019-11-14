@@ -18,7 +18,7 @@ exports[`renderMonthHeader the returned function should return the correct struc
       >
         <li
           className="DayPicker_weekHeader_li"
-          key="0"
+          key="Sunday0"
         >
           <small>
             Su
@@ -26,7 +26,7 @@ exports[`renderMonthHeader the returned function should return the correct struc
         </li>
         <li
           className="DayPicker_weekHeader_li"
-          key="1"
+          key="Monday1"
         >
           <small>
             Mo
@@ -34,7 +34,7 @@ exports[`renderMonthHeader the returned function should return the correct struc
         </li>
         <li
           className="DayPicker_weekHeader_li"
-          key="2"
+          key="Tuesday2"
         >
           <small>
             Tu
@@ -42,7 +42,7 @@ exports[`renderMonthHeader the returned function should return the correct struc
         </li>
         <li
           className="DayPicker_weekHeader_li"
-          key="3"
+          key="Wednesday3"
         >
           <small>
             We
@@ -50,7 +50,7 @@ exports[`renderMonthHeader the returned function should return the correct struc
         </li>
         <li
           className="DayPicker_weekHeader_li"
-          key="4"
+          key="Thursday4"
         >
           <small>
             Th
@@ -58,7 +58,7 @@ exports[`renderMonthHeader the returned function should return the correct struc
         </li>
         <li
           className="DayPicker_weekHeader_li"
-          key="5"
+          key="Friday5"
         >
           <small>
             Fr
@@ -66,7 +66,7 @@ exports[`renderMonthHeader the returned function should return the correct struc
         </li>
         <li
           className="DayPicker_weekHeader_li"
-          key="6"
+          key="Saturday6"
         >
           <small>
             Sa
