@@ -1,3 +1,11 @@
+# [1.259.0](https://github.com/lodgify/lodgify-ui/compare/v1.258.3...v1.259.0) (2019-11-14)
+
+
+### Features
+
+* **Characteristics:** expose characteristics component ([6c13d22](https://github.com/lodgify/lodgify-ui/commit/6c13d22))
+* **Description:** implement Characteristics component ([1be46b7](https://github.com/lodgify/lodgify-ui/commit/1be46b7))
+
 ## [1.258.3](https://github.com/lodgify/lodgify-ui/compare/v1.258.2...v1.258.3) (2019-11-13)
 
 
