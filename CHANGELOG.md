@@ -1,3 +1,10 @@
+## [1.259.1](https://github.com/lodgify/lodgify-ui/compare/v1.259.0...v1.259.1) (2019-11-14)
+
+
+### Bug Fixes
+
+* **Availability:** days of the week align to locale ([55d646c](https://github.com/lodgify/lodgify-ui/commit/55d646c))
+
 # [1.259.0](https://github.com/lodgify/lodgify-ui/compare/v1.258.3...v1.259.0) (2019-11-14)
 
 
