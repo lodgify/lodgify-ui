@@ -17,6 +17,7 @@ export const Component = ({
   hasCloseIcon,
   hasPadding,
   hasRoundedCorners,
+  isDark,
   isFullscreen,
   isOpen,
   onClose,
@@ -29,7 +30,7 @@ export const Component = ({
       'has-rounded-corners': hasRoundedCorners,
     })}
     closeIcon={hasCloseIcon && <Icon name={ICON_NAMES.CLOSE} />}
-    dimmer="inverted"
+    dimmer={isDark || 'inverted'}
     onClose={onClose}
     open={isOpen}
     size={isFullscreen ? 'fullscreen' : size}
@@ -51,6 +52,7 @@ Component.defaultProps = {
   hasCloseIcon: true,
   hasPadding: false,
   hasRoundedCorners: false,
+  isDark: false,
   isFullscreen: false,
   isOpen: undefined,
   onClose: Function.prototype,
@@ -69,6 +71,8 @@ Component.propTypes = {
   hasRoundedCorners: PropTypes.bool,
   /** The header fixed at the top of the modal. */
   header: PropTypes.node,
+  /** Is the modal dimmer dark. */
+  isDark: PropTypes.bool,
   /** Is the modal filling the whole screen when displayed. */
   isFullscreen: PropTypes.bool,
   /** Is the modal open. Used when consuming `Modal` as a controlled component. */
