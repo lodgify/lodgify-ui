@@ -857,6 +857,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                             logoText="someLogoText"
                           />
                         }
+                        isDark={false}
                         isFullscreen={true}
                         onClose={[Function]}
                         size="tiny"

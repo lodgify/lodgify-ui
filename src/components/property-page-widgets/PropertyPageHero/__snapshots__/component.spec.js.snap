@@ -772,6 +772,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                         hasPadding={true}
                         hasRoundedCorners={false}
                         header={null}
+                        isDark={false}
                         isFullscreen={true}
                         onClose={[Function]}
                         size="tiny"

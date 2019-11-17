@@ -6,6 +6,7 @@ exports[`getModalFormMarkup if \`isBotProtected\` === true should render the rig
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -193,6 +194,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -380,6 +382,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -573,6 +576,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -748,6 +752,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
