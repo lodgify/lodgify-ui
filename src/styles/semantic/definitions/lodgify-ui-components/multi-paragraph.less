@@ -1,0 +1,39 @@
+/*******************************
+            Theme
+*******************************/
+
+@type : 'lodgify-ui-component';
+
+@element : 'multi-paragraph';
+
+@import (multiple) "../../theme.config";
+
+/*--------------------------
+        Multiparagraph
+--------------------------*/
+.multi-paragraph {
+  max-height: @multiParagraphMaxHeight;
+  overflow: hidden;
+  transition: @multiParagraphTransition;
+  &.open {
+    max-height: @multiParagraphMaxHeightMaxEdge;
+  }
+}
+
+.multi-paragraph-read-more {
+  position: relative;
+  margin-top: -@multiParagraphShowMoreGradientHeight;
+  width: 100%;
+  color: var(@themeLinkColorIdentifier, @themeLinkColorDefault);
+  text-align: center;
+  cursor: pointer;
+  &:before {
+    content: "";
+    position: relative;
+    display: block;
+    height: @multiParagraphShowMoreGradientHeight;
+    width: 100%;
+    background: @multiParagraphShowMoreGradient;
+    z-index: 2;
+  }
+}
