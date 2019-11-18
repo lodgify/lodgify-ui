@@ -1,3 +1,11 @@
+# [1.260.0](https://github.com/lodgify/lodgify-ui/compare/v1.259.1...v1.260.0) (2019-11-18)
+
+
+### Features
+
+* **Modal:** expose isDark prop ([ccdf4fc](https://github.com/lodgify/lodgify-ui/commit/ccdf4fc))
+* **snapshots:** update component snapshot ([faef64b](https://github.com/lodgify/lodgify-ui/commit/faef64b))
+
 ## [1.259.1](https://github.com/lodgify/lodgify-ui/compare/v1.259.0...v1.259.1) (2019-11-14)
 
 
