@@ -10,10 +10,8 @@ import { GridColumn } from 'layout/GridColumn';
 import { Heading } from 'typography/Heading';
 import { Icon } from 'elements/Icon';
 import { Subheading } from 'typography/Subheading';
-import { HTML } from 'general-widgets/HTML';
+import { MultiParagraph } from 'typography/MultiParagraph';
 import { Characteristics } from 'collections/Characteristics';
-
-import { getDescriptionTextMarkup } from './utils/getDescriptionTextMarkup';
 
 /**
  * The standard widget for displaying the description of a property.
@@ -38,11 +36,11 @@ export const Component = ({
     )}
     {descriptionText && (
       <GridColumn width={12}>
-        {isValidHTML(descriptionText) ? (
-          <HTML htmlString={descriptionText} />
-        ) : (
-          getDescriptionTextMarkup(descriptionText, extraDescriptionButtonText)
-        )}
+        <MultiParagraph
+          content={descriptionText}
+          isHtml={isValidHTML(descriptionText)}
+          showMoreLabel={extraDescriptionButtonText}
+        />
       </GridColumn>
     )}
     {size(homeHighlights) > 0 && (

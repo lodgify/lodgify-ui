@@ -665,8 +665,8 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
             <div
               className="top aligned twelve wide column"
             >
-              <HTML
-                htmlString="
+              <MultiParagraph
+                content="
   Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
 
   <b>I am some HTML</b>
@@ -677,12 +677,33 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
 
   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 "
+                isHtml={true}
+                isShowingAll={false}
+                showMoreLabel="View more"
               >
                 <div
-                  className="html-container"
-                  dangerouslySetInnerHTML={
-                    Object {
-                      "__html": "
+                  className="multi-paragraph open"
+                  data-testid="multiparagraph"
+                >
+                  <HTML
+                    data-testid="multiparagraph-html-paragraph"
+                    htmlString="
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  <b>I am some HTML</b>
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+"
+                  >
+                    <div
+                      className="html-container"
+                      dangerouslySetInnerHTML={
+                        Object {
+                          "__html": "
   Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
 
   <b>I am some HTML</b>
@@ -693,10 +714,12 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
 
   Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
 ",
-                    }
-                  }
-                />
-              </HTML>
+                        }
+                      }
+                    />
+                  </HTML>
+                </div>
+              </MultiParagraph>
             </div>
           </GridColumn>
         </GridColumn>
@@ -1480,30 +1503,48 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
             <div
               className="top aligned twelve wide column"
             >
-              <Paragraph
-                isCompact={false}
-                key="Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.0"
-                size="medium"
-                weight={null}
+              <MultiParagraph
+                content="
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+"
+                isHtml={false}
+                isShowingAll={false}
+                showMoreLabel="View more"
               >
-                <p
-                  className=""
+                <div
+                  className="multi-paragraph open"
+                  data-testid="multiparagraph"
                 >
-                  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
-                </p>
-              </Paragraph>
-              <Paragraph
-                isCompact={false}
-                key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.1"
-                size="medium"
-                weight={null}
-              >
-                <p
-                  className=""
-                >
-                  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                </p>
-              </Paragraph>
+                  <Paragraph
+                    data-testid="multiparagraph-paragraph-0"
+                    isCompact={false}
+                    key="0"
+                    size="medium"
+                    weight={null}
+                  >
+                    <p
+                      className=""
+                    >
+                      Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+                    </p>
+                  </Paragraph>
+                  <Paragraph
+                    data-testid="multiparagraph-paragraph-1"
+                    isCompact={false}
+                    key="1"
+                    size="medium"
+                    weight={null}
+                  >
+                    <p
+                      className=""
+                    >
+                      Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                  </Paragraph>
+                </div>
+              </MultiParagraph>
             </div>
           </GridColumn>
         </GridColumn>
@@ -2291,169 +2332,78 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
             <div
               className="top aligned twelve wide column"
             >
-              <Paragraph
-                isCompact={false}
-                key="Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.0"
-                size="medium"
-                weight={null}
+              <MultiParagraph
+                content="
+  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+
+  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+"
+                isHtml={false}
+                isShowingAll={false}
+                showMoreLabel="View more"
               >
-                <p
-                  className=""
+                <div
+                  className="multi-paragraph open"
+                  data-testid="multiparagraph"
                 >
-                  Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
-                </p>
-              </Paragraph>
-              <Paragraph
-                isCompact={false}
-                key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.1"
-                size="medium"
-                weight={null}
-              >
-                <p
-                  className=""
-                >
-                  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
-                </p>
-              </Paragraph>
-              <Paragraph
-                isCompact={false}
-                key="Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per...2"
-                size="medium"
-                weight={null}
-              >
-                <p
-                  className=""
-                >
-                  Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per...
-                </p>
-              </Paragraph>
-              <Modal
-                hasCloseIcon={true}
-                hasPadding={true}
-                hasRoundedCorners={false}
-                header={null}
-                isDark={false}
-                isFullscreen={false}
-                onClose={[Function]}
-                size="tiny"
-                trigger={
-                  <Button
-                    as="button"
-                    basic={true}
+                  <Paragraph
+                    data-testid="multiparagraph-paragraph-0"
+                    isCompact={false}
+                    key="0"
+                    size="medium"
+                    weight={null}
                   >
-                    View more
-                  </Button>
-                }
-              >
-                <Modal
-                  centered={true}
-                  className="has-padding"
-                  closeIcon={
-                    <Icon
-                      className={null}
-                      color={null}
-                      hasBorder={false}
-                      isButton={false}
-                      isCircular={false}
-                      isColorInverted={false}
-                      isDisabled={false}
-                      isLabelLeft={false}
-                      labelText={null}
-                      labelWeight={null}
-                      name="close"
-                      path={null}
-                      size={null}
-                    />
-                  }
-                  closeOnDimmerClick={true}
-                  closeOnDocumentClick={false}
-                  dimmer="inverted"
-                  eventPool="Modal"
-                  onClose={[Function]}
-                  size="tiny"
-                  trigger={
-                    <Button
-                      as="button"
-                      basic={true}
+                    <p
+                      className=""
                     >
-                      View more
-                    </Button>
-                  }
-                >
-                  <Portal
-                    closeOnDocumentClick={false}
-                    closeOnEscape={true}
-                    eventPool="Modal"
-                    mountNode={<body />}
-                    onClose={[Function]}
-                    onMount={[Function]}
-                    onOpen={[Function]}
-                    onUnmount={[Function]}
-                    openOnTriggerClick={true}
-                    trigger={
-                      <Button
-                        as="button"
-                        basic={true}
-                      >
-                        View more
-                      </Button>
-                    }
+                      Livingstone is a modern website template with clean and straight lines. Its special feature is a wide horizontal header photo slideshow in which logo and header navigation nicely blend in.
+                    </p>
+                  </Paragraph>
+                  <Paragraph
+                    data-testid="multiparagraph-paragraph-1"
+                    isCompact={false}
+                    key="1"
+                    size="medium"
+                    weight={null}
                   >
-                    <Ref
-                      innerRef={[Function]}
+                    <p
+                      className=""
                     >
-                      <RefFindNode
-                        innerRef={[Function]}
-                      >
-                        <Button
-                          as="button"
-                          basic={true}
-                          onBlur={[Function]}
-                          onClick={[Function]}
-                          onFocus={[Function]}
-                          onMouseEnter={[Function]}
-                          onMouseLeave={[Function]}
-                        >
-                          <Ref
-                            innerRef={
-                              Object {
-                                "current": <button
-                                  class="ui basic button"
-                                >
-                                  View more
-                                </button>,
-                              }
-                            }
-                          >
-                            <RefFindNode
-                              innerRef={
-                                Object {
-                                  "current": <button
-                                    class="ui basic button"
-                                  >
-                                    View more
-                                  </button>,
-                                }
-                              }
-                            >
-                              <button
-                                className="ui basic button"
-                                onBlur={[Function]}
-                                onClick={[Function]}
-                                onFocus={[Function]}
-                                onMouseEnter={[Function]}
-                                onMouseLeave={[Function]}
-                              >
-                                View more
-                              </button>
-                            </RefFindNode>
-                          </Ref>
-                        </Button>
-                      </RefFindNode>
-                    </Ref>
-                  </Portal>
-                </Modal>
-              </Modal>
+                      Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                  </Paragraph>
+                  <Paragraph
+                    data-testid="multiparagraph-paragraph-2"
+                    isCompact={false}
+                    key="2"
+                    size="medium"
+                    weight={null}
+                  >
+                    <p
+                      className=""
+                    >
+                      Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                  </Paragraph>
+                  <Paragraph
+                    data-testid="multiparagraph-paragraph-3"
+                    isCompact={false}
+                    key="3"
+                    size="medium"
+                    weight={null}
+                  >
+                    <p
+                      className=""
+                    >
+                      Maecenas et efficitur diam. Etiam non ante urna. Donec imperdiet cursus lectus, luctus vestibulum urna aliquet vel. Donec non vehicula est. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+                    </p>
+                  </Paragraph>
+                </div>
+              </MultiParagraph>
             </div>
           </GridColumn>
         </GridColumn>
