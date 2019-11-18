@@ -45,6 +45,14 @@ describe('<Modal />', () => {
     });
   });
 
+  describe('if `props.isDark` is passed', () => {
+    it('should get the right props', () => {
+      const actual = getModal({ isDark: true });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   it('should have `displayName` Modal', () => {
     expectComponentToHaveDisplayName(Modal, 'Modal');
   });

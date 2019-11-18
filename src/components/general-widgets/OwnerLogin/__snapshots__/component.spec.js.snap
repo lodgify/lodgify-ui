@@ -27,6 +27,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
           hasPadding={false}
           hasRoundedCorners={false}
           header={null}
+          isDark={false}
           isFullscreen={false}
           onClose={[Function]}
           size="tiny"
@@ -322,6 +323,7 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                             hasPadding={false}
                             hasRoundedCorners={false}
                             header={null}
+                            isDark={false}
                             isFullscreen={false}
                             onClose={[Function]}
                             size="tiny"
@@ -506,6 +508,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
           hasPadding={false}
           hasRoundedCorners={false}
           header={null}
+          isDark={false}
           isFullscreen={false}
           onClose={[Function]}
           size="tiny"
@@ -801,6 +804,7 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                             hasPadding={false}
                             hasRoundedCorners={false}
                             header={null}
+                            isDark={false}
                             isFullscreen={false}
                             onClose={[Function]}
                             size="tiny"
@@ -985,6 +989,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
           hasPadding={false}
           hasRoundedCorners={false}
           header={null}
+          isDark={false}
           isFullscreen={false}
           onClose={[Function]}
           size="tiny"
@@ -1262,6 +1267,7 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                             hasPadding={false}
                             hasRoundedCorners={false}
                             header={null}
+                            isDark={false}
                             isFullscreen={false}
                             onClose={[Function]}
                             size="tiny"

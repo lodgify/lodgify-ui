@@ -2450,6 +2450,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                       Check our availability
                     </Heading>
                   }
+                  isDark={false}
                   isFullscreen={true}
                   isOpen={false}
                   onClose={[Function]}

@@ -40,6 +40,41 @@ exports[`<Modal /> if \`props.header\` is passed should get the right props 1`] 
 </Modal>
 `;
 
+exports[`<Modal /> if \`props.isDark\` is passed should get the right props 1`] = `
+<Modal
+  centered={true}
+  className=""
+  closeIcon={
+    <Icon
+      className={null}
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
+  closeOnDimmerClick={true}
+  closeOnDocumentClick={false}
+  dimmer={true}
+  eventPool="Modal"
+  onClose={[Function]}
+  size="tiny"
+  trigger="someTrigger"
+>
+  <ModalContent>
+    someContent
+  </ModalContent>
+</Modal>
+`;
+
 exports[`<Modal /> if \`props.isFullscreen\` is \`true\` render the right structure 1`] = `
 <Modal
   centered={true}

@@ -158,6 +158,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                       hasPadding={false}
                       hasRoundedCorners={false}
                       header={null}
+                      isDark={false}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"
@@ -1251,6 +1252,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                       hasPadding={false}
                       hasRoundedCorners={false}
                       header={null}
+                      isDark={false}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"
@@ -2367,6 +2369,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
                       hasPadding={false}
                       hasRoundedCorners={false}
                       header={null}
+                      isDark={false}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"

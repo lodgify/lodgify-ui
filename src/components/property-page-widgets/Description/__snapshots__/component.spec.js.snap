@@ -2332,6 +2332,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
                 hasPadding={true}
                 hasRoundedCorners={false}
                 header={null}
+                isDark={false}
                 isFullscreen={false}
                 onClose={[Function]}
                 size="tiny"

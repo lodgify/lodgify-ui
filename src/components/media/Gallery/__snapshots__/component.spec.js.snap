@@ -6,6 +6,7 @@ exports[`<Gallery /> by default should render the right structure 1`] = `
   hasPadding={true}
   hasRoundedCorners={false}
   header={null}
+  isDark={false}
   isFullscreen={true}
   onClose={[Function]}
   size="tiny"
@@ -85,6 +86,7 @@ exports[`<Gallery /> if \`props.headingText\` is defined should render the right
   hasPadding={true}
   hasRoundedCorners={false}
   header=":hurtrealbad:"
+  isDark={false}
   isFullscreen={true}
   onClose={[Function]}
   size="tiny"
@@ -164,6 +166,7 @@ exports[`<Gallery /> if any \`images\` have \`categoryText\` should render the r
   hasPadding={true}
   hasRoundedCorners={false}
   header={null}
+  isDark={false}
   isFullscreen={true}
   onClose={[Function]}
   size="tiny"

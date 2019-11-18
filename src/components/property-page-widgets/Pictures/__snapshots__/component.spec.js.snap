@@ -1282,6 +1282,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                   hasPadding={true}
                   hasRoundedCorners={false}
                   header={null}
+                  isDark={false}
                   isFullscreen={true}
                   onClose={[Function]}
                   size="tiny"
