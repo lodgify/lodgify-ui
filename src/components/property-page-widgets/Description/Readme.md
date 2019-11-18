@@ -77,14 +77,14 @@ const {
 
 ```jsx
 const {
-  descriptionText,
+  longDescriptionText,
   extraDescriptionText,
   homeHighlights,
   propertyCharacteristics
 } = require("./mock-data/props");
 
 <Description
-  descriptionText={descriptionText}
+  descriptionText={longDescriptionText}
   extraDescriptionButtonText="See more words"
   extraDescriptionText={extraDescriptionText}
   homeHighlights={homeHighlights}
