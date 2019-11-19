@@ -1,3 +1,22 @@
+# [1.262.0](https://github.com/lodgify/lodgify-ui/compare/v1.261.0...v1.262.0) (2019-11-19)
+
+
+### Bug Fixes
+
+* fix test coverage ([7a42cf7](https://github.com/lodgify/lodgify-ui/commit/7a42cf7))
+* **Description:** adjust tests ([4791424](https://github.com/lodgify/lodgify-ui/commit/4791424))
+* **MultiParagraph:** update props comments. ([8440fda](https://github.com/lodgify/lodgify-ui/commit/8440fda))
+
+
+### Features
+
+* add some test utils for testid ([923a30b](https://github.com/lodgify/lodgify-ui/commit/923a30b))
+* **adaptImages:** add thumbnail props ([3bfe8d1](https://github.com/lodgify/lodgify-ui/commit/3bfe8d1))
+* **Description:** using multiparagraph component ([004e3a5](https://github.com/lodgify/lodgify-ui/commit/004e3a5))
+* **MultiParagraph:** create a multiparagraph component ([c8712b6](https://github.com/lodgify/lodgify-ui/commit/c8712b6))
+* **react-image-gallery:** add thumbnail styles ([a7f1b8c](https://github.com/lodgify/lodgify-ui/commit/a7f1b8c))
+* **Slideshow:** expose thumbnail props ([36af682](https://github.com/lodgify/lodgify-ui/commit/36af682))
+
 # [1.261.0](https://github.com/lodgify/lodgify-ui/compare/v1.260.0...v1.261.0) (2019-11-19)
 
 
