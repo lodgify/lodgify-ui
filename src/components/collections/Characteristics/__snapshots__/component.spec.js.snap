@@ -1,110 +1,247 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Characteristics /> should have the correct structure 1`] = `
-<Characteristics
-  propertyCharacteristics={
-    Array [
-      Object {
-        "iconName": "users",
-        "text": "2 guests",
-      },
-      Object {
-        "iconName": "home",
-        "text": "1 bedroom",
-      },
-      Object {
-        "iconName": "single bed",
-        "text": "2 beds",
-      },
-      Object {
-        "iconName": "bathroom",
-        "text": "1 bathroom",
-      },
-    ]
-  }
-  spaceCharacteristics={Array []}
+<Grid
+  areColumnsCentered={false}
+  columns={1}
+  isStackable={false}
 >
-  <Grid
-    areColumnsCentered={false}
-    columns={1}
-    isStackable={false}
+  <GridColumn
+    verticalAlignContent="top"
+    width={12}
   >
-    <Grid
-      centered={false}
-      columns={1}
-      stackable={false}
+    <ShowOn
+      computer={true}
+      mobile={false}
+      parent={[Function]}
+      parentProps={
+        Object {
+          "horizontal": true,
+        }
+      }
+      tablet={true}
+      widescreen={true}
     >
-      <div
-        className="ui one column grid"
+      <ListItem
+        key="2 guests0"
       >
-        <GridColumn
-          verticalAlignContent="top"
-          width={12}
-        >
-          <GridColumn
-            verticalAlign="top"
-            width={12}
-          >
-            <div
-              className="top aligned twelve wide column"
-            >
-              <ShowOn
-                computer={true}
-                mobile={false}
-                parent={[Function]}
-                parentProps={
-                  Object {
-                    "horizontal": true,
-                  }
-                }
-                tablet={true}
-                widescreen={true}
-              >
-                <List
-                  className="show-on-tablet show-on-computer show-on-widescreen"
-                  horizontal={true}
-                >
-                  <div
-                    className="ui horizontal list show-on-tablet show-on-computer show-on-widescreen"
-                    role="list"
-                  />
-                </List>
-              </ShowOn>
-              <ShowOn
-                computer={false}
-                mobile={true}
-                parent={[Function]}
-                parentProps={
-                  Object {
-                    "columns": 1,
-                  }
-                }
-                tablet={false}
-                widescreen={false}
-              >
-                <Grid
-                  areColumnsCentered={false}
-                  className="show-on-mobile"
-                  columns={1}
-                  isStackable={false}
-                >
-                  <Grid
-                    centered={false}
-                    className="show-on-mobile"
-                    columns={1}
-                    stackable={false}
-                  >
-                    <div
-                      className="ui one column grid show-on-mobile"
-                    />
-                  </Grid>
-                </Grid>
-              </ShowOn>
-            </div>
-          </GridColumn>
-        </GridColumn>
-      </div>
-    </Grid>
-  </Grid>
-</Characteristics>
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText="2 guests"
+          labelWeight={null}
+          name="users"
+          path={null}
+          size={null}
+        />
+      </ListItem>
+      <ListItem
+        key="1 bedroom1"
+      >
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText="1 bedroom"
+          labelWeight={null}
+          name="home"
+          path={null}
+          size={null}
+        />
+      </ListItem>
+      <ListItem
+        key="2 beds2"
+      >
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText="2 beds"
+          labelWeight={null}
+          name="single bed"
+          path={null}
+          size={null}
+        />
+      </ListItem>
+      <ListItem
+        key="1 bathroom3"
+      >
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText="1 bathroom"
+          labelWeight={null}
+          name="bathroom"
+          path={null}
+          size={null}
+        />
+      </ListItem>
+    </ShowOn>
+    <ShowOn
+      computer={false}
+      mobile={true}
+      parent={[Function]}
+      parentProps={
+        Object {
+          "columns": 1,
+        }
+      }
+      tablet={false}
+      widescreen={false}
+    >
+      <GridColumn
+        computer={3}
+        key="2 guests0"
+        mobile={6}
+        verticalAlignContent="top"
+        width={null}
+      >
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText="2 guests"
+          labelWeight={null}
+          name="users"
+          path={null}
+          size={null}
+        />
+      </GridColumn>
+      <GridColumn
+        computer={3}
+        key="1 bedroom1"
+        mobile={6}
+        verticalAlignContent="top"
+        width={null}
+      >
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText="1 bedroom"
+          labelWeight={null}
+          name="home"
+          path={null}
+          size={null}
+        />
+      </GridColumn>
+      <GridColumn
+        computer={3}
+        key="2 beds2"
+        mobile={6}
+        verticalAlignContent="top"
+        width={null}
+      >
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText="2 beds"
+          labelWeight={null}
+          name="single bed"
+          path={null}
+          size={null}
+        />
+      </GridColumn>
+      <GridColumn
+        computer={3}
+        key="1 bathroom3"
+        mobile={6}
+        verticalAlignContent="top"
+        width={null}
+      >
+        <Icon
+          className={null}
+          color={null}
+          hasBorder={false}
+          isButton={false}
+          isCircular={false}
+          isColorInverted={false}
+          isDisabled={false}
+          isLabelLeft={false}
+          labelText="1 bathroom"
+          labelWeight={null}
+          name="bathroom"
+          path={null}
+          size={null}
+        />
+      </GridColumn>
+    </ShowOn>
+  </GridColumn>
+</Grid>
+`;
+
+exports[`<Characteristics /> should have the correct structure 2`] = `
+<Grid
+  areColumnsCentered={false}
+  columns={1}
+  isStackable={false}
+>
+  <GridColumn
+    verticalAlignContent="top"
+    width={12}
+  >
+    <ShowOn
+      computer={true}
+      mobile={false}
+      parent={[Function]}
+      parentProps={
+        Object {
+          "horizontal": true,
+        }
+      }
+      tablet={true}
+      widescreen={true}
+    />
+    <ShowOn
+      computer={false}
+      mobile={true}
+      parent={[Function]}
+      parentProps={
+        Object {
+          "columns": 1,
+        }
+      }
+      tablet={false}
+      widescreen={false}
+    />
+  </GridColumn>
+</Grid>
 `;

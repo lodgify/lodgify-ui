@@ -1,19 +1,24 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import { propertyCharacteristics } from './mock-data/props';
 import { Component as Characteristics } from './component';
 
 const props = {
-  propertyCharacteristics,
+  spaceCharacteristics: propertyCharacteristics,
 };
 
-const getCharacteristics = props => mount(<Characteristics {...props} />);
+const getCharacteristics = props => shallow(<Characteristics {...props} />);
 
 describe('<Characteristics />', () => {
   it('should have the correct structure', () => {
     const wrapper = getCharacteristics(props);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+  it('should have the correct structure', () => {
+    const wrapper = getCharacteristics({ propertyCharacteristics: [] });
 
     expect(wrapper).toMatchSnapshot();
   });
