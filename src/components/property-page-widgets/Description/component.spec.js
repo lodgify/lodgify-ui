@@ -1,6 +1,6 @@
 import React from 'react';
 import { act } from 'react-dom/test-utils';
-import { mount } from 'enzyme';
+import { shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import {
@@ -36,10 +36,9 @@ const props = {
 };
 
 const getDescription = extraProps =>
-  mount(<Description {...props} {...extraProps} />);
+  shallow(<Description {...props} {...extraProps} />);
 
 act(() => {
-
   describe('<Description />', () => {
     it('should have the correct structure', () => {
       const wrapper = getDescription();
@@ -49,7 +48,9 @@ act(() => {
 
     describe('if `props.descriptionText` is HTML', () => {
       it('should have the correct structure', () => {
-        const wrapper = getDescription({ descriptionText: htmlDescriptionText });
+        const wrapper = getDescription({
+          descriptionText: htmlDescriptionText,
+        });
 
         expect(wrapper).toMatchSnapshot();
       });
@@ -65,7 +66,9 @@ act(() => {
 
     describe('if `props.descriptionText` is a plain string with more than 100 words', () => {
       it('should have the correct structure', () => {
-        const wrapper = getDescription({ descriptionText: longDescriptionText });
+        const wrapper = getDescription({
+          descriptionText: longDescriptionText,
+        });
 
         expect(wrapper).toMatchSnapshot();
       });
