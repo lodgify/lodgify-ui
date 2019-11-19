@@ -73,6 +73,26 @@ describe('<Slideshow />', () => {
     });
   });
 
+  describe('if `ImageGallery` `props.showThumbnails === true`', () => {
+    it('should return the right structure', () => {
+      const actual = getSlideshow({
+        showThumbnails: true,
+      });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
+  describe('if `ImageGallery` `props.showIndex === true`', () => {
+    it('should return the right structure', () => {
+      const actual = getSlideshow({
+        showIndex: true,
+      });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   describe('if `ImageGallery` `props.isRounded === false`', () => {
     it('should get the right props', () => {
       const actual = getSlideshow({

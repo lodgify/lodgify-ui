@@ -134,6 +134,8 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                           }
                           isRounded={false}
                           isShowingBulletNavigation={false}
+                          isShowingIndex={false}
+                          isShowingThumbnails={false}
                           isStretched={true}
                         >
                           <ImageGallery
@@ -146,6 +148,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   "originalTitle": "Two cats",
                                   "sizes": undefined,
                                   "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Two cats",
+                                  "thumbnailLabel": "Two cats",
                                 },
                                 Object {
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -153,6 +158,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   "originalTitle": "Two more cats",
                                   "sizes": undefined,
                                   "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Two more cats",
+                                  "thumbnailLabel": "Two more cats",
                                 },
                                 Object {
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -160,6 +168,9 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   "originalTitle": "Much cats",
                                   "sizes": undefined,
                                   "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Much cats",
+                                  "thumbnailLabel": "Much cats",
                                 },
                               ]
                             }
@@ -170,8 +181,43 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                             renderRightNav={[Function]}
                             showBullets={false}
                             showFullscreenButton={false}
+                            showIndex={false}
                             showPlayButton={false}
                             showThumbnails={false}
+                            thumbnails={
+                              Array [
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two cats",
+                                  "originalTitle": "Two cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Two cats",
+                                  "thumbnailLabel": "Two cats",
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two more cats",
+                                  "originalTitle": "Two more cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Two more cats",
+                                  "thumbnailLabel": "Two more cats",
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Much cats",
+                                  "originalTitle": "Much cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Much cats",
+                                  "thumbnailLabel": "Much cats",
+                                },
+                              ]
+                            }
                           >
                             <div />
                           </ImageGallery>
@@ -1149,6 +1195,8 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                           }
                           isRounded={false}
                           isShowingBulletNavigation={false}
+                          isShowingIndex={false}
+                          isShowingThumbnails={false}
                           isStretched={true}
                         >
                           <ImageGallery
@@ -1161,6 +1209,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   "originalTitle": "Two cats",
                                   "sizes": undefined,
                                   "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Two cats",
+                                  "thumbnailLabel": "Two cats",
                                 },
                                 Object {
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1168,6 +1219,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   "originalTitle": "Two more cats",
                                   "sizes": undefined,
                                   "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Two more cats",
+                                  "thumbnailLabel": "Two more cats",
                                 },
                                 Object {
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1175,6 +1229,9 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   "originalTitle": "Much cats",
                                   "sizes": undefined,
                                   "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Much cats",
+                                  "thumbnailLabel": "Much cats",
                                 },
                               ]
                             }
@@ -1185,8 +1242,43 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                             renderRightNav={[Function]}
                             showBullets={false}
                             showFullscreenButton={false}
+                            showIndex={false}
                             showPlayButton={false}
                             showThumbnails={false}
+                            thumbnails={
+                              Array [
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two cats",
+                                  "originalTitle": "Two cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Two cats",
+                                  "thumbnailLabel": "Two cats",
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Two more cats",
+                                  "originalTitle": "Two more cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Two more cats",
+                                  "thumbnailLabel": "Two more cats",
+                                },
+                                Object {
+                                  "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "originalAlt": "Much cats",
+                                  "originalTitle": "Much cats",
+                                  "sizes": undefined,
+                                  "srcSet": undefined,
+                                  "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                  "thumbnailAlt": "Much cats",
+                                  "thumbnailLabel": "Much cats",
+                                },
+                              ]
+                            }
                           >
                             <div />
                           </ImageGallery>

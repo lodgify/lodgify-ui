@@ -8,6 +8,9 @@ export const adaptImages = images =>
     original: url,
     originalAlt: title,
     originalTitle: title,
+    thumbnail: url,
+    thumbnailAlt: title,
+    thumbnailLabel: title,
     sizes,
     srcSet,
   }));

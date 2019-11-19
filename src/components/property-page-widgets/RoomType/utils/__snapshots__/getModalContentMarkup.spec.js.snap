@@ -202,6 +202,8 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
       }
       isRounded={true}
       isShowingBulletNavigation={false}
+      isShowingIndex={false}
+      isShowingThumbnails={false}
       isStretched={false}
     >
       <ImageGallery
@@ -214,6 +216,9 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               "originalTitle": "Two cats",
               "sizes": undefined,
               "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -224,8 +229,23 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
         renderRightNav={[Function]}
         showBullets={false}
         showFullscreenButton={false}
+        showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        thumbnails={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
+            },
+          ]
+        }
       >
         <div />
       </ImageGallery>
@@ -585,6 +605,8 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
       }
       isRounded={true}
       isShowingBulletNavigation={false}
+      isShowingIndex={false}
+      isShowingThumbnails={false}
       isStretched={false}
     >
       <ImageGallery
@@ -597,6 +619,9 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               "originalTitle": "Two cats",
               "sizes": undefined,
               "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -607,8 +632,23 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
         renderRightNav={[Function]}
         showBullets={false}
         showFullscreenButton={false}
+        showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        thumbnails={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
+            },
+          ]
+        }
       >
         <div />
       </ImageGallery>
@@ -1024,6 +1064,8 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
       }
       isRounded={true}
       isShowingBulletNavigation={false}
+      isShowingIndex={false}
+      isShowingThumbnails={false}
       isStretched={false}
     >
       <ImageGallery
@@ -1036,6 +1078,9 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
               "originalTitle": "Two cats",
               "sizes": undefined,
               "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -1046,8 +1091,23 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
         renderRightNav={[Function]}
         showBullets={false}
         showFullscreenButton={false}
+        showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        thumbnails={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
+            },
+          ]
+        }
       >
         <div />
       </ImageGallery>
@@ -1639,6 +1699,8 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
       }
       isRounded={true}
       isShowingBulletNavigation={true}
+      isShowingIndex={false}
+      isShowingThumbnails={false}
       isStretched={false}
     >
       <ImageGallery
@@ -1651,6 +1713,9 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               "originalTitle": "Two cats",
               "sizes": undefined,
               "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
             },
             Object {
               "original": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
@@ -1658,6 +1723,9 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               "originalTitle": "Two cats",
               "sizes": undefined,
               "srcSet": undefined,
+              "thumbnail": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -1668,8 +1736,33 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
         renderRightNav={[Function]}
         showBullets={true}
         showFullscreenButton={false}
+        showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        thumbnails={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
+            },
+            Object {
+              "original": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+              "thumbnail": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
+            },
+          ]
+        }
       >
         <div />
       </ImageGallery>
@@ -2257,6 +2350,8 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
       }
       isRounded={true}
       isShowingBulletNavigation={false}
+      isShowingIndex={false}
+      isShowingThumbnails={false}
       isStretched={false}
     >
       <ImageGallery
@@ -2269,6 +2364,9 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               "originalTitle": "Two cats",
               "sizes": undefined,
               "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -2279,8 +2377,23 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
         renderRightNav={[Function]}
         showBullets={false}
         showFullscreenButton={false}
+        showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        thumbnails={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+              "thumbnailLabel": "Two cats",
+            },
+          ]
+        }
       >
         <div />
       </ImageGallery>
