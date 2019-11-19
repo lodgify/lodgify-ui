@@ -1,3 +1,19 @@
+# [1.261.0](https://github.com/lodgify/lodgify-ui/compare/v1.260.0...v1.261.0) (2019-11-19)
+
+
+### Bug Fixes
+
+* fix test coverage ([f9659dc](https://github.com/lodgify/lodgify-ui/commit/f9659dc))
+* **Description:** adjust tests ([50b4c0a](https://github.com/lodgify/lodgify-ui/commit/50b4c0a))
+* **MultiParagraph:** update props comments. ([322eb11](https://github.com/lodgify/lodgify-ui/commit/322eb11))
+
+
+### Features
+
+* add some test utils for testid ([2f14bc1](https://github.com/lodgify/lodgify-ui/commit/2f14bc1))
+* **Description:** using multiparagraph component ([de37191](https://github.com/lodgify/lodgify-ui/commit/de37191))
+* **MultiParagraph:** create a multiparagraph component ([cc39991](https://github.com/lodgify/lodgify-ui/commit/cc39991))
+
 # [1.260.0](https://github.com/lodgify/lodgify-ui/compare/v1.259.1...v1.260.0) (2019-11-18)
 
 
