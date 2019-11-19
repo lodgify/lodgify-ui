@@ -1694,6 +1694,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 }
                                 isRounded={false}
                                 isShowingBulletNavigation={false}
+                                isShowingIndex={false}
+                                isShowingThumbnails={false}
                                 isStretched={true}
                               >
                                 <ImageGallery
@@ -1706,6 +1708,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "originalTitle": "Two more cats",
                                         "sizes": undefined,
                                         "srcSet": undefined,
+                                        "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "thumbnailAlt": "Two more cats",
+                                        "thumbnailLabel": "Two more cats",
                                       },
                                       Object {
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1713,6 +1718,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "originalTitle": "Some cats",
                                         "sizes": undefined,
                                         "srcSet": undefined,
+                                        "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "thumbnailAlt": "Some cats",
+                                        "thumbnailLabel": "Some cats",
                                       },
                                     ]
                                   }
@@ -1723,8 +1731,33 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                   renderRightNav={[Function]}
                                   showBullets={false}
                                   showFullscreenButton={false}
+                                  showIndex={false}
                                   showPlayButton={false}
                                   showThumbnails={false}
+                                  thumbnails={
+                                    Array [
+                                      Object {
+                                        "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "originalAlt": "Two more cats",
+                                        "originalTitle": "Two more cats",
+                                        "sizes": undefined,
+                                        "srcSet": undefined,
+                                        "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "thumbnailAlt": "Two more cats",
+                                        "thumbnailLabel": "Two more cats",
+                                      },
+                                      Object {
+                                        "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "originalAlt": "Some cats",
+                                        "originalTitle": "Some cats",
+                                        "sizes": undefined,
+                                        "srcSet": undefined,
+                                        "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "thumbnailAlt": "Some cats",
+                                        "thumbnailLabel": "Some cats",
+                                      },
+                                    ]
+                                  }
                                 >
                                   <div />
                                 </ImageGallery>
@@ -2650,6 +2683,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 }
                                 isRounded={false}
                                 isShowingBulletNavigation={false}
+                                isShowingIndex={false}
+                                isShowingThumbnails={false}
                                 isStretched={true}
                               >
                                 <ImageGallery
@@ -2662,6 +2697,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "originalTitle": "Two more cats",
                                         "sizes": undefined,
                                         "srcSet": undefined,
+                                        "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "thumbnailAlt": "Two more cats",
+                                        "thumbnailLabel": "Two more cats",
                                       },
                                       Object {
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -2669,6 +2707,9 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "originalTitle": "Some cats",
                                         "sizes": undefined,
                                         "srcSet": undefined,
+                                        "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "thumbnailAlt": "Some cats",
+                                        "thumbnailLabel": "Some cats",
                                       },
                                     ]
                                   }
@@ -2679,8 +2720,33 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                   renderRightNav={[Function]}
                                   showBullets={false}
                                   showFullscreenButton={false}
+                                  showIndex={false}
                                   showPlayButton={false}
                                   showThumbnails={false}
+                                  thumbnails={
+                                    Array [
+                                      Object {
+                                        "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "originalAlt": "Two more cats",
+                                        "originalTitle": "Two more cats",
+                                        "sizes": undefined,
+                                        "srcSet": undefined,
+                                        "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "thumbnailAlt": "Two more cats",
+                                        "thumbnailLabel": "Two more cats",
+                                      },
+                                      Object {
+                                        "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "originalAlt": "Some cats",
+                                        "originalTitle": "Some cats",
+                                        "sizes": undefined,
+                                        "srcSet": undefined,
+                                        "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                                        "thumbnailAlt": "Some cats",
+                                        "thumbnailLabel": "Some cats",
+                                      },
+                                    ]
+                                  }
                                 >
                                   <div />
                                 </ImageGallery>
