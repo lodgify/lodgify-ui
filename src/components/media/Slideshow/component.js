@@ -40,6 +40,8 @@ export class Component extends PureComponent {
       images,
       isRounded,
       isShowingBulletNavigation,
+      isShowingIndex,
+      isShowingThumbnails,
       isStretched,
     } = this.props;
     const descriptionText = get(images, [this.state.index, 'descriptionText']);
@@ -64,8 +66,10 @@ export class Component extends PureComponent {
           renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
           showBullets={isShowingBulletNavigation}
           showFullscreenButton={false}
+          showIndex={isShowingIndex}
           showPlayButton={false}
-          showThumbnails={false}
+          showThumbnails={isShowingThumbnails}
+          thumbnails={this.state.adaptedImages}
         />
       </Fragment>
     );
@@ -80,14 +84,16 @@ Component.defaultProps = {
   isRounded: true,
   isShowingBulletNavigation: true,
   isStretched: false,
+  isShowingIndex: false,
+  isShowingThumbnails: false,
 };
 
 Component.propTypes = {
-  /** Has the slideshow got a drop shadow  */
+  /** Has the slideshow got a drop shadow. */
   hasShadow: PropTypes.bool,
   /** The text to display as a heading at the top of the slideshow. */
   headingText: PropTypes.string,
-  /**  The images to display.  */
+  /**  The images to display. */
   images: PropTypes.arrayOf(
     PropTypes.shape({
       /** A description of the image to show above the slideshow when the image is showing. */
@@ -102,10 +108,14 @@ Component.propTypes = {
       url: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** Is the slideshow formatted to have rounded corners */
+  /** Is the slideshow formatted to have rounded corners. */
   isRounded: PropTypes.bool,
-  /** Is the slideshow displaying the bullet navigation */
+  /** Is the slideshow displaying the bullet navigation. */
   isShowingBulletNavigation: PropTypes.bool,
-  /** Is the slideshow fitting the height of it's container */
+  /** Is the slideshow displaying the slide index. */
+  isShowingIndex: PropTypes.bool,
+  /** Is the slideshow displaying thumbnails. */
+  isShowingThumbnails: PropTypes.bool,
+  /** Is the slideshow fitting the height of it's container. */
   isStretched: PropTypes.bool,
 };
