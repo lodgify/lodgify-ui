@@ -21,6 +21,14 @@
 
 @imageGalleryBulletsBottomPosition: -(@20px);
 
+@imageSliderBottomMargin: @40px;
+
+@imageGalleryIndexTopOffset: -50px;
+
+@imageGalleryThumbnailColumnGap: @20px;
+@imageGalleryThumbnailWidth: 90px;
+@imageGalleryThumbnailHeight: 90px;
+
 /*******************************
       RoomType Image Gallery
 *******************************/

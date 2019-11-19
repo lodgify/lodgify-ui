@@ -2,11 +2,11 @@
             Theme
 *******************************/
 
-@type     : 'third-party-component';
+@type: "third-party-component";
 
-@element  : 'react-image-gallery';
+@element: "react-image-gallery";
 
-@import (multiple) '../../theme.config';
+@import (multiple) "../../theme.config";
 
 /*******************************
           Image Gallery
@@ -18,17 +18,14 @@
   z-index: @imageGalleryZindex;
 
   > .image-gallery-content {
-    height: @imageGalleryImageMaxHeight;
-
     .image-gallery-slide-wrapper {
-      height: 100%;
+      height: @imageGalleryImageMaxHeight;
+      margin-bottom: @imageSliderBottomMargin;
 
       > .image-gallery-swipe {
-        border-radius: @imageGalleryImagesBorderRadius;
-        box-shadow: @floatingShadow;
         overflow: hidden;
-        background: @greyTwo;
         height: 100%;
+        border-radius: @imageGalleryImagesBorderRadius;
 
         .image-gallery-slides {
           height: 100%;
@@ -45,7 +42,9 @@
         .image-gallery-image {
           height: 100%;
           align-items: center;
-          display: flex;
+          display: flex !important;
+          justify-content: center !important;
+          overflow: hidden;
 
           @supports (object-fit: cover) {
             align-items: normal;
@@ -53,14 +52,18 @@
           }
 
           > img {
-            width: 100%;
-
+            width: unset;
+            border-radius: @imageGalleryImagesBorderRadius;
             @supports (object-fit: cover) {
               height: 100%;
               object-fit: cover;
             }
           }
         }
+      }
+
+      > .image-gallery-index {
+        top: @imageGalleryIndexTopOffset;
       }
 
       // This `span` wraps the left and right nav buttons.
@@ -80,9 +83,15 @@
 
           &:hover {
             background: @themeActionColorDefault;
-            background: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
+            background: var(
+              @themeActionDarkerColorIdentifier,
+              @themeActionDarkerColorDefault
+            );
             color: @themeActionContrastColorDefault;
-            color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+            color: var(
+              @themeActionContrastColorIdentifier,
+              @themeActionContrastColorDefault
+            );
           }
 
           .icon {
@@ -102,7 +111,43 @@
 
           &.active {
             background-color: @themeActionColorDefault;
-            background-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+            background-color: var(
+              @themeActionColorIdentifier,
+              @themeActionColorDefault
+            );
+          }
+        }
+      }
+    }
+
+    .image-gallery-thumbnails-wrapper {
+      display: flex;
+      justify-content: center;
+
+      .image-gallery-thumbnails-container {
+        display: grid;
+        grid-column-gap: @imageGalleryThumbnailColumnGap;
+        grid-auto-flow: column;
+
+        .image-gallery-thumbnail {
+          height: @imageGalleryThumbnailHeight;
+          width: @imageGalleryThumbnailWidth;
+          border: none;
+          margin-left: 0;
+          border-radius: @imageGalleryImagesBorderRadius;
+          overflow: hidden;
+
+          .image-gallery-thumbnail-inner {
+            display: flex;
+            justify-content: center;
+            min-height: @imageGalleryThumbnailHeight;
+
+            > img {
+              @supports (object-fit: cover) {
+                width: 100%;
+                object-fit: cover;
+              }
+            }
           }
         }
       }
@@ -129,15 +174,29 @@
   background: transparent;
 }
 
-&.no-shadow .image-gallery-content .image-gallery-slide-wrapper > .image-gallery-swipe {
+&.no-shadow
+  .image-gallery-content
+  .image-gallery-slide-wrapper
+  > .image-gallery-swipe {
   box-shadow: none;
 }
 
-&.no-border-radius .image-gallery-content .image-gallery-slide-wrapper > .image-gallery-swipe {
+&.no-border-radius
+  .image-gallery-content
+  .image-gallery-slide-wrapper
+  > .image-gallery-swipe {
   border-radius: 0;
 }
 
 .ui.fluid.card.has-room-type-gallery {
+  .image-gallery-image {
+    border-radius: 0px;
+
+    > img {
+      width: 100% !important;
+      border-radius: 0px;
+    }
+  }
 
   .placeholder.block.rectangle {
     padding-top: @roomTypeImageGalleryPlaceholderHeight;
