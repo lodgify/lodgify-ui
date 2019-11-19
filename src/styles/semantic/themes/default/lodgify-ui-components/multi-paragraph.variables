@@ -1,0 +1,8 @@
+/*--------------------------
+  Multi Paragraph
+--------------------------*/
+@multiParagraphMaxHeight: 300px;
+@multiParagraphMaxHeightMaxEdge: 10000px;
+@multiParagraphTransition: 2s ease-out;
+@multiParagraphShowMoreGradient: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+@multiParagraphShowMoreGradientHeight: 4em;

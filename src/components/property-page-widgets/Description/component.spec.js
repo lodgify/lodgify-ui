@@ -1,5 +1,6 @@
 import React from 'react';
-import { mount } from 'enzyme';
+import { act } from 'react-dom/test-utils';
+import { shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
 import {
@@ -35,60 +36,66 @@ const props = {
 };
 
 const getDescription = extraProps =>
-  mount(<Description {...props} {...extraProps} />);
+  shallow(<Description {...props} {...extraProps} />);
 
-describe('<Description />', () => {
-  it('should have the correct structure', () => {
-    const wrapper = getDescription();
-
-    expect(wrapper).toMatchSnapshot();
-  });
-
-  describe('if `props.descriptionText` is HTML', () => {
+act(() => {
+  describe('<Description />', () => {
     it('should have the correct structure', () => {
-      const wrapper = getDescription({ descriptionText: htmlDescriptionText });
+      const wrapper = getDescription();
 
       expect(wrapper).toMatchSnapshot();
     });
-  });
 
-  describe('if `props.descriptionText` is a plain string with fewer than 100 words', () => {
-    it('should have the correct structure', () => {
-      const wrapper = getDescription({ descriptionText });
+    describe('if `props.descriptionText` is HTML', () => {
+      it('should have the correct structure', () => {
+        const wrapper = getDescription({
+          descriptionText: htmlDescriptionText,
+        });
 
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.descriptionText` is a plain string with more than 100 words', () => {
-    it('should have the correct structure', () => {
-      const wrapper = getDescription({ descriptionText: longDescriptionText });
-
-      expect(wrapper).toMatchSnapshot();
-    });
-  });
-
-  describe('if `props.homeHighlights` is empty', () => {
-    it('should not render the home highlights', () => {
-      const wrapper = getDescription({
-        homeHighlights: [],
+        expect(wrapper).toMatchSnapshot();
       });
-
-      expect(wrapper).toMatchSnapshot();
     });
-  });
 
-  describe('if `props.mainCharacteristics` is empty', () => {
-    it('should not render the `Characteristics` component', () => {
-      const wrapper = getDescription({
-        mainCharacteristics: [],
+    describe('if `props.descriptionText` is a plain string with fewer than 100 words', () => {
+      it('should have the correct structure', () => {
+        const wrapper = getDescription({ descriptionText });
+
+        expect(wrapper).toMatchSnapshot();
       });
-
-      expect(wrapper).toMatchSnapshot();
     });
-  });
 
-  it('should have `displayName` `Description`', () => {
-    expectComponentToHaveDisplayName(Description, 'Description');
+    describe('if `props.descriptionText` is a plain string with more than 100 words', () => {
+      it('should have the correct structure', () => {
+        const wrapper = getDescription({
+          descriptionText: longDescriptionText,
+        });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.homeHighlights` is empty', () => {
+      it('should not render the home highlights', () => {
+        const wrapper = getDescription({
+          homeHighlights: [],
+        });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
+    describe('if `props.mainCharacteristics` is empty', () => {
+      it('should not render the `Characteristics` component', () => {
+        const wrapper = getDescription({
+          mainCharacteristics: [],
+        });
+
+        expect(wrapper).toMatchSnapshot();
+      });
+    });
+
+    it('should have `displayName` `Description`', () => {
+      expectComponentToHaveDisplayName(Description, 'Description');
+    });
   });
 });
