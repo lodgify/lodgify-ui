@@ -67,12 +67,12 @@ Component.defaultProps = {
   isHtml: false,
 };
 Component.propTypes = {
-  /** text to show or hide */
+  /** The text will be shown (and eventually cut) by the component. */
   content: string.isRequired,
-  /** not cut the text as default */
+  /** Is the content displaying as Html. */
   isHtml: bool,
-  /** not cut the text as default */
+  /** Is it showing all the content since the beginning. */
   isShowingAll: bool,
-  /** show more button label */
+  /** The label of the button that allows users to see all the content. */
   showMoreLabel: string,
 };
