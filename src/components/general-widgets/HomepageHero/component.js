@@ -1,15 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import { CHECK_OUR_AVAILABILITY } from 'utils/default-strings';
-import { FlexContainer } from 'layout/FlexContainer';
-import { Grid } from 'layout/Grid';
-import { GridRow } from 'layout/GridRow';
-import { Heading } from 'typography/Heading';
 import { Hero } from 'collections/Hero';
-import { HorizontalGutters } from 'layout/HorizontalGutters';
-import { SearchBar } from 'general-widgets/SearchBar';
-import { ShowOn } from 'layout/ShowOn';
+
+import { InnerContent } from './components/InnerContent';
 
 /**
  * A homepage hero displays a hero with heading and a search bar on desktop screens.
@@ -51,104 +45,48 @@ export const Component = ({
   searchBarOnChangeInput,
   searchBarOnSubmit,
   searchBarSearchButton,
-}) => {
-  const searchBarSharedProps = {
-    dateRangePickerLocaleCode: searchBarDateRangePickerLocaleCode,
-    datesCheckInLabel: searchBarDatesCheckInLabel,
-    datesCheckOutLabel: searchBarDatesCheckOutLabel,
-    datesInputFocusedInput: searchBarDatesInputFocusedInput,
-    datesInputOnFocusChange: searchBarDatesInputOnFocusChange,
-    datesInputValue: searchBarDatesInputValue,
-    getIsDayBlocked: searchBarGetIsDayBlocked,
-    guestsInputLabel: searchBarGuestsInputLabel,
-    guestsInputValue: searchBarGuestsInputValue,
-    locationInputLabel: searchBarLocationInputLabel,
-    locationInputValue: searchBarLocationInputValue,
-    locationOptions: searchBarLocationOptions,
-    maximumGuestsInputValue: searchBarMaximumGuestsInputValue,
-    onChangeInput: searchBarOnChangeInput,
-    onSubmit: searchBarOnSubmit,
-    searchButton: searchBarSearchButton,
-    isDateRangePickerLoading: isSearchBarDateRangePickerLoading,
-  };
-
-  return (
-    <Hero
-      activeNavigationItemIndex={activeNavigationItemIndex}
-      backgroundImageHeight={backgroundImageHeight}
-      backgroundImageSizes={backgroundImageSizes}
-      backgroundImageSrcSet={backgroundImageSrcSet}
-      backgroundImageUrl={backgroundImageUrl}
-      backgroundImageWidth={backgroundImageWidth}
-      headerLogoHref={headerLogoHref}
-      headerLogoSize={headerLogoSize}
-      headerLogoSizes={headerLogoSizes}
-      headerLogoSrc={headerLogoSrc}
-      headerLogoSrcSet={headerLogoSrcSet}
-      headerLogoSubText={headerLogoSubText}
-      headerLogoText={headerLogoText}
-      headerNavigationItems={headerNavigationItems}
-      headerPrimaryCTA={headerPrimaryCTA}
-      placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
-    >
-      <FlexContainer
-        alignItems="center"
-        flexDirection="column"
-        justifyContent="space-evenly"
-      >
-        <HorizontalGutters>
-          <ShowOn
-            computer
-            parent={Heading}
-            parentProps={{
-              isColorInverted: true,
-              size: 'huge',
-              textAlign: 'center',
-            }}
-            tablet
-            widescreen
-          >
-            {headingText}
-          </ShowOn>
-          <ShowOn
-            mobile
-            parent={Heading}
-            parentProps={{
-              isColorInverted: true,
-              size: 'large',
-              textAlign: 'center',
-            }}
-          >
-            {headingText}
-          </ShowOn>
-        </HorizontalGutters>
-        <HorizontalGutters>
-          <Grid areColumnsCentered>
-            <GridRow horizontalAlignContent="center">
-              <ShowOn
-                computer
-                parent={SearchBar}
-                parentProps={{
-                  ...searchBarSharedProps,
-                  willLocationDropdownOpenAbove: true,
-                }}
-                tablet
-                widescreen
-              />
-              <ShowOn mobile>
-                <SearchBar
-                  {...searchBarSharedProps}
-                  isDisplayedAsModal
-                  modalHeadingText={searchBarModalHeadingText}
-                />
-              </ShowOn>
-            </GridRow>
-          </Grid>
-        </HorizontalGutters>
-      </FlexContainer>
-    </Hero>
-  );
-};
+}) => (
+  <Hero
+    activeNavigationItemIndex={activeNavigationItemIndex}
+    backgroundImageHeight={backgroundImageHeight}
+    backgroundImageSizes={backgroundImageSizes}
+    backgroundImageSrcSet={backgroundImageSrcSet}
+    backgroundImageUrl={backgroundImageUrl}
+    backgroundImageWidth={backgroundImageWidth}
+    headerLogoHref={headerLogoHref}
+    headerLogoSize={headerLogoSize}
+    headerLogoSizes={headerLogoSizes}
+    headerLogoSrc={headerLogoSrc}
+    headerLogoSrcSet={headerLogoSrcSet}
+    headerLogoSubText={headerLogoSubText}
+    headerLogoText={headerLogoText}
+    headerNavigationItems={headerNavigationItems}
+    headerPrimaryCTA={headerPrimaryCTA}
+    placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
+  >
+    <InnerContent
+      headingText={headingText}
+      isSearchBarDateRangePickerLoading={isSearchBarDateRangePickerLoading}
+      searchBarDateRangePickerLocaleCode={searchBarDateRangePickerLocaleCode}
+      searchBarDatesCheckInLabel={searchBarDatesCheckInLabel}
+      searchBarDatesCheckOutLabel={searchBarDatesCheckOutLabel}
+      searchBarDatesInputFocusedInput={searchBarDatesInputFocusedInput}
+      searchBarDatesInputOnFocusChange={searchBarDatesInputOnFocusChange}
+      searchBarDatesInputValue={searchBarDatesInputValue}
+      searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
+      searchBarGuestsInputLabel={searchBarGuestsInputLabel}
+      searchBarGuestsInputValue={searchBarGuestsInputValue}
+      searchBarLocationInputLabel={searchBarLocationInputLabel}
+      searchBarLocationInputValue={searchBarLocationInputValue}
+      searchBarLocationOptions={searchBarLocationOptions}
+      searchBarMaximumGuestsInputValue={searchBarMaximumGuestsInputValue}
+      searchBarModalHeadingText={searchBarModalHeadingText}
+      searchBarOnChangeInput={searchBarOnChangeInput}
+      searchBarOnSubmit={searchBarOnSubmit}
+      searchBarSearchButton={searchBarSearchButton}
+    />
+  </Hero>
+);
 
 Component.displayName = 'HomepageHero';
 
@@ -167,7 +105,7 @@ Component.defaultProps = {
   headerLogoSrcSet: undefined,
   headerPrimaryCTA: null,
   headerLogoSubText: undefined,
-  headingText: null,
+  headingText: undefined,
   isSearchBarDateRangePickerLoading: undefined,
   searchBarLocationInputValue: undefined,
   searchBarMaximumGuestsInputValue: undefined,
@@ -181,7 +119,7 @@ Component.defaultProps = {
   searchBarGuestsInputLabel: undefined,
   searchBarLocationInputLabel: undefined,
   searchBarLocationOptions: undefined,
-  searchBarModalHeadingText: CHECK_OUR_AVAILABILITY,
+  searchBarModalHeadingText: undefined,
   searchBarOnChangeInput: undefined,
   searchBarOnSubmit: Function.prototype,
   searchBarSearchButton: undefined,

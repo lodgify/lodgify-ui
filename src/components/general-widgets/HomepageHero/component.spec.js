@@ -1,14 +1,14 @@
 jest.mock('uniqid');
-jest.mock('react-dates', () => {
+jest.mock('./components/InnerContent', () => {
   const { Component } = require('react');
 
-  class DateRangePicker extends Component {
+  class InnerContent extends Component {
     render() {
       return <div />;
     }
   }
 
-  return { DateRangePicker };
+  return { InnerContent };
 });
 
 import React from 'react';
