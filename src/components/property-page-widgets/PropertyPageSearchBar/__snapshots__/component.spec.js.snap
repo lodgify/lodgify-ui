@@ -799,6 +799,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                         willLocationDropdownOpenAbove={false}
                       >
                         <Modal
+                          className={null}
                           hasCloseIcon={true}
                           hasPadding={true}
                           hasRoundedCorners={false}
@@ -813,7 +814,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                               Check our availability
                             </Heading>
                           }
-                          isDark={false}
                           isFullscreen={true}
                           isOpen={false}
                           onClose={[Function]}
@@ -1737,6 +1737,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                         willLocationDropdownOpenAbove={false}
                       >
                         <Modal
+                          className={null}
                           hasCloseIcon={true}
                           hasPadding={true}
                           hasRoundedCorners={false}
@@ -1752,7 +1753,6 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                               ratingNumber={4.5}
                             />
                           }
-                          isDark={false}
                           isFullscreen={true}
                           isOpen={false}
                           onClose={[Function]}
@@ -2934,6 +2934,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                         willLocationDropdownOpenAbove={false}
                       >
                         <Modal
+                          className={null}
                           hasCloseIcon={true}
                           hasPadding={true}
                           hasRoundedCorners={false}
@@ -2948,7 +2949,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                               Check our availability
                             </Heading>
                           }
-                          isDark={false}
                           isFullscreen={true}
                           isOpen={false}
                           onClose={[Function]}
@@ -4038,6 +4038,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                         willLocationDropdownOpenAbove={false}
                       >
                         <Modal
+                          className={null}
                           hasCloseIcon={true}
                           hasPadding={true}
                           hasRoundedCorners={false}
@@ -4053,7 +4054,6 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                               ratingNumber={4.5}
                             />
                           }
-                          isDark={false}
                           isFullscreen={true}
                           isOpen={false}
                           onClose={[Function]}

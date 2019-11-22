@@ -49,7 +49,7 @@
     "test": "jest --coverage --config $npm_package_config_jest_config",
     "test:ci": "npm run test -- --runInBand",
     "test:no-cache": "npm run test -- --no-cache",
-    "test:watch": "jest --config $npm_package_config_jest_config --watch"
+    "test:watch": "jest --config $npm_package_config_jest_config --watch --coverage"
   },
   "repository": {
     "type": "git",

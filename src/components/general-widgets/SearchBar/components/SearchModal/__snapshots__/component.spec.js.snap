@@ -12,11 +12,11 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
   searchButton={<div />}
 >
   <Modal
+    className={null}
     hasCloseIcon={true}
     hasPadding={true}
     hasRoundedCorners={false}
     header={<div />}
-    isDark={false}
     isFullscreen={true}
     isOpen={false}
     onClose={[Function]}
@@ -122,6 +122,7 @@ exports[`getSearchBarModal should return the right structure 1`] = `
   searchButton={<div />}
 >
   <Modal
+    className={null}
     hasCloseIcon={true}
     hasPadding={true}
     hasRoundedCorners={false}
@@ -136,7 +137,6 @@ exports[`getSearchBarModal should return the right structure 1`] = `
         Hello world
       </Heading>
     }
-    isDark={false}
     isFullscreen={true}
     isOpen={false}
     onClose={[Function]}

@@ -10,7 +10,6 @@ export const adaptImages = images =>
     originalTitle: title,
     thumbnail: url,
     thumbnailAlt: title,
-    thumbnailLabel: title,
     sizes,
     srcSet,
   }));

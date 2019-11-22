@@ -2,11 +2,11 @@
 
 exports[`getModalFormMarkup if \`isBotProtected\` === true should render the right structure 1`] = `
 <Modal
+  className={null}
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
-  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -190,11 +190,11 @@ exports[`getModalFormMarkup if \`isBotProtected\` === true should render the rig
 
 exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should render the right structure 1`] = `
 <Modal
+  className={null}
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
-  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -378,11 +378,11 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
 
 exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should render the right structure 1`] = `
 <Modal
+  className={null}
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
-  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -572,11 +572,11 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
 
 exports[`getModalFormMarkup should have the right structure with default props 1`] = `
 <Modal
+  className={null}
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
-  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -748,11 +748,11 @@ exports[`getModalFormMarkup should have the right structure with default props 1
 
 exports[`getModalFormMarkup should render the right structure when props are passed 1`] = `
 <Modal
+  className={null}
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
-  isDark={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"

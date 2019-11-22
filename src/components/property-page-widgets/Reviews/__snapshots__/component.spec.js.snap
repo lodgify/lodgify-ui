@@ -154,11 +154,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
                     className="right floated top aligned six wide computer seven wide mobile seven wide tablet column"
                   >
                     <Modal
+                      className={null}
                       hasCloseIcon={true}
                       hasPadding={false}
                       hasRoundedCorners={false}
                       header={null}
-                      isDark={false}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"
@@ -1248,11 +1248,11 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
                     className="right floated top aligned six wide computer seven wide mobile seven wide tablet column"
                   >
                     <Modal
+                      className={null}
                       hasCloseIcon={true}
                       hasPadding={false}
                       hasRoundedCorners={false}
                       header={null}
-                      isDark={false}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"
@@ -2365,11 +2365,11 @@ exports[`<Reviews /> should render the right structure 1`] = `
                     className="right floated top aligned six wide computer seven wide mobile seven wide tablet column"
                   >
                     <Modal
+                      className={null}
                       hasCloseIcon={true}
                       hasPadding={false}
                       hasRoundedCorners={false}
                       header={null}
-                      isDark={false}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"

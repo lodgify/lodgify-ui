@@ -63,7 +63,7 @@ exports[`<Modal /> if \`props.isDark\` is passed should get the right props 1`] 
   }
   closeOnDimmerClick={true}
   closeOnDocumentClick={false}
-  dimmer={true}
+  dimmer="inverted"
   eventPool="Modal"
   onClose={[Function]}
   size="tiny"

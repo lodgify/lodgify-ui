@@ -218,7 +218,6 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -242,7 +241,6 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -621,7 +619,6 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -645,7 +642,6 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -1080,7 +1076,6 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -1104,7 +1099,6 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -1715,7 +1709,6 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
             Object {
               "original": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
@@ -1725,7 +1718,6 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               "srcSet": undefined,
               "thumbnail": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -1749,7 +1741,6 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
             Object {
               "original": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
@@ -1759,7 +1750,6 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
               "srcSet": undefined,
               "thumbnail": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -2366,7 +2356,6 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
@@ -2390,7 +2379,6 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
-              "thumbnailLabel": "Two cats",
             },
           ]
         }
