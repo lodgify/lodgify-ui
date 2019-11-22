@@ -28,8 +28,8 @@ const props = {
   headerNavigationItems: [{ text: 'Home', href: '/' }],
   headerPrimaryCTA: { onClick: Function.prototype, text: 'Book now' },
   galleryImages: [
-    { imageUrl, label: 'Entrance' },
-    { imageUrl, label: 'Kitchen' },
+    { url: imageUrl, descriptionText: 'Entrance' },
+    { url: imageUrl, descriptionText: 'Kitchen' },
   ],
   secondaryButtonText: '🐸',
 };
@@ -52,7 +52,7 @@ describe('PropertyPageHero', () => {
   describe('if there are fewer than two items in `galleryImages`', () => {
     it('should render the right structure', () => {
       const actual = getWrappedPropertyPageHero({
-        galleryImages: [{ imageUrl, label: 'Entrance' }],
+        galleryImages: [{ url: imageUrl, descriptionText: 'Entrance' }],
       });
 
       expect(actual).toMatchSnapshot();

@@ -7,8 +7,8 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
   galleryImages={
     Array [
       Object {
-        "imageUrl": "🚞",
-        "label": "Entrance",
+        "descriptionText": "Entrance",
+        "url": "🚞",
       },
     ]
   }
@@ -361,12 +361,12 @@ exports[`PropertyPageHero should render the right structure 1`] = `
   galleryImages={
     Array [
       Object {
-        "imageUrl": "🚞",
-        "label": "Entrance",
+        "descriptionText": "Entrance",
+        "url": "🚞",
       },
       Object {
-        "imageUrl": "🚞",
-        "label": "Kitchen",
+        "descriptionText": "Kitchen",
+        "url": "🚞",
       },
     ]
   }
@@ -734,16 +734,15 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                     className="ui container"
                   >
                     <Gallery
-                      headingText={null}
                       images={
                         Array [
                           Object {
-                            "imageUrl": "🚞",
-                            "label": "Entrance",
+                            "descriptionText": "Entrance",
+                            "url": "🚞",
                           },
                           Object {
-                            "imageUrl": "🚞",
-                            "label": "Kitchen",
+                            "descriptionText": "Kitchen",
+                            "url": "🚞",
                           },
                         ]
                       }
@@ -762,20 +761,23 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                           isSecondary={true}
                           onClick={[Function]}
                           size={null}
-                        >
-                          🐸
-                        </Button>
+                        />
                       }
                     >
-                      <Modal
-                        className={null}
-                        hasCloseIcon={true}
-                        hasPadding={true}
-                        hasRoundedCorners={false}
-                        header={null}
-                        isFullscreen={true}
-                        onClose={[Function]}
-                        size="tiny"
+                      <LightBox
+                        data-testid="gallery"
+                        slideShowImages={
+                          Array [
+                            Object {
+                              "descriptionText": "Entrance",
+                              "url": "🚞",
+                            },
+                            Object {
+                              "descriptionText": "Kitchen",
+                              "url": "🚞",
+                            },
+                          ]
+                        }
                         trigger={
                           <Button
                             hasShadow={false}
@@ -791,37 +793,19 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                             isSecondary={true}
                             onClick={[Function]}
                             size={null}
-                          >
-                            🐸
-                          </Button>
+                          />
                         }
                       >
                         <Modal
-                          centered={true}
-                          className="has-padding"
-                          closeIcon={
-                            <Icon
-                              className={null}
-                              color={null}
-                              hasBorder={false}
-                              isButton={false}
-                              isCircular={false}
-                              isColorInverted={false}
-                              isDisabled={false}
-                              isLabelLeft={false}
-                              labelText={null}
-                              labelWeight={null}
-                              name="close"
-                              path={null}
-                              size={null}
-                            />
-                          }
-                          closeOnDimmerClick={true}
-                          closeOnDocumentClick={false}
-                          dimmer="inverted"
-                          eventPool="Modal"
+                          className="is-lightbox"
+                          data-testid="lightbox"
+                          hasCloseIcon={true}
+                          hasPadding={false}
+                          hasRoundedCorners={false}
+                          header={null}
+                          isFullscreen={true}
                           onClose={[Function]}
-                          size="fullscreen"
+                          size="tiny"
                           trigger={
                             <Button
                               hasShadow={false}
@@ -837,21 +821,35 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                               isSecondary={true}
                               onClick={[Function]}
                               size={null}
-                            >
-                              🐸
-                            </Button>
+                            />
                           }
                         >
-                          <Portal
+                          <Modal
+                            centered={true}
+                            className="is-lightbox"
+                            closeIcon={
+                              <Icon
+                                className={null}
+                                color={null}
+                                hasBorder={false}
+                                isButton={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="close"
+                                path={null}
+                                size={null}
+                              />
+                            }
+                            closeOnDimmerClick={true}
                             closeOnDocumentClick={false}
-                            closeOnEscape={true}
+                            dimmer="inverted"
                             eventPool="Modal"
-                            mountNode={<body />}
                             onClose={[Function]}
-                            onMount={[Function]}
-                            onOpen={[Function]}
-                            onUnmount={[Function]}
-                            openOnTriggerClick={true}
+                            size="fullscreen"
                             trigger={
                               <Button
                                 hasShadow={false}
@@ -867,17 +865,20 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                 isSecondary={true}
                                 onClick={[Function]}
                                 size={null}
-                              >
-                                🐸
-                              </Button>
+                              />
                             }
                           >
-                            <Ref
-                              innerRef={[Function]}
-                            >
-                              <RefFindNode
-                                innerRef={[Function]}
-                              >
+                            <Portal
+                              closeOnDocumentClick={false}
+                              closeOnEscape={true}
+                              eventPool="Modal"
+                              mountNode={<body />}
+                              onClose={[Function]}
+                              onMount={[Function]}
+                              onOpen={[Function]}
+                              onUnmount={[Function]}
+                              openOnTriggerClick={true}
+                              trigger={
                                 <Button
                                   hasShadow={false}
                                   icon="placeholder"
@@ -890,53 +891,52 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                   isPositionedRight={true}
                                   isRounded={false}
                                   isSecondary={true}
-                                  onBlur={[Function]}
                                   onClick={[Function]}
-                                  onFocus={[Function]}
-                                  onMouseEnter={[Function]}
-                                  onMouseLeave={[Function]}
                                   size={null}
+                                />
+                              }
+                            >
+                              <Ref
+                                innerRef={[Function]}
+                              >
+                                <RefFindNode
+                                  innerRef={[Function]}
                                 >
                                   <Button
-                                    as="button"
-                                    basic={false}
-                                    circular={false}
-                                    className=""
-                                    compact={true}
-                                    disabled={false}
-                                    floated="right"
-                                    fluid={false}
-                                    loading={false}
+                                    hasShadow={false}
+                                    icon="placeholder"
+                                    isCompact={true}
+                                    isDisabled={false}
+                                    isFluid={false}
+                                    isFormSubmit={false}
+                                    isLoading={false}
+                                    isOutlined={false}
+                                    isPositionedRight={true}
+                                    isRounded={false}
+                                    isSecondary={true}
+                                    onBlur={[Function]}
                                     onClick={[Function]}
-                                    secondary={true}
+                                    onFocus={[Function]}
+                                    onMouseEnter={[Function]}
+                                    onMouseLeave={[Function]}
                                     size={null}
-                                    type="button"
                                   >
-                                    <Ref
-                                      innerRef={
-                                        Object {
-                                          "current": <button
-                                            class="ui compact secondary right floated button"
-                                            type="button"
-                                          >
-                                            <i
-                                              class="icon"
-                                            >
-                                              <svg
-                                                viewBox="0 0 24 24"
-                                              >
-                                                <path
-                                                  d="M21.58,22.08H2.42a.5.5,0,0,1-.5-.5V2.42a.5.5,0,0,1,.5-.5H21.58a.5.5,0,0,1,.5.5V21.58A.5.5,0,0,1,21.58,22.08Zm-18.66-1H21.08V16.54H2.92Zm1.53-5.54H21.08V13.93L14.91,7.76l-2.42,2.41,1.43,1.43a.5.5,0,0,1,0,.71.51.51,0,0,1-.71,0L10.45,9.54Zm-1.53,0h.16a.65.65,0,0,1,.1-.15l6.91-6.91a.5.5,0,0,1,.71,0l1,1L14.56,6.7a.48.48,0,0,1,.7,0l5.82,5.82V2.92H2.92ZM6.37,8.61a2,2,0,1,1,2-2A2,2,0,0,1,6.37,8.61Zm0-3a1,1,0,1,0,1,1A1,1,0,0,0,6.37,5.65Z"
-                                                  fill="currentColor"
-                                                />
-                                              </svg>
-                                            </i>
-                                            🐸
-                                          </button>,
-                                        }
-                                      }
+                                    <Button
+                                      as="button"
+                                      basic={false}
+                                      circular={false}
+                                      className=""
+                                      compact={true}
+                                      disabled={false}
+                                      floated="right"
+                                      fluid={false}
+                                      loading={false}
+                                      onClick={[Function]}
+                                      secondary={true}
+                                      size={null}
+                                      type="button"
                                     >
-                                      <RefFindNode
+                                      <Ref
                                         innerRef={
                                           Object {
                                             "current": <button
@@ -955,55 +955,77 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                                                   />
                                                 </svg>
                                               </i>
-                                              🐸
                                             </button>,
                                           }
                                         }
                                       >
-                                        <button
-                                          className="ui compact secondary right floated button"
-                                          onClick={[Function]}
-                                          type="button"
-                                        >
-                                          <Icon
-                                            className={null}
-                                            color={null}
-                                            hasBorder={false}
-                                            isButton={false}
-                                            isCircular={false}
-                                            isColorInverted={false}
-                                            isDisabled={false}
-                                            isLabelLeft={false}
-                                            labelText={null}
-                                            labelWeight={null}
-                                            name="placeholder"
-                                            path={null}
-                                            size={null}
-                                          >
-                                            <i
-                                              className="icon"
-                                            >
-                                              <svg
-                                                viewBox="0 0 24 24"
+                                        <RefFindNode
+                                          innerRef={
+                                            Object {
+                                              "current": <button
+                                                class="ui compact secondary right floated button"
+                                                type="button"
                                               >
-                                                <path
-                                                  d="M21.58,22.08H2.42a.5.5,0,0,1-.5-.5V2.42a.5.5,0,0,1,.5-.5H21.58a.5.5,0,0,1,.5.5V21.58A.5.5,0,0,1,21.58,22.08Zm-18.66-1H21.08V16.54H2.92Zm1.53-5.54H21.08V13.93L14.91,7.76l-2.42,2.41,1.43,1.43a.5.5,0,0,1,0,.71.51.51,0,0,1-.71,0L10.45,9.54Zm-1.53,0h.16a.65.65,0,0,1,.1-.15l6.91-6.91a.5.5,0,0,1,.71,0l1,1L14.56,6.7a.48.48,0,0,1,.7,0l5.82,5.82V2.92H2.92ZM6.37,8.61a2,2,0,1,1,2-2A2,2,0,0,1,6.37,8.61Zm0-3a1,1,0,1,0,1,1A1,1,0,0,0,6.37,5.65Z"
-                                                  fill="currentColor"
-                                                />
-                                              </svg>
-                                            </i>
-                                          </Icon>
-                                          🐸
-                                        </button>
-                                      </RefFindNode>
-                                    </Ref>
+                                                <i
+                                                  class="icon"
+                                                >
+                                                  <svg
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <path
+                                                      d="M21.58,22.08H2.42a.5.5,0,0,1-.5-.5V2.42a.5.5,0,0,1,.5-.5H21.58a.5.5,0,0,1,.5.5V21.58A.5.5,0,0,1,21.58,22.08Zm-18.66-1H21.08V16.54H2.92Zm1.53-5.54H21.08V13.93L14.91,7.76l-2.42,2.41,1.43,1.43a.5.5,0,0,1,0,.71.51.51,0,0,1-.71,0L10.45,9.54Zm-1.53,0h.16a.65.65,0,0,1,.1-.15l6.91-6.91a.5.5,0,0,1,.71,0l1,1L14.56,6.7a.48.48,0,0,1,.7,0l5.82,5.82V2.92H2.92ZM6.37,8.61a2,2,0,1,1,2-2A2,2,0,0,1,6.37,8.61Zm0-3a1,1,0,1,0,1,1A1,1,0,0,0,6.37,5.65Z"
+                                                      fill="currentColor"
+                                                    />
+                                                  </svg>
+                                                </i>
+                                              </button>,
+                                            }
+                                          }
+                                        >
+                                          <button
+                                            className="ui compact secondary right floated button"
+                                            onClick={[Function]}
+                                            type="button"
+                                          >
+                                            <Icon
+                                              className={null}
+                                              color={null}
+                                              hasBorder={false}
+                                              isButton={false}
+                                              isCircular={false}
+                                              isColorInverted={false}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="placeholder"
+                                              path={null}
+                                              size={null}
+                                            >
+                                              <i
+                                                className="icon"
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M21.58,22.08H2.42a.5.5,0,0,1-.5-.5V2.42a.5.5,0,0,1,.5-.5H21.58a.5.5,0,0,1,.5.5V21.58A.5.5,0,0,1,21.58,22.08Zm-18.66-1H21.08V16.54H2.92Zm1.53-5.54H21.08V13.93L14.91,7.76l-2.42,2.41,1.43,1.43a.5.5,0,0,1,0,.71.51.51,0,0,1-.71,0L10.45,9.54Zm-1.53,0h.16a.65.65,0,0,1,.1-.15l6.91-6.91a.5.5,0,0,1,.71,0l1,1L14.56,6.7a.48.48,0,0,1,.7,0l5.82,5.82V2.92H2.92ZM6.37,8.61a2,2,0,1,1,2-2A2,2,0,0,1,6.37,8.61Zm0-3a1,1,0,1,0,1,1A1,1,0,0,0,6.37,5.65Z"
+                                                    fill="currentColor"
+                                                  />
+                                                </svg>
+                                              </i>
+                                            </Icon>
+                                          </button>
+                                        </RefFindNode>
+                                      </Ref>
+                                    </Button>
                                   </Button>
-                                </Button>
-                              </RefFindNode>
-                            </Ref>
-                          </Portal>
+                                </RefFindNode>
+                              </Ref>
+                            </Portal>
+                          </Modal>
                         </Modal>
-                      </Modal>
+                      </LightBox>
                     </Gallery>
                   </div>
                 </Container>

@@ -1,22 +1,16 @@
 import { getGalleryMarkup } from './getGalleryMarkup';
 
 const images = [
-  { imageUrl: 'url', label: 'Entrance' },
-  { imageUrl: 'url', label: 'Kitchen' },
+  { url: 'url', descriptionText: 'Entrance' },
+  { url: 'url', descriptionText: 'Kitchen' },
 ];
-const propertyName = 'ShoopDaWoop';
-const ratingNumber = 9.9;
+
 const secondaryButtonText = 'Wadsworth Constant';
 
 describe('`getViewMoreButtonMarkup`', () => {
   describe('if there are two images or more', () => {
     it('should return the right structure', () => {
-      const actual = getGalleryMarkup(
-        images,
-        propertyName,
-        ratingNumber,
-        secondaryButtonText
-      );
+      const actual = getGalleryMarkup(images, secondaryButtonText);
 
       expect(actual).toMatchSnapshot();
     });
@@ -24,12 +18,7 @@ describe('`getViewMoreButtonMarkup`', () => {
 
   describe('if there are fewer than two images', () => {
     it('should return null', () => {
-      const actual = getGalleryMarkup(
-        [images[1]],
-        propertyName,
-        ratingNumber,
-        secondaryButtonText
-      );
+      const actual = getGalleryMarkup([images[1]], secondaryButtonText);
 
       expect(actual).toMatchSnapshot();
     });
