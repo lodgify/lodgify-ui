@@ -13,11 +13,11 @@ import { HorizontalGutters } from 'layout/HorizontalGutters';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   children,
-  header,
+  className,
   hasCloseIcon,
   hasPadding,
   hasRoundedCorners,
-  isDark,
+  header,
   isFullscreen,
   isOpen,
   onClose,
@@ -25,12 +25,12 @@ export const Component = ({
   trigger,
 }) => (
   <Modal
-    className={classnames({
+    className={classnames(className, {
       'has-padding': hasPadding,
       'has-rounded-corners': hasRoundedCorners,
     })}
     closeIcon={hasCloseIcon && <Icon name={ICON_NAMES.CLOSE} />}
-    dimmer={isDark || 'inverted'}
+    dimmer="inverted"
     onClose={onClose}
     open={isOpen}
     size={isFullscreen ? 'fullscreen' : size}
@@ -48,11 +48,11 @@ export const Component = ({
 Component.displayName = 'Modal';
 
 Component.defaultProps = {
+  className: null,
   header: null,
   hasCloseIcon: true,
   hasPadding: false,
   hasRoundedCorners: false,
-  isDark: false,
   isFullscreen: false,
   isOpen: undefined,
   onClose: Function.prototype,
@@ -63,6 +63,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The content of the modal when displayed. */
   children: PropTypes.node.isRequired,
+  /** Custom className for the Modal. */
+  className: PropTypes.string,
   /** Does the modal have a close icon. */
   hasCloseIcon: PropTypes.bool,
   /** Does the modal have padding around its content. */
@@ -71,8 +73,6 @@ Component.propTypes = {
   hasRoundedCorners: PropTypes.bool,
   /** The header fixed at the top of the modal. */
   header: PropTypes.node,
-  /** Is the modal dimmer dark. */
-  isDark: PropTypes.bool,
   /** Is the modal filling the whole screen when displayed. */
   isFullscreen: PropTypes.bool,
   /** Is the modal open. Used when consuming `Modal` as a controlled component. */
