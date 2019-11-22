@@ -5,37 +5,22 @@ exports[`<Pictures /> should render the correct structure 1`] = `
   galleryImages={
     Array [
       Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Entrance",
-        "label": "Entrance",
+        "descriptionText": "Two cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Kitchen",
-        "label": "Kitchen",
+        "descriptionText": "Two more cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
       Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Living room",
-        "label": "Living room",
-      },
-      Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Studio",
-        "label": "Studio",
-      },
-      Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Garden room",
-        "label": "Garden room",
+        "descriptionText": "Much cats",
+        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
       },
     ]
   }
   headingText="Property pictures"
   linkText="Explore all pictures"
   numberOfThumbnails={6}
-  propertyName={null}
-  ratingNumber={null}
   thumbnailImages={
     Array [
       Object {
@@ -1235,33 +1220,19 @@ exports[`<Pictures /> should render the correct structure 1`] = `
               className="top aligned twelve wide column"
             >
               <Gallery
-                headingText={null}
                 images={
                   Array [
                     Object {
-                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                      "imageUrlAlternativeText": "Entrance",
-                      "label": "Entrance",
+                      "descriptionText": "Two cats",
+                      "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                     },
                     Object {
-                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                      "imageUrlAlternativeText": "Kitchen",
-                      "label": "Kitchen",
+                      "descriptionText": "Two more cats",
+                      "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                     },
                     Object {
-                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                      "imageUrlAlternativeText": "Living room",
-                      "label": "Living room",
-                    },
-                    Object {
-                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                      "imageUrlAlternativeText": "Studio",
-                      "label": "Studio",
-                    },
-                    Object {
-                      "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                      "imageUrlAlternativeText": "Garden room",
-                      "label": "Garden room",
+                      "descriptionText": "Much cats",
+                      "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                     },
                   ]
                 }
@@ -1277,15 +1248,24 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                   </Link>
                 }
               >
-                <Modal
-                  className={null}
-                  hasCloseIcon={true}
-                  hasPadding={true}
-                  hasRoundedCorners={false}
-                  header={null}
-                  isFullscreen={true}
-                  onClose={[Function]}
-                  size="tiny"
+                <LightBox
+                  data-testid="gallery"
+                  slideShowImages={
+                    Array [
+                      Object {
+                        "descriptionText": "Two cats",
+                        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                      },
+                      Object {
+                        "descriptionText": "Two more cats",
+                        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                      },
+                      Object {
+                        "descriptionText": "Much cats",
+                        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                      },
+                    ]
+                  }
                   trigger={
                     <Link
                       href={null}
@@ -1299,31 +1279,15 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                   }
                 >
                   <Modal
-                    centered={true}
-                    className="has-padding"
-                    closeIcon={
-                      <Icon
-                        className={null}
-                        color={null}
-                        hasBorder={false}
-                        isButton={false}
-                        isCircular={false}
-                        isColorInverted={false}
-                        isDisabled={false}
-                        isLabelLeft={false}
-                        labelText={null}
-                        labelWeight={null}
-                        name="close"
-                        path={null}
-                        size={null}
-                      />
-                    }
-                    closeOnDimmerClick={true}
-                    closeOnDocumentClick={false}
-                    dimmer="inverted"
-                    eventPool="Modal"
+                    className="is-lightbox"
+                    data-testid="lightbox"
+                    hasCloseIcon={true}
+                    hasPadding={false}
+                    hasRoundedCorners={false}
+                    header={null}
+                    isFullscreen={true}
                     onClose={[Function]}
-                    size="fullscreen"
+                    size="tiny"
                     trigger={
                       <Link
                         href={null}
@@ -1336,16 +1300,32 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                       </Link>
                     }
                   >
-                    <Portal
+                    <Modal
+                      centered={true}
+                      className="is-lightbox"
+                      closeIcon={
+                        <Icon
+                          className={null}
+                          color={null}
+                          hasBorder={false}
+                          isButton={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="close"
+                          path={null}
+                          size={null}
+                        />
+                      }
+                      closeOnDimmerClick={true}
                       closeOnDocumentClick={false}
-                      closeOnEscape={true}
+                      dimmer="inverted"
                       eventPool="Modal"
-                      mountNode={<body />}
                       onClose={[Function]}
-                      onMount={[Function]}
-                      onOpen={[Function]}
-                      onUnmount={[Function]}
-                      openOnTriggerClick={true}
+                      size="fullscreen"
                       trigger={
                         <Link
                           href={null}
@@ -1358,47 +1338,56 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                         </Link>
                       }
                     >
-                      <Ref
-                        innerRef={[Function]}
-                      >
-                        <RefFindNode
-                          innerRef={[Function]}
-                        >
+                      <Portal
+                        closeOnDocumentClick={false}
+                        closeOnEscape={true}
+                        eventPool="Modal"
+                        mountNode={<body />}
+                        onClose={[Function]}
+                        onMount={[Function]}
+                        onOpen={[Function]}
+                        onUnmount={[Function]}
+                        openOnTriggerClick={true}
+                        trigger={
                           <Link
                             href={null}
                             isFluid={false}
                             isPositionedRight={false}
-                            onBlur={[Function]}
                             onClick={[Function]}
-                            onFocus={[Function]}
-                            onMouseEnter={[Function]}
-                            onMouseLeave={[Function]}
                             willOpenInNewTab={false}
                           >
-                            <Button
-                              as={null}
-                              basic={true}
-                              floated="left"
-                              fluid={false}
+                            Explore all pictures
+                          </Link>
+                        }
+                      >
+                        <Ref
+                          innerRef={[Function]}
+                        >
+                          <RefFindNode
+                            innerRef={[Function]}
+                          >
+                            <Link
                               href={null}
+                              isFluid={false}
+                              isPositionedRight={false}
+                              onBlur={[Function]}
                               onClick={[Function]}
-                              target="_self"
-                              type="button"
+                              onFocus={[Function]}
+                              onMouseEnter={[Function]}
+                              onMouseLeave={[Function]}
+                              willOpenInNewTab={false}
                             >
-                              <Ref
-                                innerRef={
-                                  Object {
-                                    "current": <button
-                                      class="ui basic left floated button"
-                                      target="_self"
-                                      type="button"
-                                    >
-                                      Explore all pictures
-                                    </button>,
-                                  }
-                                }
+                              <Button
+                                as={null}
+                                basic={true}
+                                floated="left"
+                                fluid={false}
+                                href={null}
+                                onClick={[Function]}
+                                target="_self"
+                                type="button"
                               >
-                                <RefFindNode
+                                <Ref
                                   innerRef={
                                     Object {
                                       "current": <button
@@ -1411,24 +1400,38 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                                     }
                                   }
                                 >
-                                  <button
-                                    className="ui basic left floated button"
-                                    href={null}
-                                    onClick={[Function]}
-                                    target="_self"
-                                    type="button"
+                                  <RefFindNode
+                                    innerRef={
+                                      Object {
+                                        "current": <button
+                                          class="ui basic left floated button"
+                                          target="_self"
+                                          type="button"
+                                        >
+                                          Explore all pictures
+                                        </button>,
+                                      }
+                                    }
                                   >
-                                    Explore all pictures
-                                  </button>
-                                </RefFindNode>
-                              </Ref>
-                            </Button>
-                          </Link>
-                        </RefFindNode>
-                      </Ref>
-                    </Portal>
+                                    <button
+                                      className="ui basic left floated button"
+                                      href={null}
+                                      onClick={[Function]}
+                                      target="_self"
+                                      type="button"
+                                    >
+                                      Explore all pictures
+                                    </button>
+                                  </RefFindNode>
+                                </Ref>
+                              </Button>
+                            </Link>
+                          </RefFindNode>
+                        </Ref>
+                      </Portal>
+                    </Modal>
                   </Modal>
-                </Modal>
+                </LightBox>
               </Gallery>
             </div>
           </GridColumn>

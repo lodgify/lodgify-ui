@@ -12,7 +12,6 @@ import { Divider } from 'elements/Divider';
 import { Thumbnail } from 'media/Thumbnail';
 import { Heading } from 'typography/Heading';
 import { Gallery } from 'media/Gallery';
-import { getGalleryHeadingMarkup } from 'utils/get-gallery-heading-markup';
 import { Link } from 'elements/Link';
 
 /**
@@ -24,8 +23,6 @@ export const Component = ({
   headingText,
   linkText,
   numberOfThumbnails,
-  propertyName,
-  ratingNumber,
   thumbnailImages,
 }) => (
   <Grid>
@@ -53,11 +50,7 @@ export const Component = ({
       )}
     </GridRow>
     <GridColumn width={12}>
-      <Gallery
-        headingText={getGalleryHeadingMarkup(propertyName, ratingNumber)}
-        images={galleryImages}
-        trigger={<Link>{linkText}</Link>}
-      />
+      <Gallery images={galleryImages} trigger={<Link>{linkText}</Link>} />
     </GridColumn>
   </Grid>
 );
@@ -68,39 +61,23 @@ Component.defaultProps = {
   headingText: PROPERTY_PICTURES,
   linkText: EXPLORE_ALL_PICTURES,
   numberOfThumbnails: 6,
-  propertyName: null,
-  ratingNumber: null,
 };
 
 Component.propTypes = {
   /** The images to display in the gallery modal. */
   galleryImages: PropTypes.arrayOf(
-    PropTypes.oneOfType([
-      PropTypes.shape({
-        /** The text to display above an isolated category of images. */
-        categoryText: PropTypes.string,
-      }),
-      PropTypes.shape({
-        /** The natural height of the image. */
-        imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        /** The label text for the when the image is not found. */
-        imageNotFoundLabelText: PropTypes.string,
-        /** Title of the image to show when hovering it on desktop browsers */
-        imageTitle: PropTypes.string,
-        /** URL pointing to the image to display. */
-        imageUrl: PropTypes.string.isRequired,
-        /** The natural width of the image. */
-        imageWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        /** A visible label for the image. */
-        label: PropTypes.string.isRequired,
-        /** URL pointing to the placeholder image to display. */
-        placeholderImageUrl: PropTypes.string,
-        /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-        sizes: PropTypes.string,
-        /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-        srcSet: PropTypes.string,
-      }),
-    ])
+    PropTypes.shape({
+      /** A description of the image to show above the slideshow when the image is showing. */
+      descriptionText: PropTypes.string,
+      /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      sizes: PropTypes.string,
+      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      srcSet: PropTypes.string,
+      /** Title of the image to show when hovering over it on desktop browsers. */
+      title: PropTypes.string,
+      /** URL pointing to the image to display. */
+      url: PropTypes.string.isRequired,
+    })
   ).isRequired,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
@@ -108,10 +85,6 @@ Component.propTypes = {
   linkText: PropTypes.string,
   /** The number of images to display as thumbnails. */
   numberOfThumbnails: PropTypes.number,
-  /** The name of the property to display in the gallery modal. */
-  propertyName: PropTypes.string,
-  /** The numeral rating for the property, out of 5 */
-  ratingNumber: PropTypes.number,
   /** The images to display as thumbnails. See [the `ResponsiveImage` component for valid props](#/Media/ResponsiveImage).  */
   thumbnailImages: PropTypes.arrayOf(PropTypes.object).isRequired,
 };

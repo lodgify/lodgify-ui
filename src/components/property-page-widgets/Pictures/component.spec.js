@@ -2,11 +2,11 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
-import { images } from './mock-data/images';
+import { images, thumbnailImages } from './mock-data/images';
 import { Component as Pictures } from './component';
 
 const getPictures = () =>
-  mount(<Pictures galleryImages={images} thumbnailImages={images} />);
+  mount(<Pictures galleryImages={images} thumbnailImages={thumbnailImages} />);
 
 describe('<Pictures />', () => {
   it('should render the correct structure', () => {
