@@ -56,6 +56,7 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
       onClick={[Function]}
     >
       <Modal
+        className={null}
         hasCloseIcon={true}
         hasPadding={false}
         hasRoundedCorners={false}
@@ -68,7 +69,6 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
             logoText="yo"
           />
         }
-        isDark={false}
         isFullscreen={true}
         onClose={[Function]}
         size="tiny"

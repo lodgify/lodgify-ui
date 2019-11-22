@@ -845,6 +845,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                       onClick={[Function]}
                     >
                       <Modal
+                        className={null}
                         hasCloseIcon={true}
                         hasPadding={false}
                         hasRoundedCorners={false}
@@ -857,7 +858,6 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                             logoText="someLogoText"
                           />
                         }
-                        isDark={false}
                         isFullscreen={true}
                         onClose={[Function]}
                         size="tiny"

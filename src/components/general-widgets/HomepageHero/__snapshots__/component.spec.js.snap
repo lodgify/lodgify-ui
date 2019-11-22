@@ -1349,6 +1349,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                         willLocationDropdownOpenAbove={false}
                                       >
                                         <Modal
+                                          className={null}
                                           hasCloseIcon={true}
                                           hasPadding={true}
                                           hasRoundedCorners={false}
@@ -1363,7 +1364,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                                               Check our availability
                                             </Heading>
                                           }
-                                          isDark={false}
                                           isFullscreen={true}
                                           isOpen={false}
                                           onClose={[Function]}

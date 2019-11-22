@@ -1710,7 +1710,6 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "thumbnailAlt": "Two more cats",
-                                        "thumbnailLabel": "Two more cats",
                                       },
                                       Object {
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1720,7 +1719,6 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "thumbnailAlt": "Some cats",
-                                        "thumbnailLabel": "Some cats",
                                       },
                                     ]
                                   }
@@ -1744,7 +1742,6 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "thumbnailAlt": "Two more cats",
-                                        "thumbnailLabel": "Two more cats",
                                       },
                                       Object {
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1754,7 +1751,6 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "thumbnailAlt": "Some cats",
-                                        "thumbnailLabel": "Some cats",
                                       },
                                     ]
                                   }
@@ -1849,11 +1845,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                           className="mobile only right aligned middle aligned two wide column"
                                         >
                                           <Modal
+                                            className={null}
                                             hasCloseIcon={true}
                                             hasPadding={true}
                                             hasRoundedCorners={false}
                                             header={null}
-                                            isDark={false}
                                             isFullscreen={false}
                                             onClose={[Function]}
                                             size="tiny"
@@ -2201,11 +2197,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 className="tablet only computer only bottom aligned four wide column"
                                               >
                                                 <Modal
+                                                  className={null}
                                                   hasCloseIcon={true}
                                                   hasPadding={true}
                                                   hasRoundedCorners={false}
                                                   header={null}
-                                                  isDark={false}
                                                   isFullscreen={false}
                                                   onClose={[Function]}
                                                   size="small"
@@ -2699,7 +2695,6 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "thumbnailAlt": "Two more cats",
-                                        "thumbnailLabel": "Two more cats",
                                       },
                                       Object {
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -2709,7 +2704,6 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "thumbnailAlt": "Some cats",
-                                        "thumbnailLabel": "Some cats",
                                       },
                                     ]
                                   }
@@ -2733,7 +2727,6 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "thumbnailAlt": "Two more cats",
-                                        "thumbnailLabel": "Two more cats",
                                       },
                                       Object {
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -2743,7 +2736,6 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "thumbnailAlt": "Some cats",
-                                        "thumbnailLabel": "Some cats",
                                       },
                                     ]
                                   }
@@ -2838,11 +2830,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                           className="mobile only right aligned middle aligned two wide column"
                                         >
                                           <Modal
+                                            className={null}
                                             hasCloseIcon={true}
                                             hasPadding={true}
                                             hasRoundedCorners={false}
                                             header={null}
-                                            isDark={false}
                                             isFullscreen={false}
                                             onClose={[Function]}
                                             size="tiny"
@@ -3190,11 +3182,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                                 className="tablet only computer only bottom aligned four wide column"
                                               >
                                                 <Modal
+                                                  className={null}
                                                   hasCloseIcon={true}
                                                   hasPadding={true}
                                                   hasRoundedCorners={false}
                                                   header={null}
-                                                  isDark={false}
                                                   isFullscreen={false}
                                                   onClose={[Function]}
                                                   size="small"

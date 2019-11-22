@@ -1278,11 +1278,11 @@ exports[`<Pictures /> should render the correct structure 1`] = `
                 }
               >
                 <Modal
+                  className={null}
                   hasCloseIcon={true}
                   hasPadding={true}
                   hasRoundedCorners={false}
                   header={null}
-                  isDark={false}
                   isFullscreen={true}
                   onClose={[Function]}
                   size="tiny"
