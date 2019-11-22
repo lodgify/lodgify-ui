@@ -1,3 +1,19 @@
+# [1.263.0](https://github.com/lodgify/lodgify-ui/compare/v1.262.0...v1.263.0) (2019-11-22)
+
+
+### Bug Fixes
+
+* **adaptImages:** remove thumbnail title ([7a85e34](https://github.com/lodgify/lodgify-ui/commit/7a85e34))
+
+
+### Features
+
+* **Lightbox:** add component styles ([caec458](https://github.com/lodgify/lodgify-ui/commit/caec458))
+* **LightBox:** expose LightBox component ([a89e80b](https://github.com/lodgify/lodgify-ui/commit/a89e80b))
+* **Modal:** expose className prop ([bbfe530](https://github.com/lodgify/lodgify-ui/commit/bbfe530))
+* **package.json:** trigger coverage on test:watch ([99ecfec](https://github.com/lodgify/lodgify-ui/commit/99ecfec))
+* **snapshots:** refresh modal consumer snapshots ([90b7f2a](https://github.com/lodgify/lodgify-ui/commit/90b7f2a))
+
 # [1.262.0](https://github.com/lodgify/lodgify-ui/compare/v1.261.0...v1.262.0) (2019-11-19)
 
 
