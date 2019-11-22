@@ -1,0 +1,112 @@
+/*******************************
+            Theme
+*******************************/
+
+@type: "lodgify-ui-component";
+
+@element: "lightbox";
+
+@import (multiple) "../../theme.config";
+
+/*--------------------------
+        LightBox
+--------------------------*/
+
+.modals {
+  .modal {
+    &.is-lightbox {
+      &.fullscreen > .icon > svg {
+        background-color: transparent;
+        box-shadow: @lightboxButtonBoxShadow;
+      }
+
+      > .content {
+        background-color: @lightboxContentBackgroundColor;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        overflow: hidden;
+
+        > p {
+          color: @white;
+        }
+
+        .image-gallery {
+          width: 100%;
+
+          .image-gallery-content {
+            .image-gallery-slide-wrapper {
+              height: @lightboxSlideshowContentHeight;
+              max-height: @lightboxSlideshowContentMaxHeight;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              margin-bottom: @lightboxSlideshowContentMarginBottom;
+
+              @media only screen and (max-width: @computerBreakpoint) {
+                min-height: @lightboxSlideshowContentMinHeight;
+              }
+
+              .image-gallery-index {
+                background-color: transparent;
+                top: initial;
+                align-self: center;
+                right: initial;
+                bottom: @lightboxSlideshowIndexBottomOffset;
+              }
+
+              .ui.circular.button {
+                background: transparent;
+                box-shadow: @lightboxButtonBoxShadow;
+              }
+            }
+
+            .image-gallery-thumbnails-wrapper {
+              &:before {
+                content: "";
+                width: @lightboxThumbnailLinearGradientWidth;
+                height: @lightboxThumbnailLinearGradientHeight;
+                position: absolute;
+                z-index: @lightboxThumbnailLinearGradientZIndex;
+                background: @lightboxThumbnailLinearGradientBackgroundColor;
+                background: @lightboxThumbnailLinearGradientLeft;
+                left: 0;
+                top: @lightboxThumbnailActiveGradientTopOffset;
+              }
+
+              &:after {
+                content: "";
+                width: @lightboxThumbnailLinearGradientWidth;
+                height: @lightboxThumbnailLinearGradientHeight;
+                position: absolute;
+                z-index: @lightboxThumbnailLinearGradientZIndex;
+                background: @lightboxThumbnailLinearGradientBackgroundColor;
+                background: @lightboxThumbnailLinearGradientRight;
+                right: 0;
+                top: @lightboxThumbnailActiveGradientTopOffset;
+              }
+
+              .image-gallery-thumbnails {
+                padding: @lightboxThumbnailWrapperPadding;
+
+                .image-gallery-thumbnails-container {
+                  .image-gallery-thumbnail {
+                    display: flex;
+                    align-items: center;
+                    transition: @lightboxThumbnailActiveTransition;
+
+                    &.active {
+                      box-shadow: @lightboxThumbNailActiveBoxShadow;
+                      transition: @lightboxThumbnailActiveTransition;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
