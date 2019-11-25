@@ -604,6 +604,7 @@ exports[`InnerContent should render the right structure 1`] = `
                                               endDatePlaceholderText="Check out"
                                               error={false}
                                               getIsDayBlocked={[Function]}
+                                              isCalendarIconDisplayed={true}
                                               isLoading={false}
                                               isUserOnMobile={false}
                                               isValid={false}

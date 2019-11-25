@@ -16,13 +16,13 @@ export const getLocationDescription = locationDescription => (
     {isValidHTML(locationDescription) ? (
       <HTML htmlString={locationDescription} />
     ) : (
-      getParagraphsFromStrings(locationDescription).map(
-        (paragraphText, index) => (
-          <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
-            {paragraphText}
-          </Paragraph>
-        )
-      )
+      getParagraphsFromStrings(
+        locationDescription
+      ).map((paragraphText, index) => (
+        <Paragraph key={buildKeyFromStrings(paragraphText, index)}>
+          {paragraphText}
+        </Paragraph>
+      ))
     )}
   </GridColumn>
 );

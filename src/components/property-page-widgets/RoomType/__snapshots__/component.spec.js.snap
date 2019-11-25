@@ -132,6 +132,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                               },
                             ]
                           }
+                          isFluid={false}
                           isRounded={false}
                           isShowingBulletNavigation={false}
                           isShowingIndex={false}
@@ -1187,6 +1188,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                               },
                             ]
                           }
+                          isFluid={false}
                           isRounded={false}
                           isShowingBulletNavigation={false}
                           isShowingIndex={false}

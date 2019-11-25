@@ -1692,6 +1692,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     },
                                   ]
                                 }
+                                isFluid={false}
                                 isRounded={false}
                                 isShowingBulletNavigation={false}
                                 isShowingIndex={false}
@@ -2677,6 +2678,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     },
                                   ]
                                 }
+                                isFluid={false}
                                 isRounded={false}
                                 isShowingBulletNavigation={false}
                                 isShowingIndex={false}
