@@ -1,3 +1,17 @@
+# [1.265.0](https://github.com/lodgify/lodgify-ui/compare/v1.264.0...v1.265.0) (2019-11-25)
+
+
+### Bug Fixes
+
+* **src:** fix linting errors ([895e061](https://github.com/lodgify/lodgify-ui/commit/895e061))
+
+
+### Features
+
+* **DateRangePicker:** add prop to hide icon ([d3a52c6](https://github.com/lodgify/lodgify-ui/commit/d3a52c6))
+* **Slideshow:** expose prop to make fluid ([6279531](https://github.com/lodgify/lodgify-ui/commit/6279531))
+* **SlideshowHero:** expose component to library api ([367ed3b](https://github.com/lodgify/lodgify-ui/commit/367ed3b))
+
 # [1.264.0](https://github.com/lodgify/lodgify-ui/compare/v1.263.0...v1.264.0) (2019-11-25)
 
 
