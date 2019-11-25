@@ -3,7 +3,11 @@ import { getHeight } from './getHeight';
 describe('getHeight', () => {
   describe('if `isFullBleed` or `isFluid` is `true`', () => {
     it('should return `100%`', () => {
-      const testCases = [[true, false], [false, true], [true, true]];
+      const testCases = [
+        [true, false],
+        [false, true],
+        [true, true],
+      ];
 
       testCases.forEach(([isFullBleed, isFluid]) => {
         const actual = getHeight('some height', isFullBleed, isFluid);
