@@ -1,3 +1,17 @@
+# [1.264.0](https://github.com/lodgify/lodgify-ui/compare/v1.263.0...v1.264.0) (2019-11-25)
+
+
+### Features
+
+* **Gallery:** add LightBox component ([cd95eb2](https://github.com/lodgify/lodgify-ui/commit/cd95eb2))
+* **Pictures:** add LightBox component ([3964596](https://github.com/lodgify/lodgify-ui/commit/3964596))
+* **PropertyPageHero:** add LightBox component ([53de8da](https://github.com/lodgify/lodgify-ui/commit/53de8da))
+
+
+### Performance Improvements
+
+* **getGalleryHeadingMarkup:** remove unused markup util ([a149daa](https://github.com/lodgify/lodgify-ui/commit/a149daa))
+
 # [1.263.0](https://github.com/lodgify/lodgify-ui/compare/v1.262.0...v1.263.0) (2019-11-22)
 
 
