@@ -43,6 +43,7 @@ export class Component extends PureComponent {
       isShowingIndex,
       isShowingThumbnails,
       isStretched,
+      isFluid,
     } = this.props;
     const descriptionText = get(images, [this.state.index, 'descriptionText']);
 
@@ -53,6 +54,7 @@ export class Component extends PureComponent {
         <ImageGallery
           additionalClass={classnames({
             'fit-height': isStretched,
+            'fit-width': isFluid,
             'no-shadow': !hasShadow,
             'no-border-radius': !isRounded,
           })}
@@ -86,6 +88,7 @@ Component.defaultProps = {
   isStretched: false,
   isShowingIndex: false,
   isShowingThumbnails: false,
+  isFluid: false,
 };
 
 Component.propTypes = {
@@ -108,6 +111,8 @@ Component.propTypes = {
       url: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** Is the slideshow the width of it's container */
+  isFluid: PropTypes.bool,
   /** Is the slideshow formatted to have rounded corners. */
   isRounded: PropTypes.bool,
   /** Is the slideshow displaying the bullet navigation. */

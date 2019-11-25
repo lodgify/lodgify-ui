@@ -1,3 +1,8 @@
+jest.mock('moment');
+jest.mock('../../general-widgets/SearchBar', () => ({
+  SearchBar: () => <div />,
+}));
+
 import React from 'react';
 import { mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
