@@ -22,6 +22,7 @@
 
 @dateInputPadding: (@verticalPadding - @inputBorderOffset) 0;
 @dateInputWidth: ~"calc(50% - @{iconWidthOffset})";
+@dateInputWithoutIconWidth: 50%;
 
 @singleDatePickerDateInputWidth: ~"calc(100% - @{iconWidthOffset})";
 

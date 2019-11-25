@@ -126,6 +126,7 @@ Component.propTypes = {
   srcSet: PropTypes.string,
 };
 
-export const ComponentWithLazyLoad = withLazyLoad(IMAGE_URL, SRC_SET)(
-  Component
-);
+export const ComponentWithLazyLoad = withLazyLoad(
+  IMAGE_URL,
+  SRC_SET
+)(Component);

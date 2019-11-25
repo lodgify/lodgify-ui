@@ -200,6 +200,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
           },
         ]
       }
+      isFluid={false}
       isRounded={true}
       isShowingBulletNavigation={false}
       isShowingIndex={false}
@@ -601,6 +602,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
           },
         ]
       }
+      isFluid={false}
       isRounded={true}
       isShowingBulletNavigation={false}
       isShowingIndex={false}
@@ -1058,6 +1060,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
           },
         ]
       }
+      isFluid={false}
       isRounded={true}
       isShowingBulletNavigation={false}
       isShowingIndex={false}
@@ -1691,6 +1694,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
           },
         ]
       }
+      isFluid={false}
       isRounded={true}
       isShowingBulletNavigation={true}
       isShowingIndex={false}
@@ -2338,6 +2342,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
           },
         ]
       }
+      isFluid={false}
       isRounded={true}
       isShowingBulletNavigation={false}
       isShowingIndex={false}

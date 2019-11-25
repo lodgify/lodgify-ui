@@ -1,3 +1,1 @@
-export {
-  ComponentWithResponsive as PropertySearchResultList,
-} from './component';
+export { ComponentWithResponsive as PropertySearchResultList } from './component';

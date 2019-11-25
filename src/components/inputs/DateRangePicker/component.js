@@ -103,6 +103,7 @@ class Component extends PureComponent {
       value,
       willOpenAbove,
       windowInnerWidth,
+      isCalendarIconDisplayed,
     } = this.props;
     const { endDateId, startDateId } = this.state;
     const { focusedInput } = getIsFocusControlled(this.props.focusedInput)
@@ -152,7 +153,13 @@ class Component extends PureComponent {
               )
             }
             disabled={isLoading}
-            customInputIcon={<Icon name={ICON_NAMES.CALENDAR} />}
+            customInputIcon={
+              isCalendarIconDisplayed ? (
+                <Icon name={ICON_NAMES.CALENDAR} />
+              ) : (
+                undefined
+              )
+            }
             daySize={52}
             hideKeyboardShortcutsPanel
             navNext={<Icon name={ICON_NAMES.ARROW_RIGHT} />}
@@ -178,6 +185,7 @@ Component.defaultProps = {
   focusedInput: undefined,
   getIsDayBlocked: Function.prototype,
   initialValue: undefined,
+  isCalendarIconDisplayed: true,
   isLoading: false,
   isValid: false,
   localeCode: 'en',
@@ -211,6 +219,8 @@ Component.propTypes = {
     endDate: PropTypes.object,
     startDate: PropTypes.object,
   }),
+  /** Is the calendar icon in input showing.  */
+  isCalendarIconDisplayed: PropTypes.bool,
   /** Is the date range picker in a loading state. */
   isLoading: PropTypes.bool,
   /** Is the date range picker in a valid state. */

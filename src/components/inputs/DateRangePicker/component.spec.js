@@ -402,6 +402,14 @@ describe('<DateRangePicker />', () => {
     });
   });
 
+  describe('if `isCalendarIconDisplayed` === false', () => {
+    it('should return the right structure', () => {
+      const wrapper = getDateRangePicker({ isCalendarIconDisplayed: false });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
   it('should have displayName `DateRangePicker`', () => {
     const component = shallow(<DateRangePicker />).prop('as');
 

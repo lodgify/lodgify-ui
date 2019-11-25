@@ -649,6 +649,7 @@ exports[`<Contact /> if \`isBotProtected\` === true should render the right stru
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
+                          isCalendarIconDisplayed={true}
                           isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
@@ -1575,6 +1576,7 @@ exports[`<Contact /> if \`isPrivacyConsentRequired\` is \`truthy\` should render
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
+                          isCalendarIconDisplayed={true}
                           isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
@@ -2694,6 +2696,7 @@ exports[`<Contact /> if \`props.propertyOptions\` is passed should have the corr
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
+                          isCalendarIconDisplayed={true}
                           isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}
@@ -4103,6 +4106,7 @@ exports[`<Contact /> should have the correct structure 1`] = `
                           endDatePlaceholderText="Departure"
                           error={false}
                           getIsDayBlocked={[Function]}
+                          isCalendarIconDisplayed={true}
                           isLoading={false}
                           isUserOnMobile={false}
                           isValid={false}

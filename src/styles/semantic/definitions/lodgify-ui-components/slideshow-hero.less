@@ -1,0 +1,100 @@
+/*******************************
+            Theme
+*******************************/
+
+@type: "lodgify-ui-component";
+
+@element: "slideshow-hero";
+
+@import (multiple) "../../theme.config";
+
+/*--------------------------
+      Slideshow Hero
+--------------------------*/
+.slideshow-hero {
+
+  header {
+
+    & > .ui.menu.text .item {
+      color: @textColor;
+    }
+
+    .ui.menu {
+
+      .item .ui.header {
+        color: @textColor;
+        color: var(@themeLogoColorIdentifier, @textColor);
+
+        .ui.modal & {
+          color: @textColor;
+        }
+      }
+    }
+  }
+
+  .image-gallery {
+    margin: @slideshowMargin;
+
+    & > .image-gallery-content {
+
+      & > .image-gallery-slide-wrapper {
+        height: @slideshowImageHeight;
+
+        .image-gallery-swipe {
+          border-radius: 0;
+
+          .image-gallery-image {
+
+            & > img {
+              width: 100%;
+              object-fit: cover;
+            }
+          }
+        }
+
+        .image-gallery-slides {
+          border-radius: @slideshowImageBorderRadius;
+
+          &,
+          .image-gallery-slide,
+          .image-gallery-image,
+          img {
+            height: 100%;
+          }
+        }
+
+        .image-gallery-image {
+
+          & > img {
+            object-fit: cover;
+          }
+
+          &:after {
+            content: '';
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-image: @slideshowImageGradient;
+          }
+        }
+      }
+    }
+  }
+
+  .slideshow-content-container {
+    position: relative;
+
+    .content-container {
+      position: absolute;
+      top: 0;
+      display: flex;
+      height: 100%;
+      width: @slideshowContentWidth;
+      margin: @slideshowContentMargin;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
+}

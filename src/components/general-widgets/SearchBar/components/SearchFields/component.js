@@ -36,6 +36,7 @@ export const Component = ({
   getIsDayBlocked,
   guestsInputLabel,
   guestsInputValue,
+  isCalendarIconDisplayed,
   isDateRangePickerLoading,
   locationInputLabel,
   locationInputValue,
@@ -64,6 +65,7 @@ export const Component = ({
         endDatePlaceholderText={datesCheckOutLabel}
         focusedInput={datesInputFocusedInput}
         getIsDayBlocked={getIsDayBlocked}
+        isCalendarIconDisplayed={isCalendarIconDisplayed}
         isLoading={isDateRangePickerLoading}
         localeCode={dateRangePickerLocaleCode}
         name="dates"
@@ -99,6 +101,7 @@ Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
   guestsInputLabel: GUESTS,
   guestsInputValue: undefined,
+  isCalendarIconDisplayed: undefined,
   isDateRangePickerLoading: undefined,
   locationInputLabel: LOCATION,
   locationInputValue: undefined,
@@ -126,6 +129,7 @@ Component.propTypes = {
   getIsDayBlocked: func,
   guestsInputLabel: string,
   guestsInputValue: oneOfType([string, number]),
+  isCalendarIconDisplayed: bool,
   isDateRangePickerLoading: bool,
   locationInputLabel: string,
   locationInputValue: string,

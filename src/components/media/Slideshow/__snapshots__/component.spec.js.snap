@@ -40,6 +40,7 @@ exports[`<Slideshow /> by default should return the right structure 1`] = `
       },
     ]
   }
+  isFluid={false}
   isRounded={true}
   isShowingBulletNavigation={true}
   isShowingIndex={false}
@@ -168,6 +169,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
       },
     ]
   }
+  isFluid={false}
   isRounded={true}
   isShowingBulletNavigation={true}
   isShowingIndex={false}
@@ -296,6 +298,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
       },
     ]
   }
+  isFluid={false}
   isRounded={false}
   isShowingBulletNavigation={true}
   isShowingIndex={false}
@@ -424,6 +427,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
       },
     ]
   }
+  isFluid={false}
   isRounded={true}
   isShowingBulletNavigation={true}
   isShowingIndex={false}
@@ -552,6 +556,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
       },
     ]
   }
+  isFluid={false}
   isRounded={true}
   isShowingBulletNavigation={true}
   isShowingIndex={false}
@@ -681,6 +686,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
       },
     ]
   }
+  isFluid={false}
   isRounded={true}
   isShowingBulletNavigation={true}
   isShowingIndex={false}
@@ -782,6 +788,7 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
       },
     ]
   }
+  isFluid={false}
   isRounded={true}
   isShowingBulletNavigation={true}
   isShowingIndex={false}
@@ -921,6 +928,7 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
       },
     ]
   }
+  isFluid={false}
   isRounded={true}
   isShowingBulletNavigation={true}
   isShowingIndex={false}

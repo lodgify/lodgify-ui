@@ -1,0 +1,952 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SlideshowHero /> by default should render the right structure 1`] = `
+<SlideshowHero
+  headerProps={
+    Object {
+      "logoText": "logoText",
+      "navigationItems": Array [
+        Object {
+          "href": "/",
+          "text": "Home",
+        },
+        Object {
+          "subItems": Array [
+            Object {
+              "href": "/la-casa-viva",
+              "text": "La Casa Viva",
+            },
+            Object {
+              "href": "/la-casa-muerta",
+              "text": "La Casa Muerta",
+            },
+            Object {
+              "href": "/the-white-lodge",
+              "text": "The White Lodge",
+            },
+            Object {
+              "href": "/the-black-lodge",
+              "text": "The Black Lodge",
+            },
+          ],
+          "text": "All properties",
+        },
+      ],
+    }
+  }
+  headingText="headingText"
+  searchBarProps={Object {}}
+  slideshowProps={
+    Object {
+      "images": Array [
+        Object {
+          "url": "url",
+        },
+      ],
+    }
+  }
+>
+  <FlexContainer
+    alignContent={null}
+    alignItems={null}
+    className={null}
+    flexDirection={null}
+    flexWrap={null}
+    justifyContent={null}
+  >
+    <div
+      className="flex-container"
+      style={
+        Object {
+          "alignContent": null,
+          "alignItems": null,
+          "display": "flex",
+          "flexDirection": null,
+          "flexGrow": "1",
+          "flexWrap": null,
+          "height": "100%",
+          "justifyContent": null,
+        }
+      }
+    >
+      <div
+        className="slideshow-hero"
+      >
+        <Header
+          activeNavigationItemIndex={null}
+          isBackgroundFilled={false}
+          logoHref="/"
+          logoSize="medium"
+          logoSrc={null}
+          logoSubText={null}
+          logoText="logoText"
+          navigationItems={
+            Array [
+              Object {
+                "href": "/",
+                "text": "Home",
+              },
+              Object {
+                "subItems": Array [
+                  Object {
+                    "href": "/la-casa-viva",
+                    "text": "La Casa Viva",
+                  },
+                  Object {
+                    "href": "/la-casa-muerta",
+                    "text": "La Casa Muerta",
+                  },
+                  Object {
+                    "href": "/the-white-lodge",
+                    "text": "The White Lodge",
+                  },
+                  Object {
+                    "href": "/the-black-lodge",
+                    "text": "The Black Lodge",
+                  },
+                ],
+                "text": "All properties",
+              },
+            ]
+          }
+          primaryCTA={null}
+        >
+          <header
+            className="is-opaque"
+          >
+            <HorizontalGutters
+              as={[Function]}
+              borderless={true}
+              text={true}
+            >
+              <Container
+                as={[Function]}
+                borderless={true}
+                text={true}
+              >
+                <Menu
+                  borderless={true}
+                  className="ui text container"
+                >
+                  <div
+                    className="ui borderless ui text container menu"
+                  >
+                    <HeaderLogo
+                      logoHref="/"
+                      logoSize="medium"
+                      logoSrc={null}
+                      logoSubText={null}
+                      logoText="logoText"
+                    >
+                      <MenuItem
+                        className=""
+                        href="/"
+                        link={true}
+                      >
+                        <a
+                          className="link item"
+                          href="/"
+                          onClick={[Function]}
+                        >
+                          <FlexContainer
+                            alignContent={null}
+                            alignItems={null}
+                            className={null}
+                            flexDirection="column"
+                            flexWrap={null}
+                            justifyContent="center"
+                          >
+                            <div
+                              className="flex-container"
+                              style={
+                                Object {
+                                  "alignContent": null,
+                                  "alignItems": null,
+                                  "display": "flex",
+                                  "flexDirection": "column",
+                                  "flexGrow": "1",
+                                  "flexWrap": null,
+                                  "height": "100%",
+                                  "justifyContent": "center",
+                                }
+                              }
+                            >
+                              <Heading
+                                className="header-title"
+                                hasMargin={true}
+                                isColorInverted={false}
+                                size="small"
+                                textAlign={null}
+                              >
+                                <Header
+                                  as="h4"
+                                  className="header-title"
+                                  inverted={false}
+                                  textAlign={null}
+                                >
+                                  <h4
+                                    className="ui header header-title"
+                                  >
+                                    logoText
+                                  </h4>
+                                </Header>
+                              </Heading>
+                            </div>
+                          </FlexContainer>
+                        </a>
+                      </MenuItem>
+                    </HeaderLogo>
+                    <MenuMenu
+                      position="right"
+                    >
+                      <div
+                        className="right menu"
+                      >
+                        <MenuItem
+                          active={false}
+                          href="/"
+                          key="Home0"
+                          link={true}
+                        >
+                          <a
+                            className="link item"
+                            href="/"
+                            onClick={[Function]}
+                          >
+                            Home
+                          </a>
+                        </MenuItem>
+                        <Submenu
+                          isMenuItem={true}
+                          isSearchable={false}
+                          isSimple={true}
+                          isTriggerUnderlined={false}
+                          isTriggeredOnHover={true}
+                          items={
+                            Array [
+                              Object {
+                                "href": "/la-casa-viva",
+                                "text": "La Casa Viva",
+                              },
+                              Object {
+                                "href": "/la-casa-muerta",
+                                "text": "La Casa Muerta",
+                              },
+                              Object {
+                                "href": "/the-white-lodge",
+                                "text": "The White Lodge",
+                              },
+                              Object {
+                                "href": "/the-black-lodge",
+                                "text": "The Black Lodge",
+                              },
+                            ]
+                          }
+                          key="All properties1"
+                          name={null}
+                          noResultsText="No results"
+                          onChange={[Function]}
+                          pointing="top right"
+                          value={null}
+                          willOpenAbove={false}
+                        >
+                          <Dropdown
+                            additionLabel="Add "
+                            additionPosition="top"
+                            className=""
+                            closeOnBlur={true}
+                            closeOnEscape={true}
+                            deburr={false}
+                            icon={
+                              <Icon
+                                className={null}
+                                color={null}
+                                hasBorder={false}
+                                isButton={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="caret down"
+                                path={null}
+                                size="small"
+                              />
+                            }
+                            item={true}
+                            minCharacters={1}
+                            name={null}
+                            noResultsMessage="No results"
+                            onChange={[Function]}
+                            openOnFocus={true}
+                            options={
+                              Array [
+                                Object {
+                                  "href": "/la-casa-viva",
+                                  "key": "La Casa Viva",
+                                  "text": "La Casa Viva",
+                                },
+                                Object {
+                                  "href": "/la-casa-muerta",
+                                  "key": "La Casa Muerta",
+                                  "text": "La Casa Muerta",
+                                },
+                                Object {
+                                  "href": "/the-white-lodge",
+                                  "key": "The White Lodge",
+                                  "text": "The White Lodge",
+                                },
+                                Object {
+                                  "href": "/the-black-lodge",
+                                  "key": "The Black Lodge",
+                                  "text": "The Black Lodge",
+                                },
+                              ]
+                            }
+                            pointing="top right"
+                            renderLabel={[Function]}
+                            scrolling={true}
+                            search={false}
+                            searchInput="text"
+                            selectOnBlur={true}
+                            selectOnNavigation={true}
+                            simple={true}
+                            trigger="All properties"
+                            upward={false}
+                            value={null}
+                            wrapSelection={true}
+                          >
+                            <Ref
+                              innerRef={
+                                Object {
+                                  "current": <div
+                                    aria-expanded="false"
+                                    class="ui item simple scrolling top right pointing dropdown"
+                                    role="listbox"
+                                    tabindex="0"
+                                  >
+                                    All properties
+                                    <i
+                                      class="icon small"
+                                    >
+                                      <svg
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M20,8.5l-8,7-8-7Z"
+                                          fill="currentColor"
+                                        />
+                                      </svg>
+                                    </i>
+                                    <div
+                                      class="menu transition"
+                                    >
+                                      <a
+                                        aria-checked="false"
+                                        aria-selected="true"
+                                        class="selected item"
+                                        href="/la-casa-viva"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          La Casa Viva
+                                        </span>
+                                      </a>
+                                      <a
+                                        aria-checked="false"
+                                        aria-selected="false"
+                                        class="item"
+                                        href="/la-casa-muerta"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          La Casa Muerta
+                                        </span>
+                                      </a>
+                                      <a
+                                        aria-checked="false"
+                                        aria-selected="false"
+                                        class="item"
+                                        href="/the-white-lodge"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          The White Lodge
+                                        </span>
+                                      </a>
+                                      <a
+                                        aria-checked="false"
+                                        aria-selected="false"
+                                        class="item"
+                                        href="/the-black-lodge"
+                                        role="option"
+                                        style="pointer-events: all;"
+                                      >
+                                        <span
+                                          class="text"
+                                        >
+                                          The Black Lodge
+                                        </span>
+                                      </a>
+                                    </div>
+                                  </div>,
+                                }
+                              }
+                            >
+                              <RefFindNode
+                                innerRef={
+                                  Object {
+                                    "current": <div
+                                      aria-expanded="false"
+                                      class="ui item simple scrolling top right pointing dropdown"
+                                      role="listbox"
+                                      tabindex="0"
+                                    >
+                                      All properties
+                                      <i
+                                        class="icon small"
+                                      >
+                                        <svg
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            d="M20,8.5l-8,7-8-7Z"
+                                            fill="currentColor"
+                                          />
+                                        </svg>
+                                      </i>
+                                      <div
+                                        class="menu transition"
+                                      >
+                                        <a
+                                          aria-checked="false"
+                                          aria-selected="true"
+                                          class="selected item"
+                                          href="/la-casa-viva"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            La Casa Viva
+                                          </span>
+                                        </a>
+                                        <a
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item"
+                                          href="/la-casa-muerta"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            La Casa Muerta
+                                          </span>
+                                        </a>
+                                        <a
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item"
+                                          href="/the-white-lodge"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            The White Lodge
+                                          </span>
+                                        </a>
+                                        <a
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item"
+                                          href="/the-black-lodge"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            The Black Lodge
+                                          </span>
+                                        </a>
+                                      </div>
+                                    </div>,
+                                  }
+                                }
+                              >
+                                <div
+                                  aria-expanded={false}
+                                  className="ui item simple scrolling top right pointing dropdown"
+                                  name={null}
+                                  onBlur={[Function]}
+                                  onChange={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseDown={[Function]}
+                                  role="listbox"
+                                  tabIndex={0}
+                                >
+                                  All properties
+                                  <Icon
+                                    className=""
+                                    color={null}
+                                    hasBorder={false}
+                                    isButton={false}
+                                    isCircular={false}
+                                    isColorInverted={false}
+                                    isDisabled={false}
+                                    isLabelLeft={false}
+                                    labelText={null}
+                                    labelWeight={null}
+                                    name="caret down"
+                                    onClick={[Function]}
+                                    path={null}
+                                    size="small"
+                                  >
+                                    <i
+                                      className="icon small"
+                                      onClick={[Function]}
+                                    >
+                                      <svg
+                                        viewBox="0 0 24 24"
+                                      >
+                                        <path
+                                          d="M20,8.5l-8,7-8-7Z"
+                                          fill="currentColor"
+                                        />
+                                      </svg>
+                                    </i>
+                                  </Icon>
+                                  <DropdownMenu>
+                                    <div
+                                      className="menu transition"
+                                    >
+                                      <DropdownItem
+                                        active={false}
+                                        href="/la-casa-viva"
+                                        key="La Casa Viva"
+                                        onClick={[Function]}
+                                        selected={true}
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
+                                        }
+                                        text="La Casa Viva"
+                                      >
+                                        <a
+                                          aria-checked={false}
+                                          aria-selected={true}
+                                          className="selected item"
+                                          href="/la-casa-viva"
+                                          onClick={[Function]}
+                                          role="option"
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="text"
+                                          >
+                                            La Casa Viva
+                                          </span>
+                                        </a>
+                                      </DropdownItem>
+                                      <DropdownItem
+                                        active={false}
+                                        href="/la-casa-muerta"
+                                        key="La Casa Muerta"
+                                        onClick={[Function]}
+                                        selected={false}
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
+                                        }
+                                        text="La Casa Muerta"
+                                      >
+                                        <a
+                                          aria-checked={false}
+                                          aria-selected={false}
+                                          className="item"
+                                          href="/la-casa-muerta"
+                                          onClick={[Function]}
+                                          role="option"
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="text"
+                                          >
+                                            La Casa Muerta
+                                          </span>
+                                        </a>
+                                      </DropdownItem>
+                                      <DropdownItem
+                                        active={false}
+                                        href="/the-white-lodge"
+                                        key="The White Lodge"
+                                        onClick={[Function]}
+                                        selected={false}
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
+                                        }
+                                        text="The White Lodge"
+                                      >
+                                        <a
+                                          aria-checked={false}
+                                          aria-selected={false}
+                                          className="item"
+                                          href="/the-white-lodge"
+                                          onClick={[Function]}
+                                          role="option"
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="text"
+                                          >
+                                            The White Lodge
+                                          </span>
+                                        </a>
+                                      </DropdownItem>
+                                      <DropdownItem
+                                        active={false}
+                                        href="/the-black-lodge"
+                                        key="The Black Lodge"
+                                        onClick={[Function]}
+                                        selected={false}
+                                        style={
+                                          Object {
+                                            "pointerEvents": "all",
+                                          }
+                                        }
+                                        text="The Black Lodge"
+                                      >
+                                        <a
+                                          aria-checked={false}
+                                          aria-selected={false}
+                                          className="item"
+                                          href="/the-black-lodge"
+                                          onClick={[Function]}
+                                          role="option"
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                        >
+                                          <span
+                                            className="text"
+                                          >
+                                            The Black Lodge
+                                          </span>
+                                        </a>
+                                      </DropdownItem>
+                                    </div>
+                                  </DropdownMenu>
+                                </div>
+                              </RefFindNode>
+                            </Ref>
+                          </Dropdown>
+                        </Submenu>
+                      </div>
+                    </MenuMenu>
+                  </div>
+                </Menu>
+              </Container>
+            </HorizontalGutters>
+          </header>
+        </Header>
+        <div
+          className="slideshow-content-container"
+        >
+          <Slideshow
+            hasShadow={true}
+            headingText={null}
+            images={
+              Array [
+                Object {
+                  "url": "url",
+                },
+              ]
+            }
+            isFluid={true}
+            isRounded={true}
+            isShowingBulletNavigation={false}
+            isShowingIndex={false}
+            isShowingThumbnails={false}
+            isStretched={false}
+          >
+            <ImageGallery
+              additionalClass="fit-width"
+              autoPlay={false}
+              disableArrowKeys={false}
+              disableSwipe={false}
+              disableThumbnailScroll={false}
+              flickThreshold={0.4}
+              indexSeparator=" / "
+              infinite={true}
+              isRTL={false}
+              items={
+                Array [
+                  Object {
+                    "original": "url",
+                    "originalAlt": undefined,
+                    "originalTitle": undefined,
+                    "sizes": undefined,
+                    "srcSet": undefined,
+                    "thumbnail": "url",
+                    "thumbnailAlt": undefined,
+                  },
+                ]
+              }
+              lazyLoad={true}
+              onImageError={[Function]}
+              onSlide={[Function]}
+              preventDefaultTouchmoveEvent={false}
+              renderFullscreenButton={[Function]}
+              renderLeftNav={[Function]}
+              renderPlayPauseButton={[Function]}
+              renderRightNav={[Function]}
+              showBullets={false}
+              showFullscreenButton={false}
+              showIndex={false}
+              showNav={true}
+              showPlayButton={false}
+              showThumbnails={false}
+              slideDuration={450}
+              slideInterval={3000}
+              startIndex={0}
+              stopPropagation={false}
+              swipeThreshold={30}
+              swipingTransitionDuration={0}
+              thumbnailPosition="bottom"
+              thumbnails={
+                Array [
+                  Object {
+                    "original": "url",
+                    "originalAlt": undefined,
+                    "originalTitle": undefined,
+                    "sizes": undefined,
+                    "srcSet": undefined,
+                    "thumbnail": "url",
+                    "thumbnailAlt": undefined,
+                  },
+                ]
+              }
+              useBrowserFullscreen={true}
+              useTranslate3D={true}
+            >
+              <div
+                aria-live="polite"
+                className="image-gallery fit-width "
+              >
+                <div
+                  className="image-gallery-content"
+                >
+                  <div
+                    className="image-gallery-slide-wrapper bottom "
+                  >
+                    <div
+                      className="image-gallery-slides"
+                    >
+                      <div
+                        className="image-gallery-slide center"
+                        key="0"
+                        style={
+                          Object {
+                            "MozTransform": "translate3d(0%, 0, 0)",
+                            "OTransform": "translate3d(0%, 0, 0)",
+                            "WebkitTransform": "translate3d(0%, 0, 0)",
+                            "msTransform": "translate3d(0%, 0, 0)",
+                            "transform": "translate3d(0%, 0, 0)",
+                          }
+                        }
+                      >
+                        <div
+                          className="image-gallery-image"
+                        >
+                          <img
+                            onError={[Function]}
+                            src="url"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ImageGallery>
+          </Slideshow>
+          <div
+            className="content-container"
+          >
+            <ShowOn
+              computer={true}
+              mobile={false}
+              parent={[Function]}
+              parentProps={
+                Object {
+                  "isColorInverted": true,
+                  "size": "huge",
+                  "textAlign": "center",
+                }
+              }
+              tablet={true}
+              widescreen={true}
+            >
+              <Heading
+                className="show-on-tablet show-on-computer show-on-widescreen"
+                hasMargin={true}
+                isColorInverted={true}
+                size="huge"
+                textAlign="center"
+              >
+                <Header
+                  as="h1"
+                  className="show-on-tablet show-on-computer show-on-widescreen"
+                  inverted={true}
+                  textAlign="center"
+                >
+                  <h1
+                    className="ui inverted center aligned header show-on-tablet show-on-computer show-on-widescreen"
+                  >
+                    headingText
+                  </h1>
+                </Header>
+              </Heading>
+            </ShowOn>
+            <ShowOn
+              computer={false}
+              mobile={true}
+              parent={[Function]}
+              parentProps={
+                Object {
+                  "isColorInverted": true,
+                  "size": "large",
+                  "textAlign": "center",
+                }
+              }
+              tablet={false}
+              widescreen={false}
+            >
+              <Heading
+                className="show-on-mobile"
+                hasMargin={true}
+                isColorInverted={true}
+                size="large"
+                textAlign="center"
+              >
+                <Header
+                  as="h2"
+                  className="show-on-mobile"
+                  inverted={true}
+                  textAlign="center"
+                >
+                  <h2
+                    className="ui inverted center aligned header show-on-mobile"
+                  >
+                    headingText
+                  </h2>
+                </Header>
+              </Heading>
+            </ShowOn>
+            <Grid
+              areColumnsCentered={true}
+              isStackable={false}
+            >
+              <Grid
+                centered={true}
+                stackable={false}
+              >
+                <div
+                  className="ui centered grid"
+                >
+                  <GridRow
+                    horizontalAlignContent="center"
+                  >
+                    <GridRow
+                      textAlign="center"
+                    >
+                      <div
+                        className="center aligned row"
+                      >
+                        <ShowOn
+                          computer={true}
+                          mobile={false}
+                          parent={[Function]}
+                          parentProps={
+                            Object {
+                              "isCalendarIconDisplayed": false,
+                              "willLocationDropdownOpenAbove": true,
+                            }
+                          }
+                          tablet={true}
+                          widescreen={true}
+                        >
+                          <SearchBar
+                            className="show-on-tablet show-on-computer show-on-widescreen"
+                            isCalendarIconDisplayed={false}
+                            willLocationDropdownOpenAbove={true}
+                          >
+                            <div />
+                          </SearchBar>
+                        </ShowOn>
+                        <ShowOn
+                          computer={false}
+                          mobile={true}
+                          parent="div"
+                          parentProps={Object {}}
+                          tablet={false}
+                          widescreen={false}
+                        >
+                          <div
+                            className="show-on-mobile"
+                          >
+                            <SearchBar
+                              isCalendarIconDisplayed={false}
+                              isDisplayedAsModal={true}
+                            >
+                              <div />
+                            </SearchBar>
+                          </div>
+                        </ShowOn>
+                      </div>
+                    </GridRow>
+                  </GridRow>
+                </div>
+              </Grid>
+            </Grid>
+          </div>
+        </div>
+      </div>
+    </div>
+  </FlexContainer>
+</SlideshowHero>
+`;
