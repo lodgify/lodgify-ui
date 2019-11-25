@@ -278,6 +278,22 @@
         }
       }
 
+      .DateInput.DateInput_1 {
+        width: @dateInputWithoutIconWidth;
+
+        &:first-of-type {
+          padding-left: 11px;
+        }
+      }
+
+      button.DateRangePickerInput_calendarIcon ~ .DateInput {
+        width: @dateInputWidth;
+
+        input {
+          padding-left: 0;
+        }
+      }
+
       .DateInput {
         box-sizing: content-box;
         width: @dateInputWidth;

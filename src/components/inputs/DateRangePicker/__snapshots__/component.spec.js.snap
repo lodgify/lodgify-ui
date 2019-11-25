@@ -14,6 +14,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
       endDatePlaceholderText=""
       error={false}
       getIsDayBlocked={[Function]}
+      isCalendarIconDisplayed={true}
       isLoading={false}
       isUserOnMobile={false}
       isValid={false}
@@ -163,6 +164,7 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
       endDatePlaceholderText=""
       error={false}
       getIsDayBlocked={[Function]}
+      isCalendarIconDisplayed={true}
       isLoading={false}
       isUserOnMobile={false}
       isValid={false}
@@ -315,6 +317,7 @@ exports[`<DateRangePicker /> \`render\` if \`isLoading\` === \`true\` should ren
       endDatePlaceholderText=""
       error={false}
       getIsDayBlocked={[Function]}
+      isCalendarIconDisplayed={true}
       isLoading={true}
       isUserOnMobile={false}
       isValid={false}
@@ -389,6 +392,142 @@ exports[`<DateRangePicker /> \`render\` if \`isLoading\` === \`true\` should ren
               }
               daySize={52}
               disabled={true}
+              displayFormat="DD/MM/YYYY"
+              endDate={null}
+              endDateId="end_date_id_"
+              endDatePlaceholderText=""
+              focusedInput={null}
+              hideKeyboardShortcutsPanel={true}
+              isDayBlocked={[Function]}
+              key=".0"
+              navNext={
+                <Icon
+                  className={null}
+                  color={null}
+                  hasBorder={false}
+                  isButton={false}
+                  isCircular={false}
+                  isColorInverted={false}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="arrow right"
+                  path={null}
+                  size={null}
+                />
+              }
+              navPrev={
+                <Icon
+                  className={null}
+                  color={null}
+                  hasBorder={false}
+                  isButton={false}
+                  isCircular={false}
+                  isColorInverted={false}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="arrow left"
+                  path={null}
+                  size={null}
+                />
+              }
+              onDatesChange={[Function]}
+              onFocusChange={[Function]}
+              openDirection="down"
+              showClearDates={true}
+              startDate={null}
+              startDateId="start_date_id_"
+              startDatePlaceholderText=""
+            >
+              <div />
+            </DateRangePicker>
+          </div>
+        </Input>
+      </InputController>
+      <div />
+    </DateRangePicker>
+  </Responsive>
+</WithResponsive(DateRangePicker)>
+`;
+
+exports[`<DateRangePicker /> if \`isCalendarIconDisplayed\` === false should return the right structure 1`] = `
+<WithResponsive(DateRangePicker)
+  isCalendarIconDisplayed={false}
+>
+  <Responsive
+    as={[Function]}
+    getWidth={[Function]}
+    isCalendarIconDisplayed={false}
+    isUserOnMobile={false}
+    onUpdate={[Function]}
+    windowInnerWidth={1024}
+  >
+    <DateRangePicker
+      displayFormat="DD/MM/YYYY"
+      endDatePlaceholderText=""
+      error={false}
+      getIsDayBlocked={[Function]}
+      isCalendarIconDisplayed={false}
+      isLoading={false}
+      isUserOnMobile={false}
+      isValid={false}
+      localeCode="en"
+      name=""
+      onBlur={[Function]}
+      onChange={[Function]}
+      onFocusChange={[Function]}
+      startDatePlaceholderText=""
+      willOpenAbove={false}
+      windowInnerWidth={1024}
+    >
+      <InputController
+        adaptOnChangeEvent={[Function]}
+        error={false}
+        icon={null}
+        inputOnChangeFunctionName="onDatesChange"
+        isCompact={false}
+        isFluid={false}
+        isFocused={false}
+        isValid={false}
+        mapValueToProps={[Function]}
+        name=""
+        onChange={[Function]}
+        value={null}
+      >
+        <Input
+          className=""
+          fluid={false}
+          iconPosition={null}
+          name=""
+          type="text"
+          value={null}
+        >
+          <div
+            className="ui input"
+          >
+            <DateRangePicker
+              customArrowIcon={
+                <Icon
+                  className={null}
+                  color={null}
+                  hasBorder={false}
+                  isButton={false}
+                  isCircular={false}
+                  isColorInverted={false}
+                  isDisabled={false}
+                  isLabelLeft={false}
+                  labelText={null}
+                  labelWeight={null}
+                  name="arrow right"
+                  path={null}
+                  size={null}
+                />
+              }
+              daySize={52}
+              disabled={false}
               displayFormat="DD/MM/YYYY"
               endDate={null}
               endDateId="end_date_id_"
