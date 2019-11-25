@@ -106,32 +106,18 @@ Component.propTypes = {
   ]),
   /** The images to display in the gallery modal. */
   galleryImages: PropTypes.arrayOf(
-    PropTypes.oneOfType([
-      PropTypes.shape({
-        /** The text to display above an isolated category of images. */
-        categoryText: PropTypes.string,
-      }),
-      PropTypes.shape({
-        /** The natural height of the image. */
-        imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        /** The label text for the when the image is not found. */
-        imageNotFoundLabelText: PropTypes.string,
-        /** Title of the image to show when hovering it on desktop browsers */
-        imageTitle: PropTypes.string,
-        /** URL pointing to the image to display. */
-        imageUrl: PropTypes.string.isRequired,
-        /** The natural width of the image. */
-        imageWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
-        /** A visible label for the image. */
-        label: PropTypes.string.isRequired,
-        /** URL pointing to the placeholder image to display. */
-        placeholderImageUrl: PropTypes.string,
-        /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-        sizes: PropTypes.string,
-        /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-        srcSet: PropTypes.string,
-      }),
-    ])
+    PropTypes.shape({
+      /** A description of the image to show above the slideshow when the image is showing. */
+      descriptionText: PropTypes.string,
+      /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      sizes: PropTypes.string,
+      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      srcSet: PropTypes.string,
+      /** Title of the image to show when hovering over it on desktop browsers. */
+      title: PropTypes.string,
+      /** URL pointing to the image to display. */
+      url: PropTypes.string.isRequired,
+    })
   ),
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,
