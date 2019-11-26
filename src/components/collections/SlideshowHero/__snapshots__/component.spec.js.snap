@@ -74,6 +74,7 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
       >
         <Header
           activeNavigationItemIndex={null}
+          className=""
           isBackgroundFilled={false}
           logoHref="/"
           logoSize="medium"
