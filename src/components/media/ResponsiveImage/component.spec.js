@@ -5,12 +5,11 @@ import React from 'react';
 import { shallow, mount } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
 
-import {
-  Component as ResponsiveImage,
-  ComponentWithLazyLoad,
-} from './component';
+import { Component as ResponsiveImage } from './component';
 import { getImageMarkup } from './utils/getImageMarkup';
 import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
+
+import { ResponsiveImage as ComponentWithLazyLoad } from './index';
 
 const getResponsiveImage = props => shallow(<ResponsiveImage {...props} />);
 
