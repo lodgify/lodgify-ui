@@ -1,3 +1,10 @@
+# [1.266.0](https://github.com/lodgify/lodgify-ui/compare/v1.265.0...v1.266.0) (2019-11-26)
+
+
+### Features
+
+* **Header:** expose className for Header and the Component that use that ([57b4b3d](https://github.com/lodgify/lodgify-ui/commit/57b4b3d))
+
 # [1.265.0](https://github.com/lodgify/lodgify-ui/compare/v1.264.0...v1.265.0) (2019-11-25)
 
 
