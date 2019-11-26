@@ -16,6 +16,7 @@ export const Component = ({
   backgroundImageSrcSet,
   backgroundImageUrl,
   backgroundImageWidth,
+  className,
   headerLogoHref,
   headerLogoSize,
   headerLogoSizes,
@@ -46,47 +47,48 @@ export const Component = ({
   searchBarOnSubmit,
   searchBarSearchButton,
 }) => (
-  <Hero
-    activeNavigationItemIndex={activeNavigationItemIndex}
-    backgroundImageHeight={backgroundImageHeight}
-    backgroundImageSizes={backgroundImageSizes}
-    backgroundImageSrcSet={backgroundImageSrcSet}
-    backgroundImageUrl={backgroundImageUrl}
-    backgroundImageWidth={backgroundImageWidth}
-    headerLogoHref={headerLogoHref}
-    headerLogoSize={headerLogoSize}
-    headerLogoSizes={headerLogoSizes}
-    headerLogoSrc={headerLogoSrc}
-    headerLogoSrcSet={headerLogoSrcSet}
-    headerLogoSubText={headerLogoSubText}
-    headerLogoText={headerLogoText}
-    headerNavigationItems={headerNavigationItems}
-    headerPrimaryCTA={headerPrimaryCTA}
-    placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
-  >
-    <InnerContent
-      headingText={headingText}
-      isSearchBarDateRangePickerLoading={isSearchBarDateRangePickerLoading}
-      searchBarDateRangePickerLocaleCode={searchBarDateRangePickerLocaleCode}
-      searchBarDatesCheckInLabel={searchBarDatesCheckInLabel}
-      searchBarDatesCheckOutLabel={searchBarDatesCheckOutLabel}
-      searchBarDatesInputFocusedInput={searchBarDatesInputFocusedInput}
-      searchBarDatesInputOnFocusChange={searchBarDatesInputOnFocusChange}
-      searchBarDatesInputValue={searchBarDatesInputValue}
-      searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
-      searchBarGuestsInputLabel={searchBarGuestsInputLabel}
-      searchBarGuestsInputValue={searchBarGuestsInputValue}
-      searchBarLocationInputLabel={searchBarLocationInputLabel}
-      searchBarLocationInputValue={searchBarLocationInputValue}
-      searchBarLocationOptions={searchBarLocationOptions}
-      searchBarMaximumGuestsInputValue={searchBarMaximumGuestsInputValue}
-      searchBarModalHeadingText={searchBarModalHeadingText}
-      searchBarOnChangeInput={searchBarOnChangeInput}
-      searchBarOnSubmit={searchBarOnSubmit}
-      searchBarSearchButton={searchBarSearchButton}
-    />
-  </Hero>
-);
+    <Hero
+      activeNavigationItemIndex={activeNavigationItemIndex}
+      backgroundImageHeight={backgroundImageHeight}
+      backgroundImageSizes={backgroundImageSizes}
+      backgroundImageSrcSet={backgroundImageSrcSet}
+      backgroundImageUrl={backgroundImageUrl}
+      backgroundImageWidth={backgroundImageWidth}
+      className={className}
+      headerLogoHref={headerLogoHref}
+      headerLogoSize={headerLogoSize}
+      headerLogoSizes={headerLogoSizes}
+      headerLogoSrc={headerLogoSrc}
+      headerLogoSrcSet={headerLogoSrcSet}
+      headerLogoSubText={headerLogoSubText}
+      headerLogoText={headerLogoText}
+      headerNavigationItems={headerNavigationItems}
+      headerPrimaryCTA={headerPrimaryCTA}
+      placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
+    >
+      <InnerContent
+        headingText={headingText}
+        isSearchBarDateRangePickerLoading={isSearchBarDateRangePickerLoading}
+        searchBarDateRangePickerLocaleCode={searchBarDateRangePickerLocaleCode}
+        searchBarDatesCheckInLabel={searchBarDatesCheckInLabel}
+        searchBarDatesCheckOutLabel={searchBarDatesCheckOutLabel}
+        searchBarDatesInputFocusedInput={searchBarDatesInputFocusedInput}
+        searchBarDatesInputOnFocusChange={searchBarDatesInputOnFocusChange}
+        searchBarDatesInputValue={searchBarDatesInputValue}
+        searchBarGetIsDayBlocked={searchBarGetIsDayBlocked}
+        searchBarGuestsInputLabel={searchBarGuestsInputLabel}
+        searchBarGuestsInputValue={searchBarGuestsInputValue}
+        searchBarLocationInputLabel={searchBarLocationInputLabel}
+        searchBarLocationInputValue={searchBarLocationInputValue}
+        searchBarLocationOptions={searchBarLocationOptions}
+        searchBarMaximumGuestsInputValue={searchBarMaximumGuestsInputValue}
+        searchBarModalHeadingText={searchBarModalHeadingText}
+        searchBarOnChangeInput={searchBarOnChangeInput}
+        searchBarOnSubmit={searchBarOnSubmit}
+        searchBarSearchButton={searchBarSearchButton}
+      />
+    </Hero>
+  );
 
 Component.displayName = 'HomepageHero';
 
@@ -96,6 +98,7 @@ Component.defaultProps = {
   backgroundImageSizes: undefined,
   backgroundImageSrcSet: undefined,
   backgroundImageWidth: undefined,
+  className: '',
   searchBarDatesInputValue: undefined,
   searchBarGuestsInputValue: undefined,
   headerLogoHref: undefined,
@@ -144,6 +147,8 @@ Component.propTypes = {
     PropTypes.string,
     PropTypes.number,
   ]),
+  /** The custom className to customize the component. */
+  className: PropTypes.string,
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,
   /** The maximum size of the logo in the header. */

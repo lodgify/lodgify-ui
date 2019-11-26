@@ -6,6 +6,7 @@ exports[`HomepageHero should render the right structure 1`] = `
   backgroundImageSizes="url"
   backgroundImageSrcSet="a load of sizes"
   backgroundImageUrl="bare sources"
+  className=""
   headerLogoSizes="a load of logo sizes"
   headerLogoSrc="src"
   headerLogoSrcSet="a load of logo src sets"
@@ -50,6 +51,7 @@ exports[`HomepageHero should render the right structure 1`] = `
     backgroundImageSrcSet="a load of sizes"
     backgroundImageUrl="bare sources"
     bottomOffset="0px"
+    className=""
     headerLogoSizes="a load of logo sizes"
     headerLogoSrc="src"
     headerLogoSrcSet="a load of logo src sets"
@@ -72,6 +74,7 @@ exports[`HomepageHero should render the right structure 1`] = `
   >
     <FullBleed
       bottomOffset="0px"
+      className=""
       hasGradient={true}
       imageUrl="bare sources"
       placeholderImageUrl={null}
@@ -146,6 +149,7 @@ exports[`HomepageHero should render the right structure 1`] = `
           </withLazyLoad(ResponsiveImage)>
           <Header
             activeNavigationItemIndex={1}
+            className=""
             isBackgroundFilled={false}
             logoHref="/"
             logoSize="medium"

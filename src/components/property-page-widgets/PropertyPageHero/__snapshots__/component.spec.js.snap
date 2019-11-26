@@ -4,6 +4,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
 <PropertyPageHero
   activeNavigationItemIndex={1}
   backgroundImageUrl="some url"
+  className=""
   galleryImages={
     Array [
       Object {
@@ -40,6 +41,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
     activeNavigationItemIndex={1}
     backgroundImageUrl="some url"
     bottomOffset="85px"
+    className=""
     headerLogoSizes="a load of logo sizes"
     headerLogoSrc="src"
     headerLogoSrcSet="a load of logo src sets"
@@ -63,6 +65,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
   >
     <FullBleed
       bottomOffset="85px"
+      className=""
       hasGradient={true}
       imageUrl="some url"
       placeholderImageUrl={null}
@@ -137,6 +140,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
           </withLazyLoad(ResponsiveImage)>
           <Header
             activeNavigationItemIndex={1}
+            className=""
             isBackgroundFilled={false}
             logoHref="/"
             logoSize="medium"
@@ -358,6 +362,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
 <PropertyPageHero
   activeNavigationItemIndex={1}
   backgroundImageUrl="some url"
+  className=""
   galleryImages={
     Array [
       Object {
@@ -398,6 +403,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
     activeNavigationItemIndex={1}
     backgroundImageUrl="some url"
     bottomOffset="85px"
+    className=""
     headerLogoSizes="a load of logo sizes"
     headerLogoSrc="src"
     headerLogoSrcSet="a load of logo src sets"
@@ -421,6 +427,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
   >
     <FullBleed
       bottomOffset="85px"
+      className=""
       hasGradient={true}
       imageUrl="some url"
       placeholderImageUrl={null}
@@ -495,6 +502,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
           </withLazyLoad(ResponsiveImage)>
           <Header
             activeNavigationItemIndex={1}
+            className=""
             isBackgroundFilled={false}
             logoHref="/"
             logoSize="medium"

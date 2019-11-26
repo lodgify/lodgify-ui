@@ -3,6 +3,7 @@
 exports[`<Header /> by default should render the right structure 1`] = `
 <Header
   activeNavigationItemIndex={null}
+  className=""
   dateRangePickerLocaleCode="ko"
   isBackgroundFilled={false}
   logoHref="/"
@@ -654,6 +655,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
 exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right structure 1`] = `
 <Header
   activeNavigationItemIndex={null}
+  className=""
   dateRangePickerLocaleCode="ko"
   isBackgroundFilled={false}
   logoHref="/"
@@ -793,6 +795,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
               >
                 <Component
                   activeNavigationItemIndex={null}
+                  className=""
                   dateRangePickerLocaleCode="ko"
                   isBackgroundFilled={false}
                   logoHref="/"
@@ -1016,6 +1019,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
 exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the right structure 1`] = `
 <Header
   activeNavigationItemIndex={null}
+  className=""
   dateRangePickerLocaleCode="ko"
   isBackgroundFilled={true}
   logoHref="/"

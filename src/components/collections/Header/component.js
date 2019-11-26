@@ -62,6 +62,7 @@ export class Component extends PureComponent {
 
   render = () => {
     const {
+      className,
       isBackgroundFilled,
       logoHref,
       logoSizes,
@@ -75,7 +76,7 @@ export class Component extends PureComponent {
 
     return (
       <header
-        className={classnames({
+        className={classnames(className, {
           'is-background-filled': isBackgroundFilled,
           'is-opaque': isOpaque,
         })}
@@ -98,8 +99,8 @@ export class Component extends PureComponent {
                 activeNavigationItemIndex={activeNavigationItemIndex}
               />
             ) : (
-              getStandardMenuMarkup(this.props, activeNavigationItemIndex)
-            )}
+                getStandardMenuMarkup(this.props, activeNavigationItemIndex)
+              )}
           </Menu.Menu>
         </HorizontalGutters>
       </header>
@@ -111,6 +112,7 @@ Component.displayName = 'Header';
 
 Component.defaultProps = {
   activeNavigationItemIndex: null,
+  className: '',
   isBackgroundFilled: false,
   logoHref: '/',
   logoSize: MEDIUM_LOGO_SIZE,
@@ -124,6 +126,8 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The index of the active navigation item. */
   activeNavigationItemIndex: number,
+  /** The custom className to customize the component. */
+  className: string,
   /** Is the background filled with a color defined in CSS. */
   isBackgroundFilled: bool,
   /** The href for the logo link. */
