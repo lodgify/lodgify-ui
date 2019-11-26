@@ -19,6 +19,7 @@ const Component = ({
   backgroundImageSrcSet,
   backgroundImageUrl,
   backgroundImageWidth,
+  className,
   galleryImages,
   headerLogoHref,
   headerLogoSize,
@@ -42,6 +43,7 @@ const Component = ({
     backgroundImageUrl={backgroundImageUrl}
     backgroundImageWidth={backgroundImageWidth}
     bottomOffset={BOTTOM_OFFSET}
+    className={className}
     headerLogoHref={headerLogoHref}
     headerLogoSize={headerLogoSize}
     headerLogoSizes={headerLogoSizes}
@@ -71,6 +73,7 @@ Component.defaultProps = {
   backgroundImageSizes: undefined,
   backgroundImageSrcSet: undefined,
   backgroundImageWidth: undefined,
+  className: '',
   galleryImages: [],
   headerLogoHref: undefined,
   headerLogoSize: undefined,
@@ -104,6 +107,8 @@ Component.propTypes = {
     PropTypes.string,
     PropTypes.number,
   ]),
+  /** The custom className to customize the component. */
+  className: PropTypes.string,
   /** The images to display in the gallery modal. */
   galleryImages: PropTypes.arrayOf(
     PropTypes.shape({

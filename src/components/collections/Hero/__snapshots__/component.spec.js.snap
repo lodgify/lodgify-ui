@@ -7,6 +7,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
   backgroundImageSrcSet="a load of sources"
   backgroundImageUrl="https://darkpurple.com"
   bottomOffset="0px"
+  className=""
   headerLogoSizes="a load of logo sizes"
   headerLogoSrc="https://darkgreen.com"
   headerLogoSrcSet="a load of logo src sets"
@@ -40,6 +41,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
 >
   <FullBleed
     bottomOffset="0px"
+    className=""
     hasGradient={true}
     imageUrl="https://darkpurple.com"
     placeholderImageUrl={null}
@@ -114,6 +116,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
         </withLazyLoad(ResponsiveImage)>
         <Header
           activeNavigationItemIndex={1}
+          className=""
           isBackgroundFilled={false}
           logoHref="/"
           logoSize="medium"

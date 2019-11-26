@@ -18,6 +18,7 @@ export const Component = ({
   backgroundImageUrl,
   backgroundImageWidth,
   bottomOffset,
+  className,
   children,
   headerLogoHref,
   headerLogoSize,
@@ -32,6 +33,7 @@ export const Component = ({
 }) => (
   <FullBleed
     bottomOffset={bottomOffset}
+    className={className}
     hasGradient
     imageHeight={backgroundImageHeight}
     imageUrl={backgroundImageUrl}
@@ -59,6 +61,7 @@ export const Component = ({
 Component.displayName = 'Hero';
 
 Component.defaultProps = {
+  className: '',
   activeNavigationItemIndex: null,
   backgroundImageHeight: undefined,
   backgroundImageSizes: undefined,
@@ -97,8 +100,10 @@ Component.propTypes = {
   ]),
   /** Reduce the height of the Hero with an offset, supports CSS dimensions. */
   bottomOffset: PropTypes.string,
-  /** The children displayed between the header and the bottom of the hero. */
+  /** The custom className to customize the component. */
   children: PropTypes.node,
+  /** The children displayed between the header and the bottom of the hero. */
+  className: PropTypes.string,
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,
   /** The maximum size of the logo in the header. */
