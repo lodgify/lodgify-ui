@@ -1,3 +1,10 @@
+# [1.268.0](https://github.com/lodgify/lodgify-ui/compare/v1.267.0...v1.268.0) (2019-11-27)
+
+
+### Features
+
+* **HomepageHero:** hero header can be a filled color ([bbe801b](https://github.com/lodgify/lodgify-ui/commit/bbe801b))
+
 # [1.267.0](https://github.com/lodgify/lodgify-ui/compare/v1.266.1...v1.267.0) (2019-11-27)
 
 
