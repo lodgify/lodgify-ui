@@ -1,3 +1,10 @@
+## [1.266.1](https://github.com/lodgify/lodgify-ui/compare/v1.266.0...v1.266.1) (2019-11-27)
+
+
+### Bug Fixes
+
+* **FullBleed:** accept className ([be6ceb0](https://github.com/lodgify/lodgify-ui/commit/be6ceb0))
+
 # [1.266.0](https://github.com/lodgify/lodgify-ui/compare/v1.265.0...v1.266.0) (2019-11-26)
 
 
