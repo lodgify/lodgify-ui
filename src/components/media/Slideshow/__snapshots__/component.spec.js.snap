@@ -2,6 +2,7 @@
 
 exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should get the right props 1`] = `
 <Slideshow
+  className={null}
   hasShadow={false}
   headingText={null}
   images={
@@ -526,6 +527,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
 
 exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should get the right props 1`] = `
 <Slideshow
+  className={null}
   hasShadow={true}
   headingText={null}
   images={
@@ -1050,6 +1052,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
 
 exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should return the right structure 1`] = `
 <Slideshow
+  className={null}
   hasShadow={true}
   headingText={null}
   images={
@@ -1574,6 +1577,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
 
 exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should return the right structure 1`] = `
 <Slideshow
+  className={null}
   hasShadow={true}
   headingText={null}
   images={
@@ -2099,6 +2103,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
 
 exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` should return the right structure 1`] = `
 <Slideshow
+  className={null}
   hasShadow={true}
   headingText={null}
   images={
@@ -2624,6 +2629,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
 
 exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the right structure 1`] = `
 <Slideshow
+  className={null}
   hasShadow={true}
   headingText={null}
   images={
@@ -3116,6 +3122,7 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
 
 exports[`<Slideshow /> if \`props.headingText\` is passed should return the right structure 1`] = `
 <Slideshow
+  className={null}
   hasShadow={true}
   headingText="🎧"
   images={

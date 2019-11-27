@@ -190,6 +190,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
       </Divider>
     </Divider>
     <Slideshow
+      className={null}
       hasShadow={true}
       headingText={null}
       images={
@@ -595,467 +596,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
       </Divider>
     </Divider>
     <Slideshow
-      hasShadow={true}
-      headingText={null}
-      images={
-        Array [
-          Object {
-            "title": "Two cats",
-            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-          },
-        ]
-      }
-      isFluid={false}
-      isRounded={true}
-      isShowingBulletNavigation={false}
-      isShowingIndex={false}
-      isShowingThumbnails={false}
-      isStretched={false}
-      startIndex={0}
-    >
-      <ImageGallery
-        additionalClass=""
-        data-testid="slideshow"
-        items={
-          Array [
-            Object {
-              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-              "originalAlt": "Two cats",
-              "originalTitle": "Two cats",
-              "sizes": undefined,
-              "srcSet": undefined,
-              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-              "thumbnailAlt": "Two cats",
-            },
-          ]
-        }
-        lazyLoad={true}
-        onImageError={[Function]}
-        onSlide={[Function]}
-        renderLeftNav={[Function]}
-        renderRightNav={[Function]}
-        showBullets={false}
-        showFullscreenButton={false}
-        showIndex={false}
-        showPlayButton={false}
-        showThumbnails={false}
-        startIndex={0}
-        thumbnails={
-          Array [
-            Object {
-              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-              "originalAlt": "Two cats",
-              "originalTitle": "Two cats",
-              "sizes": undefined,
-              "srcSet": undefined,
-              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-              "thumbnailAlt": "Two cats",
-            },
-          ]
-        }
-      >
-        <div />
-      </ImageGallery>
-    </Slideshow>
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
-      <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
-      >
-        <div
-          className="ui hidden divider is-size-small"
-        />
-      </Divider>
-    </Divider>
-    <List
-      horizontal={true}
-    >
-      <div
-        className="ui horizontal list"
-        role="list"
-      >
-        <ListItem
-          key="01 Bedroomfeature"
-        >
-          <div
-            className="item"
-            onClick={[Function]}
-            role="listitem"
-          >
-            <Paragraph
-              isCompact={false}
-              size="medium"
-              weight="heavy"
-            >
-              <p
-                className="heavy"
-              >
-                1 Bedroom
-              </p>
-            </Paragraph>
-          </div>
-        </ListItem>
-        <ListItem
-          key="11 Dining-Roomfeature"
-        >
-          <div
-            className="item"
-            onClick={[Function]}
-            role="listitem"
-          >
-            <Paragraph
-              isCompact={false}
-              size="medium"
-              weight="heavy"
-            >
-              <p
-                className="heavy"
-              >
-                1 Dining-Room
-              </p>
-            </Paragraph>
-          </div>
-        </ListItem>
-      </div>
-    </List>
-    <Divider
-      className=""
-      hasLine={true}
-      size="medium"
-    >
-      <Divider
-        className=""
-        hidden={false}
-        section={false}
-      >
-        <div
-          className="ui divider"
-        />
-      </Divider>
-    </Divider>
-    <Amenities
-      amenities={
-        Array [
-          Object {
-            "iconName": "leaf",
-            "items": Array [
-              "Toaster",
-              "Microwave",
-              "Coffee Machine",
-            ],
-            "name": "Cooking",
-          },
-          Object {
-            "iconName": "paw",
-            "items": Array [
-              "Bidet",
-              "Hair Dryer",
-              "Iron & Board",
-            ],
-            "name": "Bathroom & Laundry",
-          },
-        ]
-      }
-      amenitiesConjunctionText="WALL-E"
-      hasExtraItemsInModal={false}
-      headingText="bibip-bop"
-      isStacked={false}
-      modalTriggerText="View more"
-    >
-      <Grid
-        areColumnsCentered={false}
-        className="is-amenities"
-        columns={3}
-        isStackable={true}
-      >
-        <Grid
-          centered={false}
-          className="is-amenities"
-          columns={3}
-          stackable={true}
-        >
-          <div
-            className="ui stackable three column grid is-amenities"
-          >
-            <GridRow
-              horizontalAlignContent="left"
-            >
-              <GridRow
-                textAlign="left"
-              >
-                <div
-                  className="left aligned row"
-                >
-                  <GridColumn
-                    verticalAlignContent="top"
-                    width={12}
-                  >
-                    <GridColumn
-                      verticalAlign="top"
-                      width={12}
-                    >
-                      <div
-                        className="top aligned twelve wide column"
-                      >
-                        <Heading
-                          className={null}
-                          hasMargin={true}
-                          isColorInverted={false}
-                          size="medium"
-                          textAlign={null}
-                        >
-                          <Header
-                            as="h3"
-                            className=""
-                            inverted={false}
-                            textAlign={null}
-                          >
-                            <h3
-                              className="ui header"
-                            >
-                              bibip-bop
-                            </h3>
-                          </Header>
-                        </Heading>
-                      </div>
-                    </GridColumn>
-                  </GridColumn>
-                  <GridColumn
-                    key="Cooking0"
-                    verticalAlignContent="top"
-                    width={null}
-                  >
-                    <GridColumn
-                      verticalAlign="top"
-                      width={null}
-                    >
-                      <div
-                        className="top aligned column"
-                      >
-                        <Icon
-                          className={null}
-                          color={null}
-                          hasBorder={false}
-                          isButton={false}
-                          isCircular={false}
-                          isColorInverted={false}
-                          isDisabled={false}
-                          isLabelLeft={true}
-                          labelText="Cooking"
-                          labelWeight="heavy"
-                          name="leaf"
-                          path={null}
-                          size={null}
-                        >
-                          <i
-                            className="icon has-label"
-                          >
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight="heavy"
-                            >
-                              <p
-                                className="heavy"
-                              >
-                                Cooking
-                              </p>
-                            </Paragraph>
-                            <svg
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                d="M23.9.79a33.24,33.24,0,0,1-3.55,10.82,13.35,13.35,0,0,1-4.93,5.13A10,10,0,0,1,10.52,18c-.32,0-.64,0-1,0a11.93,11.93,0,0,1-3.41-.82,7.07,7.07,0,0,1-1-.5.59.59,0,0,1-.21-.81.6.6,0,0,1,.82-.21,7.18,7.18,0,0,0,.83.42,9.63,9.63,0,0,0,8.25-.34c3.75-2.07,6.36-6.92,7.76-14.4-11.73,0-18.2,0-19.9,6.11A8.89,8.89,0,0,0,2.85,12a5.55,5.55,0,0,0,.67,1.44A21.37,21.37,0,0,1,5.63,11a20.16,20.16,0,0,1,4.83-3.61A10.18,10.18,0,0,1,15,6.05a.6.6,0,0,1,0,1.19,9,9,0,0,0-4,1.2,19.12,19.12,0,0,0-4.54,3.39c-1.94,1.93-5.19,6-5.19,11.48a.59.59,0,0,1-.59.6.6.6,0,0,1-.6-.6,16.42,16.42,0,0,1,2.7-8.81,7.19,7.19,0,0,1-1.08-2.14,10.09,10.09,0,0,1-.16-5.28A7.91,7.91,0,0,1,4,3,10.26,10.26,0,0,1,8.47.93C12,.09,16.7.09,22.7.09h.61a.58.58,0,0,1,.45.22h0A.59.59,0,0,1,23.9.79Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </i>
-                        </Icon>
-                        <Paragraph
-                          isCompact={false}
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            Toaster, 
-                            Microwave WALL-E 
-                            Coffee Machine
-                          </p>
-                        </Paragraph>
-                      </div>
-                    </GridColumn>
-                  </GridColumn>
-                  <GridColumn
-                    key="Bathroom & Laundry1"
-                    verticalAlignContent="top"
-                    width={null}
-                  >
-                    <GridColumn
-                      verticalAlign="top"
-                      width={null}
-                    >
-                      <div
-                        className="top aligned column"
-                      >
-                        <Icon
-                          className={null}
-                          color={null}
-                          hasBorder={false}
-                          isButton={false}
-                          isCircular={false}
-                          isColorInverted={false}
-                          isDisabled={false}
-                          isLabelLeft={true}
-                          labelText="Bathroom & Laundry"
-                          labelWeight="heavy"
-                          name="paw"
-                          path={null}
-                          size={null}
-                        >
-                          <i
-                            className="icon has-label"
-                          >
-                            <Paragraph
-                              isCompact={false}
-                              size="medium"
-                              weight="heavy"
-                            >
-                              <p
-                                className="heavy"
-                              >
-                                Bathroom & Laundry
-                              </p>
-                            </Paragraph>
-                            <svg
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                d="M15.38,9.25c1.52,0,2.71-1.81,2.71-4.13S16.9,1,15.38,1s-2.7,1.81-2.7,4.12S13.86,9.25,15.38,9.25Zm0-6.87c.64,0,1.36,1.17,1.36,2.74S16,7.88,15.38,7.88,14,6.7,14,5.12,14.74,2.38,15.38,2.38Zm5.41,4.09c-1.51,0-2.7,1.82-2.7,4.14s1.19,4.14,2.7,4.14,2.71-1.82,2.71-4.14S22.31,6.47,20.79,6.47Zm0,6.91c-.63,0-1.35-1.19-1.35-2.77s.72-2.77,1.35-2.77S22.15,9,22.15,10.61,21.43,13.38,20.79,13.38ZM16.73,23ZM5.91,10.61c0-2.32-1.19-4.14-2.7-4.14S.5,8.29.5,10.61s1.19,4.14,2.71,4.14S5.91,12.93,5.91,10.61Zm-2.7,2.77c-.64,0-1.36-1.19-1.36-2.77s.72-2.77,1.36-2.77S4.56,9,4.56,10.61,3.84,13.38,3.21,13.38Zm5.4-4.13c1.52,0,2.71-1.81,2.71-4.13S10.13,1,8.61,1s-2.7,1.81-2.7,4.12S7.1,9.25,8.61,9.25Zm0-6.87C9.25,2.38,10,3.55,10,5.12S9.25,7.88,8.61,7.88,7.26,6.7,7.26,5.12,8,2.38,8.61,2.38ZM12,10.62c-2.79,0-5.23,2.17-6.72,5.94-.82,2.09-.81,4,0,5.3A2.37,2.37,0,0,0,7.26,23a5.49,5.49,0,0,0,2.68-.76A4.19,4.19,0,0,1,12,21.62a4.2,4.2,0,0,1,2.07.62,5.41,5.41,0,0,0,2.66.76,2.38,2.38,0,0,0,1.95-1.14c.85-1.28.86-3.21,0-5.3C17.23,12.79,14.78,10.62,12,10.62Zm5.56,10.47a1,1,0,0,1-.82.53A4.19,4.19,0,0,1,14.67,21,5.42,5.42,0,0,0,12,20.25h0A5.45,5.45,0,0,0,9.33,21a4.19,4.19,0,0,1-2.07.61,1,1,0,0,1-.82-.53c-.58-.88-.55-2.38.1-4C7.81,13.85,9.8,12,12,12s4.19,1.85,5.46,5.07C18.11,18.71,18.14,20.21,17.56,21.09Z"
-                                fill="currentColor"
-                              />
-                            </svg>
-                          </i>
-                        </Icon>
-                        <Paragraph
-                          isCompact={false}
-                          size="medium"
-                          weight={null}
-                        >
-                          <p
-                            className=""
-                          >
-                            Bidet, 
-                            Hair Dryer WALL-E 
-                            Iron & Board
-                          </p>
-                        </Paragraph>
-                      </div>
-                    </GridColumn>
-                  </GridColumn>
-                </div>
-              </GridRow>
-            </GridRow>
-          </div>
-        </Grid>
-      </Grid>
-    </Amenities>
-    <Grid
-      areColumnsCentered={false}
-      isStackable={false}
-    >
-      <Grid
-        centered={false}
-        stackable={false}
-      >
-        <div
-          className="ui grid"
-        >
-          <GridColumn
-            verticalAlignContent="bottom"
-            width={12}
-          >
-            <GridColumn
-              verticalAlign="bottom"
-              width={12}
-            >
-              <div
-                className="bottom aligned twelve wide column"
-              >
-                <Paragraph
-                  isCompact={false}
-                  size="medium"
-                  weight={null}
-                >
-                  <p
-                    className=""
-                  >
-                    morf
-                    <strong>
-                       $1010 
-                    </strong>
-                    ich, burp...
-                  </p>
-                </Paragraph>
-              </div>
-            </GridColumn>
-          </GridColumn>
-        </div>
-      </Grid>
-    </Grid>
-  </div>
-</ModalContent>
-`;
-
-exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not render the rating 1`] = `
-<ModalContent
-  className="has-room-type-gallery"
->
-  <div
-    className="has-room-type-gallery content"
-  >
-    <Heading
       className={null}
-      hasMargin={true}
-      isColorInverted={false}
-      size="medium"
-      textAlign={null}
-    >
-      <Header
-        as="h3"
-        className=""
-        inverted={false}
-        textAlign={null}
-      >
-        <h3
-          className="ui header"
-        >
-          yoyo name
-        </h3>
-      </Header>
-    </Heading>
-    <Divider
-      className=""
-      hasLine={false}
-      size="small"
-    >
-      <Divider
-        className="is-size-small"
-        hidden={true}
-        section={false}
-      >
-        <div
-          className="ui hidden divider is-size-small"
-        />
-      </Divider>
-    </Divider>
-    <Slideshow
       hasShadow={true}
       headingText={null}
       images={
@@ -1118,46 +659,21 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
         <div />
       </ImageGallery>
     </Slideshow>
-    <Grid
-      areColumnsCentered={false}
-      isStackable={false}
+    <Divider
+      className=""
+      hasLine={false}
+      size="small"
     >
-      <Grid
-        centered={false}
-        stackable={false}
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
       >
         <div
-          className="ui grid"
-        >
-          <GridColumn
-            verticalAlignContent="top"
-            width={null}
-          >
-            <GridColumn
-              verticalAlign="top"
-              width={null}
-            >
-              <div
-                className="top aligned column"
-              >
-                <HTML
-                  htmlString="yoyo description"
-                >
-                  <div
-                    className="html-container"
-                    dangerouslySetInnerHTML={
-                      Object {
-                        "__html": "yoyo description",
-                      }
-                    }
-                  />
-                </HTML>
-              </div>
-            </GridColumn>
-          </GridColumn>
-        </div>
-      </Grid>
-    </Grid>
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
+    </Divider>
     <List
       horizontal={true}
     >
@@ -1689,6 +1205,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
       </Divider>
     </Divider>
     <Slideshow
+      className={null}
       hasShadow={true}
       headingText={null}
       images={
@@ -1765,6 +1282,493 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
+              "thumbnailAlt": "Two cats",
+            },
+          ]
+        }
+      >
+        <div />
+      </ImageGallery>
+    </Slideshow>
+    <Grid
+      areColumnsCentered={false}
+      isStackable={false}
+    >
+      <Grid
+        centered={false}
+        stackable={false}
+      >
+        <div
+          className="ui grid"
+        >
+          <GridColumn
+            verticalAlignContent="top"
+            width={null}
+          >
+            <GridColumn
+              verticalAlign="top"
+              width={null}
+            >
+              <div
+                className="top aligned column"
+              >
+                <HTML
+                  htmlString="yoyo description"
+                >
+                  <div
+                    className="html-container"
+                    dangerouslySetInnerHTML={
+                      Object {
+                        "__html": "yoyo description",
+                      }
+                    }
+                  />
+                </HTML>
+              </div>
+            </GridColumn>
+          </GridColumn>
+        </div>
+      </Grid>
+    </Grid>
+    <List
+      horizontal={true}
+    >
+      <div
+        className="ui horizontal list"
+        role="list"
+      >
+        <ListItem
+          key="01 Bedroomfeature"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="listitem"
+          >
+            <Paragraph
+              isCompact={false}
+              size="medium"
+              weight="heavy"
+            >
+              <p
+                className="heavy"
+              >
+                1 Bedroom
+              </p>
+            </Paragraph>
+          </div>
+        </ListItem>
+        <ListItem
+          key="11 Dining-Roomfeature"
+        >
+          <div
+            className="item"
+            onClick={[Function]}
+            role="listitem"
+          >
+            <Paragraph
+              isCompact={false}
+              size="medium"
+              weight="heavy"
+            >
+              <p
+                className="heavy"
+              >
+                1 Dining-Room
+              </p>
+            </Paragraph>
+          </div>
+        </ListItem>
+      </div>
+    </List>
+    <Divider
+      className=""
+      hasLine={true}
+      size="medium"
+    >
+      <Divider
+        className=""
+        hidden={false}
+        section={false}
+      >
+        <div
+          className="ui divider"
+        />
+      </Divider>
+    </Divider>
+    <Amenities
+      amenities={
+        Array [
+          Object {
+            "iconName": "leaf",
+            "items": Array [
+              "Toaster",
+              "Microwave",
+              "Coffee Machine",
+            ],
+            "name": "Cooking",
+          },
+          Object {
+            "iconName": "paw",
+            "items": Array [
+              "Bidet",
+              "Hair Dryer",
+              "Iron & Board",
+            ],
+            "name": "Bathroom & Laundry",
+          },
+        ]
+      }
+      amenitiesConjunctionText="WALL-E"
+      hasExtraItemsInModal={false}
+      headingText="bibip-bop"
+      isStacked={false}
+      modalTriggerText="View more"
+    >
+      <Grid
+        areColumnsCentered={false}
+        className="is-amenities"
+        columns={3}
+        isStackable={true}
+      >
+        <Grid
+          centered={false}
+          className="is-amenities"
+          columns={3}
+          stackable={true}
+        >
+          <div
+            className="ui stackable three column grid is-amenities"
+          >
+            <GridRow
+              horizontalAlignContent="left"
+            >
+              <GridRow
+                textAlign="left"
+              >
+                <div
+                  className="left aligned row"
+                >
+                  <GridColumn
+                    verticalAlignContent="top"
+                    width={12}
+                  >
+                    <GridColumn
+                      verticalAlign="top"
+                      width={12}
+                    >
+                      <div
+                        className="top aligned twelve wide column"
+                      >
+                        <Heading
+                          className={null}
+                          hasMargin={true}
+                          isColorInverted={false}
+                          size="medium"
+                          textAlign={null}
+                        >
+                          <Header
+                            as="h3"
+                            className=""
+                            inverted={false}
+                            textAlign={null}
+                          >
+                            <h3
+                              className="ui header"
+                            >
+                              bibip-bop
+                            </h3>
+                          </Header>
+                        </Heading>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    key="Cooking0"
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned column"
+                      >
+                        <Icon
+                          className={null}
+                          color={null}
+                          hasBorder={false}
+                          isButton={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={true}
+                          labelText="Cooking"
+                          labelWeight="heavy"
+                          name="leaf"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <Paragraph
+                              isCompact={false}
+                              size="medium"
+                              weight="heavy"
+                            >
+                              <p
+                                className="heavy"
+                              >
+                                Cooking
+                              </p>
+                            </Paragraph>
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M23.9.79a33.24,33.24,0,0,1-3.55,10.82,13.35,13.35,0,0,1-4.93,5.13A10,10,0,0,1,10.52,18c-.32,0-.64,0-1,0a11.93,11.93,0,0,1-3.41-.82,7.07,7.07,0,0,1-1-.5.59.59,0,0,1-.21-.81.6.6,0,0,1,.82-.21,7.18,7.18,0,0,0,.83.42,9.63,9.63,0,0,0,8.25-.34c3.75-2.07,6.36-6.92,7.76-14.4-11.73,0-18.2,0-19.9,6.11A8.89,8.89,0,0,0,2.85,12a5.55,5.55,0,0,0,.67,1.44A21.37,21.37,0,0,1,5.63,11a20.16,20.16,0,0,1,4.83-3.61A10.18,10.18,0,0,1,15,6.05a.6.6,0,0,1,0,1.19,9,9,0,0,0-4,1.2,19.12,19.12,0,0,0-4.54,3.39c-1.94,1.93-5.19,6-5.19,11.48a.59.59,0,0,1-.59.6.6.6,0,0,1-.6-.6,16.42,16.42,0,0,1,2.7-8.81,7.19,7.19,0,0,1-1.08-2.14,10.09,10.09,0,0,1-.16-5.28A7.91,7.91,0,0,1,4,3,10.26,10.26,0,0,1,8.47.93C12,.09,16.7.09,22.7.09h.61a.58.58,0,0,1,.45.22h0A.59.59,0,0,1,23.9.79Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <Paragraph
+                          isCompact={false}
+                          size="medium"
+                          weight={null}
+                        >
+                          <p
+                            className=""
+                          >
+                            Toaster, 
+                            Microwave WALL-E 
+                            Coffee Machine
+                          </p>
+                        </Paragraph>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                  <GridColumn
+                    key="Bathroom & Laundry1"
+                    verticalAlignContent="top"
+                    width={null}
+                  >
+                    <GridColumn
+                      verticalAlign="top"
+                      width={null}
+                    >
+                      <div
+                        className="top aligned column"
+                      >
+                        <Icon
+                          className={null}
+                          color={null}
+                          hasBorder={false}
+                          isButton={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={true}
+                          labelText="Bathroom & Laundry"
+                          labelWeight="heavy"
+                          name="paw"
+                          path={null}
+                          size={null}
+                        >
+                          <i
+                            className="icon has-label"
+                          >
+                            <Paragraph
+                              isCompact={false}
+                              size="medium"
+                              weight="heavy"
+                            >
+                              <p
+                                className="heavy"
+                              >
+                                Bathroom & Laundry
+                              </p>
+                            </Paragraph>
+                            <svg
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                d="M15.38,9.25c1.52,0,2.71-1.81,2.71-4.13S16.9,1,15.38,1s-2.7,1.81-2.7,4.12S13.86,9.25,15.38,9.25Zm0-6.87c.64,0,1.36,1.17,1.36,2.74S16,7.88,15.38,7.88,14,6.7,14,5.12,14.74,2.38,15.38,2.38Zm5.41,4.09c-1.51,0-2.7,1.82-2.7,4.14s1.19,4.14,2.7,4.14,2.71-1.82,2.71-4.14S22.31,6.47,20.79,6.47Zm0,6.91c-.63,0-1.35-1.19-1.35-2.77s.72-2.77,1.35-2.77S22.15,9,22.15,10.61,21.43,13.38,20.79,13.38ZM16.73,23ZM5.91,10.61c0-2.32-1.19-4.14-2.7-4.14S.5,8.29.5,10.61s1.19,4.14,2.71,4.14S5.91,12.93,5.91,10.61Zm-2.7,2.77c-.64,0-1.36-1.19-1.36-2.77s.72-2.77,1.36-2.77S4.56,9,4.56,10.61,3.84,13.38,3.21,13.38Zm5.4-4.13c1.52,0,2.71-1.81,2.71-4.13S10.13,1,8.61,1s-2.7,1.81-2.7,4.12S7.1,9.25,8.61,9.25Zm0-6.87C9.25,2.38,10,3.55,10,5.12S9.25,7.88,8.61,7.88,7.26,6.7,7.26,5.12,8,2.38,8.61,2.38ZM12,10.62c-2.79,0-5.23,2.17-6.72,5.94-.82,2.09-.81,4,0,5.3A2.37,2.37,0,0,0,7.26,23a5.49,5.49,0,0,0,2.68-.76A4.19,4.19,0,0,1,12,21.62a4.2,4.2,0,0,1,2.07.62,5.41,5.41,0,0,0,2.66.76,2.38,2.38,0,0,0,1.95-1.14c.85-1.28.86-3.21,0-5.3C17.23,12.79,14.78,10.62,12,10.62Zm5.56,10.47a1,1,0,0,1-.82.53A4.19,4.19,0,0,1,14.67,21,5.42,5.42,0,0,0,12,20.25h0A5.45,5.45,0,0,0,9.33,21a4.19,4.19,0,0,1-2.07.61,1,1,0,0,1-.82-.53c-.58-.88-.55-2.38.1-4C7.81,13.85,9.8,12,12,12s4.19,1.85,5.46,5.07C18.11,18.71,18.14,20.21,17.56,21.09Z"
+                                fill="currentColor"
+                              />
+                            </svg>
+                          </i>
+                        </Icon>
+                        <Paragraph
+                          isCompact={false}
+                          size="medium"
+                          weight={null}
+                        >
+                          <p
+                            className=""
+                          >
+                            Bidet, 
+                            Hair Dryer WALL-E 
+                            Iron & Board
+                          </p>
+                        </Paragraph>
+                      </div>
+                    </GridColumn>
+                  </GridColumn>
+                </div>
+              </GridRow>
+            </GridRow>
+          </div>
+        </Grid>
+      </Grid>
+    </Amenities>
+    <Grid
+      areColumnsCentered={false}
+      isStackable={false}
+    >
+      <Grid
+        centered={false}
+        stackable={false}
+      >
+        <div
+          className="ui grid"
+        >
+          <GridColumn
+            verticalAlignContent="bottom"
+            width={12}
+          >
+            <GridColumn
+              verticalAlign="bottom"
+              width={12}
+            >
+              <div
+                className="bottom aligned twelve wide column"
+              >
+                <Paragraph
+                  isCompact={false}
+                  size="medium"
+                  weight={null}
+                >
+                  <p
+                    className=""
+                  >
+                    morf
+                    <strong>
+                       $1010 
+                    </strong>
+                    ich, burp...
+                  </p>
+                </Paragraph>
+              </div>
+            </GridColumn>
+          </GridColumn>
+        </div>
+      </Grid>
+    </Grid>
+  </div>
+</ModalContent>
+`;
+
+exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not render the rating 1`] = `
+<ModalContent
+  className="has-room-type-gallery"
+>
+  <div
+    className="has-room-type-gallery content"
+  >
+    <Heading
+      className={null}
+      hasMargin={true}
+      isColorInverted={false}
+      size="medium"
+      textAlign={null}
+    >
+      <Header
+        as="h3"
+        className=""
+        inverted={false}
+        textAlign={null}
+      >
+        <h3
+          className="ui header"
+        >
+          yoyo name
+        </h3>
+      </Header>
+    </Heading>
+    <Divider
+      className=""
+      hasLine={false}
+      size="small"
+    >
+      <Divider
+        className="is-size-small"
+        hidden={true}
+        section={false}
+      >
+        <div
+          className="ui hidden divider is-size-small"
+        />
+      </Divider>
+    </Divider>
+    <Slideshow
+      className={null}
+      hasShadow={true}
+      headingText={null}
+      images={
+        Array [
+          Object {
+            "title": "Two cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+        ]
+      }
+      isFluid={false}
+      isRounded={true}
+      isShowingBulletNavigation={false}
+      isShowingIndex={false}
+      isShowingThumbnails={false}
+      isStretched={false}
+      startIndex={0}
+    >
+      <ImageGallery
+        additionalClass=""
+        data-testid="slideshow"
+        items={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "thumbnailAlt": "Two cats",
+            },
+          ]
+        }
+        lazyLoad={true}
+        onImageError={[Function]}
+        onSlide={[Function]}
+        renderLeftNav={[Function]}
+        renderRightNav={[Function]}
+        showBullets={false}
+        showFullscreenButton={false}
+        showIndex={false}
+        showPlayButton={false}
+        showThumbnails={false}
+        startIndex={0}
+        thumbnails={
+          Array [
+            Object {
+              "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+              "originalAlt": "Two cats",
+              "originalTitle": "Two cats",
+              "sizes": undefined,
+              "srcSet": undefined,
+              "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "thumbnailAlt": "Two cats",
             },
           ]
@@ -2344,6 +2348,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
       </Divider>
     </Divider>
     <Slideshow
+      className={null}
       hasShadow={true}
       headingText={null}
       images={

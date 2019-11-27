@@ -1678,6 +1678,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                               className="four wide computer twelve wide mobile column"
                             >
                               <Slideshow
+                                className={null}
                                 hasShadow={false}
                                 headingText={null}
                                 images={
@@ -2667,6 +2668,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                               className="four wide computer twelve wide mobile column"
                             >
                               <Slideshow
+                                className={null}
                                 hasShadow={false}
                                 headingText={null}
                                 images={
