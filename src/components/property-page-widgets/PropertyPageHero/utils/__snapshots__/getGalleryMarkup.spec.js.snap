@@ -14,7 +14,7 @@ exports[`\`getViewMoreButtonMarkup\` if there are two images or more should retu
   >
     <HorizontalGutters>
       <Gallery
-        images={
+        slideShowImages={
           Array [
             Object {
               "descriptionText": "Entrance",
@@ -26,6 +26,7 @@ exports[`\`getViewMoreButtonMarkup\` if there are two images or more should retu
             },
           ]
         }
+        startIndex={0}
         trigger={
           <Button
             hasShadow={false}
