@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 import { EXPLORE_ALL_PICTURES, PROPERTY_PICTURES } from 'utils/default-strings';
@@ -13,6 +13,11 @@ import { Thumbnail } from 'media/Thumbnail';
 import { Heading } from 'typography/Heading';
 import { Gallery } from 'media/Gallery';
 import { Link } from 'elements/Link';
+import { testidFactory } from 'utils/testid';
+
+const TEST_ID_PREFIX = 'pictures';
+
+const testid = testidFactory(TEST_ID_PREFIX);
 
 /**
  * The standard widget for displaying pictures of a property.
@@ -23,19 +28,41 @@ export const Component = ({
   headingText,
   linkText,
   numberOfThumbnails,
-  thumbnailImages,
-}) => (
-  <Grid>
-    <GridColumn width={12}>
-      <Heading>{headingText}</Heading>
-    </GridColumn>
-    <GridRow>
-      {getFirstNItems(numberOfThumbnails, thumbnailImages).map(
-        (imageProps, index) => (
+}) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [currentIndex, setIndex] = useState(2);
+
+  const triggerIsOpen = index => {
+    setIsOpen(true);
+    setIndex(index);
+  };
+  const close = () => setIsOpen(false);
+
+  const adaptThumbnailImages = images =>
+    images.map(({ url, descriptionText }) => ({
+      imageUrl: url,
+      imageUrlAlternativeText: descriptionText,
+      label: descriptionText,
+    }));
+
+  return (
+    <Grid>
+      <GridColumn width={12}>
+        <Heading>{headingText}</Heading>
+      </GridColumn>
+      <GridRow>
+        {getFirstNItems(
+          numberOfThumbnails,
+          adaptThumbnailImages(galleryImages)
+        ).map((imageProps, index) => (
           <GridColumn
             computer={4}
+            data-testid={testid(`thumbnail_${index}`)}
             key={buildKeyFromStrings(imageProps.imageUrl, index)}
             mobile={6}
+            onClick={() => {
+              triggerIsOpen(index);
+            }}
             tablet={4}
           >
             <ShowOn computer parent="div" tablet widescreen>
@@ -46,14 +73,31 @@ export const Component = ({
             </ShowOn>
             <Divider />
           </GridColumn>
-        )
-      )}
-    </GridRow>
-    <GridColumn width={12}>
-      <Gallery images={galleryImages} trigger={<Link>{linkText}</Link>} />
-    </GridColumn>
-  </Grid>
-);
+        ))}
+      </GridRow>
+      <GridColumn width={12}>
+        <Gallery
+          data-testid={testid('gallery')}
+          isOpen={isOpen}
+          onClick={triggerIsOpen}
+          onClose={close}
+          slideShowImages={galleryImages}
+          startIndex={currentIndex}
+          trigger={
+            <Link
+              data-testid={testid('triggerLink')}
+              onClick={() => {
+                triggerIsOpen(0);
+              }}
+            >
+              {linkText}
+            </Link>
+          }
+        />
+      </GridColumn>
+    </Grid>
+  );
+};
 
 Component.displayName = 'Pictures';
 
@@ -85,6 +129,4 @@ Component.propTypes = {
   linkText: PropTypes.string,
   /** The number of images to display as thumbnails. */
   numberOfThumbnails: PropTypes.number,
-  /** The images to display as thumbnails. See [the `ResponsiveImage` component for valid props](#/Media/ResponsiveImage).  */
-  thumbnailImages: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
