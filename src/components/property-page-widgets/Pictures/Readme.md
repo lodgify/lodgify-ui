@@ -1,7 +1,7 @@
 ```jsx
 const { images, thumbnailImages } = require("./mock-data/images");
 
-<Pictures galleryImages={images} thumbnailImages={thumbnailImages} />;
+<Pictures galleryImages={images} />;
 ```
 
 ### Content
@@ -11,11 +11,7 @@ const { images, thumbnailImages } = require("./mock-data/images");
 ```jsx
 const { images, thumbnailImages } = require("./mock-data/images");
 
-<Pictures
-  galleryImages={images}
-  numberOfThumbnails={3}
-  thumbnailImages={thumbnailImages}
-/>;
+<Pictures galleryImages={images} numberOfThumbnails={3} />;
 ```
 
 #### Heading in gallery modal
@@ -27,7 +23,6 @@ const { images, thumbnailImages } = require("./mock-data/images");
   galleryImages={images}
   propertyName="The Cat House"
   ratingNumber={4.3}
-  thumbnailImages={thumbnailImages}
 />;
 ```
 
@@ -40,6 +35,5 @@ const { images, thumbnailImages } = require("./mock-data/images");
   galleryImages={images}
   headingText="Photos of the property"
   linkText="Click here for more"
-  thumbnailImages={thumbnailImages}
 />;
 ```
