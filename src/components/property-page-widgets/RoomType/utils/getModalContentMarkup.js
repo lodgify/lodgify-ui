@@ -50,10 +50,7 @@ export const getModalContentMarkup = (
     <Heading>{name}</Heading>
     {!!ratingNumber && <Rating ratingNumber={ratingNumber} />}
     <Divider size="small" />
-    <Slideshow
-      images={images}
-      isShowingBulletNavigation={size(images) > 1}
-    />
+    <Slideshow images={images} isShowingBulletNavigation={size(images) > 1} />
     {!!description ? (
       <Grid>
         <GridColumn>

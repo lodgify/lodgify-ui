@@ -1,11 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import { Modal } from "elements/Modal";
-import { Slideshow } from "media/Slideshow";
-import { testidFactory } from "utils/testid";
+import { Modal } from 'elements/Modal';
+import { Slideshow } from 'media/Slideshow';
+import { testidFactory } from 'utils/testid';
 
-const TEST_ID_PREFIX = "gallery";
+const TEST_ID_PREFIX = 'gallery';
 
 const testid = testidFactory(TEST_ID_PREFIX);
 
@@ -40,21 +40,17 @@ export const Component = ({ images, trigger, isOpen, onClose, startIndex }) => {
   );
 };
 
-Component.displayName = "Gallery";
+Component.displayName = 'Gallery';
 
 Component.defaultProps = {
   trigger: null,
   isOpen: undefined,
   onClose: undefined,
-  startIndex: 0
+  startIndex: 0,
 };
 
 Component.propTypes = {
   /** Is the gallery in an open state. */
-  isOpen: PropTypes.bool,
-  /** The function called when the closed event happens. */
-  onClose: PropTypes.func,
-  /**  The images to display inside the slideshow. */
   images: PropTypes.arrayOf(
     PropTypes.shape({
       /** A description of the image to show above the slideshow when the image is showing. */
@@ -66,11 +62,15 @@ Component.propTypes = {
       /** Title of the image to show when hovering over it on desktop browsers. */
       title: PropTypes.string,
       /** URL pointing to the image to display. */
-      url: PropTypes.string.isRequired
+      url: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** The function called when the closed event happens. */
+  isOpen: PropTypes.bool,
+  /**  The images to display inside the slideshow. */
+  onClose: PropTypes.func,
   /** The index used to define the image shown when the slideshow is opened. */
   startIndex: PropTypes.number,
   /** The element to be clicked to display the modal. */
-  trigger: PropTypes.node
+  trigger: PropTypes.node,
 };

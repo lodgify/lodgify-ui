@@ -224,26 +224,6 @@ Component.propTypes = {
     })
   ).isRequired,
   /** Is the component showing placeholders to reserve space for content which will appear. */
-  isShowingPlaceholder: PropTypes.bool,
-  /**
-   * Is the user on a mobile device.
-   * Provided by `withResponsive` so ignored in the styleguide.
-   * @ignore
-   */
-  isUserOnMobile: PropTypes.bool.isRequired,
-  /** The text to display for the more info button. */
-  moreInfoText: PropTypes.string,
-  /** The name of the room. */
-  name: PropTypes.string.isRequired,
-  /** The text describing the pricing period. */
-  periodText: PropTypes.string,
-  /** The price per period of the room, with currency symbol. */
-  pricePerPeriod: PropTypes.string.isRequired,
-  /** The text prefix to display along with the price per period. */
-  pricePerPeriodPrefix: PropTypes.string,
-  /** The numeral rating for the property room given in the review, out of 5. */
-  ratingNumber: PropTypes.number,
-  /** The images to display for the slideshow */
   images: PropTypes.arrayOf(
     PropTypes.shape({
       /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
@@ -256,6 +236,26 @@ Component.propTypes = {
       url: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /**
+   * Is the user on a mobile device.
+   * Provided by `withResponsive` so ignored in the styleguide.
+   * @ignore
+   */
+  isShowingPlaceholder: PropTypes.bool,
+  /** The text to display for the more info button. */
+  isUserOnMobile: PropTypes.bool.isRequired,
+  /** The name of the room. */
+  moreInfoText: PropTypes.string,
+  /** The text describing the pricing period. */
+  name: PropTypes.string.isRequired,
+  /** The price per period of the room, with currency symbol. */
+  periodText: PropTypes.string,
+  /** The text prefix to display along with the price per period. */
+  pricePerPeriod: PropTypes.string.isRequired,
+  /** The numeral rating for the property room given in the review, out of 5. */
+  pricePerPeriodPrefix: PropTypes.string,
+  /** The images to display for the slideshow */
+  ratingNumber: PropTypes.number,
 };
 
 export const ComponentWithResponsive = withResponsive(Component);
