@@ -1,0 +1,17 @@
+/*----------------------
+    Minimal Promotion
+-----------------------*/
+
+@minimalPromotionHeight: 270px;
+@minimalPromotionBorderRadius: 20px;
+@minimalPromotionGradient: linear-gradient(238deg, rgba(0, 0, 0, 0) 0%, #000000 100%);
+@minimalPromotionHeadingSize: 5rem;
+@minimalPromotionHeadingLineHeight: @minimalPromotionHeadingSize;
+
+@minimalPromotionContentPadding: @24px 0 @35px 5.714em;
+@minimalPromotionContentPaddingMobile: @35px 0;
+
+@minimalPromotionCouponCodeSize: 2rem;
+@minimalPromotionCouponCodeMarginBottom: @13px;
+
+@minimalPromotionCouponMessageOpacity: 0.8;

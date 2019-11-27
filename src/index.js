@@ -1,14 +1,20 @@
 // Collections
 export { Characteristics } from './components/collections/Characteristics';
-export { CheckboxInputSegment } from './components/collections/CheckboxInputSegment';
-export { CounterInputSegment } from './components/collections/CounterInputSegment';
+export {
+  CheckboxInputSegment,
+} from './components/collections/CheckboxInputSegment';
+export {
+  CounterInputSegment,
+} from './components/collections/CounterInputSegment';
 export { Footer } from './components/collections/Footer';
 export { Form } from './components/collections/Form';
 export { Header } from './components/collections/Header';
 export { Hero } from './components/collections/Hero';
 export { InputGroup } from './components/collections/InputGroup';
 export { TextInputSegment } from './components/collections/TextInputSegment';
-export { ToggleInputSegment } from './components/collections/ToggleInputSegment';
+export {
+  ToggleInputSegment,
+} from './components/collections/ToggleInputSegment';
 export { RangeInputSegment } from './components/collections/RangeInputSegment';
 export { SlideshowHero } from './components/collections/SlideshowHero';
 
@@ -36,17 +42,32 @@ export { SummaryCard } from './components/elements/SummaryCard';
 export { CallMeBack } from './components/general-widgets/CallMeBack';
 export { Contact } from './components/general-widgets/Contact';
 export { CookieAlert } from './components/general-widgets/CookieAlert';
-export { FeaturedProperties } from './components/general-widgets/FeaturedProperties';
-export { FeaturedProperty } from './components/general-widgets/FeaturedProperty';
-export { FeaturedRoomType } from './components/general-widgets/FeaturedRoomType';
-export { FeaturedRoomTypes } from './components/general-widgets/FeaturedRoomTypes';
+export {
+  FeaturedProperties,
+} from './components/general-widgets/FeaturedProperties';
+export {
+  FeaturedProperty,
+} from './components/general-widgets/FeaturedProperty';
+export {
+  FeaturedRoomType,
+} from './components/general-widgets/FeaturedRoomType';
+export {
+  FeaturedRoomTypes,
+} from './components/general-widgets/FeaturedRoomTypes';
 export { HomepageHero } from './components/general-widgets/HomepageHero';
 export { HTML } from './components/general-widgets/HTML';
 export { OwnerLogin } from './components/general-widgets/OwnerLogin';
 export { OwnerSignUp } from './components/general-widgets/OwnerSignUp';
 export { Promotion } from './components/general-widgets/Promotion';
-export { PropertySearchResult } from './components/general-widgets/PropertySearchResult';
-export { PropertySearchResultList } from './components/general-widgets/PropertySearchResultList';
+export {
+  MinimalPromotion,
+} from './components/general-widgets/MinimalPromotion';
+export {
+  PropertySearchResult,
+} from './components/general-widgets/PropertySearchResult';
+export {
+  PropertySearchResultList,
+} from './components/general-widgets/PropertySearchResultList';
 export { Review } from './components/general-widgets/Review';
 export { SearchBar } from './components/general-widgets/SearchBar';
 
@@ -94,16 +115,24 @@ export { Description } from './components/property-page-widgets/Description';
 export { HostProfile } from './components/property-page-widgets/HostProfile';
 export { KeyFacts } from './components/property-page-widgets/KeyFacts';
 export { Location } from './components/property-page-widgets/Location';
-export { PolicyAndNotes } from './components/property-page-widgets/PolicyAndNotes';
-export { PropertyPageHero } from './components/property-page-widgets/PropertyPageHero';
+export {
+  PolicyAndNotes,
+} from './components/property-page-widgets/PolicyAndNotes';
+export {
+  PropertyPageHero,
+} from './components/property-page-widgets/PropertyPageHero';
 export { Pictures } from './components/property-page-widgets/Pictures';
-export { PropertyPageSearchBar } from './components/property-page-widgets/PropertyPageSearchBar';
+export {
+  PropertyPageSearchBar,
+} from './components/property-page-widgets/PropertyPageSearchBar';
 export { RoomType } from './components/property-page-widgets/RoomType';
 export { RoomTypes } from './components/property-page-widgets/RoomTypes';
 export { Rates } from './components/property-page-widgets/Rates';
 export { Reviews } from './components/property-page-widgets/Reviews';
 export { Rules } from './components/property-page-widgets/Rules';
-export { SleepingArrangements } from './components/property-page-widgets/SleepingArrangements';
+export {
+  SleepingArrangements,
+} from './components/property-page-widgets/SleepingArrangements';
 export { Summary } from './components/property-page-widgets/Summary';
 
 // Typography
