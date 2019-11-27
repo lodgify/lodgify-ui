@@ -1,3 +1,15 @@
+# [1.267.0](https://github.com/lodgify/lodgify-ui/compare/v1.266.1...v1.267.0) (2019-11-27)
+
+
+### Bug Fixes
+
+* **src:** fix linting errors ([ecd6a44](https://github.com/lodgify/lodgify-ui/commit/ecd6a44))
+
+
+### Features
+
+* **MinimalPromotion:** expose to library api ([4dafa72](https://github.com/lodgify/lodgify-ui/commit/4dafa72))
+
 ## [1.266.1](https://github.com/lodgify/lodgify-ui/compare/v1.266.0...v1.266.1) (2019-11-27)
 
 
