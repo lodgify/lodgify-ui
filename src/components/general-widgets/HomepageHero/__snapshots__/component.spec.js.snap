@@ -26,6 +26,7 @@ exports[`HomepageHero should render the right structure 1`] = `
     }
   }
   headingText="heading text"
+  isHeaderBackgroundFilled={false}
   placeholderBackgroundImageUrl={null}
   searchBarDatesInputOnFocusChange={[Function]}
   searchBarGetIsDayBlocked={[Function]}
@@ -70,6 +71,7 @@ exports[`HomepageHero should render the right structure 1`] = `
         "text": "Book now",
       }
     }
+    isHeaderBackgroundFilled={false}
     placeholderBackgroundImageUrl={null}
   >
     <FullBleed

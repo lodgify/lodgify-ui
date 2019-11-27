@@ -18,17 +18,18 @@ export const Component = ({
   backgroundImageUrl,
   backgroundImageWidth,
   bottomOffset,
-  className,
   children,
+  className,
   headerLogoHref,
   headerLogoSize,
   headerLogoSizes,
   headerLogoSrc,
   headerLogoSrcSet,
+  headerLogoSubText,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
-  headerLogoSubText,
+  isHeaderBackgroundFilled,
   placeholderBackgroundImageUrl,
 }) => (
   <FullBleed
@@ -44,6 +45,7 @@ export const Component = ({
   >
     <Header
       activeNavigationItemIndex={activeNavigationItemIndex}
+      isBackgroundFilled={isHeaderBackgroundFilled}
       logoHref={headerLogoHref}
       logoSize={headerLogoSize}
       logoSizes={headerLogoSizes}
@@ -61,7 +63,6 @@ export const Component = ({
 Component.displayName = 'Hero';
 
 Component.defaultProps = {
-  className: '',
   activeNavigationItemIndex: null,
   backgroundImageHeight: undefined,
   backgroundImageSizes: undefined,
@@ -69,13 +70,15 @@ Component.defaultProps = {
   backgroundImageWidth: undefined,
   bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
+  className: '',
   headerLogoHref: undefined,
   headerLogoSize: undefined,
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
-  headerPrimaryCTA: null,
   headerLogoSubText: undefined,
+  headerPrimaryCTA: null,
+  isHeaderBackgroundFilled: false,
   placeholderBackgroundImageUrl: null,
 };
 
@@ -141,6 +144,8 @@ Component.propTypes = {
     /** The  visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),
+  /** The background of the header is a solid color. */
+  isHeaderBackgroundFilled: PropTypes.bool,
   /** The background placeholder image url of the hero. */
   placeholderBackgroundImageUrl: PropTypes.string,
 };

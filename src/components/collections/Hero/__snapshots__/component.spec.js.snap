@@ -35,6 +35,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
     ]
   }
   headerSearchBarModalHeadingText="Heading"
+  isHeaderBackgroundFilled={false}
   placeholderBackgroundImageUrl={null}
   searchBarOnChangeInput={[Function]}
   searchBarOnSubmit={[Function]}

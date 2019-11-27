@@ -30,6 +30,7 @@ const Component = ({
   headerNavigationItems,
   headerPrimaryCTA,
   headerLogoSubText,
+  isHeaderBackgroundFilled,
   placeholderBackgroundImageUrl,
   propertyName,
   ratingNumber,
@@ -54,6 +55,7 @@ const Component = ({
     headerNavigationItems={headerNavigationItems}
     headerPrimaryCTA={headerPrimaryCTA}
     isFixedSearchBarDisplayed
+    isHeaderBackgroundFilled={isHeaderBackgroundFilled}
     placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
   >
     {getGalleryMarkup(
@@ -80,8 +82,9 @@ Component.defaultProps = {
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
-  headerPrimaryCTA: null,
   headerLogoSubText: undefined,
+  headerPrimaryCTA: null,
+  isHeaderBackgroundFilled: false,
   placeholderBackgroundImageUrl: null,
   propertyName: null,
   ratingNumber: null,
@@ -164,6 +167,8 @@ Component.propTypes = {
     /** The  visible text for the call to action. */
     text: PropTypes.string.isRequired,
   }),
+  /** The background of the header is a solid color. */
+  isHeaderBackgroundFilled: PropTypes.bool,
   /** The background placeholder image url of the hero. */
   placeholderBackgroundImageUrl: PropTypes.string,
   /** The name of the property to display in the gallery modal. */
