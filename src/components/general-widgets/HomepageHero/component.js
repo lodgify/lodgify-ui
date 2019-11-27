@@ -27,6 +27,7 @@ export const Component = ({
   headerPrimaryCTA,
   headerLogoSubText,
   headingText,
+  isHeaderBackgroundFilled,
   isSearchBarDateRangePickerLoading,
   placeholderBackgroundImageUrl,
   searchBarMaximumGuestsInputValue,
@@ -64,6 +65,7 @@ export const Component = ({
     headerLogoText={headerLogoText}
     headerNavigationItems={headerNavigationItems}
     headerPrimaryCTA={headerPrimaryCTA}
+    isHeaderBackgroundFilled={isHeaderBackgroundFilled}
     placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
   >
     <InnerContent
@@ -126,6 +128,7 @@ Component.defaultProps = {
   searchBarOnChangeInput: undefined,
   searchBarOnSubmit: Function.prototype,
   searchBarSearchButton: undefined,
+  isHeaderBackgroundFilled: false,
 };
 
 Component.propTypes = {
@@ -191,6 +194,8 @@ Component.propTypes = {
   }),
   /** The text for the heading displayed in the middle of the hero. */
   headingText: PropTypes.string,
+  /** The background of the header is a solid color. */
+  isHeaderBackgroundFilled: PropTypes.bool,
   /** Is the search bar date range picker in a state of loading. */
   isSearchBarDateRangePickerLoading: PropTypes.bool,
   /** The background placeholder image url of the hero. */
