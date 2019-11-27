@@ -31,32 +31,32 @@ export const Component = ({
   headerLogoSubText,
   placeholderBackgroundImageUrl,
 }) => (
-    <FullBleed
-      bottomOffset={bottomOffset}
-      className={className}
-      hasGradient
-      imageHeight={backgroundImageHeight}
-      imageUrl={backgroundImageUrl}
-      imageWidth={backgroundImageWidth}
-      placeholderImageUrl={placeholderBackgroundImageUrl}
-      sizes={backgroundImageSizes}
-      srcSet={backgroundImageSrcSet}
-    >
-      <Header
-        activeNavigationItemIndex={activeNavigationItemIndex}
-        logoHref={headerLogoHref}
-        logoSize={headerLogoSize}
-        logoSizes={headerLogoSizes}
-        logoSrc={headerLogoSrc}
-        logoSrcSet={headerLogoSrcSet}
-        logoSubText={headerLogoSubText}
-        logoText={headerLogoText}
-        navigationItems={headerNavigationItems}
-        primaryCTA={headerPrimaryCTA}
-      />
-      {children}
-    </FullBleed>
-  );
+  <FullBleed
+    bottomOffset={bottomOffset}
+    className={className}
+    hasGradient
+    imageHeight={backgroundImageHeight}
+    imageUrl={backgroundImageUrl}
+    imageWidth={backgroundImageWidth}
+    placeholderImageUrl={placeholderBackgroundImageUrl}
+    sizes={backgroundImageSizes}
+    srcSet={backgroundImageSrcSet}
+  >
+    <Header
+      activeNavigationItemIndex={activeNavigationItemIndex}
+      logoHref={headerLogoHref}
+      logoSize={headerLogoSize}
+      logoSizes={headerLogoSizes}
+      logoSrc={headerLogoSrc}
+      logoSrcSet={headerLogoSrcSet}
+      logoSubText={headerLogoSubText}
+      logoText={headerLogoText}
+      navigationItems={headerNavigationItems}
+      primaryCTA={headerPrimaryCTA}
+    />
+    {children}
+  </FullBleed>
+);
 
 Component.displayName = 'Hero';
 
