@@ -4,12 +4,12 @@
 
 @type: "lodgify-ui-component";
 
-@element: "lightbox";
+@element: "gallery";
 
 @import (multiple) "../../theme.config";
 
 /*--------------------------
-        LightBox
+        Gallery
 --------------------------*/
 
 .modals {
@@ -17,11 +17,11 @@
     &.is-lightbox {
       &.fullscreen > .icon > svg {
         background-color: transparent;
-        box-shadow: @lightboxButtonBoxShadow;
+        box-shadow: @galleryButtonBoxShadow;
       }
 
       > .content {
-        background-color: @lightboxContentBackgroundColor;
+        background-color: @galleryContentBackgroundColor;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -37,15 +37,15 @@
 
           .image-gallery-content {
             .image-gallery-slide-wrapper {
-              height: @lightboxSlideshowContentHeight;
-              max-height: @lightboxSlideshowContentMaxHeight;
+              height: @gallerySlideshowContentHeight;
+              max-height: @gallerySlideshowContentMaxHeight;
               display: flex;
               flex-direction: column;
               justify-content: center;
-              margin-bottom: @lightboxSlideshowContentMarginBottom;
+              margin-bottom: @gallerySlideshowContentMarginBottom;
 
               @media only screen and (max-width: @computerBreakpoint) {
-                min-height: @lightboxSlideshowContentMinHeight;
+                min-height: @gallerySlideshowContentMinHeight;
               }
 
               .image-gallery-index {
@@ -53,52 +53,52 @@
                 top: initial;
                 align-self: center;
                 right: initial;
-                bottom: @lightboxSlideshowIndexBottomOffset;
+                bottom: @gallerySlideshowIndexBottomOffset;
               }
 
               .ui.circular.button {
                 background: transparent;
-                box-shadow: @lightboxButtonBoxShadow;
+                box-shadow: @galleryButtonBoxShadow;
               }
             }
 
             .image-gallery-thumbnails-wrapper {
               &:before {
                 content: "";
-                width: @lightboxThumbnailLinearGradientWidth;
-                height: @lightboxThumbnailLinearGradientHeight;
+                width: @galleryThumbnailLinearGradientWidth;
+                height: @galleryThumbnailLinearGradientHeight;
                 position: absolute;
-                z-index: @lightboxThumbnailLinearGradientZIndex;
-                background: @lightboxThumbnailLinearGradientBackgroundColor;
-                background: @lightboxThumbnailLinearGradientLeft;
+                z-index: @galleryThumbnailLinearGradientZIndex;
+                background: @galleryThumbnailLinearGradientBackgroundColor;
+                background: @galleryThumbnailLinearGradientLeft;
                 left: 0;
-                top: @lightboxThumbnailActiveGradientTopOffset;
+                top: @galleryThumbnailActiveGradientTopOffset;
               }
 
               &:after {
                 content: "";
-                width: @lightboxThumbnailLinearGradientWidth;
-                height: @lightboxThumbnailLinearGradientHeight;
+                width: @galleryThumbnailLinearGradientWidth;
+                height: @galleryThumbnailLinearGradientHeight;
                 position: absolute;
-                z-index: @lightboxThumbnailLinearGradientZIndex;
-                background: @lightboxThumbnailLinearGradientBackgroundColor;
-                background: @lightboxThumbnailLinearGradientRight;
+                z-index: @galleryThumbnailLinearGradientZIndex;
+                background: @galleryThumbnailLinearGradientBackgroundColor;
+                background: @galleryThumbnailLinearGradientRight;
                 right: 0;
-                top: @lightboxThumbnailActiveGradientTopOffset;
+                top: @galleryThumbnailActiveGradientTopOffset;
               }
 
               .image-gallery-thumbnails {
-                padding: @lightboxThumbnailWrapperPadding;
+                padding: @galleryThumbnailWrapperPadding;
 
                 .image-gallery-thumbnails-container {
                   .image-gallery-thumbnail {
                     display: flex;
                     align-items: center;
-                    transition: @lightboxThumbnailActiveTransition;
+                    transition: @galleryThumbnailActiveTransition;
 
                     &.active {
-                      box-shadow: @lightboxThumbNailActiveBoxShadow;
-                      transition: @lightboxThumbnailActiveTransition;
+                      box-shadow: @galleryThumbNailActiveBoxShadow;
+                      transition: @galleryThumbnailActiveTransition;
                     }
                   }
                 }

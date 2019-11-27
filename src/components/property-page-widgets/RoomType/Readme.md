@@ -72,7 +72,7 @@ const roomTypeFeatures = [
   ratingNumber={4.8}
   features={roomTypeFeatures}
   extraFeatures={extraRoomTypeFeatures}
-  slideShowImages={images}
+  images={images}
   amenities={availableAmenities}
   amenitiesConjunctionText="and"
   amenitiesHeadingText="House Amenities"
@@ -92,7 +92,7 @@ const roomTypeFeatures = [
   pricePerPeriod=""
   pricePerPeriodPrefix=""
   isShowingPlaceholder
-  slideShowImages={[]}
+  images={[]}
   moreInfoText=""
 />
 ```

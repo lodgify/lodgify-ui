@@ -1,1443 +1,427 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Pictures /> should render the correct structure 1`] = `
-<Pictures
-  galleryImages={
-    Array [
-      Object {
-        "descriptionText": "Two cats",
-        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-      },
-      Object {
-        "descriptionText": "Two more cats",
-        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-      },
-      Object {
-        "descriptionText": "Much cats",
-        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-      },
-    ]
-  }
-  headingText="Property pictures"
-  linkText="Explore all pictures"
-  numberOfThumbnails={6}
-  thumbnailImages={
-    Array [
-      Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Entrance",
-        "label": "Entrance",
-      },
-      Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Kitchen",
-        "label": "Kitchen",
-      },
-      Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Living room",
-        "label": "Living room",
-      },
-      Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Studio",
-        "label": "Studio",
-      },
-      Object {
-        "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-        "imageUrlAlternativeText": "Garden room",
-        "label": "Garden room",
-      },
-    ]
-  }
+<Grid
+  areColumnsCentered={false}
+  isStackable={false}
 >
-  <Grid
-    areColumnsCentered={false}
-    isStackable={false}
+  <GridColumn
+    verticalAlignContent="top"
+    width={12}
   >
-    <Grid
-      centered={false}
-      stackable={false}
+    <Heading
+      className={null}
+      hasMargin={true}
+      isColorInverted={false}
+      size="medium"
+      textAlign={null}
     >
-      <div
-        className="ui grid"
+      Property pictures
+    </Heading>
+  </GridColumn>
+  <GridRow
+    horizontalAlignContent="left"
+  >
+    <GridColumn
+      computer={4}
+      data-testid="pictures-thumbnail_0"
+      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg0"
+      mobile={6}
+      onClick={[Function]}
+      tablet={4}
+      verticalAlignContent="top"
+      width={null}
+    >
+      <ShowOn
+        computer={true}
+        mobile={false}
+        parent="div"
+        parentProps={Object {}}
+        tablet={true}
+        widescreen={true}
       >
-        <GridColumn
-          verticalAlignContent="top"
-          width={12}
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={false}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Two cats"
+          isCircular={false}
+          isSquare={false}
+          label="Two cats"
+          size="huge"
+        />
+      </ShowOn>
+      <ShowOn
+        computer={false}
+        mobile={true}
+        parent="div"
+        parentProps={Object {}}
+        tablet={false}
+        widescreen={false}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={true}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Two cats"
+          isCircular={false}
+          isSquare={false}
+          label="Two cats"
+          size="huge"
+        />
+      </ShowOn>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+    </GridColumn>
+    <GridColumn
+      computer={4}
+      data-testid="pictures-thumbnail_1"
+      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg1"
+      mobile={6}
+      onClick={[Function]}
+      tablet={4}
+      verticalAlignContent="top"
+      width={null}
+    >
+      <ShowOn
+        computer={true}
+        mobile={false}
+        parent="div"
+        parentProps={Object {}}
+        tablet={true}
+        widescreen={true}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={false}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Two more cats"
+          isCircular={false}
+          isSquare={false}
+          label="Two more cats"
+          size="huge"
+        />
+      </ShowOn>
+      <ShowOn
+        computer={false}
+        mobile={true}
+        parent="div"
+        parentProps={Object {}}
+        tablet={false}
+        widescreen={false}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={true}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Two more cats"
+          isCircular={false}
+          isSquare={false}
+          label="Two more cats"
+          size="huge"
+        />
+      </ShowOn>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+    </GridColumn>
+    <GridColumn
+      computer={4}
+      data-testid="pictures-thumbnail_2"
+      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg2"
+      mobile={6}
+      onClick={[Function]}
+      tablet={4}
+      verticalAlignContent="top"
+      width={null}
+    >
+      <ShowOn
+        computer={true}
+        mobile={false}
+        parent="div"
+        parentProps={Object {}}
+        tablet={true}
+        widescreen={true}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={false}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Much cats"
+          isCircular={false}
+          isSquare={false}
+          label="Much cats"
+          size="huge"
+        />
+      </ShowOn>
+      <ShowOn
+        computer={false}
+        mobile={true}
+        parent="div"
+        parentProps={Object {}}
+        tablet={false}
+        widescreen={false}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={true}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Much cats"
+          isCircular={false}
+          isSquare={false}
+          label="Much cats"
+          size="huge"
+        />
+      </ShowOn>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+    </GridColumn>
+    <GridColumn
+      computer={4}
+      data-testid="pictures-thumbnail_3"
+      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg3"
+      mobile={6}
+      onClick={[Function]}
+      tablet={4}
+      verticalAlignContent="top"
+      width={null}
+    >
+      <ShowOn
+        computer={true}
+        mobile={false}
+        parent="div"
+        parentProps={Object {}}
+        tablet={true}
+        widescreen={true}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={false}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Two cats"
+          isCircular={false}
+          isSquare={false}
+          label="Two cats"
+          size="huge"
+        />
+      </ShowOn>
+      <ShowOn
+        computer={false}
+        mobile={true}
+        parent="div"
+        parentProps={Object {}}
+        tablet={false}
+        widescreen={false}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={true}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Two cats"
+          isCircular={false}
+          isSquare={false}
+          label="Two cats"
+          size="huge"
+        />
+      </ShowOn>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+    </GridColumn>
+    <GridColumn
+      computer={4}
+      data-testid="pictures-thumbnail_4"
+      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg4"
+      mobile={6}
+      onClick={[Function]}
+      tablet={4}
+      verticalAlignContent="top"
+      width={null}
+    >
+      <ShowOn
+        computer={true}
+        mobile={false}
+        parent="div"
+        parentProps={Object {}}
+        tablet={true}
+        widescreen={true}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={false}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Two more cats"
+          isCircular={false}
+          isSquare={false}
+          label="Two more cats"
+          size="huge"
+        />
+      </ShowOn>
+      <ShowOn
+        computer={false}
+        mobile={true}
+        parent="div"
+        parentProps={Object {}}
+        tablet={false}
+        widescreen={false}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={true}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Two more cats"
+          isCircular={false}
+          isSquare={false}
+          label="Two more cats"
+          size="huge"
+        />
+      </ShowOn>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+    </GridColumn>
+    <GridColumn
+      computer={4}
+      data-testid="pictures-thumbnail_5"
+      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg5"
+      mobile={6}
+      onClick={[Function]}
+      tablet={4}
+      verticalAlignContent="top"
+      width={null}
+    >
+      <ShowOn
+        computer={true}
+        mobile={false}
+        parent="div"
+        parentProps={Object {}}
+        tablet={true}
+        widescreen={true}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={false}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Much cats"
+          isCircular={false}
+          isSquare={false}
+          label="Much cats"
+          size="huge"
+        />
+      </ShowOn>
+      <ShowOn
+        computer={false}
+        mobile={true}
+        parent="div"
+        parentProps={Object {}}
+        tablet={false}
+        widescreen={false}
+      >
+        <Thumbnail
+          className=""
+          hasMargin={false}
+          hasRoundedCorners={true}
+          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+          imageUrlAlternativeText="Much cats"
+          isCircular={false}
+          isSquare={false}
+          label="Much cats"
+          size="huge"
+        />
+      </ShowOn>
+      <Divider
+        className=""
+        hasLine={false}
+        size="medium"
+      />
+    </GridColumn>
+  </GridRow>
+  <GridColumn
+    verticalAlignContent="top"
+    width={12}
+  >
+    <Gallery
+      data-testid="pictures-gallery"
+      images={
+        Array [
+          Object {
+            "descriptionText": "Two cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+          Object {
+            "descriptionText": "Two more cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+          Object {
+            "descriptionText": "Much cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+          Object {
+            "descriptionText": "Two cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+          Object {
+            "descriptionText": "Two more cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+          Object {
+            "descriptionText": "Much cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+          Object {
+            "descriptionText": "Two cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+          Object {
+            "descriptionText": "Two more cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+          Object {
+            "descriptionText": "Much cats",
+            "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+          },
+        ]
+      }
+      isOpen={false}
+      onClick={[Function]}
+      onClose={[Function]}
+      startIndex={2}
+      trigger={
+        <Link
+          data-testid="pictures-triggerLink"
+          href={null}
+          isFluid={false}
+          isPositionedRight={false}
+          onClick={[Function]}
+          willOpenInNewTab={false}
         >
-          <GridColumn
-            verticalAlign="top"
-            width={12}
-          >
-            <div
-              className="top aligned twelve wide column"
-            >
-              <Heading
-                className={null}
-                hasMargin={true}
-                isColorInverted={false}
-                size="medium"
-                textAlign={null}
-              >
-                <Header
-                  as="h3"
-                  className=""
-                  inverted={false}
-                  textAlign={null}
-                >
-                  <h3
-                    className="ui header"
-                  >
-                    Property pictures
-                  </h3>
-                </Header>
-              </Heading>
-            </div>
-          </GridColumn>
-        </GridColumn>
-        <GridRow
-          horizontalAlignContent="left"
-        >
-          <GridRow
-            textAlign="left"
-          >
-            <div
-              className="left aligned row"
-            >
-              <GridColumn
-                computer={4}
-                key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max0"
-                mobile={6}
-                tablet={4}
-                verticalAlignContent="top"
-                width={null}
-              >
-                <GridColumn
-                  computer={4}
-                  mobile={6}
-                  tablet={4}
-                  verticalAlign="top"
-                  width={null}
-                >
-                  <div
-                    className="top aligned four wide computer six wide mobile four wide tablet column"
-                  >
-                    <ShowOn
-                      computer={true}
-                      mobile={false}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={true}
-                      widescreen={true}
-                    >
-                      <div
-                        className="show-on-tablet show-on-computer show-on-widescreen"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={false}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Entrance"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Entrance"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={false}
-                              imageTitle="Entrance"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": false,
-                                    "imageTitle": "Entrance",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={false}
-                                  imageHeight={null}
-                                  imageTitle="Entrance"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Entrance
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <ShowOn
-                      computer={false}
-                      mobile={true}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={false}
-                      widescreen={false}
-                    >
-                      <div
-                        className="show-on-mobile"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={true}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Entrance"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Entrance"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={true}
-                              imageTitle="Entrance"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": true,
-                                    "imageTitle": "Entrance",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={true}
-                                  imageHeight={null}
-                                  imageTitle="Entrance"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid is-rounded"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Entrance
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="medium"
-                    >
-                      <Divider
-                        className=""
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider"
-                        />
-                      </Divider>
-                    </Divider>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-              <GridColumn
-                computer={4}
-                key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max1"
-                mobile={6}
-                tablet={4}
-                verticalAlignContent="top"
-                width={null}
-              >
-                <GridColumn
-                  computer={4}
-                  mobile={6}
-                  tablet={4}
-                  verticalAlign="top"
-                  width={null}
-                >
-                  <div
-                    className="top aligned four wide computer six wide mobile four wide tablet column"
-                  >
-                    <ShowOn
-                      computer={true}
-                      mobile={false}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={true}
-                      widescreen={true}
-                    >
-                      <div
-                        className="show-on-tablet show-on-computer show-on-widescreen"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={false}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Kitchen"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Kitchen"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={false}
-                              imageTitle="Kitchen"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": false,
-                                    "imageTitle": "Kitchen",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={false}
-                                  imageHeight={null}
-                                  imageTitle="Kitchen"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Kitchen
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <ShowOn
-                      computer={false}
-                      mobile={true}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={false}
-                      widescreen={false}
-                    >
-                      <div
-                        className="show-on-mobile"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={true}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Kitchen"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Kitchen"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={true}
-                              imageTitle="Kitchen"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": true,
-                                    "imageTitle": "Kitchen",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={true}
-                                  imageHeight={null}
-                                  imageTitle="Kitchen"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid is-rounded"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Kitchen
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="medium"
-                    >
-                      <Divider
-                        className=""
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider"
-                        />
-                      </Divider>
-                    </Divider>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-              <GridColumn
-                computer={4}
-                key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max2"
-                mobile={6}
-                tablet={4}
-                verticalAlignContent="top"
-                width={null}
-              >
-                <GridColumn
-                  computer={4}
-                  mobile={6}
-                  tablet={4}
-                  verticalAlign="top"
-                  width={null}
-                >
-                  <div
-                    className="top aligned four wide computer six wide mobile four wide tablet column"
-                  >
-                    <ShowOn
-                      computer={true}
-                      mobile={false}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={true}
-                      widescreen={true}
-                    >
-                      <div
-                        className="show-on-tablet show-on-computer show-on-widescreen"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={false}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Living room"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Living room"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={false}
-                              imageTitle="Living room"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": false,
-                                    "imageTitle": "Living room",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={false}
-                                  imageHeight={null}
-                                  imageTitle="Living room"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Living room
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <ShowOn
-                      computer={false}
-                      mobile={true}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={false}
-                      widescreen={false}
-                    >
-                      <div
-                        className="show-on-mobile"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={true}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Living room"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Living room"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={true}
-                              imageTitle="Living room"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": true,
-                                    "imageTitle": "Living room",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={true}
-                                  imageHeight={null}
-                                  imageTitle="Living room"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid is-rounded"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Living room
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="medium"
-                    >
-                      <Divider
-                        className=""
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider"
-                        />
-                      </Divider>
-                    </Divider>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-              <GridColumn
-                computer={4}
-                key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max3"
-                mobile={6}
-                tablet={4}
-                verticalAlignContent="top"
-                width={null}
-              >
-                <GridColumn
-                  computer={4}
-                  mobile={6}
-                  tablet={4}
-                  verticalAlign="top"
-                  width={null}
-                >
-                  <div
-                    className="top aligned four wide computer six wide mobile four wide tablet column"
-                  >
-                    <ShowOn
-                      computer={true}
-                      mobile={false}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={true}
-                      widescreen={true}
-                    >
-                      <div
-                        className="show-on-tablet show-on-computer show-on-widescreen"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={false}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Studio"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Studio"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={false}
-                              imageTitle="Studio"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": false,
-                                    "imageTitle": "Studio",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={false}
-                                  imageHeight={null}
-                                  imageTitle="Studio"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Studio
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <ShowOn
-                      computer={false}
-                      mobile={true}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={false}
-                      widescreen={false}
-                    >
-                      <div
-                        className="show-on-mobile"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={true}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Studio"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Studio"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={true}
-                              imageTitle="Studio"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": true,
-                                    "imageTitle": "Studio",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={true}
-                                  imageHeight={null}
-                                  imageTitle="Studio"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid is-rounded"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Studio
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="medium"
-                    >
-                      <Divider
-                        className=""
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider"
-                        />
-                      </Divider>
-                    </Divider>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-              <GridColumn
-                computer={4}
-                key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max4"
-                mobile={6}
-                tablet={4}
-                verticalAlignContent="top"
-                width={null}
-              >
-                <GridColumn
-                  computer={4}
-                  mobile={6}
-                  tablet={4}
-                  verticalAlign="top"
-                  width={null}
-                >
-                  <div
-                    className="top aligned four wide computer six wide mobile four wide tablet column"
-                  >
-                    <ShowOn
-                      computer={true}
-                      mobile={false}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={true}
-                      widescreen={true}
-                    >
-                      <div
-                        className="show-on-tablet show-on-computer show-on-widescreen"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={false}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Garden room"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Garden room"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={false}
-                              imageTitle="Garden room"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": false,
-                                    "imageTitle": "Garden room",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={false}
-                                  imageHeight={null}
-                                  imageTitle="Garden room"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Garden room
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <ShowOn
-                      computer={false}
-                      mobile={true}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={false}
-                      widescreen={false}
-                    >
-                      <div
-                        className="show-on-mobile"
-                      >
-                        <Thumbnail
-                          className=""
-                          hasMargin={false}
-                          hasRoundedCorners={true}
-                          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                          imageUrlAlternativeText="Garden room"
-                          isCircular={false}
-                          isSquare={false}
-                          label="Garden room"
-                          size="huge"
-                        >
-                          <div
-                            className="ui thumbnail huge"
-                          >
-                            <withLazyLoad(ResponsiveImage)
-                              hasRoundedCorners={true}
-                              imageTitle="Garden room"
-                              imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
-                              isCircular={false}
-                              isFluid={true}
-                              isLazyLoaded={true}
-                              isSquare={false}
-                            >
-                              <LazyLoader
-                                componentProps={
-                                  Object {
-                                    "hasRoundedCorners": true,
-                                    "imageTitle": "Garden room",
-                                    "isCircular": false,
-                                    "isFluid": true,
-                                    "isLazyLoaded": true,
-                                    "isSquare": false,
-                                    "placeholderImageUrl": undefined,
-                                    "sizes": undefined,
-                                  }
-                                }
-                                lazyProps={
-                                  Object {
-                                    "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max",
-                                    "srcSet": undefined,
-                                  }
-                                }
-                              >
-                                <div />
-                                <ResponsiveImage
-                                  hasRoundedCorners={true}
-                                  imageHeight={null}
-                                  imageTitle="Garden room"
-                                  imageUrl=""
-                                  imageWidth={null}
-                                  isAvatar={false}
-                                  isCircular={false}
-                                  isFluid={true}
-                                  isLazyLoaded={true}
-                                  isSquare={false}
-                                  label={null}
-                                  sizes={null}
-                                  srcSet={null}
-                                >
-                                  <figure
-                                    className="responsive-image is-fluid is-rounded"
-                                  />
-                                </ResponsiveImage>
-                                <div />
-                              </LazyLoader>
-                            </withLazyLoad(ResponsiveImage)>
-                          </div>
-                          <Paragraph
-                            isCompact={false}
-                            size="medium"
-                            weight={null}
-                          >
-                            <p
-                              className=""
-                            >
-                              Garden room
-                            </p>
-                          </Paragraph>
-                        </Thumbnail>
-                      </div>
-                    </ShowOn>
-                    <Divider
-                      className=""
-                      hasLine={false}
-                      size="medium"
-                    >
-                      <Divider
-                        className=""
-                        hidden={true}
-                        section={false}
-                      >
-                        <div
-                          className="ui hidden divider"
-                        />
-                      </Divider>
-                    </Divider>
-                  </div>
-                </GridColumn>
-              </GridColumn>
-            </div>
-          </GridRow>
-        </GridRow>
-        <GridColumn
-          verticalAlignContent="top"
-          width={12}
-        >
-          <GridColumn
-            verticalAlign="top"
-            width={12}
-          >
-            <div
-              className="top aligned twelve wide column"
-            >
-              <Gallery
-                images={
-                  Array [
-                    Object {
-                      "descriptionText": "Two cats",
-                      "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                    },
-                    Object {
-                      "descriptionText": "Two more cats",
-                      "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                    },
-                    Object {
-                      "descriptionText": "Much cats",
-                      "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                    },
-                  ]
-                }
-                trigger={
-                  <Link
-                    href={null}
-                    isFluid={false}
-                    isPositionedRight={false}
-                    onClick={[Function]}
-                    willOpenInNewTab={false}
-                  >
-                    Explore all pictures
-                  </Link>
-                }
-              >
-                <LightBox
-                  data-testid="gallery"
-                  slideShowImages={
-                    Array [
-                      Object {
-                        "descriptionText": "Two cats",
-                        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                      },
-                      Object {
-                        "descriptionText": "Two more cats",
-                        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                      },
-                      Object {
-                        "descriptionText": "Much cats",
-                        "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                      },
-                    ]
-                  }
-                  trigger={
-                    <Link
-                      href={null}
-                      isFluid={false}
-                      isPositionedRight={false}
-                      onClick={[Function]}
-                      willOpenInNewTab={false}
-                    >
-                      Explore all pictures
-                    </Link>
-                  }
-                >
-                  <Modal
-                    className="is-lightbox"
-                    data-testid="lightbox"
-                    hasCloseIcon={true}
-                    hasPadding={false}
-                    hasRoundedCorners={false}
-                    header={null}
-                    isFullscreen={true}
-                    onClose={[Function]}
-                    size="tiny"
-                    trigger={
-                      <Link
-                        href={null}
-                        isFluid={false}
-                        isPositionedRight={false}
-                        onClick={[Function]}
-                        willOpenInNewTab={false}
-                      >
-                        Explore all pictures
-                      </Link>
-                    }
-                  >
-                    <Modal
-                      centered={true}
-                      className="is-lightbox"
-                      closeIcon={
-                        <Icon
-                          className={null}
-                          color={null}
-                          hasBorder={false}
-                          isButton={false}
-                          isCircular={false}
-                          isColorInverted={false}
-                          isDisabled={false}
-                          isLabelLeft={false}
-                          labelText={null}
-                          labelWeight={null}
-                          name="close"
-                          path={null}
-                          size={null}
-                        />
-                      }
-                      closeOnDimmerClick={true}
-                      closeOnDocumentClick={false}
-                      dimmer="inverted"
-                      eventPool="Modal"
-                      onClose={[Function]}
-                      size="fullscreen"
-                      trigger={
-                        <Link
-                          href={null}
-                          isFluid={false}
-                          isPositionedRight={false}
-                          onClick={[Function]}
-                          willOpenInNewTab={false}
-                        >
-                          Explore all pictures
-                        </Link>
-                      }
-                    >
-                      <Portal
-                        closeOnDocumentClick={false}
-                        closeOnEscape={true}
-                        eventPool="Modal"
-                        mountNode={<body />}
-                        onClose={[Function]}
-                        onMount={[Function]}
-                        onOpen={[Function]}
-                        onUnmount={[Function]}
-                        openOnTriggerClick={true}
-                        trigger={
-                          <Link
-                            href={null}
-                            isFluid={false}
-                            isPositionedRight={false}
-                            onClick={[Function]}
-                            willOpenInNewTab={false}
-                          >
-                            Explore all pictures
-                          </Link>
-                        }
-                      >
-                        <Ref
-                          innerRef={[Function]}
-                        >
-                          <RefFindNode
-                            innerRef={[Function]}
-                          >
-                            <Link
-                              href={null}
-                              isFluid={false}
-                              isPositionedRight={false}
-                              onBlur={[Function]}
-                              onClick={[Function]}
-                              onFocus={[Function]}
-                              onMouseEnter={[Function]}
-                              onMouseLeave={[Function]}
-                              willOpenInNewTab={false}
-                            >
-                              <Button
-                                as={null}
-                                basic={true}
-                                floated="left"
-                                fluid={false}
-                                href={null}
-                                onClick={[Function]}
-                                target="_self"
-                                type="button"
-                              >
-                                <Ref
-                                  innerRef={
-                                    Object {
-                                      "current": <button
-                                        class="ui basic left floated button"
-                                        target="_self"
-                                        type="button"
-                                      >
-                                        Explore all pictures
-                                      </button>,
-                                    }
-                                  }
-                                >
-                                  <RefFindNode
-                                    innerRef={
-                                      Object {
-                                        "current": <button
-                                          class="ui basic left floated button"
-                                          target="_self"
-                                          type="button"
-                                        >
-                                          Explore all pictures
-                                        </button>,
-                                      }
-                                    }
-                                  >
-                                    <button
-                                      className="ui basic left floated button"
-                                      href={null}
-                                      onClick={[Function]}
-                                      target="_self"
-                                      type="button"
-                                    >
-                                      Explore all pictures
-                                    </button>
-                                  </RefFindNode>
-                                </Ref>
-                              </Button>
-                            </Link>
-                          </RefFindNode>
-                        </Ref>
-                      </Portal>
-                    </Modal>
-                  </Modal>
-                </LightBox>
-              </Gallery>
-            </div>
-          </GridColumn>
-        </GridColumn>
-      </div>
-    </Grid>
-  </Grid>
-</Pictures>
+          Explore all pictures
+        </Link>
+      }
+    />
+  </GridColumn>
+</Grid>
 `;

@@ -207,6 +207,87 @@ exports[`<Thumbnail /> if \`props.isSquare\` is true should render the right str
 </Thumbnail>
 `;
 
+exports[`<Thumbnail /> if \`props.label\` is supplied should render the right structure 1`] = `
+<Thumbnail
+  className="🚥"
+  hasMargin={false}
+  hasRoundedCorners={false}
+  imageUrl="www.⚡️.net"
+  isCircular={false}
+  isSquare={false}
+  label="Pods against humanity."
+  size={null}
+>
+  <div
+    className="ui thumbnail 🚥"
+  >
+    <withLazyLoad(ResponsiveImage)
+      hasRoundedCorners={false}
+      imageTitle="Pods against humanity."
+      imageUrl="www.⚡️.net"
+      isCircular={false}
+      isFluid={true}
+      isLazyLoaded={true}
+      isSquare={false}
+    >
+      <LazyLoader
+        componentProps={
+          Object {
+            "hasRoundedCorners": false,
+            "imageTitle": "Pods against humanity.",
+            "isCircular": false,
+            "isFluid": true,
+            "isLazyLoaded": true,
+            "isSquare": false,
+            "placeholderImageUrl": undefined,
+            "sizes": undefined,
+          }
+        }
+        lazyProps={
+          Object {
+            "imageUrl": "www.⚡️.net",
+            "srcSet": undefined,
+          }
+        }
+      >
+        <div />
+        <ResponsiveImage
+          hasRoundedCorners={false}
+          imageHeight={null}
+          imageTitle="Pods against humanity."
+          imageUrl=""
+          imageWidth={null}
+          isAvatar={false}
+          isCircular={false}
+          isFluid={true}
+          isLazyLoaded={true}
+          isSquare={false}
+          label={null}
+          sizes={null}
+          srcSet={null}
+        >
+          <figure
+            className="responsive-image is-fluid"
+          />
+        </ResponsiveImage>
+        <div />
+      </LazyLoader>
+    </withLazyLoad(ResponsiveImage)>
+  </div>
+  <Paragraph
+    isCompact={false}
+    size="medium"
+    weight={null}
+  >
+    <p
+      className=""
+    >
+      Pods against humanity.
+    </p>
+  </Paragraph>
+</Thumbnail>
+`;
+
 exports[`<Thumbnail /> if \`props.size\` is supplied should render the right structure 1`] = `
 <Thumbnail
   className="🚥"

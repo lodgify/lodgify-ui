@@ -46,7 +46,7 @@ const Component = ({
   pricePerPeriod,
   pricePerPeriodPrefix,
   ratingNumber,
-  slideShowImages,
+  images,
 }) => (
   <Card className="has-room-type-gallery" fluid>
     <Grid>
@@ -57,7 +57,7 @@ const Component = ({
           ) : (
             <Slideshow
               hasShadow={false}
-              images={slideShowImages}
+              images={images}
               isRounded={false}
               isShowingBulletNavigation={false}
               isStretched
@@ -111,7 +111,7 @@ const Component = ({
                       pricePerPeriod,
                       pricePerPeriodPrefix,
                       ratingNumber,
-                      slideShowImages,
+                      images,
                       isUserOnMobile
                     )}
                   </Modal>
@@ -141,7 +141,7 @@ const Component = ({
                         pricePerPeriod,
                         pricePerPeriodPrefix,
                         ratingNumber,
-                        slideShowImages,
+                        images,
                         isUserOnMobile
                       )}
                     </Modal>
@@ -244,7 +244,7 @@ Component.propTypes = {
   /** The numeral rating for the property room given in the review, out of 5. */
   ratingNumber: PropTypes.number,
   /** The images to display for the slideshow */
-  slideShowImages: PropTypes.arrayOf(
+  images: PropTypes.arrayOf(
     PropTypes.shape({
       /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
       sizes: PropTypes.string,

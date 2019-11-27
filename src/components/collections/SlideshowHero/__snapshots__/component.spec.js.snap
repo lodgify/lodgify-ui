@@ -703,10 +703,12 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
             isShowingIndex={false}
             isShowingThumbnails={false}
             isStretched={false}
+            startIndex={0}
           >
             <ImageGallery
               additionalClass="fit-width"
               autoPlay={false}
+              data-testid="slideshow"
               disableArrowKeys={false}
               disableSwipe={false}
               disableThumbnailScroll={false}

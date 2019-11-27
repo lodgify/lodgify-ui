@@ -27,7 +27,7 @@ import { getParagraphMarkup } from 'utils/get-paragraph-markup';
  * @param  {string}      pricePerPeriod
  * @param  {string}      pricePerPeriodPrefix
  * @param  {number}      ratingNumber
- * @param  {Object[]}    slideShowImages
+ * @param  {Object[]}    images
  * @param  {boolean}     isUserOnMobile
  * @return {Object}
  */
@@ -43,7 +43,7 @@ export const getModalContentMarkup = (
   pricePerPeriod,
   pricePerPeriodPrefix,
   ratingNumber,
-  slideShowImages,
+  images,
   isUserOnMobile
 ) => (
   <Modal.Content className="has-room-type-gallery">
@@ -51,8 +51,8 @@ export const getModalContentMarkup = (
     {!!ratingNumber && <Rating ratingNumber={ratingNumber} />}
     <Divider size="small" />
     <Slideshow
-      images={slideShowImages}
-      isShowingBulletNavigation={size(slideShowImages) > 1}
+      images={images}
+      isShowingBulletNavigation={size(images) > 1}
     />
     {!!description ? (
       <Grid>

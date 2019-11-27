@@ -8,23 +8,23 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
   <WithResponsive(RoomType)
     amenities={Array []}
     features={Array []}
+    images={Array []}
     isShowingPlaceholder={true}
     key="0"
     name=""
     pricePerPeriod=""
-    slideShowImages={Array []}
   >
     <Responsive
       amenities={Array []}
       as={[Function]}
       features={Array []}
       getWidth={[Function]}
+      images={Array []}
       isShowingPlaceholder={true}
       isUserOnMobile={false}
       name=""
       onUpdate={[Function]}
       pricePerPeriod=""
-      slideShowImages={Array []}
       windowInnerWidth={1024}
     >
       <RoomType
@@ -34,6 +34,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         description={null}
         extraFeatures={Array []}
         features={Array []}
+        images={Array []}
         isShowingPlaceholder={true}
         isUserOnMobile={false}
         moreInfoText="More info"
@@ -42,7 +43,6 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         pricePerPeriod=""
         pricePerPeriodPrefix="from"
         ratingNumber={null}
-        slideShowImages={Array []}
         windowInnerWidth={1024}
       >
         <Card
@@ -231,23 +231,23 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
   <WithResponsive(RoomType)
     amenities={Array []}
     features={Array []}
+    images={Array []}
     isShowingPlaceholder={true}
     key="1"
     name=""
     pricePerPeriod=""
-    slideShowImages={Array []}
   >
     <Responsive
       amenities={Array []}
       as={[Function]}
       features={Array []}
       getWidth={[Function]}
+      images={Array []}
       isShowingPlaceholder={true}
       isUserOnMobile={false}
       name=""
       onUpdate={[Function]}
       pricePerPeriod=""
-      slideShowImages={Array []}
       windowInnerWidth={1024}
     >
       <RoomType
@@ -257,6 +257,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         description={null}
         extraFeatures={Array []}
         features={Array []}
+        images={Array []}
         isShowingPlaceholder={true}
         isUserOnMobile={false}
         moreInfoText="More info"
@@ -265,7 +266,6 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
         pricePerPeriod=""
         pricePerPeriodPrefix="from"
         ratingNumber={null}
-        slideShowImages={Array []}
         windowInnerWidth={1024}
       >
         <Card
@@ -500,12 +500,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
           },
         ],
         "guestsNumber": 3,
-        "name": "The Cat House",
-        "onClickCheckAvailability": [Function],
-        "pricePerPeriod": "$280",
-        "pricePerPeriodPrefix": "from",
-        "ratingNumber": 3.4,
-        "slideShowImages": Array [
+        "images": Array [
           Object {
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -515,6 +510,11 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
         ],
+        "name": "The Cat House",
+        "onClickCheckAvailability": [Function],
+        "pricePerPeriod": "$280",
+        "pricePerPeriodPrefix": "from",
+        "ratingNumber": 3.4,
       },
       Object {
         "amenities": Array [
@@ -548,12 +548,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
           },
         ],
         "guestsNumber": 3,
-        "name": "The Other Cat House",
-        "onClickCheckAvailability": [Function],
-        "pricePerPeriod": "$280",
-        "pricePerPeriodPrefix": "from",
-        "ratingNumber": 3.4,
-        "slideShowImages": Array [
+        "images": Array [
           Object {
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -563,6 +558,11 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
         ],
+        "name": "The Other Cat House",
+        "onClickCheckAvailability": [Function],
+        "pricePerPeriod": "$280",
+        "pricePerPeriodPrefix": "from",
+        "ratingNumber": 3.4,
       },
     ]
   }
@@ -612,14 +612,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
       ]
     }
     guestsNumber={3}
-    isShowingPlaceholder={true}
-    key="The Cat House0"
-    name="The Cat House"
-    onClickCheckAvailability={[Function]}
-    pricePerPeriod="$280"
-    pricePerPeriodPrefix="from"
-    ratingNumber={3.4}
-    slideShowImages={
+    images={
       Array [
         Object {
           "title": "Two more cats",
@@ -631,6 +624,13 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         },
       ]
     }
+    isShowingPlaceholder={true}
+    key="The Cat House0"
+    name="The Cat House"
+    onClickCheckAvailability={[Function]}
+    pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
+    ratingNumber={3.4}
   >
     <Responsive
       amenities={
@@ -679,15 +679,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
       }
       getWidth={[Function]}
       guestsNumber={3}
-      isShowingPlaceholder={true}
-      isUserOnMobile={false}
-      name="The Cat House"
-      onClickCheckAvailability={[Function]}
-      onUpdate={[Function]}
-      pricePerPeriod="$280"
-      pricePerPeriodPrefix="from"
-      ratingNumber={3.4}
-      slideShowImages={
+      images={
         Array [
           Object {
             "title": "Two more cats",
@@ -699,6 +691,14 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
           },
         ]
       }
+      isShowingPlaceholder={true}
+      isUserOnMobile={false}
+      name="The Cat House"
+      onClickCheckAvailability={[Function]}
+      onUpdate={[Function]}
+      pricePerPeriod="$280"
+      pricePerPeriodPrefix="from"
+      ratingNumber={3.4}
       windowInnerWidth={1024}
     >
       <RoomType
@@ -748,16 +748,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
           ]
         }
         guestsNumber={3}
-        isShowingPlaceholder={true}
-        isUserOnMobile={false}
-        moreInfoText="More info"
-        name="The Cat House"
-        onClickCheckAvailability={[Function]}
-        periodText="per night"
-        pricePerPeriod="$280"
-        pricePerPeriodPrefix="from"
-        ratingNumber={3.4}
-        slideShowImages={
+        images={
           Array [
             Object {
               "title": "Two more cats",
@@ -769,6 +760,15 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
             },
           ]
         }
+        isShowingPlaceholder={true}
+        isUserOnMobile={false}
+        moreInfoText="More info"
+        name="The Cat House"
+        onClickCheckAvailability={[Function]}
+        periodText="per night"
+        pricePerPeriod="$280"
+        pricePerPeriodPrefix="from"
+        ratingNumber={3.4}
         windowInnerWidth={1024}
       >
         <Card
@@ -990,14 +990,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
       ]
     }
     guestsNumber={3}
-    isShowingPlaceholder={true}
-    key="The Other Cat House1"
-    name="The Other Cat House"
-    onClickCheckAvailability={[Function]}
-    pricePerPeriod="$280"
-    pricePerPeriodPrefix="from"
-    ratingNumber={3.4}
-    slideShowImages={
+    images={
       Array [
         Object {
           "title": "Two more cats",
@@ -1009,6 +1002,13 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
         },
       ]
     }
+    isShowingPlaceholder={true}
+    key="The Other Cat House1"
+    name="The Other Cat House"
+    onClickCheckAvailability={[Function]}
+    pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
+    ratingNumber={3.4}
   >
     <Responsive
       amenities={
@@ -1048,15 +1048,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
       }
       getWidth={[Function]}
       guestsNumber={3}
-      isShowingPlaceholder={true}
-      isUserOnMobile={false}
-      name="The Other Cat House"
-      onClickCheckAvailability={[Function]}
-      onUpdate={[Function]}
-      pricePerPeriod="$280"
-      pricePerPeriodPrefix="from"
-      ratingNumber={3.4}
-      slideShowImages={
+      images={
         Array [
           Object {
             "title": "Two more cats",
@@ -1068,6 +1060,14 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
           },
         ]
       }
+      isShowingPlaceholder={true}
+      isUserOnMobile={false}
+      name="The Other Cat House"
+      onClickCheckAvailability={[Function]}
+      onUpdate={[Function]}
+      pricePerPeriod="$280"
+      pricePerPeriodPrefix="from"
+      ratingNumber={3.4}
       windowInnerWidth={1024}
     >
       <RoomType
@@ -1108,16 +1108,7 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
           ]
         }
         guestsNumber={3}
-        isShowingPlaceholder={true}
-        isUserOnMobile={false}
-        moreInfoText="More info"
-        name="The Other Cat House"
-        onClickCheckAvailability={[Function]}
-        periodText="per night"
-        pricePerPeriod="$280"
-        pricePerPeriodPrefix="from"
-        ratingNumber={3.4}
-        slideShowImages={
+        images={
           Array [
             Object {
               "title": "Two more cats",
@@ -1129,6 +1120,15 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
             },
           ]
         }
+        isShowingPlaceholder={true}
+        isUserOnMobile={false}
+        moreInfoText="More info"
+        name="The Other Cat House"
+        onClickCheckAvailability={[Function]}
+        periodText="per night"
+        pricePerPeriod="$280"
+        pricePerPeriodPrefix="from"
+        ratingNumber={3.4}
         windowInnerWidth={1024}
       >
         <Card
@@ -1363,12 +1363,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
           },
         ],
         "guestsNumber": 3,
-        "name": "The Cat House",
-        "onClickCheckAvailability": [Function],
-        "pricePerPeriod": "$280",
-        "pricePerPeriodPrefix": "from",
-        "ratingNumber": 3.4,
-        "slideShowImages": Array [
+        "images": Array [
           Object {
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1378,6 +1373,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
         ],
+        "name": "The Cat House",
+        "onClickCheckAvailability": [Function],
+        "pricePerPeriod": "$280",
+        "pricePerPeriodPrefix": "from",
+        "ratingNumber": 3.4,
       },
       Object {
         "amenities": Array [
@@ -1411,12 +1411,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
           },
         ],
         "guestsNumber": 3,
-        "name": "The Other Cat House",
-        "onClickCheckAvailability": [Function],
-        "pricePerPeriod": "$280",
-        "pricePerPeriodPrefix": "from",
-        "ratingNumber": 3.4,
-        "slideShowImages": Array [
+        "images": Array [
           Object {
             "title": "Two more cats",
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1426,6 +1421,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
             "url": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
           },
         ],
+        "name": "The Other Cat House",
+        "onClickCheckAvailability": [Function],
+        "pricePerPeriod": "$280",
+        "pricePerPeriodPrefix": "from",
+        "ratingNumber": 3.4,
       },
     ]
   }
@@ -1475,14 +1475,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
       ]
     }
     guestsNumber={3}
-    isShowingPlaceholder={false}
-    key="The Cat House0"
-    name="The Cat House"
-    onClickCheckAvailability={[Function]}
-    pricePerPeriod="$280"
-    pricePerPeriodPrefix="from"
-    ratingNumber={3.4}
-    slideShowImages={
+    images={
       Array [
         Object {
           "title": "Two more cats",
@@ -1494,6 +1487,13 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         },
       ]
     }
+    isShowingPlaceholder={false}
+    key="The Cat House0"
+    name="The Cat House"
+    onClickCheckAvailability={[Function]}
+    pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
+    ratingNumber={3.4}
   >
     <Responsive
       amenities={
@@ -1542,15 +1542,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
       }
       getWidth={[Function]}
       guestsNumber={3}
-      isShowingPlaceholder={false}
-      isUserOnMobile={false}
-      name="The Cat House"
-      onClickCheckAvailability={[Function]}
-      onUpdate={[Function]}
-      pricePerPeriod="$280"
-      pricePerPeriodPrefix="from"
-      ratingNumber={3.4}
-      slideShowImages={
+      images={
         Array [
           Object {
             "title": "Two more cats",
@@ -1562,6 +1554,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
           },
         ]
       }
+      isShowingPlaceholder={false}
+      isUserOnMobile={false}
+      name="The Cat House"
+      onClickCheckAvailability={[Function]}
+      onUpdate={[Function]}
+      pricePerPeriod="$280"
+      pricePerPeriodPrefix="from"
+      ratingNumber={3.4}
       windowInnerWidth={1024}
     >
       <RoomType
@@ -1611,16 +1611,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
           ]
         }
         guestsNumber={3}
-        isShowingPlaceholder={false}
-        isUserOnMobile={false}
-        moreInfoText="More info"
-        name="The Cat House"
-        onClickCheckAvailability={[Function]}
-        periodText="per night"
-        pricePerPeriod="$280"
-        pricePerPeriodPrefix="from"
-        ratingNumber={3.4}
-        slideShowImages={
+        images={
           Array [
             Object {
               "title": "Two more cats",
@@ -1632,6 +1623,15 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
             },
           ]
         }
+        isShowingPlaceholder={false}
+        isUserOnMobile={false}
+        moreInfoText="More info"
+        name="The Cat House"
+        onClickCheckAvailability={[Function]}
+        periodText="per night"
+        pricePerPeriod="$280"
+        pricePerPeriodPrefix="from"
+        ratingNumber={3.4}
         windowInnerWidth={1024}
       >
         <Card
@@ -1698,9 +1698,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 isShowingIndex={false}
                                 isShowingThumbnails={false}
                                 isStretched={true}
+                                startIndex={0}
                               >
                                 <ImageGallery
                                   additionalClass="fit-height no-shadow no-border-radius"
+                                  data-testid="slideshow"
                                   items={
                                     Array [
                                       Object {
@@ -1733,6 +1735,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                   showIndex={false}
                                   showPlayButton={false}
                                   showThumbnails={false}
+                                  startIndex={0}
                                   thumbnails={
                                     Array [
                                       Object {
@@ -2479,14 +2482,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
       ]
     }
     guestsNumber={3}
-    isShowingPlaceholder={false}
-    key="The Other Cat House1"
-    name="The Other Cat House"
-    onClickCheckAvailability={[Function]}
-    pricePerPeriod="$280"
-    pricePerPeriodPrefix="from"
-    ratingNumber={3.4}
-    slideShowImages={
+    images={
       Array [
         Object {
           "title": "Two more cats",
@@ -2498,6 +2494,13 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
         },
       ]
     }
+    isShowingPlaceholder={false}
+    key="The Other Cat House1"
+    name="The Other Cat House"
+    onClickCheckAvailability={[Function]}
+    pricePerPeriod="$280"
+    pricePerPeriodPrefix="from"
+    ratingNumber={3.4}
   >
     <Responsive
       amenities={
@@ -2537,15 +2540,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
       }
       getWidth={[Function]}
       guestsNumber={3}
-      isShowingPlaceholder={false}
-      isUserOnMobile={false}
-      name="The Other Cat House"
-      onClickCheckAvailability={[Function]}
-      onUpdate={[Function]}
-      pricePerPeriod="$280"
-      pricePerPeriodPrefix="from"
-      ratingNumber={3.4}
-      slideShowImages={
+      images={
         Array [
           Object {
             "title": "Two more cats",
@@ -2557,6 +2552,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
           },
         ]
       }
+      isShowingPlaceholder={false}
+      isUserOnMobile={false}
+      name="The Other Cat House"
+      onClickCheckAvailability={[Function]}
+      onUpdate={[Function]}
+      pricePerPeriod="$280"
+      pricePerPeriodPrefix="from"
+      ratingNumber={3.4}
       windowInnerWidth={1024}
     >
       <RoomType
@@ -2597,16 +2600,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
           ]
         }
         guestsNumber={3}
-        isShowingPlaceholder={false}
-        isUserOnMobile={false}
-        moreInfoText="More info"
-        name="The Other Cat House"
-        onClickCheckAvailability={[Function]}
-        periodText="per night"
-        pricePerPeriod="$280"
-        pricePerPeriodPrefix="from"
-        ratingNumber={3.4}
-        slideShowImages={
+        images={
           Array [
             Object {
               "title": "Two more cats",
@@ -2618,6 +2612,15 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
             },
           ]
         }
+        isShowingPlaceholder={false}
+        isUserOnMobile={false}
+        moreInfoText="More info"
+        name="The Other Cat House"
+        onClickCheckAvailability={[Function]}
+        periodText="per night"
+        pricePerPeriod="$280"
+        pricePerPeriodPrefix="from"
+        ratingNumber={3.4}
         windowInnerWidth={1024}
       >
         <Card
@@ -2684,9 +2687,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 isShowingIndex={false}
                                 isShowingThumbnails={false}
                                 isStretched={true}
+                                startIndex={0}
                               >
                                 <ImageGallery
                                   additionalClass="fit-height no-shadow no-border-radius"
+                                  data-testid="slideshow"
                                   items={
                                     Array [
                                       Object {
@@ -2719,6 +2724,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                   showIndex={false}
                                   showPlayButton={false}
                                   showThumbnails={false}
+                                  startIndex={0}
                                   thumbnails={
                                     Array [
                                       Object {
