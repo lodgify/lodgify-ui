@@ -31,32 +31,32 @@ export const Component = ({
   headerLogoSubText,
   placeholderBackgroundImageUrl,
 }) => (
-  <FullBleed
-    bottomOffset={bottomOffset}
-    className={className}
-    hasGradient
-    imageHeight={backgroundImageHeight}
-    imageUrl={backgroundImageUrl}
-    imageWidth={backgroundImageWidth}
-    placeholderImageUrl={placeholderBackgroundImageUrl}
-    sizes={backgroundImageSizes}
-    srcSet={backgroundImageSrcSet}
-  >
-    <Header
-      activeNavigationItemIndex={activeNavigationItemIndex}
-      logoHref={headerLogoHref}
-      logoSize={headerLogoSize}
-      logoSizes={headerLogoSizes}
-      logoSrc={headerLogoSrc}
-      logoSrcSet={headerLogoSrcSet}
-      logoSubText={headerLogoSubText}
-      logoText={headerLogoText}
-      navigationItems={headerNavigationItems}
-      primaryCTA={headerPrimaryCTA}
-    />
-    {children}
-  </FullBleed>
-);
+    <FullBleed
+      bottomOffset={bottomOffset}
+      className={className}
+      hasGradient
+      imageHeight={backgroundImageHeight}
+      imageUrl={backgroundImageUrl}
+      imageWidth={backgroundImageWidth}
+      placeholderImageUrl={placeholderBackgroundImageUrl}
+      sizes={backgroundImageSizes}
+      srcSet={backgroundImageSrcSet}
+    >
+      <Header
+        activeNavigationItemIndex={activeNavigationItemIndex}
+        logoHref={headerLogoHref}
+        logoSize={headerLogoSize}
+        logoSizes={headerLogoSizes}
+        logoSrc={headerLogoSrc}
+        logoSrcSet={headerLogoSrcSet}
+        logoSubText={headerLogoSubText}
+        logoText={headerLogoText}
+        navigationItems={headerNavigationItems}
+        primaryCTA={headerPrimaryCTA}
+      />
+      {children}
+    </FullBleed>
+  );
 
 Component.displayName = 'Hero';
 
@@ -102,7 +102,7 @@ Component.propTypes = {
   bottomOffset: PropTypes.string,
   /** The children displayed between the header and the bottom of the hero. */
   children: PropTypes.node,
-  /** The custom className to customize the component. */
+  /** The custom classes*/
   className: PropTypes.string,
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,

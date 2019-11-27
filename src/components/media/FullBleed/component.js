@@ -25,28 +25,28 @@ export const Component = ({
   sizes,
   srcSet,
 }) => (
-  <Segment
-    className={classnames(className, 'full-bleed', {
-      'has-gradient': hasGradient,
-      'has-children': size(children) > 0,
-    })}
-    style={{
-      '--full-bleed-bottom-offset': bottomOffset,
-    }}
-    vertical
-  >
-    <ResponsiveImage
-      imageHeight={imageHeight}
-      imageUrl={imageUrl}
-      imageWidth={imageWidth}
-      isFluid
-      placeholderImageUrl={placeholderImageUrl}
-      sizes={sizes}
-      srcSet={srcSet}
-    />
-    {children}
-  </Segment>
-);
+    <Segment
+      className={classnames(className, 'full-bleed', {
+        'has-gradient': hasGradient,
+        'has-children': size(children) > 0,
+      })}
+      style={{
+        '--full-bleed-bottom-offset': bottomOffset,
+      }}
+      vertical
+    >
+      <ResponsiveImage
+        imageHeight={imageHeight}
+        imageUrl={imageUrl}
+        imageWidth={imageWidth}
+        isFluid
+        placeholderImageUrl={placeholderImageUrl}
+        sizes={sizes}
+        srcSet={srcSet}
+      />
+      {children}
+    </Segment>
+  );
 
 Component.displayName = 'FullBleed';
 
@@ -68,7 +68,7 @@ Component.propTypes = {
   bottomOffset: PropTypes.string,
   /** The children to render inside the full bleed. */
   children: PropTypes.node,
-  /** The custom className to customize the component. */
+  /** The custom classes*/
   className: PropTypes.string,
   /** Is there a gradient overlaying the full bleed.  */
   hasGradient: PropTypes.bool,
