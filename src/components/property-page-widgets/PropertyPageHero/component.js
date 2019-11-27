@@ -107,7 +107,7 @@ Component.propTypes = {
     PropTypes.string,
     PropTypes.number,
   ]),
-  /** The custom classes*/
+  /** The custom classes. */
   className: PropTypes.string,
   /** The images to display in the gallery modal. */
   galleryImages: PropTypes.arrayOf(

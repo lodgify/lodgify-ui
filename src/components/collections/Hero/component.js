@@ -102,7 +102,7 @@ Component.propTypes = {
   bottomOffset: PropTypes.string,
   /** The children displayed between the header and the bottom of the hero. */
   children: PropTypes.node,
-  /** The custom classes*/
+  /** The custom classes. */
   className: PropTypes.string,
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,

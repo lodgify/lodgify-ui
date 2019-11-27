@@ -68,7 +68,7 @@ Component.propTypes = {
   bottomOffset: PropTypes.string,
   /** The children to render inside the full bleed. */
   children: PropTypes.node,
-  /** The custom classes*/
+  /** The custom classes. */
   className: PropTypes.string,
   /** Is there a gradient overlaying the full bleed.  */
   hasGradient: PropTypes.bool,
