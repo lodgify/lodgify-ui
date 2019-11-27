@@ -206,9 +206,11 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
       isShowingIndex={false}
       isShowingThumbnails={false}
       isStretched={false}
+      startIndex={0}
     >
       <ImageGallery
         additionalClass=""
+        data-testid="slideshow"
         items={
           Array [
             Object {
@@ -232,6 +234,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
         showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        startIndex={0}
         thumbnails={
           Array [
             Object {
@@ -608,9 +611,11 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
       isShowingIndex={false}
       isShowingThumbnails={false}
       isStretched={false}
+      startIndex={0}
     >
       <ImageGallery
         additionalClass=""
+        data-testid="slideshow"
         items={
           Array [
             Object {
@@ -634,6 +639,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
         showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        startIndex={0}
         thumbnails={
           Array [
             Object {
@@ -1066,9 +1072,11 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
       isShowingIndex={false}
       isShowingThumbnails={false}
       isStretched={false}
+      startIndex={0}
     >
       <ImageGallery
         additionalClass=""
+        data-testid="slideshow"
         items={
           Array [
             Object {
@@ -1092,6 +1100,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
         showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        startIndex={0}
         thumbnails={
           Array [
             Object {
@@ -1700,9 +1709,11 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
       isShowingIndex={false}
       isShowingThumbnails={false}
       isStretched={false}
+      startIndex={0}
     >
       <ImageGallery
         additionalClass=""
+        data-testid="slideshow"
         items={
           Array [
             Object {
@@ -1735,6 +1746,7 @@ exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should re
         showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        startIndex={0}
         thumbnails={
           Array [
             Object {
@@ -2348,9 +2360,11 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
       isShowingIndex={false}
       isShowingThumbnails={false}
       isStretched={false}
+      startIndex={0}
     >
       <ImageGallery
         additionalClass=""
+        data-testid="slideshow"
         items={
           Array [
             Object {
@@ -2374,6 +2388,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
         showIndex={false}
         showPlayButton={false}
         showThumbnails={false}
+        startIndex={0}
         thumbnails={
           Array [
             Object {

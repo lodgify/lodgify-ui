@@ -1698,9 +1698,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 isShowingIndex={false}
                                 isShowingThumbnails={false}
                                 isStretched={true}
+                                startIndex={0}
                               >
                                 <ImageGallery
                                   additionalClass="fit-height no-shadow no-border-radius"
+                                  data-testid="slideshow"
                                   items={
                                     Array [
                                       Object {
@@ -1733,6 +1735,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                   showIndex={false}
                                   showPlayButton={false}
                                   showThumbnails={false}
+                                  startIndex={0}
                                   thumbnails={
                                     Array [
                                       Object {
@@ -2684,9 +2687,11 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 isShowingIndex={false}
                                 isShowingThumbnails={false}
                                 isStretched={true}
+                                startIndex={0}
                               >
                                 <ImageGallery
                                   additionalClass="fit-height no-shadow no-border-radius"
+                                  data-testid="slideshow"
                                   items={
                                     Array [
                                       Object {
@@ -2719,6 +2724,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                   showIndex={false}
                                   showPlayButton={false}
                                   showThumbnails={false}
+                                  startIndex={0}
                                   thumbnails={
                                     Array [
                                       Object {
