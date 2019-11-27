@@ -68,7 +68,7 @@ Component.propTypes = {
   bottomOffset: PropTypes.string,
   /** The children to render inside the full bleed. */
   children: PropTypes.node,
-  /** The children displayed between the header and the bottom of the hero. */
+  /** The custom className to customize the component. */
   className: PropTypes.string,
   /** Is there a gradient overlaying the full bleed.  */
   hasGradient: PropTypes.bool,

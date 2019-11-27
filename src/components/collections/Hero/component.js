@@ -100,9 +100,9 @@ Component.propTypes = {
   ]),
   /** Reduce the height of the Hero with an offset, supports CSS dimensions. */
   bottomOffset: PropTypes.string,
-  /** The custom className to customize the component. */
-  children: PropTypes.node,
   /** The children displayed between the header and the bottom of the hero. */
+  children: PropTypes.node,
+  /** The custom className to customize the component. */
   className: PropTypes.string,
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,
