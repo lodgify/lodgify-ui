@@ -81,7 +81,7 @@ export const Component = ({
           isOpen={isOpen}
           onClick={triggerIsOpen}
           onClose={close}
-          slideShowImages={galleryImages}
+          images={galleryImages}
           startIndex={currentIndex}
           trigger={
             <Link

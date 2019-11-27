@@ -3,7 +3,7 @@ const PLACEHOLDER_DATA = {
   features: [],
   name: '',
   pricePerPeriod: '',
-  slideShowImages: [],
+  images: [],
 };
 
 const NUMBER_OF_PLACEHOLDERS = 2;

@@ -42,18 +42,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
       },
     ]
   }
-  isShowingPlaceholder={false}
-  isUserOnMobile={false}
-  locationName="Catania"
-  moreInfoText="Oof"
-  name="The Cat House"
-  periodText="per night"
-  pricePerPeriod="$280"
-  pricePerPeriodPrefix="morf"
-  propertyType="Bed and breakfast"
-  propertyUrl="/"
-  ratingNumber={4}
-  slideShowImages={
+  images={
     Array [
       Object {
         "title": "Two cats",
@@ -69,6 +58,17 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
       },
     ]
   }
+  isShowingPlaceholder={false}
+  isUserOnMobile={false}
+  locationName="Catania"
+  moreInfoText="Oof"
+  name="The Cat House"
+  periodText="per night"
+  pricePerPeriod="$280"
+  pricePerPeriodPrefix="morf"
+  propertyType="Bed and breakfast"
+  propertyUrl="/"
+  ratingNumber={4}
 >
   <Card
     className="has-room-type-gallery"
@@ -848,18 +848,7 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
       },
     ]
   }
-  isShowingPlaceholder={true}
-  isUserOnMobile={false}
-  locationName="Catania"
-  moreInfoText="Oof"
-  name="The Cat House"
-  periodText="per night"
-  pricePerPeriod="$280"
-  pricePerPeriodPrefix="morf"
-  propertyType="Bed and breakfast"
-  propertyUrl="/"
-  ratingNumber={4}
-  slideShowImages={
+  images={
     Array [
       Object {
         "title": "Two cats",
@@ -875,6 +864,17 @@ exports[`<RoomType /> if \`isShowingPlaceholder\` is \`true\` should render the 
       },
     ]
   }
+  isShowingPlaceholder={true}
+  isUserOnMobile={false}
+  locationName="Catania"
+  moreInfoText="Oof"
+  name="The Cat House"
+  periodText="per night"
+  pricePerPeriod="$280"
+  pricePerPeriodPrefix="morf"
+  propertyType="Bed and breakfast"
+  propertyUrl="/"
+  ratingNumber={4}
 >
   <Card
     className="has-room-type-gallery"
@@ -1101,18 +1101,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
       },
     ]
   }
-  isShowingPlaceholder={false}
-  isUserOnMobile={true}
-  locationName="Catania"
-  moreInfoText="Oof"
-  name="The Cat House"
-  periodText="per night"
-  pricePerPeriod="$280"
-  pricePerPeriodPrefix="morf"
-  propertyType="Bed and breakfast"
-  propertyUrl="/"
-  ratingNumber={4}
-  slideShowImages={
+  images={
     Array [
       Object {
         "title": "Two cats",
@@ -1128,6 +1117,17 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
       },
     ]
   }
+  isShowingPlaceholder={false}
+  isUserOnMobile={true}
+  locationName="Catania"
+  moreInfoText="Oof"
+  name="The Cat House"
+  periodText="per night"
+  pricePerPeriod="$280"
+  pricePerPeriodPrefix="morf"
+  propertyType="Bed and breakfast"
+  propertyUrl="/"
+  ratingNumber={4}
 >
   <Card
     className="has-room-type-gallery"

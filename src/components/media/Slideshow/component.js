@@ -1,19 +1,19 @@
-import React, { Fragment, useState } from 'react';
-import PropTypes from 'prop-types';
-import ImageGallery from 'react-image-gallery';
-import get from 'get-value';
-import classnames from 'classnames';
+import React, { Fragment, useState } from "react";
+import PropTypes from "prop-types";
+import ImageGallery from "react-image-gallery";
+import get from "get-value";
+import classnames from "classnames";
 
-import { Heading } from 'typography/Heading';
-import { Paragraph } from 'typography/Paragraph';
-import { ICON_NAMES } from 'elements/Icon';
-import { testidFactory } from 'utils/testid';
+import { Heading } from "typography/Heading";
+import { Paragraph } from "typography/Paragraph";
+import { ICON_NAMES } from "elements/Icon";
+import { testidFactory } from "utils/testid";
 
-import { adaptImages } from './utils/adaptImages';
-import { renderNavButton } from './utils/renderNavButton';
-import { getAdaptedImagesWithPlaceholders } from './utils/getAdaptedImagesWithPlaceholders';
+import { adaptImages } from "./utils/adaptImages";
+import { renderNavButton } from "./utils/renderNavButton";
+import { getAdaptedImagesWithPlaceholders } from "./utils/getAdaptedImagesWithPlaceholders";
 
-const TEST_ID_PREFIX = 'slideshow';
+const TEST_ID_PREFIX = "slideshow";
 
 const testid = testidFactory(TEST_ID_PREFIX);
 
@@ -31,7 +31,7 @@ export const Component = ({
   isShowingThumbnails,
   isStretched,
   isFluid,
-  startIndex,
+  startIndex
 }) => {
   const [index, setIndex] = useState(startIndex);
   const [imagesWithAdapt, setImages] = useState(adaptImages(images));
@@ -49,22 +49,22 @@ export const Component = ({
     setImages(adaptedImagesAndBlockPlaceholders);
   };
 
-  const descriptionText = get(images, [index, 'descriptionText']);
+  const descriptionText = get(images, [index, "descriptionText"]);
 
   return (
     <Fragment>
       {headingText && <Heading>{headingText}</Heading>}
       {descriptionText && (
         <Paragraph>
-          <span data-testid={testid('description')}>{descriptionText}</span>
+          <span data-testid={testid("description")}>{descriptionText}</span>
         </Paragraph>
       )}
       <ImageGallery
         additionalClass={classnames({
-          'fit-height': isStretched,
-          'fit-width': isFluid,
-          'no-shadow': !hasShadow,
-          'no-border-radius': !isRounded,
+          "fit-height": isStretched,
+          "fit-width": isFluid,
+          "no-shadow": !hasShadow,
+          "no-border-radius": !isRounded
         })}
         data-testid={testid()}
         items={imagesWithAdapt}
@@ -87,7 +87,7 @@ export const Component = ({
   );
 };
 
-Component.displayName = 'Slideshow';
+Component.displayName = "Slideshow";
 
 Component.defaultProps = {
   hasShadow: true,
@@ -98,7 +98,7 @@ Component.defaultProps = {
   isShowingIndex: false,
   isShowingThumbnails: false,
   isFluid: false,
-  startIndex: 0,
+  startIndex: 0
 };
 
 Component.propTypes = {
@@ -118,7 +118,7 @@ Component.propTypes = {
       /** Title of the image to show when hovering over it on desktop browsers. */
       title: PropTypes.string,
       /** URL pointing to the image to display. */
-      url: PropTypes.string.isRequired,
+      url: PropTypes.string.isRequired
     })
   ).isRequired,
   /** Is the slideshow the width of it's container */
@@ -133,6 +133,6 @@ Component.propTypes = {
   isShowingThumbnails: PropTypes.bool,
   /** Is the slideshow fitting the height of it's container. */
   isStretched: PropTypes.bool,
-  /** The index used to define the image shown when the Slideshow is opened. */
-  startIndex: PropTypes.number,
+  /** The index used to define the image shown when the slideshow is opened. */
+  startIndex: PropTypes.number
 };

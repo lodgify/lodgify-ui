@@ -365,10 +365,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
   >
     <Gallery
       data-testid="pictures-gallery"
-      isOpen={false}
-      onClick={[Function]}
-      onClose={[Function]}
-      slideShowImages={
+      images={
         Array [
           Object {
             "descriptionText": "Two cats",
@@ -408,6 +405,9 @@ exports[`<Pictures /> should render the correct structure 1`] = `
           },
         ]
       }
+      isOpen={false}
+      onClick={[Function]}
+      onClose={[Function]}
       startIndex={2}
       trigger={
         <Link

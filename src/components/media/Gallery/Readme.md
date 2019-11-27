@@ -15,7 +15,7 @@ const images = [
 ];
 
 <Gallery
-  slideShowImages={images}
+  images={images}
   thumbnails={images}
   trigger={<Button>Punch It!</Button>}
 />;
@@ -32,7 +32,7 @@ const images = [
 ];
 
 <Gallery
-  slideShowImages={images}
+  images={images}
   thumbnails={images}
   trigger={<Button>Punch It!</Button>}
 />;

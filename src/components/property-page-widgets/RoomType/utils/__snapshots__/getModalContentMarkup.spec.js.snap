@@ -1499,7 +1499,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
 </ModalContent>
 `;
 
-exports[`getModalContentMarkup if \`props.slideShowImages.length\` > 1 should render the right structure 1`] = `
+exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the right structure 1`] = `
 <ModalContent
   className="has-room-type-gallery"
 >

@@ -21,7 +21,7 @@ export const getGalleryMarkup = (images, secondaryButtonText) =>
       <FlexContainer alignItems="flex-end">
         <HorizontalGutters>
           <Gallery
-            slideShowImages={images}
+            images={images}
             trigger={
               <Button
                 icon={ICON_NAMES.PLACEHOLDER}

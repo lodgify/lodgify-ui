@@ -6,7 +6,7 @@ import { testidSelectorFactory } from 'utils/testid';
 import { Component as Gallery } from './component';
 
 const props = {
-  slideShowImages: [
+  images: [
     {
       url: 'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg',
       descriptionText: 'Two cats',

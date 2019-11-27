@@ -51,7 +51,7 @@ const slideShowImage = [
 const getMarkup = ({
   description = 'yoyo description',
   ratingNumber = 3.2,
-  slideShowImages = slideShowImage,
+  images = slideShowImage,
   amenities = amenities,
 }) =>
   mount(
@@ -67,7 +67,7 @@ const getMarkup = ({
       pricePerPeriod,
       pricePerPeriodPrefix,
       ratingNumber,
-      slideShowImages
+      images
     )
   );
 
@@ -110,11 +110,11 @@ describe('getModalContentMarkup', () => {
     });
   });
 
-  describe('if `props.slideShowImages.length` > 1', () => {
+  describe('if `props.images.length` > 1', () => {
     it('should render the right structure', () => {
       const wrapper = getMarkup({
         amenities,
-        slideShowImages: [
+        images: [
           ...slideShowImage,
           {
             url:
