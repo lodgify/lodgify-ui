@@ -1,0 +1,26 @@
+/*--------------------------
+  LightBox
+--------------------------*/
+@galleryButtonBoxShadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+
+@galleryContentBackgroundColor: rgba(0, 0, 0, 0.9);
+
+@gallerySlideshowContentHeight: ~"calc(45vw - 130px)";
+@gallerySlideshowContentMinHeight: 35vw;
+@gallerySlideshowContentMaxHeight: 600px;
+@gallerySlideshowContentMarginBottom: 45px;
+
+@gallerySlideshowIndexBottomOffset: -40px;
+
+@galleryThumbnailLinearGradientWidth: 50px;
+@galleryThumbnailLinearGradientHeight: 102%;
+@galleryThumbnailLinearGradientBackgroundColor: #191919;
+@galleryThumbnailLinearGradientZIndex: 2;
+@galleryThumbnailLinearGradientRight: linear-gradient(270deg, @galleryThumbnailLinearGradientBackgroundColor 30%, rgba(25, 25, 25, 0) 100%);
+@galleryThumbnailLinearGradientLeft: linear-gradient(90deg, @galleryThumbnailLinearGradientBackgroundColor 30%, rgba(25, 25, 25, 0) 100%);
+@galleryThumbnailActiveGradientTopOffset: -1px;
+@galleryThumbnailWrapperPadding: 5px @galleryThumbNailActiveBoxShadowOutlineWidth;
+@galleryThumbnailActiveTransition: transform 0.2s linear;
+@galleryThumbnailActiveTranslationY: translateY(-8px);
+@galleryThumbNailActiveBoxShadow: 0 0 0 1px rgba(255, 255, 255, 0.41);
+@galleryThumbNailActiveBoxShadowOutlineWidth: 1px;
