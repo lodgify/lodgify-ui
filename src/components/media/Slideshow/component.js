@@ -1,4 +1,4 @@
-import React, { Fragment, PureComponent } from 'react';
+import React, { Fragment, useState } from 'react';
 import PropTypes from 'prop-types';
 import ImageGallery from 'react-image-gallery';
 import get from 'get-value';
@@ -7,76 +7,85 @@ import classnames from 'classnames';
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
 import { ICON_NAMES } from 'elements/Icon';
+import { testidFactory } from 'utils/testid';
 
 import { adaptImages } from './utils/adaptImages';
 import { renderNavButton } from './utils/renderNavButton';
 import { getAdaptedImagesWithPlaceholders } from './utils/getAdaptedImagesWithPlaceholders';
 
+const TEST_ID_PREFIX = 'slideshow';
+
+const testid = testidFactory(TEST_ID_PREFIX);
+
 /**
  * A slideshow displays a series of images.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export class Component extends PureComponent {
-  state = {
-    adaptedImages: adaptImages(this.props.images),
-    index: 0,
+export const Component = ({
+  hasShadow,
+  headingText,
+  images,
+  isRounded,
+  isShowingBulletNavigation,
+  isShowingIndex,
+  isShowingThumbnails,
+  isStretched,
+  isFluid,
+  startIndex,
+}) => {
+  const [index, setIndex] = useState(startIndex);
+  const [imagesWithAdapt, setImages] = useState(adaptImages(images));
+
+  const handleSlide = index => {
+    setIndex(index);
   };
 
-  handleSlide = index => this.setState({ index });
-
-  handleImageError = event => {
+  const handleImageError = event => {
     const adaptedImagesAndBlockPlaceholders = getAdaptedImagesWithPlaceholders(
-      this.state.adaptedImages,
+      imagesWithAdapt,
       event.target.src
     );
 
-    this.setState({ adaptedImages: adaptedImagesAndBlockPlaceholders });
+    setImages(adaptedImagesAndBlockPlaceholders);
   };
 
-  render = () => {
-    const {
-      hasShadow,
-      headingText,
-      images,
-      isRounded,
-      isShowingBulletNavigation,
-      isShowingIndex,
-      isShowingThumbnails,
-      isStretched,
-      isFluid,
-    } = this.props;
-    const descriptionText = get(images, [this.state.index, 'descriptionText']);
+  const descriptionText = get(images, [index, 'descriptionText']);
 
-    return (
-      <Fragment>
-        {headingText && <Heading>{headingText}</Heading>}
-        {descriptionText && <Paragraph>{descriptionText}</Paragraph>}
-        <ImageGallery
-          additionalClass={classnames({
-            'fit-height': isStretched,
-            'fit-width': isFluid,
-            'no-shadow': !hasShadow,
-            'no-border-radius': !isRounded,
-          })}
-          // Note: styles for the pagination controls
-          // live in `styles/semantic/themes/livingstone/collections/menu.*`
-          items={this.state.adaptedImages}
-          lazyLoad
-          onImageError={this.handleImageError}
-          onSlide={this.handleSlide}
-          renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
-          renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
-          showBullets={isShowingBulletNavigation}
-          showFullscreenButton={false}
-          showIndex={isShowingIndex}
-          showPlayButton={false}
-          showThumbnails={isShowingThumbnails}
-          thumbnails={this.state.adaptedImages}
-        />
-      </Fragment>
-    );
-  };
-}
+  return (
+    <Fragment>
+      {headingText && <Heading>{headingText}</Heading>}
+      {descriptionText && (
+        <Paragraph>
+          <span data-testid={testid('description')}>{descriptionText}</span>
+        </Paragraph>
+      )}
+      <ImageGallery
+        additionalClass={classnames({
+          'fit-height': isStretched,
+          'fit-width': isFluid,
+          'no-shadow': !hasShadow,
+          'no-border-radius': !isRounded,
+        })}
+        data-testid={testid()}
+        items={imagesWithAdapt}
+        lazyLoad
+        // Note: styles for the pagination controls
+        // live in `styles/semantic/themes/livingstone/collections/menu.*`
+        onImageError={handleImageError}
+        onSlide={handleSlide}
+        renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
+        renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
+        showBullets={isShowingBulletNavigation}
+        showFullscreenButton={false}
+        showIndex={isShowingIndex}
+        showPlayButton={false}
+        showThumbnails={isShowingThumbnails}
+        startIndex={startIndex}
+        thumbnails={imagesWithAdapt}
+      />
+    </Fragment>
+  );
+};
 
 Component.displayName = 'Slideshow';
 
@@ -89,6 +98,7 @@ Component.defaultProps = {
   isShowingIndex: false,
   isShowingThumbnails: false,
   isFluid: false,
+  startIndex: 0,
 };
 
 Component.propTypes = {
@@ -123,4 +133,6 @@ Component.propTypes = {
   isShowingThumbnails: PropTypes.bool,
   /** Is the slideshow fitting the height of it's container. */
   isStretched: PropTypes.bool,
+  /** The index used to define the image shown when the Slideshow is opened. */
+  startIndex: PropTypes.number,
 };

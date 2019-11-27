@@ -9,6 +9,7 @@ export const images = [
         ${url}?w=800&h=800&mode=max 768w,
         ${url}?w=1024&h=1000&mode=max 1024w`,
     title: 'Two cats',
+    descriptionText: 'foo',
   },
   {
     url,
@@ -17,6 +18,7 @@ export const images = [
         ${url}?w=800&h=800&mode=max 768w,
         ${url}?w=1024&h=1000&mode=max 1024w`,
     title: 'Two more cats',
+    descriptionText: 'bar',
   },
   {
     url,
@@ -25,6 +27,7 @@ export const images = [
         ${url}?w=800&h=800&mode=max 768w,
         ${url}?w=1024&h=1000&mode=max 1024w`,
     title: 'Much cats',
+    descriptionText: 'foo',
   },
   {
     url,
@@ -33,6 +36,49 @@ export const images = [
         ${url}?w=800&h=800&mode=max 768w,
         ${url}?w=1024&h=1000&mode=max 1024w`,
     title: 'No dogs',
+    descriptionText: 'foo',
+  },
+];
+
+const urlError =
+  'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.g';
+
+export const imagesFail = [
+  {
+    url: urlError,
+    sizes: '100w',
+    srcSet: `${url}?w=400&h=400&mode=max 320w,
+        ${url}?w=800&h=800&mode=max 768w,
+        ${url}?w=1024&h=1000&mode=max 1024w`,
+    title: 'Two cats',
+    descriptionText: 'foo',
+  },
+  {
+    url,
+    sizes: '100w',
+    srcSet: `${url}?w=400&h=400&mode=max 320w,
+        ${url}?w=800&h=800&mode=max 768w,
+        ${url}?w=1024&h=1000&mode=max 1024w`,
+    title: 'Two more cats',
+    descriptionText: 'bar',
+  },
+  {
+    url,
+    sizes: '100w',
+    srcSet: `${url}?w=400&h=400&mode=max 320w,
+        ${url}?w=800&h=800&mode=max 768w,
+        ${url}?w=1024&h=1000&mode=max 1024w`,
+    title: 'Much cats',
+    descriptionText: 'foo',
+  },
+  {
+    url,
+    sizes: '100w',
+    srcSet: `${url}?w=400&h=400&mode=max 320w,
+        ${url}?w=800&h=800&mode=max 768w,
+        ${url}?w=1024&h=1000&mode=max 1024w`,
+    title: 'No dogs',
+    descriptionText: 'foo',
   },
 ];
 

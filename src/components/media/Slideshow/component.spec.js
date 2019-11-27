@@ -1,21 +1,12 @@
-jest.mock('react-image-gallery', () => {
-  const { Component } = require('react');
-
-  class ImageGallery extends Component {
-    render() {
-      return <div />;
-    }
-  }
-
-  return ImageGallery;
-});
-
 jest.mock('./utils/getAdaptedImagesWithPlaceholders');
 jest.mock('./utils/adaptImages');
 
 import React from 'react';
+import { act } from 'react-dom/test-utils';
 import { mount, shallow } from 'enzyme';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+
+import { testidSelectorFactory } from 'utils/testid';
 
 import { getAdaptedImagesWithPlaceholders } from './utils/getAdaptedImagesWithPlaceholders';
 import { adaptImages } from './utils/adaptImages';
@@ -24,18 +15,20 @@ import {
   images,
   adaptedImages,
   adaptedImagesAndBlockPlaceholders,
+  imagesFail,
 } from './mock-data/images';
 
 adaptImages.mockReturnValue(adaptedImages);
+const testid = testidSelectorFactory('slideshow');
 
 const getSlideshow = props => mount(<Slideshow images={images} {...props} />);
 
 describe('<Slideshow />', () => {
   describe('by default', () => {
     it('should return the right structure', () => {
-      const actual = getSlideshow();
+      const component = getSlideshow();
 
-      expect(actual).toMatchSnapshot();
+      expect(component.find(testid()).length).toEqual(1);
     });
   });
 
@@ -113,50 +106,47 @@ describe('<Slideshow />', () => {
     });
   });
 
-  describe('`handleSlide`', () => {
-    it('should call `setState` with the right arguments', () => {
-      const wrapper = shallow(<Slideshow images={images} />);
-      const index = 999;
+  describe('Interaction: onSlide', () => {
+    it('should switch the slide using the image index', () => {
+      act(() => {
+        let wrapper = shallow(<Slideshow images={images} />);
+        let description = wrapper.find(testid('description'));
 
-      wrapper.instance().setState = jest.fn();
-      wrapper.update();
-      wrapper.instance().handleSlide(index);
+        expect(description.text()).toEqual(images[0].descriptionText);
 
-      expect(wrapper.instance().setState).toHaveBeenCalledWith({ index });
+        const trigger = wrapper.find(testid());
+
+        trigger.props().onSlide(1);
+        wrapper.update();
+        description = wrapper.find(testid('description'));
+        expect(description.text()).toEqual(images[1].descriptionText);
+      });
     });
   });
 
-  describe('`handleImageError`', () => {
-    it('should call `getAdaptedImagesWithPlaceholders` with the right arguments', () => {
-      const wrapper = shallow(<Slideshow images={images} />);
-      const event = {
-        target: { src: 'bellbottoms=the?john&spencer=blues&h=explosion' },
-      };
+  describe('Interaction: onImageError', () => {
+    it('return an adapted object with a placeholder if any image is broken', () => {
+      act(() => {
+        getAdaptedImagesWithPlaceholders.mockReturnValueOnce(
+          adaptedImagesAndBlockPlaceholders
+        );
 
-      wrapper.instance().handleImageError(event);
+        let wrapper = shallow(<Slideshow images={imagesFail} />);
+        let galleryImages = wrapper.find(testid()).props().items;
 
-      expect(getAdaptedImagesWithPlaceholders).toHaveBeenCalledWith(
-        adaptedImages,
-        event.target.src
-      );
-    });
+        const trigger = wrapper.find(testid());
 
-    it('should `setState` with whatever `getAdaptedImagesWithPlaceholders` returns', () => {
-      const wrapper = shallow(<Slideshow images={images} />);
-      const event = {
-        target: { src: 'bellbottoms=the?john&spencer=blues&h=explosion' },
-      };
+        trigger.props().onImageError({
+          target: {
+            src:
+              'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.g',
+          },
+        });
+        wrapper.update();
 
-      getAdaptedImagesWithPlaceholders.mockReturnValueOnce(
-        adaptedImagesAndBlockPlaceholders
-      );
+        galleryImages = wrapper.find(testid()).props().items;
 
-      wrapper.instance().setState = jest.fn();
-      wrapper.update();
-      wrapper.instance().handleImageError(event);
-
-      expect(wrapper.instance().setState).toHaveBeenCalledWith({
-        adaptedImages: adaptedImagesAndBlockPlaceholders,
+        expect(galleryImages).toEqual(adaptedImagesAndBlockPlaceholders);
       });
     });
   });
