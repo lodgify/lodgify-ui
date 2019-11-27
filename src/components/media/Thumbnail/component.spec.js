@@ -45,6 +45,16 @@ describe('<Thumbnail />', () => {
     });
   });
 
+  describe('if `props.label` is supplied', () => {
+    it('should render the right structure', () => {
+      const actual = getThumbnail({
+        label: 'Pods against humanity.',
+      });
+
+      expect(actual).toMatchSnapshot();
+    });
+  });
+
   it('should have the displayName `Thumbnail`', () => {
     expectComponentToHaveDisplayName(Thumbnail, 'Thumbnail');
   });
