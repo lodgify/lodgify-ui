@@ -15,6 +15,7 @@ import { DEFAULT_BOTTOM_OFFSET } from './constants';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   bottomOffset,
+  className,
   children,
   hasGradient,
   imageUrl,
@@ -25,7 +26,7 @@ export const Component = ({
   srcSet,
 }) => (
   <Segment
-    className={classnames('full-bleed', {
+    className={classnames(className, 'full-bleed', {
       'has-gradient': hasGradient,
       'has-children': size(children) > 0,
     })}
@@ -52,6 +53,7 @@ Component.displayName = 'FullBleed';
 Component.defaultProps = {
   bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
+  className: '',
   hasGradient: false,
   imageHeight: undefined,
   imageUrl: null,
@@ -66,6 +68,8 @@ Component.propTypes = {
   bottomOffset: PropTypes.string,
   /** The children to render inside the full bleed. */
   children: PropTypes.node,
+  /** The children displayed between the header and the bottom of the hero. */
+  className: PropTypes.string,
   /** Is there a gradient overlaying the full bleed.  */
   hasGradient: PropTypes.bool,
   /** The natural height of the image. */
