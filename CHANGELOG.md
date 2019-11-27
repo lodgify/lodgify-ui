@@ -1,3 +1,21 @@
+# [1.269.0](https://github.com/lodgify/lodgify-ui/compare/v1.268.0...v1.269.0) (2019-11-27)
+
+
+### Bug Fixes
+
+* **PropertyPageHero:** rename images prop ([c34ae7d](https://github.com/lodgify/lodgify-ui/commit/c34ae7d))
+
+
+### Features
+
+* **Gallery:** expose onClose and isOpen ([097473f](https://github.com/lodgify/lodgify-ui/commit/097473f))
+* **Pictures:** trigger Gallery on thumbnail click ([0d1141f](https://github.com/lodgify/lodgify-ui/commit/0d1141f))
+
+
+### Performance Improvements
+
+* **LightBox:** remove component from API ([463b1fd](https://github.com/lodgify/lodgify-ui/commit/463b1fd))
+
 # [1.268.0](https://github.com/lodgify/lodgify-ui/compare/v1.267.0...v1.268.0) (2019-11-27)
 
 
