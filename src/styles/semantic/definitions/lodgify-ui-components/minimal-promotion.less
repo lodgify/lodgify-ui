@@ -1,0 +1,120 @@
+/*******************************
+            Theme
+*******************************/
+
+@type: "lodgify-ui-component";
+
+@element: "minimal-promotion";
+
+@import (multiple) "../../theme.config";
+
+/*--------------------------
+      Minimal Promotion
+--------------------------*/
+.ui.segment.is-minimal-promotion {
+  padding: 0;
+
+  &,
+  > figure.responsive-image {
+    height: @minimalPromotionHeight;
+  }
+
+  > figure.responsive-image,
+  .content-section {
+    border-radius: @minimalPromotionBorderRadius;
+  }
+
+  > .content-section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  figure.responsive-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+
+    &:after {
+      content: '';
+      background-image: @minimalPromotionGradient;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      border-radius: @minimalPromotionBorderRadius;
+    }
+
+    > img {
+      width: 100%;
+      height: auto;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    @supports (object-fit: cover) {
+
+      > img {
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transform: none;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .content-section {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: @minimalPromotionContentPadding;
+
+    @media @tabletScreen {
+      align-items: center;
+      padding: @minimalPromotionContentPaddingMobile;
+    }
+
+    * {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .ui.header {
+      color: @themeActionColorDefault;
+      color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+    }
+
+    h1.ui.header {
+      font-size: @minimalPromotionHeadingSize;
+      line-height: @minimalPromotionHeadingLineHeight;
+    }
+
+    p.tiny {
+      opacity: @minimalPromotionCouponMessageOpacity;
+    }
+
+    p:not(.tiny) {
+      font-size: @minimalPromotionCouponCodeSize;
+      margin-bottom: @minimalPromotionCouponCodeMarginBottom;
+    }
+
+    p {
+      color: @white;
+    }
+  }
+}

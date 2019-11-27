@@ -99,8 +99,8 @@ export class Component extends PureComponent {
                 activeNavigationItemIndex={activeNavigationItemIndex}
               />
             ) : (
-                getStandardMenuMarkup(this.props, activeNavigationItemIndex)
-              )}
+              getStandardMenuMarkup(this.props, activeNavigationItemIndex)
+            )}
           </Menu.Menu>
         </HorizontalGutters>
       </header>

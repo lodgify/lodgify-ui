@@ -2,11 +2,9 @@ import React, { PureComponent } from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
 
-import { withLazyLoad } from 'utils/with-lazy-load';
 import { IMAGE_TITLE } from 'utils/default-strings';
 import { Paragraph } from 'typography/Paragraph';
 
-import { IMAGE_URL, SRC_SET } from './constants';
 import { getImageMarkup } from './utils/getImageMarkup';
 import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
 
@@ -125,8 +123,3 @@ Component.propTypes = {
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   srcSet: PropTypes.string,
 };
-
-export const ComponentWithLazyLoad = withLazyLoad(
-  IMAGE_URL,
-  SRC_SET
-)(Component);

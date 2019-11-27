@@ -35,35 +35,35 @@ const Component = ({
   ratingNumber,
   secondaryButtonText,
 }) => (
-    <Hero
-      activeNavigationItemIndex={activeNavigationItemIndex}
-      backgroundImageHeight={backgroundImageHeight}
-      backgroundImageSizes={backgroundImageSizes}
-      backgroundImageSrcSet={backgroundImageSrcSet}
-      backgroundImageUrl={backgroundImageUrl}
-      backgroundImageWidth={backgroundImageWidth}
-      bottomOffset={BOTTOM_OFFSET}
-      className={className}
-      headerLogoHref={headerLogoHref}
-      headerLogoSize={headerLogoSize}
-      headerLogoSizes={headerLogoSizes}
-      headerLogoSrc={headerLogoSrc}
-      headerLogoSrcSet={headerLogoSrcSet}
-      headerLogoSubText={headerLogoSubText}
-      headerLogoText={headerLogoText}
-      headerNavigationItems={headerNavigationItems}
-      headerPrimaryCTA={headerPrimaryCTA}
-      isFixedSearchBarDisplayed
-      placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
-    >
-      {getGalleryMarkup(
-        galleryImages,
-        propertyName,
-        ratingNumber,
-        secondaryButtonText
-      )}
-    </Hero>
-  );
+  <Hero
+    activeNavigationItemIndex={activeNavigationItemIndex}
+    backgroundImageHeight={backgroundImageHeight}
+    backgroundImageSizes={backgroundImageSizes}
+    backgroundImageSrcSet={backgroundImageSrcSet}
+    backgroundImageUrl={backgroundImageUrl}
+    backgroundImageWidth={backgroundImageWidth}
+    bottomOffset={BOTTOM_OFFSET}
+    className={className}
+    headerLogoHref={headerLogoHref}
+    headerLogoSize={headerLogoSize}
+    headerLogoSizes={headerLogoSizes}
+    headerLogoSrc={headerLogoSrc}
+    headerLogoSrcSet={headerLogoSrcSet}
+    headerLogoSubText={headerLogoSubText}
+    headerLogoText={headerLogoText}
+    headerNavigationItems={headerNavigationItems}
+    headerPrimaryCTA={headerPrimaryCTA}
+    isFixedSearchBarDisplayed
+    placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
+  >
+    {getGalleryMarkup(
+      galleryImages,
+      propertyName,
+      ratingNumber,
+      secondaryButtonText
+    )}
+  </Hero>
+);
 
 Component.displayName = 'PropertyPageHero';
 

@@ -45,6 +45,7 @@ export { HTML } from './components/general-widgets/HTML';
 export { OwnerLogin } from './components/general-widgets/OwnerLogin';
 export { OwnerSignUp } from './components/general-widgets/OwnerSignUp';
 export { Promotion } from './components/general-widgets/Promotion';
+export { MinimalPromotion } from './components/general-widgets/MinimalPromotion';
 export { PropertySearchResult } from './components/general-widgets/PropertySearchResult';
 export { PropertySearchResultList } from './components/general-widgets/PropertySearchResultList';
 export { Review } from './components/general-widgets/Review';

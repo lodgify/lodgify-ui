@@ -11,6 +11,7 @@ export const AND = 'and';
 export const ARRIVAL = 'Arrival';
 export const AVAILABILITY = 'Availability';
 export const BEDS = 'Beds';
+export const BOOK_NOW = 'Book Now';
 export const BOOK_NOW_DISCOUNT = 'Book Now with Discount';
 export const CALL_ME_BACK = 'Call me back';
 export const CANCELLATION_POLICY = 'Cancellation Policy';
