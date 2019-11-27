@@ -3,6 +3,7 @@
 exports[`<FullBleed /> by default should have the right structure 1`] = `
 <FullBleed
   bottomOffset="0px"
+  className=""
   hasGradient={false}
   imageUrl="🐱🐱"
   placeholderImageUrl={null}
@@ -83,6 +84,7 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
 exports[`<FullBleed /> if \`hasGradient\` is passed should have the right structure 1`] = `
 <FullBleed
   bottomOffset="0px"
+  className=""
   hasGradient={true}
   imageUrl="🐱🐱"
   placeholderImageUrl={null}
@@ -163,6 +165,7 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
 exports[`<FullBleed /> if \`props.children > 0\` should have the right structure 1`] = `
 <FullBleed
   bottomOffset="0px"
+  className=""
   hasGradient={false}
   imageUrl="🐱🐱"
   placeholderImageUrl={null}

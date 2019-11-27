@@ -35,35 +35,35 @@ const Component = ({
   ratingNumber,
   secondaryButtonText,
 }) => (
-  <Hero
-    activeNavigationItemIndex={activeNavigationItemIndex}
-    backgroundImageHeight={backgroundImageHeight}
-    backgroundImageSizes={backgroundImageSizes}
-    backgroundImageSrcSet={backgroundImageSrcSet}
-    backgroundImageUrl={backgroundImageUrl}
-    backgroundImageWidth={backgroundImageWidth}
-    bottomOffset={BOTTOM_OFFSET}
-    className={className}
-    headerLogoHref={headerLogoHref}
-    headerLogoSize={headerLogoSize}
-    headerLogoSizes={headerLogoSizes}
-    headerLogoSrc={headerLogoSrc}
-    headerLogoSrcSet={headerLogoSrcSet}
-    headerLogoSubText={headerLogoSubText}
-    headerLogoText={headerLogoText}
-    headerNavigationItems={headerNavigationItems}
-    headerPrimaryCTA={headerPrimaryCTA}
-    isFixedSearchBarDisplayed
-    placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
-  >
-    {getGalleryMarkup(
-      galleryImages,
-      propertyName,
-      ratingNumber,
-      secondaryButtonText
-    )}
-  </Hero>
-);
+    <Hero
+      activeNavigationItemIndex={activeNavigationItemIndex}
+      backgroundImageHeight={backgroundImageHeight}
+      backgroundImageSizes={backgroundImageSizes}
+      backgroundImageSrcSet={backgroundImageSrcSet}
+      backgroundImageUrl={backgroundImageUrl}
+      backgroundImageWidth={backgroundImageWidth}
+      bottomOffset={BOTTOM_OFFSET}
+      className={className}
+      headerLogoHref={headerLogoHref}
+      headerLogoSize={headerLogoSize}
+      headerLogoSizes={headerLogoSizes}
+      headerLogoSrc={headerLogoSrc}
+      headerLogoSrcSet={headerLogoSrcSet}
+      headerLogoSubText={headerLogoSubText}
+      headerLogoText={headerLogoText}
+      headerNavigationItems={headerNavigationItems}
+      headerPrimaryCTA={headerPrimaryCTA}
+      isFixedSearchBarDisplayed
+      placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
+    >
+      {getGalleryMarkup(
+        galleryImages,
+        propertyName,
+        ratingNumber,
+        secondaryButtonText
+      )}
+    </Hero>
+  );
 
 Component.displayName = 'PropertyPageHero';
 
@@ -107,7 +107,7 @@ Component.propTypes = {
     PropTypes.string,
     PropTypes.number,
   ]),
-  /** The custom className to customize the component. */
+  /** The custom classes. */
   className: PropTypes.string,
   /** The images to display in the gallery modal. */
   galleryImages: PropTypes.arrayOf(

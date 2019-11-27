@@ -126,7 +126,7 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The index of the active navigation item. */
   activeNavigationItemIndex: number,
-  /** The custom className to customize the component. */
+  /** The custom classes. */
   className: string,
   /** Is the background filled with a color defined in CSS. */
   isBackgroundFilled: bool,

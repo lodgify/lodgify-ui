@@ -147,7 +147,7 @@ Component.propTypes = {
     PropTypes.string,
     PropTypes.number,
   ]),
-  /** The custom className to customize the component. */
+  /** The custom classes. */
   className: PropTypes.string,
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,

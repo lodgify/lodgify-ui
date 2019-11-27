@@ -31,32 +31,32 @@ export const Component = ({
   headerLogoSubText,
   placeholderBackgroundImageUrl,
 }) => (
-  <FullBleed
-    bottomOffset={bottomOffset}
-    className={className}
-    hasGradient
-    imageHeight={backgroundImageHeight}
-    imageUrl={backgroundImageUrl}
-    imageWidth={backgroundImageWidth}
-    placeholderImageUrl={placeholderBackgroundImageUrl}
-    sizes={backgroundImageSizes}
-    srcSet={backgroundImageSrcSet}
-  >
-    <Header
-      activeNavigationItemIndex={activeNavigationItemIndex}
-      logoHref={headerLogoHref}
-      logoSize={headerLogoSize}
-      logoSizes={headerLogoSizes}
-      logoSrc={headerLogoSrc}
-      logoSrcSet={headerLogoSrcSet}
-      logoSubText={headerLogoSubText}
-      logoText={headerLogoText}
-      navigationItems={headerNavigationItems}
-      primaryCTA={headerPrimaryCTA}
-    />
-    {children}
-  </FullBleed>
-);
+    <FullBleed
+      bottomOffset={bottomOffset}
+      className={className}
+      hasGradient
+      imageHeight={backgroundImageHeight}
+      imageUrl={backgroundImageUrl}
+      imageWidth={backgroundImageWidth}
+      placeholderImageUrl={placeholderBackgroundImageUrl}
+      sizes={backgroundImageSizes}
+      srcSet={backgroundImageSrcSet}
+    >
+      <Header
+        activeNavigationItemIndex={activeNavigationItemIndex}
+        logoHref={headerLogoHref}
+        logoSize={headerLogoSize}
+        logoSizes={headerLogoSizes}
+        logoSrc={headerLogoSrc}
+        logoSrcSet={headerLogoSrcSet}
+        logoSubText={headerLogoSubText}
+        logoText={headerLogoText}
+        navigationItems={headerNavigationItems}
+        primaryCTA={headerPrimaryCTA}
+      />
+      {children}
+    </FullBleed>
+  );
 
 Component.displayName = 'Hero';
 
@@ -100,9 +100,9 @@ Component.propTypes = {
   ]),
   /** Reduce the height of the Hero with an offset, supports CSS dimensions. */
   bottomOffset: PropTypes.string,
-  /** The custom className to customize the component. */
-  children: PropTypes.node,
   /** The children displayed between the header and the bottom of the hero. */
+  children: PropTypes.node,
+  /** The custom classes. */
   className: PropTypes.string,
   /** The href for the header logo link. */
   headerLogoHref: PropTypes.string,

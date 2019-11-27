@@ -15,6 +15,7 @@ import { DEFAULT_BOTTOM_OFFSET } from './constants';
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
   bottomOffset,
+  className,
   children,
   hasGradient,
   imageUrl,
@@ -24,34 +25,35 @@ export const Component = ({
   sizes,
   srcSet,
 }) => (
-  <Segment
-    className={classnames('full-bleed', {
-      'has-gradient': hasGradient,
-      'has-children': size(children) > 0,
-    })}
-    style={{
-      '--full-bleed-bottom-offset': bottomOffset,
-    }}
-    vertical
-  >
-    <ResponsiveImage
-      imageHeight={imageHeight}
-      imageUrl={imageUrl}
-      imageWidth={imageWidth}
-      isFluid
-      placeholderImageUrl={placeholderImageUrl}
-      sizes={sizes}
-      srcSet={srcSet}
-    />
-    {children}
-  </Segment>
-);
+    <Segment
+      className={classnames(className, 'full-bleed', {
+        'has-gradient': hasGradient,
+        'has-children': size(children) > 0,
+      })}
+      style={{
+        '--full-bleed-bottom-offset': bottomOffset,
+      }}
+      vertical
+    >
+      <ResponsiveImage
+        imageHeight={imageHeight}
+        imageUrl={imageUrl}
+        imageWidth={imageWidth}
+        isFluid
+        placeholderImageUrl={placeholderImageUrl}
+        sizes={sizes}
+        srcSet={srcSet}
+      />
+      {children}
+    </Segment>
+  );
 
 Component.displayName = 'FullBleed';
 
 Component.defaultProps = {
   bottomOffset: DEFAULT_BOTTOM_OFFSET,
   children: null,
+  className: '',
   hasGradient: false,
   imageHeight: undefined,
   imageUrl: null,
@@ -66,6 +68,8 @@ Component.propTypes = {
   bottomOffset: PropTypes.string,
   /** The children to render inside the full bleed. */
   children: PropTypes.node,
+  /** The custom classes. */
+  className: PropTypes.string,
   /** Is there a gradient overlaying the full bleed.  */
   hasGradient: PropTypes.bool,
   /** The natural height of the image. */
