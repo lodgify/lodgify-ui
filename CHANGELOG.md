@@ -1,3 +1,15 @@
+# [1.270.0](https://github.com/lodgify/lodgify-ui/compare/v1.269.0...v1.270.0) (2019-11-28)
+
+
+### Features
+
+* **Slideshow:** expose className prop ([ba16cc9](https://github.com/lodgify/lodgify-ui/commit/ba16cc9))
+
+
+### Performance Improvements
+
+* **Pictures:** remove unused prop ([ce0228e](https://github.com/lodgify/lodgify-ui/commit/ce0228e))
+
 # [1.269.0](https://github.com/lodgify/lodgify-ui/compare/v1.268.0...v1.269.0) (2019-11-27)
 
 
