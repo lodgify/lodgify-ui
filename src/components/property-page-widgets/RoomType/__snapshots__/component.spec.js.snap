@@ -114,6 +114,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                         className="four wide computer twelve wide mobile column"
                       >
                         <Slideshow
+                          className={null}
                           hasShadow={false}
                           headingText={null}
                           images={
@@ -1173,6 +1174,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                         className="four wide computer twelve wide mobile column"
                       >
                         <Slideshow
+                          className={null}
                           hasShadow={false}
                           headingText={null}
                           images={

@@ -688,6 +688,7 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
           className="slideshow-content-container"
         >
           <Slideshow
+            className={null}
             hasShadow={true}
             headingText={null}
             images={
