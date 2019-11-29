@@ -29,6 +29,10 @@
 @imageGalleryThumbnailWidth: 90px;
 @imageGalleryThumbnailHeight: 90px;
 
+@imageGalleryMobileThumbnailWidth: 45px;
+@imageGalleryMobileThumbnailHeight: 45px;
+@imageGalleryMobileThumbnailBreakPoint: 750px;
+
 /*******************************
       RoomType Image Gallery
 *******************************/

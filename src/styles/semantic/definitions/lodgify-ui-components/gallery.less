@@ -12,21 +12,52 @@
         Gallery
 --------------------------*/
 
+/* Thumbnails */
+
+.gallery-thumbnail {
+  &:hover {
+    box-shadow: @galleryPicturesHoverBoxShadow;
+    transition: @galleryPicturesTansition;
+    cursor: pointer;
+  }
+}
+
+/* Modal */
+
 .modals {
   .modal {
     &.is-lightbox {
+      display: flex !important;
+      justify-content: center;
+      align-items: center;
+      background-color: @galleryContentBackgroundColor;
+
+      svg > path {
+        fill: @galleryCloseButtonFadedWhite;
+      }
+
       &.fullscreen > .icon > svg {
         background-color: transparent;
         box-shadow: @galleryButtonBoxShadow;
       }
 
       > .content {
-        background-color: @galleryContentBackgroundColor;
+        height: unset;
+        background-color: transparent;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         overflow: hidden;
+
+        .image-gallery,
+        .image-gallery-slide-wrapper,
+        .image-gallery-swipe,
+        .image-galley-slides,
+        .image-galley-slide,
+        .image-gallery-image {
+          height: inherit !important;
+        }
 
         > p {
           color: @white;
@@ -36,16 +67,48 @@
           width: 100%;
 
           .image-gallery-content {
+            height: @gallerySlideshowContentHeight;
+
             .image-gallery-slide-wrapper {
-              height: @gallerySlideshowContentHeight;
-              max-height: @gallerySlideshowContentMaxHeight;
+              max-height: @gallerySlideshowContentFixedMaxHeight;
               display: flex;
               flex-direction: column;
               justify-content: center;
               margin-bottom: @gallerySlideshowContentMarginBottom;
 
-              @media only screen and (max-width: @computerBreakpoint) {
-                min-height: @gallerySlideshowContentMinHeight;
+              > span:first-child {
+                padding: 0;
+              }
+
+              .image-gallery-slide {
+                display: flex;
+                justify-content: center;
+
+                .placeholder {
+                  padding: 0;
+                  max-height: @gallerySlideshowContentMaxHeight;
+                  height: 100vh;
+                  width: @galleryPlaceholderWidth;
+                  background: @galleryPlaceholderBackgroundColor;
+                  border-radius: @galleryPlaceholderBorderRadius;
+
+                  @media only screen and (max-height: @gallerySlideshowHeightBreakpoint) {
+                    max-height: @gallerySlideshowContentMobileMaxHeight;
+                  }
+                }
+
+                .image-gallery-image {
+                  max-width: @gallerySlideshowContentMaxWidth;
+                  border-radius: @galleryPlaceholderBorderRadius;
+
+                  > img {
+                    max-height: @gallerySlideshowContentMaxHeight;
+
+                    @media only screen and (max-height: @gallerySlideshowHeightBreakpoint) {
+                      max-height: @gallerySlideshowContentMobileMaxHeight;
+                    }
+                  }
+                }
               }
 
               .image-gallery-index {
@@ -95,6 +158,7 @@
                     display: flex;
                     align-items: center;
                     transition: @galleryThumbnailActiveTransition;
+                    background: @galleryPlaceholderBackgroundColor;
 
                     &.active {
                       box-shadow: @galleryThumbNailActiveBoxShadow;

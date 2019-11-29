@@ -1,14 +1,22 @@
 /*--------------------------
   Gallery
 --------------------------*/
-@galleryButtonBoxShadow: 0 0 0 1px rgba(255, 255, 255, 0.1);
+@galleryButtonBoxShadow: 0 0 0 1px @galleryCloseButtonFadedWhite;
+@galleryCloseButtonFadedWhite: rgba(255, 255, 255, 0.8);
 
-@galleryContentBackgroundColor: rgba(0, 0, 0, 0.9);
+@galleryContentBackgroundColor: #191919;
 
-@gallerySlideshowContentHeight: ~"calc(45vw - 130px)";
+@galleryPicturesHoverBoxShadow: 2px 5px 7px rgba(167, 167, 167, 0.61);
+@galleryPicturesTansition: all 0.2s ease-in-out;
+
+@gallerySlideshowContentHeight: ~"calc(100% - 14vh)";
 @gallerySlideshowContentMinHeight: 35vw;
-@gallerySlideshowContentMaxHeight: 600px;
+@gallerySlideshowContentFixedMaxHeight: 600px;
+@gallerySlideshowContentMaxHeight: 35vw;
+@gallerySlideshowContentMaxWidth: 60vw;
+@gallerySlideshowContentMobileMaxHeight: 13vw;
 @gallerySlideshowContentMarginBottom: 45px;
+@gallerySlideshowHeightBreakpoint: 750px;
 
 @gallerySlideshowIndexBottomOffset: -40px;
 
@@ -22,5 +30,9 @@
 @galleryThumbnailWrapperPadding: 5px @galleryThumbNailActiveBoxShadowOutlineWidth;
 @galleryThumbnailActiveTransition: transform 0.2s linear;
 @galleryThumbnailActiveTranslationY: translateY(-8px);
-@galleryThumbNailActiveBoxShadow: 0 0 0 1px rgba(255, 255, 255, 0.41);
+@galleryThumbNailActiveBoxShadow: 0 0 0 0.05em @white, 0 0 10px 1px rgba(0, 0, 0, 0.9);
 @galleryThumbNailActiveBoxShadowOutlineWidth: 1px;
+
+@galleryPlaceholderWidth: 55vw;
+@galleryPlaceholderBackgroundColor: #2d2d2d;
+@galleryPlaceholderBorderRadius: 4px;
