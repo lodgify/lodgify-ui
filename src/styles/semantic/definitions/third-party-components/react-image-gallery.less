@@ -136,6 +136,17 @@
           margin-left: 0;
           border-radius: @imageGalleryImagesBorderRadius;
           overflow: hidden;
+          cursor: pointer;
+
+          @media only screen and (max-width: @computerBreakpoint) {
+            height: @imageGalleryMobileThumbnailHeight;
+            width: @imageGalleryMobileThumbnailWidth;
+          }
+
+          @media only screen and (max-height: @imageGalleryMobileThumbnailBreakPoint) {
+            height: @imageGalleryMobileThumbnailHeight;
+            width: @imageGalleryMobileThumbnailWidth;
+          }
 
           .image-gallery-thumbnail-inner {
             display: flex;

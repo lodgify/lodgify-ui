@@ -66,10 +66,19 @@ export const Component = ({
             tablet={4}
           >
             <ShowOn computer parent="div" tablet widescreen>
-              <Thumbnail {...imageProps} size="huge" />
+              <Thumbnail
+                className="gallery-thumbnail"
+                {...imageProps}
+                size="huge"
+              />
             </ShowOn>
             <ShowOn mobile parent="div">
-              <Thumbnail {...imageProps} hasRoundedCorners size="huge" />
+              <Thumbnail
+                className="gallery-thumbnail"
+                {...imageProps}
+                hasRoundedCorners
+                size="small"
+              />
             </ShowOn>
             <Divider />
           </GridColumn>
@@ -78,10 +87,10 @@ export const Component = ({
       <GridColumn width={12}>
         <Gallery
           data-testid={testid('gallery')}
+          images={galleryImages}
           isOpen={isOpen}
           onClick={triggerIsOpen}
           onClose={close}
-          images={galleryImages}
           startIndex={currentIndex}
           trigger={
             <Link
