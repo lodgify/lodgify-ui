@@ -1,3 +1,10 @@
+## [1.270.1](https://github.com/lodgify/lodgify-ui/compare/v1.270.0...v1.270.1) (2019-11-29)
+
+
+### Bug Fixes
+
+* **Slideshow:** fix height responsiveness ([f4e8f79](https://github.com/lodgify/lodgify-ui/commit/f4e8f79))
+
 # [1.270.0](https://github.com/lodgify/lodgify-ui/compare/v1.269.0...v1.270.0) (2019-11-28)
 
 
