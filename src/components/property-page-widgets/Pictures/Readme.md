@@ -1,5 +1,5 @@
 ```jsx
-const { images, thumbnailImages } = require("./mock-data/images");
+const { images } = require("./mock-data/images");
 
 <Pictures galleryImages={images} />;
 ```
@@ -9,7 +9,7 @@ const { images, thumbnailImages } = require("./mock-data/images");
 #### Number of thumbnails
 
 ```jsx
-const { images, thumbnailImages } = require("./mock-data/images");
+const { images } = require("./mock-data/images");
 
 <Pictures galleryImages={images} numberOfThumbnails={3} />;
 ```
@@ -17,7 +17,7 @@ const { images, thumbnailImages } = require("./mock-data/images");
 #### Heading in gallery modal
 
 ```jsx
-const { images, thumbnailImages } = require("./mock-data/images");
+const { images } = require("./mock-data/images");
 
 <Pictures
   galleryImages={images}
@@ -29,7 +29,7 @@ const { images, thumbnailImages } = require("./mock-data/images");
 #### Strings
 
 ```jsx
-const { images, thumbnailImages } = require("./mock-data/images");
+const { images } = require("./mock-data/images");
 
 <Pictures
   galleryImages={images}
