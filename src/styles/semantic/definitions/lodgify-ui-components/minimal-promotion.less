@@ -13,12 +13,17 @@
 --------------------------*/
 .ui.segment.is-minimal-promotion {
   padding: 0;
+  border-radius: @minimalPromotionBorderRadius;
+  background-image: @minimalPromotionGradient;
+  background-color: @themeActionDarkerColorDefault;
+  background-color: var(@themeActionDarkerColorIdentifier, @themeActionDarkerColorDefault);
 
   &,
   > figure.responsive-image {
     height: @minimalPromotionHeight;
   }
 
+  &,
   > figure.responsive-image,
   .content-section {
     border-radius: @minimalPromotionBorderRadius;

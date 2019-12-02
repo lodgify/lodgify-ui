@@ -31,7 +31,7 @@ export const Component = ({
   onClick,
   placeholderBackgroundImage,
 }) => (
-  <Segment basic className="is-minimal-promotion" onClick={onClick}>
+  <Segment basic className="is-minimal-promotion">
     {!!backgroundImageUrl && (
       <ResponsiveImage
         data-testid={testid('image')}

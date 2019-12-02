@@ -223,6 +223,19 @@ Component.propTypes = {
       labelText: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** The images to display in the slideshow. */
+  images: PropTypes.arrayOf(
+    PropTypes.shape({
+      /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      sizes: PropTypes.string,
+      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      srcSet: PropTypes.string,
+      /** Title of the image to show when hovering over it on desktop browsers. */
+      title: PropTypes.string,
+      /** URL pointing to the image to display. */
+      url: PropTypes.string.isRequired,
+    })
+  ).isRequired,
   /** Is the component showing placeholders to reserve space for content which will appear. */
   isShowingPlaceholder: PropTypes.bool,
   /**
@@ -243,19 +256,6 @@ Component.propTypes = {
   pricePerPeriodPrefix: PropTypes.string,
   /** The numeral rating for the property room given in the review, out of 5. */
   ratingNumber: PropTypes.number,
-  /** The images to display for the slideshow */
-  images: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-      sizes: PropTypes.string,
-      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-      srcSet: PropTypes.string,
-      /** Title of the image to show when hovering over it on desktop browsers. */
-      title: PropTypes.string,
-      /** URL pointing to the image to display. */
-      url: PropTypes.string.isRequired,
-    })
-  ).isRequired,
 };
 
 export const ComponentWithResponsive = withResponsive(Component);
