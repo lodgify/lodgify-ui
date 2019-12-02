@@ -67,10 +67,8 @@
           width: 100%;
 
           .image-gallery-content {
-            height: @gallerySlideshowContentHeight;
 
             .image-gallery-slide-wrapper {
-              max-height: @gallerySlideshowContentFixedMaxHeight;
               display: flex;
               flex-direction: column;
               justify-content: center;
@@ -91,10 +89,6 @@
                   width: @galleryPlaceholderWidth;
                   background: @galleryPlaceholderBackgroundColor;
                   border-radius: @galleryPlaceholderBorderRadius;
-
-                  @media only screen and (max-height: @gallerySlideshowHeightBreakpoint) {
-                    max-height: @gallerySlideshowContentMobileMaxHeight;
-                  }
                 }
 
                 .image-gallery-image {
@@ -104,8 +98,8 @@
                   > img {
                     max-height: @gallerySlideshowContentMaxHeight;
 
-                    @media only screen and (max-height: @gallerySlideshowHeightBreakpoint) {
-                      max-height: @gallerySlideshowContentMobileMaxHeight;
+                    @media only screen and (min-width: @gallerySlideshowWidescreenBreakpoint) {
+                      max-height: @gallerySlideshowWidescreenMaxHeight;
                     }
                   }
                 }

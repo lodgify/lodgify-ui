@@ -9,14 +9,11 @@
 @galleryPicturesHoverBoxShadow: 2px 5px 7px rgba(167, 167, 167, 0.61);
 @galleryPicturesTansition: all 0.2s ease-in-out;
 
-@gallerySlideshowContentHeight: ~"calc(100% - 14vh)";
-@gallerySlideshowContentMinHeight: 35vw;
-@gallerySlideshowContentFixedMaxHeight: 600px;
-@gallerySlideshowContentMaxHeight: 35vw;
+@gallerySlideshowContentMaxHeight: 60vmin;
 @gallerySlideshowContentMaxWidth: 60vw;
-@gallerySlideshowContentMobileMaxHeight: 13vw;
 @gallerySlideshowContentMarginBottom: 45px;
-@gallerySlideshowHeightBreakpoint: 750px;
+@gallerySlideshowWidescreenBreakpoint: 1800px;
+@gallerySlideshowWidescreenMaxHeight: 600px;
 
 @gallerySlideshowIndexBottomOffset: -40px;
 
