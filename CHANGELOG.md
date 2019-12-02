@@ -1,3 +1,11 @@
+## [1.270.2](https://github.com/lodgify/lodgify-ui/compare/v1.270.1...v1.270.2) (2019-12-02)
+
+
+### Bug Fixes
+
+* **components:** update linting ([813d664](https://github.com/lodgify/lodgify-ui/commit/813d664))
+* **MinimalPromotion:** add default background ([4e4a964](https://github.com/lodgify/lodgify-ui/commit/4e4a964))
+
 ## [1.270.1](https://github.com/lodgify/lodgify-ui/compare/v1.270.0...v1.270.1) (2019-11-29)
 
 
