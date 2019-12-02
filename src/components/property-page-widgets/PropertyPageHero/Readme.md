@@ -26,8 +26,6 @@ const galleryImages = [
   headerNavigationItems={navigationItems}
   headerPrimaryCTA={{ onClick: console.log, text: "Book now" }}
   galleryImages={galleryImages}
-  propertyName="Livingstone Cottage"
-  ratingNumber={4.2}
 />;
 ```
 

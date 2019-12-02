@@ -1,12 +1,19 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 
+import { toUpper } from 'utils/to-upper';
+import { size } from 'utils/size';
+import { Button } from 'elements/Button';
+import { ICON_NAMES } from 'elements/Icon';
+import { HorizontalGutters } from 'layout/HorizontalGutters';
+import { FlexContainer } from 'layout/FlexContainer';
+import { Gallery } from 'media/Gallery';
+import { Divider } from 'elements/Divider';
 import { withResponsive } from 'utils/with-responsive';
 import { Hero } from 'collections/Hero';
 import { VIEW_MORE_PICTURES } from 'utils/default-strings';
 
 import { BOTTOM_OFFSET } from './constants';
-import { getGalleryMarkup } from './utils/getGalleryMarkup';
 
 /**
  * A homepage hero displays a hero with heading and a search bar on desktop screens.
@@ -32,8 +39,6 @@ const Component = ({
   headerLogoSubText,
   isHeaderBackgroundFilled,
   placeholderBackgroundImageUrl,
-  propertyName,
-  ratingNumber,
   secondaryButtonText,
 }) => (
   <Hero
@@ -58,12 +63,28 @@ const Component = ({
     isHeaderBackgroundFilled={isHeaderBackgroundFilled}
     placeholderBackgroundImageUrl={placeholderBackgroundImageUrl}
   >
-    {getGalleryMarkup(
-      galleryImages,
-      propertyName,
-      ratingNumber,
-      secondaryButtonText
-    )}
+    {size(galleryImages) > 1 ? (
+      <Fragment>
+        <FlexContainer alignItems="flex-end">
+          <HorizontalGutters>
+            <Gallery
+              images={galleryImages}
+              trigger={
+                <Button
+                  icon={ICON_NAMES.PLACEHOLDER}
+                  isCompact
+                  isPositionedRight
+                  isSecondary
+                >
+                  {toUpper(secondaryButtonText)}
+                </Button>
+              }
+            />
+          </HorizontalGutters>
+        </FlexContainer>
+        <Divider />
+      </Fragment>
+    ) : null}
   </Hero>
 );
 
@@ -86,8 +107,6 @@ Component.defaultProps = {
   headerPrimaryCTA: null,
   isHeaderBackgroundFilled: false,
   placeholderBackgroundImageUrl: null,
-  propertyName: null,
-  ratingNumber: null,
   secondaryButtonText: VIEW_MORE_PICTURES,
 };
 
@@ -171,10 +190,6 @@ Component.propTypes = {
   isHeaderBackgroundFilled: PropTypes.bool,
   /** The background placeholder image url of the hero. */
   placeholderBackgroundImageUrl: PropTypes.string,
-  /** The name of the property to display in the gallery modal. */
-  propertyName: PropTypes.string,
-  /** The numeral rating for the property, out of 5 */
-  ratingNumber: PropTypes.number,
   /** The text to display on the secondary button at the bottom of the hero. */
   secondaryButtonText: PropTypes.string,
 };
