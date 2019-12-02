@@ -223,7 +223,7 @@ Component.propTypes = {
       labelText: PropTypes.string.isRequired,
     })
   ).isRequired,
-  /** Is the component showing placeholders to reserve space for content which will appear. */
+  /** The images to display in the slideshow. */
   images: PropTypes.arrayOf(
     PropTypes.shape({
       /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
@@ -236,25 +236,25 @@ Component.propTypes = {
       url: PropTypes.string.isRequired,
     })
   ).isRequired,
+  /** Is the component showing placeholders to reserve space for content which will appear. */
+  isShowingPlaceholder: PropTypes.bool,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.
    * @ignore
    */
-  isShowingPlaceholder: PropTypes.bool,
-  /** The text to display for the more info button. */
   isUserOnMobile: PropTypes.bool.isRequired,
-  /** The name of the room. */
+  /** The text to display for the more info button. */
   moreInfoText: PropTypes.string,
-  /** The text describing the pricing period. */
+  /** The name of the room. */
   name: PropTypes.string.isRequired,
-  /** The price per period of the room, with currency symbol. */
+  /** The text describing the pricing period. */
   periodText: PropTypes.string,
-  /** The text prefix to display along with the price per period. */
+  /** The price per period of the room, with currency symbol. */
   pricePerPeriod: PropTypes.string.isRequired,
-  /** The numeral rating for the property room given in the review, out of 5. */
+  /** The text prefix to display along with the price per period. */
   pricePerPeriodPrefix: PropTypes.string,
-  /** The images to display for the slideshow */
+  /** The numeral rating for the property room given in the review, out of 5. */
   ratingNumber: PropTypes.number,
 };
 
