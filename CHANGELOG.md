@@ -1,3 +1,10 @@
+## [1.270.4](https://github.com/lodgify/lodgify-ui/compare/v1.270.3...v1.270.4) (2019-12-02)
+
+
+### Bug Fixes
+
+* **Slideshow:** enlarge height on firefox ([d1b4e59](https://github.com/lodgify/lodgify-ui/commit/d1b4e59))
+
 ## [1.270.3](https://github.com/lodgify/lodgify-ui/compare/v1.270.2...v1.270.3) (2019-12-02)
 
 
