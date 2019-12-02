@@ -1,3 +1,11 @@
+## [1.270.3](https://github.com/lodgify/lodgify-ui/compare/v1.270.2...v1.270.3) (2019-12-02)
+
+
+### Bug Fixes
+
+* **PropertyPageHero:** fix gallery trigger button text ([83a50fc](https://github.com/lodgify/lodgify-ui/commit/83a50fc))
+* **SlideshowHero:** is full width ([ba62fb1](https://github.com/lodgify/lodgify-ui/commit/ba62fb1))
+
 ## [1.270.2](https://github.com/lodgify/lodgify-ui/compare/v1.270.1...v1.270.2) (2019-12-02)
 
 
