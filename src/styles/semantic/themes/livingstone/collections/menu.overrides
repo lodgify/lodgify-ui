@@ -66,9 +66,17 @@
       & > .active.item:hover,
       & > .item:hover {
         background: @themeActionColorDefault !important;
-        background: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+        background:
+          var(
+            @themeActionColorIdentifier,
+            @themeActionColorDefault
+          ) !important;
         color: @themeActionContrastColorDefault !important;
-        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault) !important;
+        color:
+          var(
+            @themeActionContrastColorIdentifier,
+            @themeActionContrastColorDefault
+          ) !important;
       }
     }
   }
@@ -158,7 +166,11 @@
 
       &.active {
         border-bottom: @activeItemUnderlineBorder;
-        border-bottom-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+        border-bottom-color:
+          var(
+            @themeActionColorIdentifier,
+            @themeActionColorDefault
+          );
       }
     }
   }
@@ -265,14 +277,26 @@
         padding-top: 0;
         border-radius: @hasPageNumbersActiveItemBorderRadius;
         background: @themeActionColorDefault !important;
-        background: var(@themeActionColorIdentifier, @themeActionColorDefault) !important;
+        background:
+          var(
+            @themeActionColorIdentifier,
+            @themeActionColorDefault
+          ) !important;
         color: @themeActionContrastColorDefault;
-        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+        color:
+          var(
+            @themeActionContrastColorIdentifier,
+            @themeActionContrastColorDefault
+          );
       }
 
       &.active.item:hover {
         color: @themeActionContrastColorDefault;
-        color: var(@themeActionContrastColorIdentifier, @themeActionContrastColorDefault);
+        color:
+          var(
+            @themeActionContrastColorIdentifier,
+            @themeActionContrastColorDefault
+          );
       }
     }
 
@@ -350,7 +374,11 @@ header {
 
   &.is-background-filled {
     background-color: @themeHeaderColorDefault;
-    background-color: var(@themeHeaderColorIdentifier, @themeHeaderColorDefault);
+    background-color:
+      var(
+        @themeHeaderColorIdentifier,
+        @themeHeaderColorDefault
+      );
 
     .right.menu .link.item,
     > .ui.menu.text {
@@ -361,7 +389,11 @@ header {
         &:hover,
         &.active {
           color: @themeHeaderLinkColorDefault;
-          color: var(@themeHeaderLinkColorIdentifier, @themeHeaderLinkColorDefault);
+          color:
+            var(
+              @themeHeaderLinkColorIdentifier,
+              @themeHeaderLinkColorDefault
+            );
         }
       }
     }
@@ -385,13 +417,22 @@ header {
 
       &.has-sub-text {
         padding: @headerMenuItemVerticalPaddingWithSubText 0;
+        max-width: calc(100% - 5 * @siteIconSize);
 
         .header {
           font-family: var(@titleFontIdentifier, @titleFontDefault) !important;
           margin-bottom: 0;
         }
 
+        div {
+          width: 100%;
+        }
+
         p {
+          max-width: 100%;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
           margin: @headerLogoSubTextMargin;
           color: @themeLogoColorDefault;
           color: var(@themeLogoColorIdentifier, @themeLogoColorDefault);
@@ -463,9 +504,13 @@ header {
 
       > .item:not(.no-underline):after {
         border-bottom: @activeItemUnderlineBorder;
-        border-bottom-color: var(@themeActionColorIdentifier, @themeActionColorDefault);
+        border-bottom-color:
+          var(
+            @themeActionColorIdentifier,
+            @themeActionColorDefault
+          );
         bottom: @activeItemUnderlineBottomPosition;
-        content: '';
+        content: "";
         left: 0;
         opacity: 0.2;
         position: absolute;
@@ -545,9 +590,7 @@ footer {
         width: auto !important;
         max-width: 100%;
         padding:
-          @footerMenuItemVerticalPadding
-          0
-          @footerMenuItemVerticalPadding
+          @footerMenuItemVerticalPadding 0 @footerMenuItemVerticalPadding
           @mobileFooterMenuItemHorizontalPadding;
       }
     }
@@ -618,10 +661,8 @@ footer {
     /* Menu Item */
     .menu .item {
       padding:
-        @footerMenuItemVerticalPadding
-        @footerMenuItemHorizontalPadding
-        @footerMenuItemVerticalPadding
-        0;
+        @footerMenuItemVerticalPadding @footerMenuItemHorizontalPadding
+        @footerMenuItemVerticalPadding 0;
     }
 
     &:first-child {
