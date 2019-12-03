@@ -3,6 +3,7 @@
 exports[`<Location /> the \`Child\` of the \`Location\` component should have the correct structure 1`] = `
 <Location
   headingText="Location"
+  id={null}
   isShowingApproximateLocation={false}
   isShowingExactLocation={false}
   isUserOnMobile={false}
@@ -39,14 +40,17 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
 >
   <Grid
     areColumnsCentered={false}
+    id={null}
     isStackable={true}
   >
     <Grid
       centered={false}
+      id={null}
       stackable={true}
     >
       <div
         className="ui stackable grid"
+        id={null}
       >
         <GridColumn
           verticalAlignContent="top"

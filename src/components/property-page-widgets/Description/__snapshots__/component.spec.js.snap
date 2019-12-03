@@ -4,6 +4,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
 <Grid
   areColumnsCentered={false}
   columns={1}
+  id={null}
   isStackable={false}
 >
   <GridColumn
@@ -118,6 +119,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
 <Grid
   areColumnsCentered={false}
   columns={1}
+  id={null}
   isStackable={false}
 >
   <GridColumn
@@ -226,6 +228,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
 <Grid
   areColumnsCentered={false}
   columns={1}
+  id={null}
   isStackable={false}
 >
   <GridColumn
@@ -338,6 +341,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
 <Grid
   areColumnsCentered={false}
   columns={1}
+  id={null}
   isStackable={false}
 >
   <GridColumn
@@ -386,6 +390,7 @@ exports[`<Description /> if \`props.mainCharacteristics\` is empty should not re
 <Grid
   areColumnsCentered={false}
   columns={1}
+  id={null}
   isStackable={false}
 >
   <GridColumn
@@ -457,6 +462,7 @@ exports[`<Description /> should have the correct structure 1`] = `
 <Grid
   areColumnsCentered={false}
   columns={1}
+  id={null}
   isStackable={false}
 >
   <GridColumn
