@@ -21,6 +21,7 @@ import { getLocationDescription } from './utils/getLocationDescription';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 const Component = ({
+  id,
   apiKey,
   headingText,
   isShowingApproximateLocation,
@@ -32,7 +33,7 @@ const Component = ({
   longitude,
   transportOptions,
 }) => (
-  <Grid isStackable>
+  <Grid id={id} isStackable>
     <GridColumn width={12}>
       <Heading>{headingText}</Heading>
       <Subheading>{locationSummary}</Subheading>
@@ -71,6 +72,7 @@ const Component = ({
 Component.displayName = 'Location';
 
 Component.defaultProps = {
+  id: null,
   apiKey: undefined,
   headingText: LOCATION,
   isShowingApproximateLocation: false,
@@ -84,6 +86,8 @@ Component.propTypes = {
   apiKey: PropTypes.string,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** The html id of the container dom element. */
+  id: PropTypes.string,
   /** Is the map showing a marker for the approximate location. */
   isShowingApproximateLocation: PropTypes.bool,
   /** Is the map showing a marker for the exact location. */

@@ -77,6 +77,7 @@ class Component extends PureComponent {
   render() {
     const { startDate } = this.state;
     const {
+      id,
       headingText,
       isUserOnMobile,
       legendLabel,
@@ -91,7 +92,7 @@ class Component extends PureComponent {
     moment.locale(this.props.localeCode);
 
     return (
-      <div>
+      <div id={id}>
         <Heading size="small">{headingText}</Heading>
         <Grid>
           <GridRow>
@@ -209,6 +210,7 @@ export const ComponentWithResponsive = withResponsive(Component);
 Component.displayName = 'Availability';
 
 Component.defaultProps = {
+  id: null,
   getIsDayBlocked: () => false,
   headingText: AVAILABILITY,
   legendLabel: UNAVAILABLE,
@@ -231,6 +233,8 @@ Component.propTypes = {
   getIsDayBlocked: PropTypes.func,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** The html id of the container dom element. */
+  id: PropTypes.string,
   /**
    * Is the user on a mobile device.
    * Provided by `withResponsive` so ignored in the styleguide.

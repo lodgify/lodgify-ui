@@ -9,6 +9,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
   guestTypeInputLabel="Guest Type"
   guestTypeOptions={Array []}
   headingText="Reviews"
+  id={null}
   isBotProtected={false}
   isPrivacyConsentRequired={false}
   isShowingPlaceholder={true}
@@ -34,14 +35,17 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
 >
   <Grid
     areColumnsCentered={false}
+    id={null}
     isStackable={false}
   >
     <Grid
       centered={false}
+      id={null}
       stackable={false}
     >
       <div
         className="ui grid"
+        id={null}
       >
         <GridRow
           horizontalAlignContent="left"
@@ -1076,6 +1080,7 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
   guestTypeInputLabel="Guest Type"
   guestTypeOptions={Array []}
   headingText="Reviews"
+  id={null}
   isBotProtected={false}
   isPrivacyConsentRequired={false}
   isShowingPlaceholder={true}
@@ -1128,14 +1133,17 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
 >
   <Grid
     areColumnsCentered={false}
+    id={null}
     isStackable={false}
   >
     <Grid
       centered={false}
+      id={null}
       stackable={false}
     >
       <div
         className="ui grid"
+        id={null}
       >
         <GridRow
           horizontalAlignContent="left"
@@ -2054,6 +2062,7 @@ exports[`<Reviews /> should render the right structure 1`] = `
   guestTypeInputLabel="Guest Type"
   guestTypeOptions={Array []}
   headingText="Reviews"
+  id={null}
   isBotProtected={false}
   isPrivacyConsentRequired={false}
   isShowingPlaceholder={false}
@@ -2106,14 +2115,17 @@ exports[`<Reviews /> should render the right structure 1`] = `
 >
   <Grid
     areColumnsCentered={false}
+    id={null}
     isStackable={false}
   >
     <Grid
       centered={false}
+      id={null}
       stackable={false}
     >
       <div
         className="ui grid"
+        id={null}
       >
         <GridRow
           horizontalAlignContent="left"

@@ -3,6 +3,7 @@
 exports[`<Pictures /> should render the correct structure 1`] = `
 <Grid
   areColumnsCentered={false}
+  id={null}
   isStackable={false}
 >
   <GridColumn

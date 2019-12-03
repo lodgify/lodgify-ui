@@ -23,7 +23,9 @@ exports[`<Availability /> if \`props.roomOptionsWithImages\` is passed should re
 `;
 
 exports[`<Availability /> the wrapped component by default should render the right structure 1`] = `
-<div>
+<div
+  id={null}
+>
   <Heading
     className={null}
     hasMargin={true}
@@ -322,7 +324,9 @@ exports[`<Availability /> the wrapped component by default should render the rig
 `;
 
 exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithImages) > 0\` should render the right structure 1`] = `
-<div>
+<div
+  id={null}
+>
   <Heading
     className={null}
     hasMargin={true}

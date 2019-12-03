@@ -24,6 +24,7 @@ const testid = testidFactory(TEST_ID_PREFIX);
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  id,
   galleryImages,
   headingText,
   linkText,
@@ -46,7 +47,7 @@ export const Component = ({
     }));
 
   return (
-    <Grid>
+    <Grid id={id}>
       <GridColumn width={12}>
         <Heading>{headingText}</Heading>
       </GridColumn>
@@ -111,6 +112,7 @@ export const Component = ({
 Component.displayName = 'Pictures';
 
 Component.defaultProps = {
+  id: null,
   headingText: PROPERTY_PICTURES,
   linkText: EXPLORE_ALL_PICTURES,
   numberOfThumbnails: 6,
@@ -134,6 +136,8 @@ Component.propTypes = {
   ).isRequired,
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** The html id of the container dom element. */
+  id: PropTypes.string,
   /** The text to display on the link at the bottom of the widget. */
   linkText: PropTypes.string,
   /** The number of images to display as thumbnails. */

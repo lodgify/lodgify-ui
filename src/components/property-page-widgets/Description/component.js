@@ -18,6 +18,7 @@ import { Characteristics } from 'collections/Characteristics';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  id,
   descriptionText,
   extraDescriptionButtonText,
   homeHighlights,
@@ -26,7 +27,7 @@ export const Component = ({
   propertyName,
   propertyType,
 }) => (
-  <Grid columns={1}>
+  <Grid columns={1} id={id}>
     <GridColumn width={12}>
       <Subheading>{propertyType}</Subheading>
       <Heading size="large">{propertyName}</Heading>
@@ -66,6 +67,7 @@ export const Component = ({
 Component.displayName = 'Description';
 
 Component.defaultProps = {
+  id: null,
   descriptionText: null,
   homeHighlightsHeadingText: HOME_HIGHLIGHTS,
   mainCharacteristics: [],
@@ -91,6 +93,8 @@ Component.propTypes = {
   ).isRequired,
   /** The heading displayed above the home highlights. */
   homeHighlightsHeadingText: PropTypes.string,
+  /** The html id of the container dom element. */
+  id: PropTypes.string,
   /** The main characteristics to display. Maximum four. */
   mainCharacteristics: PropTypes.arrayOf(
     PropTypes.shape({
