@@ -1,3 +1,10 @@
+# [1.271.0](https://github.com/lodgify/lodgify-ui/compare/v1.270.4...v1.271.0) (2019-12-03)
+
+
+### Features
+
+* **property page components:** expose id prop ([2fc85c0](https://github.com/lodgify/lodgify-ui/commit/2fc85c0))
+
 ## [1.270.4](https://github.com/lodgify/lodgify-ui/compare/v1.270.3...v1.270.4) (2019-12-02)
 
 
