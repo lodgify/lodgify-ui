@@ -38,6 +38,7 @@ import { transformReviewFactory } from './utils/transformReviewFactory';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  id,
   headingText,
   isShowingPlaceholder,
   ratingAverage,
@@ -49,7 +50,7 @@ export const Component = ({
     isShowingPlaceholder && reviews.length === 0 ? PLACEHOLDERS : reviews;
 
   return (
-    <Grid>
+    <Grid id={id}>
       <GridRow>
         <GridColumn width={12}>
           <Heading>{headingText}</Heading>
@@ -101,6 +102,7 @@ export const Component = ({
 Component.displayName = 'Reviews';
 
 Component.defaultProps = {
+  id: null,
   botProtectionMessage: FORM_PROTECTION,
   roomTypeInputLabel: ROOM,
   commentInputLabel: COMMENTS,
@@ -164,6 +166,8 @@ Component.propTypes = {
   ),
   /** The text to display as a heading at the top of the widget. */
   headingText: PropTypes.string,
+  /** The html id of the container dom element. */
+  id: PropTypes.string,
   /** Displays a bot protection message in the review form. */
   isBotProtected: PropTypes.bool,
   /** Displays a privacy consent checkbox to the review form. */

@@ -18,6 +18,7 @@ import { getExtraItems } from './utils/getExtraItems';
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
+  id,
   amenities,
   hasExtraItemsInModal,
   headingText,
@@ -25,7 +26,12 @@ export const Component = ({
   modalTriggerText,
   amenitiesConjunctionText,
 }) => (
-  <Grid className="is-amenities" columns={isStacked ? 1 : 3} isStackable>
+  <Grid
+    className="is-amenities"
+    columns={isStacked ? 1 : 3}
+    id={id}
+    isStackable
+  >
     <GridRow>
       {headingText && (
         <GridColumn width={12}>
@@ -49,6 +55,7 @@ export const Component = ({
 Component.displayName = 'Amenities';
 
 Component.defaultProps = {
+  id: null,
   hasExtraItemsInModal: false,
   headingText: null,
   isStacked: false,
@@ -76,6 +83,8 @@ Component.propTypes = {
   hasExtraItemsInModal: PropTypes.bool,
   /** The text to display as a heading at the top of the amenities. */
   headingText: PropTypes.string,
+  /** The html id of the container dom element. */
+  id: PropTypes.string,
   /** Are the amenities displayed stacked on top of one another. */
   isStacked: PropTypes.bool,
   /** The text for the modal trigger. */
