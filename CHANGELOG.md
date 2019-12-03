@@ -1,3 +1,10 @@
+## [1.271.1](https://github.com/lodgify/lodgify-ui/compare/v1.271.0...v1.271.1) (2019-12-03)
+
+
+### Bug Fixes
+
+* **Header:** subText doesn't push the menu button anymore ([55c3bb0](https://github.com/lodgify/lodgify-ui/commit/55c3bb0048176311f28de26e4db674dfdae97bd4))
+
 # [1.271.0](https://github.com/lodgify/lodgify-ui/compare/v1.270.4...v1.271.0) (2019-12-03)
 
 
