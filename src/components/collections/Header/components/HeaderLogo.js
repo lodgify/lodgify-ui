@@ -37,7 +37,11 @@ export const HeaderLogo = ({
           {logoText}
         </Heading>
       )}
-      {logoSubText && <Paragraph size="tiny">{logoSubText}</Paragraph>}
+      {logoSubText && (
+        <Paragraph size="tiny" title={logoSubText}>
+          {logoSubText}
+        </Paragraph>
+      )}
     </FlexContainer>
   </Menu.Item>
 );

@@ -122,6 +122,7 @@ exports[`HeaderLogo passing \`logoSubText\` should return a paragraph with the s
           <Paragraph
             isCompact={false}
             size="tiny"
+            title="foo"
             weight={null}
           >
             <p

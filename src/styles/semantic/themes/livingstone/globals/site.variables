@@ -8,7 +8,7 @@
        Fonts
 --------------------*/
 
-@fontName: 'Arial';
+@fontName: "Arial";
 
 @importGoogleFonts: false;
 
@@ -62,7 +62,7 @@
 @themeLinkDarkerColorIdentifier: ~"@{themeCustomPropertyPrefix}-link-darker-color";
 @themeLinkDarkerColorDefault: @darkPrimaryColor;
 
-@themeHeaderColorIdentifier:  ~"@{themeCustomPropertyPrefix}-header-color";
+@themeHeaderColorIdentifier: ~"@{themeCustomPropertyPrefix}-header-color";
 @themeHeaderColorDefault: @black;
 
 @themeHeaderLinkColorIdentifier: ~"@{themeCustomPropertyPrefix}-header-link-color";
@@ -207,7 +207,9 @@
 
 @smallestComputerBreakpoint: (@tabletBreakpoint + 1px);
 @smallestWidescreenBreakpoint: (@computerBreakpoint + 1px);
-@smallestWidescreen100pxOffsetBreakpoint: (@smallestWidescreenBreakpoint + 100px);
+@smallestWidescreen100pxOffsetBreakpoint: (
+  @smallestWidescreenBreakpoint + 100px
+);
 
 @tinyScreen: ~"only screen and (max-width: @{largestTinyScreen})";
 @mobileScreen: ~"only screen and (max-width: @{largestMobileScreen})";
@@ -320,6 +322,7 @@
 --------------------*/
 
 /* Maximum Glyph Width of Icon */
+@siteIconSize: 1.71428571em;
 
 /*-------------------
      Neutral Text
@@ -479,7 +482,12 @@
 @placeholderBackgroundColor: @white;
 @placeholderMaxWidth: 30rem;
 @placeholderBorderRadius: 2px;
-@placeholderBackgroundImageGradient: linear-gradient(to right, rgba(0, 0, 0, 0.08) 0, rgba(0, 0, 0, 0.15) 15%, rgba(0, 0, 0, 0.08) 30%);
+@placeholderBackgroundImageGradient: linear-gradient(
+  to right,
+  rgba(0, 0, 0, 0.08) 0,
+  rgba(0, 0, 0, 0.15) 15%,
+  rgba(0, 0, 0, 0.08) 30%
+);
 @placeholderBackgroundStartPosition: -1200px;
 @placeholderBackgroundEndPosition: 1200px;
 @placeholderBackgroundSize: @placeholderBackgroundEndPosition 100%;
