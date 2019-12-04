@@ -21,27 +21,33 @@
 
   iframe {
     max-width: @htmlContainerChildWidth;
+
     @media @tabletScreen {
       width: @htmlContainerChildWidth;
     }
   }
 
   & * {
+
     img,
     figure,
     object,
     iframe {
-      width: @htmlContainerChildWidth;
       max-width: @htmlContainerChildWidth;
     }
+
+    iframe {
+      width: @htmlContainerChildWidth;
+    }
   }
+
   table,
   th,
   td {
-    border: @htmlContainerTableBorderThickness solid
-      @htmlContainerTableBorderColor;
+    border: @htmlContainerTableBorderThickness solid @htmlContainerTableBorderColor;
     border-collapse: collapse;
   }
+
   td {
     padding: @htmlContainerTableCellPadding;
   }
