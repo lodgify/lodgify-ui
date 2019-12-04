@@ -14,6 +14,6 @@ export const useScroll = (callback, initialValue) => {
     return () => {
       global.document.removeEventListener('scroll', handleScroll);
     };
-  });
+  },[]);
   return result;
 };
