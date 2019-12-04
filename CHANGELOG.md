@@ -1,3 +1,10 @@
+## [1.271.2](https://github.com/lodgify/lodgify-ui/compare/v1.271.1...v1.271.2) (2019-12-04)
+
+
+### Bug Fixes
+
+* **Images:** html nested images no longer fit parent ([2eda9ec](https://github.com/lodgify/lodgify-ui/commit/2eda9ec1bc2192a09d96e502cb460da8e3ce642a))
+
 ## [1.271.1](https://github.com/lodgify/lodgify-ui/compare/v1.271.0...v1.271.1) (2019-12-03)
 
 
