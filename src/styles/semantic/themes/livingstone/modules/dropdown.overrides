@@ -171,8 +171,6 @@
 
       > i.icon {
         padding: 0;
-        right: @compactRight;
-        top: @compactTop;
       }
 
       > .menu {
@@ -182,6 +180,13 @@
 
     &.counter-dropdown-trigger {
       height: @inputHeight;
+      display: flex;
+      align-items: center;
+
+      .icon {
+        margin: 0;
+        padding: 0;
+      }
     }
 
     /*  Selection Menu */
@@ -199,10 +204,13 @@
     // in `node_modules/semantic-ui-less/definitions/modules/dropdown.less`
     > i.icon {
       position: absolute;
+      display: flex;
+      height: 100%;
+      align-items: center;
+      top: 0;
+      margin: 0;
       right: @selectionHorizontalPadding;
       z-index: @selectionIconZIndex;
-      margin: @selectionIconMargin;
-      padding: @selectionIconPadding;
       opacity: @selectionIconOpacity;
       transition: @selectionIconTransition;
     }
@@ -287,18 +295,6 @@
   /*  With Image */
   &.has-images {
     min-width: @dropdownMinWidthWithImage;
-
-    & > i.icon {
-      top: @dropdownWithImagesCaretPaddingTop;
-    }
-
-    .ui.selection.dropdown {
-      display: flex;
-
-      > i.icon {
-        padding-top: @dropdownWithImagesCaretPaddingTop;
-      }
-    }
   }
 }
 
