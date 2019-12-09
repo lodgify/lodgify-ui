@@ -1,5 +1,4 @@
 import {
-  getMapOptions,
   MARKER_IMAGE_SRC,
   CIRCLE_IMAGE_SRC,
   DEFAULT_ZOOM,
@@ -8,7 +7,6 @@ import {
 /**
  * @param  {Object}  props
  * @param  {string}  props.apiKey
- * @param  {boolean} props.hasDefaultStyles
  * @param  {boolean} props.isShowingApproximateLocation
  * @param  {boolean} props.isShowingExactLocation
  * @param  {number}  props.latitude
@@ -20,7 +18,6 @@ import {
 export const getImgSrc = (
   {
     apiKey,
-    hasDefaultStyles,
     isShowingApproximateLocation,
     isShowingExactLocation,
     latitude,
@@ -31,22 +28,12 @@ export const getImgSrc = (
 ) => {
   if (!parentNodeWidth) return;
 
-  const mapOptions = getMapOptions(hasDefaultStyles);
-
   return global.encodeURI(
     [
       `https://maps.googleapis.com/maps/api/staticmap?`,
       `center=${latitude},${longitude}`,
       `&zoom=${DEFAULT_ZOOM}`,
       `&size=${parentNodeWidth}x${global.parseInt(height, 10)}`,
-      ...mapOptions.styles.map(
-        ({ elementType, featureType, stylers }) =>
-          `&style=${featureType ? `feature:${featureType}|` : ''}${
-            elementType ? `element:${elementType}|` : ''
-          }${Object.entries(stylers[0])
-            .map(([key, value]) => `${key}:${value.replace('#', '0x')}`)
-            .join('|')}`
-      ),
       isShowingExactLocation
         ? `&markers=icon:${MARKER_IMAGE_SRC}|${latitude},${longitude}`
         : '',

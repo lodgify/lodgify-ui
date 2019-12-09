@@ -29,16 +29,6 @@
 />
 ```
 
-#### Default styles
-
-```jsx
-<GoogleMap
-  hasDefaultStyles
-  latitude={41.387863}
-  longitude={2.158105}
-/>
-```
-
 #### Fluid
 
 A fluid map appears on a card filling the width and height of its container. It is always dynamic.

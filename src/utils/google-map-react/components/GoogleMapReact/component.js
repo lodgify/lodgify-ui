@@ -96,7 +96,6 @@ export class Component extends PureComponent {
   render = () => {
     const {
       apiKey,
-      hasDefaultStyles,
       isShowingExactLocation,
       isShowingApproximateLocation,
       latitude,
@@ -119,7 +118,7 @@ export class Component extends PureComponent {
         onDrag={this.handleDrag}
         onGoogleApiLoaded={this.handleApiLoaded}
         onZoomAnimationEnd={this.handleZoomAnimationEnd}
-        options={getMapOptions(hasDefaultStyles)}
+        options={getMapOptions()}
         ref={this.createRef}
         zoom={zoom}
       >
@@ -172,8 +171,6 @@ Component.propTypes = {
     south: PropTypes.number.isRequired,
     west: PropTypes.number.isRequired,
   }),
-  /** Does the map have the default Google Maps styles. */
-  hasDefaultStyles: PropTypes.bool.isRequired,
   /** Is the map showing a marker for the approximate location at the center of the map. */
   isShowingApproximateLocation: PropTypes.bool.isRequired,
   /** Is the map showing a marker for the exact location location at the center of the map. */

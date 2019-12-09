@@ -72,7 +72,6 @@ export class Component extends PureComponent {
     const {
       apiKey,
       bounds,
-      hasDefaultStyles,
       isFullBleed,
       isFluid,
       isShowingExactLocation,
@@ -90,7 +89,6 @@ export class Component extends PureComponent {
       <GoogleMapReact
         apiKey={apiKey}
         bounds={bounds}
-        hasDefaultStyles={hasDefaultStyles}
         isShowingApproximateLocation={isShowingApproximateLocation}
         isShowingExactLocation={isShowingExactLocation}
         latitude={latitude}
@@ -105,7 +103,6 @@ export class Component extends PureComponent {
           <GoogleMapReact
             apiKey={apiKey}
             bounds={bounds}
-            hasDefaultStyles={hasDefaultStyles}
             isShowingApproximateLocation={isShowingApproximateLocation}
             isShowingExactLocation={isShowingExactLocation}
             latitude={latitude}
@@ -130,7 +127,6 @@ Component.displayName = 'GoogleMap';
 Component.defaultProps = {
   apiKey: GOOGLE_MAPS_API_KEY,
   bounds: null,
-  hasDefaultStyles: false,
   height: '400px',
   isFluid: false,
   isFullBleed: false,
@@ -153,8 +149,6 @@ Component.propTypes = {
     south: PropTypes.number.isRequired,
     west: PropTypes.number.isRequired,
   }),
-  /** Does the map have the default Google Maps styles. */
-  hasDefaultStyles: PropTypes.bool,
   /** A valid CSS value to set the height of the map. */
   height: PropTypes.string,
   /** Does the map show on a card which fills the width and height of its container. */

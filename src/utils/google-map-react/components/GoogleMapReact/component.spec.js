@@ -24,7 +24,6 @@ import { Component as GoogleMapReact } from './component';
 
 const props = {
   apiKey: 'some key',
-  hasDefaultStyles: false,
   isShowingExactLocation: false,
   isShowingApproximateLocation: false,
   latitude: 1,
