@@ -1,3 +1,10 @@
+## [1.271.3](https://github.com/lodgify/lodgify-ui/compare/v1.271.2...v1.271.3) (2019-12-09)
+
+
+### Bug Fixes
+
+* **SearchBar:** height of inputs is consistent with font ([e0ad686](https://github.com/lodgify/lodgify-ui/commit/e0ad6863add7fdd1729fd9559eabce85be1bab39))
+
 ## [1.271.2](https://github.com/lodgify/lodgify-ui/compare/v1.271.1...v1.271.2) (2019-12-04)
 
 
