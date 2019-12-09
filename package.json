@@ -33,7 +33,7 @@
     "clean": "rm -rf lib",
     "commit": "git-cz",
     "dev": "npm run styleguide:dev-server",
-    "install:peers": "npm install react@^16.3.2 react-dom@^16.3.2 moment@^2.18.1 --no-save",
+    "install-peers": "npm install react@^16.3.2 react-dom@^16.3.2 moment@^2.18.1 --no-save",
     "lint": "run-p lint:js:fix lint:less",
     "lint:js": "eslint . --ext .js,.jsx",
     "lint:js:debug": "npm run lint:js -- --debug",

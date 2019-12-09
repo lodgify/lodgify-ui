@@ -23,6 +23,15 @@
       &.location-input-container {
         max-width: @searchBarLocationInputWidth;
         min-width: @searchBarLocationInputWidth;
+
+        .ui.selection.dropdown {
+          height: 100%;
+
+          .default.text {
+            display: flex;
+            align-items: center;
+          }
+        }
       }
 
       &.guests-input-container {
@@ -39,6 +48,10 @@
     }
 
     .button-container {
+
+      .ui.button {
+        height: 100%;
+      }
 
       > * {
         margin: 0;
