@@ -1,3 +1,10 @@
+# [1.272.0](https://github.com/lodgify/lodgify-ui/compare/v1.271.3...v1.272.0) (2019-12-10)
+
+
+### Features
+
+* **GoogleMaps:** remove custom styles ([57f6abc](https://github.com/lodgify/lodgify-ui/commit/57f6abcf76799a131d687f24fff50e4df106542c))
+
 ## [1.271.3](https://github.com/lodgify/lodgify-ui/compare/v1.271.2...v1.271.3) (2019-12-09)
 
 
