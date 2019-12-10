@@ -1,6 +1,4 @@
 export { circleOptions } from './circleOptions';
-export { customMapStyles } from './customMapStyles';
-export { defaultMapStyles } from './defaultMapStyles';
 export {
   DEFAULT_ZOOM,
   MARKER_IMAGE_SRC,

@@ -4,7 +4,6 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
   bounds={null}
-  hasDefaultStyles={false}
   height="400px"
   isFluid={true}
   isFullBleed={false}
@@ -38,7 +37,6 @@ exports[`<GoogleMap /> render if \`props.isFluid\` is \`true\` should return the
       <GoogleMapReact
         apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
         bounds={null}
-        hasDefaultStyles={false}
         isShowingApproximateLocation={false}
         isShowingExactLocation={false}
         latitude={0}
@@ -58,7 +56,6 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
   bounds={null}
-  hasDefaultStyles={false}
   height="400px"
   isFluid={false}
   isFullBleed={true}
@@ -73,7 +70,6 @@ exports[`<GoogleMap /> render if \`props.isFullBleed\` is \`true\` should return
   <GoogleMapReact
     apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
     bounds={null}
-    hasDefaultStyles={false}
     isShowingApproximateLocation={false}
     isShowingExactLocation={false}
     latitude={0}
@@ -91,7 +87,6 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`false\` shou
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
   bounds={null}
-  hasDefaultStyles={false}
   height="400px"
   isFluid={false}
   isFullBleed={false}
@@ -134,7 +129,6 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
 <GoogleMap
   apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
   bounds={null}
-  hasDefaultStyles={false}
   height="400px"
   isFluid={false}
   isFullBleed={false}
@@ -168,7 +162,6 @@ exports[`<GoogleMap /> render if \`state.isDynamicMapShowing\` is \`true\` shoul
       <GoogleMapReact
         apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
         bounds={null}
-        hasDefaultStyles={false}
         isShowingApproximateLocation={false}
         isShowingExactLocation={false}
         latitude={0}
