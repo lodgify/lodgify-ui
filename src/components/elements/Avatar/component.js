@@ -25,7 +25,10 @@ Component.defaultProps = {
   image: null,
 };
 Component.propTypes = {
+  /** The firstname used for the placeholder. */
   firstname: string,
+  /** The image url to show as Avatar. */
   image: string,
+  /** The lastname used for the placeholder. */
   lastname: string,
 };
