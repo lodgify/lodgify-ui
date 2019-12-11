@@ -6,13 +6,13 @@ import { testidFactory } from 'utils/testid';
 
 const testid = testidFactory('avatar');
 
-export const Component = ({ firstname, lastname, image }) => (
+export const Component = ({ firstName, lastName, image }) => (
   <div className="avatar" data-testid={testid()}>
     {!!image ? (
       <Thumbnail data-testid={testid('image')} imageUrl={image} isCircular />
     ) : (
       <p data-testid={testid('text')}>
-        {`${firstname[0]}${lastname[0]}`.toUpperCase()}
+        {`${firstName[0]}${lastName[0]}`.toUpperCase()}
       </p>
     )}
   </div>
@@ -20,15 +20,15 @@ export const Component = ({ firstname, lastname, image }) => (
 
 Component.displayName = 'Avatar';
 Component.defaultProps = {
-  firstname: ' ',
-  lastname: ' ',
+  firstName: ' ',
+  lastName: ' ',
   image: null,
 };
 Component.propTypes = {
-  /** The firstname used for the placeholder. */
-  firstname: string,
+  /** The first name used for the placeholder. */
+  firstName: string,
   /** The image url to show as Avatar. */
   image: string,
-  /** The lastname used for the placeholder. */
-  lastname: string,
+  /** The last name used for the placeholder. */
+  lastName: string,
 };

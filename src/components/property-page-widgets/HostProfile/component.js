@@ -38,7 +38,7 @@ export const Component = ({
   phone,
   phoneLabel,
 }) => {
-  const [firstname, lastname] = name.split(' ');
+  const [firstName, lastName] = name.split(' ');
 
   return (
     <Grid textAlign="left">
@@ -51,9 +51,9 @@ export const Component = ({
         <GridColumn width={12}>
           <FlexContainer alignItems="center" className="avatar-container">
             <Avatar
-              firstname={firstname}
+              firstName={firstName}
               image={avatarUrl}
-              lastname={lastname}
+              lastName={lastName}
             />
             <Heading size="small">{name}</Heading>
           </FlexContainer>

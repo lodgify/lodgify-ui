@@ -7,8 +7,8 @@ import { Component as Avatar } from './component';
 
 const testid = testidSelectorFactory('avatar');
 
-const mountAvatar = ({ firstname = 'foo', lastname = 'bar', image }) =>
-  mount(<Avatar firstname={firstname} image={image} lastname={lastname} />);
+const mountAvatar = ({ firstName = 'foo', lastName = 'bar', image }) =>
+  mount(<Avatar firstName={firstName} image={image} lastName={lastName} />);
 
 describe('Avatar', () => {
   describe('when the avatar is mount with image', () => {
@@ -25,9 +25,9 @@ describe('Avatar', () => {
     });
   });
   describe('when the avatar is mount without image', () => {
-    const firstname = 'foo';
-    const lastname = 'bar';
-    const current = mountAvatar({ firstname, lastname }).render();
+    const firstName = 'foo';
+    const lastName = 'bar';
+    const current = mountAvatar({ firstName, lastName }).render();
 
     it(`shouldn't have the image element`, () => {
       const image = current.find(testid('image'));
@@ -39,11 +39,11 @@ describe('Avatar', () => {
 
       expect(text.length).toBe(1);
     });
-    it('the text element should contain the first letter of both firstname and lastname', () => {
+    it('should contain the first letter of both firstName and lastName', () => {
       const text = current.find(testid('text'));
 
       expect(text.text()).toEqual(
-        `${firstname[0]}${lastname[0]}`.toUpperCase()
+        `${firstName[0]}${lastName[0]}`.toUpperCase()
       );
     });
   });
