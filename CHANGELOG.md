@@ -1,3 +1,18 @@
+# [1.273.0](https://github.com/lodgify/lodgify-ui/compare/v1.272.0...v1.273.0) (2019-12-12)
+
+
+### Bug Fixes
+
+* **Avatar:** add fields description ([1f384cf](https://github.com/lodgify/lodgify-ui/commit/1f384cf31eebbf9cbdd3de171b0d878f6dc9bbe5))
+* **Avatar:** fix Readme.md ([4c24103](https://github.com/lodgify/lodgify-ui/commit/4c24103b68441ad6c0c5e6f27b03f1d359fdb4ac))
+* **Avatar:** misspelled props ([1972192](https://github.com/lodgify/lodgify-ui/commit/197219216515f11de8362f15aafcf52211e2bbd7))
+
+
+### Features
+
+* **Avatar:** create avatar component ([a1aa36c](https://github.com/lodgify/lodgify-ui/commit/a1aa36caf677491ee19b4922323db5e9a06b8b46))
+* **HostProfile:** use Avatar instead of Thumbnail ([17b2e31](https://github.com/lodgify/lodgify-ui/commit/17b2e315dc25bbe3e7740894d55b164a61e40fea))
+
 # [1.272.0](https://github.com/lodgify/lodgify-ui/compare/v1.271.3...v1.272.0) (2019-12-10)
 
 
