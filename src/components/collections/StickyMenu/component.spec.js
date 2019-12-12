@@ -8,7 +8,8 @@ import { Component as StickyMenu } from './component';
 import { menuItems } from './mock-data/mock-data';
 
 const testid = testidSelectorFactory('stickyMenu');
-const getStickyHeader = () => mount(<StickyMenu stickyMenuItems={menuItems} />);
+const getStickyHeader = (items = menuItems) =>
+  mount(<StickyMenu stickyMenuItems={items} />);
 const location = '#availability';
 
 document.body.innerHTML = `<div id="availability"></div>`;
@@ -23,6 +24,14 @@ act(() => {
       const wrapper = getStickyHeader();
 
       expect(wrapper.find(testid()).length).toEqual(1);
+    });
+
+    describe('when no stickyMenuItems are passed', () => {
+      const wrapper = getStickyHeader([]);
+
+      it(`should't have any active item`, () => {
+        expect(wrapper.find('a.active').length).toBe(0);
+      });
     });
 
     describe('Interaction: `Menu.Item` onClick', () => {

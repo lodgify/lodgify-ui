@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { PropTypes } from 'prop-types';
 import { Menu } from 'semantic-ui-react';
 
@@ -19,9 +19,14 @@ const TEST_ID_PREFIX = 'stickyMenu';
 const testid = testidFactory(TEST_ID_PREFIX);
 
 export const Component = ({ stickyMenuItems }) => {
-  const [activeItem, setActiveItem] = useState(stickyMenuItems[0].text);
-
+  const [activeItem, setActiveItem] = useState('');
   const menuComponent = useRef();
+
+  useEffect(() => {
+    if (stickyMenuItems.length > 0) {
+      setActiveItem(stickyMenuItems[0].text);
+    }
+  }, [stickyMenuItems.length]);
 
   const activeItemOnScroll = useScroll(
     /* istanbul ignore next */
