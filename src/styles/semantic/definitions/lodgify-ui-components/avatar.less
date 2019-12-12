@@ -1,0 +1,27 @@
+/*******************************
+            Theme
+*******************************/
+
+@type: "lodgify-ui-component";
+
+@element: "avatar";
+
+@import (multiple) "../../theme.config";
+
+/*----------------------
+    Block Placeholder
+-----------------------*/
+
+.avatar {
+  width: @avatar-size;
+  height: @avatar-size;
+  background-color: @avatar-background-color;
+  border-radius: 50%;
+  p {
+    color: white;
+    font-weight: 700;
+    font-size: @avatar-font-size;
+    text-align: center;
+    line-height: @avatar-size;
+  }
+}
