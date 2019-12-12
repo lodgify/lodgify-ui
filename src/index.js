@@ -11,6 +11,7 @@ export { TextInputSegment } from './components/collections/TextInputSegment';
 export { ToggleInputSegment } from './components/collections/ToggleInputSegment';
 export { RangeInputSegment } from './components/collections/RangeInputSegment';
 export { SlideshowHero } from './components/collections/SlideshowHero';
+export { StickyMenu } from './components/collections/StickyMenu';
 
 // Elements
 export { BlockPlaceholder } from './components/elements/BlockPlaceholder';
