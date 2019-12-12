@@ -1,3 +1,20 @@
+# [1.274.0](https://github.com/lodgify/lodgify-ui/compare/v1.273.0...v1.274.0) (2019-12-12)
+
+
+### Bug Fixes
+
+* **StickyMenu:** avoid to broke when no items are passed ([9936635](https://github.com/lodgify/lodgify-ui/commit/9936635487c0ab2341db026cf6c7f366b377150b))
+
+
+### Features
+
+* **getActiveOnScroll:** implement util ([00b1d3e](https://github.com/lodgify/lodgify-ui/commit/00b1d3ed695557ea2e01440df9c63893ad830c69))
+* **getTopComponentCoordinates:** implement util ([4cf21e1](https://github.com/lodgify/lodgify-ui/commit/4cf21e155ebb88ac07c00416d82e5c0082af7318))
+* **jest.config:** introduce hooks in test root ([79f343e](https://github.com/lodgify/lodgify-ui/commit/79f343edb3c6170be95f2776e59ac93ce5968f85))
+* **sticky-menu:** implement component styles ([d409680](https://github.com/lodgify/lodgify-ui/commit/d4096801c5a4ddf695a5b47f3281504ffb410835))
+* **StickyMenu:** implement StickyMenu ([b1249ca](https://github.com/lodgify/lodgify-ui/commit/b1249caf887615ef0f5ab4a7d0270d27021975f8))
+* **useScroll:** add custom hook ([b984ab0](https://github.com/lodgify/lodgify-ui/commit/b984ab0f59fcae7e8e0b14d5b0f8b218d9c40323))
+
 # [1.273.0](https://github.com/lodgify/lodgify-ui/compare/v1.272.0...v1.273.0) (2019-12-12)
 
 
