@@ -51,6 +51,7 @@ exports[`<Review /> if \`props.isShowingPlaceholder\` should render the right st
                         >
                           <GridColumn
                             computer={6}
+                            id={null}
                             mobile={12}
                             tablet={7}
                             verticalAlignContent="top"
@@ -58,6 +59,7 @@ exports[`<Review /> if \`props.isShowingPlaceholder\` should render the right st
                           >
                             <GridColumn
                               computer={6}
+                              id={null}
                               mobile={12}
                               tablet={7}
                               verticalAlign="top"
@@ -65,6 +67,7 @@ exports[`<Review /> if \`props.isShowingPlaceholder\` should render the right st
                             >
                               <div
                                 className="top aligned six wide computer twelve wide mobile seven wide tablet column"
+                                id={null}
                               >
                                 <TextPlaceholder
                                   isFluid={true}
@@ -79,6 +82,7 @@ exports[`<Review /> if \`props.isShowingPlaceholder\` should render the right st
                           </GridColumn>
                           <GridColumn
                             computer={6}
+                            id={null}
                             mobile={12}
                             tablet={5}
                             textAlign="right"
@@ -88,6 +92,7 @@ exports[`<Review /> if \`props.isShowingPlaceholder\` should render the right st
                           >
                             <GridColumn
                               computer={6}
+                              id={null}
                               mobile={12}
                               tablet={5}
                               textAlign="right"
@@ -96,6 +101,7 @@ exports[`<Review /> if \`props.isShowingPlaceholder\` should render the right st
                             >
                               <div
                                 className="right aligned top aligned six wide computer twelve wide mobile five wide tablet column"
+                                id={null}
                               />
                             </GridColumn>
                           </GridColumn>
@@ -255,6 +261,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                         >
                           <GridColumn
                             computer={6}
+                            id={null}
                             mobile={12}
                             tablet={7}
                             verticalAlignContent="top"
@@ -262,6 +269,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                           >
                             <GridColumn
                               computer={6}
+                              id={null}
                               mobile={12}
                               tablet={7}
                               verticalAlign="top"
@@ -269,6 +277,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                             >
                               <div
                                 className="top aligned six wide computer twelve wide mobile seven wide tablet column"
+                                id={null}
                               >
                                 <Subheading>
                                   <span
@@ -282,6 +291,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                           </GridColumn>
                           <GridColumn
                             computer={6}
+                            id={null}
                             mobile={12}
                             tablet={5}
                             textAlign="right"
@@ -291,6 +301,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                           >
                             <GridColumn
                               computer={6}
+                              id={null}
                               mobile={12}
                               tablet={5}
                               textAlign="right"
@@ -299,6 +310,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                             >
                               <div
                                 className="right aligned top aligned six wide computer twelve wide mobile five wide tablet column"
+                                id={null}
                               >
                                 <Rating
                                   iconSize="small"
@@ -560,15 +572,18 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                             className="left aligned row"
                           >
                             <GridColumn
+                              id={null}
                               verticalAlignContent="top"
                               width={12}
                             >
                               <GridColumn
+                                id={null}
                                 verticalAlign="top"
                                 width={12}
                               >
                                 <div
                                   className="top aligned twelve wide column"
+                                  id={null}
                                 >
                                   <Paragraph
                                     isCompact={false}
@@ -597,15 +612,18 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                             className="right aligned row"
                           >
                             <GridColumn
+                              id={null}
                               verticalAlignContent="top"
                               width={12}
                             >
                               <GridColumn
+                                id={null}
                                 verticalAlign="top"
                                 width={12}
                               >
                                 <div
                                   className="top aligned twelve wide column"
+                                  id={null}
                                 >
                                   <Paragraph
                                     isCompact={false}
@@ -712,6 +730,7 @@ exports[`<Review /> should render the right structure 1`] = `
                         >
                           <GridColumn
                             computer={6}
+                            id={null}
                             mobile={12}
                             tablet={7}
                             verticalAlignContent="top"
@@ -719,6 +738,7 @@ exports[`<Review /> should render the right structure 1`] = `
                           >
                             <GridColumn
                               computer={6}
+                              id={null}
                               mobile={12}
                               tablet={7}
                               verticalAlign="top"
@@ -726,6 +746,7 @@ exports[`<Review /> should render the right structure 1`] = `
                             >
                               <div
                                 className="top aligned six wide computer twelve wide mobile seven wide tablet column"
+                                id={null}
                               >
                                 <Subheading>
                                   <span
@@ -739,6 +760,7 @@ exports[`<Review /> should render the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             computer={6}
+                            id={null}
                             mobile={12}
                             tablet={5}
                             textAlign="right"
@@ -748,6 +770,7 @@ exports[`<Review /> should render the right structure 1`] = `
                           >
                             <GridColumn
                               computer={6}
+                              id={null}
                               mobile={12}
                               tablet={5}
                               textAlign="right"
@@ -756,6 +779,7 @@ exports[`<Review /> should render the right structure 1`] = `
                             >
                               <div
                                 className="right aligned top aligned six wide computer twelve wide mobile five wide tablet column"
+                                id={null}
                               >
                                 <Rating
                                   iconSize="small"

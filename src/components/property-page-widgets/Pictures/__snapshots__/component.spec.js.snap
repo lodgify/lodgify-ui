@@ -7,6 +7,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
   isStackable={false}
 >
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -26,6 +27,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
     <GridColumn
       computer={4}
       data-testid="pictures-thumbnail_0"
+      id={null}
       key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg0"
       mobile={6}
       onClick={[Function]}
@@ -82,6 +84,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
     <GridColumn
       computer={4}
       data-testid="pictures-thumbnail_1"
+      id={null}
       key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg1"
       mobile={6}
       onClick={[Function]}
@@ -138,6 +141,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
     <GridColumn
       computer={4}
       data-testid="pictures-thumbnail_2"
+      id={null}
       key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg2"
       mobile={6}
       onClick={[Function]}
@@ -194,6 +198,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
     <GridColumn
       computer={4}
       data-testid="pictures-thumbnail_3"
+      id={null}
       key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg3"
       mobile={6}
       onClick={[Function]}
@@ -250,6 +255,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
     <GridColumn
       computer={4}
       data-testid="pictures-thumbnail_4"
+      id={null}
       key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg4"
       mobile={6}
       onClick={[Function]}
@@ -306,6 +312,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
     <GridColumn
       computer={4}
       data-testid="pictures-thumbnail_5"
+      id={null}
       key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg5"
       mobile={6}
       onClick={[Function]}
@@ -361,6 +368,7 @@ exports[`<Pictures /> should render the correct structure 1`] = `
     </GridColumn>
   </GridRow>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >

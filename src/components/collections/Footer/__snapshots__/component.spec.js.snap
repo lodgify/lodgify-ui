@@ -3373,6 +3373,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                           >
                             <GridColumn
                               computer={5}
+                              id={null}
                               mobile={12}
                               tablet={12}
                               textAlign="center"
@@ -3381,6 +3382,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                             >
                               <GridColumn
                                 computer={5}
+                                id={null}
                                 mobile={12}
                                 tablet={12}
                                 textAlign="center"
@@ -3389,6 +3391,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                               >
                                 <div
                                   className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                                  id={null}
                                 >
                                   <Heading
                                     className={null}
@@ -3443,6 +3446,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                             </GridColumn>
                             <GridColumn
                               computer={4}
+                              id={null}
                               mobile={12}
                               tablet={7}
                               verticalAlignContent="top"
@@ -3450,6 +3454,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                             >
                               <GridColumn
                                 computer={4}
+                                id={null}
                                 mobile={12}
                                 tablet={7}
                                 verticalAlign="top"
@@ -3457,6 +3462,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                               >
                                 <div
                                   className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                                  id={null}
                                 >
                                   <TextInput
                                     autoComplete={null}
@@ -3545,6 +3551,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                             </GridColumn>
                             <GridColumn
                               computer={3}
+                              id={null}
                               mobile={12}
                               tablet={5}
                               verticalAlignContent="top"
@@ -3552,6 +3559,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                             >
                               <GridColumn
                                 computer={3}
+                                id={null}
                                 mobile={12}
                                 tablet={5}
                                 verticalAlign="top"
@@ -3559,6 +3567,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                               >
                                 <div
                                   className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                                  id={null}
                                 >
                                   <Button
                                     hasShadow={false}

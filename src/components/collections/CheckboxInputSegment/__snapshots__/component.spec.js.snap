@@ -91,16 +91,19 @@ exports[`<CheckboxInputSegment /> by default should return the right structure 1
                 className="ui two column grid"
               >
                 <GridColumn
+                  id={null}
                   key="yo"
                   verticalAlignContent="top"
                   width={null}
                 >
                   <GridColumn
+                    id={null}
                     verticalAlign="top"
                     width={null}
                   >
                     <div
                       className="top aligned column"
+                      id={null}
                     >
                       <Checkbox
                         error={false}
@@ -332,16 +335,19 @@ exports[`<CheckboxInputSegment /> if \`isUserOnMobile\` === true should return t
                 className="ui one column grid"
               >
                 <GridColumn
+                  id={null}
                   key="yo"
                   verticalAlignContent="top"
                   width={null}
                 >
                   <GridColumn
+                    id={null}
                     verticalAlign="top"
                     width={null}
                   >
                     <div
                       className="top aligned column"
+                      id={null}
                     >
                       <Checkbox
                         error={false}

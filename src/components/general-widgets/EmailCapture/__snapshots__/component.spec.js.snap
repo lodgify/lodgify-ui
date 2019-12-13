@@ -40,17 +40,20 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
         className="ui centered grid"
       >
         <GridColumn
+          id={null}
           textAlign="left"
           verticalAlignContent="top"
           width={11}
         >
           <GridColumn
+            id={null}
             textAlign="left"
             verticalAlign="top"
             width={11}
           >
             <div
               className="left aligned top aligned eleven wide column"
+              id={null}
             >
               <Message
                 content="Nurrrrrrr"
@@ -120,6 +123,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       textAlign="center"
@@ -128,6 +132,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         textAlign="center"
@@ -136,6 +141,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                       >
                         <div
                           className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           <Heading
                             className={null}
@@ -190,6 +196,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                     </GridColumn>
                     <GridColumn
                       computer={4}
+                      id={null}
                       mobile={12}
                       tablet={7}
                       verticalAlignContent="top"
@@ -197,6 +204,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                     >
                       <GridColumn
                         computer={4}
+                        id={null}
                         mobile={12}
                         tablet={7}
                         verticalAlign="top"
@@ -204,6 +212,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                       >
                         <div
                           className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                          id={null}
                         >
                           <TextInput
                             autoComplete={null}
@@ -292,6 +301,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                     </GridColumn>
                     <GridColumn
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={5}
                       verticalAlignContent="top"
@@ -299,6 +309,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                     >
                       <GridColumn
                         computer={3}
+                        id={null}
                         mobile={12}
                         tablet={5}
                         verticalAlign="top"
@@ -306,6 +317,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.errorMessage\` is pas
                       >
                         <div
                           className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                          id={null}
                         >
                           <Button
                             hasShadow={false}
@@ -464,6 +476,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       textAlign="center"
@@ -472,6 +485,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         textAlign="center"
@@ -480,6 +494,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                       >
                         <div
                           className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           <Heading
                             className={null}
@@ -534,6 +549,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     </GridColumn>
                     <GridColumn
                       computer={4}
+                      id={null}
                       mobile={12}
                       tablet={7}
                       verticalAlignContent="top"
@@ -541,6 +557,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     >
                       <GridColumn
                         computer={4}
+                        id={null}
                         mobile={12}
                         tablet={7}
                         verticalAlign="top"
@@ -548,6 +565,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                       >
                         <div
                           className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                          id={null}
                         >
                           <TextInput
                             autoComplete={null}
@@ -636,6 +654,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     </GridColumn>
                     <GridColumn
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={5}
                       verticalAlignContent="top"
@@ -643,6 +662,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     >
                       <GridColumn
                         computer={3}
+                        id={null}
                         mobile={12}
                         tablet={5}
                         verticalAlign="top"
@@ -650,6 +670,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                       >
                         <div
                           className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                          id={null}
                         >
                           <Button
                             hasShadow={false}
@@ -733,21 +754,25 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       verticalAlignContent="top"
                       width={null}
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         verticalAlign="top"
                         width={null}
                       >
                         <div
                           className="top aligned five wide computer column"
+                          id={null}
                         />
                       </GridColumn>
                     </GridColumn>
                     <GridColumn
                       computer={7}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       verticalAlignContent="top"
@@ -755,6 +780,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     >
                       <GridColumn
                         computer={7}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         verticalAlign="top"
@@ -762,6 +788,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                       >
                         <div
                           className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           This form is protected against bots
                           <Divider
@@ -871,6 +898,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       textAlign="center"
@@ -879,6 +907,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         textAlign="center"
@@ -887,6 +916,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                       >
                         <div
                           className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           <Heading
                             className={null}
@@ -941,6 +971,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     </GridColumn>
                     <GridColumn
                       computer={4}
+                      id={null}
                       mobile={12}
                       tablet={7}
                       verticalAlignContent="top"
@@ -948,6 +979,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     >
                       <GridColumn
                         computer={4}
+                        id={null}
                         mobile={12}
                         tablet={7}
                         verticalAlign="top"
@@ -955,6 +987,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                       >
                         <div
                           className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                          id={null}
                         >
                           <TextInput
                             autoComplete={null}
@@ -1043,6 +1076,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     </GridColumn>
                     <GridColumn
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={5}
                       verticalAlignContent="top"
@@ -1050,6 +1084,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     >
                       <GridColumn
                         computer={3}
+                        id={null}
                         mobile={12}
                         tablet={5}
                         verticalAlign="top"
@@ -1057,6 +1092,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                       >
                         <div
                           className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                          id={null}
                         >
                           <Button
                             hasShadow={false}
@@ -1140,21 +1176,25 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       verticalAlignContent="top"
                       width={null}
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         verticalAlign="top"
                         width={null}
                       >
                         <div
                           className="top aligned five wide computer column"
+                          id={null}
                         />
                       </GridColumn>
                     </GridColumn>
                     <GridColumn
                       computer={7}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       verticalAlignContent="top"
@@ -1162,6 +1202,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                     >
                       <GridColumn
                         computer={7}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         verticalAlign="top"
@@ -1169,6 +1210,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                       >
                         <div
                           className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           <Checkbox
                             error={false}
@@ -1437,6 +1479,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       textAlign="center"
@@ -1445,6 +1488,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         textAlign="center"
@@ -1453,6 +1497,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                       >
                         <div
                           className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           <Heading
                             className={null}
@@ -1507,6 +1552,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     </GridColumn>
                     <GridColumn
                       computer={4}
+                      id={null}
                       mobile={12}
                       tablet={7}
                       verticalAlignContent="top"
@@ -1514,6 +1560,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     >
                       <GridColumn
                         computer={4}
+                        id={null}
                         mobile={12}
                         tablet={7}
                         verticalAlign="top"
@@ -1521,6 +1568,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                       >
                         <div
                           className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                          id={null}
                         >
                           <TextInput
                             autoComplete={null}
@@ -1609,6 +1657,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     </GridColumn>
                     <GridColumn
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={5}
                       verticalAlignContent="top"
@@ -1616,6 +1665,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     >
                       <GridColumn
                         computer={3}
+                        id={null}
                         mobile={12}
                         tablet={5}
                         verticalAlign="top"
@@ -1623,6 +1673,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                       >
                         <div
                           className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                          id={null}
                         >
                           This form is protected against bots
                           <Divider
@@ -1827,6 +1878,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       textAlign="center"
@@ -1835,6 +1887,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         textAlign="center"
@@ -1843,6 +1896,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                       >
                         <div
                           className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           <Heading
                             className={null}
@@ -1897,6 +1951,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     </GridColumn>
                     <GridColumn
                       computer={4}
+                      id={null}
                       mobile={12}
                       tablet={7}
                       verticalAlignContent="top"
@@ -1904,6 +1959,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     >
                       <GridColumn
                         computer={4}
+                        id={null}
                         mobile={12}
                         tablet={7}
                         verticalAlign="top"
@@ -1911,6 +1967,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                       >
                         <div
                           className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                          id={null}
                         >
                           <TextInput
                             autoComplete={null}
@@ -1999,6 +2056,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     </GridColumn>
                     <GridColumn
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={5}
                       verticalAlignContent="top"
@@ -2006,6 +2064,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     >
                       <GridColumn
                         computer={3}
+                        id={null}
                         mobile={12}
                         tablet={5}
                         verticalAlign="top"
@@ -2013,6 +2072,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                       >
                         <div
                           className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                          id={null}
                         >
                           <Divider
                             className=""
@@ -2376,6 +2436,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       textAlign="center"
@@ -2384,6 +2445,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         textAlign="center"
@@ -2392,6 +2454,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                       >
                         <div
                           className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           <Heading
                             className={null}
@@ -2446,6 +2509,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     </GridColumn>
                     <GridColumn
                       computer={4}
+                      id={null}
                       mobile={12}
                       tablet={7}
                       verticalAlignContent="top"
@@ -2453,6 +2517,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     >
                       <GridColumn
                         computer={4}
+                        id={null}
                         mobile={12}
                         tablet={7}
                         verticalAlign="top"
@@ -2460,6 +2525,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                       >
                         <div
                           className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                          id={null}
                         >
                           <TextInput
                             autoComplete={null}
@@ -2548,6 +2614,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     </GridColumn>
                     <GridColumn
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={5}
                       verticalAlignContent="top"
@@ -2555,6 +2622,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                     >
                       <GridColumn
                         computer={3}
+                        id={null}
                         mobile={12}
                         tablet={5}
                         verticalAlign="top"
@@ -2562,6 +2630,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                       >
                         <div
                           className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                          id={null}
                         >
                           <Button
                             hasShadow={false}
@@ -2688,17 +2757,20 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
         className="ui centered grid"
       >
         <GridColumn
+          id={null}
           textAlign="left"
           verticalAlignContent="top"
           width={11}
         >
           <GridColumn
+            id={null}
             textAlign="left"
             verticalAlign="top"
             width={11}
           >
             <div
               className="left aligned top aligned eleven wide column"
+              id={null}
             >
               <Message
                 content="Yurrrrrrr"
@@ -2768,6 +2840,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       textAlign="center"
@@ -2776,6 +2849,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         textAlign="center"
@@ -2784,6 +2858,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                       >
                         <div
                           className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           <Heading
                             className={null}
@@ -2838,6 +2913,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                     </GridColumn>
                     <GridColumn
                       computer={4}
+                      id={null}
                       mobile={12}
                       tablet={7}
                       verticalAlignContent="top"
@@ -2845,6 +2921,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                     >
                       <GridColumn
                         computer={4}
+                        id={null}
                         mobile={12}
                         tablet={7}
                         verticalAlign="top"
@@ -2852,6 +2929,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                       >
                         <div
                           className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                          id={null}
                         >
                           <TextInput
                             autoComplete={null}
@@ -2940,6 +3018,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                     </GridColumn>
                     <GridColumn
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={5}
                       verticalAlignContent="top"
@@ -2947,6 +3026,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                     >
                       <GridColumn
                         computer={3}
+                        id={null}
                         mobile={12}
                         tablet={5}
                         verticalAlign="top"
@@ -2954,6 +3034,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.successMessage\` is p
                       >
                         <div
                           className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                          id={null}
                         >
                           <Button
                             hasShadow={false}
@@ -3112,6 +3193,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                   >
                     <GridColumn
                       computer={5}
+                      id={null}
                       mobile={12}
                       tablet={12}
                       textAlign="center"
@@ -3120,6 +3202,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                     >
                       <GridColumn
                         computer={5}
+                        id={null}
                         mobile={12}
                         tablet={12}
                         textAlign="center"
@@ -3128,6 +3211,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                       >
                         <div
                           className="center aligned top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                          id={null}
                         >
                           <Heading
                             className={null}
@@ -3182,6 +3266,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                     </GridColumn>
                     <GridColumn
                       computer={4}
+                      id={null}
                       mobile={12}
                       tablet={7}
                       verticalAlignContent="top"
@@ -3189,6 +3274,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                     >
                       <GridColumn
                         computer={4}
+                        id={null}
                         mobile={12}
                         tablet={7}
                         verticalAlign="top"
@@ -3196,6 +3282,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                       >
                         <div
                           className="top aligned four wide computer twelve wide mobile seven wide tablet column"
+                          id={null}
                         >
                           <TextInput
                             autoComplete={null}
@@ -3284,6 +3371,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                     </GridColumn>
                     <GridColumn
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={5}
                       verticalAlignContent="top"
@@ -3291,6 +3379,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                     >
                       <GridColumn
                         computer={3}
+                        id={null}
                         mobile={12}
                         tablet={5}
                         verticalAlign="top"
@@ -3298,6 +3387,7 @@ exports[`<EmailCapture /> the wrapped component should render the right structur
                       >
                         <div
                           className="top aligned three wide computer twelve wide mobile five wide tablet column"
+                          id={null}
                         >
                           <Button
                             hasShadow={false}

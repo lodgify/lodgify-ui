@@ -7,6 +7,7 @@ exports[`<Characteristics /> should have the correct structure 1`] = `
   isStackable={false}
 >
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -113,6 +114,7 @@ exports[`<Characteristics /> should have the correct structure 1`] = `
     >
       <GridColumn
         computer={3}
+        id={null}
         key="2 guests0"
         mobile={6}
         verticalAlignContent="top"
@@ -136,6 +138,7 @@ exports[`<Characteristics /> should have the correct structure 1`] = `
       </GridColumn>
       <GridColumn
         computer={3}
+        id={null}
         key="1 bedroom1"
         mobile={6}
         verticalAlignContent="top"
@@ -159,6 +162,7 @@ exports[`<Characteristics /> should have the correct structure 1`] = `
       </GridColumn>
       <GridColumn
         computer={3}
+        id={null}
         key="2 beds2"
         mobile={6}
         verticalAlignContent="top"
@@ -182,6 +186,7 @@ exports[`<Characteristics /> should have the correct structure 1`] = `
       </GridColumn>
       <GridColumn
         computer={3}
+        id={null}
         key="1 bathroom3"
         mobile={6}
         verticalAlignContent="top"
@@ -215,6 +220,7 @@ exports[`<Characteristics /> should have the correct structure 2`] = `
   isStackable={false}
 >
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >

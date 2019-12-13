@@ -3,6 +3,7 @@
 exports[`getLocationDescription if passed a string containing HTML elements should render the right structure 1`] = `
 <GridColumn
   computer={6}
+  id={null}
   tablet={12}
   verticalAlignContent="top"
   width={null}
@@ -16,6 +17,7 @@ exports[`getLocationDescription if passed a string containing HTML elements shou
 exports[`getLocationDescription if passed a string that doesnt contain any HTML elements should render the right structure 1`] = `
 <GridColumn
   computer={6}
+  id={null}
   tablet={12}
   verticalAlignContent="top"
   width={null}

@@ -37,15 +37,18 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -83,15 +86,18 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <FlexContainer
                       alignContent={null}
@@ -235,6 +241,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
             >
               <GridColumn
                 computer={7}
+                id={null}
                 mobile={12}
                 tablet={12}
                 verticalAlignContent="top"
@@ -242,6 +249,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
               >
                 <GridColumn
                   computer={7}
+                  id={null}
                   mobile={12}
                   tablet={12}
                   verticalAlign="top"
@@ -249,6 +257,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                 >
                   <div
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                    id={null}
                   >
                     <HTML
                       htmlString="We do love cats"
@@ -267,6 +276,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
               </GridColumn>
               <GridColumn
                 computer={5}
+                id={null}
                 mobile={12}
                 tablet={12}
                 verticalAlignContent="top"
@@ -274,6 +284,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
               >
                 <GridColumn
                   computer={5}
+                  id={null}
                   mobile={12}
                   tablet={12}
                   verticalAlign="top"
@@ -281,6 +292,7 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                 >
                   <div
                     className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -382,15 +394,18 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -428,15 +443,18 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <FlexContainer
                       alignContent={null}
@@ -580,6 +598,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
             >
               <GridColumn
                 computer={7}
+                id={null}
                 mobile={12}
                 tablet={12}
                 verticalAlignContent="top"
@@ -587,6 +606,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
               >
                 <GridColumn
                   computer={7}
+                  id={null}
                   mobile={12}
                   tablet={12}
                   verticalAlign="top"
@@ -594,6 +614,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                 >
                   <div
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                    id={null}
                   >
                     <HTML
                       htmlString="We do love cats"
@@ -612,6 +633,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
               </GridColumn>
               <GridColumn
                 computer={5}
+                id={null}
                 mobile={12}
                 tablet={12}
                 verticalAlignContent="top"
@@ -619,6 +641,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
               >
                 <GridColumn
                   computer={5}
+                  id={null}
                   mobile={12}
                   tablet={12}
                   verticalAlign="top"
@@ -626,6 +649,7 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                 >
                   <div
                     className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -720,15 +744,18 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -766,15 +793,18 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <FlexContainer
                       alignContent={null}
@@ -918,6 +948,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
             >
               <GridColumn
                 computer={7}
+                id={null}
                 mobile={12}
                 tablet={12}
                 verticalAlignContent="top"
@@ -925,6 +956,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
               >
                 <GridColumn
                   computer={7}
+                  id={null}
                   mobile={12}
                   tablet={12}
                   verticalAlign="top"
@@ -932,6 +964,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                 >
                   <div
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                    id={null}
                   >
                     <HTML
                       htmlString="We do love cats"
@@ -950,6 +983,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
               </GridColumn>
               <GridColumn
                 computer={5}
+                id={null}
                 mobile={12}
                 tablet={12}
                 verticalAlignContent="top"
@@ -957,6 +991,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
               >
                 <GridColumn
                   computer={5}
+                  id={null}
                   mobile={12}
                   tablet={12}
                   verticalAlign="top"
@@ -964,6 +999,7 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                 >
                   <div
                     className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -1062,15 +1098,18 @@ exports[`<HostProfile /> should render the right structure 1`] = `
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -1108,15 +1147,18 @@ exports[`<HostProfile /> should render the right structure 1`] = `
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <FlexContainer
                       alignContent={null}
@@ -1260,6 +1302,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
             >
               <GridColumn
                 computer={7}
+                id={null}
                 mobile={12}
                 tablet={12}
                 verticalAlignContent="top"
@@ -1267,6 +1310,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
               >
                 <GridColumn
                   computer={7}
+                  id={null}
                   mobile={12}
                   tablet={12}
                   verticalAlign="top"
@@ -1274,6 +1318,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                 >
                   <div
                     className="top aligned seven wide computer twelve wide mobile twelve wide tablet column"
+                    id={null}
                   >
                     <HTML
                       htmlString="We do love cats"
@@ -1292,6 +1337,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
               </GridColumn>
               <GridColumn
                 computer={5}
+                id={null}
                 mobile={12}
                 tablet={12}
                 verticalAlignContent="top"
@@ -1299,6 +1345,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
               >
                 <GridColumn
                   computer={5}
+                  id={null}
                   mobile={12}
                   tablet={12}
                   verticalAlign="top"
@@ -1306,6 +1353,7 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                 >
                   <div
                     className="top aligned five wide computer twelve wide mobile twelve wide tablet column"
+                    id={null}
                   >
                     <Heading
                       className={null}
