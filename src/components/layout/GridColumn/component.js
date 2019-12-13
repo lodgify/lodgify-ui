@@ -7,18 +7,21 @@ import { Grid } from 'semantic-ui-react';
  * Semantic UI Grid.Column.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ verticalAlignContent, ...props }) => (
-  <Grid.Column {...props} verticalAlign={verticalAlignContent} />
+export const Component = ({ id, verticalAlignContent, ...props }) => (
+  <Grid.Column {...props} id={id} verticalAlign={verticalAlignContent} />
 );
 
 Component.displayName = 'GridColumn';
 
 Component.defaultProps = {
+  id: null,
   verticalAlignContent: 'top',
   width: null,
 };
 
 Component.propTypes = {
+  /** The html id of the container dom element. */
+  id: PropTypes.string,
   /** Vertically align the content of the column to the bottom, middle or top. */
   verticalAlignContent: PropTypes.oneOf(['bottom', 'middle', 'top']),
   /** The width of the column */
