@@ -1,3 +1,10 @@
+# [1.275.0](https://github.com/lodgify/lodgify-ui/compare/v1.274.0...v1.275.0) (2019-12-13)
+
+
+### Features
+
+* **GridColumn:** expose id as prop ([5cbd582](https://github.com/lodgify/lodgify-ui/commit/5cbd582603f2de2267e8c6f2e600eb26dc6a2110))
+
 # [1.274.0](https://github.com/lodgify/lodgify-ui/compare/v1.273.0...v1.274.0) (2019-12-12)
 
 
