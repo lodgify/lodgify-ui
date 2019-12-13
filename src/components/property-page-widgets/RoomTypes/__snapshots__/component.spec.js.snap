@@ -75,18 +75,21 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
                       >
                         <GridColumn
                           computer={4}
+                          id={null}
                           mobile={12}
                           verticalAlignContent={null}
                           width={null}
                         >
                           <GridColumn
                             computer={4}
+                            id={null}
                             mobile={12}
                             verticalAlign={null}
                             width={null}
                           >
                             <div
                               className="four wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <BlockPlaceholder
                                 isFluid={true}
@@ -102,18 +105,21 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
                         </GridColumn>
                         <GridColumn
                           computer={8}
+                          id={null}
                           mobile={12}
                           verticalAlignContent="top"
                           width={null}
                         >
                           <GridColumn
                             computer={8}
+                            id={null}
                             mobile={12}
                             verticalAlign="top"
                             width={null}
                           >
                             <div
                               className="top aligned eight wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <Grid
                                 areColumnsCentered={false}
@@ -129,15 +135,18 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
                                     className="ui padded grid"
                                   >
                                     <GridColumn
+                                      id={null}
                                       verticalAlignContent="top"
                                       width={null}
                                     >
                                       <GridColumn
+                                        id={null}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <div
                                           className="top aligned column"
+                                          id={null}
                                         >
                                           <Divider
                                             className=""
@@ -298,18 +307,21 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
                       >
                         <GridColumn
                           computer={4}
+                          id={null}
                           mobile={12}
                           verticalAlignContent={null}
                           width={null}
                         >
                           <GridColumn
                             computer={4}
+                            id={null}
                             mobile={12}
                             verticalAlign={null}
                             width={null}
                           >
                             <div
                               className="four wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <BlockPlaceholder
                                 isFluid={true}
@@ -325,18 +337,21 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
                         </GridColumn>
                         <GridColumn
                           computer={8}
+                          id={null}
                           mobile={12}
                           verticalAlignContent="top"
                           width={null}
                         >
                           <GridColumn
                             computer={8}
+                            id={null}
                             mobile={12}
                             verticalAlign="top"
                             width={null}
                           >
                             <div
                               className="top aligned eight wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <Grid
                                 areColumnsCentered={false}
@@ -352,15 +367,18 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` if \`roomTypes.le
                                     className="ui padded grid"
                                   >
                                     <GridColumn
+                                      id={null}
                                       verticalAlignContent="top"
                                       width={null}
                                     >
                                       <GridColumn
+                                        id={null}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <div
                                           className="top aligned column"
+                                          id={null}
                                         >
                                           <Divider
                                             className=""
@@ -801,18 +819,21 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
                       >
                         <GridColumn
                           computer={4}
+                          id={null}
                           mobile={12}
                           verticalAlignContent={null}
                           width={null}
                         >
                           <GridColumn
                             computer={4}
+                            id={null}
                             mobile={12}
                             verticalAlign={null}
                             width={null}
                           >
                             <div
                               className="four wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <BlockPlaceholder
                                 isFluid={true}
@@ -828,18 +849,21 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
                         </GridColumn>
                         <GridColumn
                           computer={8}
+                          id={null}
                           mobile={12}
                           verticalAlignContent="top"
                           width={null}
                         >
                           <GridColumn
                             computer={8}
+                            id={null}
                             mobile={12}
                             verticalAlign="top"
                             width={null}
                           >
                             <div
                               className="top aligned eight wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <Grid
                                 areColumnsCentered={false}
@@ -855,15 +879,18 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
                                     className="ui padded grid"
                                   >
                                     <GridColumn
+                                      id={null}
                                       verticalAlignContent="top"
                                       width={null}
                                     >
                                       <GridColumn
+                                        id={null}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <div
                                           className="top aligned column"
+                                          id={null}
                                         >
                                           <Divider
                                             className=""
@@ -1161,18 +1188,21 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
                       >
                         <GridColumn
                           computer={4}
+                          id={null}
                           mobile={12}
                           verticalAlignContent={null}
                           width={null}
                         >
                           <GridColumn
                             computer={4}
+                            id={null}
                             mobile={12}
                             verticalAlign={null}
                             width={null}
                           >
                             <div
                               className="four wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <BlockPlaceholder
                                 isFluid={true}
@@ -1188,18 +1218,21 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
                         </GridColumn>
                         <GridColumn
                           computer={8}
+                          id={null}
                           mobile={12}
                           verticalAlignContent="top"
                           width={null}
                         >
                           <GridColumn
                             computer={8}
+                            id={null}
                             mobile={12}
                             verticalAlign="top"
                             width={null}
                           >
                             <div
                               className="top aligned eight wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <Grid
                                 areColumnsCentered={false}
@@ -1215,15 +1248,18 @@ exports[`<RoomTypes /> if \`isShowingPlaceholder\` is \`true\` should render the
                                     className="ui padded grid"
                                   >
                                     <GridColumn
+                                      id={null}
                                       verticalAlignContent="top"
                                       width={null}
                                     >
                                       <GridColumn
+                                        id={null}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <div
                                           className="top aligned column"
+                                          id={null}
                                         >
                                           <Divider
                                             className=""
@@ -1664,18 +1700,21 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                       >
                         <GridColumn
                           computer={4}
+                          id={null}
                           mobile={12}
                           verticalAlignContent={null}
                           width={null}
                         >
                           <GridColumn
                             computer={4}
+                            id={null}
                             mobile={12}
                             verticalAlign={null}
                             width={null}
                           >
                             <div
                               className="four wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <Slideshow
                                 className={null}
@@ -1768,18 +1807,21 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                         </GridColumn>
                         <GridColumn
                           computer={8}
+                          id={null}
                           mobile={12}
                           verticalAlignContent="top"
                           width={null}
                         >
                           <GridColumn
                             computer={8}
+                            id={null}
                             mobile={12}
                             verticalAlign="top"
                             width={null}
                           >
                             <div
                               className="top aligned eight wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <Grid
                                 areColumnsCentered={false}
@@ -1797,6 +1839,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     <GridColumn
                                       computer={12}
                                       floated="left"
+                                      id={null}
                                       mobile={10}
                                       verticalAlignContent="top"
                                       width={null}
@@ -1804,12 +1847,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       <GridColumn
                                         computer={12}
                                         floated="left"
+                                        id={null}
                                         mobile={10}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <div
                                           className="left floated top aligned twelve wide computer ten wide mobile column"
+                                          id={null}
                                         >
                                           <Heading
                                             className={null}
@@ -1835,12 +1880,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       </GridColumn>
                                     </GridColumn>
                                     <GridColumn
+                                      id={null}
                                       only="mobile"
                                       textAlign="right"
                                       verticalAlignContent="middle"
                                       width={2}
                                     >
                                       <GridColumn
+                                        id={null}
                                         only="mobile"
                                         textAlign="right"
                                         verticalAlign="middle"
@@ -1848,6 +1895,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       >
                                         <div
                                           className="mobile only right aligned middle aligned two wide column"
+                                          id={null}
                                         >
                                           <Modal
                                             className={null}
@@ -2008,6 +2056,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       computer={12}
                                       floated="left"
                                       horizontal={true}
+                                      id={null}
                                       verticalAlignContent="top"
                                       width={null}
                                     >
@@ -2017,15 +2066,18 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         computer={12}
                                         floated="left"
                                         horizontal={true}
+                                        id={null}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <List
                                           className="left floated top aligned twelve wide computer column only-horizontal-padding"
                                           horizontal={true}
+                                          id={null}
                                         >
                                           <div
                                             className="ui horizontal list left floated top aligned twelve wide computer column only-horizontal-padding"
+                                            id={null}
                                             role="list"
                                           >
                                             <ListItem
@@ -2189,17 +2241,20 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                           className="left aligned row"
                                         >
                                           <GridColumn
+                                            id={null}
                                             only="tablet computer"
                                             verticalAlignContent="bottom"
                                             width={4}
                                           >
                                             <GridColumn
+                                              id={null}
                                               only="tablet computer"
                                               verticalAlign="bottom"
                                               width={4}
                                             >
                                               <div
                                                 className="tablet only computer only bottom aligned four wide column"
+                                                id={null}
                                               >
                                                 <Modal
                                                   className={null}
@@ -2357,17 +2412,20 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                             </GridColumn>
                                           </GridColumn>
                                           <GridColumn
+                                            id={null}
                                             textAlign="right"
                                             verticalAlignContent="top"
                                             width={8}
                                           >
                                             <GridColumn
+                                              id={null}
                                               textAlign="right"
                                               verticalAlign="top"
                                               width={8}
                                             >
                                               <div
                                                 className="right aligned top aligned eight wide column"
+                                                id={null}
                                               >
                                                 <CardDescription>
                                                   <div
@@ -2654,18 +2712,21 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                       >
                         <GridColumn
                           computer={4}
+                          id={null}
                           mobile={12}
                           verticalAlignContent={null}
                           width={null}
                         >
                           <GridColumn
                             computer={4}
+                            id={null}
                             mobile={12}
                             verticalAlign={null}
                             width={null}
                           >
                             <div
                               className="four wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <Slideshow
                                 className={null}
@@ -2758,18 +2819,21 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                         </GridColumn>
                         <GridColumn
                           computer={8}
+                          id={null}
                           mobile={12}
                           verticalAlignContent="top"
                           width={null}
                         >
                           <GridColumn
                             computer={8}
+                            id={null}
                             mobile={12}
                             verticalAlign="top"
                             width={null}
                           >
                             <div
                               className="top aligned eight wide computer twelve wide mobile column"
+                              id={null}
                             >
                               <Grid
                                 areColumnsCentered={false}
@@ -2787,6 +2851,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     <GridColumn
                                       computer={12}
                                       floated="left"
+                                      id={null}
                                       mobile={10}
                                       verticalAlignContent="top"
                                       width={null}
@@ -2794,12 +2859,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       <GridColumn
                                         computer={12}
                                         floated="left"
+                                        id={null}
                                         mobile={10}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <div
                                           className="left floated top aligned twelve wide computer ten wide mobile column"
+                                          id={null}
                                         >
                                           <Heading
                                             className={null}
@@ -2825,12 +2892,14 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       </GridColumn>
                                     </GridColumn>
                                     <GridColumn
+                                      id={null}
                                       only="mobile"
                                       textAlign="right"
                                       verticalAlignContent="middle"
                                       width={2}
                                     >
                                       <GridColumn
+                                        id={null}
                                         only="mobile"
                                         textAlign="right"
                                         verticalAlign="middle"
@@ -2838,6 +2907,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       >
                                         <div
                                           className="mobile only right aligned middle aligned two wide column"
+                                          id={null}
                                         >
                                           <Modal
                                             className={null}
@@ -2998,6 +3068,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                       computer={12}
                                       floated="left"
                                       horizontal={true}
+                                      id={null}
                                       verticalAlignContent="top"
                                       width={null}
                                     >
@@ -3007,15 +3078,18 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         computer={12}
                                         floated="left"
                                         horizontal={true}
+                                        id={null}
                                         verticalAlign="top"
                                         width={null}
                                       >
                                         <List
                                           className="left floated top aligned twelve wide computer column only-horizontal-padding"
                                           horizontal={true}
+                                          id={null}
                                         >
                                           <div
                                             className="ui horizontal list left floated top aligned twelve wide computer column only-horizontal-padding"
+                                            id={null}
                                             role="list"
                                           >
                                             <ListItem
@@ -3179,17 +3253,20 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                           className="left aligned row"
                                         >
                                           <GridColumn
+                                            id={null}
                                             only="tablet computer"
                                             verticalAlignContent="bottom"
                                             width={4}
                                           >
                                             <GridColumn
+                                              id={null}
                                               only="tablet computer"
                                               verticalAlign="bottom"
                                               width={4}
                                             >
                                               <div
                                                 className="tablet only computer only bottom aligned four wide column"
+                                                id={null}
                                               >
                                                 <Modal
                                                   className={null}
@@ -3347,17 +3424,20 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                             </GridColumn>
                                           </GridColumn>
                                           <GridColumn
+                                            id={null}
                                             textAlign="right"
                                             verticalAlignContent="top"
                                             width={8}
                                           >
                                             <GridColumn
+                                              id={null}
                                               textAlign="right"
                                               verticalAlign="top"
                                               width={8}
                                             >
                                               <div
                                                 className="right aligned top aligned eight wide column"
+                                                id={null}
                                               >
                                                 <CardDescription>
                                                   <div

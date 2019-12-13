@@ -604,15 +604,18 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           className="left aligned row"
                         >
                           <GridColumn
+                            id={null}
                             verticalAlignContent="top"
                             width={12}
                           >
                             <GridColumn
+                              id={null}
                               verticalAlign="top"
                               width={12}
                             >
                               <div
                                 className="top aligned twelve wide column"
+                                id={null}
                               >
                                 <div>
                                   <Paragraph
@@ -690,16 +693,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -717,18 +723,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -751,16 +760,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -778,18 +790,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 30€
                               </div>
@@ -812,16 +827,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -839,18 +857,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -873,16 +894,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -900,18 +924,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -962,15 +989,18 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           className="left aligned row"
                         >
                           <GridColumn
+                            id={null}
                             verticalAlignContent="top"
                             width={12}
                           >
                             <GridColumn
+                              id={null}
                               verticalAlign="top"
                               width={12}
                             >
                               <div
                                 className="top aligned twelve wide column"
+                                id={null}
                               >
                                 <div>
                                   <Paragraph
@@ -1048,16 +1078,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -1075,18 +1108,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 10€
                               </div>
@@ -1109,16 +1145,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -1136,18 +1175,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 20€
                               </div>
@@ -1170,16 +1212,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -1197,18 +1242,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 30€
                               </div>
@@ -1231,16 +1279,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -1258,18 +1309,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -1320,15 +1374,18 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           className="left aligned row"
                         >
                           <GridColumn
+                            id={null}
                             verticalAlignContent="top"
                             width={12}
                           >
                             <GridColumn
+                              id={null}
                               verticalAlign="top"
                               width={12}
                             >
                               <div
                                 className="top aligned twelve wide column"
+                                id={null}
                               >
                                 <div>
                                   <Paragraph
@@ -1406,16 +1463,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -1433,18 +1493,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -1467,16 +1530,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -1494,18 +1560,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 30€
                               </div>
@@ -1528,16 +1597,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -1555,18 +1627,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 20€
                               </div>
@@ -1589,16 +1664,19 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -1616,18 +1694,21 @@ exports[`<Rates /> by default should have the right structure 1`] = `
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 10€
                               </div>
@@ -4899,15 +4980,18 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           className="left aligned row"
                         >
                           <GridColumn
+                            id={null}
                             verticalAlignContent="top"
                             width={12}
                           >
                             <GridColumn
+                              id={null}
                               verticalAlign="top"
                               width={12}
                             >
                               <div
                                 className="top aligned twelve wide column"
+                                id={null}
                               >
                                 <div>
                                   <Paragraph
@@ -4985,16 +5069,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5012,18 +5099,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -5046,16 +5136,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5073,18 +5166,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 30€
                               </div>
@@ -5107,16 +5203,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5134,18 +5233,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -5168,16 +5270,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5195,18 +5300,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -5257,15 +5365,18 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           className="left aligned row"
                         >
                           <GridColumn
+                            id={null}
                             verticalAlignContent="top"
                             width={12}
                           >
                             <GridColumn
+                              id={null}
                               verticalAlign="top"
                               width={12}
                             >
                               <div
                                 className="top aligned twelve wide column"
+                                id={null}
                               >
                                 <div>
                                   <Paragraph
@@ -5343,16 +5454,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5370,18 +5484,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 10€
                               </div>
@@ -5404,16 +5521,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5431,18 +5551,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 20€
                               </div>
@@ -5465,16 +5588,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5492,18 +5618,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 30€
                               </div>
@@ -5526,16 +5655,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5553,18 +5685,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -5615,15 +5750,18 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           className="left aligned row"
                         >
                           <GridColumn
+                            id={null}
                             verticalAlignContent="top"
                             width={12}
                           >
                             <GridColumn
+                              id={null}
                               verticalAlign="top"
                               width={12}
                             >
                               <div
                                 className="top aligned twelve wide column"
+                                id={null}
                               >
                                 <div>
                                   <Paragraph
@@ -5701,16 +5839,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5728,18 +5869,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 40€
                               </div>
@@ -5762,16 +5906,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5789,18 +5936,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 30€
                               </div>
@@ -5823,16 +5973,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5850,18 +6003,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 20€
                               </div>
@@ -5884,16 +6040,19 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                         >
                           <GridColumn
                             floated="left"
+                            id={null}
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="left"
+                              id={null}
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="left floated top aligned column"
+                                id={null}
                               >
                                 <Paragraph
                                   isCompact={false}
@@ -5911,18 +6070,21 @@ exports[`<Rates /> if \`props.roomTypes\` is passed should have the right struct
                           </GridColumn>
                           <GridColumn
                             floated="right"
+                            id={null}
                             textAlign="right"
                             verticalAlignContent="top"
                             width={null}
                           >
                             <GridColumn
                               floated="right"
+                              id={null}
                               textAlign="right"
                               verticalAlign="top"
                               width={null}
                             >
                               <div
                                 className="right aligned right floated top aligned column"
+                                id={null}
                               >
                                 10€
                               </div>

@@ -8,6 +8,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
   isStackable={false}
 >
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -47,6 +48,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
     }
   />
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -68,6 +70,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
     />
   </GridColumn>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -76,6 +79,7 @@ exports[`<Description /> if \`props.descriptionText\` is HTML should have the co
     </Subheading>
   </GridColumn>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -123,6 +127,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
   isStackable={false}
 >
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -162,6 +167,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
     }
   />
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -177,6 +183,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
     />
   </GridColumn>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -185,6 +192,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with few
     </Subheading>
   </GridColumn>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -232,6 +240,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
   isStackable={false}
 >
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -271,6 +280,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
     }
   />
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -290,6 +300,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
     />
   </GridColumn>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -298,6 +309,7 @@ exports[`<Description /> if \`props.descriptionText\` is a plain string with mor
     </Subheading>
   </GridColumn>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -345,6 +357,7 @@ exports[`<Description /> if \`props.homeHighlights\` is empty should not render 
   isStackable={false}
 >
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -394,6 +407,7 @@ exports[`<Description /> if \`props.mainCharacteristics\` is empty should not re
   isStackable={false}
 >
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -411,6 +425,7 @@ exports[`<Description /> if \`props.mainCharacteristics\` is empty should not re
     </Heading>
   </GridColumn>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -419,6 +434,7 @@ exports[`<Description /> if \`props.mainCharacteristics\` is empty should not re
     </Subheading>
   </GridColumn>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -466,6 +482,7 @@ exports[`<Description /> should have the correct structure 1`] = `
   isStackable={false}
 >
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -505,6 +522,7 @@ exports[`<Description /> should have the correct structure 1`] = `
     }
   />
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >
@@ -513,6 +531,7 @@ exports[`<Description /> should have the correct structure 1`] = `
     </Subheading>
   </GridColumn>
   <GridColumn
+    id={null}
     verticalAlignContent="top"
     width={12}
   >

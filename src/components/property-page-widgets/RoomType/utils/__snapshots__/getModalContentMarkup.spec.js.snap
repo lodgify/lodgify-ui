@@ -265,15 +265,18 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
           className="ui grid"
         >
           <GridColumn
+            id={null}
             verticalAlignContent="top"
             width={null}
           >
             <GridColumn
+              id={null}
               verticalAlign="top"
               width={null}
             >
               <div
                 className="top aligned column"
+                id={null}
               >
                 <HTML
                   htmlString="yoyo description"
@@ -371,15 +374,18 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
           className="ui grid"
         >
           <GridColumn
+            id={null}
             verticalAlignContent="bottom"
             width={12}
           >
             <GridColumn
+              id={null}
               verticalAlign="bottom"
               width={12}
             >
               <div
                 className="bottom aligned twelve wide column"
+                id={null}
               >
                 <Paragraph
                   isCompact={false}
@@ -798,15 +804,18 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                   className="left aligned row"
                 >
                   <GridColumn
+                    id={null}
                     verticalAlignContent="top"
                     width={12}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={12}
                     >
                       <div
                         className="top aligned twelve wide column"
+                        id={null}
                       >
                         <Heading
                           className={null}
@@ -832,16 +841,19 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                     </GridColumn>
                   </GridColumn>
                   <GridColumn
+                    id={null}
                     key="Cooking0"
                     verticalAlignContent="top"
                     width={null}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={null}
                     >
                       <div
                         className="top aligned column"
+                        id={null}
                       >
                         <Icon
                           className={null}
@@ -899,16 +911,19 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                     </GridColumn>
                   </GridColumn>
                   <GridColumn
+                    id={null}
                     key="Bathroom & Laundry1"
                     verticalAlignContent="top"
                     width={null}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={null}
                     >
                       <div
                         className="top aligned column"
+                        id={null}
                       >
                         <Icon
                           className={null}
@@ -984,15 +999,18 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
           className="ui grid"
         >
           <GridColumn
+            id={null}
             verticalAlignContent="bottom"
             width={12}
           >
             <GridColumn
+              id={null}
               verticalAlign="bottom"
               width={12}
             >
               <div
                 className="bottom aligned twelve wide column"
+                id={null}
               >
                 <Paragraph
                   isCompact={false}
@@ -1306,15 +1324,18 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
           className="ui grid"
         >
           <GridColumn
+            id={null}
             verticalAlignContent="top"
             width={null}
           >
             <GridColumn
+              id={null}
               verticalAlign="top"
               width={null}
             >
               <div
                 className="top aligned column"
+                id={null}
               >
                 <HTML
                   htmlString="yoyo description"
@@ -1458,15 +1479,18 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
                   className="left aligned row"
                 >
                   <GridColumn
+                    id={null}
                     verticalAlignContent="top"
                     width={12}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={12}
                     >
                       <div
                         className="top aligned twelve wide column"
+                        id={null}
                       >
                         <Heading
                           className={null}
@@ -1492,16 +1516,19 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
                     </GridColumn>
                   </GridColumn>
                   <GridColumn
+                    id={null}
                     key="Cooking0"
                     verticalAlignContent="top"
                     width={null}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={null}
                     >
                       <div
                         className="top aligned column"
+                        id={null}
                       >
                         <Icon
                           className={null}
@@ -1559,16 +1586,19 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
                     </GridColumn>
                   </GridColumn>
                   <GridColumn
+                    id={null}
                     key="Bathroom & Laundry1"
                     verticalAlignContent="top"
                     width={null}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={null}
                     >
                       <div
                         className="top aligned column"
+                        id={null}
                       >
                         <Icon
                           className={null}
@@ -1644,15 +1674,18 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
           className="ui grid"
         >
           <GridColumn
+            id={null}
             verticalAlignContent="bottom"
             width={12}
           >
             <GridColumn
+              id={null}
               verticalAlign="bottom"
               width={12}
             >
               <div
                 className="bottom aligned twelve wide column"
+                id={null}
               >
                 <Paragraph
                   isCompact={false}
@@ -1797,15 +1830,18 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
           className="ui grid"
         >
           <GridColumn
+            id={null}
             verticalAlignContent="top"
             width={null}
           >
             <GridColumn
+              id={null}
               verticalAlign="top"
               width={null}
             >
               <div
                 className="top aligned column"
+                id={null}
               >
                 <HTML
                   htmlString="yoyo description"
@@ -1949,15 +1985,18 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                   className="left aligned row"
                 >
                   <GridColumn
+                    id={null}
                     verticalAlignContent="top"
                     width={12}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={12}
                     >
                       <div
                         className="top aligned twelve wide column"
+                        id={null}
                       >
                         <Heading
                           className={null}
@@ -1983,16 +2022,19 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                     </GridColumn>
                   </GridColumn>
                   <GridColumn
+                    id={null}
                     key="Cooking0"
                     verticalAlignContent="top"
                     width={null}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={null}
                     >
                       <div
                         className="top aligned column"
+                        id={null}
                       >
                         <Icon
                           className={null}
@@ -2050,16 +2092,19 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                     </GridColumn>
                   </GridColumn>
                   <GridColumn
+                    id={null}
                     key="Bathroom & Laundry1"
                     verticalAlignContent="top"
                     width={null}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={null}
                     >
                       <div
                         className="top aligned column"
+                        id={null}
                       >
                         <Icon
                           className={null}
@@ -2135,15 +2180,18 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
           className="ui grid"
         >
           <GridColumn
+            id={null}
             verticalAlignContent="bottom"
             width={12}
           >
             <GridColumn
+              id={null}
               verticalAlign="bottom"
               width={12}
             >
               <div
                 className="bottom aligned twelve wide column"
+                id={null}
               >
                 <Paragraph
                   isCompact={false}
@@ -2435,15 +2483,18 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
           className="ui grid"
         >
           <GridColumn
+            id={null}
             verticalAlignContent="top"
             width={null}
           >
             <GridColumn
+              id={null}
               verticalAlign="top"
               width={null}
             >
               <div
                 className="top aligned column"
+                id={null}
               >
                 <HTML
                   htmlString="yoyo description"
@@ -2587,15 +2638,18 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                   className="left aligned row"
                 >
                   <GridColumn
+                    id={null}
                     verticalAlignContent="top"
                     width={12}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={12}
                     >
                       <div
                         className="top aligned twelve wide column"
+                        id={null}
                       >
                         <Heading
                           className={null}
@@ -2621,16 +2675,19 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                     </GridColumn>
                   </GridColumn>
                   <GridColumn
+                    id={null}
                     key="Cooking0"
                     verticalAlignContent="top"
                     width={null}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={null}
                     >
                       <div
                         className="top aligned column"
+                        id={null}
                       >
                         <Icon
                           className={null}
@@ -2688,16 +2745,19 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                     </GridColumn>
                   </GridColumn>
                   <GridColumn
+                    id={null}
                     key="Bathroom & Laundry1"
                     verticalAlignContent="top"
                     width={null}
                   >
                     <GridColumn
+                      id={null}
                       verticalAlign="top"
                       width={null}
                     >
                       <div
                         className="top aligned column"
+                        id={null}
                       >
                         <Icon
                           className={null}
@@ -2773,15 +2833,18 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
           className="ui grid"
         >
           <GridColumn
+            id={null}
             verticalAlignContent="bottom"
             width={12}
           >
             <GridColumn
+              id={null}
               verticalAlign="bottom"
               width={12}
             >
               <div
                 className="bottom aligned twelve wide column"
+                id={null}
               >
                 <Paragraph
                   isCompact={false}

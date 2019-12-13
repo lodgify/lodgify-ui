@@ -53,15 +53,18 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
         id={null}
       >
         <GridColumn
+          id={null}
           verticalAlignContent="top"
           width={12}
         >
           <GridColumn
+            id={null}
             verticalAlign="top"
             width={12}
           >
             <div
               className="top aligned twelve wide column"
+              id={null}
             >
               <Heading
                 className={null}
@@ -109,6 +112,7 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
           <GridColumn
             className="show-on-tablet show-on-computer show-on-widescreen"
             computer={6}
+            id={null}
             tablet={12}
             verticalAlignContent="top"
             width={null}
@@ -116,12 +120,14 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
             <GridColumn
               className="show-on-tablet show-on-computer show-on-widescreen"
               computer={6}
+              id={null}
               tablet={12}
               verticalAlign="top"
               width={null}
             >
               <div
                 className="top aligned six wide computer twelve wide tablet column show-on-tablet show-on-computer show-on-widescreen"
+                id={null}
               >
                 <LabelGroup>
                   <div
@@ -434,15 +440,18 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
           </GridColumn>
         </ShowOn>
         <GridColumn
+          id={null}
           verticalAlignContent="top"
           width={12}
         >
           <GridColumn
+            id={null}
             verticalAlign="top"
             width={12}
           >
             <div
               className="top aligned twelve wide column"
+              id={null}
             >
               <GoogleMap
                 apiKey="AIzaSyB83oLNUmqes7wBlxqQ7yQbXuF-K5faJb4"
@@ -498,16 +507,19 @@ exports[`<Location /> the \`Child\` of the \`Location\` component should have th
         >
           <GridColumn
             className="show-on-mobile"
+            id={null}
             verticalAlignContent="top"
             width={12}
           >
             <GridColumn
               className="show-on-mobile"
+              id={null}
               verticalAlign="top"
               width={12}
             >
               <div
                 className="top aligned twelve wide column show-on-mobile"
+                id={null}
               >
                 <Divider
                   className=""

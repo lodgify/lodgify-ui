@@ -48,6 +48,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                   <GridColumn
                     className="content-section"
                     computer={9}
+                    id={null}
                     mobile={12}
                     tablet={9}
                     verticalAlignContent="top"
@@ -56,6 +57,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                     <GridColumn
                       className="content-section"
                       computer={9}
+                      id={null}
                       mobile={12}
                       tablet={9}
                       verticalAlign="top"
@@ -63,6 +65,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                     >
                       <div
                         className="top aligned nine wide computer twelve wide mobile nine wide tablet column content-section"
+                        id={null}
                       >
                         <withLazyLoad(ResponsiveImage)
                           imageUrl="testimage"
@@ -161,17 +164,20 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                                       className="left aligned row book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                     >
                                       <GridColumn
+                                        id={null}
                                         textAlign="center"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
+                                          id={null}
                                           textAlign="center"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
                                             className="center aligned top aligned twelve wide column"
+                                            id={null}
                                           >
                                             <Button
                                               hasShadow={false}
@@ -254,6 +260,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                   <GridColumn
                     className="discount-section"
                     computer={3}
+                    id={null}
                     mobile={12}
                     tablet={3}
                     textAlign="center"
@@ -264,6 +271,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                     <GridColumn
                       className="discount-section"
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={3}
                       textAlign="center"
@@ -272,6 +280,7 @@ exports[`The \`Promotion\` component if \`backgroundImageUrl\` prop is passed sh
                     >
                       <div
                         className="center aligned top aligned three wide computer twelve wide mobile three wide tablet column discount-section"
+                        id={null}
                       >
                         <Statistic
                           size="small"
@@ -395,6 +404,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                   <GridColumn
                     className="content-section"
                     computer={9}
+                    id={null}
                     mobile={12}
                     tablet={9}
                     verticalAlignContent="top"
@@ -403,6 +413,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                     <GridColumn
                       className="content-section"
                       computer={9}
+                      id={null}
                       mobile={12}
                       tablet={9}
                       verticalAlign="top"
@@ -410,6 +421,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                     >
                       <div
                         className="top aligned nine wide computer twelve wide mobile nine wide tablet column content-section"
+                        id={null}
                       >
                         <Grid
                           areColumnsCentered={false}
@@ -463,17 +475,20 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                       className="left aligned row book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                     >
                                       <GridColumn
+                                        id={null}
                                         textAlign="center"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
+                                          id={null}
                                           textAlign="center"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
                                             className="center aligned top aligned twelve wide column"
+                                            id={null}
                                           >
                                             <Button
                                               hasShadow={false}
@@ -574,18 +589,21 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                     >
                                       <GridColumn
                                         floated="right"
+                                        id={null}
                                         textAlign="center"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
                                           floated="right"
+                                          id={null}
                                           textAlign="center"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
                                             className="center aligned right floated top aligned twelve wide column"
+                                            id={null}
                                           >
                                             <div>
                                               <Paragraph
@@ -700,18 +718,21 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                                     >
                                       <GridColumn
                                         floated="right"
+                                        id={null}
                                         textAlign="right"
                                         verticalAlignContent="top"
                                         width={6}
                                       >
                                         <GridColumn
                                           floated="right"
+                                          id={null}
                                           textAlign="right"
                                           verticalAlign="top"
                                           width={6}
                                         >
                                           <div
                                             className="right aligned right floated top aligned six wide column"
+                                            id={null}
                                           >
                                             <div>
                                               <Paragraph
@@ -807,6 +828,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                   <GridColumn
                     className="discount-section"
                     computer={3}
+                    id={null}
                     mobile={12}
                     tablet={3}
                     textAlign="center"
@@ -817,6 +839,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                     <GridColumn
                       className="discount-section"
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={3}
                       textAlign="center"
@@ -825,6 +848,7 @@ exports[`The \`Promotion\` component if \`discountCode\` prop is passed should h
                     >
                       <div
                         className="center aligned top aligned three wide computer twelve wide mobile three wide tablet column discount-section"
+                        id={null}
                       >
                         <Statistic
                           size="small"
@@ -948,6 +972,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                   <GridColumn
                     className="content-section"
                     computer={9}
+                    id={null}
                     mobile={12}
                     tablet={9}
                     verticalAlignContent="top"
@@ -956,6 +981,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                     <GridColumn
                       className="content-section"
                       computer={9}
+                      id={null}
                       mobile={12}
                       tablet={9}
                       verticalAlign="top"
@@ -963,6 +989,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                     >
                       <div
                         className="top aligned nine wide computer twelve wide mobile nine wide tablet column content-section"
+                        id={null}
                       >
                         <Grid
                           areColumnsCentered={false}
@@ -1003,18 +1030,21 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                                     >
                                       <GridColumn
                                         className="show-on-tablet show-on-computer show-on-widescreen"
+                                        id={null}
                                         textAlign="left"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
                                           className="show-on-tablet show-on-computer show-on-widescreen"
+                                          id={null}
                                           textAlign="left"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
                                             className="left aligned top aligned twelve wide column show-on-tablet show-on-computer show-on-widescreen"
+                                            id={null}
                                           >
                                             <Heading
                                               className={null}
@@ -1055,18 +1085,21 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                                     >
                                       <GridColumn
                                         className="show-on-mobile"
+                                        id={null}
                                         textAlign="center"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
                                           className="show-on-mobile"
+                                          id={null}
                                           textAlign="center"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
                                             className="center aligned top aligned twelve wide column show-on-mobile"
+                                            id={null}
                                           >
                                             <Heading
                                               className={null}
@@ -1119,17 +1152,20 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                                       className="left aligned row book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                     >
                                       <GridColumn
+                                        id={null}
                                         textAlign="center"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
+                                          id={null}
                                           textAlign="center"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
                                             className="center aligned top aligned twelve wide column"
+                                            id={null}
                                           >
                                             <Button
                                               hasShadow={false}
@@ -1212,6 +1248,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                   <GridColumn
                     className="discount-section"
                     computer={3}
+                    id={null}
                     mobile={12}
                     tablet={3}
                     textAlign="center"
@@ -1222,6 +1259,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                     <GridColumn
                       className="discount-section"
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={3}
                       textAlign="center"
@@ -1230,6 +1268,7 @@ exports[`The \`Promotion\` component if \`headingText\` prop is passed should ha
                     >
                       <div
                         className="center aligned top aligned three wide computer twelve wide mobile three wide tablet column discount-section"
+                        id={null}
                       >
                         <Statistic
                           size="small"
@@ -1352,6 +1391,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                   <GridColumn
                     className="content-section"
                     computer={9}
+                    id={null}
                     mobile={12}
                     tablet={9}
                     verticalAlignContent="top"
@@ -1360,6 +1400,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                     <GridColumn
                       className="content-section"
                       computer={9}
+                      id={null}
                       mobile={12}
                       tablet={9}
                       verticalAlign="top"
@@ -1367,6 +1408,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                     >
                       <div
                         className="top aligned nine wide computer twelve wide mobile nine wide tablet column content-section"
+                        id={null}
                       >
                         <Grid
                           areColumnsCentered={false}
@@ -1420,17 +1462,20 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                                       className="left aligned row book-now-button-container show-on-tablet show-on-computer show-on-widescreen"
                                     >
                                       <GridColumn
+                                        id={null}
                                         textAlign="center"
                                         verticalAlignContent="top"
                                         width={12}
                                       >
                                         <GridColumn
+                                          id={null}
                                           textAlign="center"
                                           verticalAlign="top"
                                           width={12}
                                         >
                                           <div
                                             className="center aligned top aligned twelve wide column"
+                                            id={null}
                                           >
                                             <Button
                                               hasShadow={false}
@@ -1513,6 +1558,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                   <GridColumn
                     className="discount-section"
                     computer={3}
+                    id={null}
                     mobile={12}
                     tablet={3}
                     textAlign="center"
@@ -1523,6 +1569,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                     <GridColumn
                       className="discount-section"
                       computer={3}
+                      id={null}
                       mobile={12}
                       tablet={3}
                       textAlign="center"
@@ -1531,6 +1578,7 @@ exports[`The \`Promotion\` component should have the right structure 1`] = `
                     >
                       <div
                         className="center aligned top aligned three wide computer twelve wide mobile three wide tablet column discount-section"
+                        id={null}
                       >
                         <Statistic
                           size="small"

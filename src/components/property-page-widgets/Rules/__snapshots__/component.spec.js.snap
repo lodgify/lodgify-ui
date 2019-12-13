@@ -21,15 +21,18 @@ exports[`<Rules /> by default should render the right structure 1`] = `
         className="ui stackable grid"
       >
         <GridColumn
+          id={null}
           verticalAlignContent="top"
           width={12}
         >
           <GridColumn
+            id={null}
             verticalAlign="top"
             width={12}
           >
             <div
               className="top aligned twelve wide column"
+              id={null}
             >
               <Heading
                 className={null}
@@ -56,18 +59,21 @@ exports[`<Rules /> by default should render the right structure 1`] = `
         </GridColumn>
         <GridColumn
           computer={9}
+          id={null}
           tablet={7}
           verticalAlignContent="top"
           width={null}
         >
           <GridColumn
             computer={9}
+            id={null}
             tablet={7}
             verticalAlign="top"
             width={null}
           >
             <div
               className="top aligned nine wide computer seven wide tablet column"
+              id={null}
             >
               <Icon
                 className={null}
@@ -198,15 +204,18 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
         className="ui stackable grid"
       >
         <GridColumn
+          id={null}
           verticalAlignContent="top"
           width={12}
         >
           <GridColumn
+            id={null}
             verticalAlign="top"
             width={12}
           >
             <div
               className="top aligned twelve wide column"
+              id={null}
             >
               <Heading
                 className={null}
@@ -233,18 +242,21 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
         </GridColumn>
         <GridColumn
           computer={3}
+          id={null}
           tablet={5}
           verticalAlignContent="top"
           width={null}
         >
           <GridColumn
             computer={3}
+            id={null}
             tablet={5}
             verticalAlign="top"
             width={null}
           >
             <div
               className="top aligned three wide computer five wide tablet column"
+              id={null}
             >
               <List
                 items={
@@ -323,18 +335,21 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
         </GridColumn>
         <GridColumn
           computer={9}
+          id={null}
           tablet={7}
           verticalAlignContent="top"
           width={null}
         >
           <GridColumn
             computer={9}
+            id={null}
             tablet={7}
             verticalAlign="top"
             width={null}
           >
             <div
               className="top aligned nine wide computer seven wide tablet column"
+              id={null}
             >
               <Icon
                 className={null}

@@ -39,15 +39,18 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyRules\` is passed shoul
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -85,15 +88,18 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyRules\` is passed shoul
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={6}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={6}
                 >
                   <div
                     className="top aligned six wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -178,15 +184,18 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositRules\` is passed should hav
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -224,15 +233,18 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositRules\` is passed should hav
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -321,15 +333,18 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -367,15 +382,18 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Modal
                       className={null}
@@ -580,15 +598,18 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -626,15 +647,18 @@ exports[`<PolicyAndNotes /> if \`props.notesText\` is passed should have the rig
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -728,15 +752,18 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should h
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -774,15 +801,18 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should h
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={6}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={6}
                 >
                   <div
                     className="top aligned six wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
@@ -875,15 +905,18 @@ exports[`<PolicyAndNotes /> should have the right structure 1`] = `
               className="left aligned row"
             >
               <GridColumn
+                id={null}
                 verticalAlignContent="top"
                 width={12}
               >
                 <GridColumn
+                  id={null}
                   verticalAlign="top"
                   width={12}
                 >
                   <div
                     className="top aligned twelve wide column"
+                    id={null}
                   >
                     <Heading
                       className={null}
