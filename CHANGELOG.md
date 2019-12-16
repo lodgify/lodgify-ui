@@ -1,3 +1,11 @@
+## [1.275.1](https://github.com/lodgify/lodgify-ui/compare/v1.275.0...v1.275.1) (2019-12-16)
+
+
+### Bug Fixes
+
+* **Rating:** fix linter for overrides ([e536ebe](https://github.com/lodgify/lodgify-ui/commit/e536ebe24b592f781f6a6f218a5d7ba0f47adc93))
+* **Rating:** stars will have always the same system font ([62ed2f3](https://github.com/lodgify/lodgify-ui/commit/62ed2f396e8add4d71159aaa0b872271379f1b51))
+
 # [1.275.0](https://github.com/lodgify/lodgify-ui/compare/v1.274.0...v1.275.0) (2019-12-13)
 
 
