@@ -6,6 +6,7 @@
   margin-left: @marginLeft;
   font-family: "Courier New", Courier, monospace;
   font-size: 1rem;
+
   /*-------------------
           Types
   --------------------*/
@@ -14,6 +15,7 @@
   .icon {
     outline-width: 0;
     font-family: "Courier New", Courier, monospace;
+
     &:before {
       font-family: "Courier New", Courier, monospace;
       content: "\2605";
