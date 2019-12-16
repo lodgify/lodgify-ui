@@ -4,7 +4,8 @@
 
 .ui.rating {
   margin-left: @marginLeft;
-
+  font-family: "Courier New", Courier, monospace;
+  font-size: 1rem;
   /*-------------------
           Types
   --------------------*/
@@ -12,9 +13,10 @@
   /* Standard */
   .icon {
     outline-width: 0;
-
+    font-family: "Courier New", Courier, monospace;
     &:before {
-      content: '\2605';
+      font-family: "Courier New", Courier, monospace;
+      content: "\2605";
     }
   }
 
