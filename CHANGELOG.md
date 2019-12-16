@@ -1,3 +1,10 @@
+# [1.276.0](https://github.com/lodgify/lodgify-ui/compare/v1.275.1...v1.276.0) (2019-12-16)
+
+
+### Features
+
+* **SlideshowHero:** adjust the height according to the specification ([9ce5a87](https://github.com/lodgify/lodgify-ui/commit/9ce5a8779c403a51876597f3b12f929bd465373b))
+
 ## [1.275.1](https://github.com/lodgify/lodgify-ui/compare/v1.275.0...v1.275.1) (2019-12-16)
 
 
