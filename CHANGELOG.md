@@ -1,3 +1,10 @@
+## [1.276.1](https://github.com/lodgify/lodgify-ui/compare/v1.276.0...v1.276.1) (2019-12-17)
+
+
+### Bug Fixes
+
+* **CounterDropdown:** add text ellipsis ([301dfaa](https://github.com/lodgify/lodgify-ui/commit/301dfaa4338765a535df84ec19ed867f7c9f4672))
+
 # [1.276.0](https://github.com/lodgify/lodgify-ui/compare/v1.275.1...v1.276.0) (2019-12-16)
 
 
