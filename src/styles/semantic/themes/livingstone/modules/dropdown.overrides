@@ -183,6 +183,15 @@
       display: flex;
       align-items: center;
 
+      > span {
+        white-space: nowrap;
+        width: inherit;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        margin-right: @counterDropdownEllipsisMarginRight;
+        padding-bottom: @counterDropdownCharacterTail;
+      }
+
       .icon {
         margin: 0;
         padding: 0;

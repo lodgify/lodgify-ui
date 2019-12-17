@@ -8,6 +8,11 @@ import { GUESTS } from 'utils/default-strings';
 import { Counter } from 'inputs/Counter';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { FlexContainer } from 'layout/FlexContainer';
+import { testidFactory } from 'utils/testid';
+
+const TEST_ID_PREFIX = 'counter-dropdown';
+
+const testid = testidFactory(TEST_ID_PREFIX);
 
 /**
  * A counter dropdown allows a user to select a value from a counter input.
@@ -36,6 +41,7 @@ export const Component = ({
           />
         </FlexContainer>
       }
+      data-testid={testid()}
       on="click"
       onClose={() => setIsOpen(false)}
       onOpen={() => setIsOpen(true)}
@@ -58,7 +64,7 @@ export const Component = ({
               }
             )}
           >
-            {dropdownLabel}
+            <span>{dropdownLabel}</span>
             <Icon name={ICON_NAMES.CARET_DOWN}></Icon>
           </div>
         </div>
