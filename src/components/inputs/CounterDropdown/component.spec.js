@@ -2,7 +2,11 @@ import React from 'react';
 import { mount } from 'enzyme';
 import { Popup } from 'semantic-ui-react';
 
+import { testidSelectorFactory } from 'utils/testid';
+
 import { Component as CounterDropdown } from './component';
+
+const testid = testidSelectorFactory('counter-dropdown');
 
 const props = {
   counterLabel: 'counterLabel',
@@ -16,14 +20,16 @@ describe('CounterDropdown', () => {
   it('should render the right structure', () => {
     const wrapper = getShallowCounterDropdown();
 
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.find(testid())).toHaveLength(1);
   });
 
   describe('if `props.willOpenAbove` is true', () => {
     it('should render the right structure', () => {
       const wrapper = getShallowCounterDropdown({ willOpenAbove: true });
 
-      expect(wrapper).toMatchSnapshot();
+      const position = wrapper.find(testid()).props().position;
+
+      expect(position).toBe('top left');
     });
   });
 

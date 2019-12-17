@@ -884,6 +884,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       />
                     </FlexContainer>
                   }
+                  data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
                   offset={0}
@@ -902,7 +903,9 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                       <div
                         className="ui selection dropdown counter-dropdown-trigger"
                       >
-                        Guests
+                        <span>
+                          Guests
+                        </span>
                         <Icon
                           className={null}
                           color={null}
@@ -941,7 +944,9 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                         <div
                           className="ui selection dropdown counter-dropdown-trigger"
                         >
-                          Guests
+                          <span>
+                            Guests
+                          </span>
                           <Icon
                             className={null}
                             color={null}
@@ -969,7 +974,9 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           <div
                             class="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <i
                               class="icon"
                             >
@@ -1005,7 +1012,9 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                           <div
                             className="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <Icon
                               className={null}
                               color={null}
@@ -2073,6 +2082,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 />
                               </FlexContainer>
                             }
+                            data-testid="counter-dropdown"
                             disabled={false}
                             eventsEnabled={true}
                             offset={0}
@@ -2091,7 +2101,9 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                 <div
                                   className="ui selection dropdown counter-dropdown-trigger"
                                 >
-                                  Guests
+                                  <span>
+                                    Guests
+                                  </span>
                                   <Icon
                                     className={null}
                                     color={null}
@@ -2130,7 +2142,9 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                   <div
                                     className="ui selection dropdown counter-dropdown-trigger"
                                   >
-                                    Guests
+                                    <span>
+                                      Guests
+                                    </span>
                                     <Icon
                                       className={null}
                                       color={null}
@@ -2158,7 +2172,9 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     <div
                                       class="ui selection dropdown counter-dropdown-trigger"
                                     >
-                                      Guests
+                                      <span>
+                                        Guests
+                                      </span>
                                       <i
                                         class="icon"
                                       >
@@ -2194,7 +2210,9 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                                     <div
                                       className="ui selection dropdown counter-dropdown-trigger"
                                     >
-                                      Guests
+                                      <span>
+                                        Guests
+                                      </span>
                                       <Icon
                                         className={null}
                                         color={null}
@@ -3603,6 +3621,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       />
                     </FlexContainer>
                   }
+                  data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
                   offset={0}
@@ -3621,7 +3640,9 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                       <div
                         className="ui selection dropdown counter-dropdown-trigger"
                       >
-                        Guests
+                        <span>
+                          Guests
+                        </span>
                         <Icon
                           className={null}
                           color={null}
@@ -3660,7 +3681,9 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                         <div
                           className="ui selection dropdown counter-dropdown-trigger"
                         >
-                          Guests
+                          <span>
+                            Guests
+                          </span>
                           <Icon
                             className={null}
                             color={null}
@@ -3688,7 +3711,9 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           <div
                             class="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <i
                               class="icon"
                             >
@@ -3724,7 +3749,9 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                           <div
                             className="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <Icon
                               className={null}
                               color={null}
@@ -4774,6 +4801,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       />
                     </FlexContainer>
                   }
+                  data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
                   offset={0}
@@ -4792,7 +4820,9 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                       <div
                         className="ui selection dropdown counter-dropdown-trigger"
                       >
-                        Guests
+                        <span>
+                          Guests
+                        </span>
                         <Icon
                           className={null}
                           color={null}
@@ -4831,7 +4861,9 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                         <div
                           className="ui selection dropdown counter-dropdown-trigger"
                         >
-                          Guests
+                          <span>
+                            Guests
+                          </span>
                           <Icon
                             className={null}
                             color={null}
@@ -4859,7 +4891,9 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           <div
                             class="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <i
                               class="icon"
                             >
@@ -4895,7 +4929,9 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                           <div
                             className="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <Icon
                               className={null}
                               color={null}
@@ -5395,6 +5431,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       />
                     </FlexContainer>
                   }
+                  data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
                   offset={0}
@@ -5413,7 +5450,9 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                       <div
                         className="ui selection dropdown counter-dropdown-trigger"
                       >
-                        Guests
+                        <span>
+                          Guests
+                        </span>
                         <Icon
                           className={null}
                           color={null}
@@ -5452,7 +5491,9 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                         <div
                           className="ui selection dropdown counter-dropdown-trigger"
                         >
-                          Guests
+                          <span>
+                            Guests
+                          </span>
                           <Icon
                             className={null}
                             color={null}
@@ -5480,7 +5521,9 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           <div
                             class="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <i
                               class="icon"
                             >
@@ -5516,7 +5559,9 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                           <div
                             className="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <Icon
                               className={null}
                               color={null}
@@ -6530,6 +6575,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       />
                     </FlexContainer>
                   }
+                  data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
                   offset={0}
@@ -6548,7 +6594,9 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                       <div
                         className="ui selection dropdown counter-dropdown-trigger"
                       >
-                        Guests
+                        <span>
+                          Guests
+                        </span>
                         <Icon
                           className={null}
                           color={null}
@@ -6587,7 +6635,9 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                         <div
                           className="ui selection dropdown counter-dropdown-trigger"
                         >
-                          Guests
+                          <span>
+                            Guests
+                          </span>
                           <Icon
                             className={null}
                             color={null}
@@ -6615,7 +6665,9 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           <div
                             class="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <i
                               class="icon"
                             >
@@ -6651,7 +6703,9 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                           <div
                             className="ui selection dropdown counter-dropdown-trigger"
                           >
-                            Guests
+                            <span>
+                              Guests
+                            </span>
                             <Icon
                               className={null}
                               color={null}

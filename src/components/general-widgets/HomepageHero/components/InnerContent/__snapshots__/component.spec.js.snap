@@ -767,6 +767,7 @@ exports[`InnerContent should render the right structure 1`] = `
                                                 />
                                               </FlexContainer>
                                             }
+                                            data-testid="counter-dropdown"
                                             disabled={false}
                                             eventsEnabled={true}
                                             offset={0}
@@ -785,7 +786,9 @@ exports[`InnerContent should render the right structure 1`] = `
                                                 <div
                                                   className="ui selection dropdown counter-dropdown-trigger"
                                                 >
-                                                  Guests
+                                                  <span>
+                                                    Guests
+                                                  </span>
                                                   <Icon
                                                     className={null}
                                                     color={null}
@@ -824,7 +827,9 @@ exports[`InnerContent should render the right structure 1`] = `
                                                   <div
                                                     className="ui selection dropdown counter-dropdown-trigger"
                                                   >
-                                                    Guests
+                                                    <span>
+                                                      Guests
+                                                    </span>
                                                     <Icon
                                                       className={null}
                                                       color={null}
@@ -852,7 +857,9 @@ exports[`InnerContent should render the right structure 1`] = `
                                                     <div
                                                       class="ui selection dropdown counter-dropdown-trigger"
                                                     >
-                                                      Guests
+                                                      <span>
+                                                        Guests
+                                                      </span>
                                                       <i
                                                         class="icon"
                                                       >
@@ -888,7 +895,9 @@ exports[`InnerContent should render the right structure 1`] = `
                                                     <div
                                                       className="ui selection dropdown counter-dropdown-trigger"
                                                     >
-                                                      Guests
+                                                      <span>
+                                                        Guests
+                                                      </span>
                                                       <Icon
                                                         className={null}
                                                         color={null}

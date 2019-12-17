@@ -504,6 +504,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         />
                                       </FlexContainer>
                                     }
+                                    data-testid="counter-dropdown"
                                     disabled={false}
                                     eventsEnabled={true}
                                     offset={0}
@@ -522,7 +523,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         <div
                                           className="ui selection dropdown counter-dropdown-trigger"
                                         >
-                                          Guests
+                                          <span>
+                                            Guests
+                                          </span>
                                           <Icon
                                             className={null}
                                             color={null}
@@ -561,7 +564,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                           <div
                                             className="ui selection dropdown counter-dropdown-trigger"
                                           >
-                                            Guests
+                                            <span>
+                                              Guests
+                                            </span>
                                             <Icon
                                               className={null}
                                               color={null}
@@ -589,7 +594,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             <div
                                               class="ui selection dropdown counter-dropdown-trigger"
                                             >
-                                              Guests
+                                              <span>
+                                                Guests
+                                              </span>
                                               <i
                                                 class="icon"
                                               >
@@ -625,7 +632,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             <div
                                               className="ui selection dropdown counter-dropdown-trigger"
                                             >
-                                              Guests
+                                              <span>
+                                                Guests
+                                              </span>
                                               <Icon
                                                 className={null}
                                                 color={null}
@@ -1432,6 +1441,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         />
                                       </FlexContainer>
                                     }
+                                    data-testid="counter-dropdown"
                                     disabled={false}
                                     eventsEnabled={true}
                                     offset={0}
@@ -1450,7 +1460,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                         <div
                                           className="ui selection dropdown counter-dropdown-trigger"
                                         >
-                                          Guests
+                                          <span>
+                                            Guests
+                                          </span>
                                           <Icon
                                             className={null}
                                             color={null}
@@ -1489,7 +1501,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                           <div
                                             className="ui selection dropdown counter-dropdown-trigger"
                                           >
-                                            Guests
+                                            <span>
+                                              Guests
+                                            </span>
                                             <Icon
                                               className={null}
                                               color={null}
@@ -1517,7 +1531,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             <div
                                               class="ui selection dropdown counter-dropdown-trigger"
                                             >
-                                              Guests
+                                              <span>
+                                                Guests
+                                              </span>
                                               <i
                                                 class="icon"
                                               >
@@ -1553,7 +1569,9 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                                             <div
                                               className="ui selection dropdown counter-dropdown-trigger"
                                             >
-                                              Guests
+                                              <span>
+                                                Guests
+                                              </span>
                                               <Icon
                                                 className={null}
                                                 color={null}
@@ -2641,6 +2659,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         />
                                       </FlexContainer>
                                     }
+                                    data-testid="counter-dropdown"
                                     disabled={false}
                                     eventsEnabled={true}
                                     offset={0}
@@ -2659,7 +2678,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         <div
                                           className="ui selection dropdown counter-dropdown-trigger"
                                         >
-                                          Guests
+                                          <span>
+                                            Guests
+                                          </span>
                                           <Icon
                                             className={null}
                                             color={null}
@@ -2698,7 +2719,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                           <div
                                             className="ui selection dropdown counter-dropdown-trigger"
                                           >
-                                            Guests
+                                            <span>
+                                              Guests
+                                            </span>
                                             <Icon
                                               className={null}
                                               color={null}
@@ -2726,7 +2749,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             <div
                                               class="ui selection dropdown counter-dropdown-trigger"
                                             >
-                                              Guests
+                                              <span>
+                                                Guests
+                                              </span>
                                               <i
                                                 class="icon"
                                               >
@@ -2762,7 +2787,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             <div
                                               className="ui selection dropdown counter-dropdown-trigger"
                                             >
-                                              Guests
+                                              <span>
+                                                Guests
+                                              </span>
                                               <Icon
                                                 className={null}
                                                 color={null}
@@ -3735,6 +3762,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         />
                                       </FlexContainer>
                                     }
+                                    data-testid="counter-dropdown"
                                     disabled={false}
                                     eventsEnabled={true}
                                     offset={0}
@@ -3753,7 +3781,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                         <div
                                           className="ui selection dropdown counter-dropdown-trigger"
                                         >
-                                          Guests
+                                          <span>
+                                            Guests
+                                          </span>
                                           <Icon
                                             className={null}
                                             color={null}
@@ -3792,7 +3822,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                           <div
                                             className="ui selection dropdown counter-dropdown-trigger"
                                           >
-                                            Guests
+                                            <span>
+                                              Guests
+                                            </span>
                                             <Icon
                                               className={null}
                                               color={null}
@@ -3820,7 +3852,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             <div
                                               class="ui selection dropdown counter-dropdown-trigger"
                                             >
-                                              Guests
+                                              <span>
+                                                Guests
+                                              </span>
                                               <i
                                                 class="icon"
                                               >
@@ -3856,7 +3890,9 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                                             <div
                                               className="ui selection dropdown counter-dropdown-trigger"
                                             >
-                                              Guests
+                                              <span>
+                                                Guests
+                                              </span>
                                               <Icon
                                                 className={null}
                                                 color={null}
