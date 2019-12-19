@@ -1,0 +1,19 @@
+/*----------------------
+    Horizontal Menu
+-----------------------*/
+
+@horizontalMenuBoxShadowY: 0 1px 0 0 #D8D8D8;
+@horizontalMenuHeight: 68px;
+@horizontalMenuItemHeight: 65px;
+@horizontalMenuWrapperHeight: 98px;
+@horizontalMenuWrapperScrollBarHeight: 10px;
+
+@horizontalMenuArrowGradientLeft: linear-gradient(270deg, rgba(0,0,0,0) 0%, @white 100%);
+@horizontalMenuArrowGradientRight: linear-gradient(90deg, rgba(0,0,0,0) 0%, @white 100%);
+@horizontalMenuArrowGradientZIndex: 2;
+@horizontalMenuArrowWidth: 25px;
+
+@horizontalMenuActiveBorderHeight: 3px;
+@horizontalMenuActiveItemTransition: all ease-in-out 0.7s;
+@horizontalMenuActiveColor: @black;
+@horizontalMenuInactiveColor: @greyEight;

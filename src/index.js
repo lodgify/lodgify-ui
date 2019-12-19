@@ -6,6 +6,7 @@ export { Footer } from './components/collections/Footer';
 export { Form } from './components/collections/Form';
 export { Header } from './components/collections/Header';
 export { Hero } from './components/collections/Hero';
+export { HorizontalMenu } from './components/collections/HorizontalMenu';
 export { InputGroup } from './components/collections/InputGroup';
 export { TextInputSegment } from './components/collections/TextInputSegment';
 export { ToggleInputSegment } from './components/collections/ToggleInputSegment';
