@@ -51,29 +51,5 @@ act(() => {
         expect(scrollIntoViewMock).toHaveBeenCalled();
       });
     });
-
-    describe('Interaction: `arrow-left` onClick', () => {
-      let wrapper = getStickyHeader();
-
-      let trigger = wrapper.find(testid('arrow-left'));
-      let menu = wrapper.find(testid('menu'));
-
-      trigger.simulate('click');
-      wrapper.update();
-
-      expect(menu.getDOMNode().scrollLeft).toBe(-1000);
-    });
-
-    describe('Interaction: `arrow-right` onClick', () => {
-      let wrapper = getStickyHeader();
-
-      let trigger = wrapper.find(testid('arrow-right'));
-      let menu = wrapper.find(testid('menu'));
-
-      trigger.simulate('click');
-      wrapper.update();
-
-      expect(menu.getDOMNode().scrollLeft).toBe(1000);
-    });
   });
 });

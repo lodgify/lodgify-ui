@@ -1,5 +1,6 @@
 import React, { useRef, useEffect } from 'react';
 import { string, arrayOf, shape, func, bool } from 'prop-types';
+import classnames from 'classnames';
 import { Menu } from 'semantic-ui-react';
 
 import { Link } from 'elements/Link';
@@ -12,7 +13,7 @@ const TEST_ID_PREFIX = 'horizontalMenu';
 
 const testid = testidFactory(TEST_ID_PREFIX);
 
-export const Component = ({ items, onItemClick }) => {
+export const Component = ({ items, onItemClick, className }) => {
   const menuRef = useRef();
 
   /* istanbul ignore next */
@@ -39,7 +40,10 @@ export const Component = ({ items, onItemClick }) => {
   };
 
   return (
-    <nav className="horizontal-menu" data-testid={testid()}>
+    <nav
+      className={classnames('horizontal-menu', className)}
+      data-testid={testid()}
+    >
       <div
         className="arrow left"
         data-testid={testid('arrow-left')}
@@ -87,9 +91,11 @@ Component.displayName = 'HorizontalMenu';
 Component.defaultProps = {
   items: [],
   onItemClick: undefined,
+  className: '',
 };
 
 Component.propTypes = {
+  className: string,
   items: arrayOf(
     shape({
       id: string,
