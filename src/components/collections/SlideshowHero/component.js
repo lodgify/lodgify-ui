@@ -20,67 +20,67 @@ export const Component = ({
   searchBarProps,
   slideshowProps,
 }) => (
-  <FlexContainer>
-    <div className="slideshow-hero">
-      <Header {...headerProps} />
-      <div className="slideshow-content-container">
-        <Slideshow
-          {...slideshowProps}
-          isFluid
-          isShowingBulletNavigation={false}
-        />
-        <div className="content-container">
-          <ShowOn
-            computer
-            parent={Heading}
-            parentProps={{
-              isColorInverted: true,
-              size: 'huge',
-              textAlign: 'center',
-            }}
-            tablet
-            widescreen
-          >
-            {headingText}
-          </ShowOn>
-          <ShowOn
-            mobile
-            parent={Heading}
-            parentProps={{
-              isColorInverted: true,
-              size: 'large',
-              textAlign: 'center',
-            }}
-          >
-            {headingText}
-          </ShowOn>
-          <Grid areColumnsCentered>
-            <GridRow horizontalAlignContent="center">
-              <ShowOn
-                computer
-                parent={SearchBar}
-                parentProps={{
-                  ...searchBarProps,
-                  willLocationDropdownOpenAbove: true,
-                  isCalendarIconDisplayed: false,
-                }}
-                tablet
-                widescreen
-              />
-              <ShowOn mobile>
-                <SearchBar
-                  {...searchBarProps}
-                  isCalendarIconDisplayed={false}
-                  isDisplayedAsModal
+    <FlexContainer>
+      <div className="slideshow-hero">
+        <Header {...headerProps} />
+        <div className="slideshow-content-container">
+          <Slideshow
+            {...slideshowProps}
+            isFluid
+            isShowingBulletNavigation={false}
+          />
+          <div className="content-container">
+            <ShowOn
+              computer
+              parent={Heading}
+              parentProps={{
+                isColorInverted: true,
+                size: 'huge',
+                textAlign: 'center',
+              }}
+              tablet
+              widescreen
+            >
+              {headingText}
+            </ShowOn>
+            <ShowOn
+              mobile
+              parent={Heading}
+              parentProps={{
+                isColorInverted: true,
+                size: 'large',
+                textAlign: 'center',
+              }}
+            >
+              {headingText}
+            </ShowOn>
+            <Grid areColumnsCentered>
+              <GridRow horizontalAlignContent="center">
+                <ShowOn
+                  computer
+                  parent={SearchBar}
+                  parentProps={{
+                    ...searchBarProps,
+                    willLocationDropdownOpenAbove: true,
+                    isCalendarIconDisplayed: false,
+                  }}
+                  tablet
+                  widescreen
                 />
-              </ShowOn>
-            </GridRow>
-          </Grid>
+                <ShowOn mobile>
+                  <SearchBar
+                    {...searchBarProps}
+                    isCalendarIconDisplayed={false}
+                    isDisplayedAsModal
+                  />
+                </ShowOn>
+              </GridRow>
+            </Grid>
+          </div>
         </div>
       </div>
-    </div>
-  </FlexContainer>
-);
+    </FlexContainer>
+  );
 
 Component.displayName = 'SlideshowHero';
 
@@ -93,11 +93,11 @@ Component.defaultProps = {
 
 Component.propTypes = {
   /** @see See [the `Header` component for valid props](#/Collections/Header).  */
-  headerProps: shape(Header.propTypes),
+  headerProps: Header,
   /** The text for the heading displayed in the middle of the hero. */
   headingText: string,
   /** @see See [the `SearchBar` component for valid props](#/General%20widgets/SearchBar).  */
-  searchBarProps: shape(SearchBar.propTypes),
+  searchBarProps: SearchBar,
   /** @see See [the `Slideshow` component for valid props](#/Media/Slideshow). */
-  slideshowProps: shape(Slideshow.propTypes),
+  slideshowProps: Slideshow,
 };

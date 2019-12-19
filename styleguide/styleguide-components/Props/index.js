@@ -1,0 +1,1 @@
+export { PropsRenderer as default } from './component';

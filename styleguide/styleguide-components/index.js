@@ -6,4 +6,5 @@ module.exports = {
   PlaygroundRenderer: path.join(__dirname, 'PlaygroundRenderer'),
   SectionHeadingRenderer: path.join(__dirname, 'SectionHeadingRenderer'),
   StyleGuideRenderer: path.join(__dirname, 'StyleGuideRenderer'),
+  PropsRenderer: path.join(__dirname, `Props`),
 };
