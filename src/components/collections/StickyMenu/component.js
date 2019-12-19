@@ -43,7 +43,7 @@ export const Component = ({ stickyMenuItems }) => {
     () =>
       stickyMenuItems.map(item => ({
         ...item,
-        active: item.text === activeItemOnScroll || item.text === activeItem,
+        isActive: item.text === activeItemOnScroll || item.text === activeItem,
       })),
     [activeItemOnScroll, activeItem, stickyMenuItems.length]
   );

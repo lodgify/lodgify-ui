@@ -59,11 +59,11 @@ export const Component = ({ items, onItemClick, className }) => {
           ref={menuRef}
         >
           {items.map((item, index) => {
-            const { id, link, text, active } = item;
+            const { id, link, text, isActive } = item;
 
             return (
               <Menu.Item
-                active={active}
+                active={isActive}
                 data-testid={testid(`menu-item-${index}`)}
                 href={link}
                 key={`menu-item-${index}-${id || ''}`}
@@ -95,14 +95,21 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** The custom classes. */
   className: string,
+  /** The items of the menu. */
   items: arrayOf(
     shape({
+      /** Id of the item to identify it. */
       id: string,
+      /** The link triggered by clicking the Item. */
       link: string,
+      /** The text written in the menu for the Item. */
       text: string.isRequired,
-      active: bool,
+      /** The flag that indicate if the element is active or not. */
+      isActive: bool,
     })
   ),
+  /** The Callback execute when an Item is clicked */
   onItemClick: func,
 };

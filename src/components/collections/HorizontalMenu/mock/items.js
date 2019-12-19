@@ -2,7 +2,7 @@ export const items = [
   {
     text: 'availability',
     link: '#availability',
-    active: true,
+    isActive: true,
   },
   {
     text: 'rates',
@@ -14,22 +14,22 @@ export const items = [
   },
   {
     text: 'description',
-    link: '#description',
+    link: '#link',
   },
   {
-    text: 'description',
-    link: '#description',
+    text: 'other stuff',
+    link: '#link',
   },
   {
-    text: 'description',
-    link: '#description',
+    text: 'almost the last one',
+    link: '#link',
   },
   {
-    text: 'description',
-    link: '#description',
+    text: 'not the last one',
+    link: '#link',
   },
   {
-    text: 'description',
-    link: '#description',
+    text: 'last',
+    link: '#link',
   },
 ];
