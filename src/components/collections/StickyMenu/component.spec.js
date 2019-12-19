@@ -10,7 +10,7 @@ import { menuItems } from './mock-data/mock-data';
 const testid = testidSelectorFactory('stickyMenu');
 const getStickyHeader = (items = menuItems) =>
   mount(<StickyMenu stickyMenuItems={items} />);
-const location = '#availability';
+const link = '#availability';
 
 document.body.innerHTML = `<div id="availability"></div>`;
 
@@ -40,14 +40,14 @@ act(() => {
 
         const trigger = wrapper.find('MenuItem').at(0);
 
-        trigger.simulate('click', location, {
+        trigger.simulate('click', link, {
           data: {
-            name: location,
+            name: link,
           },
         });
         wrapper.update();
 
-        expect(global.location.href.includes(location)).toBe(true);
+        expect(global.location.href.includes(link)).toBe(true);
         expect(scrollIntoViewMock).toHaveBeenCalled();
       });
     });

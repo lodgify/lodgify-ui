@@ -3,8 +3,8 @@
  * @return {Object[]}
  */
 export const getComponentTopCoordinates = menuItems => {
-  const coordinates = menuItems.map(({ text, location }) => {
-    const currentItem = document.querySelector(location);
+  const coordinates = menuItems.map(({ text, link }) => {
+    const currentItem = document.querySelector(link);
 
     if (currentItem !== null) {
       return {

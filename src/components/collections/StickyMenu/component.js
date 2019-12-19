@@ -37,12 +37,12 @@ export const Component = ({ stickyMenuItems }) => {
     0
   );
 
-  const scrollToComponentOnMenuClick = (location, text) => {
-    document.querySelector(location).scrollIntoView({
+  const scrollToComponentOnMenuClick = (link, text) => {
+    document.querySelector(link).scrollIntoView({
       behavior: 'smooth',
     });
 
-    window.history.pushState('', '', location);
+    window.history.pushState('', '', link);
 
     setActiveItem(text);
   };
@@ -77,13 +77,13 @@ export const Component = ({ stickyMenuItems }) => {
         ref={menuComponent}
       >
         <Menu>
-          {stickyMenuItems.map(({ text, location }, index) => (
+          {stickyMenuItems.map(({ text, link }, index) => (
             <Menu.Item
               active={activeItem === text || activeItemOnScroll === text}
               key={buildKeyFromStrings(text, index)}
               name={text}
               onClick={(event, data) =>
-                scrollToComponentOnMenuClick(location, data.name)
+                scrollToComponentOnMenuClick(link, data.name)
               }
             >
               <Link>{text}</Link>
@@ -114,8 +114,8 @@ Component.propTypes = {
   /** The sticky menu items to display. */
   stickyMenuItems: PropTypes.arrayOf(
     PropTypes.shape({
-      /** The location reference to be set as href. */
-      location: PropTypes.string.isRequired,
+      /** The link reference to be set as href. */
+      link: PropTypes.string.isRequired,
       /** The text displayed as a menu item. */
       text: PropTypes.string.isRequired,
     })
