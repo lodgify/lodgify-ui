@@ -1,3 +1,10 @@
+## [1.276.2](https://github.com/lodgify/lodgify-ui/compare/v1.276.1...v1.276.2) (2019-12-19)
+
+
+### Bug Fixes
+
+* **StickyMenu:** change items shape ([db6c8ba](https://github.com/lodgify/lodgify-ui/commit/db6c8bacee023c2bc0f9412c0ce52c0e161efc05))
+
 ## [1.276.1](https://github.com/lodgify/lodgify-ui/compare/v1.276.0...v1.276.1) (2019-12-17)
 
 
