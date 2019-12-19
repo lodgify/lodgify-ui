@@ -1,20 +1,20 @@
 export const menuItems = [
   {
     text: 'availability',
-    location: '#availability',
+    link: '#availability',
     active: true,
   },
   {
     text: 'rates',
-    location: '#rates',
+    link: '#rates',
   },
   {
     text: 'reviews',
-    location: '#reviews',
+    link: '#reviews',
   },
   {
     text: 'description',
-    location: '#description',
+    link: '#description',
   },
 ];
 
