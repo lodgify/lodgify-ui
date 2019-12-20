@@ -7,7 +7,7 @@
 @horizontalMenuItemHeight: 65px;
 @horizontalMenuWrapperHeight: 98px;
 @horizontalMenuWrapperScrollBarHeight: 10px;
-
+@horizontalMenuWrapperBackgroundColor: #fff;
 @horizontalMenuArrowGradientLeft: linear-gradient(270deg, rgba(0,0,0,0) 0%, @white 100%);
 @horizontalMenuArrowGradientRight: linear-gradient(90deg, rgba(0,0,0,0) 0%, @white 100%);
 @horizontalMenuArrowGradientZIndex: 2;
