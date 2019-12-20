@@ -1,3 +1,17 @@
+# [1.277.0](https://github.com/lodgify/lodgify-ui/compare/v1.276.2...v1.277.0) (2019-12-20)
+
+
+### Bug Fixes
+
+* **horizontal-menu:** use variables instead of value ([fe886ca](https://github.com/lodgify/lodgify-ui/commit/fe886ca1d5bc6f7b697ddbf71e361769f865e87c))
+* **HorizontalMenu:** add comments for props ([5eb1725](https://github.com/lodgify/lodgify-ui/commit/5eb1725eb60470e035460a76e7dfa054cc3f32b3))
+
+
+### Features
+
+* **HorizontalMenu:** create a generic horizontal menu ([f8fca60](https://github.com/lodgify/lodgify-ui/commit/f8fca60d5ca339a07437d67b8d0ac19cb7a2662e))
+* **StickyMenu:** use HorizontalMenu ([3ef4605](https://github.com/lodgify/lodgify-ui/commit/3ef4605da641d00da8a441956defc3ef50536047))
+
 ## [1.276.2](https://github.com/lodgify/lodgify-ui/compare/v1.276.1...v1.276.2) (2019-12-19)
 
 
