@@ -397,6 +397,23 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                   >
                     <Modal
                       className={null}
+                      closeIcon={
+                        <Icon
+                          className={null}
+                          color={null}
+                          hasBorder={false}
+                          isButton={false}
+                          isCircular={false}
+                          isColorInverted={false}
+                          isDisabled={false}
+                          isLabelLeft={false}
+                          labelText={null}
+                          labelWeight={null}
+                          name="close"
+                          path={null}
+                          size={null}
+                        />
+                      }
                       hasCloseIcon={true}
                       hasPadding={true}
                       hasRoundedCorners={false}

@@ -24,6 +24,23 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
       Object {
         "text": <Modal
           className={null}
+          closeIcon={
+            <Icon
+              className={null}
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="close"
+              path={null}
+              size={null}
+            />
+          }
           hasCloseIcon={true}
           hasPadding={false}
           hasRoundedCorners={false}
@@ -320,6 +337,23 @@ exports[`<OwnerLogin /> if \`props.errorMessage\` is passed should render the er
                         >
                           <Modal
                             className={null}
+                            closeIcon={
+                              <Icon
+                                className={null}
+                                color={null}
+                                hasBorder={false}
+                                isButton={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="close"
+                                path={null}
+                                size={null}
+                              />
+                            }
                             hasCloseIcon={true}
                             hasPadding={false}
                             hasRoundedCorners={false}
@@ -505,6 +539,23 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
       Object {
         "text": <Modal
           className={null}
+          closeIcon={
+            <Icon
+              className={null}
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="close"
+              path={null}
+              size={null}
+            />
+          }
           hasCloseIcon={true}
           hasPadding={false}
           hasRoundedCorners={false}
@@ -801,6 +852,23 @@ exports[`<OwnerLogin /> if \`props.successMessage\` is passed should render the 
                         >
                           <Modal
                             className={null}
+                            closeIcon={
+                              <Icon
+                                className={null}
+                                color={null}
+                                hasBorder={false}
+                                isButton={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="close"
+                                path={null}
+                                size={null}
+                              />
+                            }
                             hasCloseIcon={true}
                             hasPadding={false}
                             hasRoundedCorners={false}
@@ -986,6 +1054,23 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
       Object {
         "text": <Modal
           className={null}
+          closeIcon={
+            <Icon
+              className={null}
+              color={null}
+              hasBorder={false}
+              isButton={false}
+              isCircular={false}
+              isColorInverted={false}
+              isDisabled={false}
+              isLabelLeft={false}
+              labelText={null}
+              labelWeight={null}
+              name="close"
+              path={null}
+              size={null}
+            />
+          }
           hasCloseIcon={true}
           hasPadding={false}
           hasRoundedCorners={false}
@@ -1264,6 +1349,23 @@ exports[`<OwnerLogin /> should render the correct structure 1`] = `
                         >
                           <Modal
                             className={null}
+                            closeIcon={
+                              <Icon
+                                className={null}
+                                color={null}
+                                hasBorder={false}
+                                isButton={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="close"
+                                path={null}
+                                size={null}
+                              />
+                            }
                             hasCloseIcon={true}
                             hasPadding={false}
                             hasRoundedCorners={false}

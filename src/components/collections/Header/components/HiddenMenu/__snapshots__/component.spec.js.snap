@@ -57,6 +57,23 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
     >
       <Modal
         className={null}
+        closeIcon={
+          <Icon
+            className={null}
+            color={null}
+            hasBorder={false}
+            isButton={false}
+            isCircular={false}
+            isColorInverted={false}
+            isDisabled={false}
+            isLabelLeft={false}
+            labelText={null}
+            labelWeight={null}
+            name="close"
+            path={null}
+            size={null}
+          />
+        }
         hasCloseIcon={true}
         hasPadding={false}
         hasRoundedCorners={false}
