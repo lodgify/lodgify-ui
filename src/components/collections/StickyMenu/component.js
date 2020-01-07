@@ -12,7 +12,7 @@ const TEST_ID_PREFIX = 'stickyMenu';
 
 const testid = testidFactory(TEST_ID_PREFIX);
 
-export const Component = ({ stickyMenuItems }) => {
+export const Component = ({ stickyMenuItems, isHeader }) => {
   const [activeItem, setActiveItem] = useState('');
 
   useEffect(() => {
@@ -39,6 +39,7 @@ export const Component = ({ stickyMenuItems }) => {
 
     setActiveItem(text);
   };
+
   const items = useMemo(
     () =>
       stickyMenuItems.map(item => ({
@@ -52,6 +53,7 @@ export const Component = ({ stickyMenuItems }) => {
     <HorizontalMenu
       className="sticky-menu"
       data-testid={testid()}
+      isHeader={isHeader}
       items={items}
       onItemClick={scrollToComponentOnMenuClick}
     />
@@ -61,10 +63,13 @@ export const Component = ({ stickyMenuItems }) => {
 Component.displayName = 'StickyMenu';
 
 Component.defaultProps = {
+  isHeader: false,
   stickyMenuItems: [],
 };
 
 Component.propTypes = {
+  /** Is the component displaying as a header. */
+  isHeader: PropTypes.bool,
   /** The sticky menu items to display. */
   stickyMenuItems: PropTypes.arrayOf(
     PropTypes.shape({
