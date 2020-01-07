@@ -18,16 +18,57 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  height: @horizontalMenuHeight;
+
+  &.is-header {
+    max-height: unset;
+
+    .ui.container {
+      position: absolute;
+      overflow: hidden;
+      height: @horizontalMenuHeight;
+      padding: @contactHeaderMenuContainerHorizontalPadding;
+    }
+  }
+
+  &.is-overflowed {
+    overflow: visible;
+
+    .ui.container {
+      height: @horizontalMenuContainerHeight;
+
+    .ui.menu {
+      .menu-wrapper {
+        height: @horizontalMenuWrapperSubmenuWrapperHeight;
+
+        .menu.transition {
+          max-height: @horizontalMenuWrapperSubmenuMenuHeight;
+        }
+      }
+    }
+  }
+  }
+
   .ui.menu {
     margin: 0;
     padding: 0;
     border: none;
-    .item {
-      padding-top: 0;
-      padding-bottom: 0;
-      height: @horizontalMenuItemHeight;
+    box-shadow: none;
+
+    .menu-wrapper {
+
+      > .item {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: @horizontalMenuItemHeight;
+
+        &.simple {
+          margin: 0 !important;
+        }
+      }
     }
   }
+
   .menu-wrapper {
     position: relative;
     display: flex;
@@ -41,7 +82,7 @@
       position: relative;
       z-index: 3;
       flex-shrink: 0;
-      height: 100%;
+      height: @horizontalMenuHeight;
       width: @horizontalMenuArrowWidth;
       background: @horizontalMenuWrapperBackgroundColor;
     }
@@ -53,11 +94,18 @@
     top: 0;
     bottom: 0;
     width: @horizontalMenuArrowWidth;
-    background: white;
+    height: @horizontalMenuHeight;
+    background: @white;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    opacity: 0;
+
+    &.is-active {
+      opacity: 1;
+    }
+
     &.left {
       left: 0;
     }
@@ -98,7 +146,6 @@
       width: 100%;
       left: 0;
       bottom: 0;
-      transition: @horizontalMenuActiveItemTransition;
     }
 
     &.active {
@@ -108,7 +155,6 @@
 
       &:after {
         opacity: 1;
-        transition: @horizontalMenuActiveItemTransition;
       }
     }
 
