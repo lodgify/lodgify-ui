@@ -6,7 +6,7 @@
 @horizontalMenuHeight: 58px;
 @horizontalMenuItemHeight: 58px;
 @horizontalMenuContainerHeight: 240px;
-@contactHeaderMenuContainerHorizontalPadding: 0 25px;
+@contactHeaderMenuContainerHorizontalPadding: 0 1.563em;
 @horizontalMenuWrapperSubmenuWrapperHeight: ~"calc(68px + 288px)";
 @horizontalMenuWrapperSubmenuMenuHeight: 180px;
 

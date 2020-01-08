@@ -2,12 +2,15 @@
     Contact Header
 -----------------------*/
 
-@contactHeaderMenuMargin: 20px;
+@contactHeaderMenuMargin: 1.25em;
 
-@contactHeaderModalPaddingTop: 30px;
-@contactHeaderModalIconPaddingTop: 35px;
+@contactHeaderModalPaddingTop: 1.875em;
+@contactHeaderModalIconPaddingTop: 2.188em;
 
-@contactHeaderModalIconTextMarginRight: 5px;
+@contactHeaderModalIconTextMarginRight: 0.313em;
 @contactHeaderModalIconSize: 1.11em;
 
-@contactHeaderVerticalMenuItemPaddingTop: 15px;
+@contactModalHeaderHeight: 82px;
+@contactModalContentHeight: ~"calc(100% - @{contactModalHeaderHeight})";
+
+@contactHeaderVerticalMenuItemPaddingTop: 0.938em;
