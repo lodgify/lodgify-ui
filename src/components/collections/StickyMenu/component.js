@@ -19,25 +19,30 @@ export const Component = ({ stickyMenuItems, isHeader }) => {
     if (stickyMenuItems.length > 0) {
       setActiveItem(stickyMenuItems[0].text);
     }
-  }, [stickyMenuItems.length]);
+
+    if (activeItemOnScroll) {
+      setActiveItem(activeItemOnScroll);
+    }
+  });
 
   const activeItemOnScroll = useScroll(
     /* istanbul ignore next */
     () => {
-      setActiveItem('');
       return getActiveOnScroll(stickyMenuItems);
     },
     0
   );
 
-  const scrollToComponentOnMenuClick = ({ link, text }) => {
+  const scrollToComponentOnMenuClick = ({ link, text }, event) => {
+    event.preventDefault();
+
+    setActiveItem(text);
+
     document.querySelector(link).scrollIntoView({
       behavior: 'smooth',
     });
 
     window.history.pushState('', '', link);
-
-    setActiveItem(text);
   };
 
   const items = useMemo(
