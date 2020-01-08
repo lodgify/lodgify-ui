@@ -19,6 +19,7 @@ const testid = testidFactory(TEST_ID_PREFIX);
 
 export const Component = ({ items, isHeader, onItemClick, className }) => {
   const menuRef = useRef();
+  const subMenuRef = useRef();
 
   const [isOverflowed, setIsOverflowed] = useState(false);
   const [isArrowLeftActive, setIsArrowLeftActive] = useState(true);
@@ -46,28 +47,26 @@ export const Component = ({ items, isHeader, onItemClick, className }) => {
   useEffect(() => {
     getDisplayedArrows();
 
-    const subMenu = document.querySelector('.horizontal-menu .ui.item.simple');
+    const setOverflow = isOverflowed =>
+      debounce(setIsOverflowed(isOverflowed), 150);
 
     if (menuRef.current) {
-      const setOverflow = isOverflowed =>
-        debounce(setIsOverflowed(isOverflowed), 150);
-
       menuRef.current.addEventListener('wheel', () => getDisplayedArrows());
 
-      if (subMenu) {
-        subMenu.addEventListener('mouseover', () => {
+      if (subMenuRef.current) {
+        subMenuRef.current.addEventListener('mouseover', () => {
           setOverflow(true);
         });
 
-        subMenu.addEventListener('mouseout', () => {
+        subMenuRef.current.addEventListener('mouseout', () => {
           setOverflow(false);
         });
       }
 
       return () => {
-        if (subMenu) {
-          subMenu.removeEventListener('mouseover', setOverflow);
-          subMenu.removeEventListener('mouseout', setOverflow);
+        if (subMenuRef.current) {
+          subMenuRef.current.removeEventListener('mouseover', setOverflow);
+          subMenuRef.current.removeEventListener('mouseout', setOverflow);
         }
         menuRef.current.removeEventListener('wheel', getDisplayedArrows);
       };
@@ -90,20 +89,20 @@ export const Component = ({ items, isHeader, onItemClick, className }) => {
       })}
       data-testid={testid()}
     >
-      <div
-        className={classnames('arrow left', {
-          'is-active': isArrowLeftActive,
-        })}
-        data-testid={testid('arrow-left')}
-        onClick={() => {
-          scrollTo(true);
-        }}
-        role="button"
-      >
-        <ShowOn computer={isHeader} mobile tablet widescreen={isHeader}>
+      <ShowOn computer={isHeader} mobile tablet widescreen={isHeader}>
+        <div
+          className={classnames('arrow left', {
+            'is-active': isArrowLeftActive,
+          })}
+          data-testid={testid('arrow-left')}
+          onClick={() => {
+            scrollTo(true);
+          }}
+          role="button"
+        >
           <Icon name="chevron left" />
-        </ShowOn>
-      </div>
+        </div>
+      </ShowOn>
       <HorizontalGutters>
         <Menu data-testid={testid('menu')}>
           <div
@@ -115,16 +114,21 @@ export const Component = ({ items, isHeader, onItemClick, className }) => {
               const { id, link, text, isActive, subItems } = item;
 
               return size(subItems) > 0 ? (
-                <Submenu
-                  isMenuItem
-                  isSimple
-                  isTriggerUnderlined={index === isActive}
-                  isTriggeredOnHover
-                  items={subItems}
+                <div
+                  className="item"
                   key={buildKeyFromStrings(text, index)}
+                  ref={subMenuRef}
                 >
-                  {text}
-                </Submenu>
+                  <Submenu
+                    isMenuItem
+                    isSimple
+                    isTriggerUnderlined={index === isActive}
+                    isTriggeredOnHover
+                    items={subItems}
+                  >
+                    {text}
+                  </Submenu>
+                </div>
               ) : (
                 <Menu.Item
                   active={isActive}
