@@ -14,6 +14,7 @@ import { HorizontalGutters } from 'layout/HorizontalGutters';
 export const Component = ({
   children,
   className,
+  closeIcon,
   hasCloseIcon,
   hasPadding,
   hasRoundedCorners,
@@ -29,7 +30,7 @@ export const Component = ({
       'has-padding': hasPadding,
       'has-rounded-corners': hasRoundedCorners,
     })}
-    closeIcon={hasCloseIcon && <Icon name={ICON_NAMES.CLOSE} />}
+    closeIcon={hasCloseIcon && closeIcon}
     dimmer="inverted"
     onClose={onClose}
     open={isOpen}
@@ -48,6 +49,7 @@ export const Component = ({
 Component.displayName = 'Modal';
 
 Component.defaultProps = {
+  closeIcon: <Icon name={ICON_NAMES.CLOSE} />,
   className: null,
   header: null,
   hasCloseIcon: true,
@@ -63,8 +65,10 @@ Component.defaultProps = {
 Component.propTypes = {
   /** The content of the modal when displayed. */
   children: PropTypes.node.isRequired,
-  /** Custom className for the Modal. */
+  /** Custom className for the modal. */
   className: PropTypes.string,
+  /** Custom close icon for the modal. */
+  closeIcon: PropTypes.element,
   /** Does the modal have a close icon. */
   hasCloseIcon: PropTypes.bool,
   /** Does the modal have padding around its content. */

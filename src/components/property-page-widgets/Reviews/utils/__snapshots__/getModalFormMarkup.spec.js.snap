@@ -3,6 +3,23 @@
 exports[`getModalFormMarkup if \`isBotProtected\` === true should render the right structure 1`] = `
 <Modal
   className={null}
+  closeIcon={
+    <Icon
+      className={null}
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}
@@ -191,6 +208,23 @@ exports[`getModalFormMarkup if \`isBotProtected\` === true should render the rig
 exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should render the right structure 1`] = `
 <Modal
   className={null}
+  closeIcon={
+    <Icon
+      className={null}
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}
@@ -379,6 +413,23 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
 exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should render the right structure 1`] = `
 <Modal
   className={null}
+  closeIcon={
+    <Icon
+      className={null}
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}
@@ -573,6 +624,23 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
 exports[`getModalFormMarkup should have the right structure with default props 1`] = `
 <Modal
   className={null}
+  closeIcon={
+    <Icon
+      className={null}
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}
@@ -749,6 +817,23 @@ exports[`getModalFormMarkup should have the right structure with default props 1
 exports[`getModalFormMarkup should render the right structure when props are passed 1`] = `
 <Modal
   className={null}
+  closeIcon={
+    <Icon
+      className={null}
+      color={null}
+      hasBorder={false}
+      isButton={false}
+      isCircular={false}
+      isColorInverted={false}
+      isDisabled={false}
+      isLabelLeft={false}
+      labelText={null}
+      labelWeight={null}
+      name="close"
+      path={null}
+      size={null}
+    />
+  }
   hasCloseIcon={true}
   hasPadding={false}
   hasRoundedCorners={false}

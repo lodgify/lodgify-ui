@@ -1,8 +1,12 @@
+jest.mock('../../../hooks/useScroll');
+
 import React from 'react';
 import { act } from 'react-dom/test-utils';
 import { mount } from 'enzyme';
 
 import { testidSelectorFactory } from 'utils/testid';
+
+import { useScroll } from '../../../hooks/useScroll';
 
 import { Component as StickyMenu } from './component';
 import { menuItems } from './mock-data/mock-data';
@@ -31,6 +35,16 @@ act(() => {
 
       it(`should't have any active item`, () => {
         expect(wrapper.find('a.active').length).toBe(0);
+      });
+    });
+
+    describe('when activeItemOnScroll is defined', () => {
+      it(`should set the active item`, () => {
+        useScroll.mockReturnValue('rates');
+
+        const wrapper = getStickyHeader();
+
+        expect(wrapper.find('a.active').length).toBe(1);
       });
     });
 

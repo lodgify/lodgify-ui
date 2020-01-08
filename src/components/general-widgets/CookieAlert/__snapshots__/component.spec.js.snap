@@ -24,6 +24,23 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
 >
   <Modal
     className={null}
+    closeIcon={
+      <Icon
+        className={null}
+        color={null}
+        hasBorder={false}
+        isButton={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="close"
+        path={null}
+        size={null}
+      />
+    }
     hasCloseIcon={false}
     hasPadding={false}
     hasRoundedCorners={true}
@@ -1020,6 +1037,23 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
 >
   <Modal
     className={null}
+    closeIcon={
+      <Icon
+        className={null}
+        color={null}
+        hasBorder={false}
+        isButton={false}
+        isCircular={false}
+        isColorInverted={false}
+        isDisabled={false}
+        isLabelLeft={false}
+        labelText={null}
+        labelWeight={null}
+        name="close"
+        path={null}
+        size={null}
+      />
+    }
     hasCloseIcon={false}
     hasPadding={false}
     hasRoundedCorners={true}

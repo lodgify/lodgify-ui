@@ -5,7 +5,7 @@ import { act } from 'react-dom/test-utils';
 import { testidSelectorFactory } from 'utils/testid';
 
 import { Component } from './component';
-import { items as mockedItems } from './mock/items';
+import { subItems as mockedItems } from './mock/items';
 
 const testid = testidSelectorFactory('horizontalMenu');
 

@@ -810,6 +810,23 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                       >
                         <Modal
                           className={null}
+                          closeIcon={
+                            <Icon
+                              className={null}
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
                           hasCloseIcon={true}
                           hasPadding={true}
                           hasRoundedCorners={false}
@@ -1758,6 +1775,23 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                       >
                         <Modal
                           className={null}
+                          closeIcon={
+                            <Icon
+                              className={null}
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
                           hasCloseIcon={true}
                           hasPadding={true}
                           hasRoundedCorners={false}
@@ -2965,6 +2999,23 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                       >
                         <Modal
                           className={null}
+                          closeIcon={
+                            <Icon
+                              className={null}
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
                           hasCloseIcon={true}
                           hasPadding={true}
                           hasRoundedCorners={false}
@@ -4079,6 +4130,23 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                       >
                         <Modal
                           className={null}
+                          closeIcon={
+                            <Icon
+                              className={null}
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
                           hasCloseIcon={true}
                           hasPadding={true}
                           hasRoundedCorners={false}

@@ -1,0 +1,130 @@
+/*******************************
+            Theme
+*******************************/
+
+@type : 'lodgify-ui-component';
+
+@element : 'contact-header';
+
+@import (multiple) "../../theme.config";
+
+/*--------------------------
+        Contact Header
+--------------------------*/
+
+.contact-header {
+
+  > * {
+    opacity: 1;
+  }
+  
+  .ui.menu {
+    margin-bottom: 0;
+    box-shadow: none;
+    border: none;
+
+    .item {
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  .ui.header {
+    margin: auto;
+  }
+
+  .ui.button {
+    margin-left: auto;
+  }
+
+  .horizontal-menu {
+
+    .menu-wrapper {
+      margin: auto;
+      width: unset;
+
+      .menu-wrapper > a:last-child {
+        margin-right: @contactHeaderMenuMargin;
+      }
+
+      .menu-wrapper > a:first-child {
+        margin-left: @contactHeaderMenuMargin;
+    }
+
+      .ui.item.pointing.dropdown {
+        margin-right: 0 !important;
+      }
+    }
+  }
+
+  .hidden-contact-header {
+
+    .ui.header {
+      margin-left: 0;
+    }
+  }
+}
+
+.ui.modal.hidden-contact-header-modal {
+  display: inline-block;
+
+  .header {
+    border-bottom: none;
+    padding-top: @contactHeaderModalPaddingTop;
+
+    .link.item {
+      text-decoration: none;
+    }
+  }
+
+  .content {
+    height: @contactModalContentHeight;
+  }
+
+   > .icon.has-label {
+    top: 0;
+    padding-top: @contactHeaderModalIconPaddingTop;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+
+    p {
+      margin-right: @contactHeaderModalIconTextMarginRight;
+    }
+
+    svg {
+      height: @contactHeaderModalIconSize;
+      width: @contactHeaderModalIconSize;
+      background: transparent;
+      box-shadow: none;
+
+      path {
+        fill: @black;
+      }
+    }
+  }
+
+  .ui.vertical.menu {
+    margin: 0 !important;
+    box-shadow: none;
+    border: none;
+    max-width: none;
+    width: 100%;
+
+    .item {
+      padding-top: @contactHeaderVerticalMenuItemPaddingTop;
+      border-bottom: none;
+
+      &:before {
+        display: none;
+      }
+
+      &:first-child {
+        padding-top: @contactHeaderVerticalMenuItemPaddingTop;
+      }
+    }
+  }
+}

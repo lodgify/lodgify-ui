@@ -777,6 +777,23 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                     >
                       <Modal
                         className="is-lightbox"
+                        closeIcon={
+                          <Icon
+                            className={null}
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
                         data-testid="gallery"
                         hasCloseIcon={true}
                         hasPadding={false}

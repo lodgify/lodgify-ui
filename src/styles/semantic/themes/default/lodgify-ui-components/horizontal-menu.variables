@@ -3,8 +3,13 @@
 -----------------------*/
 
 @horizontalMenuBoxShadowY: 0 1px 0 0 #D8D8D8;
-@horizontalMenuHeight: 68px;
-@horizontalMenuItemHeight: 65px;
+@horizontalMenuHeight: 58px;
+@horizontalMenuItemHeight: 58px;
+@horizontalMenuContainerHeight: 240px;
+@contactHeaderMenuContainerHorizontalPadding: 0 1.563em;
+@horizontalMenuWrapperSubmenuWrapperHeight: ~"calc(68px + 288px)";
+@horizontalMenuWrapperSubmenuMenuHeight: 180px;
+
 @horizontalMenuWrapperHeight: 98px;
 @horizontalMenuWrapperScrollBarHeight: 10px;
 @horizontalMenuWrapperBackgroundColor: #fff;
@@ -14,6 +19,5 @@
 @horizontalMenuArrowWidth: 25px;
 
 @horizontalMenuActiveBorderHeight: 3px;
-@horizontalMenuActiveItemTransition: all ease-in-out 0.7s;
 @horizontalMenuActiveColor: @black;
 @horizontalMenuInactiveColor: @greyEight;
