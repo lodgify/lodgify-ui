@@ -1,10 +1,19 @@
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
+import {
+  string,
+  arrayOf,
+  shape,
+  oneOfType,
+  bool,
+  number,
+  func,
+} from 'prop-types';
 import { Card } from 'semantic-ui-react';
 
 import {
   VIEW_RATE_INFORMATION_FOR,
   PRICE_PER_EXTRA_PER,
+  RATES_TITLE,
 } from 'utils/default-strings';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Dropdown } from 'inputs/Dropdown';
@@ -38,8 +47,10 @@ export const Component = ({
   roomTypeInputLabel,
   roomTypes,
   roomTypesValue,
+  title,
 }) => (
   <Fragment>
+    <h3>{title}</h3>
     {roomTypes &&
       getRoomTypeDropdownMarkup(
         isShowingPlaceholder,
@@ -126,82 +137,69 @@ Component.defaultProps = {
   roomTypeInputLabel: VIEW_RATE_INFORMATION_FOR,
   roomTypes: null,
   roomTypesValue: undefined,
+  title: RATES_TITLE,
 };
 
 Component.displayName = 'Rates';
 
 Component.propTypes = {
   /** The text to display for the cost per additional guest */
-  costPerExtraGuestLabel: PropTypes.string,
+  costPerExtraGuestLabel: string,
   /** The text to display when no results are returned from the currency dropdown. */
-  currencyNoResultsText: PropTypes.string,
+  currencyNoResultsText: string,
   /** The currency options which the user can select. */
-  currencyOptions: PropTypes.arrayOf(
-    PropTypes.shape({
+  currencyOptions: arrayOf(
+    shape({
       /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
+      text: string.isRequired,
       /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
+      value: oneOfType([bool, number, string]),
     })
   ).isRequired,
   /** The current value of the currency dropdown. */
-  currencyValue: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.number,
-    PropTypes.string,
-  ]),
+  currencyValue: oneOfType([bool, number, string]),
   /** Is the component showing placeholders to reserve space for content which will appear. */
-  isShowingPlaceholder: PropTypes.bool,
+  isShowingPlaceholder: bool,
   /** A function called when the currency type value changes. */
-  onChangeCurrency: PropTypes.func,
+  onChangeCurrency: func,
   /** A function called when the room type value changes. */
-  onChangeRoomType: PropTypes.func,
+  onChangeRoomType: func,
   /** The data that populates the table rows */
-  rateCategories: PropTypes.arrayOf(
-    PropTypes.shape({
+  rateCategories: arrayOf(
+    shape({
       /** The rate category cost per additional guest  */
-      costPerExtraGuest: PropTypes.string,
+      costPerExtraGuest: string,
       /** The date range the rate category applies to */
-      dateRange: PropTypes.string,
+      dateRange: string,
       /** The name of the rate category */
-      name: PropTypes.string.isRequired,
+      name: string.isRequired,
       /** The number of guests the rate category applies to */
-      numberOfGuests: PropTypes.string,
+      numberOfGuests: string,
       /** The rate category rates */
-      rates: PropTypes.arrayOf(PropTypes.string),
+      rates: arrayOf(string),
     })
   ).isRequired,
   /** The headings for each column of the table */
-  rateHeadings: PropTypes.arrayOf(PropTypes.string).isRequired,
+  rateHeadings: arrayOf(string).isRequired,
   /** The label for the room type input */
-  roomTypeInputLabel: PropTypes.string,
+  roomTypeInputLabel: string,
   /** The room type options which the user can select. */
-  roomTypes: PropTypes.arrayOf(
-    PropTypes.shape({
+  roomTypes: arrayOf(
+    shape({
       /** A list of one or more strings separated by commas indicating a set of source sizes for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-      imageSizes: PropTypes.string,
+      imageSizes: string,
       /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the image. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-      imageSrcSet: PropTypes.string,
+      imageSrcSet: string,
       /** The source url of the image to display with the room type option. */
-      imageUrl: PropTypes.string,
+      imageUrl: string,
       /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
+      text: string.isRequired,
       /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
+      value: oneOfType([bool, number, string]),
     })
   ),
   /** The current value of the room type dropdown. */
-  roomTypesValue: PropTypes.oneOfType([
-    PropTypes.bool,
-    PropTypes.number,
-    PropTypes.string,
-  ]),
+  roomTypesValue: oneOfType([bool, number, string]),
+  /** The title of the section */
+  title: string,
 };

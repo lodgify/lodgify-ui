@@ -1,3 +1,18 @@
+# [1.278.0](https://github.com/lodgify/lodgify-ui/compare/v1.277.1...v1.278.0) (2020-01-08)
+
+
+### Features
+
+* **Rates:** add title to rates component ([252ac16](https://github.com/lodgify/lodgify-ui/commit/252ac161b7d3c27c1ce5ac1c62e462bae723f97c))
+
+## [1.277.1](https://github.com/lodgify/lodgify-ui/compare/v1.277.0...v1.277.1) (2020-01-08)
+
+
+### Bug Fixes
+
+* **Rating:** add the default font for the stars ([c5a11e8](https://github.com/lodgify/lodgify-ui/commit/c5a11e8a2f484cc6165b141e3c8ebb1db1864949))
+* **Rating:** correct lint for less ([0a25c22](https://github.com/lodgify/lodgify-ui/commit/0a25c2263ea40e0f0642793e728854dc4fda6636))
+
 # [1.277.0](https://github.com/lodgify/lodgify-ui/compare/v1.276.2...v1.277.0) (2019-12-20)
 
 
