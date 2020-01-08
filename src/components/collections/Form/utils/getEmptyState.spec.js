@@ -11,12 +11,17 @@ describe('getEmptyState', () => {
         more: 'are',
         here: 'as well',
       },
+      dates: {
+        nothing: 'else',
+        matters: 'like really',
+      },
     };
     const actual = getEmptyState(state);
 
     expect(actual).toEqual({
-      abc: { value: null },
-      def: { value: null },
+      abc: { value: '' },
+      def: { value: '' },
+      dates: { value: null },
     });
   });
 });

@@ -6,9 +6,7 @@ export const getEmptyState = state =>
   Object.keys(state).reduce(
     (accumulator, key) => ({
       ...accumulator,
-      [key]: {
-        value: null,
-      },
+      [key]: { value: key === 'dates' ? null : '' },
     }),
     {}
   );
