@@ -64,6 +64,7 @@ export const PROPERTIES = 'Properties';
 export const PROPERTY = 'Property';
 export const PROPERTY_PICTURES = 'Property pictures';
 export const PROPERTY_URL_TARGET = '_self';
+export const RATES_TITLE = 'Rates';
 export const RESULTS = 'results';
 export const REVIEWS = 'Reviews';
 export const REVIEWS_STAY_DATE_PREFIX = 'stayed on';
