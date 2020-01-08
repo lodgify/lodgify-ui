@@ -1,3 +1,10 @@
+# [1.280.0](https://github.com/lodgify/lodgify-ui/compare/v1.279.0...v1.280.0) (2020-01-08)
+
+
+### Features
+
+* **Availability:** increase Heading size ([dcd68ab](https://github.com/lodgify/lodgify-ui/commit/dcd68ab37417161cae4ae65cf99238b320de2538))
+
 # [1.279.0](https://github.com/lodgify/lodgify-ui/compare/v1.278.0...v1.279.0) (2020-01-08)
 
 
