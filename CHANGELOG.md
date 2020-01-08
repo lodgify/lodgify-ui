@@ -1,3 +1,19 @@
+# [1.279.0](https://github.com/lodgify/lodgify-ui/compare/v1.278.0...v1.279.0) (2020-01-08)
+
+
+### Bug Fixes
+
+* **HorizontalMenu:** add submenu and fix height ([2106eb2](https://github.com/lodgify/lodgify-ui/commit/2106eb2b163b051c8d1beba5e5e75d2114f3a7bc))
+
+
+### Features
+
+* **ContactHeader:** expose component ([525f7b3](https://github.com/lodgify/lodgify-ui/commit/525f7b3bbff3963c0f5a93b485449d23444914b1))
+* **ContactHeader:** implement styles ([2a28c06](https://github.com/lodgify/lodgify-ui/commit/2a28c06f9620f9e5004e0027d3aa7cc19fa6243c))
+* **HorizontalMenu:** fix styles ([2aafb26](https://github.com/lodgify/lodgify-ui/commit/2aafb26c41492da5514e5f9e88273d953c201919))
+* **Modal:** expose closeIcon ([648b60f](https://github.com/lodgify/lodgify-ui/commit/648b60f965101314b908bea8eb065df8f064e397))
+* **StickyMenu:** fix scrolling effect ([8f4da93](https://github.com/lodgify/lodgify-ui/commit/8f4da930e218248a3e73703b2ee25360d9812d83))
+
 # [1.278.0](https://github.com/lodgify/lodgify-ui/compare/v1.277.1...v1.278.0) (2020-01-08)
 
 
