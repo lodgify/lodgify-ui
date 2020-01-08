@@ -1,3 +1,10 @@
+# [1.278.0](https://github.com/lodgify/lodgify-ui/compare/v1.277.1...v1.278.0) (2020-01-08)
+
+
+### Features
+
+* **Rates:** add title to rates component ([252ac16](https://github.com/lodgify/lodgify-ui/commit/252ac161b7d3c27c1ce5ac1c62e462bae723f97c))
+
 ## [1.277.1](https://github.com/lodgify/lodgify-ui/compare/v1.277.0...v1.277.1) (2020-01-08)
 
 
