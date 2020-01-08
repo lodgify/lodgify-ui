@@ -30,7 +30,7 @@ exports[`<Availability /> the wrapped component by default should render the rig
     className={null}
     hasMargin={true}
     isColorInverted={false}
-    size="small"
+    size="medium"
     textAlign={null}
   >
     Availability
@@ -340,7 +340,7 @@ exports[`<Availability /> the wrapped component if \`size(props.roomOptionsWithI
     className={null}
     hasMargin={true}
     isColorInverted={false}
-    size="small"
+    size="medium"
     textAlign={null}
   >
     Availability

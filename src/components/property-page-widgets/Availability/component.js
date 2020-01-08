@@ -93,7 +93,7 @@ class Component extends PureComponent {
 
     return (
       <div id={id}>
-        <Heading size="small">{headingText}</Heading>
+        <Heading size="medium">{headingText}</Heading>
         <Grid>
           <GridRow>
             {roomOptionsWithImages && (
