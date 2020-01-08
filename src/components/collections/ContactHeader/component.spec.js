@@ -46,12 +46,12 @@ const props = {
 };
 
 const testid = testidSelectorFactory('contactHeader');
-const getHiddenHeader = () => shallow(<ContactHeader {...props} />);
+const getMobileHeader = () => shallow(<ContactHeader {...props} />);
 
 act(() => {
   describe('`ContactHeader` component', () => {
     it('should return the right structure', () => {
-      const wrapper = getHiddenHeader();
+      const wrapper = getMobileHeader();
 
       expect(wrapper.find(testid()).length).toEqual(1);
     });

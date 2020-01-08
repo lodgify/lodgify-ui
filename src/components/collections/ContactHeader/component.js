@@ -21,7 +21,7 @@ import { testidFactory } from 'utils/testid';
 
 import { HorizontalMenu } from '../HorizontalMenu';
 
-import { HiddenHeader } from './HiddenHeader';
+import { MobileHeader } from './MobileHeader';
 import { PHONE_PREFIX } from './constants';
 
 const TEST_ID_PREFIX = 'contactHeader';
@@ -95,7 +95,7 @@ export const Component = ({
         justifyContent="space-between"
       >
         <Heading>{headingText}</Heading>
-        <HiddenHeader
+        <MobileHeader
           currencyNoResultsText={currencyNoResultsText}
           currencyOptions={currencyOptions}
           currencyValue={currencyValue}

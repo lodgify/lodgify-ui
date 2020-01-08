@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   string,
   arrayOf,
@@ -20,7 +20,7 @@ import { testidFactory } from 'utils/testid';
 
 import { PHONE_PREFIX } from '../constants';
 
-const TEST_ID_PREFIX = 'hiddenHeader';
+const TEST_ID_PREFIX = 'MobileHeader';
 
 const testid = testidFactory(TEST_ID_PREFIX);
 
@@ -46,8 +46,6 @@ export const Component = ({
     }
   }, [navigationItems.length]);
 
-  const menu = useRef();
-
   const onMenuLinkClick = text => {
     setActiveItem(text);
   };
@@ -67,7 +65,7 @@ export const Component = ({
       isFullscreen
       trigger={<Icon name={ICON_NAMES.BARS} />}
     >
-      <div ref={menu}>
+      <div>
         <Menu text vertical>
           {navigationItems.map(({ subItems, text, link }, index) =>
             size(subItems) ? (
@@ -101,7 +99,7 @@ export const Component = ({
             ) : (
               <Menu.Item
                 active={text === activeItem}
-                data-testid={testid(`hiddenHeaderItem_${index}`)}
+                data-testid={testid(`MobileHeaderItem_${index}`)}
                 href={link}
                 key={buildKeyFromStrings(text, index)}
                 link
@@ -192,7 +190,7 @@ Component.propTypes = {
   ),
   /** The current value of the language dropdown. */
   languageValue: oneOfType([bool, number, string]),
-  /** The items for a user to navigate the site. */
+  /** The navigation items displayed in the header. */
   navigationItems: arrayOf(
     shape({
       /** The href url for an item which is a link. */

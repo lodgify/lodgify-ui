@@ -4,7 +4,7 @@ import { mount, shallow } from 'enzyme';
 
 import { testidSelectorFactory } from 'utils/testid';
 
-import { Component as HiddenHeader } from './component';
+import { Component as MobileHeader } from './component';
 
 const props = {
   headingHref: 'D',
@@ -33,13 +33,13 @@ const props = {
   phoneNumber: 's-909-s',
 };
 
-const testid = testidSelectorFactory('hiddenHeader');
+const testid = testidSelectorFactory('MobileHeader');
 
 describe('`StickyMenu` component', () => {
   act(() => {
     it('should return the right structure', () => {
-      const getHiddenHeader = () => mount(<HiddenHeader {...props} />);
-      const wrapper = getHiddenHeader();
+      const getMobileHeader = () => mount(<MobileHeader {...props} />);
+      const wrapper = getMobileHeader();
 
       expect(wrapper.find(testid()).length).toEqual(1);
     });
@@ -47,15 +47,15 @@ describe('`StickyMenu` component', () => {
 
   describe('Interaction: `Menu.Item` onClick', () => {
     it('should ', () => {
-      const getHiddenHeader = () => shallow(<HiddenHeader {...props} />);
-      let wrapper = getHiddenHeader();
+      const getMobileHeader = () => shallow(<MobileHeader {...props} />);
+      let wrapper = getMobileHeader();
 
-      let trigger = wrapper.find(testid('hiddenHeaderItem_1'));
+      let trigger = wrapper.find(testid('MobileHeaderItem_1'));
 
       trigger.simulate('click');
       wrapper.update();
 
-      expect(wrapper.find(testid('hiddenHeaderItem_1')).props().active).toBe(
+      expect(wrapper.find(testid('MobileHeaderItem_1')).props().active).toBe(
         true
       );
     });
@@ -63,8 +63,8 @@ describe('`StickyMenu` component', () => {
 
   describe('Interaction: `Menu.Item` onClick', () => {
     it('should ', () => {
-      const getHiddenHeader = () => shallow(<HiddenHeader {...props} />);
-      let wrapper = getHiddenHeader();
+      const getMobileHeader = () => shallow(<MobileHeader {...props} />);
+      let wrapper = getMobileHeader();
 
       wrapper
         .find('Accordion')
