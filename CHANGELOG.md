@@ -1,3 +1,10 @@
+## [1.280.1](https://github.com/lodgify/lodgify-ui/compare/v1.280.0...v1.280.1) (2020-01-09)
+
+
+### Bug Fixes
+
+* **getEmptyState:** set values to empty string ([310e7ef](https://github.com/lodgify/lodgify-ui/commit/310e7ef701f7fa1bb41d55030d798b008917eaf4))
+
 # [1.280.0](https://github.com/lodgify/lodgify-ui/compare/v1.279.0...v1.280.0) (2020-01-08)
 
 
