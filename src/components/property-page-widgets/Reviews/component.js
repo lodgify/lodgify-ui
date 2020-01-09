@@ -19,7 +19,6 @@ import {
   MONTH,
   REVIEWS,
   REVIEWS_STAY_DATE_PREFIX,
-  ROOM,
   SUBMIT_REVIEW,
   TITLE,
   YEAR,
@@ -104,7 +103,6 @@ Component.displayName = 'Reviews';
 Component.defaultProps = {
   id: null,
   botProtectionMessage: FORM_PROTECTION,
-  roomTypeInputLabel: ROOM,
   commentInputLabel: COMMENTS,
   emailInputLabel: YOUR_EMAIL,
   errorMessage: '',
@@ -122,7 +120,6 @@ Component.defaultProps = {
   privacyConsentLabelLinkText: undefined,
   privacyConsentLabelLinkUrl: undefined,
   privacyConsentLabelText: ACCEPT_PRIVACY_POLICY,
-  roomTypeOptions: [],
   ratingInputLabel: YOUR_REVIEW,
   reviewFormHeading: ADD_A_REVIEW,
   reviews: [],
@@ -246,23 +243,6 @@ Component.propTypes = {
   ),
   /** The prefix to the stay date of a reviewer. */
   reviewsStayDatePrefix: PropTypes.string,
-  /** The label for the room type input. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  roomTypeInputLabel: PropTypes.string,
-  /** The options which the user can select for the room type field. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  roomTypeOptions: PropTypes.arrayOf(
-    PropTypes.shape({
-      /** The visible text for the option. */
-      text: PropTypes.string.isRequired,
-      /** The underlying value for the option. */
-      value: PropTypes.oneOfType([
-        PropTypes.bool,
-        PropTypes.number,
-        PropTypes.string,
-      ]),
-    })
-  ),
   /** The text to display on the submit button. */
   // eslint-disable-next-line react/no-unused-prop-types
   submitButtonText: PropTypes.string,

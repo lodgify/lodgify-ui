@@ -68,7 +68,6 @@ export const RATES_TITLE = 'Rates';
 export const RESULTS = 'results';
 export const REVIEWS = 'Reviews';
 export const REVIEWS_STAY_DATE_PREFIX = 'stayed on';
-export const ROOM = 'Room';
 export const ROOM_AMENITIES = 'Room Amenities';
 export const SAVE_UP_TO = 'Save up to';
 export const SEARCH = 'Search';

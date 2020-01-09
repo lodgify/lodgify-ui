@@ -64,8 +64,6 @@ export const getModalFormMarkup = (
     nameInputLabel,
     onSubmit,
     ratingInputLabel,
-    roomTypeInputLabel,
-    roomTypeOptions,
     submitButtonText,
     successMessage,
     titleInputLabel,
@@ -127,11 +125,6 @@ export const getModalFormMarkup = (
         <Dropdown label={yearInputLabel} name="year" options={yearOptions} />
       </InputGroup>
       <InputGroup>
-        <Dropdown
-          label={roomTypeInputLabel}
-          name="roomType"
-          options={roomTypeOptions}
-        />
         <Dropdown
           label={guestTypeInputLabel}
           name="guestType"
