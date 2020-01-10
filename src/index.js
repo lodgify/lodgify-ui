@@ -1,6 +1,7 @@
 // Collections
 export { Characteristics } from './components/collections/Characteristics';
 export { CheckboxInputSegment } from './components/collections/CheckboxInputSegment';
+export { ContactHeader } from './components/collections/ContactHeader';
 export { CounterInputSegment } from './components/collections/CounterInputSegment';
 export { Footer } from './components/collections/Footer';
 export { Form } from './components/collections/Form';
@@ -8,6 +9,7 @@ export { Header } from './components/collections/Header';
 export { Hero } from './components/collections/Hero';
 export { HorizontalMenu } from './components/collections/HorizontalMenu';
 export { InputGroup } from './components/collections/InputGroup';
+export { Table } from './components/collections/Table';
 export { TextInputSegment } from './components/collections/TextInputSegment';
 export { ToggleInputSegment } from './components/collections/ToggleInputSegment';
 export { RangeInputSegment } from './components/collections/RangeInputSegment';
@@ -15,6 +17,7 @@ export { SlideshowHero } from './components/collections/SlideshowHero';
 export { StickyMenu } from './components/collections/StickyMenu';
 
 // Elements
+export { Avatar } from './components/elements/Avatar';
 export { BlockPlaceholder } from './components/elements/BlockPlaceholder';
 export { Button } from './components/elements/Button';
 export { Divider } from './components/elements/Divider';
@@ -25,6 +28,7 @@ export { IconCard } from './components/elements/IconCard';
 export { PriceLabel } from './components/elements/PriceLabel';
 export { Link } from './components/elements/Link';
 export { Marker } from './components/elements/Marker';
+export { Message } from './components/elements/Message';
 export { Modal } from './components/elements/Modal';
 export { Pagination } from './components/elements/Pagination';
 export { Quote } from './components/elements/Quote';
@@ -38,6 +42,7 @@ export { SummaryCard } from './components/elements/SummaryCard';
 export { CallMeBack } from './components/general-widgets/CallMeBack';
 export { Contact } from './components/general-widgets/Contact';
 export { CookieAlert } from './components/general-widgets/CookieAlert';
+export { EmailCapture } from './components/general-widgets/EmailCapture';
 export { FeaturedProperties } from './components/general-widgets/FeaturedProperties';
 export { FeaturedProperty } from './components/general-widgets/FeaturedProperty';
 export { FeaturedRoomType } from './components/general-widgets/FeaturedRoomType';
@@ -64,7 +69,10 @@ export { InputController } from './components/inputs/InputController';
 export { NumberInput } from './components/inputs/NumberInput';
 export { PhoneInput } from './components/inputs/PhoneInput';
 export { RadioButton } from './components/inputs/RadioButton';
+export { RatingInput } from './components/inputs/RatingInput';
 export { Range } from './components/inputs/Range';
+export { SingleDatePicker } from './components/inputs/SingleDatePicker';
+export { TextArea } from './components/inputs/TextArea';
 export { TextInput } from './components/inputs/TextInput';
 export { Toggle } from './components/inputs/Toggle';
 
