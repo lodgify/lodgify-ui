@@ -1,0 +1,3615 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ContactHomeHero should render the right structure 1`] = `
+<ContactHomeHero
+  backgroundImageUrl="backgroundImageUrl"
+  bottomOffset="0px"
+  callToActionText=""
+  className="ma-ma-ma"
+  currencyOptions={
+    Array [
+      Object {
+        "label": "Euro",
+        "text": "EUR",
+        "value": "EUR",
+      },
+      Object {
+        "label": "US Dollar",
+        "text": "USD",
+        "value": "USD",
+      },
+      Object {
+        "label": "Japanese Yen",
+        "text": "JPY",
+        "value": "JPY",
+      },
+    ]
+  }
+  currencyValue="EUR"
+  headingHref="http://www.sss.com"
+  headingText="Lindblum"
+  isBackgroundFilled={true}
+  isHeaderBackgroundFilled={false}
+  languageOptions={
+    Array [
+      Object {
+        "text": "English",
+        "value": "en",
+      },
+      Object {
+        "text": "German",
+        "value": "de",
+      },
+      Object {
+        "text": "Japanese",
+        "value": "jp",
+      },
+      Object {
+        "text": "Italian",
+        "value": "it",
+      },
+    ]
+  }
+  languageValue="en"
+  navigationMenuItems={
+    Array [
+      Object {
+        "href": "/",
+        "text": "Home",
+      },
+      Object {
+        "subItems": Array [
+          Object {
+            "href": "/la-casa-viva",
+            "text": "La Casa Viva",
+          },
+          Object {
+            "href": "/la-casa-muerta",
+            "text": "La Casa Muerta",
+          },
+          Object {
+            "href": "/the-white-lodge",
+            "text": "The White Lodge",
+          },
+          Object {
+            "href": "/the-black-lodge",
+            "text": "The Black Lodge",
+          },
+        ],
+        "text": "All properties",
+      },
+    ]
+  }
+  phoneNumber="+1 2345 678912"
+  placeholderBackgroundImageUrl={null}
+  primaryButtonText="VUUC"
+  searchBarDatesInputOnFocusChange={[Function]}
+  searchBarDatesInputValue={null}
+  searchBarGuestsInputValue={null}
+  searchBarOnSubmit={[Function]}
+>
+  <FullBleed
+    bottomOffset="0px"
+    className="ma-ma-ma"
+    hasGradient={true}
+    imageUrl="backgroundImageUrl"
+    placeholderImageUrl={null}
+    sizes={null}
+    srcSet={null}
+  >
+    <Segment
+      className="ma-ma-ma full-bleed has-gradient has-children"
+      style={
+        Object {
+          "--full-bleed-bottom-offset": "0px",
+        }
+      }
+      vertical={true}
+    >
+      <div
+        className="ui vertical segment ma-ma-ma full-bleed has-gradient has-children"
+        style={
+          Object {
+            "--full-bleed-bottom-offset": "0px",
+          }
+        }
+      >
+        <withLazyLoad(ResponsiveImage)
+          imageUrl="backgroundImageUrl"
+          isFluid={true}
+          isLazyLoaded={true}
+          placeholderImageUrl={null}
+          sizes={null}
+          srcSet={null}
+        >
+          <LazyLoader
+            componentProps={
+              Object {
+                "imageHeight": undefined,
+                "imageWidth": undefined,
+                "isFluid": true,
+                "isLazyLoaded": true,
+                "placeholderImageUrl": null,
+                "sizes": null,
+              }
+            }
+            lazyProps={
+              Object {
+                "imageUrl": "backgroundImageUrl",
+                "srcSet": null,
+              }
+            }
+          >
+            <div />
+            <ResponsiveImage
+              hasRoundedCorners={false}
+              imageHeight={null}
+              imageTitle="Image Title"
+              imageUrl=""
+              imageWidth={null}
+              isAvatar={false}
+              isCircular={false}
+              isFluid={true}
+              isLazyLoaded={true}
+              label={null}
+              placeholderImageUrl={null}
+              sizes={null}
+              srcSet={null}
+            >
+              <figure
+                className="responsive-image is-fluid"
+              />
+            </ResponsiveImage>
+            <div />
+          </LazyLoader>
+        </withLazyLoad(ResponsiveImage)>
+        <ContactHeader
+          className="ma-ma-ma"
+          currencyOptions={
+            Array [
+              Object {
+                "label": "Euro",
+                "text": "EUR",
+                "value": "EUR",
+              },
+              Object {
+                "label": "US Dollar",
+                "text": "USD",
+                "value": "USD",
+              },
+              Object {
+                "label": "Japanese Yen",
+                "text": "JPY",
+                "value": "JPY",
+              },
+            ]
+          }
+          currencyValue="EUR"
+          headingHref="http://www.sss.com"
+          headingText="Lindblum"
+          isBackgroundFilled={true}
+          languageOptions={
+            Array [
+              Object {
+                "text": "English",
+                "value": "en",
+              },
+              Object {
+                "text": "German",
+                "value": "de",
+              },
+              Object {
+                "text": "Japanese",
+                "value": "jp",
+              },
+              Object {
+                "text": "Italian",
+                "value": "it",
+              },
+            ]
+          }
+          languageValue="en"
+          navigationMenuItems={
+            Array [
+              Object {
+                "href": "/",
+                "text": "Home",
+              },
+              Object {
+                "subItems": Array [
+                  Object {
+                    "href": "/la-casa-viva",
+                    "text": "La Casa Viva",
+                  },
+                  Object {
+                    "href": "/la-casa-muerta",
+                    "text": "La Casa Muerta",
+                  },
+                  Object {
+                    "href": "/the-white-lodge",
+                    "text": "The White Lodge",
+                  },
+                  Object {
+                    "href": "/the-black-lodge",
+                    "text": "The Black Lodge",
+                  },
+                ],
+                "text": "All properties",
+              },
+            ]
+          }
+          phoneNumber="+1 2345 678912"
+          primaryButtonText="VUUC"
+        >
+          <header
+            className="contact-header"
+            data-testid="contactHeader"
+          >
+            <ShowOn
+              computer={true}
+              mobile={false}
+              parent="div"
+              parentProps={Object {}}
+              tablet={true}
+              widescreen={true}
+            >
+              <div
+                className="show-on-tablet show-on-computer show-on-widescreen"
+              >
+                <FlexContainer
+                  alignContent={null}
+                  alignItems="center"
+                  className={null}
+                  flexDirection={null}
+                  flexWrap={null}
+                  justifyContent="space-between"
+                >
+                  <div
+                    className="flex-container"
+                    style={
+                      Object {
+                        "alignContent": null,
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexDirection": null,
+                        "flexGrow": "1",
+                        "flexWrap": null,
+                        "height": "100%",
+                        "justifyContent": "space-between",
+                      }
+                    }
+                  >
+                    <Menu>
+                      <div
+                        className="ui menu"
+                      >
+                        <MenuItem>
+                          <div
+                            className="item"
+                            onClick={[Function]}
+                          >
+                            <Submenu
+                              isMenuItem={false}
+                              isSearchable={false}
+                              isTriggerUnderlined={false}
+                              isTriggeredOnHover={false}
+                              items={
+                                Array [
+                                  Object {
+                                    "text": "English",
+                                    "value": "en",
+                                  },
+                                  Object {
+                                    "text": "German",
+                                    "value": "de",
+                                  },
+                                  Object {
+                                    "text": "Japanese",
+                                    "value": "jp",
+                                  },
+                                  Object {
+                                    "text": "Italian",
+                                    "value": "it",
+                                  },
+                                ]
+                              }
+                              name="language"
+                              noResultsText="No results"
+                              onChange={[Function]}
+                              pointing="top left"
+                              value="en"
+                              willOpenAbove={true}
+                            >
+                              <Dropdown
+                                additionLabel="Add "
+                                additionPosition="top"
+                                className=""
+                                closeOnBlur={true}
+                                closeOnEscape={true}
+                                deburr={false}
+                                icon={
+                                  <Icon
+                                    className={null}
+                                    color={null}
+                                    hasBorder={false}
+                                    isButton={false}
+                                    isCircular={false}
+                                    isColorInverted={false}
+                                    isDisabled={false}
+                                    isLabelLeft={false}
+                                    labelText={null}
+                                    labelWeight={null}
+                                    name="caret down"
+                                    path={null}
+                                    size="small"
+                                  />
+                                }
+                                item={false}
+                                minCharacters={1}
+                                name="language"
+                                noResultsMessage="No results"
+                                onChange={[Function]}
+                                openOnFocus={true}
+                                options={
+                                  Array [
+                                    Object {
+                                      "key": "English",
+                                      "text": "English",
+                                      "value": "en",
+                                    },
+                                    Object {
+                                      "key": "German",
+                                      "text": "German",
+                                      "value": "de",
+                                    },
+                                    Object {
+                                      "key": "Japanese",
+                                      "text": "Japanese",
+                                      "value": "jp",
+                                    },
+                                    Object {
+                                      "key": "Italian",
+                                      "text": "Italian",
+                                      "value": "it",
+                                    },
+                                  ]
+                                }
+                                pointing="top left"
+                                renderLabel={[Function]}
+                                scrolling={true}
+                                search={false}
+                                searchInput="text"
+                                selectOnBlur={true}
+                                selectOnNavigation={true}
+                                simple={false}
+                                trigger={null}
+                                upward={true}
+                                value="en"
+                                wrapSelection={true}
+                              >
+                                <Ref
+                                  innerRef={
+                                    Object {
+                                      "current": <div
+                                        aria-expanded="false"
+                                        class="ui scrolling upward top left pointing dropdown"
+                                        name="language"
+                                        role="listbox"
+                                        tabindex="0"
+                                      >
+                                        <div
+                                          aria-atomic="true"
+                                          aria-live="polite"
+                                          class="text"
+                                          role="alert"
+                                        >
+                                          English
+                                        </div>
+                                        <i
+                                          class="icon small"
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20,8.5l-8,7-8-7Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                        <div
+                                          class="menu transition"
+                                        >
+                                          <div
+                                            aria-checked="true"
+                                            aria-selected="true"
+                                            class="active selected item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              English
+                                            </span>
+                                          </div>
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="false"
+                                            class="item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              German
+                                            </span>
+                                          </div>
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="false"
+                                            class="item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              Japanese
+                                            </span>
+                                          </div>
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="false"
+                                            class="item"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <span
+                                              class="text"
+                                            >
+                                              Italian
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>,
+                                    }
+                                  }
+                                >
+                                  <RefFindNode
+                                    innerRef={
+                                      Object {
+                                        "current": <div
+                                          aria-expanded="false"
+                                          class="ui scrolling upward top left pointing dropdown"
+                                          name="language"
+                                          role="listbox"
+                                          tabindex="0"
+                                        >
+                                          <div
+                                            aria-atomic="true"
+                                            aria-live="polite"
+                                            class="text"
+                                            role="alert"
+                                          >
+                                            English
+                                          </div>
+                                          <i
+                                            class="icon small"
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M20,8.5l-8,7-8-7Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                          <div
+                                            class="menu transition"
+                                          >
+                                            <div
+                                              aria-checked="true"
+                                              aria-selected="true"
+                                              class="active selected item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                English
+                                              </span>
+                                            </div>
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="false"
+                                              class="item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                German
+                                              </span>
+                                            </div>
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="false"
+                                              class="item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                Japanese
+                                              </span>
+                                            </div>
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="false"
+                                              class="item"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <span
+                                                class="text"
+                                              >
+                                                Italian
+                                              </span>
+                                            </div>
+                                          </div>
+                                        </div>,
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      aria-expanded={false}
+                                      className="ui scrolling upward top left pointing dropdown"
+                                      name="language"
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseDown={[Function]}
+                                      role="listbox"
+                                      tabIndex={0}
+                                    >
+                                      <div
+                                        aria-atomic={true}
+                                        aria-live="polite"
+                                        className="text"
+                                        role="alert"
+                                      >
+                                        English
+                                      </div>
+                                      <Icon
+                                        className=""
+                                        color={null}
+                                        hasBorder={false}
+                                        isButton={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="caret down"
+                                        onClick={[Function]}
+                                        path={null}
+                                        size="small"
+                                      >
+                                        <i
+                                          className="icon small"
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20,8.5l-8,7-8-7Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                      </Icon>
+                                      <DropdownMenu>
+                                        <div
+                                          className="menu transition"
+                                        >
+                                          <DropdownItem
+                                            active={true}
+                                            key="English"
+                                            onClick={[Function]}
+                                            selected={true}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="English"
+                                            value="en"
+                                          >
+                                            <div
+                                              aria-checked={true}
+                                              aria-selected={true}
+                                              className="active selected item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                English
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                          <DropdownItem
+                                            active={false}
+                                            key="German"
+                                            onClick={[Function]}
+                                            selected={false}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="German"
+                                            value="de"
+                                          >
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={false}
+                                              className="item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                German
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                          <DropdownItem
+                                            active={false}
+                                            key="Japanese"
+                                            onClick={[Function]}
+                                            selected={false}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="Japanese"
+                                            value="jp"
+                                          >
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={false}
+                                              className="item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                Japanese
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                          <DropdownItem
+                                            active={false}
+                                            key="Italian"
+                                            onClick={[Function]}
+                                            selected={false}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="Italian"
+                                            value="it"
+                                          >
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={false}
+                                              className="item"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <span
+                                                className="text"
+                                              >
+                                                Italian
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                        </div>
+                                      </DropdownMenu>
+                                    </div>
+                                  </RefFindNode>
+                                </Ref>
+                              </Dropdown>
+                            </Submenu>
+                          </div>
+                        </MenuItem>
+                        <MenuItem>
+                          <div
+                            className="item"
+                            onClick={[Function]}
+                          >
+                            <Submenu
+                              isMenuItem={false}
+                              isSearchable={true}
+                              isTriggerUnderlined={false}
+                              isTriggeredOnHover={false}
+                              items={
+                                Array [
+                                  Object {
+                                    "label": "Euro",
+                                    "text": "EUR",
+                                    "value": "EUR",
+                                  },
+                                  Object {
+                                    "label": "US Dollar",
+                                    "text": "USD",
+                                    "value": "USD",
+                                  },
+                                  Object {
+                                    "label": "Japanese Yen",
+                                    "text": "JPY",
+                                    "value": "JPY",
+                                  },
+                                ]
+                              }
+                              name="currency"
+                              noResultsText="No results"
+                              onChange={[Function]}
+                              pointing="top left"
+                              value="EUR"
+                              willOpenAbove={true}
+                            >
+                              <Dropdown
+                                additionLabel="Add "
+                                additionPosition="top"
+                                className=""
+                                closeOnBlur={true}
+                                closeOnEscape={true}
+                                deburr={false}
+                                icon={
+                                  <Icon
+                                    className={null}
+                                    color={null}
+                                    hasBorder={false}
+                                    isButton={false}
+                                    isCircular={false}
+                                    isColorInverted={false}
+                                    isDisabled={false}
+                                    isLabelLeft={false}
+                                    labelText={null}
+                                    labelWeight={null}
+                                    name="caret down"
+                                    path={null}
+                                    size="small"
+                                  />
+                                }
+                                item={false}
+                                minCharacters={1}
+                                name="currency"
+                                noResultsMessage="No results"
+                                onChange={[Function]}
+                                openOnFocus={true}
+                                options={
+                                  Array [
+                                    Object {
+                                      "className": "has-label",
+                                      "label": "Euro",
+                                      "text": "EUR",
+                                      "value": "EUR",
+                                    },
+                                    Object {
+                                      "className": "has-label",
+                                      "label": "US Dollar",
+                                      "text": "USD",
+                                      "value": "USD",
+                                    },
+                                    Object {
+                                      "className": "has-label",
+                                      "label": "Japanese Yen",
+                                      "text": "JPY",
+                                      "value": "JPY",
+                                    },
+                                  ]
+                                }
+                                pointing="top left"
+                                renderLabel={[Function]}
+                                scrolling={true}
+                                search={true}
+                                searchInput="text"
+                                selectOnBlur={true}
+                                selectOnNavigation={true}
+                                simple={false}
+                                style={
+                                  Object {
+                                    "minWidth": 56,
+                                  }
+                                }
+                                trigger={null}
+                                upward={true}
+                                value="EUR"
+                                wrapSelection={true}
+                              >
+                                <Ref
+                                  innerRef={
+                                    Object {
+                                      "current": <div
+                                        aria-expanded="false"
+                                        class="ui search scrolling upward top left pointing dropdown"
+                                        name="currency"
+                                        role="combobox"
+                                        style="min-width: 56px;"
+                                      >
+                                        <input
+                                          aria-autocomplete="list"
+                                          autocomplete="off"
+                                          class="search"
+                                          tabindex="0"
+                                          type="text"
+                                          value=""
+                                        />
+                                        <div
+                                          aria-atomic="true"
+                                          aria-live="polite"
+                                          class="text"
+                                          role="alert"
+                                        >
+                                          EUR
+                                        </div>
+                                        <i
+                                          class="icon small"
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20,8.5l-8,7-8-7Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                        <div
+                                          class="menu transition"
+                                          role="listbox"
+                                        >
+                                          <div
+                                            aria-checked="true"
+                                            aria-selected="true"
+                                            class="active selected item has-label"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <div
+                                              class="ui label"
+                                            >
+                                              Euro
+                                            </div>
+                                            <span
+                                              class="text"
+                                            >
+                                              EUR
+                                            </span>
+                                          </div>
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="false"
+                                            class="item has-label"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <div
+                                              class="ui label"
+                                            >
+                                              US Dollar
+                                            </div>
+                                            <span
+                                              class="text"
+                                            >
+                                              USD
+                                            </span>
+                                          </div>
+                                          <div
+                                            aria-checked="false"
+                                            aria-selected="false"
+                                            class="item has-label"
+                                            role="option"
+                                            style="pointer-events: all;"
+                                          >
+                                            <div
+                                              class="ui label"
+                                            >
+                                              Japanese Yen
+                                            </div>
+                                            <span
+                                              class="text"
+                                            >
+                                              JPY
+                                            </span>
+                                          </div>
+                                        </div>
+                                      </div>,
+                                    }
+                                  }
+                                >
+                                  <RefFindNode
+                                    innerRef={
+                                      Object {
+                                        "current": <div
+                                          aria-expanded="false"
+                                          class="ui search scrolling upward top left pointing dropdown"
+                                          name="currency"
+                                          role="combobox"
+                                          style="min-width: 56px;"
+                                        >
+                                          <input
+                                            aria-autocomplete="list"
+                                            autocomplete="off"
+                                            class="search"
+                                            tabindex="0"
+                                            type="text"
+                                            value=""
+                                          />
+                                          <div
+                                            aria-atomic="true"
+                                            aria-live="polite"
+                                            class="text"
+                                            role="alert"
+                                          >
+                                            EUR
+                                          </div>
+                                          <i
+                                            class="icon small"
+                                          >
+                                            <svg
+                                              viewBox="0 0 24 24"
+                                            >
+                                              <path
+                                                d="M20,8.5l-8,7-8-7Z"
+                                                fill="currentColor"
+                                              />
+                                            </svg>
+                                          </i>
+                                          <div
+                                            class="menu transition"
+                                            role="listbox"
+                                          >
+                                            <div
+                                              aria-checked="true"
+                                              aria-selected="true"
+                                              class="active selected item has-label"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <div
+                                                class="ui label"
+                                              >
+                                                Euro
+                                              </div>
+                                              <span
+                                                class="text"
+                                              >
+                                                EUR
+                                              </span>
+                                            </div>
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="false"
+                                              class="item has-label"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <div
+                                                class="ui label"
+                                              >
+                                                US Dollar
+                                              </div>
+                                              <span
+                                                class="text"
+                                              >
+                                                USD
+                                              </span>
+                                            </div>
+                                            <div
+                                              aria-checked="false"
+                                              aria-selected="false"
+                                              class="item has-label"
+                                              role="option"
+                                              style="pointer-events: all;"
+                                            >
+                                              <div
+                                                class="ui label"
+                                              >
+                                                Japanese Yen
+                                              </div>
+                                              <span
+                                                class="text"
+                                              >
+                                                JPY
+                                              </span>
+                                            </div>
+                                          </div>
+                                        </div>,
+                                      }
+                                    }
+                                  >
+                                    <div
+                                      aria-expanded={false}
+                                      className="ui search scrolling upward top left pointing dropdown"
+                                      name="currency"
+                                      onBlur={[Function]}
+                                      onChange={[Function]}
+                                      onClick={[Function]}
+                                      onFocus={[Function]}
+                                      onMouseDown={[Function]}
+                                      role="combobox"
+                                      style={
+                                        Object {
+                                          "minWidth": 56,
+                                        }
+                                      }
+                                    >
+                                      <Ref
+                                        innerRef={
+                                          Object {
+                                            "current": <input
+                                              aria-autocomplete="list"
+                                              autocomplete="off"
+                                              class="search"
+                                              tabindex="0"
+                                              type="text"
+                                              value=""
+                                            />,
+                                          }
+                                        }
+                                      >
+                                        <RefFindNode
+                                          innerRef={
+                                            Object {
+                                              "current": <input
+                                                aria-autocomplete="list"
+                                                autocomplete="off"
+                                                class="search"
+                                                tabindex="0"
+                                                type="text"
+                                                value=""
+                                              />,
+                                            }
+                                          }
+                                        >
+                                          <DropdownSearchInput
+                                            autoComplete="off"
+                                            key="text"
+                                            onChange={[Function]}
+                                            style={
+                                              Object {
+                                                "width": undefined,
+                                              }
+                                            }
+                                            tabIndex={0}
+                                            type="text"
+                                            value=""
+                                          >
+                                            <input
+                                              aria-autocomplete="list"
+                                              autoComplete="off"
+                                              className="search"
+                                              onChange={[Function]}
+                                              style={
+                                                Object {
+                                                  "width": undefined,
+                                                }
+                                              }
+                                              tabIndex={0}
+                                              type="text"
+                                              value=""
+                                            />
+                                          </DropdownSearchInput>
+                                        </RefFindNode>
+                                      </Ref>
+                                      <div
+                                        aria-atomic={true}
+                                        aria-live="polite"
+                                        className="text"
+                                        role="alert"
+                                      >
+                                        EUR
+                                      </div>
+                                      <Icon
+                                        className=""
+                                        color={null}
+                                        hasBorder={false}
+                                        isButton={false}
+                                        isCircular={false}
+                                        isColorInverted={false}
+                                        isDisabled={false}
+                                        isLabelLeft={false}
+                                        labelText={null}
+                                        labelWeight={null}
+                                        name="caret down"
+                                        onClick={[Function]}
+                                        path={null}
+                                        size="small"
+                                      >
+                                        <i
+                                          className="icon small"
+                                          onClick={[Function]}
+                                        >
+                                          <svg
+                                            viewBox="0 0 24 24"
+                                          >
+                                            <path
+                                              d="M20,8.5l-8,7-8-7Z"
+                                              fill="currentColor"
+                                            />
+                                          </svg>
+                                        </i>
+                                      </Icon>
+                                      <DropdownMenu
+                                        role="listbox"
+                                      >
+                                        <div
+                                          className="menu transition"
+                                          role="listbox"
+                                        >
+                                          <DropdownItem
+                                            active={true}
+                                            className="has-label"
+                                            key="EUR"
+                                            label="Euro"
+                                            onClick={[Function]}
+                                            selected={true}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="EUR"
+                                            value="EUR"
+                                          >
+                                            <div
+                                              aria-checked={true}
+                                              aria-selected={true}
+                                              className="active selected item has-label"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <Label
+                                                content="Euro"
+                                              >
+                                                <div
+                                                  className="ui label"
+                                                  onClick={[Function]}
+                                                >
+                                                  Euro
+                                                </div>
+                                              </Label>
+                                              <span
+                                                className="text"
+                                              >
+                                                EUR
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                          <DropdownItem
+                                            active={false}
+                                            className="has-label"
+                                            key="USD"
+                                            label="US Dollar"
+                                            onClick={[Function]}
+                                            selected={false}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="USD"
+                                            value="USD"
+                                          >
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={false}
+                                              className="item has-label"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <Label
+                                                content="US Dollar"
+                                              >
+                                                <div
+                                                  className="ui label"
+                                                  onClick={[Function]}
+                                                >
+                                                  US Dollar
+                                                </div>
+                                              </Label>
+                                              <span
+                                                className="text"
+                                              >
+                                                USD
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                          <DropdownItem
+                                            active={false}
+                                            className="has-label"
+                                            key="JPY"
+                                            label="Japanese Yen"
+                                            onClick={[Function]}
+                                            selected={false}
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                            text="JPY"
+                                            value="JPY"
+                                          >
+                                            <div
+                                              aria-checked={false}
+                                              aria-selected={false}
+                                              className="item has-label"
+                                              onClick={[Function]}
+                                              role="option"
+                                              style={
+                                                Object {
+                                                  "pointerEvents": "all",
+                                                }
+                                              }
+                                            >
+                                              <Label
+                                                content="Japanese Yen"
+                                              >
+                                                <div
+                                                  className="ui label"
+                                                  onClick={[Function]}
+                                                >
+                                                  Japanese Yen
+                                                </div>
+                                              </Label>
+                                              <span
+                                                className="text"
+                                              >
+                                                JPY
+                                              </span>
+                                            </div>
+                                          </DropdownItem>
+                                        </div>
+                                      </DropdownMenu>
+                                    </div>
+                                  </RefFindNode>
+                                </Ref>
+                              </Dropdown>
+                            </Submenu>
+                          </div>
+                        </MenuItem>
+                        <MenuItem
+                          className="is-selectable"
+                        >
+                          <div
+                            className="item is-selectable"
+                            onClick={[Function]}
+                          >
+                            <a
+                              href="tel:+12345678912"
+                            >
+                              <Icon
+                                className={null}
+                                color={null}
+                                hasBorder={false}
+                                isButton={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText="+1 2345 678912"
+                                labelWeight={null}
+                                name="phone"
+                                path={null}
+                                size={null}
+                              >
+                                <i
+                                  className="icon has-label"
+                                >
+                                  <svg
+                                    viewBox="0 0 24 24"
+                                  >
+                                    <path
+                                      d="M17.26,20.77a10.82,10.82,0,0,1-4.91-1.31,18.17,18.17,0,0,1-4.5-3.31,18.36,18.36,0,0,1-3.31-4.5,11,11,0,0,1-1.3-4.91A3.72,3.72,0,0,1,4.58,4.39,4,4,0,0,1,6.73,3.23,2,2,0,0,1,8,3.91,11.34,11.34,0,0,1,9.16,5.26c.25.33,1.52,2,1.52,2.79s-.74,1.11-1.53,1.6a7.2,7.2,0,0,0-.84.56c-.24.19-.28.29-.29.32A11.62,11.62,0,0,0,13.47,16a.94.94,0,0,0,.32-.3,9.4,9.4,0,0,0,.56-.84c.48-.78.93-1.52,1.59-1.52s2.46,1.26,2.79,1.51a10.53,10.53,0,0,1,1.35,1.22,2,2,0,0,1,.68,1.21,4,4,0,0,1-1.15,2.16,3.78,3.78,0,0,1-2.35,1.35ZM6.73,4.11A3.25,3.25,0,0,0,5.17,5,2.86,2.86,0,0,0,4.11,6.74c0,5.9,7.25,13.15,13.15,13.15A2.84,2.84,0,0,0,19,18.83a3.35,3.35,0,0,0,.93-1.56c0-.17-.49-.82-1.75-1.79A7.23,7.23,0,0,0,16,14.19s-.12,0-.32.3-.36.52-.54.81c-.49.8-.95,1.55-1.62,1.55a.87.87,0,0,1-.32-.06A12.44,12.44,0,0,1,7.2,10.85c-.11-.28-.13-.71.42-1.21A8.34,8.34,0,0,1,8.69,8.9a9,9,0,0,0,.82-.54c.25-.2.29-.3.29-.31A6.78,6.78,0,0,0,8.51,5.86c-1-1.27-1.62-1.73-1.78-1.76Zm13.6,7a.43.43,0,0,1-.44-.44,6.58,6.58,0,0,0-6.58-6.57.44.44,0,1,1,0-.88,7.44,7.44,0,0,1,7.45,7.45A.43.43,0,0,1,20.33,11.12Zm-2.64,0a.43.43,0,0,1-.43-.44,4,4,0,0,0-4-3.94.44.44,0,1,1,0-.88,4.82,4.82,0,0,1,4.82,4.82A.43.43,0,0,1,17.69,11.12Zm-2.63,0a.43.43,0,0,1-.43-.44,1.32,1.32,0,0,0-1.32-1.31.44.44,0,0,1,0-.88,2.2,2.2,0,0,1,2.19,2.19A.43.43,0,0,1,15.06,11.12Z"
+                                      fill="currentColor"
+                                    />
+                                  </svg>
+                                  <Paragraph
+                                    isCompact={false}
+                                    size="medium"
+                                    weight={null}
+                                  >
+                                    <p
+                                      className=""
+                                    >
+                                      +1 2345 678912
+                                    </p>
+                                  </Paragraph>
+                                </i>
+                              </Icon>
+                            </a>
+                          </div>
+                        </MenuItem>
+                      </div>
+                    </Menu>
+                    <Heading
+                      className={null}
+                      hasMargin={true}
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        className=""
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Lindblum
+                        </h3>
+                      </Header>
+                    </Heading>
+                    <Button
+                      hasShadow={false}
+                      icon={null}
+                      isCompact={false}
+                      isDisabled={false}
+                      isFluid={false}
+                      isFormSubmit={false}
+                      isLoading={false}
+                      isOutlined={false}
+                      isPositionedRight={false}
+                      isRounded={false}
+                      isSecondary={false}
+                      onClick={[Function]}
+                      size={null}
+                    >
+                      <Button
+                        as="button"
+                        basic={false}
+                        circular={false}
+                        className=""
+                        compact={false}
+                        disabled={false}
+                        floated="left"
+                        fluid={false}
+                        loading={false}
+                        onClick={[Function]}
+                        secondary={false}
+                        size={null}
+                        type="button"
+                      >
+                        <Ref
+                          innerRef={
+                            Object {
+                              "current": <button
+                                class="ui left floated button"
+                                type="button"
+                              >
+                                VUUC
+                              </button>,
+                            }
+                          }
+                        >
+                          <RefFindNode
+                            innerRef={
+                              Object {
+                                "current": <button
+                                  class="ui left floated button"
+                                  type="button"
+                                >
+                                  VUUC
+                                </button>,
+                              }
+                            }
+                          >
+                            <button
+                              className="ui left floated button"
+                              onClick={[Function]}
+                              type="button"
+                            >
+                              VUUC
+                            </button>
+                          </RefFindNode>
+                        </Ref>
+                      </Button>
+                    </Button>
+                  </div>
+                </FlexContainer>
+                <HorizontalMenu
+                  className=""
+                  isHeader={true}
+                  items={
+                    Array [
+                      Object {
+                        "href": "/",
+                        "text": "Home",
+                      },
+                      Object {
+                        "subItems": Array [
+                          Object {
+                            "href": "/la-casa-viva",
+                            "text": "La Casa Viva",
+                          },
+                          Object {
+                            "href": "/la-casa-muerta",
+                            "text": "La Casa Muerta",
+                          },
+                          Object {
+                            "href": "/the-white-lodge",
+                            "text": "The White Lodge",
+                          },
+                          Object {
+                            "href": "/the-black-lodge",
+                            "text": "The Black Lodge",
+                          },
+                        ],
+                        "text": "All properties",
+                      },
+                    ]
+                  }
+                >
+                  <nav
+                    className="horizontal-menu is-header"
+                    data-testid="horizontalMenu"
+                  >
+                    <ShowOn
+                      computer={true}
+                      mobile={true}
+                      parent="div"
+                      parentProps={Object {}}
+                      tablet={true}
+                      widescreen={true}
+                    >
+                      <div
+                        className="show-on-mobile show-on-tablet show-on-computer show-on-widescreen"
+                      >
+                        <div
+                          className="arrow left is-active"
+                          data-testid="horizontalMenu-arrow-left"
+                          onClick={[Function]}
+                          role="button"
+                        >
+                          <Icon
+                            className={null}
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="chevron left"
+                            path={null}
+                            size={null}
+                          >
+                            <i
+                              className="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                        </div>
+                      </div>
+                    </ShowOn>
+                    <HorizontalGutters>
+                      <Container>
+                        <div
+                          className="ui container"
+                        >
+                          <Menu
+                            data-testid="horizontalMenu-menu"
+                          >
+                            <div
+                              className="ui menu"
+                              data-testid="horizontalMenu-menu"
+                            >
+                              <div
+                                className="menu-wrapper"
+                                data-testid="horizontalMenu-menu-wrapper"
+                              >
+                                <MenuItem
+                                  data-testid="horizontalMenu-menu-item-0"
+                                  key="menu-item-0-"
+                                  name="Home"
+                                >
+                                  <div
+                                    className="item"
+                                    data-testid="horizontalMenu-menu-item-0"
+                                    onClick={[Function]}
+                                  >
+                                    <Link
+                                      href={null}
+                                      isFluid={false}
+                                      isPositionedRight={false}
+                                      onClick={[Function]}
+                                      willOpenInNewTab={false}
+                                    >
+                                      <Button
+                                        as={null}
+                                        basic={true}
+                                        floated="left"
+                                        fluid={false}
+                                        href={null}
+                                        onClick={[Function]}
+                                        target="_self"
+                                        type="button"
+                                      >
+                                        <Ref
+                                          innerRef={
+                                            Object {
+                                              "current": <button
+                                                class="ui basic left floated button"
+                                                target="_self"
+                                                type="button"
+                                              >
+                                                Home
+                                              </button>,
+                                            }
+                                          }
+                                        >
+                                          <RefFindNode
+                                            innerRef={
+                                              Object {
+                                                "current": <button
+                                                  class="ui basic left floated button"
+                                                  target="_self"
+                                                  type="button"
+                                                >
+                                                  Home
+                                                </button>,
+                                              }
+                                            }
+                                          >
+                                            <button
+                                              className="ui basic left floated button"
+                                              href={null}
+                                              onClick={[Function]}
+                                              target="_self"
+                                              type="button"
+                                            >
+                                              Home
+                                            </button>
+                                          </RefFindNode>
+                                        </Ref>
+                                      </Button>
+                                    </Link>
+                                  </div>
+                                </MenuItem>
+                                <div
+                                  className="item"
+                                  key="All properties1"
+                                >
+                                  <Submenu
+                                    isMenuItem={true}
+                                    isSearchable={false}
+                                    isSimple={true}
+                                    isTriggerUnderlined={false}
+                                    isTriggeredOnHover={true}
+                                    items={
+                                      Array [
+                                        Object {
+                                          "href": "/la-casa-viva",
+                                          "text": "La Casa Viva",
+                                        },
+                                        Object {
+                                          "href": "/la-casa-muerta",
+                                          "text": "La Casa Muerta",
+                                        },
+                                        Object {
+                                          "href": "/the-white-lodge",
+                                          "text": "The White Lodge",
+                                        },
+                                        Object {
+                                          "href": "/the-black-lodge",
+                                          "text": "The Black Lodge",
+                                        },
+                                      ]
+                                    }
+                                    name={null}
+                                    noResultsText="No results"
+                                    onChange={[Function]}
+                                    pointing="top left"
+                                    value={null}
+                                    willOpenAbove={false}
+                                  >
+                                    <Dropdown
+                                      additionLabel="Add "
+                                      additionPosition="top"
+                                      className=""
+                                      closeOnBlur={true}
+                                      closeOnEscape={true}
+                                      deburr={false}
+                                      icon={
+                                        <Icon
+                                          className={null}
+                                          color={null}
+                                          hasBorder={false}
+                                          isButton={false}
+                                          isCircular={false}
+                                          isColorInverted={false}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="caret down"
+                                          path={null}
+                                          size="small"
+                                        />
+                                      }
+                                      item={true}
+                                      minCharacters={1}
+                                      name={null}
+                                      noResultsMessage="No results"
+                                      onChange={[Function]}
+                                      openOnFocus={true}
+                                      options={
+                                        Array [
+                                          Object {
+                                            "href": "/la-casa-viva",
+                                            "key": "La Casa Viva",
+                                            "text": "La Casa Viva",
+                                          },
+                                          Object {
+                                            "href": "/la-casa-muerta",
+                                            "key": "La Casa Muerta",
+                                            "text": "La Casa Muerta",
+                                          },
+                                          Object {
+                                            "href": "/the-white-lodge",
+                                            "key": "The White Lodge",
+                                            "text": "The White Lodge",
+                                          },
+                                          Object {
+                                            "href": "/the-black-lodge",
+                                            "key": "The Black Lodge",
+                                            "text": "The Black Lodge",
+                                          },
+                                        ]
+                                      }
+                                      pointing="top left"
+                                      renderLabel={[Function]}
+                                      scrolling={true}
+                                      search={false}
+                                      searchInput="text"
+                                      selectOnBlur={true}
+                                      selectOnNavigation={true}
+                                      simple={true}
+                                      trigger="All properties"
+                                      upward={false}
+                                      value={null}
+                                      wrapSelection={true}
+                                    >
+                                      <Ref
+                                        innerRef={
+                                          Object {
+                                            "current": <div
+                                              aria-expanded="false"
+                                              class="ui item simple scrolling top left pointing dropdown"
+                                              role="listbox"
+                                              tabindex="0"
+                                            >
+                                              All properties
+                                              <i
+                                                class="icon small"
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M20,8.5l-8,7-8-7Z"
+                                                    fill="currentColor"
+                                                  />
+                                                </svg>
+                                              </i>
+                                              <div
+                                                class="menu transition"
+                                              >
+                                                <a
+                                                  aria-checked="false"
+                                                  aria-selected="true"
+                                                  class="selected item"
+                                                  href="/la-casa-viva"
+                                                  role="option"
+                                                  style="pointer-events: all;"
+                                                >
+                                                  <span
+                                                    class="text"
+                                                  >
+                                                    La Casa Viva
+                                                  </span>
+                                                </a>
+                                                <a
+                                                  aria-checked="false"
+                                                  aria-selected="false"
+                                                  class="item"
+                                                  href="/la-casa-muerta"
+                                                  role="option"
+                                                  style="pointer-events: all;"
+                                                >
+                                                  <span
+                                                    class="text"
+                                                  >
+                                                    La Casa Muerta
+                                                  </span>
+                                                </a>
+                                                <a
+                                                  aria-checked="false"
+                                                  aria-selected="false"
+                                                  class="item"
+                                                  href="/the-white-lodge"
+                                                  role="option"
+                                                  style="pointer-events: all;"
+                                                >
+                                                  <span
+                                                    class="text"
+                                                  >
+                                                    The White Lodge
+                                                  </span>
+                                                </a>
+                                                <a
+                                                  aria-checked="false"
+                                                  aria-selected="false"
+                                                  class="item"
+                                                  href="/the-black-lodge"
+                                                  role="option"
+                                                  style="pointer-events: all;"
+                                                >
+                                                  <span
+                                                    class="text"
+                                                  >
+                                                    The Black Lodge
+                                                  </span>
+                                                </a>
+                                              </div>
+                                            </div>,
+                                          }
+                                        }
+                                      >
+                                        <RefFindNode
+                                          innerRef={
+                                            Object {
+                                              "current": <div
+                                                aria-expanded="false"
+                                                class="ui item simple scrolling top left pointing dropdown"
+                                                role="listbox"
+                                                tabindex="0"
+                                              >
+                                                All properties
+                                                <i
+                                                  class="icon small"
+                                                >
+                                                  <svg
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <path
+                                                      d="M20,8.5l-8,7-8-7Z"
+                                                      fill="currentColor"
+                                                    />
+                                                  </svg>
+                                                </i>
+                                                <div
+                                                  class="menu transition"
+                                                >
+                                                  <a
+                                                    aria-checked="false"
+                                                    aria-selected="true"
+                                                    class="selected item"
+                                                    href="/la-casa-viva"
+                                                    role="option"
+                                                    style="pointer-events: all;"
+                                                  >
+                                                    <span
+                                                      class="text"
+                                                    >
+                                                      La Casa Viva
+                                                    </span>
+                                                  </a>
+                                                  <a
+                                                    aria-checked="false"
+                                                    aria-selected="false"
+                                                    class="item"
+                                                    href="/la-casa-muerta"
+                                                    role="option"
+                                                    style="pointer-events: all;"
+                                                  >
+                                                    <span
+                                                      class="text"
+                                                    >
+                                                      La Casa Muerta
+                                                    </span>
+                                                  </a>
+                                                  <a
+                                                    aria-checked="false"
+                                                    aria-selected="false"
+                                                    class="item"
+                                                    href="/the-white-lodge"
+                                                    role="option"
+                                                    style="pointer-events: all;"
+                                                  >
+                                                    <span
+                                                      class="text"
+                                                    >
+                                                      The White Lodge
+                                                    </span>
+                                                  </a>
+                                                  <a
+                                                    aria-checked="false"
+                                                    aria-selected="false"
+                                                    class="item"
+                                                    href="/the-black-lodge"
+                                                    role="option"
+                                                    style="pointer-events: all;"
+                                                  >
+                                                    <span
+                                                      class="text"
+                                                    >
+                                                      The Black Lodge
+                                                    </span>
+                                                  </a>
+                                                </div>
+                                              </div>,
+                                            }
+                                          }
+                                        >
+                                          <div
+                                            aria-expanded={false}
+                                            className="ui item simple scrolling top left pointing dropdown"
+                                            name={null}
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseDown={[Function]}
+                                            role="listbox"
+                                            tabIndex={0}
+                                          >
+                                            All properties
+                                            <Icon
+                                              className=""
+                                              color={null}
+                                              hasBorder={false}
+                                              isButton={false}
+                                              isCircular={false}
+                                              isColorInverted={false}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="caret down"
+                                              onClick={[Function]}
+                                              path={null}
+                                              size="small"
+                                            >
+                                              <i
+                                                className="icon small"
+                                                onClick={[Function]}
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M20,8.5l-8,7-8-7Z"
+                                                    fill="currentColor"
+                                                  />
+                                                </svg>
+                                              </i>
+                                            </Icon>
+                                            <DropdownMenu>
+                                              <div
+                                                className="menu transition"
+                                              >
+                                                <DropdownItem
+                                                  active={false}
+                                                  href="/la-casa-viva"
+                                                  key="La Casa Viva"
+                                                  onClick={[Function]}
+                                                  selected={true}
+                                                  style={
+                                                    Object {
+                                                      "pointerEvents": "all",
+                                                    }
+                                                  }
+                                                  text="La Casa Viva"
+                                                >
+                                                  <a
+                                                    aria-checked={false}
+                                                    aria-selected={true}
+                                                    className="selected item"
+                                                    href="/la-casa-viva"
+                                                    onClick={[Function]}
+                                                    role="option"
+                                                    style={
+                                                      Object {
+                                                        "pointerEvents": "all",
+                                                      }
+                                                    }
+                                                  >
+                                                    <span
+                                                      className="text"
+                                                    >
+                                                      La Casa Viva
+                                                    </span>
+                                                  </a>
+                                                </DropdownItem>
+                                                <DropdownItem
+                                                  active={false}
+                                                  href="/la-casa-muerta"
+                                                  key="La Casa Muerta"
+                                                  onClick={[Function]}
+                                                  selected={false}
+                                                  style={
+                                                    Object {
+                                                      "pointerEvents": "all",
+                                                    }
+                                                  }
+                                                  text="La Casa Muerta"
+                                                >
+                                                  <a
+                                                    aria-checked={false}
+                                                    aria-selected={false}
+                                                    className="item"
+                                                    href="/la-casa-muerta"
+                                                    onClick={[Function]}
+                                                    role="option"
+                                                    style={
+                                                      Object {
+                                                        "pointerEvents": "all",
+                                                      }
+                                                    }
+                                                  >
+                                                    <span
+                                                      className="text"
+                                                    >
+                                                      La Casa Muerta
+                                                    </span>
+                                                  </a>
+                                                </DropdownItem>
+                                                <DropdownItem
+                                                  active={false}
+                                                  href="/the-white-lodge"
+                                                  key="The White Lodge"
+                                                  onClick={[Function]}
+                                                  selected={false}
+                                                  style={
+                                                    Object {
+                                                      "pointerEvents": "all",
+                                                    }
+                                                  }
+                                                  text="The White Lodge"
+                                                >
+                                                  <a
+                                                    aria-checked={false}
+                                                    aria-selected={false}
+                                                    className="item"
+                                                    href="/the-white-lodge"
+                                                    onClick={[Function]}
+                                                    role="option"
+                                                    style={
+                                                      Object {
+                                                        "pointerEvents": "all",
+                                                      }
+                                                    }
+                                                  >
+                                                    <span
+                                                      className="text"
+                                                    >
+                                                      The White Lodge
+                                                    </span>
+                                                  </a>
+                                                </DropdownItem>
+                                                <DropdownItem
+                                                  active={false}
+                                                  href="/the-black-lodge"
+                                                  key="The Black Lodge"
+                                                  onClick={[Function]}
+                                                  selected={false}
+                                                  style={
+                                                    Object {
+                                                      "pointerEvents": "all",
+                                                    }
+                                                  }
+                                                  text="The Black Lodge"
+                                                >
+                                                  <a
+                                                    aria-checked={false}
+                                                    aria-selected={false}
+                                                    className="item"
+                                                    href="/the-black-lodge"
+                                                    onClick={[Function]}
+                                                    role="option"
+                                                    style={
+                                                      Object {
+                                                        "pointerEvents": "all",
+                                                      }
+                                                    }
+                                                  >
+                                                    <span
+                                                      className="text"
+                                                    >
+                                                      The Black Lodge
+                                                    </span>
+                                                  </a>
+                                                </DropdownItem>
+                                              </div>
+                                            </DropdownMenu>
+                                          </div>
+                                        </RefFindNode>
+                                      </Ref>
+                                    </Dropdown>
+                                  </Submenu>
+                                </div>
+                              </div>
+                            </div>
+                          </Menu>
+                        </div>
+                      </Container>
+                    </HorizontalGutters>
+                    <div
+                      className="arrow right is-active"
+                      data-testid="horizontalMenu-arrow-right"
+                      onClick={[Function]}
+                    >
+                      <ShowOn
+                        computer={true}
+                        mobile={true}
+                        parent="div"
+                        parentProps={Object {}}
+                        tablet={true}
+                        widescreen={true}
+                      >
+                        <div
+                          className="show-on-mobile show-on-tablet show-on-computer show-on-widescreen"
+                        >
+                          <Icon
+                            className={null}
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="chevron right"
+                            path={null}
+                            size={null}
+                          >
+                            <i
+                              className="icon"
+                            >
+                              <svg
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                                  fill="currentColor"
+                                />
+                              </svg>
+                            </i>
+                          </Icon>
+                        </div>
+                      </ShowOn>
+                    </div>
+                  </nav>
+                </HorizontalMenu>
+              </div>
+            </ShowOn>
+            <ShowOn
+              computer={false}
+              mobile={true}
+              parent="div"
+              parentProps={Object {}}
+              tablet={false}
+              widescreen={false}
+            >
+              <div
+                className="show-on-mobile"
+              >
+                <FlexContainer
+                  alignContent={null}
+                  alignItems="center"
+                  className="hidden-contact-header"
+                  flexDirection={null}
+                  flexWrap={null}
+                  justifyContent="space-between"
+                >
+                  <div
+                    className="flex-container hidden-contact-header"
+                    style={
+                      Object {
+                        "alignContent": null,
+                        "alignItems": "center",
+                        "display": "flex",
+                        "flexDirection": null,
+                        "flexGrow": "1",
+                        "flexWrap": null,
+                        "height": "100%",
+                        "justifyContent": "space-between",
+                      }
+                    }
+                  >
+                    <Heading
+                      className={null}
+                      hasMargin={true}
+                      isColorInverted={false}
+                      size="medium"
+                      textAlign={null}
+                    >
+                      <Header
+                        as="h3"
+                        className=""
+                        inverted={false}
+                        textAlign={null}
+                      >
+                        <h3
+                          className="ui header"
+                        >
+                          Lindblum
+                        </h3>
+                      </Header>
+                    </Heading>
+                    <Component
+                      currencyNoResultsText=""
+                      currencyOptions={
+                        Array [
+                          Object {
+                            "label": "Euro",
+                            "text": "EUR",
+                            "value": "EUR",
+                          },
+                          Object {
+                            "label": "US Dollar",
+                            "text": "USD",
+                            "value": "USD",
+                          },
+                          Object {
+                            "label": "Japanese Yen",
+                            "text": "JPY",
+                            "value": "JPY",
+                          },
+                        ]
+                      }
+                      currencyValue="EUR"
+                      headingHref="http://www.sss.com"
+                      headingText="Lindblum"
+                      languageOptions={
+                        Array [
+                          Object {
+                            "text": "English",
+                            "value": "en",
+                          },
+                          Object {
+                            "text": "German",
+                            "value": "de",
+                          },
+                          Object {
+                            "text": "Japanese",
+                            "value": "jp",
+                          },
+                          Object {
+                            "text": "Italian",
+                            "value": "it",
+                          },
+                        ]
+                      }
+                      languageValue="en"
+                      navigationItems={
+                        Array [
+                          Object {
+                            "href": "/",
+                            "text": "Home",
+                          },
+                          Object {
+                            "subItems": Array [
+                              Object {
+                                "href": "/la-casa-viva",
+                                "text": "La Casa Viva",
+                              },
+                              Object {
+                                "href": "/la-casa-muerta",
+                                "text": "La Casa Muerta",
+                              },
+                              Object {
+                                "href": "/the-white-lodge",
+                                "text": "The White Lodge",
+                              },
+                              Object {
+                                "href": "/the-black-lodge",
+                                "text": "The Black Lodge",
+                              },
+                            ],
+                            "text": "All properties",
+                          },
+                        ]
+                      }
+                      phoneNumber="+1 2345 678912"
+                    >
+                      <Modal
+                        className="hidden-contact-header-modal"
+                        closeIcon={
+                          <Icon
+                            className={null}
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText="Close"
+                            labelWeight={null}
+                            name="close"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                        data-testid="MobileHeader"
+                        hasCloseIcon={true}
+                        hasPadding={false}
+                        hasRoundedCorners={false}
+                        header={
+                          <MenuItem
+                            href="http://www.sss.com"
+                            link={true}
+                          >
+                            <Heading
+                              className="header-title"
+                              hasMargin={true}
+                              isColorInverted={false}
+                              size="small"
+                              textAlign={null}
+                            >
+                              Lindblum
+                            </Heading>
+                          </MenuItem>
+                        }
+                        isFullscreen={true}
+                        onClose={[Function]}
+                        size="tiny"
+                        trigger={
+                          <Icon
+                            className={null}
+                            color={null}
+                            hasBorder={false}
+                            isButton={false}
+                            isCircular={false}
+                            isColorInverted={false}
+                            isDisabled={false}
+                            isLabelLeft={false}
+                            labelText={null}
+                            labelWeight={null}
+                            name="bars"
+                            path={null}
+                            size={null}
+                          />
+                        }
+                      >
+                        <Modal
+                          centered={true}
+                          className="hidden-contact-header-modal"
+                          closeIcon={
+                            <Icon
+                              className={null}
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="Close"
+                              labelWeight={null}
+                              name="close"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                          closeOnDimmerClick={true}
+                          closeOnDocumentClick={false}
+                          dimmer="inverted"
+                          eventPool="Modal"
+                          onClose={[Function]}
+                          size="fullscreen"
+                          trigger={
+                            <Icon
+                              className={null}
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText={null}
+                              labelWeight={null}
+                              name="bars"
+                              path={null}
+                              size={null}
+                            />
+                          }
+                        >
+                          <Portal
+                            closeOnDocumentClick={false}
+                            closeOnEscape={true}
+                            eventPool="Modal"
+                            mountNode={<body />}
+                            onClose={[Function]}
+                            onMount={[Function]}
+                            onOpen={[Function]}
+                            onUnmount={[Function]}
+                            openOnTriggerClick={true}
+                            trigger={
+                              <Icon
+                                className={null}
+                                color={null}
+                                hasBorder={false}
+                                isButton={false}
+                                isCircular={false}
+                                isColorInverted={false}
+                                isDisabled={false}
+                                isLabelLeft={false}
+                                labelText={null}
+                                labelWeight={null}
+                                name="bars"
+                                path={null}
+                                size={null}
+                              />
+                            }
+                          >
+                            <Ref
+                              innerRef={[Function]}
+                            >
+                              <RefFindNode
+                                innerRef={[Function]}
+                              >
+                                <Icon
+                                  className={null}
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="bars"
+                                  onBlur={[Function]}
+                                  onClick={[Function]}
+                                  onFocus={[Function]}
+                                  onMouseEnter={[Function]}
+                                  onMouseLeave={[Function]}
+                                  path={null}
+                                  size={null}
+                                >
+                                  <i
+                                    className="icon"
+                                    onBlur={[Function]}
+                                    onClick={[Function]}
+                                    onFocus={[Function]}
+                                    onMouseEnter={[Function]}
+                                    onMouseLeave={[Function]}
+                                  >
+                                    <svg
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        d="M20.5,5.06H3.5a.23.23,0,0,0-.24.23V6.64a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V5.29a.23.23,0,0,0-.24-.23Zm0,6H3.5a.24.24,0,0,0-.24.24v1.34a.24.24,0,0,0,.24.24h17a.24.24,0,0,0,.24-.24V11.33a.24.24,0,0,0-.24-.24Zm0,6H3.5a.24.24,0,0,0-.24.24v1.35a.23.23,0,0,0,.24.23h17a.23.23,0,0,0,.24-.23V17.36a.24.24,0,0,0-.24-.24Z"
+                                        fill="currentColor"
+                                      />
+                                    </svg>
+                                  </i>
+                                </Icon>
+                              </RefFindNode>
+                            </Ref>
+                          </Portal>
+                        </Modal>
+                      </Modal>
+                    </Component>
+                  </div>
+                </FlexContainer>
+              </div>
+            </ShowOn>
+          </header>
+        </ContactHeader>
+        <FlexContainer
+          alignContent={null}
+          alignItems="center"
+          className={null}
+          flexDirection="column"
+          flexWrap={null}
+          justifyContent="space-evenly"
+        >
+          <div
+            className="flex-container"
+            style={
+              Object {
+                "alignContent": null,
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "column",
+                "flexGrow": "1",
+                "flexWrap": null,
+                "height": "100%",
+                "justifyContent": "space-evenly",
+              }
+            }
+          >
+            <HorizontalGutters>
+              <Container>
+                <div
+                  className="ui container"
+                >
+                  <ShowOn
+                    computer={true}
+                    mobile={false}
+                    parent={[Function]}
+                    parentProps={
+                      Object {
+                        "isColorInverted": true,
+                        "size": "huge",
+                        "textAlign": "center",
+                      }
+                    }
+                    tablet={true}
+                    widescreen={true}
+                  >
+                    <Heading
+                      className="show-on-tablet show-on-computer show-on-widescreen"
+                      hasMargin={true}
+                      isColorInverted={true}
+                      size="huge"
+                      textAlign="center"
+                    >
+                      <Header
+                        as="h1"
+                        className="show-on-tablet show-on-computer show-on-widescreen"
+                        inverted={true}
+                        textAlign="center"
+                      >
+                        <h1
+                          className="ui inverted center aligned header show-on-tablet show-on-computer show-on-widescreen"
+                        />
+                      </Header>
+                    </Heading>
+                  </ShowOn>
+                  <ShowOn
+                    computer={false}
+                    mobile={true}
+                    parent={[Function]}
+                    parentProps={
+                      Object {
+                        "isColorInverted": true,
+                        "size": "large",
+                        "textAlign": "center",
+                      }
+                    }
+                    tablet={false}
+                    widescreen={false}
+                  >
+                    <Heading
+                      className="show-on-mobile"
+                      hasMargin={true}
+                      isColorInverted={true}
+                      size="large"
+                      textAlign="center"
+                    >
+                      <Header
+                        as="h2"
+                        className="show-on-mobile"
+                        inverted={true}
+                        textAlign="center"
+                      >
+                        <h2
+                          className="ui inverted center aligned header show-on-mobile"
+                        />
+                      </Header>
+                    </Heading>
+                  </ShowOn>
+                </div>
+              </Container>
+            </HorizontalGutters>
+            <HorizontalGutters>
+              <Container>
+                <div
+                  className="ui container"
+                >
+                  <Grid
+                    areColumnsCentered={true}
+                    isStackable={false}
+                  >
+                    <Grid
+                      centered={true}
+                      stackable={false}
+                    >
+                      <div
+                        className="ui centered grid"
+                      >
+                        <GridRow
+                          horizontalAlignContent="center"
+                        >
+                          <GridRow
+                            textAlign="center"
+                          >
+                            <div
+                              className="center aligned row"
+                            >
+                              <ShowOn
+                                computer={true}
+                                mobile={false}
+                                parent={[Function]}
+                                parentProps={
+                                  Object {
+                                    "dateRangePickerLocaleCode": undefined,
+                                    "datesCheckInLabel": undefined,
+                                    "datesCheckOutLabel": undefined,
+                                    "datesInputFocusedInput": undefined,
+                                    "datesInputOnFocusChange": [Function],
+                                    "datesInputValue": null,
+                                    "getIsDayBlocked": undefined,
+                                    "guestsInputLabel": undefined,
+                                    "guestsInputValue": null,
+                                    "isDateRangePickerLoading": undefined,
+                                    "locationInputLabel": undefined,
+                                    "locationInputValue": undefined,
+                                    "locationOptions": undefined,
+                                    "maximumGuestsInputValue": undefined,
+                                    "onChangeInput": undefined,
+                                    "onSubmit": [Function],
+                                    "searchButton": undefined,
+                                    "willLocationDropdownOpenAbove": true,
+                                  }
+                                }
+                                tablet={true}
+                                widescreen={true}
+                              >
+                                <SearchBar
+                                  className="show-on-tablet show-on-computer show-on-widescreen"
+                                  datesCheckInLabel="Check in"
+                                  datesCheckOutLabel="Check out"
+                                  datesInputOnFocusChange={[Function]}
+                                  datesInputValue={null}
+                                  getIsDayBlocked={[Function]}
+                                  guestsInputLabel="Guests"
+                                  guestsInputValue={null}
+                                  isDisplayedAsModal={false}
+                                  isFixed={false}
+                                  isStackable={false}
+                                  locationInputLabel="Location"
+                                  locationOptions={null}
+                                  modalHeadingText="Check our availability"
+                                  modalSummaryElement={null}
+                                  onChangeInput={[Function]}
+                                  onSubmit={[Function]}
+                                  searchButton={
+                                    <Button
+                                      hasShadow={false}
+                                      icon="search"
+                                      isCompact={false}
+                                      isDisabled={false}
+                                      isFluid={false}
+                                      isFormSubmit={true}
+                                      isLoading={false}
+                                      isOutlined={false}
+                                      isPositionedRight={false}
+                                      isRounded={true}
+                                      isSecondary={false}
+                                      onClick={[Function]}
+                                      size={null}
+                                    >
+                                      Search
+                                    </Button>
+                                  }
+                                  summaryElement={null}
+                                  willLocationDropdownOpenAbove={true}
+                                >
+                                  <div
+                                    className="show-on-tablet show-on-computer show-on-widescreen search-bar"
+                                  >
+                                    <Form
+                                      as="form"
+                                      onSubmit={[Function]}
+                                    >
+                                      <form
+                                        className="ui form"
+                                        onSubmit={[Function]}
+                                      >
+                                        <SearchFields
+                                          className="show-on-tablet show-on-computer show-on-widescreen"
+                                          datesCheckInLabel="Check in"
+                                          datesCheckOutLabel="Check out"
+                                          datesInputOnFocusChange={[Function]}
+                                          datesInputValue={null}
+                                          getIsDayBlocked={[Function]}
+                                          guestsInputLabel="Guests"
+                                          guestsInputValue={null}
+                                          isDisplayedAsModal={false}
+                                          isFixed={false}
+                                          isStackable={false}
+                                          locationInputLabel="Location"
+                                          locationOptions={null}
+                                          modalHeadingText="Check our availability"
+                                          modalSummaryElement={null}
+                                          onChangeInput={[Function]}
+                                          onInputChange={[Function]}
+                                          onSubmit={[Function]}
+                                          searchButton={
+                                            <Button
+                                              hasShadow={false}
+                                              icon="search"
+                                              isCompact={false}
+                                              isDisabled={false}
+                                              isFluid={false}
+                                              isFormSubmit={true}
+                                              isLoading={false}
+                                              isOutlined={false}
+                                              isPositionedRight={false}
+                                              isRounded={true}
+                                              isSecondary={false}
+                                              onClick={[Function]}
+                                              size={null}
+                                            >
+                                              Search
+                                            </Button>
+                                          }
+                                          summaryElement={null}
+                                          willLocationDropdownOpenAbove={true}
+                                        >
+                                          <div
+                                            className="inputs-container"
+                                          >
+                                            <div
+                                              className="input-container dates-input-container"
+                                            >
+                                              <WithResponsive(DateRangePicker)
+                                                endDatePlaceholderText="Check out"
+                                                getIsDayBlocked={[Function]}
+                                                name="dates"
+                                                onChange={[Function]}
+                                                onFocusChange={[Function]}
+                                                startDatePlaceholderText="Check in"
+                                                value={null}
+                                                willOpenAbove={true}
+                                              >
+                                                <Responsive
+                                                  as={[Function]}
+                                                  endDatePlaceholderText="Check out"
+                                                  getIsDayBlocked={[Function]}
+                                                  getWidth={[Function]}
+                                                  isUserOnMobile={false}
+                                                  name="dates"
+                                                  onChange={[Function]}
+                                                  onFocusChange={[Function]}
+                                                  onUpdate={[Function]}
+                                                  startDatePlaceholderText="Check in"
+                                                  value={null}
+                                                  willOpenAbove={true}
+                                                  windowInnerWidth={1024}
+                                                >
+                                                  <DateRangePicker
+                                                    displayFormat="DD/MM/YYYY"
+                                                    endDatePlaceholderText="Check out"
+                                                    error={false}
+                                                    getIsDayBlocked={[Function]}
+                                                    isCalendarIconDisplayed={true}
+                                                    isLoading={false}
+                                                    isUserOnMobile={false}
+                                                    isValid={false}
+                                                    localeCode="en"
+                                                    name="dates"
+                                                    onBlur={[Function]}
+                                                    onChange={[Function]}
+                                                    onFocusChange={[Function]}
+                                                    startDatePlaceholderText="Check in"
+                                                    value={null}
+                                                    willOpenAbove={true}
+                                                    windowInnerWidth={1024}
+                                                  >
+                                                    <InputController
+                                                      adaptOnChangeEvent={[Function]}
+                                                      error={false}
+                                                      icon={null}
+                                                      inputOnChangeFunctionName="onDatesChange"
+                                                      isCompact={false}
+                                                      isFluid={false}
+                                                      isFocused={false}
+                                                      isValid={false}
+                                                      mapValueToProps={[Function]}
+                                                      name="dates"
+                                                      onChange={[Function]}
+                                                      value={null}
+                                                    >
+                                                      <Input
+                                                        className=""
+                                                        fluid={false}
+                                                        iconPosition={null}
+                                                        name="dates"
+                                                        type="text"
+                                                        value={null}
+                                                      >
+                                                        <div
+                                                          className="ui input"
+                                                        >
+                                                          <DateRangePicker
+                                                            customArrowIcon={
+                                                              <Icon
+                                                                className={null}
+                                                                color={null}
+                                                                hasBorder={false}
+                                                                isButton={false}
+                                                                isCircular={false}
+                                                                isColorInverted={false}
+                                                                isDisabled={false}
+                                                                isLabelLeft={false}
+                                                                labelText={null}
+                                                                labelWeight={null}
+                                                                name="arrow right"
+                                                                path={null}
+                                                                size={null}
+                                                              />
+                                                            }
+                                                            customInputIcon={
+                                                              <Icon
+                                                                className={null}
+                                                                color={null}
+                                                                hasBorder={false}
+                                                                isButton={false}
+                                                                isCircular={false}
+                                                                isColorInverted={false}
+                                                                isDisabled={false}
+                                                                isLabelLeft={false}
+                                                                labelText={null}
+                                                                labelWeight={null}
+                                                                name="calendar"
+                                                                path={null}
+                                                                size={null}
+                                                              />
+                                                            }
+                                                            daySize={52}
+                                                            disabled={false}
+                                                            displayFormat="DD/MM/YYYY"
+                                                            endDate={null}
+                                                            endDatePlaceholderText="Check out"
+                                                            focusedInput={null}
+                                                            hideKeyboardShortcutsPanel={true}
+                                                            isDayBlocked={[Function]}
+                                                            key=".0"
+                                                            navNext={
+                                                              <Icon
+                                                                className={null}
+                                                                color={null}
+                                                                hasBorder={false}
+                                                                isButton={false}
+                                                                isCircular={false}
+                                                                isColorInverted={false}
+                                                                isDisabled={false}
+                                                                isLabelLeft={false}
+                                                                labelText={null}
+                                                                labelWeight={null}
+                                                                name="arrow right"
+                                                                path={null}
+                                                                size={null}
+                                                              />
+                                                            }
+                                                            navPrev={
+                                                              <Icon
+                                                                className={null}
+                                                                color={null}
+                                                                hasBorder={false}
+                                                                isButton={false}
+                                                                isCircular={false}
+                                                                isColorInverted={false}
+                                                                isDisabled={false}
+                                                                isLabelLeft={false}
+                                                                labelText={null}
+                                                                labelWeight={null}
+                                                                name="arrow left"
+                                                                path={null}
+                                                                size={null}
+                                                              />
+                                                            }
+                                                            onDatesChange={[Function]}
+                                                            onFocusChange={[Function]}
+                                                            openDirection="up"
+                                                            showClearDates={true}
+                                                            startDate={null}
+                                                            startDatePlaceholderText="Check in"
+                                                            withPortal={false}
+                                                          >
+                                                            <div />
+                                                          </DateRangePicker>
+                                                        </div>
+                                                      </Input>
+                                                    </InputController>
+                                                    <div />
+                                                  </DateRangePicker>
+                                                </Responsive>
+                                              </WithResponsive(DateRangePicker)>
+                                            </div>
+                                            <div
+                                              className="input-container guests-input-container"
+                                            >
+                                              <CounterDropdown
+                                                counterName="guests"
+                                                counterValue={null}
+                                                dropdownLabel="Guests"
+                                                onChange={[Function]}
+                                                willOpenAbove={false}
+                                              >
+                                                <Popup
+                                                  className="counter-dropdown"
+                                                  content={
+                                                    <FlexContainer
+                                                      alignContent={null}
+                                                      alignItems={null}
+                                                      className={null}
+                                                      flexDirection="row"
+                                                      flexWrap={null}
+                                                      justifyContent="space-between"
+                                                    >
+                                                      <Counter
+                                                        min={0}
+                                                        name="guests"
+                                                        onChange={[Function]}
+                                                        renderValue={[Function]}
+                                                        value={null}
+                                                      />
+                                                    </FlexContainer>
+                                                  }
+                                                  data-testid="counter-dropdown"
+                                                  disabled={false}
+                                                  eventsEnabled={true}
+                                                  offset={0}
+                                                  on="click"
+                                                  onClose={[Function]}
+                                                  onOpen={[Function]}
+                                                  open={false}
+                                                  pinned={false}
+                                                  position="bottom left"
+                                                  text="Guests"
+                                                  trigger={
+                                                    <div
+                                                      className="dropdown-container"
+                                                      role="button"
+                                                    >
+                                                      <div
+                                                        className="ui selection dropdown counter-dropdown-trigger"
+                                                      >
+                                                        <span>
+                                                          Guests
+                                                        </span>
+                                                        <Icon
+                                                          className={null}
+                                                          color={null}
+                                                          hasBorder={false}
+                                                          isButton={false}
+                                                          isCircular={false}
+                                                          isColorInverted={false}
+                                                          isDisabled={false}
+                                                          isLabelLeft={false}
+                                                          labelText={null}
+                                                          labelWeight={null}
+                                                          name="caret down"
+                                                          path={null}
+                                                          size={null}
+                                                        />
+                                                      </div>
+                                                    </div>
+                                                  }
+                                                >
+                                                  <Portal
+                                                    closeOnDocumentClick={true}
+                                                    closeOnEscape={true}
+                                                    closeOnTriggerClick={true}
+                                                    eventPool="default"
+                                                    onClose={[Function]}
+                                                    onMount={[Function]}
+                                                    onOpen={[Function]}
+                                                    onUnmount={[Function]}
+                                                    open={false}
+                                                    openOnTriggerClick={true}
+                                                    trigger={
+                                                      <div
+                                                        className="dropdown-container"
+                                                        role="button"
+                                                      >
+                                                        <div
+                                                          className="ui selection dropdown counter-dropdown-trigger"
+                                                        >
+                                                          <span>
+                                                            Guests
+                                                          </span>
+                                                          <Icon
+                                                            className={null}
+                                                            color={null}
+                                                            hasBorder={false}
+                                                            isButton={false}
+                                                            isCircular={false}
+                                                            isColorInverted={false}
+                                                            isDisabled={false}
+                                                            isLabelLeft={false}
+                                                            labelText={null}
+                                                            labelWeight={null}
+                                                            name="caret down"
+                                                            path={null}
+                                                            size={null}
+                                                          />
+                                                        </div>
+                                                      </div>
+                                                    }
+                                                    triggerRef={
+                                                      Object {
+                                                        "current": <div
+                                                          class="dropdown-container"
+                                                          role="button"
+                                                        >
+                                                          <div
+                                                            class="ui selection dropdown counter-dropdown-trigger"
+                                                          >
+                                                            <span>
+                                                              Guests
+                                                            </span>
+                                                            <i
+                                                              class="icon"
+                                                            >
+                                                              <svg
+                                                                viewBox="0 0 24 24"
+                                                              >
+                                                                <path
+                                                                  d="M20,8.5l-8,7-8-7Z"
+                                                                  fill="currentColor"
+                                                                />
+                                                              </svg>
+                                                            </i>
+                                                          </div>
+                                                        </div>,
+                                                      }
+                                                    }
+                                                  >
+                                                    <Ref
+                                                      innerRef={[Function]}
+                                                    >
+                                                      <RefFindNode
+                                                        innerRef={[Function]}
+                                                      >
+                                                        <div
+                                                          className="dropdown-container"
+                                                          onBlur={[Function]}
+                                                          onClick={[Function]}
+                                                          onFocus={[Function]}
+                                                          onMouseEnter={[Function]}
+                                                          onMouseLeave={[Function]}
+                                                          role="button"
+                                                        >
+                                                          <div
+                                                            className="ui selection dropdown counter-dropdown-trigger"
+                                                          >
+                                                            <span>
+                                                              Guests
+                                                            </span>
+                                                            <Icon
+                                                              className={null}
+                                                              color={null}
+                                                              hasBorder={false}
+                                                              isButton={false}
+                                                              isCircular={false}
+                                                              isColorInverted={false}
+                                                              isDisabled={false}
+                                                              isLabelLeft={false}
+                                                              labelText={null}
+                                                              labelWeight={null}
+                                                              name="caret down"
+                                                              path={null}
+                                                              size={null}
+                                                            >
+                                                              <i
+                                                                className="icon"
+                                                              >
+                                                                <svg
+                                                                  viewBox="0 0 24 24"
+                                                                >
+                                                                  <path
+                                                                    d="M20,8.5l-8,7-8-7Z"
+                                                                    fill="currentColor"
+                                                                  />
+                                                                </svg>
+                                                              </i>
+                                                            </Icon>
+                                                          </div>
+                                                        </div>
+                                                      </RefFindNode>
+                                                    </Ref>
+                                                  </Portal>
+                                                </Popup>
+                                              </CounterDropdown>
+                                            </div>
+                                            <div
+                                              className="button-container"
+                                            >
+                                              <Button
+                                                hasShadow={false}
+                                                icon="search"
+                                                isCompact={false}
+                                                isDisabled={false}
+                                                isFluid={false}
+                                                isFormSubmit={true}
+                                                isLoading={false}
+                                                isOutlined={false}
+                                                isPositionedRight={false}
+                                                isRounded={true}
+                                                isSecondary={false}
+                                                onClick={[Function]}
+                                                size={null}
+                                              >
+                                                <Button
+                                                  as="button"
+                                                  basic={false}
+                                                  circular={true}
+                                                  className=""
+                                                  compact={false}
+                                                  disabled={false}
+                                                  floated="left"
+                                                  fluid={false}
+                                                  loading={false}
+                                                  onClick={[Function]}
+                                                  secondary={false}
+                                                  size={null}
+                                                  type="submit"
+                                                >
+                                                  <Ref
+                                                    innerRef={
+                                                      Object {
+                                                        "current": <button
+                                                          class="ui circular left floated button"
+                                                          type="submit"
+                                                        >
+                                                          <i
+                                                            class="icon"
+                                                          >
+                                                            <svg
+                                                              viewBox="0 0 24 24"
+                                                            >
+                                                              <path
+                                                                d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                                                fill="currentColor"
+                                                              />
+                                                            </svg>
+                                                          </i>
+                                                          Search
+                                                        </button>,
+                                                      }
+                                                    }
+                                                  >
+                                                    <RefFindNode
+                                                      innerRef={
+                                                        Object {
+                                                          "current": <button
+                                                            class="ui circular left floated button"
+                                                            type="submit"
+                                                          >
+                                                            <i
+                                                              class="icon"
+                                                            >
+                                                              <svg
+                                                                viewBox="0 0 24 24"
+                                                              >
+                                                                <path
+                                                                  d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                                                  fill="currentColor"
+                                                                />
+                                                              </svg>
+                                                            </i>
+                                                            Search
+                                                          </button>,
+                                                        }
+                                                      }
+                                                    >
+                                                      <button
+                                                        className="ui circular left floated button"
+                                                        onClick={[Function]}
+                                                        type="submit"
+                                                      >
+                                                        <Icon
+                                                          className={null}
+                                                          color={null}
+                                                          hasBorder={false}
+                                                          isButton={false}
+                                                          isCircular={false}
+                                                          isColorInverted={false}
+                                                          isDisabled={false}
+                                                          isLabelLeft={false}
+                                                          labelText={null}
+                                                          labelWeight={null}
+                                                          name="search"
+                                                          path={null}
+                                                          size={null}
+                                                        >
+                                                          <i
+                                                            className="icon"
+                                                          >
+                                                            <svg
+                                                              viewBox="0 0 24 24"
+                                                            >
+                                                              <path
+                                                                d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                                                fill="currentColor"
+                                                              />
+                                                            </svg>
+                                                          </i>
+                                                        </Icon>
+                                                        Search
+                                                      </button>
+                                                    </RefFindNode>
+                                                  </Ref>
+                                                </Button>
+                                              </Button>
+                                            </div>
+                                          </div>
+                                        </SearchFields>
+                                      </form>
+                                    </Form>
+                                  </div>
+                                </SearchBar>
+                              </ShowOn>
+                              <ShowOn
+                                computer={false}
+                                mobile={true}
+                                parent="div"
+                                parentProps={Object {}}
+                                tablet={false}
+                                widescreen={false}
+                              >
+                                <div
+                                  className="show-on-mobile"
+                                >
+                                  <SearchBar
+                                    className={null}
+                                    datesCheckInLabel="Check in"
+                                    datesCheckOutLabel="Check out"
+                                    datesInputOnFocusChange={[Function]}
+                                    datesInputValue={null}
+                                    getIsDayBlocked={[Function]}
+                                    guestsInputLabel="Guests"
+                                    guestsInputValue={null}
+                                    isDisplayedAsModal={true}
+                                    isFixed={false}
+                                    isStackable={false}
+                                    locationInputLabel="Location"
+                                    locationOptions={null}
+                                    modalHeadingText="Check our availability"
+                                    modalSummaryElement={null}
+                                    onChangeInput={[Function]}
+                                    onSubmit={[Function]}
+                                    searchButton={
+                                      <Button
+                                        hasShadow={false}
+                                        icon="search"
+                                        isCompact={false}
+                                        isDisabled={false}
+                                        isFluid={false}
+                                        isFormSubmit={true}
+                                        isLoading={false}
+                                        isOutlined={false}
+                                        isPositionedRight={false}
+                                        isRounded={true}
+                                        isSecondary={false}
+                                        onClick={[Function]}
+                                        size={null}
+                                      >
+                                        Search
+                                      </Button>
+                                    }
+                                    summaryElement={null}
+                                    willLocationDropdownOpenAbove={false}
+                                  >
+                                    <SearchModal
+                                      className={null}
+                                      datesCheckInLabel="Check in"
+                                      datesCheckOutLabel="Check out"
+                                      datesInputOnFocusChange={[Function]}
+                                      datesInputValue={null}
+                                      getIsDayBlocked={[Function]}
+                                      guestsInputLabel="Guests"
+                                      guestsInputValue={null}
+                                      isDisplayedAsModal={true}
+                                      isFixed={false}
+                                      isModalOpen={false}
+                                      isStackable={false}
+                                      locationInputLabel="Location"
+                                      locationOptions={null}
+                                      modalHeadingText="Check our availability"
+                                      modalSummaryElement={null}
+                                      onChangeInput={[Function]}
+                                      onInputChange={[Function]}
+                                      onSubmit={[Function]}
+                                      searchButton={
+                                        <Button
+                                          hasShadow={false}
+                                          icon="search"
+                                          isCompact={false}
+                                          isDisabled={false}
+                                          isFluid={false}
+                                          isFormSubmit={true}
+                                          isLoading={false}
+                                          isOutlined={false}
+                                          isPositionedRight={false}
+                                          isRounded={true}
+                                          isSecondary={false}
+                                          onClick={[Function]}
+                                          size={null}
+                                        >
+                                          Search
+                                        </Button>
+                                      }
+                                      summaryElement={null}
+                                      willLocationDropdownOpenAbove={false}
+                                    >
+                                      <Modal
+                                        className={null}
+                                        closeIcon={
+                                          <Icon
+                                            className={null}
+                                            color={null}
+                                            hasBorder={false}
+                                            isButton={false}
+                                            isCircular={false}
+                                            isColorInverted={false}
+                                            isDisabled={false}
+                                            isLabelLeft={false}
+                                            labelText={null}
+                                            labelWeight={null}
+                                            name="close"
+                                            path={null}
+                                            size={null}
+                                          />
+                                        }
+                                        hasCloseIcon={true}
+                                        hasPadding={true}
+                                        hasRoundedCorners={false}
+                                        header={
+                                          <Heading
+                                            className={null}
+                                            hasMargin={true}
+                                            isColorInverted={false}
+                                            size="small"
+                                            textAlign={null}
+                                          >
+                                            Check our availability
+                                          </Heading>
+                                        }
+                                        isFullscreen={true}
+                                        isOpen={false}
+                                        onClose={[Function]}
+                                        size="tiny"
+                                        trigger={
+                                          <div
+                                            data-test-id="search-bar-search-modal-trigger"
+                                            onClick={[Function]}
+                                          >
+                                            <Button
+                                              hasShadow={false}
+                                              icon="search"
+                                              isCompact={false}
+                                              isDisabled={false}
+                                              isFluid={false}
+                                              isFormSubmit={true}
+                                              isLoading={false}
+                                              isOutlined={false}
+                                              isPositionedRight={false}
+                                              isRounded={true}
+                                              isSecondary={false}
+                                              onClick={[Function]}
+                                              size={null}
+                                            >
+                                              Search
+                                            </Button>
+                                          </div>
+                                        }
+                                      >
+                                        <Modal
+                                          centered={true}
+                                          className="has-padding"
+                                          closeIcon={
+                                            <Icon
+                                              className={null}
+                                              color={null}
+                                              hasBorder={false}
+                                              isButton={false}
+                                              isCircular={false}
+                                              isColorInverted={false}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="close"
+                                              path={null}
+                                              size={null}
+                                            />
+                                          }
+                                          closeOnDimmerClick={true}
+                                          closeOnDocumentClick={false}
+                                          dimmer="inverted"
+                                          eventPool="Modal"
+                                          onClose={[Function]}
+                                          open={false}
+                                          size="fullscreen"
+                                          trigger={
+                                            <div
+                                              data-test-id="search-bar-search-modal-trigger"
+                                              onClick={[Function]}
+                                            >
+                                              <Button
+                                                hasShadow={false}
+                                                icon="search"
+                                                isCompact={false}
+                                                isDisabled={false}
+                                                isFluid={false}
+                                                isFormSubmit={true}
+                                                isLoading={false}
+                                                isOutlined={false}
+                                                isPositionedRight={false}
+                                                isRounded={true}
+                                                isSecondary={false}
+                                                onClick={[Function]}
+                                                size={null}
+                                              >
+                                                Search
+                                              </Button>
+                                            </div>
+                                          }
+                                        >
+                                          <Portal
+                                            closeOnDocumentClick={false}
+                                            closeOnEscape={true}
+                                            eventPool="Modal"
+                                            mountNode={<body />}
+                                            onClose={[Function]}
+                                            onMount={[Function]}
+                                            onOpen={[Function]}
+                                            onUnmount={[Function]}
+                                            open={false}
+                                            openOnTriggerClick={true}
+                                            trigger={
+                                              <div
+                                                data-test-id="search-bar-search-modal-trigger"
+                                                onClick={[Function]}
+                                              >
+                                                <Button
+                                                  hasShadow={false}
+                                                  icon="search"
+                                                  isCompact={false}
+                                                  isDisabled={false}
+                                                  isFluid={false}
+                                                  isFormSubmit={true}
+                                                  isLoading={false}
+                                                  isOutlined={false}
+                                                  isPositionedRight={false}
+                                                  isRounded={true}
+                                                  isSecondary={false}
+                                                  onClick={[Function]}
+                                                  size={null}
+                                                >
+                                                  Search
+                                                </Button>
+                                              </div>
+                                            }
+                                          >
+                                            <Ref
+                                              innerRef={[Function]}
+                                            >
+                                              <RefFindNode
+                                                innerRef={[Function]}
+                                              >
+                                                <div
+                                                  data-test-id="search-bar-search-modal-trigger"
+                                                  onBlur={[Function]}
+                                                  onClick={[Function]}
+                                                  onFocus={[Function]}
+                                                  onMouseEnter={[Function]}
+                                                  onMouseLeave={[Function]}
+                                                >
+                                                  <Button
+                                                    hasShadow={false}
+                                                    icon="search"
+                                                    isCompact={false}
+                                                    isDisabled={false}
+                                                    isFluid={false}
+                                                    isFormSubmit={true}
+                                                    isLoading={false}
+                                                    isOutlined={false}
+                                                    isPositionedRight={false}
+                                                    isRounded={true}
+                                                    isSecondary={false}
+                                                    onClick={[Function]}
+                                                    size={null}
+                                                  >
+                                                    <Button
+                                                      as="button"
+                                                      basic={false}
+                                                      circular={true}
+                                                      className=""
+                                                      compact={false}
+                                                      disabled={false}
+                                                      floated="left"
+                                                      fluid={false}
+                                                      loading={false}
+                                                      onClick={[Function]}
+                                                      secondary={false}
+                                                      size={null}
+                                                      type="submit"
+                                                    >
+                                                      <Ref
+                                                        innerRef={
+                                                          Object {
+                                                            "current": <button
+                                                              class="ui circular left floated button"
+                                                              type="submit"
+                                                            >
+                                                              <i
+                                                                class="icon"
+                                                              >
+                                                                <svg
+                                                                  viewBox="0 0 24 24"
+                                                                >
+                                                                  <path
+                                                                    d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                                                    fill="currentColor"
+                                                                  />
+                                                                </svg>
+                                                              </i>
+                                                              Search
+                                                            </button>,
+                                                          }
+                                                        }
+                                                      >
+                                                        <RefFindNode
+                                                          innerRef={
+                                                            Object {
+                                                              "current": <button
+                                                                class="ui circular left floated button"
+                                                                type="submit"
+                                                              >
+                                                                <i
+                                                                  class="icon"
+                                                                >
+                                                                  <svg
+                                                                    viewBox="0 0 24 24"
+                                                                  >
+                                                                    <path
+                                                                      d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                                                      fill="currentColor"
+                                                                    />
+                                                                  </svg>
+                                                                </i>
+                                                                Search
+                                                              </button>,
+                                                            }
+                                                          }
+                                                        >
+                                                          <button
+                                                            className="ui circular left floated button"
+                                                            onClick={[Function]}
+                                                            type="submit"
+                                                          >
+                                                            <Icon
+                                                              className={null}
+                                                              color={null}
+                                                              hasBorder={false}
+                                                              isButton={false}
+                                                              isCircular={false}
+                                                              isColorInverted={false}
+                                                              isDisabled={false}
+                                                              isLabelLeft={false}
+                                                              labelText={null}
+                                                              labelWeight={null}
+                                                              name="search"
+                                                              path={null}
+                                                              size={null}
+                                                            >
+                                                              <i
+                                                                className="icon"
+                                                              >
+                                                                <svg
+                                                                  viewBox="0 0 24 24"
+                                                                >
+                                                                  <path
+                                                                    d="M20.22,4.14a6.38,6.38,0,0,0-9.75,8.2l-1.8,1.74a1.77,1.77,0,0,0-2,.31l-4.14,4a1.77,1.77,0,0,0,0,2.49l.37.39a1.77,1.77,0,0,0,2.5,0l4.15-4a1.79,1.79,0,0,0,.38-2l1.8-1.73a6.39,6.39,0,0,0,8.54-9.46ZM8.69,16.48l-4.15,4a.6.6,0,0,1-.85,0l-.37-.38a.62.62,0,0,1,0-.86l4.15-4a.61.61,0,0,1,.84,0l.2.2.19.21A.61.61,0,0,1,8.69,16.48Zm2.13-3.67h0L11,13Zm.41.41L11,13l.2.18Zm8-.88a5.23,5.23,0,1,1,.13-7.4A5.24,5.24,0,0,1,19.25,12.34Z"
+                                                                    fill="currentColor"
+                                                                  />
+                                                                </svg>
+                                                              </i>
+                                                            </Icon>
+                                                            Search
+                                                          </button>
+                                                        </RefFindNode>
+                                                      </Ref>
+                                                    </Button>
+                                                  </Button>
+                                                </div>
+                                              </RefFindNode>
+                                            </Ref>
+                                          </Portal>
+                                        </Modal>
+                                      </Modal>
+                                    </SearchModal>
+                                  </SearchBar>
+                                </div>
+                              </ShowOn>
+                            </div>
+                          </GridRow>
+                        </GridRow>
+                      </div>
+                    </Grid>
+                  </Grid>
+                </div>
+              </Container>
+            </HorizontalGutters>
+          </div>
+        </FlexContainer>
+      </div>
+    </Segment>
+  </FullBleed>
+</ContactHomeHero>
+`;
