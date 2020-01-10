@@ -1,3 +1,19 @@
+# [1.283.0](https://github.com/lodgify/lodgify-ui/compare/v1.282.0...v1.283.0) (2020-01-10)
+
+
+### Bug Fixes
+
+* correct lint and propTypes ([8459a37](https://github.com/lodgify/lodgify-ui/commit/8459a37b601d1d80d82d04e268351a5dd4129c62))
+* lisnt ([16ca859](https://github.com/lodgify/lodgify-ui/commit/16ca859810b1f5eb95a525732c5241e7f692efec))
+* update snapshots ([0b3e3b4](https://github.com/lodgify/lodgify-ui/commit/0b3e3b4e171de6baece26940dad3286a99a32928))
+
+
+### Features
+
+* **ImagePlaceholder:** add pimage placeholder and use it in ResponsiveImage ([e19ee20](https://github.com/lodgify/lodgify-ui/commit/e19ee20db9a9a79bdd3d1b095911b2002b2f0eb4))
+* **ResponsiveImage:** show placeholder if the image fails ([20ae665](https://github.com/lodgify/lodgify-ui/commit/20ae665fb622615fed317cc90b1b25598dd3435b))
+* **Slideshow:** use ResponsiveImage for the blur effect and placeholders ([fc58dbe](https://github.com/lodgify/lodgify-ui/commit/fc58dbe0aab9c53fe8b7efc0d34d8d5f818adcfa))
+
 # [1.282.0](https://github.com/lodgify/lodgify-ui/compare/v1.281.0...v1.282.0) (2020-01-10)
 
 
