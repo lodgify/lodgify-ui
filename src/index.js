@@ -37,6 +37,7 @@ export { SummaryCard } from './components/elements/SummaryCard';
 // General Widgets
 export { CallMeBack } from './components/general-widgets/CallMeBack';
 export { Contact } from './components/general-widgets/Contact';
+export { ContactHomeHero } from './components/general-widgets/ContactHomeHero';
 export { CookieAlert } from './components/general-widgets/CookieAlert';
 export { FeaturedProperties } from './components/general-widgets/FeaturedProperties';
 export { FeaturedProperty } from './components/general-widgets/FeaturedProperty';
