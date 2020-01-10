@@ -418,6 +418,7 @@ exports[`<PolicyAndNotes /> if \`props.extraNotesText\` is passed should have th
                       hasPadding={true}
                       hasRoundedCorners={false}
                       header={null}
+                      isClosingOnDimmerClick={true}
                       isFullscreen={false}
                       onClose={[Function]}
                       size="tiny"

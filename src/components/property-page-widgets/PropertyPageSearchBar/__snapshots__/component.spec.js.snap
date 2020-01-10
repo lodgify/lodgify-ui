@@ -841,6 +841,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                               Check our availability
                             </Heading>
                           }
+                          isClosingOnDimmerClick={true}
                           isFullscreen={true}
                           isOpen={false}
                           onClose={[Function]}
@@ -1807,6 +1808,7 @@ exports[`<PropertyPageSearchBar /> if \`isShowingPlaceholder\` === true should h
                               ratingNumber={4.5}
                             />
                           }
+                          isClosingOnDimmerClick={true}
                           isFullscreen={true}
                           isOpen={false}
                           onClose={[Function]}
@@ -3030,6 +3032,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                               Check our availability
                             </Heading>
                           }
+                          isClosingOnDimmerClick={true}
                           isFullscreen={true}
                           isOpen={false}
                           onClose={[Function]}
@@ -4162,6 +4165,7 @@ exports[`<PropertyPageSearchBar /> should have the right structure 1`] = `
                               ratingNumber={4.5}
                             />
                           }
+                          isClosingOnDimmerClick={true}
                           isFullscreen={true}
                           isOpen={false}
                           onClose={[Function]}

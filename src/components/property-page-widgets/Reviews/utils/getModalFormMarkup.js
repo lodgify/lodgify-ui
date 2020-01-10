@@ -78,6 +78,7 @@ export const getModalFormMarkup = (
   isShowingPlaceholder
 ) => (
   <Modal
+    isClosingOnDimmerClick={false}
     trigger={
       <Button
         isCompact

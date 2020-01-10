@@ -20,6 +20,7 @@ export const Component = ({
   hasRoundedCorners,
   header,
   isFullscreen,
+  isClosingOnDimmerClick,
   isOpen,
   onClose,
   size,
@@ -31,6 +32,7 @@ export const Component = ({
       'has-rounded-corners': hasRoundedCorners,
     })}
     closeIcon={hasCloseIcon && closeIcon}
+    closeOnDimmerClick={isClosingOnDimmerClick}
     dimmer="inverted"
     onClose={onClose}
     open={isOpen}
@@ -60,6 +62,7 @@ Component.defaultProps = {
   onClose: Function.prototype,
   trigger: null,
   size: 'tiny',
+  isClosingOnDimmerClick: true,
 };
 
 Component.propTypes = {
@@ -67,16 +70,18 @@ Component.propTypes = {
   children: PropTypes.node.isRequired,
   /** Custom className for the modal. */
   className: PropTypes.string,
-  /** Custom close icon for the modal. */
+  /** Does the modal closes when will click outside of it. */
   closeIcon: PropTypes.element,
-  /** Does the modal have a close icon. */
+  /** Custom close icon for the modal. */
   hasCloseIcon: PropTypes.bool,
-  /** Does the modal have padding around its content. */
+  /** Does the modal have a close icon. */
   hasPadding: PropTypes.bool,
-  /** Does the modal have round corners. */
+  /** Does the modal have padding around its content. */
   hasRoundedCorners: PropTypes.bool,
-  /** The header fixed at the top of the modal. */
+  /** Does the modal have round corners. */
   header: PropTypes.node,
+  /** The header fixed at the top of the modal. */
+  isClosingOnDimmerClick: PropTypes.bool,
   /** Is the modal filling the whole screen when displayed. */
   isFullscreen: PropTypes.bool,
   /** Is the modal open. Used when consuming `Modal` as a controlled component. */

@@ -24,6 +24,7 @@ exports[`getModalFormMarkup if \`isBotProtected\` === true should render the rig
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isClosingOnDimmerClick={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -67,7 +68,7 @@ exports[`getModalFormMarkup if \`isBotProtected\` === true should render the rig
         size={null}
       />
     }
-    closeOnDimmerClick={true}
+    closeOnDimmerClick={false}
     closeOnDocumentClick={false}
     dimmer="inverted"
     eventPool="Modal"
@@ -229,6 +230,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isClosingOnDimmerClick={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -272,7 +274,7 @@ exports[`getModalFormMarkup if \`isPrivacyConsentRequired\` is \`truthy\` should
         size={null}
       />
     }
-    closeOnDimmerClick={true}
+    closeOnDimmerClick={false}
     closeOnDocumentClick={false}
     dimmer="inverted"
     eventPool="Modal"
@@ -434,6 +436,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isClosingOnDimmerClick={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -477,7 +480,7 @@ exports[`getModalFormMarkup if \`isShowingPlaceholder\` is \`true\` should rende
         size={null}
       />
     }
-    closeOnDimmerClick={true}
+    closeOnDimmerClick={false}
     closeOnDocumentClick={false}
     dimmer="inverted"
     eventPool="Modal"
@@ -645,6 +648,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isClosingOnDimmerClick={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -686,7 +690,7 @@ exports[`getModalFormMarkup should have the right structure with default props 1
         size={null}
       />
     }
-    closeOnDimmerClick={true}
+    closeOnDimmerClick={false}
     closeOnDocumentClick={false}
     dimmer="inverted"
     eventPool="Modal"
@@ -838,6 +842,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
   hasPadding={false}
   hasRoundedCorners={false}
   header={null}
+  isClosingOnDimmerClick={false}
   isFullscreen={false}
   onClose={[Function]}
   size="tiny"
@@ -881,7 +886,7 @@ exports[`getModalFormMarkup should render the right structure when props are pas
         size={null}
       />
     }
-    closeOnDimmerClick={true}
+    closeOnDimmerClick={false}
     closeOnDocumentClick={false}
     dimmer="inverted"
     eventPool="Modal"
