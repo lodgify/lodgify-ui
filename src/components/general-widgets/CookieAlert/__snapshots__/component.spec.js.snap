@@ -45,6 +45,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
     hasPadding={false}
     hasRoundedCorners={true}
     header={null}
+    isClosingOnDimmerClick={true}
     isFullscreen={false}
     isOpen={true}
     onClose={[Function]}
@@ -1058,6 +1059,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
     hasPadding={false}
     hasRoundedCorners={true}
     header={null}
+    isClosingOnDimmerClick={true}
     isFullscreen={false}
     isOpen={true}
     onClose={[Function]}

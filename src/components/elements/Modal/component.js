@@ -20,6 +20,7 @@ export const Component = ({
   hasRoundedCorners,
   header,
   isFullscreen,
+  isClosingOnDimmerClick,
   isOpen,
   onClose,
   size,
@@ -31,6 +32,7 @@ export const Component = ({
       'has-rounded-corners': hasRoundedCorners,
     })}
     closeIcon={hasCloseIcon && closeIcon}
+    closeOnDimmerClick={isClosingOnDimmerClick}
     dimmer="inverted"
     onClose={onClose}
     open={isOpen}
@@ -60,6 +62,7 @@ Component.defaultProps = {
   onClose: Function.prototype,
   trigger: null,
   size: 'tiny',
+  isClosingOnDimmerClick: true,
 };
 
 Component.propTypes = {
@@ -77,6 +80,8 @@ Component.propTypes = {
   hasRoundedCorners: PropTypes.bool,
   /** The header fixed at the top of the modal. */
   header: PropTypes.node,
+  /** Does the modal closes when will click outside of it. */
+  isClosingOnDimmerClick: PropTypes.bool,
   /** Is the modal filling the whole screen when displayed. */
   isFullscreen: PropTypes.bool,
   /** Is the modal open. Used when consuming `Modal` as a controlled component. */

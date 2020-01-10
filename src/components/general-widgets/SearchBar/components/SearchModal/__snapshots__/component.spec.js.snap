@@ -34,6 +34,7 @@ exports[`getSearchBarModal if \`props.modalSummaryElement\` is passed should ret
     hasPadding={true}
     hasRoundedCorners={false}
     header={<div />}
+    isClosingOnDimmerClick={true}
     isFullscreen={true}
     isOpen={false}
     onClose={[Function]}
@@ -171,6 +172,7 @@ exports[`getSearchBarModal should return the right structure 1`] = `
         Hello world
       </Heading>
     }
+    isClosingOnDimmerClick={true}
     isFullscreen={true}
     isOpen={false}
     onClose={[Function]}

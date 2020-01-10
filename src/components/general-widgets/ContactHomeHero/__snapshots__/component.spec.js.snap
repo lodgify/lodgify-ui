@@ -2325,6 +2325,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                             </Heading>
                           </MenuItem>
                         }
+                        isClosingOnDimmerClick={true}
                         isFullscreen={true}
                         onClose={[Function]}
                         size="tiny"
@@ -3339,6 +3340,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                             Check our availability
                                           </Heading>
                                         }
+                                        isClosingOnDimmerClick={true}
                                         isFullscreen={true}
                                         isOpen={false}
                                         onClose={[Function]}

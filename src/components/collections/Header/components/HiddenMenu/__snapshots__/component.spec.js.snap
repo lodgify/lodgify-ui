@@ -86,6 +86,7 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
             logoText="yo"
           />
         }
+        isClosingOnDimmerClick={true}
         isFullscreen={true}
         onClose={[Function]}
         size="tiny"
