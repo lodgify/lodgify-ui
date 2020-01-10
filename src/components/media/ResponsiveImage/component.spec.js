@@ -1,102 +1,71 @@
-jest.mock('./utils/getImageMarkup');
-jest.mock('./utils/getPlaceholderImageMarkup');
-
 import React from 'react';
-import { shallow, mount } from 'enzyme';
-import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
+import { act } from 'react-dom/test-utils';
+import { mount } from 'enzyme';
+
+import { testidSelectorFactory } from 'utils/testid';
 
 import { Component as ResponsiveImage } from './component';
-import { getImageMarkup } from './utils/getImageMarkup';
-import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
 
 import { ResponsiveImage as ComponentWithLazyLoad } from './index';
 
-const getResponsiveImage = props => shallow(<ResponsiveImage {...props} />);
+const testid = testidSelectorFactory('responsive-image');
 
-getImageMarkup.mockReturnValue(<img id="image" />);
-getPlaceholderImageMarkup.mockReturnValue(<img id="placeholderImage" />);
+global.Image = jest.fn(function() {
+  this.complete = true;
+});
+const getResponsiveImage = props => mount(<ResponsiveImage {...props} />);
 
 describe('<ResponsiveImage />', () => {
-  describe('`componentDidMount`', () => {
-    describe('if `props.placeholderImageUrl` is passed', () => {
-      it('should create a new `Image` with the right attributes', () => {
-        const sizes = 'some sizes';
-        const imageUrl = 'some imageUrl';
-        const srcSet = 'some srcSet';
-        const wrapper = getResponsiveImage({
-          placeholderImageUrl: 'ayyy',
-          sizes,
-          imageUrl,
-          srcSet,
-        });
-        const fullsizeImage = {};
-
-        global.Image = jest.fn(() => fullsizeImage);
-
-        wrapper.instance().componentDidMount();
-
-        expect(global.Image).toHaveBeenCalled();
-        expect(fullsizeImage).toEqual({
-          sizes,
-          src: imageUrl,
-          srcset: srcSet,
-        });
-      });
-
-      it('should call `setState` with the right arguments', () => {
-        const wrapper = getResponsiveImage({
-          placeholderImageUrl: 'ayyy',
-        });
-        const complete = 'I am a complete status';
-
-        global.Image = jest.fn(() => ({ complete }));
-
-        wrapper.instance().setState = jest.fn();
-        wrapper.update();
-        wrapper.instance().componentDidMount();
-
-        expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          shouldImageLoad: true,
-          isImageLoaded: complete,
-        });
-      });
-    });
-
-    describe('if `props.placeholderImageUrl` is not passed', () => {
-      it('should call `setState` with the right arguments', () => {
-        const wrapper = getResponsiveImage();
-
-        wrapper.instance().setState = jest.fn();
-        wrapper.update();
-        wrapper.instance().componentDidMount();
-
-        expect(wrapper.instance().setState).toHaveBeenCalledWith({
-          shouldImageLoad: true,
-        });
-      });
-    });
-  });
-
-  describe('`handleImageLoad`', () => {
-    it('should call `setState` with the right arguments', () => {
-      const wrapper = getResponsiveImage();
-
-      wrapper.instance().setState = jest.fn();
-      wrapper.update();
-      wrapper.instance().handleImageLoad();
-
-      expect(wrapper.instance().setState).toHaveBeenCalledWith({
-        isImageLoaded: true,
-      });
-    });
-  });
-
   describe('`render`', () => {
     describe('by default', () => {
       it('should have the right structure', () => {
         const actual = getResponsiveImage();
 
         expect(actual).toMatchSnapshot();
+      });
+    });
+    describe('when the image is unable to load the src', () => {
+      it('should replace the content with a block placeholder', () => {
+        let actual;
+
+        act(() => {
+          actual = getResponsiveImage({
+            imageUrl: '',
+          });
+        });
+        actual.update();
+        const semanticImage = actual.find(testid('img')).first();
+
+        act(() => {
+          semanticImage.props().onError();
+        });
+        actual.update();
+
+        expect(actual.find(testid('error-placeholder')).length > 0).toBe(true);
+      });
+    });
+
+    describe('with placeholder', () => {
+      it('should load the placeholder first and then the images', () => {
+        let actual;
+
+        act(() => {
+          actual = getResponsiveImage({
+            placeholderImageUrl: 'foo',
+            imageUrl: 'bar',
+          });
+        });
+
+        expect(actual.find(testid('placeholder')).length > 0).toBe(true);
+        actual.update();
+        const semanticImage = actual.find(testid('img')).first();
+
+        act(() => {
+          semanticImage.props().onLoad();
+        });
+        actual.update();
+
+        expect(actual.find(testid('img')).length > 0).toBe(true);
       });
     });
 
@@ -155,10 +124,6 @@ describe('<ResponsiveImage />', () => {
         expect(actual).toMatchSnapshot();
       });
     });
-  });
-
-  it('should have the right `displayName`', () => {
-    expectComponentToHaveDisplayName(ResponsiveImage, 'ResponsiveImage');
   });
 
   it('should get wrapped by `withLazyLoad`', () => {

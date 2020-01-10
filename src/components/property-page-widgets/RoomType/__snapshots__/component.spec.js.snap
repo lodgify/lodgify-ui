@@ -153,6 +153,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Two cats",
                                   "originalTitle": "Two cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -162,6 +163,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Two more cats",
                                   "originalTitle": "Two more cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -171,6 +173,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Much cats",
                                   "originalTitle": "Much cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -179,8 +182,8 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                               ]
                             }
                             lazyLoad={true}
-                            onImageError={[Function]}
                             onSlide={[Function]}
+                            renderItem={[Function]}
                             renderLeftNav={[Function]}
                             renderRightNav={[Function]}
                             showBullets={false}
@@ -195,6 +198,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Two cats",
                                   "originalTitle": "Two cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -204,6 +208,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Two more cats",
                                   "originalTitle": "Two more cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -213,6 +218,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Much cats",
                                   "originalTitle": "Much cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1280,6 +1286,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Two cats",
                                   "originalTitle": "Two cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1289,6 +1296,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Two more cats",
                                   "originalTitle": "Two more cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1298,6 +1306,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Much cats",
                                   "originalTitle": "Much cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1306,8 +1315,8 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                               ]
                             }
                             lazyLoad={true}
-                            onImageError={[Function]}
                             onSlide={[Function]}
+                            renderItem={[Function]}
                             renderLeftNav={[Function]}
                             renderRightNav={[Function]}
                             showBullets={false}
@@ -1322,6 +1331,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Two cats",
                                   "originalTitle": "Two cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1331,6 +1341,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Two more cats",
                                   "originalTitle": "Two more cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1340,6 +1351,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                   "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "originalAlt": "Much cats",
                                   "originalTitle": "Much cats",
+                                  "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                   "sizes": undefined,
                                   "srcSet": undefined,
                                   "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",

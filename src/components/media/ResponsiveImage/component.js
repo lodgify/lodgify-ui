@@ -1,74 +1,111 @@
-import React, { PureComponent } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import classnames from 'classnames';
 import PropTypes from 'prop-types';
+import { Image as SemanticImage } from 'semantic-ui-react';
 
+import { ImagePlaceholder } from 'media/ImagePlaceholder';
 import { IMAGE_TITLE } from 'utils/default-strings';
 import { Paragraph } from 'typography/Paragraph';
+import { testidFactory } from 'utils/testid';
 
-import { getImageMarkup } from './utils/getImageMarkup';
-import { getPlaceholderImageMarkup } from './utils/getPlaceholderImageMarkup';
+import { getIsFluid } from './utils/getIsFluid';
+import { getAspectRatioPlaceholderMarkup } from './utils/getAspectRatioPlaceholderMarkup';
 
+const TESTID_PREFIX = 'responsive-image';
+
+const testid = testidFactory(TESTID_PREFIX);
 /**
  * The standard widget for displaying an image.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export class Component extends PureComponent {
-  state = {
-    isImageLoaded: false,
-    shouldImageLoad: false,
-  };
 
-  componentDidMount = () => {
-    const { imageUrl, placeholderImageUrl, sizes, srcSet } = this.props;
+export const Component = ({
+  hasRoundedCorners,
+  isCircular,
+  isFluid,
+  label,
+  placeholderImageUrl,
+  imageTitle,
+  isAvatar,
+  imageWidth,
+  imageHeight,
+  sizes,
+  imageUrl,
+  srcSet,
+}) => {
+  const [shouldImageLoad, setShouldImageLoad] = useState(false);
+  const [isImageLoaded, setIsImageLoaded] = useState(false);
+  const [hasError, setHasError] = useState(false);
 
+  useEffect(() => {
     if (!!placeholderImageUrl) {
       const fullsizeImage = new Image();
 
       fullsizeImage.sizes = sizes;
       fullsizeImage.src = imageUrl;
       fullsizeImage.srcset = srcSet;
-
-      this.setState({
-        shouldImageLoad: true,
-        isImageLoaded: fullsizeImage.complete,
-      });
-
-      return;
+      setIsImageLoaded(fullsizeImage.complete);
     }
-
-    this.setState({ shouldImageLoad: true });
+    setShouldImageLoad(true);
+    setHasError(false);
+  }, [placeholderImageUrl, imageUrl, srcSet, sizes]);
+  const onError = () => {
+    setHasError(true);
+    setIsImageLoaded(false);
   };
 
-  handleImageLoad = () => this.setState({ isImageLoaded: true });
-
-  render = () => {
-    const {
-      hasRoundedCorners,
-      isCircular,
-      isFluid,
-      label,
-      placeholderImageUrl,
-    } = this.props;
-    const { isImageLoaded, shouldImageLoad } = this.state;
-
-    return (
-      <figure
-        className={classnames('responsive-image', {
-          'has-blurred-children': !!placeholderImageUrl && !isImageLoaded,
-          'has-placeholder': !!placeholderImageUrl,
-          'is-fluid': isFluid,
-          'is-rounded': hasRoundedCorners,
-          'is-circular': isCircular,
-        })}
-      >
-        {shouldImageLoad && getImageMarkup(this.props, this.handleImageLoad)}
-        {!!placeholderImageUrl &&
-          getPlaceholderImageMarkup(this.props, isImageLoaded)}
-        {label ? <Paragraph>{label}</Paragraph> : null}
-      </figure>
-    );
+  const onLoad = () => {
+    setHasError(false);
+    setIsImageLoaded(true);
   };
-}
+
+  return (
+    <figure
+      className={classnames('responsive-image', {
+        'has-blurred-children': !!placeholderImageUrl && !isImageLoaded,
+        'has-placeholder': !!placeholderImageUrl,
+        'is-fluid': isFluid,
+        'is-rounded': hasRoundedCorners,
+        'is-circular': isCircular,
+      })}
+      data-testid={testid()}
+    >
+      {hasError ? (
+        <ImagePlaceholder data-testid={testid('error-placeholder')} />
+      ) : (
+        shouldImageLoad && (
+          <SemanticImage
+            alt={imageTitle}
+            avatar={isAvatar}
+            data-testid={testid('img')}
+            fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
+            onError={onError}
+            onLoad={onLoad}
+            sizes={sizes}
+            src={imageUrl}
+            srcSet={srcSet}
+            title={imageTitle}
+          />
+        )
+      )}
+      {!!placeholderImageUrl && (
+        <Fragment>
+          {getAspectRatioPlaceholderMarkup(imageWidth, imageHeight)}
+          {!isImageLoaded && (
+            <SemanticImage
+              data-testid={testid('placeholder')}
+              fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
+              src={placeholderImageUrl}
+            />
+          )}
+        </Fragment>
+      )}
+      {label ? (
+        <Paragraph data-testid={testid('label')}>{label}</Paragraph>
+      ) : null}
+    </figure>
+  );
+};
 
 Component.displayName = 'ResponsiveImage';
 

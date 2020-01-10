@@ -1749,6 +1749,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "originalAlt": "Two more cats",
                                         "originalTitle": "Two more cats",
+                                        "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "sizes": undefined,
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1758,6 +1759,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "originalAlt": "Some cats",
                                         "originalTitle": "Some cats",
+                                        "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "sizes": undefined,
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1766,8 +1768,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     ]
                                   }
                                   lazyLoad={true}
-                                  onImageError={[Function]}
                                   onSlide={[Function]}
+                                  renderItem={[Function]}
                                   renderLeftNav={[Function]}
                                   renderRightNav={[Function]}
                                   showBullets={false}
@@ -1782,6 +1784,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "originalAlt": "Two more cats",
                                         "originalTitle": "Two more cats",
+                                        "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "sizes": undefined,
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1791,6 +1794,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "originalAlt": "Some cats",
                                         "originalTitle": "Some cats",
+                                        "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "sizes": undefined,
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -2797,6 +2801,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "originalAlt": "Two more cats",
                                         "originalTitle": "Two more cats",
+                                        "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "sizes": undefined,
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -2806,6 +2811,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "originalAlt": "Some cats",
                                         "originalTitle": "Some cats",
+                                        "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "sizes": undefined,
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -2814,8 +2820,8 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                     ]
                                   }
                                   lazyLoad={true}
-                                  onImageError={[Function]}
                                   onSlide={[Function]}
+                                  renderItem={[Function]}
                                   renderLeftNav={[Function]}
                                   renderRightNav={[Function]}
                                   showBullets={false}
@@ -2830,6 +2836,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "originalAlt": "Two more cats",
                                         "originalTitle": "Two more cats",
+                                        "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "sizes": undefined,
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -2839,6 +2846,7 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                         "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "originalAlt": "Some cats",
                                         "originalTitle": "Some cats",
+                                        "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
                                         "sizes": undefined,
                                         "srcSet": undefined,
                                         "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",

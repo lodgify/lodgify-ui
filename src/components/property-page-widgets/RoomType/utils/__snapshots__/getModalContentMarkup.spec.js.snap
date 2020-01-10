@@ -218,6 +218,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -226,8 +227,8 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
           ]
         }
         lazyLoad={true}
-        onImageError={[Function]}
         onSlide={[Function]}
+        renderItem={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}
         showBullets={false}
@@ -242,6 +243,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -630,6 +632,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -638,8 +641,8 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
           ]
         }
         lazyLoad={true}
-        onImageError={[Function]}
         onSlide={[Function]}
+        renderItem={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}
         showBullets={false}
@@ -654,6 +657,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1259,6 +1263,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1268,6 +1273,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
               "original": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
@@ -1276,8 +1282,8 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
           ]
         }
         lazyLoad={true}
-        onImageError={[Function]}
         onSlide={[Function]}
+        renderItem={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}
         showBullets={true}
@@ -1292,6 +1298,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1301,6 +1308,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
               "original": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://si5.cdbcdn.com/oh/c2d7df79-2d68-4fdf-a3ab-f6af3da46a77.jpg",
@@ -1783,6 +1791,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -1791,8 +1800,8 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
           ]
         }
         lazyLoad={true}
-        onImageError={[Function]}
         onSlide={[Function]}
+        renderItem={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}
         showBullets={false}
@@ -1807,6 +1816,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -2436,6 +2446,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -2444,8 +2455,8 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
           ]
         }
         lazyLoad={true}
-        onImageError={[Function]}
         onSlide={[Function]}
+        renderItem={[Function]}
         renderLeftNav={[Function]}
         renderRightNav={[Function]}
         showBullets={false}
@@ -2460,6 +2471,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
               "original": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "originalAlt": "Two cats",
               "originalTitle": "Two cats",
+              "placeholder": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
               "sizes": undefined,
               "srcSet": undefined,
               "thumbnail": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
