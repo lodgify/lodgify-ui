@@ -1,3 +1,16 @@
+# [1.282.0](https://github.com/lodgify/lodgify-ui/compare/v1.281.0...v1.282.0) (2020-01-10)
+
+
+### Bug Fixes
+
+* update snapshots ([0891310](https://github.com/lodgify/lodgify-ui/commit/0891310c6a35ed42cdb87dbe979ee5a464d1784e))
+* **Modal:** comment order ([e8434c0](https://github.com/lodgify/lodgify-ui/commit/e8434c0c09d94572d83b04017ae7390d8dd5c8e8))
+
+
+### Features
+
+* **Reviews:** avoid Review modal to close when click outside ([c444bbd](https://github.com/lodgify/lodgify-ui/commit/c444bbd4835407702489f4b48875c518e81d292f))
+
 # [1.281.0](https://github.com/lodgify/lodgify-ui/compare/v1.280.2...v1.281.0) (2020-01-10)
 
 
