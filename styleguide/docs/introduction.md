@@ -21,6 +21,10 @@ Each component is documented with:
 You can use the code editors to modify the examples live in your browser.
 
 ```jsx
-<Paragraph>Cool, huh?</Paragraph>
-<Button onClick={() => console.log('Totally')}>Click me</Button>
+import { Paragraph, Button } from '@lodgify/ui';
+
+<div>
+  <Paragraph>Cool, huh?</Paragraph>
+  <Button onClick={() => console.log('Totally')}>Click me</Button>
+</div>
 ```
