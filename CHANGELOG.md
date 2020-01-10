@@ -1,3 +1,10 @@
+## [1.280.2](https://github.com/lodgify/lodgify-ui/compare/v1.280.1...v1.280.2) (2020-01-10)
+
+
+### Bug Fixes
+
+* **Reviews:** remove RoomTypes from form ([acf966b](https://github.com/lodgify/lodgify-ui/commit/acf966ba753b72e5b1c315045408304d6ac7c5a6))
+
 ## [1.280.1](https://github.com/lodgify/lodgify-ui/compare/v1.280.0...v1.280.1) (2020-01-09)
 
 
