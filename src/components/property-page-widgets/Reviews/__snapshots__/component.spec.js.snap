@@ -24,8 +24,6 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` if \`props.re
   reviewFormHeading="Add a Review"
   reviews={Array []}
   reviewsStayDatePrefix="stayed on"
-  roomTypeInputLabel="Room"
-  roomTypeOptions={Array []}
   submitButtonText="Submit a review"
   successMessage=""
   titleInputLabel="Title"
@@ -1175,8 +1173,6 @@ exports[`<Reviews /> if \`props.isShowingPlaceholder\` is \`true\` should render
     ]
   }
   reviewsStayDatePrefix="stayed on"
-  roomTypeInputLabel="Room"
-  roomTypeOptions={Array []}
   submitButtonText="Submit a review"
   successMessage=""
   titleInputLabel="Title"
@@ -2207,8 +2203,6 @@ exports[`<Reviews /> should render the right structure 1`] = `
     ]
   }
   reviewsStayDatePrefix="stayed on"
-  roomTypeInputLabel="Room"
-  roomTypeOptions={Array []}
   submitButtonText="Submit a review"
   successMessage=""
   titleInputLabel="Title"
