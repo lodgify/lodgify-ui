@@ -4,9 +4,14 @@ const { SRC_DIR, TITLE } = require('./constants');
 
 module.exports = {
   getComponentPathLine: require('./options/componentPathLine'),
+  moduleAliases: {
+    '@lodgify/ui': path.resolve(__dirname, '..', '..', 'src'),
+  },
   assetsDir: 'assets',
-  editorConfig: {
-    theme: 'lucario',
+  theme: {
+    color: {
+      codeBackground: '#2b3e50',
+    },
   },
   pagePerSection: true,
   require: [path.join(SRC_DIR, 'styles/semantic/lodgify-ui.less'), 'moment'],

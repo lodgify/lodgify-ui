@@ -71,7 +71,7 @@ module.exports = {
   },
   Editor: {
     root: {
-      '& .CodeMirror span': {
+      '& textarea': {
         fontFamily: fontFamily.code,
       },
     },
