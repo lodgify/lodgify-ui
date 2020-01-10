@@ -70,17 +70,17 @@ Component.propTypes = {
   children: PropTypes.node.isRequired,
   /** Custom className for the modal. */
   className: PropTypes.string,
-  /** Does the modal closes when will click outside of it. */
-  closeIcon: PropTypes.element,
   /** Custom close icon for the modal. */
-  hasCloseIcon: PropTypes.bool,
+  closeIcon: PropTypes.element,
   /** Does the modal have a close icon. */
-  hasPadding: PropTypes.bool,
+  hasCloseIcon: PropTypes.bool,
   /** Does the modal have padding around its content. */
-  hasRoundedCorners: PropTypes.bool,
+  hasPadding: PropTypes.bool,
   /** Does the modal have round corners. */
-  header: PropTypes.node,
+  hasRoundedCorners: PropTypes.bool,
   /** The header fixed at the top of the modal. */
+  header: PropTypes.node,
+  /** Does the modal closes when will click outside of it. */
   isClosingOnDimmerClick: PropTypes.bool,
   /** Is the modal filling the whole screen when displayed. */
   isFullscreen: PropTypes.bool,
