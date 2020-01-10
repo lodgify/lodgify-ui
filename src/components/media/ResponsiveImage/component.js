@@ -3,9 +3,9 @@ import classnames from 'classnames';
 import PropTypes from 'prop-types';
 import { Image as SemanticImage } from 'semantic-ui-react';
 
+import { ImagePlaceholder } from 'media/ImagePlaceholder';
 import { IMAGE_TITLE } from 'utils/default-strings';
 import { Paragraph } from 'typography/Paragraph';
-import { BlockPlaceholder } from 'elements/BlockPlaceholder';
 import { testidFactory } from 'utils/testid';
 
 import { getIsFluid } from './utils/getIsFluid';
@@ -59,13 +59,7 @@ export const Component = ({
     setIsImageLoaded(true);
   };
 
-  return hasError ? (
-    <BlockPlaceholder
-      data-testid={testid('error-placeholder')}
-      isFluid
-      isRectangular
-    />
-  ) : (
+  return (
     <figure
       className={classnames('responsive-image', {
         'has-blurred-children': !!placeholderImageUrl && !isImageLoaded,
@@ -76,19 +70,23 @@ export const Component = ({
       })}
       data-testid={testid()}
     >
-      {shouldImageLoad && (
-        <SemanticImage
-          alt={imageTitle}
-          avatar={isAvatar}
-          data-testid={testid('img')}
-          fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
-          onError={onError}
-          onLoad={onLoad}
-          sizes={sizes}
-          src={imageUrl}
-          srcSet={srcSet}
-          title={imageTitle}
-        />
+      {hasError ? (
+        <ImagePlaceholder data-testid={testid('error-placeholder')} />
+      ) : (
+        shouldImageLoad && (
+          <SemanticImage
+            alt={imageTitle}
+            avatar={isAvatar}
+            data-testid={testid('img')}
+            fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
+            onError={onError}
+            onLoad={onLoad}
+            sizes={sizes}
+            src={imageUrl}
+            srcSet={srcSet}
+            title={imageTitle}
+          />
+        )
       )}
       {!!placeholderImageUrl && (
         <Fragment>

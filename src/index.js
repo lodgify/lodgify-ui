@@ -85,6 +85,7 @@ export { Viewport } from './components/layout/Viewport';
 // Media
 export { FullBleed } from './components/media/FullBleed';
 export { Gallery } from './components/media/Gallery';
+export { ImagePlaceholder } from './components/media/ImagePlaceholder';
 export { ResponsiveImage } from './components/media/ResponsiveImage';
 export { Slideshow } from './components/media/Slideshow';
 export { Thumbnail } from './components/media/Thumbnail';
