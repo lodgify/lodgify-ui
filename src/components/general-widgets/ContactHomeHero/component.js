@@ -37,6 +37,7 @@ export const Component = ({
   bottomOffset,
   callToActionText,
   className,
+  currencyNoResultsText,
   currencyOptions,
   currencyValue,
   headingHref,
@@ -100,6 +101,7 @@ export const Component = ({
     >
       <ContactHeader
         className={className}
+        currencyNoResultsText={currencyNoResultsText}
         currencyOptions={currencyOptions}
         currencyValue={currencyValue}
         headingHref={headingHref}
@@ -180,7 +182,7 @@ Component.defaultProps = {
   bottomOffset: DEFAULT_BOTTOM_OFFSET,
   callToActionText: '',
   className: null,
-  currencyNoResultsText: undefined,
+  currencyNoResultsText: '',
   currencyOptions: [],
   currencyValue: null,
   headingHref: '',

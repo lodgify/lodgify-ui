@@ -6,6 +6,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
   bottomOffset="0px"
   callToActionText=""
   className="ma-ma-ma"
+  currencyNoResultsText=""
   currencyOptions={
     Array [
       Object {
@@ -193,6 +194,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
         </withLazyLoad(ResponsiveImage)>
         <ContactHeader
           className="ma-ma-ma"
+          currencyNoResultsText=""
           currencyOptions={
             Array [
               Object {
@@ -816,7 +818,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                 ]
                               }
                               name="currency"
-                              noResultsText="No results"
+                              noResultsText=""
                               onChange={[Function]}
                               pointing="top left"
                               value="EUR"
@@ -849,7 +851,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                 item={false}
                                 minCharacters={1}
                                 name="currency"
-                                noResultsMessage="No results"
+                                noResultsMessage=""
                                 onChange={[Function]}
                                 openOnFocus={true}
                                 options={
