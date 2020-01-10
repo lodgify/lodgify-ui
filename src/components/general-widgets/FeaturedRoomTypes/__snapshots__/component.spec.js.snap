@@ -95,7 +95,35 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
             >
               <figure
                 className="responsive-image is-fluid"
-              />
+                data-testid="responsive-image"
+              >
+                <Image
+                  alt="Image Title"
+                  as="img"
+                  avatar={false}
+                  data-testid="responsive-image-img"
+                  fluid={true}
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes={null}
+                  src=""
+                  srcSet={null}
+                  title="Image Title"
+                  ui={true}
+                >
+                  <img
+                    alt="Image Title"
+                    className="ui fluid image"
+                    data-testid="responsive-image-img"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    sizes={null}
+                    src=""
+                    srcSet={null}
+                    title="Image Title"
+                  />
+                </Image>
+              </figure>
             </ResponsiveImage>
             <div />
           </LazyLoader>
@@ -246,7 +274,35 @@ exports[`<FeaturedRoomTypes /> by default should render the right structure 1`] 
             >
               <figure
                 className="responsive-image is-fluid"
-              />
+                data-testid="responsive-image"
+              >
+                <Image
+                  alt="Image Title"
+                  as="img"
+                  avatar={false}
+                  data-testid="responsive-image-img"
+                  fluid={true}
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes={null}
+                  src=""
+                  srcSet={null}
+                  title="Image Title"
+                  ui={true}
+                >
+                  <img
+                    alt="Image Title"
+                    className="ui fluid image"
+                    data-testid="responsive-image-img"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    sizes={null}
+                    src=""
+                    srcSet={null}
+                    title="Image Title"
+                  />
+                </Image>
+              </figure>
             </ResponsiveImage>
             <div />
           </LazyLoader>
@@ -728,7 +784,35 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
             >
               <figure
                 className="responsive-image is-fluid"
-              />
+                data-testid="responsive-image"
+              >
+                <Image
+                  alt="Image Title"
+                  as="img"
+                  avatar={false}
+                  data-testid="responsive-image-img"
+                  fluid={true}
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes={null}
+                  src=""
+                  srcSet={null}
+                  title="Image Title"
+                  ui={true}
+                >
+                  <img
+                    alt="Image Title"
+                    className="ui fluid image"
+                    data-testid="responsive-image-img"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    sizes={null}
+                    src=""
+                    srcSet={null}
+                    title="Image Title"
+                  />
+                </Image>
+              </figure>
             </ResponsiveImage>
             <div />
           </LazyLoader>
@@ -879,7 +963,35 @@ exports[`<FeaturedRoomTypes /> if \`props.headingText\` is passed should render 
             >
               <figure
                 className="responsive-image is-fluid"
-              />
+                data-testid="responsive-image"
+              >
+                <Image
+                  alt="Image Title"
+                  as="img"
+                  avatar={false}
+                  data-testid="responsive-image-img"
+                  fluid={true}
+                  onError={[Function]}
+                  onLoad={[Function]}
+                  sizes={null}
+                  src=""
+                  srcSet={null}
+                  title="Image Title"
+                  ui={true}
+                >
+                  <img
+                    alt="Image Title"
+                    className="ui fluid image"
+                    data-testid="responsive-image-img"
+                    onError={[Function]}
+                    onLoad={[Function]}
+                    sizes={null}
+                    src=""
+                    srcSet={null}
+                    title="Image Title"
+                  />
+                </Image>
+              </figure>
             </ResponsiveImage>
             <div />
           </LazyLoader>

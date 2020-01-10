@@ -191,7 +191,35 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                                     >
                                       <figure
                                         className="responsive-image is-fluid is-circular"
-                                      />
+                                        data-testid="responsive-image"
+                                      >
+                                        <Image
+                                          alt="Image Title"
+                                          as="img"
+                                          avatar={false}
+                                          data-testid="responsive-image-img"
+                                          fluid={true}
+                                          onError={[Function]}
+                                          onLoad={[Function]}
+                                          sizes={null}
+                                          src=""
+                                          srcSet={null}
+                                          title="Image Title"
+                                          ui={true}
+                                        >
+                                          <img
+                                            alt="Image Title"
+                                            className="ui fluid image"
+                                            data-testid="responsive-image-img"
+                                            onError={[Function]}
+                                            onLoad={[Function]}
+                                            sizes={null}
+                                            src=""
+                                            srcSet={null}
+                                            title="Image Title"
+                                          />
+                                        </Image>
+                                      </figure>
                                     </ResponsiveImage>
                                     <div />
                                   </LazyLoader>
@@ -548,7 +576,35 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                                     >
                                       <figure
                                         className="responsive-image is-fluid is-circular"
-                                      />
+                                        data-testid="responsive-image"
+                                      >
+                                        <Image
+                                          alt="Image Title"
+                                          as="img"
+                                          avatar={false}
+                                          data-testid="responsive-image-img"
+                                          fluid={true}
+                                          onError={[Function]}
+                                          onLoad={[Function]}
+                                          sizes={null}
+                                          src=""
+                                          srcSet={null}
+                                          title="Image Title"
+                                          ui={true}
+                                        >
+                                          <img
+                                            alt="Image Title"
+                                            className="ui fluid image"
+                                            data-testid="responsive-image-img"
+                                            onError={[Function]}
+                                            onLoad={[Function]}
+                                            sizes={null}
+                                            src=""
+                                            srcSet={null}
+                                            title="Image Title"
+                                          />
+                                        </Image>
+                                      </figure>
                                     </ResponsiveImage>
                                     <div />
                                   </LazyLoader>
@@ -898,7 +954,35 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                                     >
                                       <figure
                                         className="responsive-image is-fluid is-circular"
-                                      />
+                                        data-testid="responsive-image"
+                                      >
+                                        <Image
+                                          alt="Image Title"
+                                          as="img"
+                                          avatar={false}
+                                          data-testid="responsive-image-img"
+                                          fluid={true}
+                                          onError={[Function]}
+                                          onLoad={[Function]}
+                                          sizes={null}
+                                          src=""
+                                          srcSet={null}
+                                          title="Image Title"
+                                          ui={true}
+                                        >
+                                          <img
+                                            alt="Image Title"
+                                            className="ui fluid image"
+                                            data-testid="responsive-image-img"
+                                            onError={[Function]}
+                                            onLoad={[Function]}
+                                            sizes={null}
+                                            src=""
+                                            srcSet={null}
+                                            title="Image Title"
+                                          />
+                                        </Image>
+                                      </figure>
                                     </ResponsiveImage>
                                     <div />
                                   </LazyLoader>
@@ -1252,7 +1336,35 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                                     >
                                       <figure
                                         className="responsive-image is-fluid is-circular"
-                                      />
+                                        data-testid="responsive-image"
+                                      >
+                                        <Image
+                                          alt="Image Title"
+                                          as="img"
+                                          avatar={false}
+                                          data-testid="responsive-image-img"
+                                          fluid={true}
+                                          onError={[Function]}
+                                          onLoad={[Function]}
+                                          sizes={null}
+                                          src=""
+                                          srcSet={null}
+                                          title="Image Title"
+                                          ui={true}
+                                        >
+                                          <img
+                                            alt="Image Title"
+                                            className="ui fluid image"
+                                            data-testid="responsive-image-img"
+                                            onError={[Function]}
+                                            onLoad={[Function]}
+                                            sizes={null}
+                                            src=""
+                                            srcSet={null}
+                                            title="Image Title"
+                                          />
+                                        </Image>
+                                      </figure>
                                     </ResponsiveImage>
                                     <div />
                                   </LazyLoader>

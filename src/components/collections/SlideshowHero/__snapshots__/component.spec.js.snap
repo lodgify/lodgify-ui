@@ -723,6 +723,7 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                     "original": "url",
                     "originalAlt": undefined,
                     "originalTitle": undefined,
+                    "placeholder": "url",
                     "sizes": undefined,
                     "srcSet": undefined,
                     "thumbnail": "url",
@@ -731,10 +732,10 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                 ]
               }
               lazyLoad={true}
-              onImageError={[Function]}
               onSlide={[Function]}
               preventDefaultTouchmoveEvent={false}
               renderFullscreenButton={[Function]}
+              renderItem={[Function]}
               renderLeftNav={[Function]}
               renderPlayPauseButton={[Function]}
               renderRightNav={[Function]}
@@ -757,6 +758,7 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                     "original": "url",
                     "originalAlt": undefined,
                     "originalTitle": undefined,
+                    "placeholder": "url",
                     "sizes": undefined,
                     "srcSet": undefined,
                     "thumbnail": "url",
@@ -793,13 +795,91 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                           }
                         }
                       >
-                        <div
-                          className="image-gallery-image"
-                        >
-                          <img
-                            onError={[Function]}
-                            src="url"
-                          />
+                        <div>
+                          <withLazyLoad(ResponsiveImage)
+                            imageUrl="url"
+                            isLazyLoaded={true}
+                            placeholderImageUrl="url"
+                          >
+                            <LazyLoader
+                              componentProps={
+                                Object {
+                                  "isLazyLoaded": true,
+                                  "placeholderImageUrl": "url",
+                                  "sizes": undefined,
+                                }
+                              }
+                              lazyProps={
+                                Object {
+                                  "imageUrl": "url",
+                                  "srcSet": undefined,
+                                }
+                              }
+                            >
+                              <div />
+                              <ResponsiveImage
+                                hasRoundedCorners={false}
+                                imageHeight={null}
+                                imageTitle="Image Title"
+                                imageUrl=""
+                                imageWidth={null}
+                                isAvatar={false}
+                                isCircular={false}
+                                isFluid={false}
+                                isLazyLoaded={true}
+                                label={null}
+                                placeholderImageUrl="url"
+                                sizes={null}
+                                srcSet={null}
+                              >
+                                <figure
+                                  className="responsive-image has-blurred-children has-placeholder"
+                                  data-testid="responsive-image"
+                                >
+                                  <Image
+                                    alt="Image Title"
+                                    as="img"
+                                    avatar={false}
+                                    data-testid="responsive-image-img"
+                                    fluid={true}
+                                    onError={[Function]}
+                                    onLoad={[Function]}
+                                    sizes={null}
+                                    src=""
+                                    srcSet={null}
+                                    title="Image Title"
+                                    ui={true}
+                                  >
+                                    <img
+                                      alt="Image Title"
+                                      className="ui fluid image"
+                                      data-testid="responsive-image-img"
+                                      onError={[Function]}
+                                      onLoad={[Function]}
+                                      sizes={null}
+                                      src=""
+                                      srcSet={null}
+                                      title="Image Title"
+                                    />
+                                  </Image>
+                                  <Image
+                                    as="img"
+                                    data-testid="responsive-image-placeholder"
+                                    fluid={true}
+                                    src="url"
+                                    ui={true}
+                                  >
+                                    <img
+                                      className="ui fluid image"
+                                      data-testid="responsive-image-placeholder"
+                                      src="url"
+                                    />
+                                  </Image>
+                                </figure>
+                              </ResponsiveImage>
+                              <div />
+                            </LazyLoader>
+                          </withLazyLoad(ResponsiveImage)>
                         </div>
                       </div>
                     </div>

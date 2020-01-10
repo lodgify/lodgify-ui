@@ -1,4 +1,3 @@
-jest.mock('./utils/getAdaptedImagesWithPlaceholders');
 jest.mock('./utils/adaptImages');
 
 import React from 'react';
@@ -8,15 +7,9 @@ import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-he
 
 import { testidSelectorFactory } from 'utils/testid';
 
-import { getAdaptedImagesWithPlaceholders } from './utils/getAdaptedImagesWithPlaceholders';
 import { adaptImages } from './utils/adaptImages';
 import { Component as Slideshow } from './component';
-import {
-  images,
-  adaptedImages,
-  adaptedImagesAndBlockPlaceholders,
-  imagesFail,
-} from './mock-data/images';
+import { images, adaptedImages } from './mock-data/images';
 
 adaptImages.mockReturnValue(adaptedImages);
 const testid = testidSelectorFactory('slideshow');
@@ -120,33 +113,6 @@ describe('<Slideshow />', () => {
         wrapper.update();
         description = wrapper.find(testid('description'));
         expect(description.text()).toEqual(images[1].descriptionText);
-      });
-    });
-  });
-
-  describe('Interaction: onImageError', () => {
-    it('return an adapted object with a placeholder if any image is broken', () => {
-      act(() => {
-        getAdaptedImagesWithPlaceholders.mockReturnValueOnce(
-          adaptedImagesAndBlockPlaceholders
-        );
-
-        let wrapper = shallow(<Slideshow images={imagesFail} />);
-        let galleryImages = wrapper.find(testid()).props().items;
-
-        const trigger = wrapper.find(testid());
-
-        trigger.props().onImageError({
-          target: {
-            src:
-              'https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.g',
-          },
-        });
-        wrapper.update();
-
-        galleryImages = wrapper.find(testid()).props().items;
-
-        expect(galleryImages).toEqual(adaptedImagesAndBlockPlaceholders);
       });
     });
   });

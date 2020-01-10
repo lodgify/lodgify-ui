@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useMemo } from 'react';
 import PropTypes from 'prop-types';
 import ImageGallery from 'react-image-gallery';
 import get from 'get-value';
@@ -6,12 +6,12 @@ import classnames from 'classnames';
 
 import { Heading } from 'typography/Heading';
 import { Paragraph } from 'typography/Paragraph';
+import { ResponsiveImage } from 'media/ResponsiveImage';
 import { ICON_NAMES } from 'elements/Icon';
 import { testidFactory } from 'utils/testid';
 
 import { adaptImages } from './utils/adaptImages';
 import { renderNavButton } from './utils/renderNavButton';
-import { getAdaptedImagesWithPlaceholders } from './utils/getAdaptedImagesWithPlaceholders';
 
 const TEST_ID_PREFIX = 'slideshow';
 
@@ -35,21 +35,10 @@ export const Component = ({
   startIndex,
 }) => {
   const [index, setIndex] = useState(startIndex);
-  const [imagesWithAdapt, setImages] = useState(adaptImages(images));
-
-  const handleSlide = index => {
+  const onSlide = index => {
     setIndex(index);
   };
-
-  const handleImageError = event => {
-    const adaptedImagesAndBlockPlaceholders = getAdaptedImagesWithPlaceholders(
-      imagesWithAdapt,
-      event.target.src
-    );
-
-    setImages(adaptedImagesAndBlockPlaceholders);
-  };
-
+  const adaptedImages = useMemo(() => adaptImages(images), [images]);
   const descriptionText = get(images, [index, 'descriptionText']);
 
   return (
@@ -68,12 +57,19 @@ export const Component = ({
           'no-border-radius': !isRounded,
         })}
         data-testid={testid()}
-        items={imagesWithAdapt}
+        items={adaptedImages}
         lazyLoad
-        // Note: styles for the pagination controls
-        // live in `styles/semantic/themes/livingstone/collections/menu.*`
-        onImageError={handleImageError}
-        onSlide={handleSlide}
+        onSlide={onSlide}
+        renderItem={item => (
+          <div>
+            <ResponsiveImage
+              imageUrl={item.original}
+              placeholderImageUrl={item.placeholder}
+              sizes={item.sizes}
+              srcSet={item.srcSet}
+            />
+          </div>
+        )}
         renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
         renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
         showBullets={isShowingBulletNavigation}
@@ -82,7 +78,7 @@ export const Component = ({
         showPlayButton={false}
         showThumbnails={isShowingThumbnails}
         startIndex={startIndex}
-        thumbnails={imagesWithAdapt}
+        thumbnails={adaptedImages}
       />
     </Fragment>
   );
@@ -116,12 +112,13 @@ Component.propTypes = {
       /** A description of the image to show above the slideshow when the image is showing. */
       descriptionText: PropTypes.string,
       /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-      sizes: PropTypes.string,
+      placeholderUrl: PropTypes.string,
       /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-      srcSet: PropTypes.string,
+      sizes: PropTypes.string,
       /** Title of the image to show when hovering over it on desktop browsers. */
-      title: PropTypes.string,
+      srcSet: PropTypes.string,
       /** URL pointing to the image to display. */
+      title: PropTypes.string,
       url: PropTypes.string.isRequired,
     })
   ).isRequired,
