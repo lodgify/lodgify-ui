@@ -1,4 +1,5 @@
 ```jsx
+import { Characteristics } from '@lodgify/ui';
 const { propertyCharacteristics } = require("./mock-data/props");
 
 // const propertyCharacteristics = [

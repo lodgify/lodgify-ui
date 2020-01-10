@@ -1,4 +1,12 @@
 ```jsx
+import { 
+  Sidebar, 
+  Divider, 
+  Button,
+  Paragraph,
+  Heading
+} from '@lodgify/ui';
+
 class SidebarController extends React.Component {
   constructor() {
     super();
@@ -43,6 +51,11 @@ class SidebarController extends React.Component {
 #### Close icon
 
 ```jsx
+import { 
+  Sidebar, 
+  Paragraph
+} from '@lodgify/ui';
+
 <Sidebar
   hasCloseIcon={true}
   isVisible={true}
@@ -60,6 +73,12 @@ class SidebarController extends React.Component {
 #### Slide from top
 
 ```jsx
+import { 
+  Sidebar, 
+  Paragraph,
+  Divider
+} from '@lodgify/ui';
+
 <Sidebar
   isVisible={true}
   renderSidebarContent={() => (

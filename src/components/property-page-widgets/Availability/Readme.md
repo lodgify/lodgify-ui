@@ -1,4 +1,6 @@
 ```jsx
+import { Availability } from '@lodgify/ui';
+
 const isDayBlocked = (moment) => moment.format('dddd') === 'Friday';
 
 <Availability
@@ -11,6 +13,7 @@ const isDayBlocked = (moment) => moment.format('dddd') === 'Friday';
 #### With multiple room types
 
 ```jsx
+import { Availability } from '@lodgify/ui';
 const { roomOptionsWithImages } = require('./mock-data/options');
 
 const state ={
@@ -31,6 +34,8 @@ const isDayBlocked = (moment) => moment.format('dddd') === 'Friday' && state.cur
 #### Strings
 
 ```jsx
+import { Availability } from '@lodgify/ui';
+
 <Availability
   roomOptionsWithImages={[{}]}
   headingText="Unavailability"

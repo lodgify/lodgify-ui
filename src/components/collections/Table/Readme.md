@@ -1,4 +1,6 @@
 ```jsx
+import { Table } from '@lodgify/ui';
+
 const headers = [
   'Rates',
   'Mon',
@@ -24,6 +26,7 @@ const body = [
 React components can be used as table items
 
 ```jsx
+import { Table, Dropdown } from '@lodgify/ui';
 const { dropdownOptions } = require('./mock-data/props');
 
 const headers = [

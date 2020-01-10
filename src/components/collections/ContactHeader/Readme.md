@@ -1,4 +1,5 @@
 ```jsx
+import { ContactHeader } from '@lodgify/ui';
 
 const currencyOptions = [
   { text: 'EUR', value: 'EUR', label: 'Euro' },

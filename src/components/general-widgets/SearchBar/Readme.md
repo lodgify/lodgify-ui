@@ -1,4 +1,6 @@
 ```jsx
+import { SearchBar } from '@lodgify/ui';
+
 <SearchBar />
 ```
 
@@ -7,12 +9,16 @@
 #### Dropdowns open above
 
 ```jsx
+import { SearchBar } from '@lodgify/ui';
+
 <SearchBar willLocationDropdownOpenAbove={true} />
 ```
 
 #### Fixed
 
 ```jsx
+import { SearchBar, Button } from '@lodgify/ui';
+
 class Controller extends React.Component {
   constructor() {
     super();
@@ -37,12 +43,16 @@ class Controller extends React.Component {
 #### Modal
 
 ```jsx
+import { SearchBar } from '@lodgify/ui';
+
 <SearchBar isDisplayedAsModal />
 ```
 
 #### Stackable
 
 ```jsx
+import { SearchBar } from '@lodgify/ui';
+
 const { locationOptions } = require('./mock-data/options');
 
 <SearchBar
@@ -57,6 +67,8 @@ const { locationOptions } = require('./mock-data/options');
 #### Location dropdown
 
 ```jsx
+import { SearchBar } from '@lodgify/ui';
+
 const { locationOptions } = require('./mock-data/options');
 
 <SearchBar locationOptions={locationOptions} />;
@@ -65,7 +77,7 @@ const { locationOptions } = require('./mock-data/options');
 #### Search button
 
 ```jsx
-const { Button } = require('../../elements/Button');
+import { SearchBar, Button } from '@lodgify/ui';
 
 <SearchBar searchButton={<Button>Custom!</Button>} />;
 ```
@@ -73,6 +85,8 @@ const { Button } = require('../../elements/Button');
 #### Summary content
 
 ```jsx
+import { SearchBar, Button } from '@lodgify/ui';
+
 class Controller extends React.Component {
   constructor() {
     super();
@@ -102,6 +116,8 @@ class Controller extends React.Component {
 #### Summary content in modal
 
 ```jsx
+import { SearchBar } from '@lodgify/ui';
+
 <SearchBar
   isDisplayedAsModal
   modalSummaryElement={<div>Property information</div>}
@@ -111,6 +127,8 @@ class Controller extends React.Component {
 #### Strings
 
 ```jsx
+import { SearchBar } from '@lodgify/ui';
+
 const { locationOptions } = require('./mock-data/options');
 
 <SearchBar

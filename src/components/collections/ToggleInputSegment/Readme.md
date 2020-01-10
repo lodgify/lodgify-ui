@@ -1,4 +1,6 @@
 ```jsx
+import { ToggleInputSegment } from '@lodgify/ui';
+
 <ToggleInputSegment 
   heading={"Instant Booking"}
 />
@@ -9,6 +11,8 @@
 #### Controlled
 
 ```jsx
+import { ToggleInputSegment } from '@lodgify/ui';
+
 class Controller extends React.Component {
   constructor() {
     super();
@@ -37,6 +41,8 @@ class Controller extends React.Component {
 
 #### Description
 ```jsx
+import { ToggleInputSegment } from '@lodgify/ui';
+
 <ToggleInputSegment 
   description={"Properties that can be booked without approval of the owner"}
   heading={"Instant Booking"}

@@ -1,4 +1,6 @@
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 <ResponsiveImage
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
  />
@@ -11,6 +13,8 @@
 A fluid image fills its container.
 
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 <div style={{ height: 400 }}>
   <ResponsiveImage
     imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
@@ -21,6 +25,8 @@ A fluid image fills its container.
 
 #### Not Fluid
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 <ResponsiveImage
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
   imageWidth={100}
@@ -31,6 +37,8 @@ A fluid image fills its container.
 #### Responsive
 
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=${width}`;
 
 <ResponsiveImage
@@ -43,6 +51,8 @@ const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536
 #### With graceful loading
 
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 <ResponsiveImage
   placeholderImageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=20&mode=max"
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1024&mode=max"
@@ -54,6 +64,8 @@ const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536
 #### Without lazy loading
 
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 <ResponsiveImage
   placeholderImageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=10&mode=max"
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1023&mode=max"
@@ -66,6 +78,8 @@ const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536
 #### Labeled
 
 ```jsx
+import { ResponsiveImage, Divider} from '@lodgify/ui';
+
 <div>
   <ResponsiveImage
     imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100&mode=max"
@@ -86,6 +100,8 @@ const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536
 #### Rounded corners
 
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 <ResponsiveImage
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=600&mode=max"
   hasRoundedCorners
@@ -95,6 +111,8 @@ const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536
 #### Circular
 
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 <ResponsiveImage
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=600&mode=max"
   isCircular
@@ -104,6 +122,8 @@ const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536
 #### No url
 
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 <ResponsiveImage />
 ```
 
@@ -111,5 +131,7 @@ const getSrc = width => `https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536
 
 #### Strings
 ```jsx
+import { ResponsiveImage } from '@lodgify/ui';
+
 <ResponsiveImage imageNotFoundLabelText="Where did it go?" />
 ```

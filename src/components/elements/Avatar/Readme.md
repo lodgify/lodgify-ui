@@ -1,4 +1,6 @@
 ```jsx
+import { Avatar } from '@lodgify/ui';
+
 <Avatar
   firstName="Foo"
   lastName="Bar"
@@ -9,5 +11,7 @@
 ### Without image
 
 ```jsx
+import { Avatar } from '@lodgify/ui';
+
 <Avatar firstName="Foo" lastName="Bar" />
 ```

@@ -1,4 +1,6 @@
 ```jsx
+import { Reviews } from '@lodgify/ui';
+
 const {
   guestTypeOptions,
   monthOptions,
@@ -40,6 +42,8 @@ const reviews = [
 #### Strings
 
 ```jsx
+import { Reviews } from '@lodgify/ui';
+
 const {
   guestTypeOptions,
   monthOptions,
@@ -94,6 +98,8 @@ const reviews = [
 #### Validation
 
 ```jsx
+import { Reviews } from '@lodgify/ui';
+
 const {
   guestTypeOptions,
   monthOptions,
@@ -138,6 +144,8 @@ const validation = {
 #### Success
 
 ```jsx
+import { Reviews } from '@lodgify/ui';
+
 const {
   guestTypeOptions,
   monthOptions,
@@ -172,6 +180,8 @@ const reviews = [
 #### Error
 
 ```jsx
+import { Reviews } from '@lodgify/ui';
+
 const {
   guestTypeOptions,
   monthOptions,
@@ -206,6 +216,8 @@ const reviews = [
 #### Showing placeholders
 
 ```jsx
+import { Reviews } from '@lodgify/ui';
+
 <Reviews
   isShowingPlaceholder
   ratingAverage={0}

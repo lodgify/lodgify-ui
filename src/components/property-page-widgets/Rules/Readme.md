@@ -1,4 +1,6 @@
 ```jsx
+import { Rules } from '@lodgify/ui';
+
 const checkInTime = '09.00 PM';
 const checkOutTime = '12.00 AM';
 const rules = ['Smoking not allowed', 'No parties or events', 'Pets are allowed'];
@@ -15,6 +17,8 @@ const rules = ['Smoking not allowed', 'No parties or events', 'Pets are allowed'
 #### Strings
 
 ```jsx
+import { Rules } from '@lodgify/ui';
+
 const checkInTime = '09.00 PM';
 const checkOutTime = '12.00 AM';
 const rules = ['Smoking not allowed', 'No parties or events', 'Pets are allowed'];

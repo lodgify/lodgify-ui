@@ -1,4 +1,6 @@
 ```jsx
+import { CallMeBack } from '@lodgify/ui';
+
 const propertyOptions = [
   { text: 'La Casa Viva', value: 'casaViva' },
   { text: 'La Casa Muerta', value: 'casaMuerta' },
@@ -26,6 +28,8 @@ const timeOptions = [
 #### Strings
 
 ```jsx
+import { CallMeBack } from '@lodgify/ui';
+
 <CallMeBack
   dateInputPlaceholder="The Date"
   emailInputLabel="Your email address"
@@ -52,6 +56,8 @@ const timeOptions = [
 #### Validation
 
 ```jsx
+import { CallMeBack } from '@lodgify/ui';
+
 const propertyOptions = [{
   text: 'With error',
   value: 'error'
@@ -87,6 +93,8 @@ const validation = {
 #### Success
 
 ```jsx
+import { CallMeBack } from '@lodgify/ui';
+
 <CallMeBack
   successMessage="The call me back form has been successfully submitted"
   propertyOptions={[]}
@@ -97,6 +105,8 @@ const validation = {
 #### Error
 
 ```jsx
+import { CallMeBack } from '@lodgify/ui';
+
 <CallMeBack
   errorMessage="Request Failed. Please try again."
   propertyOptions={[]}

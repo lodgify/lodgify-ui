@@ -1,4 +1,6 @@
 ```jsx
+import { Footer } from '@lodgify/ui';
+
 const currencyOptions = [
   { text: 'EUR', value: 'EUR', label: 'Euro' },
   { text: 'USD', value: 'USD', label: 'US Dollar' },
@@ -35,6 +37,8 @@ const socialMediaLinks = [
 #### Email capture
 
 ```jsx
+import { Footer } from '@lodgify/ui';
+
 <Footer
   hasEmailCapture
   propertyAddress={'The Cat House, Pawprint Way, Catania 08012'}
@@ -44,6 +48,8 @@ const socialMediaLinks = [
 #### Navigation bar
 
 ```jsx
+import { Footer } from '@lodgify/ui';
+
 const navigationItems = [
   { href: '/', text: 'Home' },
   { href: '/contact', text: 'Contact' },
@@ -64,6 +70,8 @@ const navigationItems = [
 #### Grouped navigation items
 
 ```jsx
+import { Footer } from '@lodgify/ui';
+
 const currencyOptions = [
   { text: 'EUR', value: 'EUR', label: 'Euro' },
   { text: 'USD', value: 'USD', label: 'US Dollar' },
@@ -119,6 +127,8 @@ const socialMediaLinks = [
 #### Strings
 
 ```jsx
+import { Footer } from '@lodgify/ui';
+
 const currencyOptions = [
   { text: 'EUR', value: 'EUR', label: 'Euro' },
 ];
@@ -157,6 +167,8 @@ const socialMediaLinks = [
 #### Without Currency Options
 
 ```jsx
+import { Footer } from '@lodgify/ui';
+
 const currencyOptions = [];
 const languageOptions = [
   { text: 'English', value: 'en' },
@@ -188,6 +200,8 @@ const socialMediaLinks = [
 #### Without Language Options
 
 ```jsx
+import { Footer } from '@lodgify/ui';
+
 const currencyOptions = [
   { text: 'EUR', value: 'EUR', label: 'Euro' },
   { text: 'USD', value: 'USD', label: 'US Dollar' },
@@ -221,6 +235,8 @@ const socialMediaLinks = [
 #### Control dropdown values
 
 ```jsx
+import { Footer } from '@lodgify/ui';
+
 const currencyOptions = [
   { text: 'EUR', value: 'EUR', label: 'Euro' },
   { text: 'USD', value: 'USD', label: 'US Dollar' },

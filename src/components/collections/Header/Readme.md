@@ -1,4 +1,5 @@
 ```jsx
+import { Header } from '@lodgify/ui';
 const { navigationItems } = require('./mock-data/navigationItems');
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 
@@ -19,6 +20,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 A logo can display an image or simple text.
 
 ```jsx
+import { Header, Divider } from '@lodgify/ui';
 const { navigationItems } = require('./mock-data/navigationItems');
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 
@@ -44,6 +46,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 Sub text can be displayed underneath the logo or logo text.
 
 ```jsx
+import { Header, Divider } from '@lodgify/ui';
 const { navigationItems } = require('./mock-data/navigationItems');
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 
@@ -72,6 +75,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 Navigation items can be links or groups of subitems.
 
 ```jsx
+import { Header } from '@lodgify/ui';
 const { navigationItems } = require('./mock-data/navigationItems');
 // [
 //   { text: 'Home', href: '/' },
@@ -112,6 +116,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 If navigationItems are too wide to fit available space, a burger menu will display.
 
 ```jsx
+import { Header } from '@lodgify/ui';
 const shortNavigationItems = [
   { text: 'Home', href: '/' },
   {
@@ -151,6 +156,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 #### Primary call to action
 
 ```jsx
+import { Header } from '@lodgify/ui';
 const { navigationItems } = require('./mock-data/navigationItems');
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 
@@ -169,6 +175,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 #### with active navigation item
 
 ```jsx
+import { Header } from '@lodgify/ui';
 const { navigationItems } = require('./mock-data/navigationItems');
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 
@@ -187,6 +194,7 @@ const logoSrc = require('./mock-data/livingstoneLogo.png');
 #### Background filled
 
 ```jsx
+import { Header } from '@lodgify/ui';
 const { navigationItems } = require('./mock-data/navigationItems');
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 

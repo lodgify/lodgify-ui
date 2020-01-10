@@ -1,4 +1,6 @@
 ```jsx
+import { TextPlaceholder } from '@lodgify/ui';
+
 <TextPlaceholder />
 ```
 
@@ -6,8 +8,12 @@
 
 #### Line lengths
 ```jsx
-<TextPlaceholder length="full" />
-<TextPlaceholder length="long" />
-<TextPlaceholder length="medium" />
-<TextPlaceholder length="short" />
+import { TextPlaceholder } from '@lodgify/ui';
+
+<div>
+  <TextPlaceholder length="full" />
+  <TextPlaceholder length="long" />
+  <TextPlaceholder length="medium" />
+  <TextPlaceholder length="short" />
+</div>
 ```

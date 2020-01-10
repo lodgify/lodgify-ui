@@ -1,4 +1,6 @@
 ```jsx
+import { Rates } from '@lodgify/ui';
+
 const currencyOptions = [
   { text: 'EUR €', value: 'eur', label: 'Euro' },
   { text: 'GBP £', value: 'gbp', label: 'British Pound' },
@@ -38,6 +40,8 @@ const rateHeadings = ['Daily', 'Weekly', 'Monthly'];
 With multi room type selector
 
 ```jsx
+import { Rates } from '@lodgify/ui';
+
 const currencyOptions = [
   { text: 'EUR €', value: 'eur', label: 'Euro' },
   { text: 'GBP £', value: 'gbp', label: 'British Pound' },
@@ -98,6 +102,8 @@ const rateHeadings = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Weekly',
 #### Strings
 
 ```jsx
+import { Rates } from '@lodgify/ui';
+
 const currencyOptions = [
   { text: 'EUR €', value: 'eur', label: 'Euro' },
 ];
@@ -152,6 +158,8 @@ const costPerExtraGuestLabel = 'Price per extra guest';
 #### Showing placeholder
 
 ```jsx
+import { Rates } from '@lodgify/ui';
+
 <Rates
   currencyOptions={[]}
   isShowingPlaceholder

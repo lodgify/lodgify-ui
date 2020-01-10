@@ -1,4 +1,5 @@
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { options } = require('./mock-data/options');
 // [
 //  { text: 'France', value: 'fr' },
@@ -15,7 +16,9 @@ const { options } = require('./mock-data/options');
 #### Error
 
 ```jsx
+import { Dropdown, Divider } from '@lodgify/ui';
 const { options } = require('./mock-data/options');
+
 <div>
   <Dropdown error label="Location" options={options} />
   <Divider />
@@ -27,6 +30,7 @@ const { options } = require('./mock-data/options');
 #### Disabled
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { options } = require('./mock-data/options');
 
 <Dropdown isDisabled label="Location" options={options} />;
@@ -35,6 +39,7 @@ const { options } = require('./mock-data/options');
 #### Valid
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { options } = require('./mock-data/options');
 
 <Dropdown isValid label="Location" options={options} />;
@@ -43,6 +48,7 @@ const { options } = require('./mock-data/options');
 ##### Valid with Icon
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { options } = require('./mock-data/options');
 
 <Dropdown isValid label="Location" options={options} icon="map pin" />;
@@ -53,6 +59,7 @@ const { options } = require('./mock-data/options');
 #### Compact
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { options } = require('./mock-data/options');
 
 <Dropdown isCompact label="Location" options={options} />;
@@ -61,6 +68,7 @@ const { options } = require('./mock-data/options');
 #### Dropdown opens above input
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { options } = require('./mock-data/options');
 
 <Dropdown willOpenAbove label="Location" options={options} />;
@@ -71,7 +79,9 @@ const { options } = require('./mock-data/options');
 The dropdown can contain an icon. [See all available icons](https://react.semantic-ui.com/elements/icon#icon-set)
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { options } = require('./mock-data/options');
+
 <Dropdown label="Location" options={options} icon="map pin" />;
 ```
 
@@ -80,6 +90,7 @@ const { options } = require('./mock-data/options');
 Options can contain images
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { optionsWithImages } = require('./mock-data/options');
 // [
 //  {
@@ -116,6 +127,8 @@ const { optionsWithImages } = require('./mock-data/options');
 Options can display different content in the dropdown menu to the text displayed in the input.
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
+
 const optionsWithContent = [
   {
     content: 'Paris is great',
@@ -135,6 +148,7 @@ const optionsWithContent = [
 #### Indented options
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { indentedOptions } = require('./mock-data/options');
 // [
 //    { text: 'United States', value: 'us' indent: 0},
@@ -151,6 +165,7 @@ const { indentedOptions } = require('./mock-data/options');
 #### Searchable
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { options } = require('./mock-data/options');
 
 <Dropdown
@@ -164,6 +179,7 @@ const { options } = require('./mock-data/options');
 #### Label
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { currencyOptions } = require('./mock-data/options');
 
 // [
@@ -179,6 +195,7 @@ const { currencyOptions } = require('./mock-data/options');
 #### Not Clearable
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { currencyOptions } = require('./mock-data/options');
 
 // [
@@ -194,6 +211,7 @@ const { currencyOptions } = require('./mock-data/options');
 #### Controlled
 
 ```jsx
+import { Dropdown } from '@lodgify/ui';
 const { useState } = require('react');
 
 const Controller = () => {

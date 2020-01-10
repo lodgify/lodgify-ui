@@ -1,4 +1,6 @@
 ```jsx
+import { Summary } from '@lodgify/ui';
+
 <Summary
   locationName="Catania"
   pricePerPeriod="$280"
@@ -12,6 +14,8 @@
 ##### Showing placeholders
 
 ```jsx
+import { Summary } from '@lodgify/ui';
+
 <Summary
   isShowingPlaceholder
   locationName="Catania"
@@ -24,6 +28,8 @@
 #### Display only the price and rating
 
 ```jsx
+import { Summary } from '@lodgify/ui';
+
 <Summary
   areOnlyNightPriceAndRatingDisplayed
   locationName="Catania"
@@ -38,6 +44,8 @@
 ##### Showing placeholders
 
 ```jsx
+import { Summary } from '@lodgify/ui';
+
 <Summary
   areOnlyNightPriceAndRatingDisplayed
   isShowingPlaceholder

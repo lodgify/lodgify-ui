@@ -1,4 +1,6 @@
 ```jsx
+import { OwnerSignUp } from '@lodgify/ui';
+
 <OwnerSignUp />
 ```
 
@@ -7,6 +9,8 @@
 #### Strings
 
 ```jsx
+import { OwnerSignUp } from '@lodgify/ui';
+
 <OwnerSignUp
   emailInputLabel="Enter email"
   firstNameInputLabel="Your first name"
@@ -27,6 +31,9 @@
 #### Validation
 
 ```jsx
+import { OwnerSignUp } from '@lodgify/ui';
+
+
 const validation = {
   email: { isRequired: true },
   firstName: { isRequired: true },
@@ -42,6 +49,8 @@ const validation = {
 #### Success
 
 ```jsx
+import { OwnerSignUp } from '@lodgify/ui';
+
 <OwnerSignUp
   successMessage="An email has been sent to your account to complete the signup process"
 />
@@ -50,6 +59,8 @@ const validation = {
 #### Error
 
 ```jsx
+import { OwnerSignUp } from '@lodgify/ui';
+
 <OwnerSignUp
   errorMessage="Request Failed. Please try again."
 />

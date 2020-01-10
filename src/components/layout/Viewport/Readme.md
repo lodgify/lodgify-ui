@@ -1,4 +1,11 @@
 ```jsx
+import { 
+  Viewport, 
+  Header, 
+  VerticalGutters, 
+  Slideshow, 
+  Footer
+} from '@lodgify/ui';
 const { navigationItems, images, currencyOptions, languageOptions, footerNavigationItems, socialMediaLinks } = require('./mock-data/mock-data');
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 

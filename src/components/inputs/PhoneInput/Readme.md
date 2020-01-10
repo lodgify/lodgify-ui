@@ -1,4 +1,6 @@
 ```jsx
+import { PhoneInput } from '@lodgify/ui';
+
 <PhoneInput />
 ```
 
@@ -7,6 +9,8 @@
 #### Error
 
 ```jsx
+import { PhoneInput, Divider } from '@lodgify/ui';
+
 <div>
   <PhoneInput error />
   <Divider />
@@ -18,6 +22,8 @@
 #### Valid
 
 ```jsx
+import { PhoneInput } from '@lodgify/ui';
+
 <PhoneInput isValid />
 ```
 
@@ -26,6 +32,8 @@
 #### Labeled
 
 ```jsx
+import { PhoneInput } from '@lodgify/ui';
+
 <PhoneInput label="Phone" />
 ```
 
@@ -34,6 +42,8 @@
 #### Country names
 
 ```jsx
+import { PhoneInput } from '@lodgify/ui';
+
 <PhoneInput
   countryNames={{
     US: 'Dagobah',
@@ -48,6 +58,8 @@
 #### Initial country value
 
 ```jsx
+import { PhoneInput } from '@lodgify/ui';
+
 <PhoneInput
   initialCountryValue="JP"
 />
@@ -56,5 +68,7 @@
 #### With value
 
 ```jsx
+import { PhoneInput } from '@lodgify/ui';
+
 <PhoneInput value="123456789" label="Label" initialCountryValue="IT" />
 ```

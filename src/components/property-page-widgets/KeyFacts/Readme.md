@@ -1,4 +1,5 @@
 ```jsx
+import { KeyFacts } from '@lodgify/ui';
 const { keyFacts } = require('./mock-data/keyFacts');
 
 <KeyFacts keyFacts={keyFacts} />
@@ -9,6 +10,7 @@ const { keyFacts } = require('./mock-data/keyFacts');
 #### Strings
 
 ```jsx
+import { KeyFacts } from '@lodgify/ui';
 const { keyFacts } = require('./mock-data/keyFacts');
 
 <KeyFacts keyFacts={keyFacts} headingText="What to expect" />

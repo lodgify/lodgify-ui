@@ -1,4 +1,6 @@
 ```jsx
+import { Review } from '@lodgify/ui';
+
 const ratingNumber = 4;
 const reviewerCategory = 'Young couple';
 const reviewerLocation = 'Portugal';
@@ -31,6 +33,8 @@ const reviewTitle = 'Great accommodation! Honorable host.';
 #### Showing placeholder
 
 ```jsx
+import { Review } from '@lodgify/ui';
+
 <Review
   isShowingPlaceholder
   ratingNumber={0}

@@ -1,4 +1,5 @@
 ```jsx
+import { Hero } from '@lodgify/ui';
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 
@@ -16,6 +17,7 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
 
 #### Show active navigation item
 ```jsx
+import { Hero } from '@lodgify/ui';
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 
@@ -33,6 +35,7 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
 #### With bottom offset
 
 ```jsx
+import { Hero } from '@lodgify/ui';
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 
@@ -52,6 +55,7 @@ const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data')
 
 #### Children
 ```jsx
+import { Hero, FlexContainer, Heading } from '@lodgify/ui';
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 

@@ -1,4 +1,5 @@
 ```jsx
+import { SlideshowHero, SearchBar } from '@lodgify/ui';
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 

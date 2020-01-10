@@ -1,4 +1,5 @@
 ```jsx
+import { Description } from '@lodgify/ui';
 const {
   homeHighlights,
   propertyCharacteristics
@@ -22,6 +23,7 @@ const {
 #### Description text
 
 ```jsx
+import { Description } from '@lodgify/ui';
 const {
   descriptionText,
   homeHighlights,
@@ -40,6 +42,7 @@ const {
 #### Long description text
 
 ```jsx
+import { Description } from '@lodgify/ui';
 const {
   longDescriptionText,
   homeHighlights,
@@ -58,6 +61,7 @@ const {
 #### HTML description text
 
 ```jsx
+import { Description } from '@lodgify/ui';
 const {
   htmlDescriptionText,
   homeHighlights,
@@ -76,6 +80,7 @@ const {
 #### Strings
 
 ```jsx
+import { Description } from '@lodgify/ui';
 const {
   longDescriptionText,
   extraDescriptionText,

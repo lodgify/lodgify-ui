@@ -1,4 +1,6 @@
 ```jsx
+import { HostProfile } from '@lodgify/ui';
+
 const catImageUrl = 'https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=100';
 const name = 'Mitjons & Kira';
 const description = `Cats have keen vision; they can see much more detail than dogs.
@@ -30,6 +32,8 @@ const languages = ['English', 'Italian', 'German', 'Spanish'];
 
 #### Strings
 ```jsx
+import { HostProfile } from '@lodgify/ui';
+
 const catImageUrl = 'https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=100';
 const name = 'Mitjons & Kira';
 const description = `Cats have keen vision; they can see much more detail than dogs.

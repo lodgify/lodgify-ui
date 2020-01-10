@@ -1,4 +1,5 @@
 ```jsx
+import { Heading, StickyMenu } from '@lodgify/ui';
 const {menuItems, styles} = require('./mock-data/mock-data');
 
 <div>

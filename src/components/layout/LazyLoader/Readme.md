@@ -1,4 +1,6 @@
 ```jsx
+import { LazyLoader, ResponsiveImage } from '@lodgify/ui';
+
 <LazyLoader 
   componentProps={{
     placeholderImageUrl:"https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=20&mode=max",
@@ -14,6 +16,8 @@
 
 #### Lazy props
 ```jsx
+import { LazyLoader, ResponsiveImage } from '@lodgify/ui';
+
 <LazyLoader 
   componentProps={{
     placeholderImageUrl:"https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=20&mode=max",

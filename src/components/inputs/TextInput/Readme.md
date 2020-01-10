@@ -1,4 +1,6 @@
 ```jsx
+import { TextInput } from '@lodgify/ui';
+
 <TextInput />
 ```
 
@@ -7,6 +9,8 @@
 #### Error
 
 ```jsx
+import { TextInput, Divider } from '@lodgify/ui';
+
 <div>
   <TextInput error />
   <Divider />
@@ -18,6 +22,8 @@
 #### Valid
 
 ```jsx
+import { TextInput } from '@lodgify/ui';
+
 <TextInput isValid />
 ```
 
@@ -26,12 +32,16 @@
 #### Labeled
 
 ```jsx
+import { TextInput } from '@lodgify/ui';
+
 <TextInput label="Search" />
 ```
 
 #### Type
 
 ```jsx
+import { TextInput } from '@lodgify/ui';
+
 const Controller = () => {
   const [value, setValue] = React.useState(null);
   return (
@@ -51,12 +61,16 @@ const Controller = () => {
 A fluid input fills the width of its container.
 
 ```jsx
+import { TextInput } from '@lodgify/ui';
+
 <TextInput isFluid />
 ```
 
 #### Controlled
 
 ```jsx
+import { TextInput } from '@lodgify/ui';
+
 const Controller = () => {
   const [value, setValue] = React.useState(null);
   return (

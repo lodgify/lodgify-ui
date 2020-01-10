@@ -1,4 +1,6 @@
 ```jsx
+import { DateRangePicker } from '@lodgify/ui';
+
 <DateRangePicker />
 ```
 
@@ -7,6 +9,8 @@
 #### Error
 
 ```jsx
+import { DateRangePicker, Divider } from '@lodgify/ui';
+
 <div>
   <DateRangePicker error />
   <Divider />
@@ -18,12 +22,16 @@
 #### Valid
 
 ```jsx
+import { DateRangePicker } from '@lodgify/ui';
+
 <DateRangePicker isValid />
 ```
 
 #### Loading
 
 ```jsx
+import { DateRangePicker } from '@lodgify/ui';
+
 <DateRangePicker isLoading />
 ```
 
@@ -32,7 +40,9 @@
 #### Display format
 
 ```jsx
+import { DateRangePicker, Divider } from '@lodgify/ui';
 const moment = require('moment');
+
 <div>
   <DateRangePicker
     displayFormat="D.M.YY"
@@ -55,6 +65,8 @@ const moment = require('moment');
 #### Placeholders
 
 ```jsx
+import { DateRangePicker } from '@lodgify/ui';
+
 <DateRangePicker
   endDatePlaceholderText="Check-out"
   startDatePlaceholderText="Check-in"
@@ -64,6 +76,8 @@ const moment = require('moment');
 #### Calendar opens above input
 
 ```jsx
+import { DateRangePicker } from '@lodgify/ui';
+
 <DateRangePicker willOpenAbove />
 ```
 
@@ -72,6 +86,8 @@ const moment = require('moment');
 #### Block days
 
 ```jsx
+import { DateRangePicker } from '@lodgify/ui';
+
 <DateRangePicker
   getIsDayBlocked={moment => moment.format('dddd') === 'Friday'}
 />
@@ -80,6 +96,8 @@ const moment = require('moment');
 #### Controlled
 
 ```jsx
+import { DateRangePicker } from '@lodgify/ui';
+
 const Controller = () => {
   const [value, setValue] = React.useState(null);
   return (

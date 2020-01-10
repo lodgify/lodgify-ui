@@ -1,15 +1,19 @@
 By default `Thumbnail` fills the width of its container.
 
 ```jsx
-<div style={{ width: 100 }}>
-  <Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100" />
+import { Thumbnail, Divider } from '@lodgify/ui';
+
+<div>
+  <div style={{ width: 100 }}>
+    <Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100" />
+  </div>
+  <Divider />
+  <div style={{ width: 300 }}>
+    <Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=300" />
+  </div>
+  <Divider />
+  <Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1000" />
 </div>
-<Divider />
-<div style={{ width: 300 }}>
-  <Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=300" />
-</div>
-<Divider />
-<Thumbnail imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=1000" />
 ```
 
 ### Variations
@@ -17,38 +21,44 @@ By default `Thumbnail` fills the width of its container.
 #### Size
 
 ```jsx
-<div style={{ width: 100 }}>
-  <Thumbnail
-    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
-    size="small"
-  />
-</div>
-<Divider />
-<div style={{ width: 100 }}>
-  <Thumbnail
-    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
-    size="medium"
-  />
-</div>
-<Divider />
-<div style={{ width: 100 }}>
-  <Thumbnail
-    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
-    size="large"
-  />
-</div>
-<Divider />
-<div style={{ width: 100 }}>
-  <Thumbnail
-    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
-    size="huge"
-  />
+import { Thumbnail, Divider } from '@lodgify/ui';
+
+<div>
+  <div style={{ width: 100 }}>
+    <Thumbnail
+      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+      size="small"
+    />
+  </div>
+  <Divider />
+  <div style={{ width: 100 }}>
+    <Thumbnail
+      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+      size="medium"
+    />
+  </div>
+  <Divider />
+  <div style={{ width: 100 }}>
+    <Thumbnail
+      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+      size="large"
+    />
+  </div>
+  <Divider />
+  <div style={{ width: 100 }}>
+    <Thumbnail
+      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+      size="huge"
+    />
+  </div>
 </div>
 ```
 
 #### Rounded corners
 
 ```jsx
+import { Thumbnail } from '@lodgify/ui';
+
 <div style={{ width: 100 }}>
   <Thumbnail
     hasRoundedCorners
@@ -60,6 +70,8 @@ By default `Thumbnail` fills the width of its container.
 #### Circular
 
 ```jsx
+import { Thumbnail } from '@lodgify/ui';
+
 <Thumbnail
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
   isCircular
@@ -69,6 +81,8 @@ By default `Thumbnail` fills the width of its container.
 #### Square
 
 ```jsx
+import { Thumbnail } from '@lodgify/ui';
+
 <Thumbnail
   imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
   isSquare
@@ -78,30 +92,34 @@ By default `Thumbnail` fills the width of its container.
 #### Labeled
 
 ```jsx
-<Thumbnail
-  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
-  isSquare
-  label="small"
-  size="small"
-/>
-<Divider />
-<Thumbnail
-  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
-  isSquare
-  label="medium"
-/>
-<Divider />
-<Thumbnail
-  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
-  isSquare
-  label="large"
-  size="large"
-/>
-<Divider />
-<Thumbnail
-  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
-  isSquare
-  label="huge"
-  size="huge"
-/>
+import { Thumbnail, Divider } from '@lodgify/ui';
+
+<div>
+  <Thumbnail
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+    isSquare
+    label="small"
+    size="small"
+  />
+  <Divider />
+  <Thumbnail
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+    isSquare
+    label="medium"
+  />
+  <Divider />
+  <Thumbnail
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+    isSquare
+    label="large"
+    size="large"
+  />
+  <Divider />
+  <Thumbnail
+    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=100"
+    isSquare
+    label="huge"
+    size="huge"
+  />
+</div>
 ```

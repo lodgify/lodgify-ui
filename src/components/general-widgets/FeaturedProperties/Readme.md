@@ -1,4 +1,6 @@
 ```jsx
+import { FeaturedProperties } from '@lodgify/ui';
+
 const featuredProperties = [
   {
     bedroomsNumber: 3,
@@ -37,6 +39,8 @@ const featuredProperties = [
 #### Showing placeholder
 
 ```jsx
+import { FeaturedProperties } from '@lodgify/ui';
+
 <FeaturedProperties
   headingText="Featured properties"
   isShowingPlaceholder

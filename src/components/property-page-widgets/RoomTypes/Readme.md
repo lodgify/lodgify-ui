@@ -1,4 +1,5 @@
 ```jsx
+import { RoomTypes } from '@lodgify/ui';
 const { roomTypes } = require('./mock-data/roomTypes');
 
 <RoomTypes
@@ -11,6 +12,8 @@ const { roomTypes } = require('./mock-data/roomTypes');
 #### Showing placeholder
 
 ```jsx
+import { RoomTypes } from '@lodgify/ui';
+
 <RoomTypes
   isShowingPlaceholder
   roomTypes={[]}

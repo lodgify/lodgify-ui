@@ -1,4 +1,5 @@
 ```jsx
+import { MultiParagraph } from '@lodgify/ui';
 const { content } = require("./mock-data/content");
 
 <MultiParagraph content={content} />;
@@ -9,6 +10,7 @@ const { content } = require("./mock-data/content");
 ### with HTML
 
 ```jsx
+import { MultiParagraph } from '@lodgify/ui';
 const { htmlContent } = require("./mock-data/content");
 
 <MultiParagraph content={htmlContent} isHtml />;
@@ -17,6 +19,7 @@ const { htmlContent } = require("./mock-data/content");
 ### already opened
 
 ```jsx
+import { MultiParagraph } from '@lodgify/ui';
 const { content } = require("./mock-data/content");
 
 <MultiParagraph content={content} isShowingAll={true} />;

@@ -1,4 +1,6 @@
 ```jsx
+import { FeaturedProperty } from '@lodgify/ui';
+
 <FeaturedProperty
   bedroomsNumber={3}
   guestsNumber={3}
@@ -18,6 +20,8 @@
 #### Showing placeholder
 
 ```jsx
+import { FeaturedProperty } from '@lodgify/ui';
+
 <FeaturedProperty
   bedroomsNumber={0}
   guestsNumber={0}

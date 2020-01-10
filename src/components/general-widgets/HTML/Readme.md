@@ -1,4 +1,5 @@
 ```jsx
+import { HTML } from '@lodgify/ui';
 const { headings } = require('./mock-data/examples');
 
 <HTML htmlString={headings} />;
@@ -7,6 +8,8 @@ const { headings } = require('./mock-data/examples');
 ### Table
 
 ```jsx
+import { HTML } from '@lodgify/ui';
+
 const tableText = `
   <table>
     <tr>
@@ -28,6 +31,8 @@ const tableText = `
 #### Nesting
 
 ```jsx
+import { HTML } from '@lodgify/ui';
+
 <HTML htmlString="<h2>Inception Level 0 😱</h2><br />">
   <HTML htmlString="<h3>Inception Level 1 😱</h3><br />">
     <HTML htmlString="<h4>Inception Level 2 😱</h4><br />">
@@ -45,6 +50,7 @@ const tableText = `
 #### Image Nesting
 
 ```jsx
+import { HTML } from '@lodgify/ui';
 const {
   image,
   nestedImage,

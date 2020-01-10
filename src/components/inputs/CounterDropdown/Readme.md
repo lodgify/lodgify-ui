@@ -1,9 +1,13 @@
 ```jsx
+import { CounterDropdown } from '@lodgify/ui';
+
 <CounterDropdown counterValue={1} />
 ```
 
 #### Controlled
 ```jsx
+import { CounterDropdown } from '@lodgify/ui';
+
 const Controller = () => {
   const [counterValue, setCounterValue] = React.useState(0);
 
@@ -27,6 +31,8 @@ const Controller = () => {
 #### Max value
 
 ```jsx
+import { CounterDropdown } from '@lodgify/ui';
+
 const Controller = () => {
   const [counterValue, setCounterValue] = React.useState(0);
 
@@ -49,6 +55,8 @@ const Controller = () => {
 ### Strings
 
 ```jsx
+import { CounterDropdown } from '@lodgify/ui';
+
 <CounterDropdown
   dropdownLabel="pick guests"
 />
@@ -57,6 +65,8 @@ const Controller = () => {
 ### Dropdown opens above
 
 ```jsx
+import { CounterDropdown } from '@lodgify/ui';
+
 <CounterDropdown
   willOpenAbove
 />

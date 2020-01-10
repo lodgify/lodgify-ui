@@ -1,4 +1,5 @@
 ```jsx 
+import { Contact, Paragraph } from '@lodgify/ui';
 const {
   propertyOptions,
 } = require('./mock-data/options');

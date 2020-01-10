@@ -1,4 +1,6 @@
 ```jsx
+import { PriceLabel } from '@lodgify/ui';
+
 <PriceLabel 
   pricePerPeriod="€200" 
   periodText="per month" 
@@ -10,6 +12,8 @@
 ### Without period text
 
 ```jsx
+import { PriceLabel } from '@lodgify/ui';
+
 <PriceLabel pricePerPeriod="€200" onClick={console.log}/>
 ```
 
@@ -18,6 +22,8 @@
 #### Pointing
 
 ```jsx
+import { PriceLabel } from '@lodgify/ui';
+
 <div style={{
   backgroundColor: '#888',
   height: '100px',
@@ -39,6 +45,8 @@
 #### Has shadow
 
 ```jsx
+import { PriceLabel } from '@lodgify/ui';
+
 <PriceLabel 
   hasShadow
   isPointing 
@@ -54,6 +62,8 @@
 #### Active
 
 ```jsx
+import { PriceLabel } from '@lodgify/ui';
+
 <PriceLabel 
   isActive
   hasShadow

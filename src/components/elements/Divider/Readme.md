@@ -1,4 +1,6 @@
 ```jsx
+import { Divider } from '@lodgify/ui';
+
 <Divider />
 ```
 
@@ -7,5 +9,7 @@
 #### Line
 
 ```jsx
+import { Divider } from '@lodgify/ui';
+
 <Divider hasLine />
 ```

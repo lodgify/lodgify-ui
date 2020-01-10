@@ -1,5 +1,5 @@
 ```jsx
-const { InputGroup } = require('../InputGroup');
+import { Form } from '@lodgify/ui';
 
 <Form
   headingText="Welcome"
@@ -28,19 +28,23 @@ const { InputGroup } = require('../InputGroup');
 #### Heading
 
 ```jsx
-<Form
-  headingText="Welcome"
-  submitButtonText="Sign up"
->
-  <TextInput label="Name" name="name" />
-</Form>
-<Divider />
-<Form
-  headingText="Join us"
-  submitButtonText="Sign up"
->
-  <TextInput label="Name" name="name" />
-</Form>
+import { Form, TextInput, Divider } from '@lodgify/ui';
+
+<div>
+  <Form
+    headingText="Welcome"
+    submitButtonText="Sign up"
+  >
+    <TextInput label="Name" name="name" />
+  </Form>
+  <Divider />
+  <Form
+    headingText="Join us"
+    submitButtonText="Sign up"
+  >
+    <TextInput label="Name" name="name" />
+  </Form>
+</div>
 ```
 
 #### Input group
@@ -48,7 +52,7 @@ const { InputGroup } = require('../InputGroup');
 A set of fields can appear grouped together.
 
 ```jsx
-const { InputGroup } = require('../InputGroup');
+import { Form, InputGroup, TextInput, Dropdown } from '@lodgify/ui';
 
 <Form
   headingText="Welcome"
@@ -72,7 +76,7 @@ const { InputGroup } = require('../InputGroup');
 Inputs in forms can take up different widths.
 
 ```jsx
-const { InputGroup } = require('../InputGroup');
+import { Form, TextInput, InputGroup } from '@lodgify/ui';
 
 <Form>
   <TextInput label="Three" width="three" />
@@ -116,22 +120,28 @@ const { InputGroup } = require('../InputGroup');
 #### Submit button text
 
 ```jsx
-<Form
-  submitButtonText="Sign up"
->
-  <TextInput label="Name" name="name" />
-</Form>
-<Divider />
-<Form
-  submitButtonText="Come on in"
->
-  <TextInput label="Name" name="name" />
-</Form>
+import { Form, TextInput, Divider } from '@lodgify/ui';
+
+<div>
+  <Form
+    submitButtonText="Sign up"
+  >
+    <TextInput label="Name" name="name" />
+  </Form>
+  <Divider />
+  <Form
+    submitButtonText="Come on in"
+  >
+    <TextInput label="Name" name="name" />
+  </Form>
+</div>
 ```
 
 #### Action link
 
 ```jsx
+import { Form, TextInput } from '@lodgify/ui';
+
 <Form
   actionLink={{
     onClick: () => console.log('Clicked the action link'),
@@ -150,6 +160,8 @@ const { InputGroup } = require('../InputGroup');
 #### Validation
 
 ```jsx
+import { Form, DateRangePicker, Dropdown, TextInput } from '@lodgify/ui';
+
 const dropdownOptions = [{
   text: 'With error',
   value: 'error'
@@ -207,6 +219,8 @@ const dropdownOptions = [{
 #### Success
 
 ```jsx
+import { Form, TextInput } from '@lodgify/ui';
+
 <Form
   headingText="Welcome"
   submitButtonText="Sign up"
@@ -220,6 +234,8 @@ const dropdownOptions = [{
 #### Error
 
 ```jsx
+import { Form, TextInput } from '@lodgify/ui';
+
 <Form
   headingText="Welcome"
   submitButtonText="Sign up"

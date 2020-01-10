@@ -1,4 +1,6 @@
 ```jsx
+import { FeaturedRoomType } from '@lodgify/ui';
+
 <FeaturedRoomType
   bedsNumber={3}
   guestsNumber={3}
@@ -16,6 +18,8 @@
 #### Strings
 
 ```jsx
+import { FeaturedRoomType } from '@lodgify/ui';
+
 <FeaturedRoomType
   bedsLabel="🛏"
   bedsNumber={3}
@@ -35,6 +39,8 @@
 #### Showing Placeholder
 
 ```jsx
+import { FeaturedRoomType } from '@lodgify/ui';
+
 <FeaturedRoomType
   isShowingPlaceholder
   bedsLabel="🛏"

@@ -1,4 +1,5 @@
 ```jsx
+import { Submenu } from '@lodgify/ui';
 const { items } = require('./mock-data/items');
 // [
 //  { text: 'France', href: '#france' },
@@ -15,6 +16,8 @@ const { items } = require('./mock-data/items');
 #### Searchable
 
 ```jsx
+import { Submenu } from '@lodgify/ui';
+
 const items = [
  { text: 'France', value: 'france' },
  { text: 'Spain', value: 'espanya' },
@@ -48,6 +51,8 @@ class Controller extends React.Component {
 #### Label
 
 ```jsx
+import { Submenu } from '@lodgify/ui';
+
 const items = [
   { text: 'EUR', value: 'eur', label: 'Euro' },
   { text: 'GBP', value: 'gbp', label: 'British Pound' },

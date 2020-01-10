@@ -1,11 +1,13 @@
 ```jsx
- class Controller extends React.Component {
+import { CookieAlert, Button } from '@lodgify/ui';
+
+class Controller extends React.Component {
   constructor(props) {
     super(props);
     this.state = {isOpen: true}
   }
 
-render() {
+  render() {
     return (
       <div>      
         <CookieAlert
@@ -17,7 +19,7 @@ render() {
         />
         {!this.state.isOpen && <Button onClick={() => this.setState({ isOpen: true })}>Open Cookies</Button>}
       </div>
-      ); 
+    ); 
   }
 }
 <Controller />

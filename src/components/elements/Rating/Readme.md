@@ -1,4 +1,6 @@
 ```jsx
+import { Rating } from '@lodgify/ui';
+
 <Rating ratingNumber={4.8} />
 ```
 
@@ -7,9 +9,13 @@
 ### Numeral
 
 ```jsx
-<Rating ratingNumber={4.8} />
-<Divider />
-<Rating isShowingNumeral={false} ratingNumber={4.8} />
+import { Rating, Divider} from '@lodgify/ui';
+
+<div>
+  <Rating ratingNumber={4.8} />
+  <Divider />
+  <Rating isShowingNumeral={false} ratingNumber={4.8} />
+</div>
 ```
 
 ### Variations
@@ -17,7 +23,11 @@
 #### Icon size
 
 ```jsx
-<Rating ratingNumber={4.8} iconSize="small" />
-<Divider />
-<Rating ratingNumber={4.8} iconSize="tiny" />
+import { Rating, Divider } from '@lodgify/ui';
+
+<div>
+  <Rating ratingNumber={4.8} iconSize="small" />
+  <Divider />
+  <Rating ratingNumber={4.8} iconSize="tiny" />
+</div>
 ```

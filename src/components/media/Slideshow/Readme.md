@@ -1,4 +1,6 @@
 ```jsx
+import { Slideshow } from '@lodgify/ui';
+
 const images = [
   {
     url: "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -22,6 +24,8 @@ const images = [
 #### Heading
 
 ```jsx
+import { Slideshow } from '@lodgify/ui';
+
 const images = [
   {
     url: "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -43,6 +47,8 @@ const images = [
 #### Description text
 
 ```jsx
+import { Slideshow } from '@lodgify/ui';
+
 const images = [
   {
     url: "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
@@ -64,6 +70,8 @@ const images = [
 #### Thumbnail
 
 ```jsx
+import { Slideshow } from '@lodgify/ui';
+
 const images = [
   {
     url: "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",

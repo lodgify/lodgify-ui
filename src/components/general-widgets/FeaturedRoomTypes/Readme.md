@@ -1,4 +1,6 @@
 ```jsx
+import { FeaturedRoomTypes } from '@lodgify/ui';
+
 const featuredRoomTypes = [
   {
     bedsNumber: 3,
@@ -33,6 +35,8 @@ const featuredRoomTypes = [
 #### Showing placeholder
 
 ```jsx
+import { FeaturedRoomTypes } from '@lodgify/ui';
+
 <FeaturedRoomTypes
   headingText="Featured rooms"
   isShowingPlaceholder

@@ -1,4 +1,6 @@
 ```jsx
+import { CounterInputSegment } from '@lodgify/ui';
+
 <CounterInputSegment
   heading="Rooms and Bathrooms"
   counters={[
@@ -11,6 +13,8 @@
 ### Controlled
 
 ```jsx
+import { CounterInputSegment } from '@lodgify/ui';
+
 const Controller = () => {
   const [values, setValues] = React.useState({});
   const onChange = (name, value) => {

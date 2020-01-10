@@ -1,4 +1,5 @@
 ```jsx
+import { Location } from '@lodgify/ui';
 const {
   locationDescription,
   locationSummary,
@@ -20,6 +21,7 @@ const {
 #### Strings
 
 ```jsx
+import { Location } from '@lodgify/ui';
 const {
   locationSummary,
 } = require('./mock-data/props');
@@ -38,6 +40,7 @@ const {
 ### With only location description
 
 ```jsx
+import { Location } from '@lodgify/ui';
 const {
   locationDescription,
   locationSummary,
@@ -55,6 +58,7 @@ const {
 ### With only transport options
 
 ```jsx
+import { Location } from '@lodgify/ui';
 const {
   locationSummary,
   transportOptions

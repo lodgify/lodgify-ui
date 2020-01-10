@@ -1,4 +1,5 @@
 ```jsx
+import { Pictures } from '@lodgify/ui';
 const { images } = require("./mock-data/images");
 
 <Pictures galleryImages={images} />;
@@ -9,6 +10,7 @@ const { images } = require("./mock-data/images");
 #### Number of thumbnails
 
 ```jsx
+import { Pictures } from '@lodgify/ui';
 const { images } = require("./mock-data/images");
 
 <Pictures galleryImages={images} numberOfThumbnails={3} />;
@@ -17,6 +19,7 @@ const { images } = require("./mock-data/images");
 #### Heading in gallery modal
 
 ```jsx
+import { Pictures } from '@lodgify/ui';
 const { images } = require("./mock-data/images");
 
 <Pictures
@@ -29,6 +32,7 @@ const { images } = require("./mock-data/images");
 #### Strings
 
 ```jsx
+import { Pictures } from '@lodgify/ui';
 const { images } = require("./mock-data/images");
 
 <Pictures

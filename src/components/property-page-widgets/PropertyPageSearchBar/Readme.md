@@ -1,4 +1,6 @@
 ```jsx
+import { Fragment } from 'react';
+import { PropertyPageSearchBar, Button } from '@lodgify/ui';
 
 class Controller extends React.Component {
   constructor() {
@@ -41,6 +43,8 @@ class Controller extends React.Component {
 #### Showing placeholders
 
 ```jsx
+import { Fragment } from 'react';
+import { Button, PropertyPageSearchBar } from '@lodgify/ui';
 
 class Controller extends React.Component {
   constructor() {

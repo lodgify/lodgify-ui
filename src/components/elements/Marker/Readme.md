@@ -1,4 +1,6 @@
 ```jsx
+import { Marker } from '@lodgify/ui';
+
 <Marker />
 ```
 
@@ -7,5 +9,7 @@
 #### Active
 
 ```jsx
+import { Marker } from '@lodgify/ui';
+
 <Marker isActive />
 ```

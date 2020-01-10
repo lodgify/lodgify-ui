@@ -1,4 +1,6 @@
 ```jsx
+import { Amenities } from '@lodgify/ui';
+
 const amenities = [
   {
     name: 'Cooking',
@@ -23,6 +25,8 @@ const amenities = [
 #### Amenities with some extra items
 
 ```jsx
+import { Amenities } from '@lodgify/ui';
+
 const amenities = [
   {
     name: 'Cooking',
@@ -72,6 +76,8 @@ const amenities = [
 #### Strings
 
 ```jsx
+import { Amenities } from '@lodgify/ui';
+
 const amenities = [
   {
     name: 'Cooking',
@@ -129,6 +135,8 @@ const amenities = [
 #### With heading
 
 ```jsx
+import { Amenities } from '@lodgify/ui';
+
 const amenities = [
   {
     name: 'Cooking',
@@ -178,6 +186,8 @@ const amenities = [
 #### Display as stacked
 
 ```jsx
+import { Amenities } from '@lodgify/ui';
+
 const amenities = [
   {
     name: 'Cooking',
@@ -203,6 +213,8 @@ const amenities = [
 #### Display the extra items in a modal
 
 ```jsx
+import { Amenities } from '@lodgify/ui';
+
 const amenities = [
   {
     name: 'Cooking',

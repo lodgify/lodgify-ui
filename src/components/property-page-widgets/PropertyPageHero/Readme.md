@@ -1,4 +1,6 @@
 ```jsx
+import { PropertyPageHero } from '@lodgify/ui';
+
 const logoSrc = require("./mock-data/livingstoneLogo.png");
 const {
   backgroundImageUrl,
@@ -36,6 +38,8 @@ const galleryImages = [
 If there are fewer than two gallery images, the gallery won't be displayed.
 
 ```jsx
+import { PropertyPageHero } from '@lodgify/ui';
+
 const logoSrc = require("./mock-data/livingstoneLogo.png");
 const {
   backgroundImageUrl,

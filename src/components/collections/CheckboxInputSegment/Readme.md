@@ -1,4 +1,5 @@
 ```jsx
+import { CheckboxInputSegment } from '@lodgify/ui';
 const { checkboxes } = require('./mock-data/checkboxes');
 
 <CheckboxInputSegment heading="Amenities" checkboxes={checkboxes} />;
@@ -7,7 +8,9 @@ const { checkboxes } = require('./mock-data/checkboxes');
 ### Controlled
 
 ```jsx
+import { CheckboxInputSegment } from '@lodgify/ui';
 const { checkboxes } = require('./mock-data/checkboxes');
+
 const Controller = () => {
   const [values, setValues] = React.useState({});
   const onChange = (name, value) => {

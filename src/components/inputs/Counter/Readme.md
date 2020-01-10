@@ -1,4 +1,6 @@
 ```jsx
+import { Counter } from '@lodgify/ui';
+
 <Counter />
 ```
 
@@ -6,6 +8,8 @@
 
 #### Controlled
 ```jsx
+import { Counter } from '@lodgify/ui';
+
 const Controller = () => {
   const [value, setValue] = React.useState(0);
 
@@ -27,6 +31,8 @@ const Controller = () => {
 #### Max value
 
 ```jsx
+import { Counter } from '@lodgify/ui';
+
 const Controller = () => {
   const [value, setValue] = React.useState(0);
 
@@ -51,6 +57,8 @@ const Controller = () => {
 #### Value
 
 ```jsx
+import { Counter } from '@lodgify/ui';
+
 const Controller = () => {
   const [value, setValue] = React.useState(0);
 
@@ -71,6 +79,8 @@ const Controller = () => {
 ```
 
 ```jsx
+import { Counter } from '@lodgify/ui';
+
 const Controller = () => {
   const [value, setValue] = React.useState(0);
 

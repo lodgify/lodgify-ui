@@ -1,4 +1,6 @@
 ```jsx
+import { PropertySearchResult } from '@lodgify/ui';
+
 const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 <PropertySearchResult
@@ -27,6 +29,8 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 #### Price without period text
 ```jsx
+import { PropertySearchResult } from '@lodgify/ui';
+
 const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 <PropertySearchResult
@@ -51,6 +55,8 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 #### Compact
 ```jsx
+import { PropertySearchResult } from '@lodgify/ui';
+
 const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen']; 
 
 <PropertySearchResult
@@ -78,6 +84,8 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 #### Active
 ```jsx
+import { PropertySearchResult } from '@lodgify/ui';
+
 const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 
 <PropertySearchResult
@@ -104,6 +112,8 @@ const amenities = ['Pool', 'Wifi', 'Washer', 'Kitchen'];
 #### Showing placeholder
 
 ```jsx
+import { PropertySearchResult } from '@lodgify/ui';
+
 <PropertySearchResult
   bedroomsNumber={0}
   guestsNumber={0}

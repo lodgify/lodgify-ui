@@ -1,4 +1,6 @@
 ```jsx
+import { IconCard } from '@lodgify/ui';
+
 <IconCard name="fire" />
 ```
 
@@ -7,6 +9,8 @@
 #### Disabled
 
 ```jsx
+import { IconCard } from '@lodgify/ui';
+
 <IconCard isDisabled name="fire" />
 ```
 
@@ -15,56 +19,72 @@
 #### Labeled
 
 ```jsx
-<IconCard label="Fireplace" name="fire" />
-<IconCard
-  label={`
-    Wow
-    Multiline
-  `}
-  name="fire"
-/>
-<IconCard isDisabled label="Fireplace" name="fire" />
+import { IconCard } from '@lodgify/ui';
+
+<div>
+  <IconCard label="Fireplace" name="fire" />
+  <IconCard
+    label={`
+      Wow
+      Multiline
+    `}
+    name="fire"
+  />
+  <IconCard isDisabled label="Fireplace" name="fire" />
+</div>
 ```
 
 #### Filled
 
 ```jsx
-<IconCard isFilled label="Fireplace" name="fire" />
-<IconCard
-  isDisabled
-  isFilled
-  label="Fireplace"
-  name="fire"
-/>
+import { IconCard } from '@lodgify/ui';
+
+<div>
+  <IconCard isFilled label="Fireplace" name="fire" />
+  <IconCard
+    isDisabled
+    isFilled
+    label="Fireplace"
+    name="fire"
+  />
+</div>
 ```
 
 #### Left aligned
 
 ```jsx
-<IconCard
-  isLeftAligned
-  label="Fireplace"
-  name="fire"
-/>
-<IconCard
-  isDisabled
-  isLeftAligned
-  label="Fireplace"
-  name="fire"
-/>
+import { IconCard } from '@lodgify/ui';
+
+<div>
+  <IconCard
+    isLeftAligned
+    label="Fireplace"
+    name="fire"
+  />
+  <IconCard
+    isDisabled
+    isLeftAligned
+    label="Fireplace"
+    name="fire"
+  />
+</div>
 ```
 
 #### Size
 
 ```jsx
-<IconCard
-  label="Fireplace"
-  name="fire"
-  size="medium"
-/>
-<IconCard
-  label="Fireplace"
-  name="fire"
-  size="large"
-/>
+import { IconCard } from '@lodgify/ui';
+
+<div>
+  <IconCard
+    label="Fireplace"
+    name="fire"
+    size="medium"
+  />
+  <IconCard
+    label="Fireplace"
+    name="fire"
+    size="large"
+  />
+</div>
 ```

@@ -1,4 +1,5 @@
 ```jsx
+import { PropertySearchResultList } from '@lodgify/ui';
 const { propertySearchResults } = require('./mock-data/mock-data');
 
   // {
@@ -31,6 +32,7 @@ const { propertySearchResults } = require('./mock-data/mock-data');
 #### Results count text
 
 ```jsx
+import { PropertySearchResultList } from '@lodgify/ui';
 const { propertySearchResults } = require('./mock-data/mock-data');
 
 <PropertySearchResultList
@@ -42,6 +44,7 @@ const { propertySearchResults } = require('./mock-data/mock-data');
 #### Dropdown input
 
 ```jsx
+import { PropertySearchResultList } from '@lodgify/ui';
 const { propertySearchResults } = require('./mock-data/mock-data');
 
 <PropertySearchResultList
@@ -62,6 +65,7 @@ const { propertySearchResults } = require('./mock-data/mock-data');
 #### Message
 
 ```jsx
+import { PropertySearchResultList } from '@lodgify/ui';
 const { propertySearchResults } = require('./mock-data/mock-data');
 
 <PropertySearchResultList
@@ -75,6 +79,7 @@ const { propertySearchResults } = require('./mock-data/mock-data');
 #### Scroll
 
 ```jsx
+import { PropertySearchResultList } from '@lodgify/ui';
 const { propertySearchResults } = require('./mock-data/mock-data');
 
 <div style={{ height: 300 }}>
@@ -92,6 +97,8 @@ const { propertySearchResults } = require('./mock-data/mock-data');
 #### Showing placeholder
 
 ```jsx
+import { PropertySearchResultList } from '@lodgify/ui';
+
 <PropertySearchResultList
   isShowingPlaceholder
 />

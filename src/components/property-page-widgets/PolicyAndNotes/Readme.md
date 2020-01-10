@@ -1,4 +1,6 @@
 ```jsx
+import { PolicyAndNotes } from '@lodgify/ui';
+
 const paymentScheduleRules = [
   '50% due at time of booking.',
   'Remaining balance: Due later.',
@@ -22,6 +24,8 @@ const notesText = null;
 #### Extra description text
 
 ```jsx
+import { PolicyAndNotes } from '@lodgify/ui';
+
 const paymentScheduleRules = [
   '50% due at time of booking.',
   'Remaining balance: Due later.',
@@ -57,6 +61,8 @@ const extraNotesText = `
 #### Strings
 
 ```jsx
+import { PolicyAndNotes } from '@lodgify/ui';
+
 const paymentScheduleRules = [
   '50% due at time of booking.',
   'Remaining balance: Due later.',

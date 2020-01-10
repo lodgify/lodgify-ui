@@ -1,4 +1,6 @@
 ```jsx
+import { FixedContainer, Button } from '@lodgify/ui';
+
 const boxMarkup = (
   <div style={{ background: '#ff5969', height: 100, width: 100 }} />
 );

@@ -2,6 +2,8 @@ RadioButton is a variation on the [`<Checkbox>` component](#checkbox).
 Please refer to it for more information.
 
 ```jsx
+import { RadioButton } from '@lodgify/ui';
+
 <RadioButton />
 ```
 
@@ -10,6 +12,8 @@ Please refer to it for more information.
 #### Labeled
 
 ```jsx
+import { RadioButton } from '@lodgify/ui';
+
 <RadioButton label="I am a radio button" />
 ```
 
@@ -18,6 +22,8 @@ Please refer to it for more information.
 RadioButtons in a group must be [controlled components](https://reactjs.org/docs/forms.html#controlled-components).
 
 ```jsx
+import { RadioButton } from '@lodgify/ui';
+
 const GroupedRadiosDemo = () => {
   const [selectedRadio, setSelectedRadio] = React.useState('plane');
   const change = name => {
@@ -53,17 +59,23 @@ const GroupedRadiosDemo = () => {
 #### Checked
 
 ```jsx
+import { RadioButton } from '@lodgify/ui';
+
 <RadioButton isChecked label="I am checked" />
 ```
 
 #### Disabled
 
 ```jsx
+import { RadioButton } from '@lodgify/ui';
+
 <RadioButton isDisabled label="I am disabled" />
 ```
 
 #### Disabled and checked
 
 ```jsx
+import { RadioButton } from '@lodgify/ui';
+
 <RadioButton isDisabled isChecked label="I am disabled and checked" />
 ```

@@ -1,4 +1,6 @@
 ```jsx
+import { RangeInputSegment } from '@lodgify/ui';
+
 <RangeInputSegment
   description="Only show properties with prices between:"
   heading="Price Range"

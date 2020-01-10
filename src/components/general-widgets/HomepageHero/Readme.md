@@ -1,4 +1,5 @@
 ```jsx
+import { HomepageHero } from '@lodgify/ui';
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems, locationOptions } = require('./mock-data/mock-data');
 
@@ -19,6 +20,7 @@ const { backgroundImageUrl, navigationItems, locationOptions } = require('./mock
 #### Custom search button
 
 ```jsx
+import { HomepageHero, Button } from '@lodgify/ui';
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems, locationOptions } = require('./mock-data/mock-data');
 
@@ -37,7 +39,7 @@ const { backgroundImageUrl, navigationItems, locationOptions } = require('./mock
 
 ```jsx
 // Viewport width needs to be less than 600px to trigger modal
-
+import { HomepageHero } from '@lodgify/ui';
 const logoSrc = require('./mock-data/livingstoneLogo.png');
 const { backgroundImageUrl, navigationItems } = require('./mock-data/mock-data');
 

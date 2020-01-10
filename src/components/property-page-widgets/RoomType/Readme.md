@@ -1,4 +1,6 @@
 ```jsx
+import { RoomType } from '@lodgify/ui';
+
 const availableAmenities = [
   {
     name: 'Cooking',
@@ -85,6 +87,8 @@ const roomTypeFeatures = [
 #### Showing placeholder
 
 ```jsx
+import { RoomType } from '@lodgify/ui';
+
 <RoomType
   amenities={[]}
   features={[]}

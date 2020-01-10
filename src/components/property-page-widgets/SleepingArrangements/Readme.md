@@ -1,4 +1,6 @@
 ```jsx
+import { SleepingArrangements } from '@lodgify/ui';
+
 const sleepingArrangements = [
   { iconName: 'double bed', label: '1 king bed' },
   { iconName: 'single bed', label: '2 single beds' },
@@ -16,6 +18,8 @@ const sleepingArrangements = [
 #### Strings
 
 ```jsx
+import { SleepingArrangements } from '@lodgify/ui';
+
 const sleepingArrangements = [
   { iconName: 'double bed', label: '1 king bed' },
   { iconName: 'single bed', label: '2 single beds' },

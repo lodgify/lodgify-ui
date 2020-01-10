@@ -1,4 +1,6 @@
 ```jsx
+import { EmailCapture } from '@lodgify/ui';
+
 <EmailCapture />
 ```
 ### Variations
@@ -6,6 +8,8 @@
 #### Privacy consent
 
 ```jsx
+import { EmailCapture } from '@lodgify/ui';
+
 <EmailCapture isPrivacyConsentRequired />
 ```
 
@@ -14,12 +18,16 @@
 #### Error
 
 ```jsx
+import { EmailCapture } from '@lodgify/ui';
+
 <EmailCapture errorMessage="Something went wrong" />
 ```
 
 #### Success
 
 ```jsx
+import { EmailCapture } from '@lodgify/ui';
+
 <EmailCapture successMessage="Thanks :)" />
 ```
 
@@ -28,6 +36,8 @@
 #### Strings
 
 ```jsx
+import { EmailCapture } from '@lodgify/ui';
+
 <EmailCapture
   isPrivacyConsentRequired
   privacyConsentLabelLinkText="thing"

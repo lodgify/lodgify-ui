@@ -1,4 +1,6 @@
 ```jsx
+import { RatingInput } from '@lodgify/ui';
+
 <RatingInput />
 ```
 
@@ -7,6 +9,8 @@
 #### Error
 
 ```jsx
+import { RatingInput } from '@lodgify/ui';
+
 <RatingInput error="Something's not right" />
 ```
 
@@ -15,6 +19,8 @@
 #### Icon size
 
 ```jsx
+import { RatingInput, Divider } from '@lodgify/ui';
+
 <div>
     <RatingInput iconSize="small" />
     <Divider />

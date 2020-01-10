@@ -1,4 +1,6 @@
 ```jsx
+import { GoogleMap } from '@lodgify/ui';
+
 <GoogleMap
   latitude={41.387863}
   longitude={2.158105}
@@ -10,23 +12,27 @@
 #### Height
 
 ```jsx
-<GoogleMap
-  height="100px"
-  latitude={41.387863}
-  longitude={2.158105}
-/>
-<Divider />
-<GoogleMap
-  height="200px"
-  latitude={41.387863}
-  longitude={2.158105}
-/>
-<Divider />
-<GoogleMap
-  height="300px"
-  latitude={41.387863}
-  longitude={2.158105}
-/>
+import { GoogleMap, Divider } from '@lodgify/ui';
+
+<div>
+  <GoogleMap
+    height="100px"
+    latitude={41.387863}
+    longitude={2.158105}
+  />
+  <Divider />
+  <GoogleMap
+    height="200px"
+    latitude={41.387863}
+    longitude={2.158105}
+  />
+  <Divider />
+  <GoogleMap
+    height="300px"
+    latitude={41.387863}
+    longitude={2.158105}
+  />
+</div>
 ```
 
 #### Fluid
@@ -34,6 +40,8 @@
 A fluid map appears on a card filling the width and height of its container. It is always dynamic.
 
 ```jsx
+import { GoogleMap } from '@lodgify/ui';
+
 <div style={{ height: '80vh' }}>
   <GoogleMap
     isFluid
@@ -48,6 +56,8 @@ A fluid map appears on a card filling the width and height of its container. It 
 A full bleed map appears with no card and fills the width and height of its container. It is always dynamic.
 
 ```jsx
+import { GoogleMap } from '@lodgify/ui';
+
 <div style={{ height: '80vh' }}>
   <GoogleMap
     isFullBleed
@@ -64,6 +74,8 @@ A full bleed map appears with no card and fills the width and height of its cont
 An exact marker at the center of the map. Shows on both the static and dynamic map.
 
 ```jsx
+import { GoogleMap } from '@lodgify/ui';
+
 <GoogleMap
   isShowingExactLocation
   latitude={41.387863}
@@ -76,6 +88,8 @@ An exact marker at the center of the map. Shows on both the static and dynamic m
 An approximate marker at the center of the map. Shows on both the static and dynamic map.
 
 ```jsx
+import { GoogleMap } from '@lodgify/ui';
+
 <GoogleMap
   isShowingApproximateLocation
   latitude={41.387863}
@@ -88,6 +102,8 @@ An approximate marker at the center of the map. Shows on both the static and dyn
 Multiple markers show on the dynamic map only.
 
 ```jsx
+import { GoogleMap, Marker } from '@lodgify/ui';
+
 <div style={{ height: '400px' }}>
   <GoogleMap
     isFluid
@@ -110,6 +126,8 @@ Multiple markers show on the dynamic map only.
 The bounds of the map can be controlled.
 
 ```jsx
+import { GoogleMap, Button } from '@lodgify/ui';
+
 const boundsOne = {
   east: 2.18,
   north: 41.38,

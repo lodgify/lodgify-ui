@@ -1,4 +1,6 @@
 ```jsx
+import { OwnerLogin } from '@lodgify/ui';
+
 <OwnerLogin />
 ```
 
@@ -7,6 +9,8 @@
 #### Strings
 
 ```jsx
+import { OwnerLogin } from '@lodgify/ui';
+
 <OwnerLogin
   emailInputLabel="Email Address"
   forgotPasswordEmailInputLabel="Enter email to reset"
@@ -24,6 +28,8 @@
 #### Validation
 
 ```jsx
+import { OwnerLogin } from '@lodgify/ui';
+
 const forgotPasswordValidation = {
   email: { isRequired: true },
 };
@@ -43,6 +49,8 @@ const validation = {
 #### Success
 
 ```jsx
+import { OwnerLogin } from '@lodgify/ui';
+
 <OwnerLogin
   forgotPasswordSuccessMessage="A reset password email has been sent."
   successMessage="You have been logged in!"
@@ -52,6 +60,8 @@ const validation = {
 #### Error
 
 ```jsx
+import { OwnerLogin } from '@lodgify/ui';
+
 <OwnerLogin
   errorMessage="Request Failed. Please try again."
   forgotPasswordErrorMessage="Something went wrong, please try again."

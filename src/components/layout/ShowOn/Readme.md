@@ -1,4 +1,13 @@
 ```jsx
+import { 
+  Grid,
+  GridRow,
+  GridColumn,
+  Paragraph,
+  Button,
+  ShowOn
+} from '@lodgify/ui';
+
 <Grid>
   <GridRow>
     <GridColumn width={6}>
