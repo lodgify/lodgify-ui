@@ -111,14 +111,15 @@ Component.propTypes = {
     PropTypes.shape({
       /** A description of the image to show above the slideshow when the image is showing. */
       descriptionText: PropTypes.string,
-      /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      /** The placeholder of the image when loading. */
       placeholderUrl: PropTypes.string,
-      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+      /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
       sizes: PropTypes.string,
-      /** Title of the image to show when hovering over it on desktop browsers. */
+      /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
       srcSet: PropTypes.string,
-      /** URL pointing to the image to display. */
+      /** Title of the image to show when hovering over it on desktop browsers. */
       title: PropTypes.string,
+      /** URL pointing to the image to display. */
       url: PropTypes.string.isRequired,
     })
   ).isRequired,
