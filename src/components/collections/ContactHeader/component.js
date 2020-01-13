@@ -5,19 +5,20 @@ import {
   arrayOf,
   shape,
   oneOfType,
+  oneOf,
   number,
   bool,
   func,
 } from 'prop-types';
 
 import { FlexContainer } from 'layout/FlexContainer';
-import { Heading } from 'typography/Heading';
 import { Button } from 'elements/Button';
 import { Submenu } from 'elements/Submenu';
 import { size } from 'utils/size';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { ShowOn } from 'layout/ShowOn';
 import { testidFactory } from 'utils/testid';
+import { Logo } from 'elements/Logo';
 
 import { HorizontalMenu } from '../HorizontalMenu';
 
@@ -30,12 +31,10 @@ const testid = testidFactory(TEST_ID_PREFIX);
 
 /**
  * A header displays a logo, grouped navigation items
- * and an optional primary call to action.
+ * contact information and an a primary call to action.
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
-  headingText,
-  headingHref,
   primaryButtonText,
   navigationMenuItems,
   languageOptions,
@@ -46,6 +45,13 @@ export const Component = ({
   currencyNoResultsText,
   languageValue,
   phoneNumber,
+  logoHref,
+  logoSubText,
+  logoSize,
+  logoSrc,
+  logoSizes,
+  logoText,
+  logoSrcSet,
 }) => (
   <header className="contact-header" data-testid={testid()}>
     <ShowOn computer tablet widescreen>
@@ -83,7 +89,15 @@ export const Component = ({
             </Menu.Item>
           )}
         </Menu>
-        <Heading>{headingText}</Heading>
+        <Logo
+          logoHref={logoHref}
+          logoSize={logoSize}
+          logoSizes={logoSizes}
+          logoSrc={logoSrc}
+          logoSrcSet={logoSrcSet}
+          logoSubText={logoSubText}
+          logoText={logoText}
+        />
         <Button>{primaryButtonText}</Button>
       </FlexContainer>
       <HorizontalMenu isHeader items={navigationMenuItems} />
@@ -94,15 +108,28 @@ export const Component = ({
         className="hidden-contact-header"
         justifyContent="space-between"
       >
-        <Heading>{headingText}</Heading>
+        <Logo
+          logoHref={logoHref}
+          logoSize={logoSize}
+          logoSizes={logoSizes}
+          logoSrc={logoSrc}
+          logoSrcSet={logoSrcSet}
+          logoSubText={logoSubText}
+          logoText={logoText}
+        />
         <MobileHeader
           currencyNoResultsText={currencyNoResultsText}
           currencyOptions={currencyOptions}
           currencyValue={currencyValue}
-          headingHref={headingHref}
-          headingText={headingText}
           languageOptions={languageOptions}
           languageValue={languageValue}
+          logoHref={logoHref}
+          logoSize={logoSize}
+          logoSizes={logoSizes}
+          logoSrc={logoSrc}
+          logoSrcSet={logoSrcSet}
+          logoSubText={logoSubText}
+          logoText={logoText}
           navigationItems={navigationMenuItems}
           onChangeCurrency={onChangeCurrency}
           phoneNumber={phoneNumber}
@@ -118,10 +145,15 @@ Component.defaultProps = {
   currencyNoResultsText: undefined,
   currencyOptions: [],
   currencyValue: null,
-  headingHref: '',
-  headingText: '',
   languageOptions: [],
   languageValue: null,
+  logoHref: '',
+  logoSize: 'medium',
+  logoSizes: undefined,
+  logoSrc: undefined,
+  logoSrcSet: undefined,
+  logoSubText: '',
+  logoText: '',
   onChangeCurrency: undefined,
   onChangeLanguage: undefined,
   phoneNumber: '',
@@ -142,10 +174,6 @@ Component.propTypes = {
   ),
   /** The current value of the currency dropdown. */
   currencyValue: oneOfType([bool, number, string]),
-  /** The link for the heading. */
-  headingHref: string,
-  /** The text for the heading. */
-  headingText: string,
   /** The options which the user can select for the language dropdown. */
   languageOptions: arrayOf(
     shape({
@@ -157,6 +185,20 @@ Component.propTypes = {
   ),
   /** The current value of the language dropdown. */
   languageValue: oneOfType([bool, number, string]),
+  /** The href for the logo link. */
+  logoHref: string,
+  /** The maximum size of the headers logo. */
+  logoSize: oneOf(['medium', 'large', 'huge']),
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  logoSizes: string,
+  /** The src url for the logo. */
+  logoSrc: string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  logoSrcSet: string,
+  /** The text that appears under the logo or logo text. */
+  logoSubText: string,
+  /** The text for the logo. */
+  logoText: string,
   /** The items for a user to navigate the site. */
   navigationMenuItems: arrayOf(
     shape({

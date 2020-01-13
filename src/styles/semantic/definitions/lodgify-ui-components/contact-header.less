@@ -21,6 +21,15 @@
   .flex-container {
     background-color: @white;
 
+    .link.item {
+      margin: auto;
+      
+      @media @mobileViewport {
+        margin: unset;
+        margin-right: auto;
+      }
+    }
+
     .ui.menu {
       margin-bottom: 0;
       box-shadow: none;

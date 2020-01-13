@@ -14,12 +14,14 @@ const languageOptions = [
 
 <div style={{ backgroundColor: 'pink'}}>
   <ContactHeader
-  headingText='Lindblum'
+  logoSubText="King of Joy"
+  logoHref="Balalala"
+  logoSize="medium"
+  logoSrc="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
   className='ma-ma-ma'
   isBackgroundFilled={true}
   primaryButtonText="VUUC"
   phoneNumber={'+1 2345 678912'}
-  headingHref="http://www.sss.com"
   currencyOptions={currencyOptions}
   currencyValue={currencyOptions[0].value}
   languageOptions={languageOptions}
