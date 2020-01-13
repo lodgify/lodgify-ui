@@ -7,9 +7,9 @@ import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Divider } from 'elements/Divider';
+import { Logo } from 'elements/Logo';
 
 import { getLinkMarkup } from '../../utils/getLinkMarkup';
-import { HeaderLogo } from '../HeaderLogo';
 
 import { getScrollToHeight } from './utils/getScrollToHeight';
 import { getIsAccordionInView } from './utils/getIsAccordionInView';
@@ -59,7 +59,7 @@ export class Component extends React.PureComponent {
       <Menu.Item>
         <Modal
           header={
-            <HeaderLogo
+            <Logo
               logoHref={logoHref}
               logoSizes={logoSizes}
               logoSrc={logoSrc}
