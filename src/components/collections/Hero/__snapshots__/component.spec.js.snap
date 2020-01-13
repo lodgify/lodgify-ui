@@ -189,7 +189,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                   <div
                     className="ui borderless ui text container menu"
                   >
-                    <HeaderLogo
+                    <Logo
                       logoHref="/"
                       logoSize="medium"
                       logoSizes="a load of logo sizes"
@@ -200,11 +200,13 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                     >
                       <MenuItem
                         className=""
+                        data-testid="logo"
                         href="/"
                         link={true}
                       >
                         <a
                           className="link item"
+                          data-testid="logo"
                           href="/"
                           onClick={[Function]}
                         >
@@ -235,6 +237,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                 alt="Livingstone Cottage"
                                 as="img"
                                 className="medium-logo"
+                                data-testid="logo-image"
                                 sizes="a load of logo sizes"
                                 src="https://darkgreen.com"
                                 srcSet="a load of logo src sets"
@@ -243,6 +246,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                                 <img
                                   alt="Livingstone Cottage"
                                   className="ui image medium-logo"
+                                  data-testid="logo-image"
                                   sizes="a load of logo sizes"
                                   src="https://darkgreen.com"
                                   srcSet="a load of logo src sets"
@@ -252,7 +256,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                           </FlexContainer>
                         </a>
                       </MenuItem>
-                    </HeaderLogo>
+                    </Logo>
                     <MenuMenu
                       position="right"
                     >

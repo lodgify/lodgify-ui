@@ -78,7 +78,7 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
         hasPadding={false}
         hasRoundedCorners={false}
         header={
-          <HeaderLogo
+          <Logo
             logoHref="/"
             logoSize="medium"
             logoSrc={null}
