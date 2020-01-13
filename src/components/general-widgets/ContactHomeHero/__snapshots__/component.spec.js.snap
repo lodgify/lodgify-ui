@@ -52,6 +52,10 @@ exports[`ContactHomeHero should render the right structure 1`] = `
     ]
   }
   languageValue="en"
+  logoHref=""
+  logoSize="medium"
+  logoSubText=""
+  logoText=""
   navigationMenuItems={
     Array [
       Object {
@@ -215,8 +219,6 @@ exports[`ContactHomeHero should render the right structure 1`] = `
             ]
           }
           currencyValue="EUR"
-          headingHref="http://www.sss.com"
-          headingText="Lindblum"
           isBackgroundFilled={true}
           languageOptions={
             Array [
@@ -239,6 +241,10 @@ exports[`ContactHomeHero should render the right structure 1`] = `
             ]
           }
           languageValue="en"
+          logoHref=""
+          logoSize="medium"
+          logoSubText=""
+          logoText=""
           navigationMenuItems={
             Array [
               Object {
@@ -1410,26 +1416,70 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                         </MenuItem>
                       </div>
                     </Menu>
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
+                    <Logo
+                      logoHref=""
+                      logoSize="medium"
+                      logoSubText=""
+                      logoText=""
                     >
-                      <Header
-                        as="h3"
+                      <MenuItem
                         className=""
-                        inverted={false}
-                        textAlign={null}
+                        data-testid="logo"
+                        href=""
+                        link={true}
                       >
-                        <h3
-                          className="ui header"
+                        <div
+                          className="link item"
+                          data-testid="logo"
+                          href=""
+                          onClick={[Function]}
                         >
-                          Lindblum
-                        </h3>
-                      </Header>
-                    </Heading>
+                          <FlexContainer
+                            alignContent={null}
+                            alignItems={null}
+                            className={null}
+                            flexDirection="column"
+                            flexWrap={null}
+                            justifyContent="center"
+                          >
+                            <div
+                              className="flex-container"
+                              style={
+                                Object {
+                                  "alignContent": null,
+                                  "alignItems": null,
+                                  "display": "flex",
+                                  "flexDirection": "column",
+                                  "flexGrow": "1",
+                                  "flexWrap": null,
+                                  "height": "100%",
+                                  "justifyContent": "center",
+                                }
+                              }
+                            >
+                              <Heading
+                                className="header-title"
+                                hasMargin={true}
+                                isColorInverted={false}
+                                size="small"
+                                textAlign={null}
+                              >
+                                <Header
+                                  as="h4"
+                                  className="header-title"
+                                  inverted={false}
+                                  textAlign={null}
+                                >
+                                  <h4
+                                    className="ui header header-title"
+                                  />
+                                </Header>
+                              </Heading>
+                            </div>
+                          </FlexContainer>
+                        </div>
+                      </MenuItem>
+                    </Logo>
                     <Button
                       hasShadow={false}
                       icon={null}
@@ -2220,26 +2270,70 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       }
                     }
                   >
-                    <Heading
-                      className={null}
-                      hasMargin={true}
-                      isColorInverted={false}
-                      size="medium"
-                      textAlign={null}
+                    <Logo
+                      logoHref=""
+                      logoSize="medium"
+                      logoSubText=""
+                      logoText=""
                     >
-                      <Header
-                        as="h3"
+                      <MenuItem
                         className=""
-                        inverted={false}
-                        textAlign={null}
+                        data-testid="logo"
+                        href=""
+                        link={true}
                       >
-                        <h3
-                          className="ui header"
+                        <div
+                          className="link item"
+                          data-testid="logo"
+                          href=""
+                          onClick={[Function]}
                         >
-                          Lindblum
-                        </h3>
-                      </Header>
-                    </Heading>
+                          <FlexContainer
+                            alignContent={null}
+                            alignItems={null}
+                            className={null}
+                            flexDirection="column"
+                            flexWrap={null}
+                            justifyContent="center"
+                          >
+                            <div
+                              className="flex-container"
+                              style={
+                                Object {
+                                  "alignContent": null,
+                                  "alignItems": null,
+                                  "display": "flex",
+                                  "flexDirection": "column",
+                                  "flexGrow": "1",
+                                  "flexWrap": null,
+                                  "height": "100%",
+                                  "justifyContent": "center",
+                                }
+                              }
+                            >
+                              <Heading
+                                className="header-title"
+                                hasMargin={true}
+                                isColorInverted={false}
+                                size="small"
+                                textAlign={null}
+                              >
+                                <Header
+                                  as="h4"
+                                  className="header-title"
+                                  inverted={false}
+                                  textAlign={null}
+                                >
+                                  <h4
+                                    className="ui header header-title"
+                                  />
+                                </Header>
+                              </Heading>
+                            </div>
+                          </FlexContainer>
+                        </div>
+                      </MenuItem>
+                    </Logo>
                     <Component
                       currencyNoResultsText=""
                       currencyOptions={
@@ -2262,8 +2356,6 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                         ]
                       }
                       currencyValue="EUR"
-                      headingHref="http://www.sss.com"
-                      headingText="Lindblum"
                       languageOptions={
                         Array [
                           Object {
@@ -2285,6 +2377,10 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                         ]
                       }
                       languageValue="en"
+                      logoHref=""
+                      logoSize="medium"
+                      logoSubText=""
+                      logoText=""
                       navigationItems={
                         Array [
                           Object {
@@ -2340,20 +2436,12 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                         hasPadding={false}
                         hasRoundedCorners={false}
                         header={
-                          <MenuItem
-                            href="http://www.sss.com"
-                            link={true}
-                          >
-                            <Heading
-                              className="header-title"
-                              hasMargin={true}
-                              isColorInverted={false}
-                              size="small"
-                              textAlign={null}
-                            >
-                              Lindblum
-                            </Heading>
-                          </MenuItem>
+                          <Logo
+                            logoHref=""
+                            logoSize="medium"
+                            logoSubText=""
+                            logoText=""
+                          />
                         }
                         isClosingOnDimmerClick={true}
                         isFullscreen={true}
