@@ -1,3 +1,10 @@
+# [1.284.0](https://github.com/lodgify/lodgify-ui/compare/v1.283.0...v1.284.0) (2020-01-13)
+
+
+### Features
+
+* **ContactPropertyHero:** expose component ([6e18321](https://github.com/lodgify/lodgify-ui/commit/6e183211006cc31364e02555d0c81668a4ddb364))
+
 # [1.283.0](https://github.com/lodgify/lodgify-ui/compare/v1.282.0...v1.283.0) (2020-01-10)
 
 
