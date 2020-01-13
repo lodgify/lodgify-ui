@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[` 1`] = `
+<FullBleed
+  bottomOffset="85px"
+  className="ma - ma - ma"
+  hasGradient={true}
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  placeholderImageUrl={null}
+  sizes={null}
+  srcSet={null}
+>
+  <ContactHeader
+    className="ma - ma - ma"
+    currencyOptions={
+      Array [
+        Object {
+          "label": "Euro",
+          "text": "EUR",
+          "value": "EUR",
+        },
+        Object {
+          "label": "US Dollar",
+          "text": "USD",
+          "value": "USD",
+        },
+        Object {
+          "label": "Japanese Yen",
+          "text": "JPY",
+          "value": "JPY",
+        },
+      ]
+    }
+    currencyValue="EUR"
+    headingHref=" http://www.sss.com"
+    headingText="Lindblum"
+    isBackgroundFilled={true}
+    languageOptions={
+      Array [
+        Object {
+          "text": "English",
+          "value": "en",
+        },
+        Object {
+          "text": "German",
+          "value": "de",
+        },
+        Object {
+          "text": "Japanese",
+          "value": "jp",
+        },
+        Object {
+          "text": "Italian",
+          "value": "it",
+        },
+      ]
+    }
+    languageValue="en"
+    navigationMenuItems={
+      Array [
+        Object {
+          "href": "/",
+          "text": "Home",
+        },
+        Object {
+          "subItems": Array [
+            Object {
+              "href": "/la-casa-viva",
+              "text": "La Casa Viva",
+            },
+            Object {
+              "href": "/la-casa-muerta",
+              "text": "La Casa Muerta",
+            },
+            Object {
+              "href": "/the-white-lodge",
+              "text": "The White Lodge",
+            },
+            Object {
+              "href": "/the-black-lodge",
+              "text": "The Black Lodge",
+            },
+          ],
+          "text": "All properties",
+        },
+      ]
+    }
+    phoneNumber="+1 2345 678912"
+    primaryButtonText="VUUC"
+  />
+</FullBleed>
+`;
+
+exports[`ContactPropertyHero should render the right structure 1`] = `
+<FullBleed
+  bottomOffset="85px"
+  className="ma - ma - ma"
+  hasGradient={true}
+  imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  placeholderImageUrl={null}
+  sizes={null}
+  srcSet={null}
+>
+  <ContactHeader
+    className="ma - ma - ma"
+    currencyOptions={
+      Array [
+        Object {
+          "label": "Euro",
+          "text": "EUR",
+          "value": "EUR",
+        },
+        Object {
+          "label": "US Dollar",
+          "text": "USD",
+          "value": "USD",
+        },
+        Object {
+          "label": "Japanese Yen",
+          "text": "JPY",
+          "value": "JPY",
+        },
+      ]
+    }
+    currencyValue="EUR"
+    headingHref=" http://www.sss.com"
+    headingText="Lindblum"
+    isBackgroundFilled={true}
+    languageOptions={
+      Array [
+        Object {
+          "text": "English",
+          "value": "en",
+        },
+        Object {
+          "text": "German",
+          "value": "de",
+        },
+        Object {
+          "text": "Japanese",
+          "value": "jp",
+        },
+        Object {
+          "text": "Italian",
+          "value": "it",
+        },
+      ]
+    }
+    languageValue="en"
+    navigationMenuItems={
+      Array [
+        Object {
+          "href": "/",
+          "text": "Home",
+        },
+        Object {
+          "subItems": Array [
+            Object {
+              "href": "/la-casa-viva",
+              "text": "La Casa Viva",
+            },
+            Object {
+              "href": "/la-casa-muerta",
+              "text": "La Casa Muerta",
+            },
+            Object {
+              "href": "/the-white-lodge",
+              "text": "The White Lodge",
+            },
+            Object {
+              "href": "/the-black-lodge",
+              "text": "The Black Lodge",
+            },
+          ],
+          "text": "All properties",
+        },
+      ]
+    }
+    phoneNumber="+1 2345 678912"
+    primaryButtonText="VUUC"
+  />
+  <FlexContainer
+    alignContent={null}
+    alignItems="flex-end"
+    className={null}
+    flexDirection={null}
+    flexWrap={null}
+    justifyContent={null}
+  >
+    <HorizontalGutters>
+      <Gallery
+        images={
+          Array [
+            Object {
+              "descriptionText": "Entrance",
+              "url": "sa sa sa",
+            },
+            Object {
+              "descriptionText": "Kitchen",
+              "url": "sa sa sa",
+            },
+          ]
+        }
+        startIndex={0}
+        trigger={
+          <Button
+            hasShadow={false}
+            icon="placeholder"
+            isCompact={true}
+            isDisabled={false}
+            isFluid={false}
+            isFormSubmit={false}
+            isLoading={false}
+            isOutlined={false}
+            isPositionedRight={true}
+            isRounded={false}
+            isSecondary={true}
+            onClick={[Function]}
+            size={null}
+          >
+            VIEW MORE PICTURES
+          </Button>
+        }
+      />
+    </HorizontalGutters>
+  </FlexContainer>
+  <Divider
+    className=""
+    hasLine={false}
+    size="medium"
+  />
+</FullBleed>
+`;

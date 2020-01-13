@@ -109,6 +109,7 @@ export { Reviews } from './components/property-page-widgets/Reviews';
 export { Rules } from './components/property-page-widgets/Rules';
 export { SleepingArrangements } from './components/property-page-widgets/SleepingArrangements';
 export { Summary } from './components/property-page-widgets/Summary';
+export { ContactPropertyHero } from './components/property-page-widgets/ContactPropertyHero';
 
 // Typography
 export { Heading } from './components/typography/Heading';
