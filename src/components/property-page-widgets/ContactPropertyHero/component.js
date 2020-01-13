@@ -1,5 +1,13 @@
 import React, { Fragment } from 'react';
-import { string, bool, shape, number, oneOfType, arrayOf } from 'prop-types';
+import {
+  string,
+  bool,
+  shape,
+  number,
+  oneOfType,
+  arrayOf,
+  oneOf,
+} from 'prop-types';
 
 import { FullBleed } from 'media/FullBleed';
 import { ContactHeader } from 'collections/ContactHeader';
@@ -27,19 +35,24 @@ export const Component = ({
   backgroundImageWidth,
   bottomOffset,
   className,
+  currencyNoResultsText,
   currencyOptions,
   currencyValue,
-  headingHref,
-  headingText,
+  galleryImages,
   languageOptions,
   languageValue,
+  logoHref,
+  logoSize,
+  logoSizes,
+  logoSrc,
+  logoSrcSet,
+  logoSubText,
+  logoText,
   navigationMenuItems,
   phoneNumber,
   placeholderBackgroundImageUrl,
   primaryButtonText,
-  galleryImages,
   secondaryButtonText,
-  currencyNoResultsText,
 }) => {
   return (
     <FullBleed
@@ -58,11 +71,16 @@ export const Component = ({
         currencyNoResultsText={currencyNoResultsText}
         currencyOptions={currencyOptions}
         currencyValue={currencyValue}
-        headingHref={headingHref}
-        headingText={headingText}
         isBackgroundFilled
         languageOptions={languageOptions}
         languageValue={languageValue}
+        logoHref={logoHref}
+        logoSize={logoSize}
+        logoSizes={logoSizes}
+        logoSrc={logoSrc}
+        logoSrcSet={logoSrcSet}
+        logoSubText={logoSubText}
+        logoText={logoText}
         navigationMenuItems={navigationMenuItems}
         phoneNumber={phoneNumber}
         primaryButtonText={primaryButtonText}
@@ -105,15 +123,20 @@ Component.defaultProps = {
   currencyNoResultsText: undefined,
   currencyOptions: [],
   currencyValue: null,
-  headingHref: '',
-  headingText: '',
+  galleryImages: [],
   languageOptions: [],
   languageValue: null,
+  logoHref: '',
+  logoSize: 'medium',
+  logoSizes: undefined,
+  logoSrc: undefined,
+  logoSrcSet: undefined,
+  logoSubText: '',
+  logoText: '',
   phoneNumber: '',
   placeholderBackgroundImageUrl: null,
-  galleryImages: [],
-  secondaryButtonText: VIEW_MORE_PICTURES,
   primaryButtonText: '',
+  secondaryButtonText: VIEW_MORE_PICTURES,
 };
 
 Component.propTypes = {
@@ -159,10 +182,6 @@ Component.propTypes = {
       url: string.isRequired,
     })
   ),
-  /** The link for the heading. */
-  headingHref: string,
-  /** The text for the heading. */
-  headingText: string,
   /** The options which the user can select for the language dropdown. */
   languageOptions: arrayOf(
     shape({
@@ -174,6 +193,20 @@ Component.propTypes = {
   ),
   /** The current value of the language dropdown. */
   languageValue: oneOfType([bool, number, string]),
+  /** The href for the logo link. */
+  logoHref: string,
+  /** The maximum size of the headers logo. */
+  logoSize: oneOf(['medium', 'large', 'huge']),
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  logoSizes: string,
+  /** The src url for the logo. */
+  logoSrc: string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  logoSrcSet: string,
+  /** The text that appears under the logo or logo text. */
+  logoSubText: string,
+  /** The text for the logo. */
+  logoText: string,
   /** The items for a user to navigate the site. */
   navigationMenuItems: arrayOf(
     shape({
