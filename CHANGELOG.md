@@ -1,3 +1,11 @@
+# [1.285.0](https://github.com/lodgify/lodgify-ui/compare/v1.284.0...v1.285.0) (2020-01-13)
+
+
+### Features
+
+* **Logo:** expose logo as a component ([bde5e9d](https://github.com/lodgify/lodgify-ui/commit/bde5e9dc037c57aa232d9742ea0c2c1672fc74e7))
+* **Logo:** isolate logo styles ([6b499c1](https://github.com/lodgify/lodgify-ui/commit/6b499c1b9846541acf233b0eb0cefba1949a9455))
+
 # [1.284.0](https://github.com/lodgify/lodgify-ui/compare/v1.283.0...v1.284.0) (2020-01-13)
 
 
