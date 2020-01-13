@@ -223,7 +223,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                     <div
                       className="ui borderless ui text container menu"
                     >
-                      <HeaderLogo
+                      <Logo
                         logoHref="/"
                         logoSize="medium"
                         logoSizes="a load of logo sizes"
@@ -234,11 +234,13 @@ exports[`HomepageHero should render the right structure 1`] = `
                       >
                         <MenuItem
                           className=""
+                          data-testid="logo"
                           href="/"
                           link={true}
                         >
                           <a
                             className="link item"
+                            data-testid="logo"
                             href="/"
                             onClick={[Function]}
                           >
@@ -269,6 +271,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   alt="text"
                                   as="img"
                                   className="medium-logo"
+                                  data-testid="logo-image"
                                   sizes="a load of logo sizes"
                                   src="src"
                                   srcSet="a load of logo src sets"
@@ -277,6 +280,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                                   <img
                                     alt="text"
                                     className="ui image medium-logo"
+                                    data-testid="logo-image"
                                     sizes="a load of logo sizes"
                                     src="src"
                                     srcSet="a load of logo src sets"
@@ -286,7 +290,7 @@ exports[`HomepageHero should render the right structure 1`] = `
                             </FlexContainer>
                           </a>
                         </MenuItem>
-                      </HeaderLogo>
+                      </Logo>
                       <MenuMenu
                         position="right"
                       >

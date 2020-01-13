@@ -5,6 +5,7 @@ import classnames from 'classnames';
 import { Menu } from 'semantic-ui-react';
 
 import { HorizontalGutters } from 'layout/HorizontalGutters';
+import { Logo } from 'elements/Logo';
 
 import { getNavigationItemsWidth } from './utils/getNavigationItemsWidth';
 import { getMenuWidth } from './utils/getMenuWidth';
@@ -13,7 +14,6 @@ import { getStandardMenuMarkup } from './utils/getStandardMenuMarkup';
 import { HiddenMenu } from './components/HiddenMenu';
 import { getLogoWidth } from './utils/getLogoWidth';
 import { MEDIUM_LOGO_SIZE } from './constants';
-import { HeaderLogo } from './components/HeaderLogo';
 
 /**
  * A header displays a logo, grouped navigation items
@@ -83,7 +83,7 @@ export class Component extends PureComponent {
         ref={this.createHeaderRef}
       >
         <HorizontalGutters as={Menu} borderless text>
-          <HeaderLogo
+          <Logo
             logoHref={logoHref}
             logoSize={logoSize}
             logoSizes={logoSizes}

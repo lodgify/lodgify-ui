@@ -33,6 +33,7 @@ export { Submenu } from './components/elements/Submenu';
 export { TextPlaceholder } from './components/elements/TextPlaceholder';
 export { Tooltip } from './components/elements/Tooltip';
 export { SummaryCard } from './components/elements/SummaryCard';
+export { Logo } from './components/elements/Logo';
 
 // General Widgets
 export { CallMeBack } from './components/general-widgets/CallMeBack';

@@ -1,0 +1,31 @@
+/*******************************
+            Theme
+*******************************/
+
+@type : 'lodgify-ui-component';
+
+@element : 'logo';
+
+@import (multiple) "../../theme.config";
+
+/*--------------------------
+        Logo
+--------------------------*/
+
+.ui.image {
+
+  &.medium-logo {
+    max-height: @headerLogoMaxHeight;
+    max-width: @headerLogoMaxWidth;
+  }
+
+  &.large-logo {
+    max-height: @headerLargeLogoMaxHeight;
+    max-width: @headerLargeLogoMaxWidth;
+  }
+
+  &.huge-logo {
+    max-height: @headerHugeLogoMaxHeight;
+    max-width: @headerHugeLogoMaxWidth;
+  }
+}

@@ -70,7 +70,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
           <div
             className="ui borderless ui text container menu"
           >
-            <HeaderLogo
+            <Logo
               logoHref="/"
               logoSize="medium"
               logoSrc={null}
@@ -79,11 +79,13 @@ exports[`<Header /> by default should render the right structure 1`] = `
             >
               <MenuItem
                 className=""
+                data-testid="logo"
                 href="/"
                 link={true}
               >
                 <a
                   className="link item"
+                  data-testid="logo"
                   href="/"
                   onClick={[Function]}
                 >
@@ -134,7 +136,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
                   </FlexContainer>
                 </a>
               </MenuItem>
-            </HeaderLogo>
+            </Logo>
             <MenuMenu
               position="right"
             >
@@ -722,7 +724,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
           <div
             className="ui borderless ui text container menu"
           >
-            <HeaderLogo
+            <Logo
               logoHref="/"
               logoSize="medium"
               logoSrc={null}
@@ -731,11 +733,13 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
             >
               <MenuItem
                 className=""
+                data-testid="logo"
                 href="/"
                 link={true}
               >
                 <a
                   className="link item"
+                  data-testid="logo"
                   href="/"
                   onClick={[Function]}
                 >
@@ -786,7 +790,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                   </FlexContainer>
                 </a>
               </MenuItem>
-            </HeaderLogo>
+            </Logo>
             <MenuMenu
               position="right"
             >
@@ -870,7 +874,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                         hasPadding={false}
                         hasRoundedCorners={false}
                         header={
-                          <HeaderLogo
+                          <Logo
                             logoHref="/"
                             logoSize="medium"
                             logoSrc={null}
@@ -1104,7 +1108,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
           <div
             className="ui borderless ui text container menu"
           >
-            <HeaderLogo
+            <Logo
               logoHref="/"
               logoSize="medium"
               logoSrc={null}
@@ -1113,11 +1117,13 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
             >
               <MenuItem
                 className=""
+                data-testid="logo"
                 href="/"
                 link={true}
               >
                 <a
                   className="link item"
+                  data-testid="logo"
                   href="/"
                   onClick={[Function]}
                 >
@@ -1168,7 +1174,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
                   </FlexContainer>
                 </a>
               </MenuItem>
-            </HeaderLogo>
+            </Logo>
             <MenuMenu
               position="right"
             >

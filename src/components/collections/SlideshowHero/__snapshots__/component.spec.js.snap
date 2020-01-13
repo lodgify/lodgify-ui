@@ -132,7 +132,7 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                   <div
                     className="ui borderless ui text container menu"
                   >
-                    <HeaderLogo
+                    <Logo
                       logoHref="/"
                       logoSize="medium"
                       logoSrc={null}
@@ -141,11 +141,13 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                     >
                       <MenuItem
                         className=""
+                        data-testid="logo"
                         href="/"
                         link={true}
                       >
                         <a
                           className="link item"
+                          data-testid="logo"
                           href="/"
                           onClick={[Function]}
                         >
@@ -196,7 +198,7 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                           </FlexContainer>
                         </a>
                       </MenuItem>
-                    </HeaderLogo>
+                    </Logo>
                     <MenuMenu
                       position="right"
                     >
