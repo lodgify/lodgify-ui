@@ -84,62 +84,6 @@ export const Component = ({
     </figure>
   );
 };
-/*const _Component = ({}) => {
-  const [shouldImageLoad, setShouldImageLoad] = useState(false);
-  const [isImageLoaded, setIsImageLoaded] = useState(false);
-  const [hasError, setHasError] = useState(false);
-
-  useEffect(() => {
-    if (!!placeholderImageUrl) {
-      const fullsizeImage = new Image();
-
-      fullsizeImage.sizes = sizes;
-      fullsizeImage.src = imageUrl;
-      fullsizeImage.srcset = srcSet;
-      setIsImageLoaded(fullsizeImage.complete);
-    }
-    setShouldImageLoad(true);
-    setHasError(false);
-  }, [placeholderImageUrl, imageUrl, srcSet, sizes]);
-  const onError = () => {
-    setHasError(true);
-    setIsImageLoaded(false);
-  };
-
-  const onLoad = () => {
-    setHasError(false);
-    setIsImageLoaded(true);
-  };
-
-  return (
-    <figure
-      className={}
-      data-testid={testid()}
-    >
-      {hasError ? (
-        <ImagePlaceholder data-testid={testid('error-placeholder')} />
-      ) : (
-        shouldImageLoad && (
-          <Fragment>
-            <SemanticImage
-              alt={imageTitle}
-              avatar={isAvatar}
-              data-testid={testid('img')}
-              fluid={isFluid}
-              onError={onError}
-              onLoad={onLoad}
-              sizes={sizes}
-              src={imageUrl}
-              srcSet={srcSet}
-              title={imageTitle}
-            />
-          </Fragment>
-        )
-      )}
-      
-    </figure>
-  );
-};*/
 
 Component.displayName = 'ResponsiveImage';
 
@@ -186,6 +130,6 @@ Component.propTypes = {
   sizes: string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
   srcSet: string,
-  /** Whether to render the image that fill the container. */
+  /** The rendered image will fill the container width and height. */
   willFill: bool,
 };
