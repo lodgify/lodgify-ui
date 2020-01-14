@@ -96,16 +96,16 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
             placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
+            willFill={true}
           >
             <LazyLoader
               componentProps={
                 Object {
-                  "imageHeight": undefined,
-                  "imageWidth": undefined,
                   "isFluid": true,
                   "isLazyLoaded": true,
                   "placeholderImageUrl": null,
                   "sizes": null,
+                  "willFill": true,
                 }
               }
               lazyProps={
@@ -118,10 +118,8 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
               <div />
               <ResponsiveImage
                 hasRoundedCorners={false}
-                imageHeight={null}
                 imageTitle="Image Title"
                 imageUrl=""
-                imageWidth={null}
                 isAvatar={false}
                 isCircular={false}
                 isFluid={true}
@@ -130,19 +128,27 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                 placeholderImageUrl={null}
                 sizes={null}
                 srcSet={null}
+                willFill={true}
               >
                 <figure
-                  className="responsive-image is-fluid"
+                  alt="Image Title"
+                  className="responsive-image willFill"
                   data-testid="responsive-image"
+                  style={
+                    Object {
+                      "backgroundImage": "url(null)",
+                    }
+                  }
                 >
                   <Image
-                    alt="Image Title"
                     as="img"
                     avatar={false}
+                    circular={false}
                     data-testid="responsive-image-img"
                     fluid={true}
                     onError={[Function]}
                     onLoad={[Function]}
+                    rounded={false}
                     sizes={null}
                     src=""
                     srcSet={null}
@@ -150,7 +156,6 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                     ui={true}
                   >
                     <img
-                      alt="Image Title"
                       className="ui fluid image"
                       data-testid="responsive-image-img"
                       onError={[Function]}
@@ -491,16 +496,16 @@ exports[`PropertyPageHero should render the right structure 1`] = `
             placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
+            willFill={true}
           >
             <LazyLoader
               componentProps={
                 Object {
-                  "imageHeight": undefined,
-                  "imageWidth": undefined,
                   "isFluid": true,
                   "isLazyLoaded": true,
                   "placeholderImageUrl": null,
                   "sizes": null,
+                  "willFill": true,
                 }
               }
               lazyProps={
@@ -513,10 +518,8 @@ exports[`PropertyPageHero should render the right structure 1`] = `
               <div />
               <ResponsiveImage
                 hasRoundedCorners={false}
-                imageHeight={null}
                 imageTitle="Image Title"
                 imageUrl=""
-                imageWidth={null}
                 isAvatar={false}
                 isCircular={false}
                 isFluid={true}
@@ -525,19 +528,27 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                 placeholderImageUrl={null}
                 sizes={null}
                 srcSet={null}
+                willFill={true}
               >
                 <figure
-                  className="responsive-image is-fluid"
+                  alt="Image Title"
+                  className="responsive-image willFill"
                   data-testid="responsive-image"
+                  style={
+                    Object {
+                      "backgroundImage": "url(null)",
+                    }
+                  }
                 >
                   <Image
-                    alt="Image Title"
                     as="img"
                     avatar={false}
+                    circular={false}
                     data-testid="responsive-image-img"
                     fluid={true}
                     onError={[Function]}
                     onLoad={[Function]}
+                    rounded={false}
                     sizes={null}
                     src=""
                     srcSet={null}
@@ -545,7 +556,6 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                     ui={true}
                   >
                     <img
-                      alt="Image Title"
                       className="ui fluid image"
                       data-testid="responsive-image-img"
                       onError={[Function]}

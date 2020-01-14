@@ -208,6 +208,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
       isShowingThumbnails={false}
       isStretched={false}
       startIndex={0}
+      willFill={false}
     >
       <ImageGallery
         additionalClass=""
@@ -625,6 +626,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
       isShowingThumbnails={false}
       isStretched={false}
       startIndex={0}
+      willFill={false}
     >
       <ImageGallery
         additionalClass=""
@@ -1263,6 +1265,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
       isShowingThumbnails={false}
       isStretched={false}
       startIndex={0}
+      willFill={false}
     >
       <ImageGallery
         additionalClass=""
@@ -1798,6 +1801,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
       isShowingThumbnails={false}
       isStretched={false}
       startIndex={0}
+      willFill={false}
     >
       <ImageGallery
         additionalClass=""
@@ -2460,6 +2464,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
       isShowingThumbnails={false}
       isStretched={false}
       startIndex={0}
+      willFill={false}
     >
       <ImageGallery
         additionalClass=""

@@ -34,16 +34,16 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
         placeholderImageUrl={null}
         sizes={null}
         srcSet={null}
+        willFill={true}
       >
         <LazyLoader
           componentProps={
             Object {
-              "imageHeight": undefined,
-              "imageWidth": undefined,
               "isFluid": true,
               "isLazyLoaded": true,
               "placeholderImageUrl": null,
               "sizes": null,
+              "willFill": true,
             }
           }
           lazyProps={
@@ -56,10 +56,8 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
           <div />
           <ResponsiveImage
             hasRoundedCorners={false}
-            imageHeight={null}
             imageTitle="Image Title"
             imageUrl=""
-            imageWidth={null}
             isAvatar={false}
             isCircular={false}
             isFluid={true}
@@ -68,19 +66,27 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
             placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
+            willFill={true}
           >
             <figure
-              className="responsive-image is-fluid"
+              alt="Image Title"
+              className="responsive-image willFill"
               data-testid="responsive-image"
+              style={
+                Object {
+                  "backgroundImage": "url(null)",
+                }
+              }
             >
               <Image
-                alt="Image Title"
                 as="img"
                 avatar={false}
+                circular={false}
                 data-testid="responsive-image-img"
                 fluid={true}
                 onError={[Function]}
                 onLoad={[Function]}
+                rounded={false}
                 sizes={null}
                 src=""
                 srcSet={null}
@@ -88,7 +94,6 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
                 ui={true}
               >
                 <img
-                  alt="Image Title"
                   className="ui fluid image"
                   data-testid="responsive-image-img"
                   onError={[Function]}
@@ -143,16 +148,16 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
         placeholderImageUrl={null}
         sizes={null}
         srcSet={null}
+        willFill={true}
       >
         <LazyLoader
           componentProps={
             Object {
-              "imageHeight": undefined,
-              "imageWidth": undefined,
               "isFluid": true,
               "isLazyLoaded": true,
               "placeholderImageUrl": null,
               "sizes": null,
+              "willFill": true,
             }
           }
           lazyProps={
@@ -165,10 +170,8 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
           <div />
           <ResponsiveImage
             hasRoundedCorners={false}
-            imageHeight={null}
             imageTitle="Image Title"
             imageUrl=""
-            imageWidth={null}
             isAvatar={false}
             isCircular={false}
             isFluid={true}
@@ -177,19 +180,27 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
             placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
+            willFill={true}
           >
             <figure
-              className="responsive-image is-fluid"
+              alt="Image Title"
+              className="responsive-image willFill"
               data-testid="responsive-image"
+              style={
+                Object {
+                  "backgroundImage": "url(null)",
+                }
+              }
             >
               <Image
-                alt="Image Title"
                 as="img"
                 avatar={false}
+                circular={false}
                 data-testid="responsive-image-img"
                 fluid={true}
                 onError={[Function]}
                 onLoad={[Function]}
+                rounded={false}
                 sizes={null}
                 src=""
                 srcSet={null}
@@ -197,7 +208,6 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
                 ui={true}
               >
                 <img
-                  alt="Image Title"
                   className="ui fluid image"
                   data-testid="responsive-image-img"
                   onError={[Function]}
@@ -252,16 +262,16 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
         placeholderImageUrl={null}
         sizes={null}
         srcSet={null}
+        willFill={true}
       >
         <LazyLoader
           componentProps={
             Object {
-              "imageHeight": undefined,
-              "imageWidth": undefined,
               "isFluid": true,
               "isLazyLoaded": true,
               "placeholderImageUrl": null,
               "sizes": null,
+              "willFill": true,
             }
           }
           lazyProps={
@@ -274,10 +284,8 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
           <div />
           <ResponsiveImage
             hasRoundedCorners={false}
-            imageHeight={null}
             imageTitle="Image Title"
             imageUrl=""
-            imageWidth={null}
             isAvatar={false}
             isCircular={false}
             isFluid={true}
@@ -286,19 +294,27 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
             placeholderImageUrl={null}
             sizes={null}
             srcSet={null}
+            willFill={true}
           >
             <figure
-              className="responsive-image is-fluid"
+              alt="Image Title"
+              className="responsive-image willFill"
               data-testid="responsive-image"
+              style={
+                Object {
+                  "backgroundImage": "url(null)",
+                }
+              }
             >
               <Image
-                alt="Image Title"
                 as="img"
                 avatar={false}
+                circular={false}
                 data-testid="responsive-image-img"
                 fluid={true}
                 onError={[Function]}
                 onLoad={[Function]}
+                rounded={false}
                 sizes={null}
                 src=""
                 srcSet={null}
@@ -306,7 +322,6 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
                 ui={true}
               >
                 <img
-                  alt="Image Title"
                   className="ui fluid image"
                   data-testid="responsive-image-img"
                   onError={[Function]}

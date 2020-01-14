@@ -708,6 +708,7 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
             isShowingThumbnails={false}
             isStretched={false}
             startIndex={0}
+            willFill={true}
           >
             <ImageGallery
               additionalClass="fit-width"
@@ -798,92 +799,84 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                           }
                         }
                       >
-                        <div>
-                          <withLazyLoad(ResponsiveImage)
-                            imageUrl="url"
-                            isLazyLoaded={true}
-                            placeholderImageUrl="url"
+                        <withLazyLoad(ResponsiveImage)
+                          imageUrl="url"
+                          isLazyLoaded={true}
+                          placeholderImageUrl="url"
+                          willFill={true}
+                        >
+                          <LazyLoader
+                            componentProps={
+                              Object {
+                                "isLazyLoaded": true,
+                                "placeholderImageUrl": "url",
+                                "sizes": undefined,
+                                "willFill": true,
+                              }
+                            }
+                            lazyProps={
+                              Object {
+                                "imageUrl": "url",
+                                "srcSet": undefined,
+                              }
+                            }
                           >
-                            <LazyLoader
-                              componentProps={
-                                Object {
-                                  "isLazyLoaded": true,
-                                  "placeholderImageUrl": "url",
-                                  "sizes": undefined,
-                                }
-                              }
-                              lazyProps={
-                                Object {
-                                  "imageUrl": "url",
-                                  "srcSet": undefined,
-                                }
-                              }
+                            <div />
+                            <ResponsiveImage
+                              hasRoundedCorners={false}
+                              imageTitle="Image Title"
+                              imageUrl=""
+                              isAvatar={false}
+                              isCircular={false}
+                              isFluid={false}
+                              isLazyLoaded={true}
+                              label={null}
+                              placeholderImageUrl="url"
+                              sizes={null}
+                              srcSet={null}
+                              willFill={true}
                             >
-                              <div />
-                              <ResponsiveImage
-                                hasRoundedCorners={false}
-                                imageHeight={null}
-                                imageTitle="Image Title"
-                                imageUrl=""
-                                imageWidth={null}
-                                isAvatar={false}
-                                isCircular={false}
-                                isFluid={false}
-                                isLazyLoaded={true}
-                                label={null}
-                                placeholderImageUrl="url"
-                                sizes={null}
-                                srcSet={null}
+                              <figure
+                                alt="Image Title"
+                                className="responsive-image willFill"
+                                data-testid="responsive-image"
+                                style={
+                                  Object {
+                                    "backgroundImage": "url(url)",
+                                  }
+                                }
                               >
-                                <figure
-                                  className="responsive-image has-blurred-children has-placeholder"
-                                  data-testid="responsive-image"
+                                <Image
+                                  as="img"
+                                  avatar={false}
+                                  circular={false}
+                                  data-testid="responsive-image-img"
+                                  fluid={false}
+                                  onError={[Function]}
+                                  onLoad={[Function]}
+                                  rounded={false}
+                                  sizes={null}
+                                  src=""
+                                  srcSet={null}
+                                  title="Image Title"
+                                  ui={true}
                                 >
-                                  <Image
-                                    alt="Image Title"
-                                    as="img"
-                                    avatar={false}
+                                  <img
+                                    className="ui image"
                                     data-testid="responsive-image-img"
-                                    fluid={true}
                                     onError={[Function]}
                                     onLoad={[Function]}
                                     sizes={null}
                                     src=""
                                     srcSet={null}
                                     title="Image Title"
-                                    ui={true}
-                                  >
-                                    <img
-                                      alt="Image Title"
-                                      className="ui fluid image"
-                                      data-testid="responsive-image-img"
-                                      onError={[Function]}
-                                      onLoad={[Function]}
-                                      sizes={null}
-                                      src=""
-                                      srcSet={null}
-                                      title="Image Title"
-                                    />
-                                  </Image>
-                                  <Image
-                                    as="img"
-                                    data-testid="responsive-image-placeholder"
-                                    fluid={true}
-                                    src="url"
-                                    ui={true}
-                                  >
-                                    <img
-                                      className="ui fluid image"
-                                      data-testid="responsive-image-placeholder"
-                                      src="url"
-                                    />
-                                  </Image>
-                                </figure>
-                              </ResponsiveImage>
-                              <div />
-                            </LazyLoader>
-                          </withLazyLoad(ResponsiveImage)>
-                        </div>
+                                  />
+                                </Image>
+                              </figure>
+                            </ResponsiveImage>
+                            <div />
+                          </LazyLoader>
+                        </withLazyLoad(ResponsiveImage)>
                       </div>
                     </div>
                   </div>

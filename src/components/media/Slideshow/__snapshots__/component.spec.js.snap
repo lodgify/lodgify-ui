@@ -52,6 +52,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
   isShowingThumbnails={false}
   isStretched={false}
   startIndex={0}
+  willFill={false}
 >
   <Paragraph
     className={null}
@@ -388,79 +389,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide right"
@@ -475,79 +481,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide"
@@ -583,79 +594,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
               </div>
             </div>
@@ -761,6 +777,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
   isShowingThumbnails={false}
   isStretched={false}
   startIndex={0}
+  willFill={false}
 >
   <Paragraph
     className={null}
@@ -1097,79 +1114,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide right"
@@ -1184,79 +1206,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide"
@@ -1292,79 +1319,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
               </div>
             </div>
@@ -1470,6 +1502,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
   isShowingThumbnails={false}
   isStretched={true}
   startIndex={0}
+  willFill={false}
 >
   <Paragraph
     className={null}
@@ -1806,79 +1839,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide right"
@@ -1893,79 +1931,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide"
@@ -2001,79 +2044,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
               </div>
             </div>
@@ -2180,6 +2228,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
   isStretched={false}
   showIndex={true}
   startIndex={0}
+  willFill={false}
 >
   <Paragraph
     className={null}
@@ -2516,79 +2565,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide right"
@@ -2603,79 +2657,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide"
@@ -2711,79 +2770,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
               </div>
             </div>
@@ -2890,6 +2954,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
   isStretched={false}
   showThumbnails={true}
   startIndex={0}
+  willFill={false}
 >
   <Paragraph
     className={null}
@@ -3226,79 +3291,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide right"
@@ -3313,79 +3383,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide"
@@ -3421,79 +3496,84 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
               </div>
             </div>
@@ -3567,6 +3647,7 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
   isShowingThumbnails={false}
   isStretched={false}
   startIndex={0}
+  willFill={false}
 >
   <Paragraph
     className={null}
@@ -3903,79 +3984,84 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide right"
@@ -3990,79 +4076,84 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide"
@@ -4098,79 +4189,84 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
               </div>
             </div>
@@ -4276,6 +4372,7 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
   isShowingThumbnails={false}
   isStretched={false}
   startIndex={0}
+  willFill={false}
 >
   <Heading
     className={null}
@@ -4632,79 +4729,84 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide right"
@@ -4719,79 +4821,84 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
                 <div
                   className="image-gallery-slide"
@@ -4827,79 +4934,84 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
                     }
                   }
                 >
-                  <div>
-                    <withLazyLoad(ResponsiveImage)
-                      imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-                      isLazyLoaded={true}
-                      sizes="100w"
-                      srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                  <withLazyLoad(ResponsiveImage)
+                    imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+                    isLazyLoaded={true}
+                    sizes="100w"
+                    srcSet="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w"
+                    willFill={false}
+                  >
+                    <LazyLoader
+                      componentProps={
+                        Object {
+                          "isLazyLoaded": true,
+                          "placeholderImageUrl": undefined,
+                          "sizes": "100w",
+                          "willFill": false,
+                        }
+                      }
+                      lazyProps={
+                        Object {
+                          "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
+                          "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
+                        }
+                      }
                     >
-                      <LazyLoader
-                        componentProps={
-                          Object {
-                            "isLazyLoaded": true,
-                            "placeholderImageUrl": undefined,
-                            "sizes": "100w",
-                          }
-                        }
-                        lazyProps={
-                          Object {
-                            "imageUrl": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg",
-                            "srcSet": "https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg?w=400&h=400&mode=max 320w",
-                          }
-                        }
+                      <div />
+                      <ResponsiveImage
+                        hasRoundedCorners={false}
+                        imageTitle="Image Title"
+                        imageUrl=""
+                        isAvatar={false}
+                        isCircular={false}
+                        isFluid={false}
+                        isLazyLoaded={true}
+                        label={null}
+                        sizes="100w"
+                        srcSet={null}
+                        willFill={false}
                       >
-                        <div />
-                        <ResponsiveImage
-                          hasRoundedCorners={false}
-                          imageHeight={null}
-                          imageTitle="Image Title"
-                          imageUrl=""
-                          imageWidth={null}
-                          isAvatar={false}
-                          isCircular={false}
-                          isFluid={false}
-                          isLazyLoaded={true}
-                          label={null}
-                          sizes="100w"
-                          srcSet={null}
+                        <figure
+                          alt="Image Title"
+                          className="responsive-image"
+                          data-testid="responsive-image"
+                          style={
+                            Object {
+                              "backgroundImage": "url(undefined)",
+                            }
+                          }
                         >
-                          <figure
-                            className="responsive-image"
-                            data-testid="responsive-image"
+                          <Image
+                            as="img"
+                            avatar={false}
+                            circular={false}
+                            data-testid="responsive-image-img"
+                            fluid={false}
+                            onError={[Function]}
+                            onLoad={[Function]}
+                            rounded={false}
+                            sizes="100w"
+                            src=""
+                            srcSet={null}
+                            title="Image Title"
+                            ui={true}
                           >
-                            <Image
-                              alt="Image Title"
-                              as="img"
-                              avatar={false}
+                            <img
+                              className="ui image"
                               data-testid="responsive-image-img"
-                              fluid={true}
                               onError={[Function]}
                               onLoad={[Function]}
                               sizes="100w"
                               src=""
                               srcSet={null}
                               title="Image Title"
-                              ui={true}
-                            >
-                              <img
-                                alt="Image Title"
-                                className="ui fluid image"
-                                data-testid="responsive-image-img"
-                                onError={[Function]}
-                                onLoad={[Function]}
-                                sizes="100w"
-                                src=""
-                                srcSet={null}
-                                title="Image Title"
-                              />
-                            </Image>
-                          </figure>
-                        </ResponsiveImage>
-                        <div />
-                      </LazyLoader>
-                    </withLazyLoad(ResponsiveImage)>
-                  </div>
+                            />
+                          </Image>
+                        </figure>
+                      </ResponsiveImage>
+                      <div />
+                    </LazyLoader>
+                  </withLazyLoad(ResponsiveImage)>
                 </div>
               </div>
             </div>

@@ -84,10 +84,10 @@ export class Component extends PureComponent {
                 <ResponsiveImage
                   imageTitle={imageTitle}
                   imageUrl={imageUrl}
-                  isFluid
                   placeholderImageUrl={placeholderImageUrl}
                   sizes={imageSizes}
                   srcSet={imageSrcSet}
+                  willFill
                 />
                 {!isCompact && (
                   <Segment raised>

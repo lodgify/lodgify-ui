@@ -6,8 +6,6 @@ import { testidSelectorFactory } from 'utils/testid';
 
 import { Component as ResponsiveImage } from './component';
 
-import { ResponsiveImage as ComponentWithLazyLoad } from './index';
-
 const testid = testidSelectorFactory('responsive-image');
 
 global.Image = jest.fn(function() {
@@ -18,10 +16,10 @@ const getResponsiveImage = props => mount(<ResponsiveImage {...props} />);
 describe('<ResponsiveImage />', () => {
   describe('`render`', () => {
     describe('by default', () => {
-      it('should have the right structure', () => {
+      it('should mount properly', () => {
         const actual = getResponsiveImage();
 
-        expect(actual).toMatchSnapshot();
+        expect(actual.find(testid()).length > 0).toBe(true);
       });
     });
     describe('when the image is unable to load the src', () => {
@@ -56,7 +54,6 @@ describe('<ResponsiveImage />', () => {
           });
         });
 
-        expect(actual.find(testid('placeholder')).length > 0).toBe(true);
         actual.update();
         const semanticImage = actual.find(testid('img')).first();
 
@@ -65,70 +62,20 @@ describe('<ResponsiveImage />', () => {
         });
         actual.update();
 
-        expect(actual.find(testid('img')).length > 0).toBe(true);
+        expect(
+          actual
+            .find(testid())
+            .props()
+            .className.includes('isLoaded')
+        ).toBe(true);
       });
     });
+    describe('with label', () => {
+      it('should render the label', () => {
+        const actual = getResponsiveImage({ label: 'foo' });
 
-    describe('if `props.placeholderImageUrl` is passed', () => {
-      it('should have the right structure', () => {
-        const actual = getResponsiveImage({
-          placeholderImageUrl: 'ayyy',
-        });
-
-        expect(actual).toMatchSnapshot();
+        expect(actual.find(testid('label')).length > 0).toBe(true);
       });
     });
-
-    describe('if `props.isFluid` is passed', () => {
-      it('should have the right structure', () => {
-        const actual = getResponsiveImage({
-          isFluid: true,
-        });
-
-        expect(actual).toMatchSnapshot();
-      });
-    });
-
-    describe('if `props.hasRoundedCorners` is passed', () => {
-      it('should have the right structure', () => {
-        const actual = getResponsiveImage({
-          hasRoundedCorners: true,
-        });
-
-        expect(actual).toMatchSnapshot();
-      });
-    });
-
-    describe('if `props.isCircular` is passed', () => {
-      it('should have the right structure', () => {
-        const actual = getResponsiveImage({
-          isCircular: true,
-        });
-
-        expect(actual).toMatchSnapshot();
-      });
-    });
-
-    describe('if `props.label` is passed', () => {
-      it('should have the right structure', () => {
-        const actual = getResponsiveImage({ label: '🔷' });
-
-        expect(actual).toMatchSnapshot();
-      });
-    });
-
-    describe('if `props.isLazyLoaded` is false', () => {
-      it('should have the right structure', () => {
-        const actual = getResponsiveImage({ isLazyLoaded: false });
-
-        expect(actual).toMatchSnapshot();
-      });
-    });
-  });
-
-  it('should get wrapped by `withLazyLoad`', () => {
-    const wrapper = mount(<ComponentWithLazyLoad />);
-
-    expect(wrapper).toMatchSnapshot();
   });
 });

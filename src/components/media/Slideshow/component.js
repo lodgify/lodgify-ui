@@ -33,6 +33,7 @@ export const Component = ({
   isStretched,
   isFluid,
   startIndex,
+  willFill,
 }) => {
   const [index, setIndex] = useState(startIndex);
   const onSlide = index => {
@@ -61,14 +62,13 @@ export const Component = ({
         lazyLoad
         onSlide={onSlide}
         renderItem={item => (
-          <div>
-            <ResponsiveImage
-              imageUrl={item.original}
-              placeholderImageUrl={item.placeholder}
-              sizes={item.sizes}
-              srcSet={item.srcSet}
-            />
-          </div>
+          <ResponsiveImage
+            imageUrl={item.original}
+            placeholderImageUrl={item.placeholder}
+            sizes={item.sizes}
+            srcSet={item.srcSet}
+            willFill={willFill}
+          />
         )}
         renderLeftNav={renderNavButton(ICON_NAMES.CHEVRON_LEFT)}
         renderRightNav={renderNavButton(ICON_NAMES.CHEVRON_RIGHT)}
@@ -97,6 +97,7 @@ Component.defaultProps = {
   isShowingThumbnails: false,
   isFluid: false,
   startIndex: 0,
+  willFill: false,
 };
 
 Component.propTypes = {
@@ -137,4 +138,6 @@ Component.propTypes = {
   isStretched: PropTypes.bool,
   /** The index used to define the image shown when the slideshow is opened. */
   startIndex: PropTypes.number,
+  /** Whether to render the image that fill the container. */
+  willFill: PropTypes.bool,
 };

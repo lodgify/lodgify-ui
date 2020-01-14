@@ -43,14 +43,11 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={true}
         widescreen={true}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
-          hasRoundedCorners={false}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Two cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Two cats"
           size="huge"
         />
@@ -63,14 +60,12 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={false}
         widescreen={false}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
           hasRoundedCorners={true}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Two cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Two cats"
           size="small"
         />
@@ -100,14 +95,11 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={true}
         widescreen={true}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
-          hasRoundedCorners={false}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Two more cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Two more cats"
           size="huge"
         />
@@ -120,14 +112,12 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={false}
         widescreen={false}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
           hasRoundedCorners={true}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Two more cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Two more cats"
           size="small"
         />
@@ -157,14 +147,11 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={true}
         widescreen={true}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
-          hasRoundedCorners={false}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Much cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Much cats"
           size="huge"
         />
@@ -177,14 +164,12 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={false}
         widescreen={false}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
           hasRoundedCorners={true}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Much cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Much cats"
           size="small"
         />
@@ -214,14 +199,11 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={true}
         widescreen={true}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
-          hasRoundedCorners={false}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Two cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Two cats"
           size="huge"
         />
@@ -234,14 +216,12 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={false}
         widescreen={false}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
           hasRoundedCorners={true}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Two cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Two cats"
           size="small"
         />
@@ -271,14 +251,11 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={true}
         widescreen={true}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
-          hasRoundedCorners={false}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Two more cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Two more cats"
           size="huge"
         />
@@ -291,14 +268,12 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={false}
         widescreen={false}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
           hasRoundedCorners={true}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Two more cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Two more cats"
           size="small"
         />
@@ -328,14 +303,11 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={true}
         widescreen={true}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
-          hasRoundedCorners={false}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Much cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Much cats"
           size="huge"
         />
@@ -348,14 +320,12 @@ exports[`<Pictures /> should render the correct structure 1`] = `
         tablet={false}
         widescreen={false}
       >
-        <Thumbnail
+        <withLazyLoad(ResponsiveImage)
           className="gallery-thumbnail"
-          hasMargin={false}
           hasRoundedCorners={true}
           imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
           imageUrlAlternativeText="Much cats"
-          isCircular={false}
-          isSquare={false}
+          isLazyLoaded={true}
           label="Much cats"
           size="small"
         />

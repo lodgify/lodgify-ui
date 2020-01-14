@@ -1,15 +1,12 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import classnames from 'classnames';
-import PropTypes from 'prop-types';
+import { bool, string } from 'prop-types';
 import { Image as SemanticImage } from 'semantic-ui-react';
 
 import { ImagePlaceholder } from 'media/ImagePlaceholder';
 import { IMAGE_TITLE } from 'utils/default-strings';
 import { Paragraph } from 'typography/Paragraph';
 import { testidFactory } from 'utils/testid';
-
-import { getIsFluid } from './utils/getIsFluid';
-import { getAspectRatioPlaceholderMarkup } from './utils/getAspectRatioPlaceholderMarkup';
 
 const TESTID_PREFIX = 'responsive-image';
 
@@ -27,12 +24,67 @@ export const Component = ({
   placeholderImageUrl,
   imageTitle,
   isAvatar,
-  imageWidth,
-  imageHeight,
   sizes,
   imageUrl,
   srcSet,
+  willFill,
 }) => {
+  const [isLoaded, setIsLoaded] = useState(false);
+  const [isError, setIsError] = useState(false);
+
+  useEffect(() => {
+    setIsLoaded(false);
+    setIsError(false);
+  }, [imageUrl, placeholderImageUrl]);
+
+  const onError = () => {
+    setIsError(true);
+    setIsLoaded(false);
+  };
+
+  const onLoad = () => {
+    setIsError(false);
+    setIsLoaded(true);
+  };
+
+  const style = {
+    backgroundImage: isError || isLoaded ? '' : `url(${placeholderImageUrl})`,
+  };
+
+  return (
+    <figure
+      alt={imageTitle}
+      className={classnames('responsive-image', {
+        isLoaded: isLoaded || isError,
+        isCircular,
+        willFill,
+      })}
+      data-testid={testid()}
+      style={style}
+    >
+      {isError && (
+        <ImagePlaceholder data-testid={testid('error-placeholder')} willFill />
+      )}
+      <SemanticImage
+        avatar={isAvatar}
+        circular={isCircular}
+        data-testid={testid('img')}
+        fluid={isFluid}
+        onError={onError}
+        onLoad={onLoad}
+        rounded={hasRoundedCorners}
+        sizes={sizes}
+        src={imageUrl}
+        srcSet={srcSet}
+        title={!isError ? imageTitle : ''}
+      />
+      {label ? (
+        <Paragraph data-testid={testid('label')}>{label}</Paragraph>
+      ) : null}
+    </figure>
+  );
+};
+/*const _Component = ({}) => {
   const [shouldImageLoad, setShouldImageLoad] = useState(false);
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const [hasError, setHasError] = useState(false);
@@ -61,62 +113,43 @@ export const Component = ({
 
   return (
     <figure
-      className={classnames('responsive-image', {
-        'has-blurred-children': !!placeholderImageUrl && !isImageLoaded,
-        'has-placeholder': !!placeholderImageUrl,
-        'is-fluid': isFluid,
-        'is-rounded': hasRoundedCorners,
-        'is-circular': isCircular,
-      })}
+      className={}
       data-testid={testid()}
     >
       {hasError ? (
         <ImagePlaceholder data-testid={testid('error-placeholder')} />
       ) : (
         shouldImageLoad && (
-          <SemanticImage
-            alt={imageTitle}
-            avatar={isAvatar}
-            data-testid={testid('img')}
-            fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
-            onError={onError}
-            onLoad={onLoad}
-            sizes={sizes}
-            src={imageUrl}
-            srcSet={srcSet}
-            title={imageTitle}
-          />
+          <Fragment>
+            <SemanticImage
+              alt={imageTitle}
+              avatar={isAvatar}
+              data-testid={testid('img')}
+              fluid={isFluid}
+              onError={onError}
+              onLoad={onLoad}
+              sizes={sizes}
+              src={imageUrl}
+              srcSet={srcSet}
+              title={imageTitle}
+            />
+          </Fragment>
         )
       )}
-      {!!placeholderImageUrl && (
-        <Fragment>
-          {getAspectRatioPlaceholderMarkup(imageWidth, imageHeight)}
-          {!isImageLoaded && (
-            <SemanticImage
-              data-testid={testid('placeholder')}
-              fluid={getIsFluid(isFluid, imageWidth, imageHeight)}
-              src={placeholderImageUrl}
-            />
-          )}
-        </Fragment>
-      )}
-      {label ? (
-        <Paragraph data-testid={testid('label')}>{label}</Paragraph>
-      ) : null}
+      
     </figure>
   );
-};
+};*/
 
 Component.displayName = 'ResponsiveImage';
 
 Component.defaultProps = {
   hasRoundedCorners: false,
-  imageHeight: null,
   imageTitle: IMAGE_TITLE,
   imageUrl: '',
-  imageWidth: null,
   isAvatar: false,
   isCircular: false,
+  willFill: false,
   isFluid: false,
   isLazyLoaded: true,
   label: null,
@@ -127,36 +160,32 @@ Component.defaultProps = {
 
 Component.propTypes = {
   /** Is the image rounded on the corners. */
-  hasRoundedCorners: PropTypes.bool,
-  /** The natural height of the image. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  imageHeight: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  hasRoundedCorners: bool,
   /** Title of the image to show when hovering it on desktop browsers. */
   // eslint-disable-next-line react/no-unused-prop-types
-  imageTitle: PropTypes.string,
+  imageTitle: string,
   /** URL pointing to the image to render. */
   // eslint-disable-next-line react/no-unused-prop-types
-  imageUrl: PropTypes.string,
-  /** The natural width of the image. */
-  // eslint-disable-next-line react/no-unused-prop-types
-  imageWidth: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+  imageUrl: string,
   /** Whether to render the image as an avatar. */
   // eslint-disable-next-line react/no-unused-prop-types
-  isAvatar: PropTypes.bool,
+  isAvatar: bool,
   /** Is the image circular. */
-  isCircular: PropTypes.bool,
+  isCircular: bool,
   /** Whether to render fluidly the image or not. */
   // eslint-disable-next-line react/no-unused-prop-types
-  isFluid: PropTypes.bool,
+  isFluid: bool,
   /** The high resolution image will load when scrolled to the component's position. */
   // eslint-disable-next-line react/no-unused-prop-types
-  isLazyLoaded: PropTypes.bool,
+  isLazyLoaded: bool,
   /** A visible label for the image. */
-  label: PropTypes.string,
+  label: string,
   /** URL pointing to the placeholder image to render. */
-  placeholderImageUrl: PropTypes.string,
+  placeholderImageUrl: string,
   /** A list of one or more strings separated by commas indicating a set of source sizes. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-  sizes: PropTypes.string,
+  sizes: string,
   /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-  srcSet: PropTypes.string,
+  srcSet: string,
+  /** Whether to render the image that fill the container. */
+  willFill: bool,
 };

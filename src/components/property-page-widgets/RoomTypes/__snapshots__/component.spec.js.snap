@@ -1737,11 +1737,12 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 isShowingBulletNavigation={false}
                                 isShowingIndex={false}
                                 isShowingThumbnails={false}
-                                isStretched={true}
+                                isStretched={false}
                                 startIndex={0}
+                                willFill={true}
                               >
                                 <ImageGallery
-                                  additionalClass="fit-height no-shadow no-border-radius"
+                                  additionalClass="no-shadow no-border-radius"
                                   data-testid="slideshow"
                                   items={
                                     Array [
@@ -2792,11 +2793,12 @@ exports[`<RoomTypes /> should render the right structure 1`] = `
                                 isShowingBulletNavigation={false}
                                 isShowingIndex={false}
                                 isShowingThumbnails={false}
-                                isStretched={true}
+                                isStretched={false}
                                 startIndex={0}
+                                willFill={true}
                               >
                                 <ImageGallery
-                                  additionalClass="fit-height no-shadow no-border-radius"
+                                  additionalClass="no-shadow no-border-radius"
                                   data-testid="slideshow"
                                   items={
                                     Array [

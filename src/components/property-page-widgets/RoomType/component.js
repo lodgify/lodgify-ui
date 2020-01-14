@@ -60,7 +60,7 @@ const Component = ({
               images={images}
               isRounded={false}
               isShowingBulletNavigation={false}
-              isStretched
+              willFill
             />
           )}
         </GridColumn>

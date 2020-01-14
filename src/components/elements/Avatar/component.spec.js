@@ -12,14 +12,14 @@ const mountAvatar = ({ firstName = 'foo', lastName = 'bar', image }) =>
 
 describe('Avatar', () => {
   describe('when the avatar is mount with image', () => {
-    const imageUrl = 'http://foo.png';
+    const imageUrl = 'https://via.placeholder.com/150';
     const current = mountAvatar({ image: imageUrl });
 
     it('should have an image element inside', () => {
       const image = current.find(testid('image'));
 
-      expect(image.length).toBe(1);
-      expect(image.props()).toMatchObject({
+      expect(image.length > 0).toBe(true);
+      expect(image.first().props()).toMatchObject({
         imageUrl,
       });
     });
