@@ -32,8 +32,6 @@ exports[` 1`] = `
       ]
     }
     currencyValue="EUR"
-    headingHref=" http://www.sss.com"
-    headingText="Lindblum"
     isBackgroundFilled={true}
     languageOptions={
       Array [
@@ -56,6 +54,10 @@ exports[` 1`] = `
       ]
     }
     languageValue="en"
+    logoHref=""
+    logoSize="medium"
+    logoSubText=""
+    logoText=""
     navigationMenuItems={
       Array [
         Object {
@@ -123,8 +125,6 @@ exports[`ContactPropertyHero should render the right structure 1`] = `
       ]
     }
     currencyValue="EUR"
-    headingHref=" http://www.sss.com"
-    headingText="Lindblum"
     isBackgroundFilled={true}
     languageOptions={
       Array [
@@ -147,6 +147,10 @@ exports[`ContactPropertyHero should render the right structure 1`] = `
       ]
     }
     languageValue="en"
+    logoHref=""
+    logoSize="medium"
+    logoSubText=""
+    logoText=""
     navigationMenuItems={
       Array [
         Object {

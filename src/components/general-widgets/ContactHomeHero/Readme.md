@@ -5,7 +5,7 @@ const { backgroundImageUrl, navigationItems, currencyOptions, languageOptions } 
   logoSubText="King of Joy"
   logoHref="Balalala"
   logoSize="medium"
-  logoSrc="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+  logoSrc="https://li5.cdbcdn.com/oh/a84645c0-0a35-4735-bda5-e5c425c2ffdc.png"
   backgroundImageUrl={backgroundImageUrl}
   headingText='Lindblum'
   callToActionText="Land of mechanical ships"

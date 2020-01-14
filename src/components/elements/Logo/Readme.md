@@ -1,16 +1,18 @@
 ```jsx
+const logoSrc = require('./mock-data/livingstoneLogo.png');
 
-<Logo
-  logoSubText="King of Joy"
-  logoSize="medium"
-  logoSrc="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-/>
+<div style={{background: 'coral'}}>
+  <Logo
+    logoSubText="King of Joy"
+    logoSize="huge"
+    logoSrc={logoSrc}
+  />
+</div>
 ```
 
 ### Text
 
 ```jsx
-
 <Logo
   logoSubText="King of Joy"
   logoSize="medium"
