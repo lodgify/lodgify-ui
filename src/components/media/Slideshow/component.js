@@ -138,6 +138,6 @@ Component.propTypes = {
   isStretched: PropTypes.bool,
   /** The index used to define the image shown when the slideshow is opened. */
   startIndex: PropTypes.number,
-  /** Whether to render the image that fill the container. */
+  /** The rendered image will fill the container width and height. */
   willFill: PropTypes.bool,
 };
