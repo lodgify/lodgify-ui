@@ -42,7 +42,7 @@ const props = {
   onChangeCurrency: undefined,
   currencyValue: 's',
   phoneNumber: 's-909-s',
-  primaryButtonText: 's',
+  primaryCTA: { onClick: () => {}, text: 'Book now' },
 };
 
 const testid = testidSelectorFactory('contactHeader');

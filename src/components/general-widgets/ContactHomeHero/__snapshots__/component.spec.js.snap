@@ -4,7 +4,6 @@ exports[`ContactHomeHero should render the right structure 1`] = `
 <ContactHomeHero
   backgroundImageUrl="backgroundImageUrl"
   bottomOffset="0px"
-  callToActionText=""
   className="ma-ma-ma"
   currencyNoResultsText=""
   currencyOptions={
@@ -27,36 +26,11 @@ exports[`ContactHomeHero should render the right structure 1`] = `
     ]
   }
   currencyValue="EUR"
-  headingHref="http://www.sss.com"
-  headingText="Lindblum"
-  isBackgroundFilled={true}
-  isHeaderBackgroundFilled={false}
-  languageOptions={
-    Array [
-      Object {
-        "text": "English",
-        "value": "en",
-      },
-      Object {
-        "text": "German",
-        "value": "de",
-      },
-      Object {
-        "text": "Japanese",
-        "value": "jp",
-      },
-      Object {
-        "text": "Italian",
-        "value": "it",
-      },
-    ]
-  }
-  languageValue="en"
-  logoHref=""
-  logoSize="medium"
-  logoSubText=""
-  logoText=""
-  navigationMenuItems={
+  headerLogoHref=""
+  headerLogoSize="medium"
+  headerLogoSubText=""
+  headerLogoText="aaa"
+  headerNavigationItems={
     Array [
       Object {
         "href": "/",
@@ -85,9 +59,34 @@ exports[`ContactHomeHero should render the right structure 1`] = `
       },
     ]
   }
+  headerPrimaryCTA={null}
+  headingHref="http://www.sss.com"
+  headingText="Lindblum"
+  isBackgroundFilled={true}
+  isHeaderBackgroundFilled={false}
+  languageOptions={
+    Array [
+      Object {
+        "text": "English",
+        "value": "en",
+      },
+      Object {
+        "text": "German",
+        "value": "de",
+      },
+      Object {
+        "text": "Japanese",
+        "value": "jp",
+      },
+      Object {
+        "text": "Italian",
+        "value": "it",
+      },
+    ]
+  }
+  languageValue="en"
   phoneNumber="+1 2345 678912"
   placeholderBackgroundImageUrl={null}
-  primaryButtonText="VUUC"
   searchBarDatesInputOnFocusChange={[Function]}
   searchBarDatesInputValue={null}
   searchBarGuestsInputValue={null}
@@ -249,7 +248,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
           logoHref=""
           logoSize="medium"
           logoSubText=""
-          logoText=""
+          logoText="aaa"
           navigationMenuItems={
             Array [
               Object {
@@ -280,7 +279,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
             ]
           }
           phoneNumber="+1 2345 678912"
-          primaryButtonText="VUUC"
+          primaryCTA={null}
         >
           <header
             className="contact-header"
@@ -1427,7 +1426,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       logoSize="medium"
                       logoSubText=""
                       logoSubTextAlignment="center"
-                      logoText=""
+                      logoText="aaa"
                     >
                       <MenuItem
                         className=""
@@ -1479,7 +1478,9 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                 >
                                   <h4
                                     className="ui header header-title"
-                                  />
+                                  >
+                                    aaa
+                                  </h4>
                                 </Header>
                               </Heading>
                             </div>
@@ -1487,71 +1488,6 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                         </div>
                       </MenuItem>
                     </Logo>
-                    <Button
-                      hasShadow={false}
-                      icon={null}
-                      isCompact={false}
-                      isDisabled={false}
-                      isFluid={false}
-                      isFormSubmit={false}
-                      isLoading={false}
-                      isOutlined={false}
-                      isPositionedRight={false}
-                      isRounded={false}
-                      isSecondary={false}
-                      onClick={[Function]}
-                      size={null}
-                    >
-                      <Button
-                        as="button"
-                        basic={false}
-                        circular={false}
-                        className=""
-                        compact={false}
-                        disabled={false}
-                        floated="left"
-                        fluid={false}
-                        loading={false}
-                        onClick={[Function]}
-                        secondary={false}
-                        size={null}
-                        type="button"
-                      >
-                        <Ref
-                          innerRef={
-                            Object {
-                              "current": <button
-                                class="ui left floated button"
-                                type="button"
-                              >
-                                VUUC
-                              </button>,
-                            }
-                          }
-                        >
-                          <RefFindNode
-                            innerRef={
-                              Object {
-                                "current": <button
-                                  class="ui left floated button"
-                                  type="button"
-                                >
-                                  VUUC
-                                </button>,
-                              }
-                            }
-                          >
-                            <button
-                              className="ui left floated button"
-                              onClick={[Function]}
-                              type="button"
-                            >
-                              VUUC
-                            </button>
-                          </RefFindNode>
-                        </Ref>
-                      </Button>
-                    </Button>
                   </div>
                 </FlexContainer>
                 <HorizontalMenu
@@ -2282,7 +2218,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       logoSize="medium"
                       logoSubText=""
                       logoSubTextAlignment="left"
-                      logoText=""
+                      logoText="aaa"
                     >
                       <MenuItem
                         className=""
@@ -2334,7 +2270,9 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                 >
                                   <h4
                                     className="ui header header-title"
-                                  />
+                                  >
+                                    aaa
+                                  </h4>
                                 </Header>
                               </Heading>
                             </div>
@@ -2388,7 +2326,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       logoHref=""
                       logoSize="medium"
                       logoSubText=""
-                      logoText=""
+                      logoText="aaa"
                       navigationItems={
                         Array [
                           Object {
@@ -2449,7 +2387,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                             logoSize="medium"
                             logoSubText=""
                             logoSubTextAlignment="left"
-                            logoText=""
+                            logoText="aaa"
                           />
                         }
                         isClosingOnDimmerClick={true}
@@ -2659,7 +2597,9 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       >
                         <h1
                           className="ui inverted center aligned header show-on-tablet show-on-computer show-on-widescreen"
-                        />
+                        >
+                          Lindblum
+                        </h1>
                       </Header>
                     </Heading>
                   </ShowOn>
@@ -2692,7 +2632,9 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       >
                         <h2
                           className="ui inverted center aligned header show-on-mobile"
-                        />
+                        >
+                          Lindblum
+                        </h2>
                       </Header>
                     </Heading>
                   </ShowOn>

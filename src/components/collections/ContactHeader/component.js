@@ -35,23 +35,23 @@ const testid = testidFactory(TEST_ID_PREFIX);
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
 export const Component = ({
-  primaryButtonText,
-  navigationMenuItems,
-  languageOptions,
-  onChangeLanguage,
-  currencyOptions,
-  onChangeCurrency,
-  currencyValue,
   currencyNoResultsText,
+  currencyOptions,
+  currencyValue,
+  languageOptions,
   languageValue,
-  phoneNumber,
   logoHref,
-  logoSubText,
   logoSize,
-  logoSrc,
   logoSizes,
-  logoText,
+  logoSrc,
   logoSrcSet,
+  logoSubText,
+  logoText,
+  navigationMenuItems,
+  onChangeCurrency,
+  onChangeLanguage,
+  phoneNumber,
+  primaryCTA,
 }) => (
   <header className="contact-header" data-testid={testid()}>
     <ShowOn computer tablet widescreen>
@@ -99,7 +99,11 @@ export const Component = ({
           logoSubTextAlignment="center"
           logoText={logoText}
         />
-        <Button>{primaryButtonText}</Button>
+        {primaryCTA && (
+          <Button isRounded onClick={primaryCTA.onClick}>
+            {primaryCTA.text}
+          </Button>
+        )}
       </FlexContainer>
       <HorizontalMenu isHeader items={navigationMenuItems} />
     </ShowOn>
@@ -158,7 +162,7 @@ Component.defaultProps = {
   onChangeCurrency: undefined,
   onChangeLanguage: undefined,
   phoneNumber: '',
-  primaryButtonText: '',
+  primaryCTA: null,
 };
 
 Component.propTypes = {
@@ -231,6 +235,11 @@ Component.propTypes = {
   onChangeLanguage: func,
   /** The phone number to display. */
   phoneNumber: string,
-  /** The text to display for the primary button. */
-  primaryButtonText: string,
+  /** An optional primary call to action to display as a [`<Button />`](#button) in the header. */
+  primaryCTA: shape({
+    /** The on click handler for the call to action. */
+    onClick: func.isRequired,
+    /** The visible text for the call to action. */
+    text: string.isRequired,
+  }),
 };

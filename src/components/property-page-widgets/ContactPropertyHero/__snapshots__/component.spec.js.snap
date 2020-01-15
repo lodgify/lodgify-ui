@@ -56,8 +56,9 @@ exports[` 1`] = `
     languageValue="en"
     logoHref=""
     logoSize="medium"
+    logoSrc={null}
     logoSubText=""
-    logoText=""
+    logoText="aaa"
     navigationMenuItems={
       Array [
         Object {
@@ -88,7 +89,12 @@ exports[` 1`] = `
       ]
     }
     phoneNumber="+1 2345 678912"
-    primaryButtonText="VUUC"
+    primaryCTA={
+      Object {
+        "onClick": [Function],
+        "text": "Book now",
+      }
+    }
   />
 </FullBleed>
 `;
@@ -149,8 +155,9 @@ exports[`ContactPropertyHero should render the right structure 1`] = `
     languageValue="en"
     logoHref=""
     logoSize="medium"
+    logoSrc={null}
     logoSubText=""
-    logoText=""
+    logoText="aaa"
     navigationMenuItems={
       Array [
         Object {
@@ -181,7 +188,12 @@ exports[`ContactPropertyHero should render the right structure 1`] = `
       ]
     }
     phoneNumber="+1 2345 678912"
-    primaryButtonText="VUUC"
+    primaryCTA={
+      Object {
+        "onClick": [Function],
+        "text": "Book now",
+      }
+    }
   />
   <FlexContainer
     alignContent={null}

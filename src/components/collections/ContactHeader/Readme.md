@@ -19,7 +19,6 @@ const languageOptions = [
   logoSrc="https://li5.cdbcdn.com/oh/a84645c0-0a35-4735-bda5-e5c425c2ffdc.png"
   className='ma-ma-ma'
   isBackgroundFilled={true}
-  primaryButtonText="VUUC"
   phoneNumber={'+1 2345 678912'}
   currencyOptions={currencyOptions}
   currencyValue={currencyOptions[0].value}
@@ -79,6 +78,7 @@ const languageOptions = [
   },
 ]
 }
+primaryCTA={{ onClick: console.log, text: 'Book now'}}
   />
 ```
 
