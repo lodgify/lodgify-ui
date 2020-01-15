@@ -149,6 +149,7 @@ exports[`Counter render should render the right structure 1`] = `
           </Button>
         </Button>
         <Paragraph
+          className={null}
           isCompact={false}
           size="medium"
           weight={null}

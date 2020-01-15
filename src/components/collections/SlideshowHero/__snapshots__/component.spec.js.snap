@@ -137,6 +137,7 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                       logoSize="medium"
                       logoSrc={null}
                       logoSubText={null}
+                      logoSubTextAlignment="left"
                       logoText="logoText"
                     >
                       <MenuItem

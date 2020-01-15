@@ -1226,6 +1226,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                 className="privacy-consent-label"
                               >
                                 <Paragraph
+                                  className={null}
                                   isCompact={false}
                                   size="medium"
                                   weight={null}
@@ -1273,6 +1274,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                         className="privacy-consent-label"
                                       >
                                         <Paragraph
+                                          className={null}
                                           isCompact={false}
                                           size="medium"
                                           weight={null}
@@ -1368,6 +1370,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === fa
                                             className="privacy-consent-label"
                                           >
                                             <Paragraph
+                                              className={null}
                                               isCompact={false}
                                               size="medium"
                                               weight={null}
@@ -2103,6 +2106,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                 className="privacy-consent-label"
                               >
                                 <Paragraph
+                                  className={null}
                                   isCompact={false}
                                   size="medium"
                                   weight={null}
@@ -2150,6 +2154,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                         className="privacy-consent-label"
                                       >
                                         <Paragraph
+                                          className={null}
                                           isCompact={false}
                                           size="medium"
                                           weight={null}
@@ -2245,6 +2250,7 @@ exports[`<EmailCapture /> the wrapped component if \`props.isUserOnMobile === tr
                                             className="privacy-consent-label"
                                           >
                                             <Paragraph
+                                              className={null}
                                               isCompact={false}
                                               size="medium"
                                               weight={null}

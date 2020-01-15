@@ -2942,6 +2942,7 @@ exports[`<PropertySearchResultList /> render if \`props.propertySearchResults.le
             </Pagination>
           </Pagination>
           <Paragraph
+            className={null}
             isCompact={false}
             size="medium"
             weight={null}

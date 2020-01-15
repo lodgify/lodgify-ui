@@ -1399,6 +1399,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                     />
                                   </svg>
                                   <Paragraph
+                                    className={null}
                                     isCompact={false}
                                     size="medium"
                                     weight={null}
@@ -1420,6 +1421,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       logoHref=""
                       logoSize="medium"
                       logoSubText=""
+                      logoSubTextAlignment="left"
                       logoText=""
                     >
                       <MenuItem
@@ -2274,6 +2276,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       logoHref=""
                       logoSize="medium"
                       logoSubText=""
+                      logoSubTextAlignment="left"
                       logoText=""
                     >
                       <MenuItem
@@ -2440,6 +2443,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                             logoHref=""
                             logoSize="medium"
                             logoSubText=""
+                            logoSubTextAlignment="left"
                             logoText=""
                           />
                         }

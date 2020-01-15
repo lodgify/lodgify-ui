@@ -515,6 +515,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
               className="description"
             >
               <Paragraph
+                className={null}
                 isCompact={false}
                 size="medium"
                 weight={null}
@@ -586,6 +587,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                   id={null}
                                 >
                                   <Paragraph
+                                    className={null}
                                     isCompact={false}
                                     size="medium"
                                     weight={null}
@@ -626,6 +628,7 @@ exports[`<Review /> if \`props.reviewResponse\` is passed should render the righ
                                   id={null}
                                 >
                                   <Paragraph
+                                    className={null}
                                     isCompact={false}
                                     size="tiny"
                                     weight={null}
@@ -984,6 +987,7 @@ exports[`<Review /> should render the right structure 1`] = `
               className="description"
             >
               <Paragraph
+                className={null}
                 isCompact={false}
                 size="medium"
                 weight={null}

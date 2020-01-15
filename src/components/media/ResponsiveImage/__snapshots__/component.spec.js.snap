@@ -291,6 +291,7 @@ exports[`<ResponsiveImage /> \`render\` if \`props.label\` is passed should have
       />
     </Image>
     <Paragraph
+      className={null}
       data-testid="responsive-image-label"
       isCompact={false}
       size="medium"

@@ -3,6 +3,7 @@
 exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \`null\` or \`undefined\` should return the right markup 1`] = `
 <div>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="heavy"
@@ -10,6 +11,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \
     Mid Season
   </Paragraph>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="light"
@@ -40,6 +42,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \
 exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \`null\` or \`undefined\` should return the right markup 2`] = `
 <div>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="heavy"
@@ -47,6 +50,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \
     High Season
   </Paragraph>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="light"
@@ -77,6 +81,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.costPerExtraGuest\` is \
 exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`null\` or \`undefined\` should return the right markup 1`] = `
 <div>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="heavy"
@@ -84,6 +89,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`nu
     Mid Season
   </Paragraph>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="light"
@@ -98,6 +104,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`nu
 exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`null\` or \`undefined\` should return the right markup 2`] = `
 <div>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="heavy"
@@ -105,6 +112,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`nu
     High Season
   </Paragraph>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="light"
@@ -119,6 +127,7 @@ exports[`getRateCategoryHeadingMarkup if \`rateCategory.numberOfGuests\` is \`nu
 exports[`getRateCategoryHeadingMarkup if all values are defined should return the right markup 1`] = `
 <div>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="heavy"
@@ -126,6 +135,7 @@ exports[`getRateCategoryHeadingMarkup if all values are defined should return th
     Mid Season
   </Paragraph>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight="light"

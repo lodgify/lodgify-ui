@@ -864,6 +864,7 @@ exports[`<Footer /> if \`props.copyrightText\` is passed should render the right
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -1352,6 +1353,7 @@ exports[`<Footer /> if \`props.currencyOptions\` is an empty array or undefined 
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -2263,6 +2265,7 @@ exports[`<Footer /> if \`props.emailAddress\` is passed should render the right 
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -3192,6 +3195,7 @@ exports[`<Footer /> if \`props.faxNumber\` is passed should render the right str
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -4487,6 +4491,7 @@ exports[`<Footer /> if \`props.hasEmailCapture\` is \`true\` should render the r
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -5051,6 +5056,7 @@ exports[`<Footer /> if \`props.languageOptions\` is an empty array or undefined 
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -6088,6 +6094,7 @@ exports[`<Footer /> if \`props.navigationItems\` are grouped should render the r
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -7047,6 +7054,7 @@ exports[`<Footer /> if \`props.navigationItems\` are passed should render the ri
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -7958,6 +7966,7 @@ exports[`<Footer /> if \`props.propertyAddress\` is passed should render the rig
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -8890,6 +8899,7 @@ exports[`<Footer /> if \`socialMediaLinks\` has length > 0 should render the rig
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}
@@ -9888,6 +9898,7 @@ exports[`<Footer /> should render the right structure 1`] = `
                               />
                             </svg>
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight={null}

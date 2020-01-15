@@ -219,6 +219,7 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                         logoSrc="src"
                         logoSrcSet="a load of logo src sets"
                         logoSubText={null}
+                        logoSubTextAlignment="left"
                         logoText="text"
                       >
                         <MenuItem
@@ -613,6 +614,7 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                         logoSrc="src"
                         logoSrcSet="a load of logo src sets"
                         logoSubText={null}
+                        logoSubTextAlignment="left"
                         logoText="text"
                       >
                         <MenuItem

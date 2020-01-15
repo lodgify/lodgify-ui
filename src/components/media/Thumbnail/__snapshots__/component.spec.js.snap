@@ -387,6 +387,7 @@ exports[`<Thumbnail /> if \`props.label\` is supplied should render the right st
     </withLazyLoad(ResponsiveImage)>
   </div>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}

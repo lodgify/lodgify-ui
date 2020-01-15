@@ -314,6 +314,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -335,6 +336,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -390,6 +392,7 @@ exports[`getModalContentMarkup if \`props.amenities\` size is zero should not re
                 id={null}
               >
                 <Paragraph
+                  className={null}
                   isCompact={false}
                   size="medium"
                   weight={null}
@@ -700,6 +703,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -721,6 +725,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -878,6 +883,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                             className="icon has-label"
                           >
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight="heavy"
@@ -899,6 +905,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                           </i>
                         </Icon>
                         <Paragraph
+                          className={null}
                           isCompact={false}
                           size="medium"
                           weight={null}
@@ -948,6 +955,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                             className="icon has-label"
                           >
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight="heavy"
@@ -969,6 +977,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                           </i>
                         </Icon>
                         <Paragraph
+                          className={null}
                           isCompact={false}
                           size="medium"
                           weight={null}
@@ -1017,6 +1026,7 @@ exports[`getModalContentMarkup if \`props.description\` === null should not rend
                 id={null}
               >
                 <Paragraph
+                  className={null}
                   isCompact={false}
                   size="medium"
                   weight={null}
@@ -1379,6 +1389,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -1400,6 +1411,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -1557,6 +1569,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
                             className="icon has-label"
                           >
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight="heavy"
@@ -1578,6 +1591,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
                           </i>
                         </Icon>
                         <Paragraph
+                          className={null}
                           isCompact={false}
                           size="medium"
                           weight={null}
@@ -1627,6 +1641,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
                             className="icon has-label"
                           >
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight="heavy"
@@ -1648,6 +1663,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
                           </i>
                         </Icon>
                         <Paragraph
+                          className={null}
                           isCompact={false}
                           size="medium"
                           weight={null}
@@ -1696,6 +1712,7 @@ exports[`getModalContentMarkup if \`props.images.length\` > 1 should render the 
                 id={null}
               >
                 <Paragraph
+                  className={null}
                   isCompact={false}
                   size="medium"
                   weight={null}
@@ -1887,6 +1904,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -1908,6 +1926,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -2065,6 +2084,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                             className="icon has-label"
                           >
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight="heavy"
@@ -2086,6 +2106,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                           </i>
                         </Icon>
                         <Paragraph
+                          className={null}
                           isCompact={false}
                           size="medium"
                           weight={null}
@@ -2135,6 +2156,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                             className="icon has-label"
                           >
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight="heavy"
@@ -2156,6 +2178,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                           </i>
                         </Icon>
                         <Paragraph
+                          className={null}
                           isCompact={false}
                           size="medium"
                           weight={null}
@@ -2204,6 +2227,7 @@ exports[`getModalContentMarkup if \`props.ratingNumber\` === null should not ren
                 id={null}
               >
                 <Paragraph
+                  className={null}
                   isCompact={false}
                   size="medium"
                   weight={null}
@@ -2542,6 +2566,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -2563,6 +2588,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
             role="listitem"
           >
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight="heavy"
@@ -2720,6 +2746,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                             className="icon has-label"
                           >
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight="heavy"
@@ -2741,6 +2768,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                           </i>
                         </Icon>
                         <Paragraph
+                          className={null}
                           isCompact={false}
                           size="medium"
                           weight={null}
@@ -2790,6 +2818,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                             className="icon has-label"
                           >
                             <Paragraph
+                              className={null}
                               isCompact={false}
                               size="medium"
                               weight="heavy"
@@ -2811,6 +2840,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                           </i>
                         </Icon>
                         <Paragraph
+                          className={null}
                           isCompact={false}
                           size="medium"
                           weight={null}
@@ -2859,6 +2889,7 @@ exports[`getModalContentMarkup should return the correct structure 1`] = `
                 id={null}
               >
                 <Paragraph
+                  className={null}
                   isCompact={false}
                   size="medium"
                   weight={null}
