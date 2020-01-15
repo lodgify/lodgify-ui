@@ -1,3 +1,17 @@
+# [1.287.0](https://github.com/lodgify/lodgify-ui/compare/v1.286.0...v1.287.0) (2020-01-15)
+
+
+### Bug Fixes
+
+* **ResponsiveImage:** remove commented code and update description ([a65b8d8](https://github.com/lodgify/lodgify-ui/commit/a65b8d86c9bc5cbba46e1718c835c454232e7707))
+* **ResponsiveImage:** update Readme.md ([b5e3f04](https://github.com/lodgify/lodgify-ui/commit/b5e3f0432d68b28f247e62729c951c1e02195c0a))
+* **Slideshow:** update the prop description ([4496f47](https://github.com/lodgify/lodgify-ui/commit/4496f479975243f6f8c978d17e6fc9e52ef107bb))
+
+
+### Features
+
+* **ResponsiveImage:** refactor Image to align all component with the same behaviour ([49c17c6](https://github.com/lodgify/lodgify-ui/commit/49c17c6aafe85239c744ed1270f9a53eedbe062c))
+
 # [1.286.0](https://github.com/lodgify/lodgify-ui/compare/v1.285.0...v1.286.0) (2020-01-15)
 
 
