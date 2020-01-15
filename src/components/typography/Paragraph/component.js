@@ -9,9 +9,9 @@ const TINY = 'tiny';
  * A paragraph provides text content
  */
 // eslint-disable-next-line jsdoc/require-jsdoc
-export const Component = ({ children, isCompact, size, weight }) => (
+export const Component = ({ children, isCompact, size, weight, className }) => (
   <p
-    className={classnames(weight, {
+    className={classnames(weight, className, {
       tiny: size === TINY,
       'is-compact': isCompact,
     })}
@@ -23,6 +23,7 @@ export const Component = ({ children, isCompact, size, weight }) => (
 Component.displayName = 'Paragraph';
 
 Component.defaultProps = {
+  className: null,
   isCompact: false,
   size: MEDIUM,
   weight: null,
@@ -34,6 +35,8 @@ Component.propTypes = {
     PropTypes.arrayOf(PropTypes.node),
     PropTypes.node,
   ]).isRequired,
+  /** Custom className for the paragraph. */
+  className: PropTypes.string,
   /** The paragraph has reduced line height. */
   isCompact: PropTypes.bool,
   /** The size of the paragraph. */
