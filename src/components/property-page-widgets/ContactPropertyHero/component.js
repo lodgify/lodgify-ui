@@ -7,6 +7,7 @@ import {
   oneOfType,
   arrayOf,
   oneOf,
+  func,
 } from 'prop-types';
 
 import { FullBleed } from 'media/FullBleed';
@@ -35,23 +36,23 @@ export const Component = ({
   backgroundImageWidth,
   bottomOffset,
   className,
+  headerLogoHref,
+  headerLogoSize,
+  headerLogoSizes,
+  headerLogoSrc,
+  headerLogoSrcSet,
+  headerLogoText,
+  headerNavigationItems,
+  headerPrimaryCTA,
+  headerLogoSubText,
   currencyNoResultsText,
   currencyOptions,
   currencyValue,
   galleryImages,
   languageOptions,
   languageValue,
-  logoHref,
-  logoSize,
-  logoSizes,
-  logoSrc,
-  logoSrcSet,
-  logoSubText,
-  logoText,
-  navigationMenuItems,
   phoneNumber,
   placeholderBackgroundImageUrl,
-  primaryButtonText,
   secondaryButtonText,
 }) => {
   return (
@@ -74,16 +75,16 @@ export const Component = ({
         isBackgroundFilled
         languageOptions={languageOptions}
         languageValue={languageValue}
-        logoHref={logoHref}
-        logoSize={logoSize}
-        logoSizes={logoSizes}
-        logoSrc={logoSrc}
-        logoSrcSet={logoSrcSet}
-        logoSubText={logoSubText}
-        logoText={logoText}
-        navigationMenuItems={navigationMenuItems}
+        logoHref={headerLogoHref}
+        logoSize={headerLogoSize}
+        logoSizes={headerLogoSizes}
+        logoSrc={headerLogoSrc}
+        logoSrcSet={headerLogoSrcSet}
+        logoSubText={headerLogoSubText}
+        logoText={headerLogoText}
+        navigationMenuItems={headerNavigationItems}
         phoneNumber={phoneNumber}
-        primaryButtonText={primaryButtonText}
+        primaryCTA={headerPrimaryCTA}
       />
       {size(galleryImages) > 1 ? (
         <Fragment>
@@ -126,16 +127,15 @@ Component.defaultProps = {
   galleryImages: [],
   languageOptions: [],
   languageValue: null,
-  logoHref: '',
-  logoSize: 'medium',
-  logoSizes: undefined,
-  logoSrc: undefined,
-  logoSrcSet: undefined,
-  logoSubText: '',
-  logoText: '',
+  headerLogoHref: undefined,
+  headerLogoSize: undefined,
+  headerLogoSizes: undefined,
+  headerLogoSrc: null,
+  headerLogoSrcSet: undefined,
+  headerPrimaryCTA: null,
+  headerLogoSubText: undefined,
   phoneNumber: '',
   placeholderBackgroundImageUrl: null,
-  primaryButtonText: '',
   secondaryButtonText: VIEW_MORE_PICTURES,
 };
 
@@ -182,33 +182,22 @@ Component.propTypes = {
       url: string.isRequired,
     })
   ),
-  /** The options which the user can select for the language dropdown. */
-  languageOptions: arrayOf(
-    shape({
-      /** The visible text for the option. */
-      text: string.isRequired,
-      /** The underlying value for the option. */
-      value: oneOfType([bool, number, string]),
-    })
-  ),
-  /** The current value of the language dropdown. */
-  languageValue: oneOfType([bool, number, string]),
-  /** The href for the logo link. */
-  logoHref: string,
-  /** The maximum size of the headers logo. */
-  logoSize: oneOf(['medium', 'large', 'huge']),
-  /** A list of one or more strings separated by commas indicating a set of source sizes for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-  logoSizes: string,
-  /** The src url for the logo. */
-  logoSrc: string,
-  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
-  logoSrcSet: string,
-  /** The text that appears under the logo or logo text. */
-  logoSubText: string,
-  /** The text for the logo. */
-  logoText: string,
+  /** The href for the header logo link. */
+  headerLogoHref: string,
+  /** The maximum size of the logo in the header. */
+  headerLogoSize: oneOf(['medium', 'large', 'huge']),
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  headerLogoSizes: string,
+  /** The src url for the logo in the header. */
+  headerLogoSrc: string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the header logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  headerLogoSrcSet: string,
+  /** The sub text that appears under the logo or logo text in the header. */
+  headerLogoSubText: string,
+  /** The text for the logo in the header. */
+  headerLogoText: string.isRequired,
   /** The items for a user to navigate the site. */
-  navigationMenuItems: arrayOf(
+  headerNavigationItems: arrayOf(
     shape({
       /** The href url for an item which is a link. */
       href: string,
@@ -220,18 +209,34 @@ Component.propTypes = {
           text: string.isRequired,
         })
       ),
-      /** Specifies where to display the linked navigation items URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
+      /** Specifies where to display the linked header navigation items URL. See [MDN docs `<a />` for more](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/a#attr-target). */
       target: string,
       /** The visible text for an item. */
       text: string.isRequired,
     })
   ).isRequired,
+  /** An optional primary call to action to display as a [`<Button />`](#button) in the header. */
+  headerPrimaryCTA: shape({
+    /** The on click handler for the call to action. */
+    onClick: func.isRequired,
+    /** The  visible text for the call to action. */
+    text: string.isRequired,
+  }),
+  /** The options which the user can select for the language dropdown. */
+  languageOptions: arrayOf(
+    shape({
+      /** The visible text for the option. */
+      text: string.isRequired,
+      /** The underlying value for the option. */
+      value: oneOfType([bool, number, string]),
+    })
+  ),
+  /** The current value of the language dropdown. */
+  languageValue: oneOfType([bool, number, string]),
   /** The phone number to display. */
   phoneNumber: string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the search bars date range picker. */
   placeholderBackgroundImageUrl: string,
-  /** The text to display for the primary button. */
-  primaryButtonText: string,
   /** The text to display on the secondary button at the bottom of the hero. */
   secondaryButtonText: string,
 };
