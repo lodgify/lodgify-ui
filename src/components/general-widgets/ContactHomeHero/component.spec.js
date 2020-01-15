@@ -23,18 +23,18 @@ import {
 } from './mock-data/mock-data';
 
 const props = {
+  headerLogoText: 'aaa',
   backgroundImageUrl: 'backgroundImageUrl',
   headingText: 'Lindblum',
   className: 'ma-ma-ma',
   isBackgroundFilled: true,
-  primaryButtonText: 'VUUC',
   phoneNumber: '+1 2345 678912',
   headingHref: 'http://www.sss.com',
   currencyOptions: currencyOptions,
   currencyValue: currencyOptions[0].value,
   languageOptions: languageOptions,
   languageValue: languageOptions[0].value,
-  navigationMenuItems: navigationItems,
+  headerNavigationItems: navigationItems,
 };
 
 describe('ContactHomeHero', () => {
