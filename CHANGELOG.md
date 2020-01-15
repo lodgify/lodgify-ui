@@ -1,3 +1,10 @@
+## [1.287.1](https://github.com/lodgify/lodgify-ui/compare/v1.287.0...v1.287.1) (2020-01-15)
+
+
+### Bug Fixes
+
+* **ContactHeader:** adapt props to fit with Hero ([defb256](https://github.com/lodgify/lodgify-ui/commit/defb256f65a07fa1dcc19122c8155d000c264b05))
+
 # [1.287.0](https://github.com/lodgify/lodgify-ui/compare/v1.286.0...v1.287.0) (2020-01-15)
 
 
