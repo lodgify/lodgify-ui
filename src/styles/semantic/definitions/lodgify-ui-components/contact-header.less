@@ -17,6 +17,46 @@
   > * {
     opacity: 1;
   }
+
+  .ui.dropdown {
+
+    > .text {
+      color: @contactHeaderTextGray;
+    }
+  }
+
+  > div > .flex-container {
+    padding-top: @contactHeaderContainerPadding;
+    padding-bottom: @contactHeaderContainerPadding;
+    box-shadow: @contactHeaderContainerBoxShadow;
+    z-index: @contactHeaderContainerZIndex;
+    position: relative;
+
+    .horizontal-menu {
+
+      .item:after {
+        top: @contactHeaderUnderlineHeight;
+        height: @contactHeaderUnderlineTop;
+      }
+    }
+
+    .ui.button {
+      height: @contactHeaderButtonHeight;
+      border-radius: @contactHeaderButtonBorderRadius;
+      box-shadow: @contactHeaderButtonBoxShadow;
+      color: @contactHeaderButtonColor;
+      margin-right: @contactHeaderButtonMarginRight;
+    }
+
+    &:not(nav) .ui.menu i.icon svg > path {
+      fill: @contactHeaderTextGray;
+    }
+
+    > .ui.menu i.icon.has-label > p {
+      color: @contactHeaderTextGray;
+    }
+  }
+
   
   .flex-container {
     background-color: @white;
@@ -53,6 +93,10 @@
   }
 
   .horizontal-menu {
+
+    &.is-header {
+      margin: @contactHeaderHorizontalMenuMargin;
+    }
 
     .menu-wrapper {
       margin: auto;

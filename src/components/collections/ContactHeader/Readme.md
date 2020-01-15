@@ -12,7 +12,6 @@ const languageOptions = [
   { text: 'Italian', value: 'it' },
 ];
 
-<div style={{ backgroundColor: 'pink'}}>
   <ContactHeader
   logoSubText="King of Joy"
   logoHref="Balalala"
@@ -81,6 +80,5 @@ const languageOptions = [
 ]
 }
   />
-</div>
 ```
 
