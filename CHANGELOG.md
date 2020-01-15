@@ -1,3 +1,15 @@
+# [1.286.0](https://github.com/lodgify/lodgify-ui/compare/v1.285.0...v1.286.0) (2020-01-15)
+
+
+### Features
+
+* **ContactHeader:** consume Logo ([9f09c38](https://github.com/lodgify/lodgify-ui/commit/9f09c389fc68c89f050d97f3f69c4645a227d963))
+* **ContactHeder:** implement all capucine styles ([0dfdf57](https://github.com/lodgify/lodgify-ui/commit/0dfdf5776f43899df8e25bddbd4c0c7f293df210))
+* **ContactHomeHero:** consume Logo ([ad2b7a7](https://github.com/lodgify/lodgify-ui/commit/ad2b7a7ed567b7aff009398826130d0daa41eac8))
+* **ContactPropertyHero:** consume Logo ([26463f9](https://github.com/lodgify/lodgify-ui/commit/26463f9154b7394a12353f5046036f5ffd082b61))
+* **Logo:** expose logoSubTextAlignment ([6957c4f](https://github.com/lodgify/lodgify-ui/commit/6957c4f506df2a9f3677a0088a329aa9140a4c5a))
+* **Paragraph:** expose className ([ea03fcf](https://github.com/lodgify/lodgify-ui/commit/ea03fcfb9cb4fecbc2949001cd4b4d839f94b042))
+
 # [1.285.0](https://github.com/lodgify/lodgify-ui/compare/v1.284.0...v1.285.0) (2020-01-13)
 
 
