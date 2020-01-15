@@ -21,8 +21,8 @@ exports[`<PropertySearchResult /> if \`periodText\` is a truthy value should ren
       <withLazyLoad(ResponsiveImage)
         imageTitle=""
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isFluid={true}
         isLazyLoaded={true}
+        willFill={true}
       />
       <Segment
         raised={true}
@@ -107,8 +107,8 @@ exports[`<PropertySearchResult /> if \`props.isCompact\` is passed should return
       <withLazyLoad(ResponsiveImage)
         imageTitle=""
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isFluid={true}
         isLazyLoaded={true}
+        willFill={true}
       />
     </FlexContainer>
     <CardContent>
@@ -238,8 +238,8 @@ exports[`<PropertySearchResult /> if \`ratingNumber\` is a truthy value should r
       <withLazyLoad(ResponsiveImage)
         imageTitle=""
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isFluid={true}
         isLazyLoaded={true}
+        willFill={true}
       />
       <Segment
         raised={true}
@@ -319,8 +319,8 @@ exports[`<PropertySearchResult /> should render the right structure 1`] = `
       <withLazyLoad(ResponsiveImage)
         imageTitle=""
         imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-        isFluid={true}
         isLazyLoaded={true}
+        willFill={true}
       />
       <Segment
         raised={true}

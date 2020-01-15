@@ -89,7 +89,6 @@ export { Gallery } from './components/media/Gallery';
 export { ImagePlaceholder } from './components/media/ImagePlaceholder';
 export { ResponsiveImage } from './components/media/ResponsiveImage';
 export { Slideshow } from './components/media/Slideshow';
-export { Thumbnail } from './components/media/Thumbnail';
 export { Video } from './components/media/Video';
 
 // Property Page Widgets

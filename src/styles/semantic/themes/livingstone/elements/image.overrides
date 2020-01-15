@@ -18,83 +18,50 @@
 
 figure.responsive-image {
   margin: 0;
-  overflow: hidden;
-  position: relative;
+  padding: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(20px);
+  transition: all 0.25s ease-in-out;
 
-  > .ui.image {
-    transform: none;
-    transition: @imageWithPlaceholderTransition;
+  .ui.image {
+    visibility: hidden;
+    filter: blur(20px);
+    scale: scale(1.15);
+    transition: 0.25s ease-out;
   }
 
-  &.has-blurred-children {
+  &.isLoaded {
+    filter: none;
 
-    > .ui.image {
-      filter: @imageWithPlaceholderBlur;
-      -ms-filter: @imageWithPlaceholderBlur;
-      transform: @imageWithPlaceholderTransformScale;
+    .ui.image {
+      visibility: visible;
+      filter: none;
+      scale: none;
     }
   }
 
-  &.has-placeholder {
-
-    > .ui.image {
-      height: 100%;
-      left: 0;
-      position: relative;
-      top: 0;
-      width: 100%;
-    }
-  }
-
-  &.is-fluid {
-    height: 100%;
+  &.isCircular {
+    position: relative;
+    padding-bottom: 100%;
     width: 100%;
 
-    /* Object fit cover Fallback */
-    .ui.fluid.image {
-      min-width: 100%;
-      width: auto;
-      max-width: none;
-      min-height: 100%;
+    .ui.image {
+      object-fit: cover;
       position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    &.has-blurred-children {
-
-      > .ui.fluid.image {
-        transform: translate(-50%, -50%) @imageWithPlaceholderTransformScale;
-      }
-    }
-
-    @supports (object-fit: cover) {
-
-      .ui.fluid.image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        object-fit: cover;
-        height: inherit;
-        width: inherit;
-        transform: none;
-      }
-
-      &.has-blurred-children {
-
-        > .ui.fluid.image {
-          transform: @imageWithPlaceholderTransformScale;
-        }
-      }
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
     }
   }
 
-  &.is-circular {
-    border-radius: @circularBorderRadius;
-  }
+  &.willFill {
+    height: 100%;
 
-  &.is-rounded {
-    border-radius: @roundedBorderRadius;
+    .ui.image {
+      height: 100%;
+      object-fit: cover;
+    }
   }
 }

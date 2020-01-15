@@ -131,101 +131,83 @@ exports[`<HostProfile /> if \`props.email\` is defined should render the right s
                             className="avatar"
                             data-testid="avatar"
                           >
-                            <Thumbnail
-                              className=""
+                            <withLazyLoad(ResponsiveImage)
                               data-testid="avatar-image"
-                              hasMargin={false}
-                              hasRoundedCorners={false}
                               imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                               isCircular={true}
-                              isSquare={false}
-                              label={null}
-                              size={null}
+                              isLazyLoaded={true}
                             >
-                              <div
-                                className="ui thumbnail is-circular"
+                              <LazyLoader
+                                componentProps={
+                                  Object {
+                                    "data-testid": "avatar-image",
+                                    "isCircular": true,
+                                    "isLazyLoaded": true,
+                                  }
+                                }
+                                lazyProps={
+                                  Object {
+                                    "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                    "srcSet": undefined,
+                                  }
+                                }
                               >
-                                <withLazyLoad(ResponsiveImage)
+                                <div />
+                                <ResponsiveImage
+                                  data-testid="avatar-image"
                                   hasRoundedCorners={false}
-                                  imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  imageTitle="Image Title"
+                                  imageUrl=""
+                                  isAvatar={false}
                                   isCircular={true}
-                                  isFluid={true}
+                                  isFluid={false}
                                   isLazyLoaded={true}
-                                  isSquare={false}
+                                  label={null}
+                                  sizes={null}
+                                  srcSet={null}
+                                  willFill={false}
                                 >
-                                  <LazyLoader
-                                    componentProps={
+                                  <figure
+                                    alt="Image Title"
+                                    className="responsive-image isCircular"
+                                    data-testid="responsive-image"
+                                    style={
                                       Object {
-                                        "hasRoundedCorners": false,
-                                        "imageTitle": undefined,
-                                        "isCircular": true,
-                                        "isFluid": true,
-                                        "isLazyLoaded": true,
-                                        "isSquare": false,
-                                        "placeholderImageUrl": undefined,
-                                        "sizes": undefined,
-                                      }
-                                    }
-                                    lazyProps={
-                                      Object {
-                                        "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
-                                        "srcSet": undefined,
+                                        "backgroundImage": "url(undefined)",
                                       }
                                     }
                                   >
-                                    <div />
-                                    <ResponsiveImage
-                                      hasRoundedCorners={false}
-                                      imageHeight={null}
-                                      imageTitle="Image Title"
-                                      imageUrl=""
-                                      imageWidth={null}
-                                      isAvatar={false}
-                                      isCircular={true}
-                                      isFluid={true}
-                                      isLazyLoaded={true}
-                                      isSquare={false}
-                                      label={null}
+                                    <Image
+                                      as="img"
+                                      avatar={false}
+                                      circular={true}
+                                      data-testid="responsive-image-img"
+                                      fluid={false}
+                                      onError={[Function]}
+                                      onLoad={[Function]}
+                                      rounded={false}
                                       sizes={null}
+                                      src=""
                                       srcSet={null}
+                                      title="Image Title"
+                                      ui={true}
                                     >
-                                      <figure
-                                        className="responsive-image is-fluid is-circular"
-                                        data-testid="responsive-image"
-                                      >
-                                        <Image
-                                          alt="Image Title"
-                                          as="img"
-                                          avatar={false}
-                                          data-testid="responsive-image-img"
-                                          fluid={true}
-                                          onError={[Function]}
-                                          onLoad={[Function]}
-                                          sizes={null}
-                                          src=""
-                                          srcSet={null}
-                                          title="Image Title"
-                                          ui={true}
-                                        >
-                                          <img
-                                            alt="Image Title"
-                                            className="ui fluid image"
-                                            data-testid="responsive-image-img"
-                                            onError={[Function]}
-                                            onLoad={[Function]}
-                                            sizes={null}
-                                            src=""
-                                            srcSet={null}
-                                            title="Image Title"
-                                          />
-                                        </Image>
-                                      </figure>
-                                    </ResponsiveImage>
-                                    <div />
-                                  </LazyLoader>
-                                </withLazyLoad(ResponsiveImage)>
-                              </div>
-                            </Thumbnail>
+                                      <img
+                                        className="ui circular image"
+                                        data-testid="responsive-image-img"
+                                        onError={[Function]}
+                                        onLoad={[Function]}
+                                        sizes={null}
+                                        src=""
+                                        srcSet={null}
+                                        title="Image Title"
+                                      />
+                                    </Image>
+                                  </figure>
+                                </ResponsiveImage>
+                                <div />
+                              </LazyLoader>
+                            </withLazyLoad(ResponsiveImage)>
                           </div>
                         </Avatar>
                         <Heading
@@ -516,101 +498,83 @@ exports[`<HostProfile /> if \`props.languages\` is defined should render the rig
                             className="avatar"
                             data-testid="avatar"
                           >
-                            <Thumbnail
-                              className=""
+                            <withLazyLoad(ResponsiveImage)
                               data-testid="avatar-image"
-                              hasMargin={false}
-                              hasRoundedCorners={false}
                               imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                               isCircular={true}
-                              isSquare={false}
-                              label={null}
-                              size={null}
+                              isLazyLoaded={true}
                             >
-                              <div
-                                className="ui thumbnail is-circular"
+                              <LazyLoader
+                                componentProps={
+                                  Object {
+                                    "data-testid": "avatar-image",
+                                    "isCircular": true,
+                                    "isLazyLoaded": true,
+                                  }
+                                }
+                                lazyProps={
+                                  Object {
+                                    "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                    "srcSet": undefined,
+                                  }
+                                }
                               >
-                                <withLazyLoad(ResponsiveImage)
+                                <div />
+                                <ResponsiveImage
+                                  data-testid="avatar-image"
                                   hasRoundedCorners={false}
-                                  imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  imageTitle="Image Title"
+                                  imageUrl=""
+                                  isAvatar={false}
                                   isCircular={true}
-                                  isFluid={true}
+                                  isFluid={false}
                                   isLazyLoaded={true}
-                                  isSquare={false}
+                                  label={null}
+                                  sizes={null}
+                                  srcSet={null}
+                                  willFill={false}
                                 >
-                                  <LazyLoader
-                                    componentProps={
+                                  <figure
+                                    alt="Image Title"
+                                    className="responsive-image isCircular"
+                                    data-testid="responsive-image"
+                                    style={
                                       Object {
-                                        "hasRoundedCorners": false,
-                                        "imageTitle": undefined,
-                                        "isCircular": true,
-                                        "isFluid": true,
-                                        "isLazyLoaded": true,
-                                        "isSquare": false,
-                                        "placeholderImageUrl": undefined,
-                                        "sizes": undefined,
-                                      }
-                                    }
-                                    lazyProps={
-                                      Object {
-                                        "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
-                                        "srcSet": undefined,
+                                        "backgroundImage": "url(undefined)",
                                       }
                                     }
                                   >
-                                    <div />
-                                    <ResponsiveImage
-                                      hasRoundedCorners={false}
-                                      imageHeight={null}
-                                      imageTitle="Image Title"
-                                      imageUrl=""
-                                      imageWidth={null}
-                                      isAvatar={false}
-                                      isCircular={true}
-                                      isFluid={true}
-                                      isLazyLoaded={true}
-                                      isSquare={false}
-                                      label={null}
+                                    <Image
+                                      as="img"
+                                      avatar={false}
+                                      circular={true}
+                                      data-testid="responsive-image-img"
+                                      fluid={false}
+                                      onError={[Function]}
+                                      onLoad={[Function]}
+                                      rounded={false}
                                       sizes={null}
+                                      src=""
                                       srcSet={null}
+                                      title="Image Title"
+                                      ui={true}
                                     >
-                                      <figure
-                                        className="responsive-image is-fluid is-circular"
-                                        data-testid="responsive-image"
-                                      >
-                                        <Image
-                                          alt="Image Title"
-                                          as="img"
-                                          avatar={false}
-                                          data-testid="responsive-image-img"
-                                          fluid={true}
-                                          onError={[Function]}
-                                          onLoad={[Function]}
-                                          sizes={null}
-                                          src=""
-                                          srcSet={null}
-                                          title="Image Title"
-                                          ui={true}
-                                        >
-                                          <img
-                                            alt="Image Title"
-                                            className="ui fluid image"
-                                            data-testid="responsive-image-img"
-                                            onError={[Function]}
-                                            onLoad={[Function]}
-                                            sizes={null}
-                                            src=""
-                                            srcSet={null}
-                                            title="Image Title"
-                                          />
-                                        </Image>
-                                      </figure>
-                                    </ResponsiveImage>
-                                    <div />
-                                  </LazyLoader>
-                                </withLazyLoad(ResponsiveImage)>
-                              </div>
-                            </Thumbnail>
+                                      <img
+                                        className="ui circular image"
+                                        data-testid="responsive-image-img"
+                                        onError={[Function]}
+                                        onLoad={[Function]}
+                                        sizes={null}
+                                        src=""
+                                        srcSet={null}
+                                        title="Image Title"
+                                      />
+                                    </Image>
+                                  </figure>
+                                </ResponsiveImage>
+                                <div />
+                              </LazyLoader>
+                            </withLazyLoad(ResponsiveImage)>
                           </div>
                         </Avatar>
                         <Heading
@@ -894,101 +858,83 @@ exports[`<HostProfile /> if \`props.phone\` is defined should render the right s
                             className="avatar"
                             data-testid="avatar"
                           >
-                            <Thumbnail
-                              className=""
+                            <withLazyLoad(ResponsiveImage)
                               data-testid="avatar-image"
-                              hasMargin={false}
-                              hasRoundedCorners={false}
                               imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                               isCircular={true}
-                              isSquare={false}
-                              label={null}
-                              size={null}
+                              isLazyLoaded={true}
                             >
-                              <div
-                                className="ui thumbnail is-circular"
+                              <LazyLoader
+                                componentProps={
+                                  Object {
+                                    "data-testid": "avatar-image",
+                                    "isCircular": true,
+                                    "isLazyLoaded": true,
+                                  }
+                                }
+                                lazyProps={
+                                  Object {
+                                    "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                    "srcSet": undefined,
+                                  }
+                                }
                               >
-                                <withLazyLoad(ResponsiveImage)
+                                <div />
+                                <ResponsiveImage
+                                  data-testid="avatar-image"
                                   hasRoundedCorners={false}
-                                  imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  imageTitle="Image Title"
+                                  imageUrl=""
+                                  isAvatar={false}
                                   isCircular={true}
-                                  isFluid={true}
+                                  isFluid={false}
                                   isLazyLoaded={true}
-                                  isSquare={false}
+                                  label={null}
+                                  sizes={null}
+                                  srcSet={null}
+                                  willFill={false}
                                 >
-                                  <LazyLoader
-                                    componentProps={
+                                  <figure
+                                    alt="Image Title"
+                                    className="responsive-image isCircular"
+                                    data-testid="responsive-image"
+                                    style={
                                       Object {
-                                        "hasRoundedCorners": false,
-                                        "imageTitle": undefined,
-                                        "isCircular": true,
-                                        "isFluid": true,
-                                        "isLazyLoaded": true,
-                                        "isSquare": false,
-                                        "placeholderImageUrl": undefined,
-                                        "sizes": undefined,
-                                      }
-                                    }
-                                    lazyProps={
-                                      Object {
-                                        "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
-                                        "srcSet": undefined,
+                                        "backgroundImage": "url(undefined)",
                                       }
                                     }
                                   >
-                                    <div />
-                                    <ResponsiveImage
-                                      hasRoundedCorners={false}
-                                      imageHeight={null}
-                                      imageTitle="Image Title"
-                                      imageUrl=""
-                                      imageWidth={null}
-                                      isAvatar={false}
-                                      isCircular={true}
-                                      isFluid={true}
-                                      isLazyLoaded={true}
-                                      isSquare={false}
-                                      label={null}
+                                    <Image
+                                      as="img"
+                                      avatar={false}
+                                      circular={true}
+                                      data-testid="responsive-image-img"
+                                      fluid={false}
+                                      onError={[Function]}
+                                      onLoad={[Function]}
+                                      rounded={false}
                                       sizes={null}
+                                      src=""
                                       srcSet={null}
+                                      title="Image Title"
+                                      ui={true}
                                     >
-                                      <figure
-                                        className="responsive-image is-fluid is-circular"
-                                        data-testid="responsive-image"
-                                      >
-                                        <Image
-                                          alt="Image Title"
-                                          as="img"
-                                          avatar={false}
-                                          data-testid="responsive-image-img"
-                                          fluid={true}
-                                          onError={[Function]}
-                                          onLoad={[Function]}
-                                          sizes={null}
-                                          src=""
-                                          srcSet={null}
-                                          title="Image Title"
-                                          ui={true}
-                                        >
-                                          <img
-                                            alt="Image Title"
-                                            className="ui fluid image"
-                                            data-testid="responsive-image-img"
-                                            onError={[Function]}
-                                            onLoad={[Function]}
-                                            sizes={null}
-                                            src=""
-                                            srcSet={null}
-                                            title="Image Title"
-                                          />
-                                        </Image>
-                                      </figure>
-                                    </ResponsiveImage>
-                                    <div />
-                                  </LazyLoader>
-                                </withLazyLoad(ResponsiveImage)>
-                              </div>
-                            </Thumbnail>
+                                      <img
+                                        className="ui circular image"
+                                        data-testid="responsive-image-img"
+                                        onError={[Function]}
+                                        onLoad={[Function]}
+                                        sizes={null}
+                                        src=""
+                                        srcSet={null}
+                                        title="Image Title"
+                                      />
+                                    </Image>
+                                  </figure>
+                                </ResponsiveImage>
+                                <div />
+                              </LazyLoader>
+                            </withLazyLoad(ResponsiveImage)>
                           </div>
                         </Avatar>
                         <Heading
@@ -1276,101 +1222,83 @@ exports[`<HostProfile /> should render the right structure 1`] = `
                             className="avatar"
                             data-testid="avatar"
                           >
-                            <Thumbnail
-                              className=""
+                            <withLazyLoad(ResponsiveImage)
                               data-testid="avatar-image"
-                              hasMargin={false}
-                              hasRoundedCorners={false}
                               imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
                               isCircular={true}
-                              isSquare={false}
-                              label={null}
-                              size={null}
+                              isLazyLoaded={true}
                             >
-                              <div
-                                className="ui thumbnail is-circular"
+                              <LazyLoader
+                                componentProps={
+                                  Object {
+                                    "data-testid": "avatar-image",
+                                    "isCircular": true,
+                                    "isLazyLoaded": true,
+                                  }
+                                }
+                                lazyProps={
+                                  Object {
+                                    "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
+                                    "srcSet": undefined,
+                                  }
+                                }
                               >
-                                <withLazyLoad(ResponsiveImage)
+                                <div />
+                                <ResponsiveImage
+                                  data-testid="avatar-image"
                                   hasRoundedCorners={false}
-                                  imageUrl="https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max"
+                                  imageTitle="Image Title"
+                                  imageUrl=""
+                                  isAvatar={false}
                                   isCircular={true}
-                                  isFluid={true}
+                                  isFluid={false}
                                   isLazyLoaded={true}
-                                  isSquare={false}
+                                  label={null}
+                                  sizes={null}
+                                  srcSet={null}
+                                  willFill={false}
                                 >
-                                  <LazyLoader
-                                    componentProps={
+                                  <figure
+                                    alt="Image Title"
+                                    className="responsive-image isCircular"
+                                    data-testid="responsive-image"
+                                    style={
                                       Object {
-                                        "hasRoundedCorners": false,
-                                        "imageTitle": undefined,
-                                        "isCircular": true,
-                                        "isFluid": true,
-                                        "isLazyLoaded": true,
-                                        "isSquare": false,
-                                        "placeholderImageUrl": undefined,
-                                        "sizes": undefined,
-                                      }
-                                    }
-                                    lazyProps={
-                                      Object {
-                                        "imageUrl": "https://si4.cdbcdn.com/oh/4efbc79e-34db-4447-b31a-24e77f33f4e9.jpg?w=1024&mode=max",
-                                        "srcSet": undefined,
+                                        "backgroundImage": "url(undefined)",
                                       }
                                     }
                                   >
-                                    <div />
-                                    <ResponsiveImage
-                                      hasRoundedCorners={false}
-                                      imageHeight={null}
-                                      imageTitle="Image Title"
-                                      imageUrl=""
-                                      imageWidth={null}
-                                      isAvatar={false}
-                                      isCircular={true}
-                                      isFluid={true}
-                                      isLazyLoaded={true}
-                                      isSquare={false}
-                                      label={null}
+                                    <Image
+                                      as="img"
+                                      avatar={false}
+                                      circular={true}
+                                      data-testid="responsive-image-img"
+                                      fluid={false}
+                                      onError={[Function]}
+                                      onLoad={[Function]}
+                                      rounded={false}
                                       sizes={null}
+                                      src=""
                                       srcSet={null}
+                                      title="Image Title"
+                                      ui={true}
                                     >
-                                      <figure
-                                        className="responsive-image is-fluid is-circular"
-                                        data-testid="responsive-image"
-                                      >
-                                        <Image
-                                          alt="Image Title"
-                                          as="img"
-                                          avatar={false}
-                                          data-testid="responsive-image-img"
-                                          fluid={true}
-                                          onError={[Function]}
-                                          onLoad={[Function]}
-                                          sizes={null}
-                                          src=""
-                                          srcSet={null}
-                                          title="Image Title"
-                                          ui={true}
-                                        >
-                                          <img
-                                            alt="Image Title"
-                                            className="ui fluid image"
-                                            data-testid="responsive-image-img"
-                                            onError={[Function]}
-                                            onLoad={[Function]}
-                                            sizes={null}
-                                            src=""
-                                            srcSet={null}
-                                            title="Image Title"
-                                          />
-                                        </Image>
-                                      </figure>
-                                    </ResponsiveImage>
-                                    <div />
-                                  </LazyLoader>
-                                </withLazyLoad(ResponsiveImage)>
-                              </div>
-                            </Thumbnail>
+                                      <img
+                                        className="ui circular image"
+                                        data-testid="responsive-image-img"
+                                        onError={[Function]}
+                                        onLoad={[Function]}
+                                        sizes={null}
+                                        src=""
+                                        srcSet={null}
+                                        title="Image Title"
+                                      />
+                                    </Image>
+                                  </figure>
+                                </ResponsiveImage>
+                                <div />
+                              </LazyLoader>
+                            </withLazyLoad(ResponsiveImage)>
                           </div>
                         </Avatar>
                         <Heading

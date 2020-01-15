@@ -64,6 +64,5 @@ module.exports = {
     SRC_SEMANTIC_STYLES_PATH,
     'text-placeholder.less'
   ),
-  thumbnail: path.join(SRC_SEMANTIC_STYLES_PATH, 'thumbnail.less'),
   transition: path.join(SRC_SEMANTIC_STYLES_PATH, 'transition.less'),
 };

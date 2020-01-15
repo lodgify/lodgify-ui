@@ -28,6 +28,7 @@ export const Component = ({
           {...slideshowProps}
           isFluid
           isShowingBulletNavigation={false}
+          willFill
         />
         <div className="content-container">
           <ShowOn

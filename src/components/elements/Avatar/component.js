@@ -1,7 +1,7 @@
 import React from 'react';
 import { string } from 'prop-types';
 
-import { Thumbnail } from 'media/Thumbnail';
+import { ResponsiveImage } from 'media/ResponsiveImage';
 import { testidFactory } from 'utils/testid';
 
 const testid = testidFactory('avatar');
@@ -9,7 +9,11 @@ const testid = testidFactory('avatar');
 export const Component = ({ firstName, lastName, image }) => (
   <div className="avatar" data-testid={testid()}>
     {!!image ? (
-      <Thumbnail data-testid={testid('image')} imageUrl={image} isCircular />
+      <ResponsiveImage
+        data-testid={testid('image')}
+        imageUrl={image}
+        isCircular
+      />
     ) : (
       <p data-testid={testid('text')}>
         {`${firstName[0]}${lastName[0]}`.toUpperCase()}

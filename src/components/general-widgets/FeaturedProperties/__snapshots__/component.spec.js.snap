@@ -82,10 +82,8 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
             <div />
             <ResponsiveImage
               hasRoundedCorners={false}
-              imageHeight={null}
               imageTitle="Image Title"
               imageUrl=""
-              imageWidth={null}
               isAvatar={false}
               isCircular={false}
               isFluid={true}
@@ -93,19 +91,27 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
               label={null}
               sizes={null}
               srcSet={null}
+              willFill={false}
             >
               <figure
-                className="responsive-image is-fluid"
+                alt="Image Title"
+                className="responsive-image"
                 data-testid="responsive-image"
+                style={
+                  Object {
+                    "backgroundImage": "url(undefined)",
+                  }
+                }
               >
                 <Image
-                  alt="Image Title"
                   as="img"
                   avatar={false}
+                  circular={false}
                   data-testid="responsive-image-img"
                   fluid={true}
                   onError={[Function]}
                   onLoad={[Function]}
+                  rounded={false}
                   sizes={null}
                   src=""
                   srcSet={null}
@@ -113,7 +119,6 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                   ui={true}
                 >
                   <img
-                    alt="Image Title"
                     className="ui fluid image"
                     data-testid="responsive-image-img"
                     onError={[Function]}
@@ -426,10 +431,8 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
             <div />
             <ResponsiveImage
               hasRoundedCorners={false}
-              imageHeight={null}
               imageTitle="Image Title"
               imageUrl=""
-              imageWidth={null}
               isAvatar={false}
               isCircular={false}
               isFluid={true}
@@ -437,19 +440,27 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
               label={null}
               sizes={null}
               srcSet={null}
+              willFill={false}
             >
               <figure
-                className="responsive-image is-fluid"
+                alt="Image Title"
+                className="responsive-image"
                 data-testid="responsive-image"
+                style={
+                  Object {
+                    "backgroundImage": "url(undefined)",
+                  }
+                }
               >
                 <Image
-                  alt="Image Title"
                   as="img"
                   avatar={false}
+                  circular={false}
                   data-testid="responsive-image-img"
                   fluid={true}
                   onError={[Function]}
                   onLoad={[Function]}
+                  rounded={false}
                   sizes={null}
                   src=""
                   srcSet={null}
@@ -457,7 +468,6 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
                   ui={true}
                 >
                   <img
-                    alt="Image Title"
                     className="ui fluid image"
                     data-testid="responsive-image-img"
                     onError={[Function]}
@@ -824,10 +834,8 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
             <div />
             <ResponsiveImage
               hasRoundedCorners={false}
-              imageHeight={null}
               imageTitle="Image Title"
               imageUrl=""
-              imageWidth={null}
               isAvatar={false}
               isCircular={false}
               isFluid={true}
@@ -835,19 +843,27 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
               label={null}
               sizes={null}
               srcSet={null}
+              willFill={false}
             >
               <figure
-                className="responsive-image is-fluid"
+                alt="Image Title"
+                className="responsive-image"
                 data-testid="responsive-image"
+                style={
+                  Object {
+                    "backgroundImage": "url(undefined)",
+                  }
+                }
               >
                 <Image
-                  alt="Image Title"
                   as="img"
                   avatar={false}
+                  circular={false}
                   data-testid="responsive-image-img"
                   fluid={true}
                   onError={[Function]}
                   onLoad={[Function]}
+                  rounded={false}
                   sizes={null}
                   src=""
                   srcSet={null}
@@ -855,7 +871,6 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                   ui={true}
                 >
                   <img
-                    alt="Image Title"
                     className="ui fluid image"
                     data-testid="responsive-image-img"
                     onError={[Function]}
@@ -1168,10 +1183,8 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
             <div />
             <ResponsiveImage
               hasRoundedCorners={false}
-              imageHeight={null}
               imageTitle="Image Title"
               imageUrl=""
-              imageWidth={null}
               isAvatar={false}
               isCircular={false}
               isFluid={true}
@@ -1179,19 +1192,27 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
               label={null}
               sizes={null}
               srcSet={null}
+              willFill={false}
             >
               <figure
-                className="responsive-image is-fluid"
+                alt="Image Title"
+                className="responsive-image"
                 data-testid="responsive-image"
+                style={
+                  Object {
+                    "backgroundImage": "url(undefined)",
+                  }
+                }
               >
                 <Image
-                  alt="Image Title"
                   as="img"
                   avatar={false}
+                  circular={false}
                   data-testid="responsive-image-img"
                   fluid={true}
                   onError={[Function]}
                   onLoad={[Function]}
+                  rounded={false}
                   sizes={null}
                   src=""
                   srcSet={null}
@@ -1199,7 +1220,6 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
                   ui={true}
                 >
                   <img
-                    alt="Image Title"
                     className="ui fluid image"
                     data-testid="responsive-image-img"
                     onError={[Function]}

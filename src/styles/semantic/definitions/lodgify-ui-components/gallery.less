@@ -91,17 +91,18 @@
                   border-radius: @galleryPlaceholderBorderRadius;
                 }
 
+                img {
+                  max-height: @gallerySlideshowContentMaxHeight;
+
+                  @media only screen and (min-width: @gallerySlideshowWidescreenBreakpoint) {
+                    max-height: @gallerySlideshowWidescreenMaxHeight;
+                  }
+                }
+
                 .image-gallery-image {
                   max-width: @gallerySlideshowContentMaxWidth;
                   border-radius: @galleryPlaceholderBorderRadius;
 
-                  > img {
-                    max-height: @gallerySlideshowContentMaxHeight;
-
-                    @media only screen and (min-width: @gallerySlideshowWidescreenBreakpoint) {
-                      max-height: @gallerySlideshowWidescreenMaxHeight;
-                    }
-                  }
                 }
               }
 

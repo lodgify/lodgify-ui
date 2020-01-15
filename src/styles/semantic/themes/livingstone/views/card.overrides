@@ -145,8 +145,7 @@
         flex-direction: row;
 
         > .flex-container {
-          min-width: @compactSearchResultImageMinWidth;
-          height: auto !important;
+          width: @compactSearchResultImageMinWidth;
         }
 
         > .content {
@@ -181,7 +180,6 @@
       > .flex-container {
         position: relative;
         min-height: @searchResultImageHeight;
-        max-height: @searchResultImageHeight;
 
         > .ui.raised.segment {
           background-color: @themeActionColorDefault;
@@ -288,9 +286,16 @@
 .has-room-type-gallery {
 
   .image-gallery {
+    margin-bottom: 0;
+    height: 100%;
 
     .image-gallery-content {
-      height: initial;
+      height: 100%;
+
+      .image-gallery-slide-wrapper {
+        margin-bottom: 0;
+        height: 100%;
+      }
 
       .image-gallery-image {
         position: relative;

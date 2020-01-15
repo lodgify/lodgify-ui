@@ -107,16 +107,16 @@ exports[`HomepageHero should render the right structure 1`] = `
             placeholderImageUrl={null}
             sizes="url"
             srcSet="a load of sizes"
+            willFill={true}
           >
             <LazyLoader
               componentProps={
                 Object {
-                  "imageHeight": undefined,
-                  "imageWidth": undefined,
                   "isFluid": true,
                   "isLazyLoaded": true,
                   "placeholderImageUrl": null,
                   "sizes": "url",
+                  "willFill": true,
                 }
               }
               lazyProps={
@@ -129,10 +129,8 @@ exports[`HomepageHero should render the right structure 1`] = `
               <div />
               <ResponsiveImage
                 hasRoundedCorners={false}
-                imageHeight={null}
                 imageTitle="Image Title"
                 imageUrl=""
-                imageWidth={null}
                 isAvatar={false}
                 isCircular={false}
                 isFluid={true}
@@ -141,19 +139,27 @@ exports[`HomepageHero should render the right structure 1`] = `
                 placeholderImageUrl={null}
                 sizes="url"
                 srcSet={null}
+                willFill={true}
               >
                 <figure
-                  className="responsive-image is-fluid"
+                  alt="Image Title"
+                  className="responsive-image willFill"
                   data-testid="responsive-image"
+                  style={
+                    Object {
+                      "backgroundImage": "url(null)",
+                    }
+                  }
                 >
                   <Image
-                    alt="Image Title"
                     as="img"
                     avatar={false}
+                    circular={false}
                     data-testid="responsive-image-img"
                     fluid={true}
                     onError={[Function]}
                     onLoad={[Function]}
+                    rounded={false}
                     sizes="url"
                     src=""
                     srcSet={null}
@@ -161,7 +167,6 @@ exports[`HomepageHero should render the right structure 1`] = `
                     ui={true}
                   >
                     <img
-                      alt="Image Title"
                       className="ui fluid image"
                       data-testid="responsive-image-img"
                       onError={[Function]}

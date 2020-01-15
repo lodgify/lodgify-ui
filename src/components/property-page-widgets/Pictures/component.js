@@ -9,7 +9,7 @@ import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
 import { ShowOn } from 'layout/ShowOn';
 import { Divider } from 'elements/Divider';
-import { Thumbnail } from 'media/Thumbnail';
+import { ResponsiveImage } from 'media/ResponsiveImage';
 import { Heading } from 'typography/Heading';
 import { Gallery } from 'media/Gallery';
 import { Link } from 'elements/Link';
@@ -67,14 +67,14 @@ export const Component = ({
             tablet={4}
           >
             <ShowOn computer parent="div" tablet widescreen>
-              <Thumbnail
+              <ResponsiveImage
                 className="gallery-thumbnail"
                 {...imageProps}
                 size="huge"
               />
             </ShowOn>
             <ShowOn mobile parent="div">
-              <Thumbnail
+              <ResponsiveImage
                 className="gallery-thumbnail"
                 {...imageProps}
                 hasRoundedCorners
