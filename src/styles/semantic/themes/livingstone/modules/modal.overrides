@@ -207,3 +207,19 @@
     padding-bottom: 0;
   }
 }
+
+/* Contact Header */
+
+.ui.fullscreen.scrolling.modal.transition.visible.active.hidden-contact-header-modal {
+  background: #9897af;
+
+  .header,
+  .content,
+  .content * {
+    background: transparent;
+  }
+
+  .ui.vertical.menu i.icon svg > path {
+    fill: #9897af;
+  }
+}

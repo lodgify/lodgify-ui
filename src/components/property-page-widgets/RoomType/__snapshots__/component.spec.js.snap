@@ -561,6 +561,7 @@ exports[`<RoomType /> by default should render the correct structure 1`] = `
                                                 />
                                               </svg>
                                               <Paragraph
+                                                className={null}
                                                 isCompact={false}
                                                 size="medium"
                                                 weight={null}
@@ -1668,6 +1669,7 @@ exports[`<RoomType /> if \`isUserOnMobile === true\` should render the correct s
                                           role="listitem"
                                         >
                                           <Paragraph
+                                            className={null}
                                             isCompact={false}
                                             size="medium"
                                             weight={null}

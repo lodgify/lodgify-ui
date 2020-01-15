@@ -7,16 +7,17 @@ import {
   bool,
   oneOfType,
   number,
+  oneOf,
 } from 'prop-types';
 import { Menu, Accordion } from 'semantic-ui-react';
 import { size } from 'lodash';
 
-import { Heading } from 'typography/Heading';
 import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Icon, ICON_NAMES } from 'elements/Icon';
 import { Modal } from 'elements/Modal';
 import { Submenu } from 'elements/Submenu';
 import { testidFactory } from 'utils/testid';
+import { Logo } from 'elements/Logo';
 
 import { PHONE_PREFIX } from '../constants';
 
@@ -25,16 +26,21 @@ const TEST_ID_PREFIX = 'MobileHeader';
 const testid = testidFactory(TEST_ID_PREFIX);
 
 export const Component = ({
-  headingHref,
-  headingText,
-  navigationItems,
-  languageOptions,
-  onChangeLanguage,
-  languageValue,
-  currencyOptions,
   currencyNoResultsText,
-  onChangeCurrency,
+  currencyOptions,
   currencyValue,
+  languageOptions,
+  languageValue,
+  logoHref,
+  logoSize,
+  logoSizes,
+  logoSrc,
+  logoSrcSet,
+  logoSubText,
+  logoText,
+  navigationItems,
+  onChangeCurrency,
+  onChangeLanguage,
   phoneNumber,
 }) => {
   const [activeItem, setActiveItem] = useState('');
@@ -56,11 +62,15 @@ export const Component = ({
       closeIcon={<Icon labelText="Close" name="close" />}
       data-testid={testid()}
       header={
-        <Menu.Item href={headingHref} link>
-          <Heading className="header-title" size="small">
-            {headingText}
-          </Heading>
-        </Menu.Item>
+        <Logo
+          logoHref={logoHref}
+          logoSize={logoSize}
+          logoSizes={logoSizes}
+          logoSrc={logoSrc}
+          logoSrcSet={logoSrcSet}
+          logoSubText={logoSubText}
+          logoText={logoText}
+        />
       }
       isFullscreen
       trigger={<Icon name={ICON_NAMES.BARS} />}
@@ -152,13 +162,18 @@ Component.defaultProps = {
   currencyNoResultsText: '',
   currencyOptions: [],
   currencyValue: null,
-  headingHref: '',
-  headingText: '',
   languageOptions: [],
   languageValue: null,
-  phoneNumber: '',
+  logoHref: '',
+  logoSize: 'medium',
+  logoSizes: undefined,
+  logoSrc: undefined,
+  logoSrcSet: undefined,
+  logoSubText: '',
+  logoText: '',
   onChangeCurrency: undefined,
   onChangeLanguage: undefined,
+  phoneNumber: '',
 };
 
 Component.propTypes = {
@@ -175,10 +190,6 @@ Component.propTypes = {
   ),
   /** The current value of the currency dropdown. */
   currencyValue: oneOfType([bool, number, string]),
-  /** The link for the heading. */
-  headingHref: string,
-  /** The text for the heading. */
-  headingText: string,
   /** The options which the user can select for the language dropdown. */
   languageOptions: arrayOf(
     shape({
@@ -190,6 +201,21 @@ Component.propTypes = {
   ),
   /** The current value of the language dropdown. */
   languageValue: oneOfType([bool, number, string]),
+  /** The href for the logo link. */
+  logoHref: string,
+  /** The maximum size of the headers logo. */
+  logoSize: oneOf(['medium', 'large', 'huge']),
+  /** A list of one or more strings separated by commas indicating a set of source sizes for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  logoSizes: string,
+  /** The src url for the logo. */
+  logoSrc: string,
+  /** A list of one or more strings separated by commas indicating a set of possible image sources for the user agent to use for the logo. See [the MDN docs for more information](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/img). */
+  logoSrcSet: string,
+  /** The text that appears under the logo or logo text. */
+  logoSubText: string,
+  /** The text for the logo. */
+  logoText: string,
+  /** The items for a user to navigate the site. */
   /** The navigation items displayed in the header. */
   navigationItems: arrayOf(
     shape({

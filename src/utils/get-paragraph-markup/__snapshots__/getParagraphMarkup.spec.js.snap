@@ -3,6 +3,7 @@
 exports[`getParagraphMarkup should return the right shape 1`] = `
 Array [
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}

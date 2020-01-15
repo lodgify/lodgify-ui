@@ -75,6 +75,7 @@ exports[`<Header /> by default should render the right structure 1`] = `
               logoSize="medium"
               logoSrc={null}
               logoSubText={null}
+              logoSubTextAlignment="left"
               logoText="someLogoText"
             >
               <MenuItem
@@ -729,6 +730,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
               logoSize="medium"
               logoSrc={null}
               logoSubText={null}
+              logoSubTextAlignment="left"
               logoText="someLogoText"
             >
               <MenuItem
@@ -879,6 +881,7 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
                             logoSize="medium"
                             logoSrc={null}
                             logoSubText=""
+                            logoSubTextAlignment="left"
                             logoText="someLogoText"
                           />
                         }
@@ -1113,6 +1116,7 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
               logoSize="medium"
               logoSrc={null}
               logoSubText={null}
+              logoSubTextAlignment="left"
               logoText="someLogoText"
             >
               <MenuItem

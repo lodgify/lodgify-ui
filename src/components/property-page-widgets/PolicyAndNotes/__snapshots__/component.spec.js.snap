@@ -122,6 +122,7 @@ exports[`<PolicyAndNotes /> if \`props.cancellationPolicyRules\` is passed shoul
                       </Header>
                     </Heading>
                     <Paragraph
+                      className={null}
                       isCompact={false}
                       key="All paid prepayments are non-refundable.0"
                       size="medium"
@@ -267,6 +268,7 @@ exports[`<PolicyAndNotes /> if \`props.damageDepositRules\` is passed should hav
                       </Header>
                     </Heading>
                     <Paragraph
+                      className={null}
                       isCompact={false}
                       key="A refundable damage deposit of 200.00 € (EUR) is due.0"
                       size="medium"
@@ -853,6 +855,7 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should h
                       </Header>
                     </Heading>
                     <Paragraph
+                      className={null}
                       isCompact={false}
                       key="50% due at time of booking.0"
                       size="medium"
@@ -865,6 +868,7 @@ exports[`<PolicyAndNotes /> if \`props.paymentScheduleRules\` is passed should h
                       </p>
                     </Paragraph>
                     <Paragraph
+                      className={null}
                       isCompact={false}
                       key="Remaining balance: Due later.1"
                       size="medium"

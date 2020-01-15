@@ -25,6 +25,7 @@ exports[`SummaryCard if \`ratingNumber\` is falsy should return the right struct
     justifyContent={null}
   >
     <Paragraph
+      className={null}
       isCompact={false}
       size="medium"
       weight={null}
@@ -65,6 +66,7 @@ exports[`SummaryCard should have the right shape 1`] = `
       ratingNumber={4.5}
     />
     <Paragraph
+      className={null}
       isCompact={false}
       size="medium"
       weight={null}

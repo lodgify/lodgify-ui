@@ -14,3 +14,20 @@
 @contactModalContentHeight: ~"calc(100% - @{contactModalHeaderHeight})";
 
 @contactHeaderVerticalMenuItemPaddingTop: 0.938em;
+
+@contactHeaderButtonHeight: 40px;
+@contactHeaderButtonBorderRadius: 4px;
+@contactHeaderButtonBoxShadow: 0 4px 6px 0 rgba(50, 50, 93, 0.11);
+@contactHeaderButtonColor: @white;
+@contactHeaderButtonMarginRight: 0;
+
+@contactHeaderContainerPadding: 1.9em;
+@contactHeaderContainerBoxShadow: 0 1px 0 0 #ced0d2;
+@contactHeaderContainerZIndex: 4;
+
+@contactHeaderUnderlineHeight: 2px;
+@contactHeaderUnderlineTop: ~"calc(50% + 15px)";
+
+@contactHeaderTextGray:  #9897af;
+
+@contactHeaderHorizontalMenuMargin: 10px 0;

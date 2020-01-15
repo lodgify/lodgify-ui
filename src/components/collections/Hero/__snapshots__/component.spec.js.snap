@@ -196,6 +196,7 @@ exports[`<Hero /> by default should render the right structure 1`] = `
                       logoSrc="https://darkgreen.com"
                       logoSrcSet="a load of logo src sets"
                       logoSubText={null}
+                      logoSubTextAlignment="left"
                       logoText="Livingstone Cottage"
                     >
                       <MenuItem

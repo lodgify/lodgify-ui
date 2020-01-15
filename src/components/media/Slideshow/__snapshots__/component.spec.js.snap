@@ -54,6 +54,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
   startIndex={0}
 >
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}
@@ -762,6 +763,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
   startIndex={0}
 >
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}
@@ -1470,6 +1472,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
   startIndex={0}
 >
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}
@@ -2179,6 +2182,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
   startIndex={0}
 >
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}
@@ -2888,6 +2892,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
   startIndex={0}
 >
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}
@@ -3564,6 +3569,7 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
   startIndex={0}
 >
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}
@@ -4292,6 +4298,7 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
     </Header>
   </Heading>
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}

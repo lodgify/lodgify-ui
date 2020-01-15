@@ -13,12 +13,13 @@ const testid = testidFactory(TEST_ID_PREFIX);
 
 export const Component = ({
   logoHref,
-  logoSubText,
-  logoText,
-  logoSrc,
   logoSize,
   logoSizes,
+  logoSrc,
   logoSrcSet,
+  logoSubText,
+  logoSubTextAlignment,
+  logoText,
 }) => (
   <Menu.Item
     className={classnames({
@@ -45,6 +46,7 @@ export const Component = ({
       )}
       {logoSubText && (
         <Paragraph
+          className={`subtext-aligned ${logoSubTextAlignment}`}
           data-testid={testid('subtext')}
           size="tiny"
           title={logoSubText}
@@ -59,13 +61,14 @@ export const Component = ({
 Component.displayName = 'Logo';
 
 Component.defaultProps = {
-  logoHref: '',
-  logoSubText: '',
+  logoHref: null,
   logoSize: 'medium',
-  logoSrc: undefined,
   logoSizes: undefined,
-  logoText: '',
+  logoSrc: undefined,
   logoSrcSet: undefined,
+  logoSubText: '',
+  logoSubTextAlignment: 'left',
+  logoText: '',
 };
 
 Component.propTypes = {
@@ -81,6 +84,8 @@ Component.propTypes = {
   logoSrcSet: string,
   /** The text that appears under the logo or logo text. */
   logoSubText: string,
+  /** The alignment for the logo subText. */
+  logoSubTextAlignment: oneOf(['left', 'center', 'right']),
   /** The text for the logo. */
   logoText: string,
 };

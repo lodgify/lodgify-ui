@@ -69,6 +69,7 @@ exports[`<RangeInputSegment /> should return the right structure 1`] = `
             </Header>
           </Heading>
           <Paragraph
+            className={null}
             isCompact={false}
             size="medium"
             weight={null}

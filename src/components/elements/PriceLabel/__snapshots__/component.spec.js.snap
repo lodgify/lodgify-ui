@@ -55,6 +55,7 @@ exports[`the \`PriceLabel\` component if there is \`periodText\` if \`isPointing
           justifyContent="center"
         >
           <Paragraph
+            className={null}
             isCompact={false}
             size="medium"
             weight={null}
@@ -107,6 +108,7 @@ exports[`the \`PriceLabel\` component if there is \`periodText\` should return t
           justifyContent="center"
         >
           <Paragraph
+            className={null}
             isCompact={false}
             size="medium"
             weight={null}

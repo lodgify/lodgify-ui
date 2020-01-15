@@ -102,6 +102,7 @@ exports[`<Rules /> by default should render the right structure 1`] = `
                     />
                   </svg>
                   <Paragraph
+                    className={null}
                     isCompact={false}
                     size="medium"
                     weight={null}
@@ -156,6 +157,7 @@ exports[`<Rules /> by default should render the right structure 1`] = `
                     />
                   </svg>
                   <Paragraph
+                    className={null}
                     isCompact={false}
                     size="medium"
                     weight={null}
@@ -262,6 +264,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                 items={
                   Array [
                     <Paragraph
+                      className={null}
                       isCompact={false}
                       size="medium"
                       weight={null}
@@ -269,6 +272,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                       Smoking not allowed
                     </Paragraph>,
                     <Paragraph
+                      className={null}
                       isCompact={false}
                       size="medium"
                       weight={null}
@@ -276,6 +280,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                       No parties or events
                     </Paragraph>,
                     <Paragraph
+                      className={null}
                       isCompact={false}
                       size="medium"
                       weight={null}
@@ -290,6 +295,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                   role="list"
                 >
                   <Paragraph
+                    className={null}
                     isCompact={false}
                     key="Smoking not allowed0"
                     onClick={[Function]}
@@ -303,6 +309,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                     </p>
                   </Paragraph>
                   <Paragraph
+                    className={null}
                     isCompact={false}
                     key="No parties or events1"
                     onClick={[Function]}
@@ -316,6 +323,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                     </p>
                   </Paragraph>
                   <Paragraph
+                    className={null}
                     isCompact={false}
                     key="Pets are allowed2"
                     onClick={[Function]}
@@ -378,6 +386,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                     />
                   </svg>
                   <Paragraph
+                    className={null}
                     isCompact={false}
                     size="medium"
                     weight={null}
@@ -432,6 +441,7 @@ exports[`<Rules /> if \`props.rules\` length > 0 should render the right structu
                     />
                   </svg>
                   <Paragraph
+                    className={null}
                     isCompact={false}
                     size="medium"
                     weight={null}

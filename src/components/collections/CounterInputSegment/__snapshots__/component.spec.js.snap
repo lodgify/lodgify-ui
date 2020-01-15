@@ -105,6 +105,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
               }
             >
               <Paragraph
+                className={null}
                 isCompact={false}
                 size="medium"
                 weight={null}
@@ -263,6 +264,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
                         </Button>
                       </Button>
                       <Paragraph
+                        className={null}
                         isCompact={false}
                         size="medium"
                         weight={null}
@@ -432,6 +434,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
               }
             >
               <Paragraph
+                className={null}
                 isCompact={false}
                 size="medium"
                 weight={null}
@@ -590,6 +593,7 @@ exports[`<CounterInputSegment /> should return the right structure 1`] = `
                         </Button>
                       </Button>
                       <Paragraph
+                        className={null}
                         isCompact={false}
                         size="medium"
                         weight={null}

@@ -259,6 +259,7 @@ exports[`Component if \`props.description\` is passed should render the right st
               </Header>
             </Heading>
             <Paragraph
+              className={null}
               isCompact={false}
               size="medium"
               weight={null}

@@ -190,6 +190,7 @@ exports[`the \`RatingInput\` component should render a \`Paragraph\` component i
   onChange={[Function]}
 >
   <Paragraph
+    className={null}
     isCompact={false}
     size="medium"
     weight={null}

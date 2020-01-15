@@ -83,6 +83,7 @@ exports[`HiddenMenu by default should render the right structure 1`] = `
             logoSize="medium"
             logoSrc={null}
             logoSubText=""
+            logoSubTextAlignment="left"
             logoText="yo"
           />
         }

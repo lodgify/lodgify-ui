@@ -21,6 +21,10 @@ const galleryImages = [
 ];
 
 <ContactPropertyHero
+  logoSubText="King of Joy"
+  logoHref="Balalala"
+  logoSize="medium"
+  logoSrc="https://li5.cdbcdn.com/oh/a84645c0-0a35-4735-bda5-e5c425c2ffdc.png"
   backgroundImageUrl={backgroundImageUrl}
   headerNavigationItems={navigationItems}
   headerPrimaryCTA={{ onClick: console.log, text: "Book now" }}

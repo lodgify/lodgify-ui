@@ -483,6 +483,7 @@ exports[`The \`CookieAlert\` component if \`isOpen\` is true should return the 
                                         </Divider>
                                       </Divider>
                                       <Paragraph
+                                        className={null}
                                         isCompact={false}
                                         size="medium"
                                         weight={null}
@@ -865,6 +866,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is false should ret
                       className="field"
                     >
                       <Paragraph
+                        className={null}
                         isCompact={false}
                         onBlur={[Function]}
                         onChange={[Function]}
@@ -1653,6 +1655,7 @@ exports[`The \`CookieAlert\` component if \`isUserOnMobile\` is true should retu
                                         </Divider>
                                       </Divider>
                                       <Paragraph
+                                        className={null}
                                         isCompact={false}
                                         size="medium"
                                         weight={null}

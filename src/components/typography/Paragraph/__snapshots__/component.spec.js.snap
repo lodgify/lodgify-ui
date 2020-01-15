@@ -2,6 +2,7 @@
 
 exports[`<Paragraph /> by default should render the right structure 1`] = `
 <Paragraph
+  className={null}
   isCompact={false}
   size="medium"
   weight={null}
@@ -17,6 +18,7 @@ exports[`<Paragraph /> by default should render the right structure 1`] = `
 
 exports[`<Paragraph /> if \`props.isCompact\` is passed should render the right structure 1`] = `
 <Paragraph
+  className={null}
   isCompact={true}
   size="medium"
   weight={null}
@@ -32,6 +34,7 @@ exports[`<Paragraph /> if \`props.isCompact\` is passed should render the right 
 
 exports[`<Paragraph /> if \`props.size\` === tiny should render the right structure 1`] = `
 <Paragraph
+  className={null}
   isCompact={false}
   size="tiny"
   weight={null}
