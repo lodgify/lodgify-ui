@@ -96,6 +96,7 @@ export const Component = ({
           logoSrc={logoSrc}
           logoSrcSet={logoSrcSet}
           logoSubText={logoSubText}
+          logoSubTextAlignment="center"
           logoText={logoText}
         />
         <Button>{primaryButtonText}</Button>
