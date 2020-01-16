@@ -21,6 +21,27 @@ export const navigationItems = [
       },
     ],
   },
+  {
+    text: 'LOL',
+    subItems: [
+      {
+        href: '/la-casa-viva',
+        text: 'La Casa Viva',
+      },
+      {
+        href: '/la-casa-muerta',
+        text: 'La Casa Muerta',
+      },
+      {
+        href: '/the-white-lodge',
+        text: 'The White Lodge',
+      },
+      {
+        href: '/the-black-lodge',
+        text: 'The Black Lodge',
+      },
+    ],
+  },
 ];
 
 export const currencyOptions = [

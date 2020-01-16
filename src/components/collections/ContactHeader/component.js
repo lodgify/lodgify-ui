@@ -54,8 +54,8 @@ export const Component = ({
   primaryCTA,
 }) => (
   <header className="contact-header" data-testid={testid()}>
-    <ShowOn computer tablet widescreen>
-      <FlexContainer alignItems="center" justifyContent="space-between">
+    <ShowOn computer widescreen>
+      <div className="header-grid">
         <Menu>
           {size(languageOptions) > 1 && (
             <Menu.Item>
@@ -64,7 +64,6 @@ export const Component = ({
                 name="language"
                 onChange={onChangeLanguage}
                 value={languageValue}
-                willOpenAbove
               />
             </Menu.Item>
           )}
@@ -77,7 +76,6 @@ export const Component = ({
                 noResultsText={currencyNoResultsText}
                 onChange={onChangeCurrency}
                 value={currencyValue}
-                willOpenAbove
               />
             </Menu.Item>
           )}
@@ -100,14 +98,20 @@ export const Component = ({
           logoText={logoText}
         />
         {primaryCTA && (
-          <Button isRounded onClick={primaryCTA.onClick}>
-            {primaryCTA.text}
-          </Button>
+          <FlexContainer alignItems="center" justifyContent="flex-end">
+            <Button isRounded onClick={primaryCTA.onClick}>
+              {primaryCTA.text}
+            </Button>
+          </FlexContainer>
         )}
-      </FlexContainer>
-      <HorizontalMenu isHeader items={navigationMenuItems} />
+      </div>
+      <HorizontalMenu
+        className="is-header"
+        isHeader
+        items={navigationMenuItems}
+      />
     </ShowOn>
-    <ShowOn mobile>
+    <ShowOn mobile tablet>
       <FlexContainer
         alignItems="center"
         className="hidden-contact-header"

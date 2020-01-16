@@ -36,24 +36,26 @@ export const Component = ({
   backgroundImageWidth,
   bottomOffset,
   className,
+  currencyNoResultsText,
+  currencyOptions,
+  currencyValue,
+  galleryImages,
   headerLogoHref,
   headerLogoSize,
   headerLogoSizes,
   headerLogoSrc,
   headerLogoSrcSet,
+  headerLogoSubText,
   headerLogoText,
   headerNavigationItems,
   headerPrimaryCTA,
-  headerLogoSubText,
-  currencyNoResultsText,
-  currencyOptions,
-  currencyValue,
-  galleryImages,
   languageOptions,
   languageValue,
+  onChangeCurrency,
   phoneNumber,
   placeholderBackgroundImageUrl,
   secondaryButtonText,
+  onChangeLanguage,
 }) => {
   return (
     <FullBleed
@@ -83,6 +85,8 @@ export const Component = ({
         logoSubText={headerLogoSubText}
         logoText={headerLogoText}
         navigationMenuItems={headerNavigationItems}
+        onChangeCurrency={onChangeCurrency}
+        onChangeLanguage={onChangeLanguage}
         phoneNumber={phoneNumber}
         primaryCTA={headerPrimaryCTA}
       />
@@ -125,15 +129,17 @@ Component.defaultProps = {
   currencyOptions: [],
   currencyValue: null,
   galleryImages: [],
-  languageOptions: [],
-  languageValue: null,
   headerLogoHref: undefined,
   headerLogoSize: undefined,
   headerLogoSizes: undefined,
   headerLogoSrc: null,
   headerLogoSrcSet: undefined,
-  headerPrimaryCTA: null,
   headerLogoSubText: undefined,
+  headerPrimaryCTA: null,
+  languageOptions: [],
+  languageValue: null,
+  onChangeCurrency: undefined,
+  onChangeLanguage: undefined,
   phoneNumber: '',
   placeholderBackgroundImageUrl: null,
   secondaryButtonText: VIEW_MORE_PICTURES,
@@ -233,6 +239,16 @@ Component.propTypes = {
   ),
   /** The current value of the language dropdown. */
   languageValue: oneOfType([bool, number, string]),
+  /** The function called when the currency dropdown is changed.
+   *  @param {String} name
+   *  @param {String} value
+   */
+  onChangeCurrency: func,
+  /** The function called when the language dropdown is changed.
+   *  @param {String} name
+   *  @param {String} value
+   */
+  onChangeLanguage: func,
   /** The phone number to display. */
   phoneNumber: string,
   /** The ISO 639-1 locale code which changes the format and language of days of the week and the months of the year in the search bars date range picker. */

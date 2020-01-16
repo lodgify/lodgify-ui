@@ -1,77 +1,91 @@
 export const subItems = [
   {
     text: 'availability',
-    link: '#availability',
+    href: '#availability',
     isActive: true,
   },
   {
     text: 'All Properties',
-    link: '#rates',
+    href: '#rates',
     subItems: [
       {
-        link: '/la-casa-viva',
+        href: '/la-casa-viva',
         text: 'La Casa Viva',
       },
       {
-        link: '/la-casa-muerta',
+        href: '/la-casa-muerta',
+        text: 'La Casa Muerta',
+      },
+    ],
+  },
+  {
+    text: 'sos',
+    href: '#rates',
+    subItems: [
+      {
+        href: '/la-casa-viva',
+        text: 'La Casa Viva',
+      },
+      {
+        href: '/la-casa-muerta',
         text: 'La Casa Muerta',
       },
     ],
   },
   {
     text: 'reviews',
-    link: '#reviews',
+    href: '#reviews',
   },
   {
     text: 'description',
-    link: '#link',
+    href: '#href',
   },
   {
     text: 'other stuff',
-    link: '#link',
+    href: '#href',
   },
   {
     text: 'almost the last one',
-    link: '#link',
+    href: '#href',
   },
   {
     text: 'not the last one',
-    link: '#link',
+    href: '#href',
   },
   {
     text: 'last',
-    link: '#link',
+    href: '#href',
   },
 ];
 
 export const items = [
   {
     text: 'availability',
-    link: '#availability',
+    href: '#availability',
     isActive: true,
   },
   {
     text: 'reviews',
-    link: '#reviews',
+    href: '#reviews',
   },
   {
     text: 'description',
-    link: '#link',
+    href: '#href',
   },
   {
     text: 'other stuff',
-    link: '#link',
+    href: '#href',
   },
   {
     text: 'almost the last one',
-    link: '#link',
+    href: '#href',
   },
   {
     text: 'not the last one',
-    link: '#link',
+    href: '#href',
   },
   {
     text: 'last',
-    link: '#link',
+    href: '#href',
   },
 ];

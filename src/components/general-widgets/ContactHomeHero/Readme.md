@@ -10,6 +10,8 @@ const { backgroundImageUrl, navigationItems, currencyOptions, languageOptions } 
   headingText="Land of mechanical ships"
   className='ma-ma-ma'
   isBackgroundFilled={true}
+  onChangeCurrency={console.log}
+  onChangeLanguage={console.log}
   phoneNumber={'+1 2345 678912'}
   currencyOptions={currencyOptions}
   currencyValue={currencyOptions[0].value}
