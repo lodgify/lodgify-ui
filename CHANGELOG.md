@@ -1,3 +1,11 @@
+## [1.288.1](https://github.com/lodgify/lodgify-ui/compare/v1.288.0...v1.288.1) (2020-01-16)
+
+
+### Bug Fixes
+
+* **Pictures:** fix lint ([729452b](https://github.com/lodgify/lodgify-ui/commit/729452b109ae76729d7e5ae7afc7666acb664f7e))
+* **Pictures:** replace grid and fix minor regressions ([f6b85a4](https://github.com/lodgify/lodgify-ui/commit/f6b85a481e608e654abedb4e1fc739c1eee56539))
+
 # [1.288.0](https://github.com/lodgify/lodgify-ui/compare/v1.287.1...v1.288.0) (2020-01-16)
 
 
