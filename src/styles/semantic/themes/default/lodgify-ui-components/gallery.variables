@@ -7,7 +7,7 @@
 @galleryContentBackgroundColor: #191919;
 
 @galleryPicturesHoverBoxShadow: 2px 5px 7px rgba(167, 167, 167, 0.61);
-@galleryPicturesTansition: all 0.2s ease-in-out;
+@galleryPicturesTransition: all 0.2s ease-in-out;
 
 @gallerySlideshowContentMaxHeight: 60vmin;
 @gallerySlideshowContentMaxWidth: 60vw;
