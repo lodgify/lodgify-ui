@@ -1,3 +1,17 @@
+# [1.288.0](https://github.com/lodgify/lodgify-ui/compare/v1.287.1...v1.288.0) (2020-01-16)
+
+
+### Bug Fixes
+
+* **ContactHeader:** create header grid ([b9a3a1a](https://github.com/lodgify/lodgify-ui/commit/b9a3a1ac725caea61cec052c20362ca035adadbf))
+* **ContactPropertyHero:** expose onChangeEvents ([b1fc884](https://github.com/lodgify/lodgify-ui/commit/b1fc884c278cfc34f4e1353639103f59aee53b0b))
+* **HorizontalMenu:** rename link prop ([6df16a3](https://github.com/lodgify/lodgify-ui/commit/6df16a3ec92918780e9a966c15d666c614ec6f16))
+
+
+### Features
+
+* **ContactHomeHero:** expose onchange props ([e4a6685](https://github.com/lodgify/lodgify-ui/commit/e4a668580f20634458fb73f91a78f36863ee0025))
+
 ## [1.287.1](https://github.com/lodgify/lodgify-ui/compare/v1.287.0...v1.287.1) (2020-01-15)
 
 
