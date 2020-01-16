@@ -414,6 +414,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -506,6 +507,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -619,6 +621,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.hasShadow === false\` should 
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -1139,6 +1142,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -1231,6 +1235,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -1344,6 +1349,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isRounded === false\` should 
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -1864,6 +1870,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -1956,6 +1963,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -2069,6 +2077,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.isStretched === true\` should
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -2590,6 +2599,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -2682,6 +2692,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -2795,6 +2806,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showIndex === true\` should r
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -3316,6 +3328,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -3408,6 +3421,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -3521,6 +3535,7 @@ exports[`<Slideshow /> if \`ImageGallery\` \`props.showThumbnails === true\` sho
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -4009,6 +4024,7 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -4101,6 +4117,7 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -4214,6 +4231,7 @@ exports[`<Slideshow /> if \`images\` have \`descriptionText\` should return the 
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -4754,6 +4772,7 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -4846,6 +4865,7 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""
@@ -4959,6 +4979,7 @@ exports[`<Slideshow /> if \`props.headingText\` is passed should return the righ
                     >
                       <div />
                       <ResponsiveImage
+                        className=""
                         hasRoundedCorners={false}
                         imageTitle="Image Title"
                         imageUrl=""

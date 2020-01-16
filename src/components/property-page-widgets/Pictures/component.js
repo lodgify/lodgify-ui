@@ -3,12 +3,8 @@ import PropTypes from 'prop-types';
 
 import { EXPLORE_ALL_PICTURES, PROPERTY_PICTURES } from 'utils/default-strings';
 import { getFirstNItems } from 'utils/get-first-n-items';
-import { buildKeyFromStrings } from 'utils/build-key-from-strings';
 import { Grid } from 'layout/Grid';
-import { GridRow } from 'layout/GridRow';
 import { GridColumn } from 'layout/GridColumn';
-import { ShowOn } from 'layout/ShowOn';
-import { Divider } from 'elements/Divider';
 import { ResponsiveImage } from 'media/ResponsiveImage';
 import { Heading } from 'typography/Heading';
 import { Gallery } from 'media/Gallery';
@@ -51,40 +47,28 @@ export const Component = ({
       <GridColumn width={12}>
         <Heading>{headingText}</Heading>
       </GridColumn>
-      <GridRow>
+      <section className="property-pictures">
         {getFirstNItems(
           numberOfThumbnails,
           adaptThumbnailImages(galleryImages)
         ).map((imageProps, index) => (
-          <GridColumn
-            computer={4}
+          <div
+            className="image-container"
             data-testid={testid(`thumbnail_${index}`)}
-            key={buildKeyFromStrings(imageProps.imageUrl, index)}
-            mobile={6}
+            key={index}
             onClick={() => {
               triggerIsOpen(index);
             }}
-            tablet={4}
           >
-            <ShowOn computer parent="div" tablet widescreen>
-              <ResponsiveImage
-                className="gallery-thumbnail"
-                {...imageProps}
-                size="huge"
-              />
-            </ShowOn>
-            <ShowOn mobile parent="div">
-              <ResponsiveImage
-                className="gallery-thumbnail"
-                {...imageProps}
-                hasRoundedCorners
-                size="small"
-              />
-            </ShowOn>
-            <Divider />
-          </GridColumn>
+            <ResponsiveImage
+              {...imageProps}
+              className="gallery-thumbnail"
+              isFluid
+              willFill
+            />
+          </div>
         ))}
-      </GridRow>
+      </section>
       <GridColumn width={12}>
         <Gallery
           data-testid={testid('gallery')}

@@ -17,6 +17,7 @@ const testid = testidFactory(TESTID_PREFIX);
 // eslint-disable-next-line jsdoc/require-jsdoc
 
 export const Component = ({
+  className,
   hasRoundedCorners,
   isCircular,
   isFluid,
@@ -54,7 +55,7 @@ export const Component = ({
   return (
     <figure
       alt={imageTitle}
-      className={classnames('responsive-image', {
+      className={classnames('responsive-image', className, {
         isLoaded: isLoaded || isError,
         isCircular,
         willFill,
@@ -88,6 +89,7 @@ export const Component = ({
 Component.displayName = 'ResponsiveImage';
 
 Component.defaultProps = {
+  className: '',
   hasRoundedCorners: false,
   imageTitle: IMAGE_TITLE,
   imageUrl: '',
@@ -103,6 +105,8 @@ Component.defaultProps = {
 };
 
 Component.propTypes = {
+  /** The custom classes. */
+  className: string,
   /** Is the image rounded on the corners. */
   hasRoundedCorners: bool,
   /** Title of the image to show when hovering it on desktop browsers. */

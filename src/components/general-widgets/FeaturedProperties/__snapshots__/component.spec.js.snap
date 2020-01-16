@@ -81,6 +81,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
           >
             <div />
             <ResponsiveImage
+              className=""
               hasRoundedCorners={false}
               imageTitle="Image Title"
               imageUrl=""
@@ -430,6 +431,7 @@ exports[`<FeaturedProperties /> by default should render the right structure 1`]
           >
             <div />
             <ResponsiveImage
+              className=""
               hasRoundedCorners={false}
               imageTitle="Image Title"
               imageUrl=""
@@ -833,6 +835,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
           >
             <div />
             <ResponsiveImage
+              className=""
               hasRoundedCorners={false}
               imageTitle="Image Title"
               imageUrl=""
@@ -1182,6 +1185,7 @@ exports[`<FeaturedProperties /> if \`props.headingText\` is passed should render
           >
             <div />
             <ResponsiveImage
+              className=""
               hasRoundedCorners={false}
               imageTitle="Image Title"
               imageUrl=""
