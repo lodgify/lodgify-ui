@@ -1,0 +1,35 @@
+/*******************************
+            Theme
+*******************************/
+
+@type     : 'lodgify-ui-component';
+
+@element  : 'property-pictures';
+
+@import (multiple) '../../theme.config';
+
+/*--------------------------
+  Property Pictures
+--------------------------*/
+
+.property-pictures {
+  --number-of-columns: @propertyPicturesColumnNumberMobile;
+  @media (min-width: @tabletBreakpoint) {
+    --number-of-columns: @propertyPicturesColumnNumberTablet;
+  }
+  @media (min-width: @computerBreakpoint) {
+    --number-of-columns: @propertyPicturesColumnNumberComputer;
+  }
+  display: grid;
+  grid-template-columns: repeat(var(--number-of-columns), @propertyPicturesColumnDimension);
+  grid-auto-rows: @propertyPicturesAutoRows;
+  grid-column-gap: @propertyPicturesColumnGap;
+  grid-row-gap: @propertyPicturesRowGap;
+  .image-container {
+    cursor: pointer;
+    transition: @propertyPicturesPicturesTansition;
+    &:hover {
+      box-shadow: @propertyPicturesPicturesHoverBoxShadow;
+    }
+  }
+}

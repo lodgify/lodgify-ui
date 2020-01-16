@@ -55,6 +55,7 @@ exports[`<FullBleed /> by default should have the right structure 1`] = `
         >
           <div />
           <ResponsiveImage
+            className=""
             hasRoundedCorners={false}
             imageTitle="Image Title"
             imageUrl=""
@@ -169,6 +170,7 @@ exports[`<FullBleed /> if \`hasGradient\` is passed should have the right struct
         >
           <div />
           <ResponsiveImage
+            className=""
             hasRoundedCorners={false}
             imageTitle="Image Title"
             imageUrl=""
@@ -283,6 +285,7 @@ exports[`<FullBleed /> if \`props.children > 0\` should have the right structure
         >
           <div />
           <ResponsiveImage
+            className=""
             hasRoundedCorners={false}
             imageTitle="Image Title"
             imageUrl=""

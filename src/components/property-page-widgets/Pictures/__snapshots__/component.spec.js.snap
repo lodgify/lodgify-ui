@@ -21,322 +21,106 @@ exports[`<Pictures /> should render the correct structure 1`] = `
       Property pictures
     </Heading>
   </GridColumn>
-  <GridRow
-    horizontalAlignContent="left"
+  <section
+    className="property-pictures"
   >
-    <GridColumn
-      computer={4}
+    <div
+      className="image-container"
       data-testid="pictures-thumbnail_0"
-      id={null}
-      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg0"
-      mobile={6}
+      key="0"
       onClick={[Function]}
-      tablet={4}
-      verticalAlignContent="top"
-      width={null}
     >
-      <ShowOn
-        computer={true}
-        mobile={false}
-        parent="div"
-        parentProps={Object {}}
-        tablet={true}
-        widescreen={true}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Two cats"
-          isLazyLoaded={true}
-          label="Two cats"
-          size="huge"
-        />
-      </ShowOn>
-      <ShowOn
-        computer={false}
-        mobile={true}
-        parent="div"
-        parentProps={Object {}}
-        tablet={false}
-        widescreen={false}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          hasRoundedCorners={true}
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Two cats"
-          isLazyLoaded={true}
-          label="Two cats"
-          size="small"
-        />
-      </ShowOn>
-      <Divider
-        className=""
-        hasLine={false}
-        size="medium"
+      <withLazyLoad(ResponsiveImage)
+        className="gallery-thumbnail"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        imageUrlAlternativeText="Two cats"
+        isFluid={true}
+        isLazyLoaded={true}
+        label="Two cats"
+        willFill={true}
       />
-    </GridColumn>
-    <GridColumn
-      computer={4}
+    </div>
+    <div
+      className="image-container"
       data-testid="pictures-thumbnail_1"
-      id={null}
-      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg1"
-      mobile={6}
+      key="1"
       onClick={[Function]}
-      tablet={4}
-      verticalAlignContent="top"
-      width={null}
     >
-      <ShowOn
-        computer={true}
-        mobile={false}
-        parent="div"
-        parentProps={Object {}}
-        tablet={true}
-        widescreen={true}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Two more cats"
-          isLazyLoaded={true}
-          label="Two more cats"
-          size="huge"
-        />
-      </ShowOn>
-      <ShowOn
-        computer={false}
-        mobile={true}
-        parent="div"
-        parentProps={Object {}}
-        tablet={false}
-        widescreen={false}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          hasRoundedCorners={true}
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Two more cats"
-          isLazyLoaded={true}
-          label="Two more cats"
-          size="small"
-        />
-      </ShowOn>
-      <Divider
-        className=""
-        hasLine={false}
-        size="medium"
+      <withLazyLoad(ResponsiveImage)
+        className="gallery-thumbnail"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        imageUrlAlternativeText="Two more cats"
+        isFluid={true}
+        isLazyLoaded={true}
+        label="Two more cats"
+        willFill={true}
       />
-    </GridColumn>
-    <GridColumn
-      computer={4}
+    </div>
+    <div
+      className="image-container"
       data-testid="pictures-thumbnail_2"
-      id={null}
-      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg2"
-      mobile={6}
+      key="2"
       onClick={[Function]}
-      tablet={4}
-      verticalAlignContent="top"
-      width={null}
     >
-      <ShowOn
-        computer={true}
-        mobile={false}
-        parent="div"
-        parentProps={Object {}}
-        tablet={true}
-        widescreen={true}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Much cats"
-          isLazyLoaded={true}
-          label="Much cats"
-          size="huge"
-        />
-      </ShowOn>
-      <ShowOn
-        computer={false}
-        mobile={true}
-        parent="div"
-        parentProps={Object {}}
-        tablet={false}
-        widescreen={false}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          hasRoundedCorners={true}
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Much cats"
-          isLazyLoaded={true}
-          label="Much cats"
-          size="small"
-        />
-      </ShowOn>
-      <Divider
-        className=""
-        hasLine={false}
-        size="medium"
+      <withLazyLoad(ResponsiveImage)
+        className="gallery-thumbnail"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        imageUrlAlternativeText="Much cats"
+        isFluid={true}
+        isLazyLoaded={true}
+        label="Much cats"
+        willFill={true}
       />
-    </GridColumn>
-    <GridColumn
-      computer={4}
+    </div>
+    <div
+      className="image-container"
       data-testid="pictures-thumbnail_3"
-      id={null}
-      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg3"
-      mobile={6}
+      key="3"
       onClick={[Function]}
-      tablet={4}
-      verticalAlignContent="top"
-      width={null}
     >
-      <ShowOn
-        computer={true}
-        mobile={false}
-        parent="div"
-        parentProps={Object {}}
-        tablet={true}
-        widescreen={true}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Two cats"
-          isLazyLoaded={true}
-          label="Two cats"
-          size="huge"
-        />
-      </ShowOn>
-      <ShowOn
-        computer={false}
-        mobile={true}
-        parent="div"
-        parentProps={Object {}}
-        tablet={false}
-        widescreen={false}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          hasRoundedCorners={true}
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Two cats"
-          isLazyLoaded={true}
-          label="Two cats"
-          size="small"
-        />
-      </ShowOn>
-      <Divider
-        className=""
-        hasLine={false}
-        size="medium"
+      <withLazyLoad(ResponsiveImage)
+        className="gallery-thumbnail"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        imageUrlAlternativeText="Two cats"
+        isFluid={true}
+        isLazyLoaded={true}
+        label="Two cats"
+        willFill={true}
       />
-    </GridColumn>
-    <GridColumn
-      computer={4}
+    </div>
+    <div
+      className="image-container"
       data-testid="pictures-thumbnail_4"
-      id={null}
-      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg4"
-      mobile={6}
+      key="4"
       onClick={[Function]}
-      tablet={4}
-      verticalAlignContent="top"
-      width={null}
     >
-      <ShowOn
-        computer={true}
-        mobile={false}
-        parent="div"
-        parentProps={Object {}}
-        tablet={true}
-        widescreen={true}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Two more cats"
-          isLazyLoaded={true}
-          label="Two more cats"
-          size="huge"
-        />
-      </ShowOn>
-      <ShowOn
-        computer={false}
-        mobile={true}
-        parent="div"
-        parentProps={Object {}}
-        tablet={false}
-        widescreen={false}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          hasRoundedCorners={true}
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Two more cats"
-          isLazyLoaded={true}
-          label="Two more cats"
-          size="small"
-        />
-      </ShowOn>
-      <Divider
-        className=""
-        hasLine={false}
-        size="medium"
+      <withLazyLoad(ResponsiveImage)
+        className="gallery-thumbnail"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        imageUrlAlternativeText="Two more cats"
+        isFluid={true}
+        isLazyLoaded={true}
+        label="Two more cats"
+        willFill={true}
       />
-    </GridColumn>
-    <GridColumn
-      computer={4}
+    </div>
+    <div
+      className="image-container"
       data-testid="pictures-thumbnail_5"
-      id={null}
-      key="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg5"
-      mobile={6}
+      key="5"
       onClick={[Function]}
-      tablet={4}
-      verticalAlignContent="top"
-      width={null}
     >
-      <ShowOn
-        computer={true}
-        mobile={false}
-        parent="div"
-        parentProps={Object {}}
-        tablet={true}
-        widescreen={true}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Much cats"
-          isLazyLoaded={true}
-          label="Much cats"
-          size="huge"
-        />
-      </ShowOn>
-      <ShowOn
-        computer={false}
-        mobile={true}
-        parent="div"
-        parentProps={Object {}}
-        tablet={false}
-        widescreen={false}
-      >
-        <withLazyLoad(ResponsiveImage)
-          className="gallery-thumbnail"
-          hasRoundedCorners={true}
-          imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
-          imageUrlAlternativeText="Much cats"
-          isLazyLoaded={true}
-          label="Much cats"
-          size="small"
-        />
-      </ShowOn>
-      <Divider
-        className=""
-        hasLine={false}
-        size="medium"
+      <withLazyLoad(ResponsiveImage)
+        className="gallery-thumbnail"
+        imageUrl="https://li3.cdbcdn.com/oh/522a12d9-ab51-4635-94c1-42536f286e4d.jpg"
+        imageUrlAlternativeText="Much cats"
+        isFluid={true}
+        isLazyLoaded={true}
+        label="Much cats"
+        willFill={true}
       />
-    </GridColumn>
-  </GridRow>
+    </div>
+  </section>
   <GridColumn
     id={null}
     verticalAlignContent="top"

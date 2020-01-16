@@ -823,6 +823,7 @@ exports[`<SlideshowHero /> by default should render the right structure 1`] = `
                           >
                             <div />
                             <ResponsiveImage
+                              className=""
                               hasRoundedCorners={false}
                               imageTitle="Image Title"
                               imageUrl=""
