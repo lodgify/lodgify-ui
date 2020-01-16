@@ -35,14 +35,10 @@ export const Component = ({
   backgroundImageUrl,
   backgroundImageWidth,
   bottomOffset,
-  headingText,
   className,
   currencyNoResultsText,
   currencyOptions,
   currencyValue,
-  isSearchBarDateRangePickerLoading,
-  languageOptions,
-  languageValue,
   headerLogoHref,
   headerLogoSize,
   headerLogoSizes,
@@ -51,9 +47,15 @@ export const Component = ({
   headerLogoSubText,
   headerLogoText,
   headerNavigationItems,
+  headerPrimaryCTA,
+  headingText,
+  isSearchBarDateRangePickerLoading,
+  languageOptions,
+  languageValue,
+  onChangeCurrency,
+  onChangeLanguage,
   phoneNumber,
   placeholderBackgroundImageUrl,
-  headerPrimaryCTA,
   searchBarDateRangePickerLocaleCode,
   searchBarDatesCheckInLabel,
   searchBarDatesCheckOutLabel,
@@ -120,6 +122,8 @@ export const Component = ({
         logoSubText={headerLogoSubText}
         logoText={headerLogoText}
         navigationMenuItems={headerNavigationItems}
+        onChangeCurrency={onChangeCurrency}
+        onChangeLanguage={onChangeLanguage}
         phoneNumber={phoneNumber}
         primaryCTA={headerPrimaryCTA}
       />
