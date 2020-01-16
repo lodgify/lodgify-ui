@@ -57,6 +57,27 @@ exports[`ContactHomeHero should render the right structure 1`] = `
         ],
         "text": "All properties",
       },
+      Object {
+        "subItems": Array [
+          Object {
+            "href": "/la-casa-viva",
+            "text": "La Casa Viva",
+          },
+          Object {
+            "href": "/la-casa-muerta",
+            "text": "La Casa Muerta",
+          },
+          Object {
+            "href": "/the-white-lodge",
+            "text": "The White Lodge",
+          },
+          Object {
+            "href": "/the-black-lodge",
+            "text": "The Black Lodge",
+          },
+        ],
+        "text": "LOL",
+      },
     ]
   }
   headerPrimaryCTA={null}
@@ -277,6 +298,27 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                 ],
                 "text": "All properties",
               },
+              Object {
+                "subItems": Array [
+                  Object {
+                    "href": "/la-casa-viva",
+                    "text": "La Casa Viva",
+                  },
+                  Object {
+                    "href": "/la-casa-muerta",
+                    "text": "La Casa Muerta",
+                  },
+                  Object {
+                    "href": "/the-white-lodge",
+                    "text": "The White Lodge",
+                  },
+                  Object {
+                    "href": "/the-black-lodge",
+                    "text": "The Black Lodge",
+                  },
+                ],
+                "text": "LOL",
+              },
             ]
           }
           phoneNumber="+1 2345 678912"
@@ -291,149 +333,219 @@ exports[`ContactHomeHero should render the right structure 1`] = `
               mobile={false}
               parent="div"
               parentProps={Object {}}
-              tablet={true}
+              tablet={false}
               widescreen={true}
             >
               <div
-                className="show-on-tablet show-on-computer show-on-widescreen"
+                className="show-on-computer show-on-widescreen"
               >
-                <FlexContainer
-                  alignContent={null}
-                  alignItems="center"
-                  className={null}
-                  flexDirection={null}
-                  flexWrap={null}
-                  justifyContent="space-between"
+                <div
+                  className="header-grid"
                 >
-                  <div
-                    className="flex-container"
-                    style={
-                      Object {
-                        "alignContent": null,
-                        "alignItems": "center",
-                        "display": "flex",
-                        "flexDirection": null,
-                        "flexGrow": "1",
-                        "flexWrap": null,
-                        "height": "100%",
-                        "justifyContent": "space-between",
-                      }
-                    }
-                  >
-                    <Menu>
-                      <div
-                        className="ui menu"
-                      >
-                        <MenuItem>
-                          <div
-                            className="item"
-                            onClick={[Function]}
+                  <Menu>
+                    <div
+                      className="ui menu"
+                    >
+                      <MenuItem>
+                        <div
+                          className="item"
+                          onClick={[Function]}
+                        >
+                          <Submenu
+                            isMenuItem={false}
+                            isSearchable={false}
+                            isTriggerUnderlined={false}
+                            isTriggeredOnHover={false}
+                            items={
+                              Array [
+                                Object {
+                                  "text": "English",
+                                  "value": "en",
+                                },
+                                Object {
+                                  "text": "German",
+                                  "value": "de",
+                                },
+                                Object {
+                                  "text": "Japanese",
+                                  "value": "jp",
+                                },
+                                Object {
+                                  "text": "Italian",
+                                  "value": "it",
+                                },
+                              ]
+                            }
+                            name="language"
+                            noResultsText="No results"
+                            onChange={[Function]}
+                            pointing="top left"
+                            value="en"
+                            willOpenAbove={false}
                           >
-                            <Submenu
-                              isMenuItem={false}
-                              isSearchable={false}
-                              isTriggerUnderlined={false}
-                              isTriggeredOnHover={false}
-                              items={
+                            <Dropdown
+                              additionLabel="Add "
+                              additionPosition="top"
+                              className=""
+                              closeOnBlur={true}
+                              closeOnEscape={true}
+                              deburr={false}
+                              icon={
+                                <Icon
+                                  className={null}
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="caret down"
+                                  path={null}
+                                  size="small"
+                                />
+                              }
+                              item={false}
+                              minCharacters={1}
+                              name="language"
+                              noResultsMessage="No results"
+                              onChange={[Function]}
+                              openOnFocus={true}
+                              options={
                                 Array [
                                   Object {
+                                    "key": "English",
                                     "text": "English",
                                     "value": "en",
                                   },
                                   Object {
+                                    "key": "German",
                                     "text": "German",
                                     "value": "de",
                                   },
                                   Object {
+                                    "key": "Japanese",
                                     "text": "Japanese",
                                     "value": "jp",
                                   },
                                   Object {
+                                    "key": "Italian",
                                     "text": "Italian",
                                     "value": "it",
                                   },
                                 ]
                               }
-                              name="language"
-                              noResultsText="No results"
-                              onChange={[Function]}
                               pointing="top left"
+                              renderLabel={[Function]}
+                              scrolling={true}
+                              search={false}
+                              searchInput="text"
+                              selectOnBlur={true}
+                              selectOnNavigation={true}
+                              simple={false}
+                              trigger={null}
+                              upward={false}
                               value="en"
-                              willOpenAbove={true}
+                              wrapSelection={true}
                             >
-                              <Dropdown
-                                additionLabel="Add "
-                                additionPosition="top"
-                                className=""
-                                closeOnBlur={true}
-                                closeOnEscape={true}
-                                deburr={false}
-                                icon={
-                                  <Icon
-                                    className={null}
-                                    color={null}
-                                    hasBorder={false}
-                                    isButton={false}
-                                    isCircular={false}
-                                    isColorInverted={false}
-                                    isDisabled={false}
-                                    isLabelLeft={false}
-                                    labelText={null}
-                                    labelWeight={null}
-                                    name="caret down"
-                                    path={null}
-                                    size="small"
-                                  />
+                              <Ref
+                                innerRef={
+                                  Object {
+                                    "current": <div
+                                      aria-expanded="false"
+                                      class="ui scrolling top left pointing dropdown"
+                                      name="language"
+                                      role="listbox"
+                                      tabindex="0"
+                                    >
+                                      <div
+                                        aria-atomic="true"
+                                        aria-live="polite"
+                                        class="text"
+                                        role="alert"
+                                      >
+                                        English
+                                      </div>
+                                      <i
+                                        class="icon small"
+                                      >
+                                        <svg
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            d="M20,8.5l-8,7-8-7Z"
+                                            fill="currentColor"
+                                          />
+                                        </svg>
+                                      </i>
+                                      <div
+                                        class="menu transition"
+                                      >
+                                        <div
+                                          aria-checked="true"
+                                          aria-selected="true"
+                                          class="active selected item"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            English
+                                          </span>
+                                        </div>
+                                        <div
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            German
+                                          </span>
+                                        </div>
+                                        <div
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            Japanese
+                                          </span>
+                                        </div>
+                                        <div
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <span
+                                            class="text"
+                                          >
+                                            Italian
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>,
+                                  }
                                 }
-                                item={false}
-                                minCharacters={1}
-                                name="language"
-                                noResultsMessage="No results"
-                                onChange={[Function]}
-                                openOnFocus={true}
-                                options={
-                                  Array [
-                                    Object {
-                                      "key": "English",
-                                      "text": "English",
-                                      "value": "en",
-                                    },
-                                    Object {
-                                      "key": "German",
-                                      "text": "German",
-                                      "value": "de",
-                                    },
-                                    Object {
-                                      "key": "Japanese",
-                                      "text": "Japanese",
-                                      "value": "jp",
-                                    },
-                                    Object {
-                                      "key": "Italian",
-                                      "text": "Italian",
-                                      "value": "it",
-                                    },
-                                  ]
-                                }
-                                pointing="top left"
-                                renderLabel={[Function]}
-                                scrolling={true}
-                                search={false}
-                                searchInput="text"
-                                selectOnBlur={true}
-                                selectOnNavigation={true}
-                                simple={false}
-                                trigger={null}
-                                upward={true}
-                                value="en"
-                                wrapSelection={true}
                               >
-                                <Ref
+                                <RefFindNode
                                   innerRef={
                                     Object {
                                       "current": <div
                                         aria-expanded="false"
-                                        class="ui scrolling upward top left pointing dropdown"
+                                        class="ui scrolling top left pointing dropdown"
                                         name="language"
                                         role="listbox"
                                         tabindex="0"
@@ -518,399 +630,410 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                     }
                                   }
                                 >
-                                  <RefFindNode
-                                    innerRef={
-                                      Object {
-                                        "current": <div
-                                          aria-expanded="false"
-                                          class="ui scrolling upward top left pointing dropdown"
-                                          name="language"
-                                          role="listbox"
-                                          tabindex="0"
-                                        >
-                                          <div
-                                            aria-atomic="true"
-                                            aria-live="polite"
-                                            class="text"
-                                            role="alert"
-                                          >
-                                            English
-                                          </div>
-                                          <i
-                                            class="icon small"
-                                          >
-                                            <svg
-                                              viewBox="0 0 24 24"
-                                            >
-                                              <path
-                                                d="M20,8.5l-8,7-8-7Z"
-                                                fill="currentColor"
-                                              />
-                                            </svg>
-                                          </i>
-                                          <div
-                                            class="menu transition"
-                                          >
-                                            <div
-                                              aria-checked="true"
-                                              aria-selected="true"
-                                              class="active selected item"
-                                              role="option"
-                                              style="pointer-events: all;"
-                                            >
-                                              <span
-                                                class="text"
-                                              >
-                                                English
-                                              </span>
-                                            </div>
-                                            <div
-                                              aria-checked="false"
-                                              aria-selected="false"
-                                              class="item"
-                                              role="option"
-                                              style="pointer-events: all;"
-                                            >
-                                              <span
-                                                class="text"
-                                              >
-                                                German
-                                              </span>
-                                            </div>
-                                            <div
-                                              aria-checked="false"
-                                              aria-selected="false"
-                                              class="item"
-                                              role="option"
-                                              style="pointer-events: all;"
-                                            >
-                                              <span
-                                                class="text"
-                                              >
-                                                Japanese
-                                              </span>
-                                            </div>
-                                            <div
-                                              aria-checked="false"
-                                              aria-selected="false"
-                                              class="item"
-                                              role="option"
-                                              style="pointer-events: all;"
-                                            >
-                                              <span
-                                                class="text"
-                                              >
-                                                Italian
-                                              </span>
-                                            </div>
-                                          </div>
-                                        </div>,
-                                      }
-                                    }
+                                  <div
+                                    aria-expanded={false}
+                                    className="ui scrolling top left pointing dropdown"
+                                    name="language"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    onClick={[Function]}
+                                    onFocus={[Function]}
+                                    onMouseDown={[Function]}
+                                    role="listbox"
+                                    tabIndex={0}
                                   >
                                     <div
-                                      aria-expanded={false}
-                                      className="ui scrolling upward top left pointing dropdown"
-                                      name="language"
-                                      onBlur={[Function]}
-                                      onChange={[Function]}
-                                      onClick={[Function]}
-                                      onFocus={[Function]}
-                                      onMouseDown={[Function]}
-                                      role="listbox"
-                                      tabIndex={0}
+                                      aria-atomic={true}
+                                      aria-live="polite"
+                                      className="text"
+                                      role="alert"
                                     >
-                                      <div
-                                        aria-atomic={true}
-                                        aria-live="polite"
-                                        className="text"
-                                        role="alert"
-                                      >
-                                        English
-                                      </div>
-                                      <Icon
-                                        className=""
-                                        color={null}
-                                        hasBorder={false}
-                                        isButton={false}
-                                        isCircular={false}
-                                        isColorInverted={false}
-                                        isDisabled={false}
-                                        isLabelLeft={false}
-                                        labelText={null}
-                                        labelWeight={null}
-                                        name="caret down"
-                                        onClick={[Function]}
-                                        path={null}
-                                        size="small"
-                                      >
-                                        <i
-                                          className="icon small"
-                                          onClick={[Function]}
-                                        >
-                                          <svg
-                                            viewBox="0 0 24 24"
-                                          >
-                                            <path
-                                              d="M20,8.5l-8,7-8-7Z"
-                                              fill="currentColor"
-                                            />
-                                          </svg>
-                                        </i>
-                                      </Icon>
-                                      <DropdownMenu>
-                                        <div
-                                          className="menu transition"
-                                        >
-                                          <DropdownItem
-                                            active={true}
-                                            key="English"
-                                            onClick={[Function]}
-                                            selected={true}
-                                            style={
-                                              Object {
-                                                "pointerEvents": "all",
-                                              }
-                                            }
-                                            text="English"
-                                            value="en"
-                                          >
-                                            <div
-                                              aria-checked={true}
-                                              aria-selected={true}
-                                              className="active selected item"
-                                              onClick={[Function]}
-                                              role="option"
-                                              style={
-                                                Object {
-                                                  "pointerEvents": "all",
-                                                }
-                                              }
-                                            >
-                                              <span
-                                                className="text"
-                                              >
-                                                English
-                                              </span>
-                                            </div>
-                                          </DropdownItem>
-                                          <DropdownItem
-                                            active={false}
-                                            key="German"
-                                            onClick={[Function]}
-                                            selected={false}
-                                            style={
-                                              Object {
-                                                "pointerEvents": "all",
-                                              }
-                                            }
-                                            text="German"
-                                            value="de"
-                                          >
-                                            <div
-                                              aria-checked={false}
-                                              aria-selected={false}
-                                              className="item"
-                                              onClick={[Function]}
-                                              role="option"
-                                              style={
-                                                Object {
-                                                  "pointerEvents": "all",
-                                                }
-                                              }
-                                            >
-                                              <span
-                                                className="text"
-                                              >
-                                                German
-                                              </span>
-                                            </div>
-                                          </DropdownItem>
-                                          <DropdownItem
-                                            active={false}
-                                            key="Japanese"
-                                            onClick={[Function]}
-                                            selected={false}
-                                            style={
-                                              Object {
-                                                "pointerEvents": "all",
-                                              }
-                                            }
-                                            text="Japanese"
-                                            value="jp"
-                                          >
-                                            <div
-                                              aria-checked={false}
-                                              aria-selected={false}
-                                              className="item"
-                                              onClick={[Function]}
-                                              role="option"
-                                              style={
-                                                Object {
-                                                  "pointerEvents": "all",
-                                                }
-                                              }
-                                            >
-                                              <span
-                                                className="text"
-                                              >
-                                                Japanese
-                                              </span>
-                                            </div>
-                                          </DropdownItem>
-                                          <DropdownItem
-                                            active={false}
-                                            key="Italian"
-                                            onClick={[Function]}
-                                            selected={false}
-                                            style={
-                                              Object {
-                                                "pointerEvents": "all",
-                                              }
-                                            }
-                                            text="Italian"
-                                            value="it"
-                                          >
-                                            <div
-                                              aria-checked={false}
-                                              aria-selected={false}
-                                              className="item"
-                                              onClick={[Function]}
-                                              role="option"
-                                              style={
-                                                Object {
-                                                  "pointerEvents": "all",
-                                                }
-                                              }
-                                            >
-                                              <span
-                                                className="text"
-                                              >
-                                                Italian
-                                              </span>
-                                            </div>
-                                          </DropdownItem>
-                                        </div>
-                                      </DropdownMenu>
+                                      English
                                     </div>
-                                  </RefFindNode>
-                                </Ref>
-                              </Dropdown>
-                            </Submenu>
-                          </div>
-                        </MenuItem>
-                        <MenuItem>
-                          <div
-                            className="item"
-                            onClick={[Function]}
+                                    <Icon
+                                      className=""
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="caret down"
+                                      onClick={[Function]}
+                                      path={null}
+                                      size="small"
+                                    >
+                                      <i
+                                        className="icon small"
+                                        onClick={[Function]}
+                                      >
+                                        <svg
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            d="M20,8.5l-8,7-8-7Z"
+                                            fill="currentColor"
+                                          />
+                                        </svg>
+                                      </i>
+                                    </Icon>
+                                    <DropdownMenu>
+                                      <div
+                                        className="menu transition"
+                                      >
+                                        <DropdownItem
+                                          active={true}
+                                          key="English"
+                                          onClick={[Function]}
+                                          selected={true}
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                          text="English"
+                                          value="en"
+                                        >
+                                          <div
+                                            aria-checked={true}
+                                            aria-selected={true}
+                                            className="active selected item"
+                                            onClick={[Function]}
+                                            role="option"
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                          >
+                                            <span
+                                              className="text"
+                                            >
+                                              English
+                                            </span>
+                                          </div>
+                                        </DropdownItem>
+                                        <DropdownItem
+                                          active={false}
+                                          key="German"
+                                          onClick={[Function]}
+                                          selected={false}
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                          text="German"
+                                          value="de"
+                                        >
+                                          <div
+                                            aria-checked={false}
+                                            aria-selected={false}
+                                            className="item"
+                                            onClick={[Function]}
+                                            role="option"
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                          >
+                                            <span
+                                              className="text"
+                                            >
+                                              German
+                                            </span>
+                                          </div>
+                                        </DropdownItem>
+                                        <DropdownItem
+                                          active={false}
+                                          key="Japanese"
+                                          onClick={[Function]}
+                                          selected={false}
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                          text="Japanese"
+                                          value="jp"
+                                        >
+                                          <div
+                                            aria-checked={false}
+                                            aria-selected={false}
+                                            className="item"
+                                            onClick={[Function]}
+                                            role="option"
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                          >
+                                            <span
+                                              className="text"
+                                            >
+                                              Japanese
+                                            </span>
+                                          </div>
+                                        </DropdownItem>
+                                        <DropdownItem
+                                          active={false}
+                                          key="Italian"
+                                          onClick={[Function]}
+                                          selected={false}
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                          text="Italian"
+                                          value="it"
+                                        >
+                                          <div
+                                            aria-checked={false}
+                                            aria-selected={false}
+                                            className="item"
+                                            onClick={[Function]}
+                                            role="option"
+                                            style={
+                                              Object {
+                                                "pointerEvents": "all",
+                                              }
+                                            }
+                                          >
+                                            <span
+                                              className="text"
+                                            >
+                                              Italian
+                                            </span>
+                                          </div>
+                                        </DropdownItem>
+                                      </div>
+                                    </DropdownMenu>
+                                  </div>
+                                </RefFindNode>
+                              </Ref>
+                            </Dropdown>
+                          </Submenu>
+                        </div>
+                      </MenuItem>
+                      <MenuItem>
+                        <div
+                          className="item"
+                          onClick={[Function]}
+                        >
+                          <Submenu
+                            isMenuItem={false}
+                            isSearchable={true}
+                            isTriggerUnderlined={false}
+                            isTriggeredOnHover={false}
+                            items={
+                              Array [
+                                Object {
+                                  "label": "Euro",
+                                  "text": "EUR",
+                                  "value": "EUR",
+                                },
+                                Object {
+                                  "label": "US Dollar",
+                                  "text": "USD",
+                                  "value": "USD",
+                                },
+                                Object {
+                                  "label": "Japanese Yen",
+                                  "text": "JPY",
+                                  "value": "JPY",
+                                },
+                              ]
+                            }
+                            name="currency"
+                            noResultsText=""
+                            onChange={[Function]}
+                            pointing="top left"
+                            value="EUR"
+                            willOpenAbove={false}
                           >
-                            <Submenu
-                              isMenuItem={false}
-                              isSearchable={true}
-                              isTriggerUnderlined={false}
-                              isTriggeredOnHover={false}
-                              items={
+                            <Dropdown
+                              additionLabel="Add "
+                              additionPosition="top"
+                              className=""
+                              closeOnBlur={true}
+                              closeOnEscape={true}
+                              deburr={false}
+                              icon={
+                                <Icon
+                                  className={null}
+                                  color={null}
+                                  hasBorder={false}
+                                  isButton={false}
+                                  isCircular={false}
+                                  isColorInverted={false}
+                                  isDisabled={false}
+                                  isLabelLeft={false}
+                                  labelText={null}
+                                  labelWeight={null}
+                                  name="caret down"
+                                  path={null}
+                                  size="small"
+                                />
+                              }
+                              item={false}
+                              minCharacters={1}
+                              name="currency"
+                              noResultsMessage=""
+                              onChange={[Function]}
+                              openOnFocus={true}
+                              options={
                                 Array [
                                   Object {
+                                    "className": "has-label",
                                     "label": "Euro",
                                     "text": "EUR",
                                     "value": "EUR",
                                   },
                                   Object {
+                                    "className": "has-label",
                                     "label": "US Dollar",
                                     "text": "USD",
                                     "value": "USD",
                                   },
                                   Object {
+                                    "className": "has-label",
                                     "label": "Japanese Yen",
                                     "text": "JPY",
                                     "value": "JPY",
                                   },
                                 ]
                               }
-                              name="currency"
-                              noResultsText=""
-                              onChange={[Function]}
                               pointing="top left"
+                              renderLabel={[Function]}
+                              scrolling={true}
+                              search={true}
+                              searchInput="text"
+                              selectOnBlur={true}
+                              selectOnNavigation={true}
+                              simple={false}
+                              style={
+                                Object {
+                                  "minWidth": 56,
+                                }
+                              }
+                              trigger={null}
+                              upward={false}
                               value="EUR"
-                              willOpenAbove={true}
+                              wrapSelection={true}
                             >
-                              <Dropdown
-                                additionLabel="Add "
-                                additionPosition="top"
-                                className=""
-                                closeOnBlur={true}
-                                closeOnEscape={true}
-                                deburr={false}
-                                icon={
-                                  <Icon
-                                    className={null}
-                                    color={null}
-                                    hasBorder={false}
-                                    isButton={false}
-                                    isCircular={false}
-                                    isColorInverted={false}
-                                    isDisabled={false}
-                                    isLabelLeft={false}
-                                    labelText={null}
-                                    labelWeight={null}
-                                    name="caret down"
-                                    path={null}
-                                    size="small"
-                                  />
-                                }
-                                item={false}
-                                minCharacters={1}
-                                name="currency"
-                                noResultsMessage=""
-                                onChange={[Function]}
-                                openOnFocus={true}
-                                options={
-                                  Array [
-                                    Object {
-                                      "className": "has-label",
-                                      "label": "Euro",
-                                      "text": "EUR",
-                                      "value": "EUR",
-                                    },
-                                    Object {
-                                      "className": "has-label",
-                                      "label": "US Dollar",
-                                      "text": "USD",
-                                      "value": "USD",
-                                    },
-                                    Object {
-                                      "className": "has-label",
-                                      "label": "Japanese Yen",
-                                      "text": "JPY",
-                                      "value": "JPY",
-                                    },
-                                  ]
-                                }
-                                pointing="top left"
-                                renderLabel={[Function]}
-                                scrolling={true}
-                                search={true}
-                                searchInput="text"
-                                selectOnBlur={true}
-                                selectOnNavigation={true}
-                                simple={false}
-                                style={
+                              <Ref
+                                innerRef={
                                   Object {
-                                    "minWidth": 56,
+                                    "current": <div
+                                      aria-expanded="false"
+                                      class="ui search scrolling top left pointing dropdown"
+                                      name="currency"
+                                      role="combobox"
+                                      style="min-width: 56px;"
+                                    >
+                                      <input
+                                        aria-autocomplete="list"
+                                        autocomplete="off"
+                                        class="search"
+                                        tabindex="0"
+                                        type="text"
+                                        value=""
+                                      />
+                                      <div
+                                        aria-atomic="true"
+                                        aria-live="polite"
+                                        class="text"
+                                        role="alert"
+                                      >
+                                        EUR
+                                      </div>
+                                      <i
+                                        class="icon small"
+                                      >
+                                        <svg
+                                          viewBox="0 0 24 24"
+                                        >
+                                          <path
+                                            d="M20,8.5l-8,7-8-7Z"
+                                            fill="currentColor"
+                                          />
+                                        </svg>
+                                      </i>
+                                      <div
+                                        class="menu transition"
+                                        role="listbox"
+                                      >
+                                        <div
+                                          aria-checked="true"
+                                          aria-selected="true"
+                                          class="active selected item has-label"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <div
+                                            class="ui label"
+                                          >
+                                            Euro
+                                          </div>
+                                          <span
+                                            class="text"
+                                          >
+                                            EUR
+                                          </span>
+                                        </div>
+                                        <div
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item has-label"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <div
+                                            class="ui label"
+                                          >
+                                            US Dollar
+                                          </div>
+                                          <span
+                                            class="text"
+                                          >
+                                            USD
+                                          </span>
+                                        </div>
+                                        <div
+                                          aria-checked="false"
+                                          aria-selected="false"
+                                          class="item has-label"
+                                          role="option"
+                                          style="pointer-events: all;"
+                                        >
+                                          <div
+                                            class="ui label"
+                                          >
+                                            Japanese Yen
+                                          </div>
+                                          <span
+                                            class="text"
+                                          >
+                                            JPY
+                                          </span>
+                                        </div>
+                                      </div>
+                                    </div>,
                                   }
                                 }
-                                trigger={null}
-                                upward={true}
-                                value="EUR"
-                                wrapSelection={true}
                               >
-                                <Ref
+                                <RefFindNode
                                   innerRef={
                                     Object {
                                       "current": <div
                                         aria-expanded="false"
-                                        class="ui search scrolling upward top left pointing dropdown"
+                                        class="ui search scrolling top left pointing dropdown"
                                         name="currency"
                                         role="combobox"
                                         style="min-width: 56px;"
@@ -1006,124 +1129,37 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                     }
                                   }
                                 >
-                                  <RefFindNode
-                                    innerRef={
+                                  <div
+                                    aria-expanded={false}
+                                    className="ui search scrolling top left pointing dropdown"
+                                    name="currency"
+                                    onBlur={[Function]}
+                                    onChange={[Function]}
+                                    onClick={[Function]}
+                                    onFocus={[Function]}
+                                    onMouseDown={[Function]}
+                                    role="combobox"
+                                    style={
                                       Object {
-                                        "current": <div
-                                          aria-expanded="false"
-                                          class="ui search scrolling upward top left pointing dropdown"
-                                          name="currency"
-                                          role="combobox"
-                                          style="min-width: 56px;"
-                                        >
-                                          <input
+                                        "minWidth": 56,
+                                      }
+                                    }
+                                  >
+                                    <Ref
+                                      innerRef={
+                                        Object {
+                                          "current": <input
                                             aria-autocomplete="list"
                                             autocomplete="off"
                                             class="search"
                                             tabindex="0"
                                             type="text"
                                             value=""
-                                          />
-                                          <div
-                                            aria-atomic="true"
-                                            aria-live="polite"
-                                            class="text"
-                                            role="alert"
-                                          >
-                                            EUR
-                                          </div>
-                                          <i
-                                            class="icon small"
-                                          >
-                                            <svg
-                                              viewBox="0 0 24 24"
-                                            >
-                                              <path
-                                                d="M20,8.5l-8,7-8-7Z"
-                                                fill="currentColor"
-                                              />
-                                            </svg>
-                                          </i>
-                                          <div
-                                            class="menu transition"
-                                            role="listbox"
-                                          >
-                                            <div
-                                              aria-checked="true"
-                                              aria-selected="true"
-                                              class="active selected item has-label"
-                                              role="option"
-                                              style="pointer-events: all;"
-                                            >
-                                              <div
-                                                class="ui label"
-                                              >
-                                                Euro
-                                              </div>
-                                              <span
-                                                class="text"
-                                              >
-                                                EUR
-                                              </span>
-                                            </div>
-                                            <div
-                                              aria-checked="false"
-                                              aria-selected="false"
-                                              class="item has-label"
-                                              role="option"
-                                              style="pointer-events: all;"
-                                            >
-                                              <div
-                                                class="ui label"
-                                              >
-                                                US Dollar
-                                              </div>
-                                              <span
-                                                class="text"
-                                              >
-                                                USD
-                                              </span>
-                                            </div>
-                                            <div
-                                              aria-checked="false"
-                                              aria-selected="false"
-                                              class="item has-label"
-                                              role="option"
-                                              style="pointer-events: all;"
-                                            >
-                                              <div
-                                                class="ui label"
-                                              >
-                                                Japanese Yen
-                                              </div>
-                                              <span
-                                                class="text"
-                                              >
-                                                JPY
-                                              </span>
-                                            </div>
-                                          </div>
-                                        </div>,
-                                      }
-                                    }
-                                  >
-                                    <div
-                                      aria-expanded={false}
-                                      className="ui search scrolling upward top left pointing dropdown"
-                                      name="currency"
-                                      onBlur={[Function]}
-                                      onChange={[Function]}
-                                      onClick={[Function]}
-                                      onFocus={[Function]}
-                                      onMouseDown={[Function]}
-                                      role="combobox"
-                                      style={
-                                        Object {
-                                          "minWidth": 56,
+                                          />,
                                         }
                                       }
                                     >
-                                      <Ref
+                                      <RefFindNode
                                         innerRef={
                                           Object {
                                             "current": <input
@@ -1137,23 +1173,23 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                           }
                                         }
                                       >
-                                        <RefFindNode
-                                          innerRef={
+                                        <DropdownSearchInput
+                                          autoComplete="off"
+                                          key="text"
+                                          onChange={[Function]}
+                                          style={
                                             Object {
-                                              "current": <input
-                                                aria-autocomplete="list"
-                                                autocomplete="off"
-                                                class="search"
-                                                tabindex="0"
-                                                type="text"
-                                                value=""
-                                              />,
+                                              "width": undefined,
                                             }
                                           }
+                                          tabIndex={0}
+                                          type="text"
+                                          value=""
                                         >
-                                          <DropdownSearchInput
+                                          <input
+                                            aria-autocomplete="list"
                                             autoComplete="off"
-                                            key="text"
+                                            className="search"
                                             onChange={[Function]}
                                             style={
                                               Object {
@@ -1163,336 +1199,321 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                             tabIndex={0}
                                             type="text"
                                             value=""
-                                          >
-                                            <input
-                                              aria-autocomplete="list"
-                                              autoComplete="off"
-                                              className="search"
-                                              onChange={[Function]}
-                                              style={
-                                                Object {
-                                                  "width": undefined,
-                                                }
-                                              }
-                                              tabIndex={0}
-                                              type="text"
-                                              value=""
-                                            />
-                                          </DropdownSearchInput>
-                                        </RefFindNode>
-                                      </Ref>
-                                      <div
-                                        aria-atomic={true}
-                                        aria-live="polite"
-                                        className="text"
-                                        role="alert"
-                                      >
-                                        EUR
-                                      </div>
-                                      <Icon
-                                        className=""
-                                        color={null}
-                                        hasBorder={false}
-                                        isButton={false}
-                                        isCircular={false}
-                                        isColorInverted={false}
-                                        isDisabled={false}
-                                        isLabelLeft={false}
-                                        labelText={null}
-                                        labelWeight={null}
-                                        name="caret down"
+                                          />
+                                        </DropdownSearchInput>
+                                      </RefFindNode>
+                                    </Ref>
+                                    <div
+                                      aria-atomic={true}
+                                      aria-live="polite"
+                                      className="text"
+                                      role="alert"
+                                    >
+                                      EUR
+                                    </div>
+                                    <Icon
+                                      className=""
+                                      color={null}
+                                      hasBorder={false}
+                                      isButton={false}
+                                      isCircular={false}
+                                      isColorInverted={false}
+                                      isDisabled={false}
+                                      isLabelLeft={false}
+                                      labelText={null}
+                                      labelWeight={null}
+                                      name="caret down"
+                                      onClick={[Function]}
+                                      path={null}
+                                      size="small"
+                                    >
+                                      <i
+                                        className="icon small"
                                         onClick={[Function]}
-                                        path={null}
-                                        size="small"
                                       >
-                                        <i
-                                          className="icon small"
-                                          onClick={[Function]}
+                                        <svg
+                                          viewBox="0 0 24 24"
                                         >
-                                          <svg
-                                            viewBox="0 0 24 24"
-                                          >
-                                            <path
-                                              d="M20,8.5l-8,7-8-7Z"
-                                              fill="currentColor"
-                                            />
-                                          </svg>
-                                        </i>
-                                      </Icon>
-                                      <DropdownMenu
+                                          <path
+                                            d="M20,8.5l-8,7-8-7Z"
+                                            fill="currentColor"
+                                          />
+                                        </svg>
+                                      </i>
+                                    </Icon>
+                                    <DropdownMenu
+                                      role="listbox"
+                                    >
+                                      <div
+                                        className="menu transition"
                                         role="listbox"
                                       >
-                                        <div
-                                          className="menu transition"
-                                          role="listbox"
+                                        <DropdownItem
+                                          active={true}
+                                          className="has-label"
+                                          key="EUR"
+                                          label="Euro"
+                                          onClick={[Function]}
+                                          selected={true}
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                          text="EUR"
+                                          value="EUR"
                                         >
-                                          <DropdownItem
-                                            active={true}
-                                            className="has-label"
-                                            key="EUR"
-                                            label="Euro"
+                                          <div
+                                            aria-checked={true}
+                                            aria-selected={true}
+                                            className="active selected item has-label"
                                             onClick={[Function]}
-                                            selected={true}
+                                            role="option"
                                             style={
                                               Object {
                                                 "pointerEvents": "all",
                                               }
                                             }
-                                            text="EUR"
-                                            value="EUR"
                                           >
-                                            <div
-                                              aria-checked={true}
-                                              aria-selected={true}
-                                              className="active selected item has-label"
-                                              onClick={[Function]}
-                                              role="option"
-                                              style={
-                                                Object {
-                                                  "pointerEvents": "all",
-                                                }
-                                              }
+                                            <Label
+                                              content="Euro"
                                             >
-                                              <Label
-                                                content="Euro"
+                                              <div
+                                                className="ui label"
+                                                onClick={[Function]}
                                               >
-                                                <div
-                                                  className="ui label"
-                                                  onClick={[Function]}
-                                                >
-                                                  Euro
-                                                </div>
-                                              </Label>
-                                              <span
-                                                className="text"
-                                              >
-                                                EUR
-                                              </span>
-                                            </div>
-                                          </DropdownItem>
-                                          <DropdownItem
-                                            active={false}
-                                            className="has-label"
-                                            key="USD"
-                                            label="US Dollar"
+                                                Euro
+                                              </div>
+                                            </Label>
+                                            <span
+                                              className="text"
+                                            >
+                                              EUR
+                                            </span>
+                                          </div>
+                                        </DropdownItem>
+                                        <DropdownItem
+                                          active={false}
+                                          className="has-label"
+                                          key="USD"
+                                          label="US Dollar"
+                                          onClick={[Function]}
+                                          selected={false}
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                          text="USD"
+                                          value="USD"
+                                        >
+                                          <div
+                                            aria-checked={false}
+                                            aria-selected={false}
+                                            className="item has-label"
                                             onClick={[Function]}
-                                            selected={false}
+                                            role="option"
                                             style={
                                               Object {
                                                 "pointerEvents": "all",
                                               }
                                             }
-                                            text="USD"
-                                            value="USD"
                                           >
-                                            <div
-                                              aria-checked={false}
-                                              aria-selected={false}
-                                              className="item has-label"
-                                              onClick={[Function]}
-                                              role="option"
-                                              style={
-                                                Object {
-                                                  "pointerEvents": "all",
-                                                }
-                                              }
+                                            <Label
+                                              content="US Dollar"
                                             >
-                                              <Label
-                                                content="US Dollar"
+                                              <div
+                                                className="ui label"
+                                                onClick={[Function]}
                                               >
-                                                <div
-                                                  className="ui label"
-                                                  onClick={[Function]}
-                                                >
-                                                  US Dollar
-                                                </div>
-                                              </Label>
-                                              <span
-                                                className="text"
-                                              >
-                                                USD
-                                              </span>
-                                            </div>
-                                          </DropdownItem>
-                                          <DropdownItem
-                                            active={false}
-                                            className="has-label"
-                                            key="JPY"
-                                            label="Japanese Yen"
+                                                US Dollar
+                                              </div>
+                                            </Label>
+                                            <span
+                                              className="text"
+                                            >
+                                              USD
+                                            </span>
+                                          </div>
+                                        </DropdownItem>
+                                        <DropdownItem
+                                          active={false}
+                                          className="has-label"
+                                          key="JPY"
+                                          label="Japanese Yen"
+                                          onClick={[Function]}
+                                          selected={false}
+                                          style={
+                                            Object {
+                                              "pointerEvents": "all",
+                                            }
+                                          }
+                                          text="JPY"
+                                          value="JPY"
+                                        >
+                                          <div
+                                            aria-checked={false}
+                                            aria-selected={false}
+                                            className="item has-label"
                                             onClick={[Function]}
-                                            selected={false}
+                                            role="option"
                                             style={
                                               Object {
                                                 "pointerEvents": "all",
                                               }
                                             }
-                                            text="JPY"
-                                            value="JPY"
                                           >
-                                            <div
-                                              aria-checked={false}
-                                              aria-selected={false}
-                                              className="item has-label"
-                                              onClick={[Function]}
-                                              role="option"
-                                              style={
-                                                Object {
-                                                  "pointerEvents": "all",
-                                                }
-                                              }
+                                            <Label
+                                              content="Japanese Yen"
                                             >
-                                              <Label
-                                                content="Japanese Yen"
+                                              <div
+                                                className="ui label"
+                                                onClick={[Function]}
                                               >
-                                                <div
-                                                  className="ui label"
-                                                  onClick={[Function]}
-                                                >
-                                                  Japanese Yen
-                                                </div>
-                                              </Label>
-                                              <span
-                                                className="text"
-                                              >
-                                                JPY
-                                              </span>
-                                            </div>
-                                          </DropdownItem>
-                                        </div>
-                                      </DropdownMenu>
-                                    </div>
-                                  </RefFindNode>
-                                </Ref>
-                              </Dropdown>
-                            </Submenu>
-                          </div>
-                        </MenuItem>
-                        <MenuItem
-                          className="is-selectable"
-                        >
-                          <div
-                            className="item is-selectable"
-                            onClick={[Function]}
-                          >
-                            <a
-                              href="tel:+12345678912"
-                            >
-                              <Icon
-                                className={null}
-                                color={null}
-                                hasBorder={false}
-                                isButton={false}
-                                isCircular={false}
-                                isColorInverted={false}
-                                isDisabled={false}
-                                isLabelLeft={false}
-                                labelText="+1 2345 678912"
-                                labelWeight={null}
-                                name="phone"
-                                path={null}
-                                size={null}
-                              >
-                                <i
-                                  className="icon has-label"
-                                >
-                                  <svg
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path
-                                      d="M17.26,20.77a10.82,10.82,0,0,1-4.91-1.31,18.17,18.17,0,0,1-4.5-3.31,18.36,18.36,0,0,1-3.31-4.5,11,11,0,0,1-1.3-4.91A3.72,3.72,0,0,1,4.58,4.39,4,4,0,0,1,6.73,3.23,2,2,0,0,1,8,3.91,11.34,11.34,0,0,1,9.16,5.26c.25.33,1.52,2,1.52,2.79s-.74,1.11-1.53,1.6a7.2,7.2,0,0,0-.84.56c-.24.19-.28.29-.29.32A11.62,11.62,0,0,0,13.47,16a.94.94,0,0,0,.32-.3,9.4,9.4,0,0,0,.56-.84c.48-.78.93-1.52,1.59-1.52s2.46,1.26,2.79,1.51a10.53,10.53,0,0,1,1.35,1.22,2,2,0,0,1,.68,1.21,4,4,0,0,1-1.15,2.16,3.78,3.78,0,0,1-2.35,1.35ZM6.73,4.11A3.25,3.25,0,0,0,5.17,5,2.86,2.86,0,0,0,4.11,6.74c0,5.9,7.25,13.15,13.15,13.15A2.84,2.84,0,0,0,19,18.83a3.35,3.35,0,0,0,.93-1.56c0-.17-.49-.82-1.75-1.79A7.23,7.23,0,0,0,16,14.19s-.12,0-.32.3-.36.52-.54.81c-.49.8-.95,1.55-1.62,1.55a.87.87,0,0,1-.32-.06A12.44,12.44,0,0,1,7.2,10.85c-.11-.28-.13-.71.42-1.21A8.34,8.34,0,0,1,8.69,8.9a9,9,0,0,0,.82-.54c.25-.2.29-.3.29-.31A6.78,6.78,0,0,0,8.51,5.86c-1-1.27-1.62-1.73-1.78-1.76Zm13.6,7a.43.43,0,0,1-.44-.44,6.58,6.58,0,0,0-6.58-6.57.44.44,0,1,1,0-.88,7.44,7.44,0,0,1,7.45,7.45A.43.43,0,0,1,20.33,11.12Zm-2.64,0a.43.43,0,0,1-.43-.44,4,4,0,0,0-4-3.94.44.44,0,1,1,0-.88,4.82,4.82,0,0,1,4.82,4.82A.43.43,0,0,1,17.69,11.12Zm-2.63,0a.43.43,0,0,1-.43-.44,1.32,1.32,0,0,0-1.32-1.31.44.44,0,0,1,0-.88,2.2,2.2,0,0,1,2.19,2.19A.43.43,0,0,1,15.06,11.12Z"
-                                      fill="currentColor"
-                                    />
-                                  </svg>
-                                  <Paragraph
-                                    className={null}
-                                    isCompact={false}
-                                    size="medium"
-                                    weight={null}
-                                  >
-                                    <p
-                                      className=""
-                                    >
-                                      +1 2345 678912
-                                    </p>
-                                  </Paragraph>
-                                </i>
-                              </Icon>
-                            </a>
-                          </div>
-                        </MenuItem>
-                      </div>
-                    </Menu>
-                    <Logo
-                      logoHref=""
-                      logoSize="medium"
-                      logoSubText=""
-                      logoSubTextAlignment="center"
-                      logoText="aaa"
-                    >
-                      <MenuItem
-                        className=""
-                        data-testid="logo"
-                        href=""
-                        link={true}
-                      >
-                        <div
-                          className="link item"
-                          data-testid="logo"
-                          href=""
-                          onClick={[Function]}
-                        >
-                          <FlexContainer
-                            alignContent={null}
-                            alignItems={null}
-                            className={null}
-                            flexDirection="column"
-                            flexWrap={null}
-                            justifyContent="center"
-                          >
-                            <div
-                              className="flex-container"
-                              style={
-                                Object {
-                                  "alignContent": null,
-                                  "alignItems": null,
-                                  "display": "flex",
-                                  "flexDirection": "column",
-                                  "flexGrow": "1",
-                                  "flexWrap": null,
-                                  "height": "100%",
-                                  "justifyContent": "center",
-                                }
-                              }
-                            >
-                              <Heading
-                                className="header-title"
-                                hasMargin={true}
-                                isColorInverted={false}
-                                size="small"
-                                textAlign={null}
-                              >
-                                <Header
-                                  as="h4"
-                                  className="header-title"
-                                  inverted={false}
-                                  textAlign={null}
-                                >
-                                  <h4
-                                    className="ui header header-title"
-                                  >
-                                    aaa
-                                  </h4>
-                                </Header>
-                              </Heading>
-                            </div>
-                          </FlexContainer>
+                                                Japanese Yen
+                                              </div>
+                                            </Label>
+                                            <span
+                                              className="text"
+                                            >
+                                              JPY
+                                            </span>
+                                          </div>
+                                        </DropdownItem>
+                                      </div>
+                                    </DropdownMenu>
+                                  </div>
+                                </RefFindNode>
+                              </Ref>
+                            </Dropdown>
+                          </Submenu>
                         </div>
                       </MenuItem>
-                    </Logo>
-                  </div>
-                </FlexContainer>
+                      <MenuItem
+                        className="is-selectable"
+                      >
+                        <div
+                          className="item is-selectable"
+                          onClick={[Function]}
+                        >
+                          <a
+                            href="tel:+12345678912"
+                          >
+                            <Icon
+                              className={null}
+                              color={null}
+                              hasBorder={false}
+                              isButton={false}
+                              isCircular={false}
+                              isColorInverted={false}
+                              isDisabled={false}
+                              isLabelLeft={false}
+                              labelText="+1 2345 678912"
+                              labelWeight={null}
+                              name="phone"
+                              path={null}
+                              size={null}
+                            >
+                              <i
+                                className="icon has-label"
+                              >
+                                <svg
+                                  viewBox="0 0 24 24"
+                                >
+                                  <path
+                                    d="M17.26,20.77a10.82,10.82,0,0,1-4.91-1.31,18.17,18.17,0,0,1-4.5-3.31,18.36,18.36,0,0,1-3.31-4.5,11,11,0,0,1-1.3-4.91A3.72,3.72,0,0,1,4.58,4.39,4,4,0,0,1,6.73,3.23,2,2,0,0,1,8,3.91,11.34,11.34,0,0,1,9.16,5.26c.25.33,1.52,2,1.52,2.79s-.74,1.11-1.53,1.6a7.2,7.2,0,0,0-.84.56c-.24.19-.28.29-.29.32A11.62,11.62,0,0,0,13.47,16a.94.94,0,0,0,.32-.3,9.4,9.4,0,0,0,.56-.84c.48-.78.93-1.52,1.59-1.52s2.46,1.26,2.79,1.51a10.53,10.53,0,0,1,1.35,1.22,2,2,0,0,1,.68,1.21,4,4,0,0,1-1.15,2.16,3.78,3.78,0,0,1-2.35,1.35ZM6.73,4.11A3.25,3.25,0,0,0,5.17,5,2.86,2.86,0,0,0,4.11,6.74c0,5.9,7.25,13.15,13.15,13.15A2.84,2.84,0,0,0,19,18.83a3.35,3.35,0,0,0,.93-1.56c0-.17-.49-.82-1.75-1.79A7.23,7.23,0,0,0,16,14.19s-.12,0-.32.3-.36.52-.54.81c-.49.8-.95,1.55-1.62,1.55a.87.87,0,0,1-.32-.06A12.44,12.44,0,0,1,7.2,10.85c-.11-.28-.13-.71.42-1.21A8.34,8.34,0,0,1,8.69,8.9a9,9,0,0,0,.82-.54c.25-.2.29-.3.29-.31A6.78,6.78,0,0,0,8.51,5.86c-1-1.27-1.62-1.73-1.78-1.76Zm13.6,7a.43.43,0,0,1-.44-.44,6.58,6.58,0,0,0-6.58-6.57.44.44,0,1,1,0-.88,7.44,7.44,0,0,1,7.45,7.45A.43.43,0,0,1,20.33,11.12Zm-2.64,0a.43.43,0,0,1-.43-.44,4,4,0,0,0-4-3.94.44.44,0,1,1,0-.88,4.82,4.82,0,0,1,4.82,4.82A.43.43,0,0,1,17.69,11.12Zm-2.63,0a.43.43,0,0,1-.43-.44,1.32,1.32,0,0,0-1.32-1.31.44.44,0,0,1,0-.88,2.2,2.2,0,0,1,2.19,2.19A.43.43,0,0,1,15.06,11.12Z"
+                                    fill="currentColor"
+                                  />
+                                </svg>
+                                <Paragraph
+                                  className={null}
+                                  isCompact={false}
+                                  size="medium"
+                                  weight={null}
+                                >
+                                  <p
+                                    className=""
+                                  >
+                                    +1 2345 678912
+                                  </p>
+                                </Paragraph>
+                              </i>
+                            </Icon>
+                          </a>
+                        </div>
+                      </MenuItem>
+                    </div>
+                  </Menu>
+                  <Logo
+                    logoHref=""
+                    logoSize="medium"
+                    logoSubText=""
+                    logoSubTextAlignment="center"
+                    logoText="aaa"
+                  >
+                    <MenuItem
+                      className=""
+                      data-testid="logo"
+                      href=""
+                      link={true}
+                    >
+                      <div
+                        className="link item"
+                        data-testid="logo"
+                        href=""
+                        onClick={[Function]}
+                      >
+                        <FlexContainer
+                          alignContent={null}
+                          alignItems={null}
+                          className={null}
+                          flexDirection="column"
+                          flexWrap={null}
+                          justifyContent="center"
+                        >
+                          <div
+                            className="flex-container"
+                            style={
+                              Object {
+                                "alignContent": null,
+                                "alignItems": null,
+                                "display": "flex",
+                                "flexDirection": "column",
+                                "flexGrow": "1",
+                                "flexWrap": null,
+                                "height": "100%",
+                                "justifyContent": "center",
+                              }
+                            }
+                          >
+                            <Heading
+                              className="header-title"
+                              hasMargin={true}
+                              isColorInverted={false}
+                              size="small"
+                              textAlign={null}
+                            >
+                              <Header
+                                as="h4"
+                                className="header-title"
+                                inverted={false}
+                                textAlign={null}
+                              >
+                                <h4
+                                  className="ui header header-title"
+                                >
+                                  aaa
+                                </h4>
+                              </Header>
+                            </Heading>
+                          </div>
+                        </FlexContainer>
+                      </div>
+                    </MenuItem>
+                  </Logo>
+                </div>
                 <HorizontalMenu
-                  className=""
+                  className="is-header"
                   isHeader={true}
                   items={
                     Array [
@@ -1521,11 +1542,32 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                         ],
                         "text": "All properties",
                       },
+                      Object {
+                        "subItems": Array [
+                          Object {
+                            "href": "/la-casa-viva",
+                            "text": "La Casa Viva",
+                          },
+                          Object {
+                            "href": "/la-casa-muerta",
+                            "text": "La Casa Muerta",
+                          },
+                          Object {
+                            "href": "/the-white-lodge",
+                            "text": "The White Lodge",
+                          },
+                          Object {
+                            "href": "/the-black-lodge",
+                            "text": "The Black Lodge",
+                          },
+                        ],
+                        "text": "LOL",
+                      },
                     ]
                   }
                 >
                   <nav
-                    className="horizontal-menu is-header"
+                    className="horizontal-menu is-overflowed is-header"
                     data-testid="horizontalMenu"
                   >
                     <ShowOn
@@ -1594,12 +1636,14 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                               >
                                 <MenuItem
                                   data-testid="horizontalMenu-menu-item-0"
+                                  href="/"
                                   key="menu-item-0-"
                                   name="Home"
                                 >
-                                  <div
+                                  <a
                                     className="item"
                                     data-testid="horizontalMenu-menu-item-0"
+                                    href="/"
                                     onClick={[Function]}
                                   >
                                     <Link
@@ -1658,7 +1702,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                         </Ref>
                                       </Button>
                                     </Link>
-                                  </div>
+                                  </a>
                                 </MenuItem>
                                 <div
                                   className="item"
@@ -2123,6 +2167,469 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                                     </Dropdown>
                                   </Submenu>
                                 </div>
+                                <div
+                                  className="item"
+                                  key="LOL2"
+                                >
+                                  <Submenu
+                                    isMenuItem={true}
+                                    isSearchable={false}
+                                    isSimple={true}
+                                    isTriggerUnderlined={false}
+                                    isTriggeredOnHover={true}
+                                    items={
+                                      Array [
+                                        Object {
+                                          "href": "/la-casa-viva",
+                                          "text": "La Casa Viva",
+                                        },
+                                        Object {
+                                          "href": "/la-casa-muerta",
+                                          "text": "La Casa Muerta",
+                                        },
+                                        Object {
+                                          "href": "/the-white-lodge",
+                                          "text": "The White Lodge",
+                                        },
+                                        Object {
+                                          "href": "/the-black-lodge",
+                                          "text": "The Black Lodge",
+                                        },
+                                      ]
+                                    }
+                                    name={null}
+                                    noResultsText="No results"
+                                    onChange={[Function]}
+                                    pointing="top left"
+                                    value={null}
+                                    willOpenAbove={false}
+                                  >
+                                    <Dropdown
+                                      additionLabel="Add "
+                                      additionPosition="top"
+                                      className=""
+                                      closeOnBlur={true}
+                                      closeOnEscape={true}
+                                      deburr={false}
+                                      icon={
+                                        <Icon
+                                          className={null}
+                                          color={null}
+                                          hasBorder={false}
+                                          isButton={false}
+                                          isCircular={false}
+                                          isColorInverted={false}
+                                          isDisabled={false}
+                                          isLabelLeft={false}
+                                          labelText={null}
+                                          labelWeight={null}
+                                          name="caret down"
+                                          path={null}
+                                          size="small"
+                                        />
+                                      }
+                                      item={true}
+                                      minCharacters={1}
+                                      name={null}
+                                      noResultsMessage="No results"
+                                      onChange={[Function]}
+                                      openOnFocus={true}
+                                      options={
+                                        Array [
+                                          Object {
+                                            "href": "/la-casa-viva",
+                                            "key": "La Casa Viva",
+                                            "text": "La Casa Viva",
+                                          },
+                                          Object {
+                                            "href": "/la-casa-muerta",
+                                            "key": "La Casa Muerta",
+                                            "text": "La Casa Muerta",
+                                          },
+                                          Object {
+                                            "href": "/the-white-lodge",
+                                            "key": "The White Lodge",
+                                            "text": "The White Lodge",
+                                          },
+                                          Object {
+                                            "href": "/the-black-lodge",
+                                            "key": "The Black Lodge",
+                                            "text": "The Black Lodge",
+                                          },
+                                        ]
+                                      }
+                                      pointing="top left"
+                                      renderLabel={[Function]}
+                                      scrolling={true}
+                                      search={false}
+                                      searchInput="text"
+                                      selectOnBlur={true}
+                                      selectOnNavigation={true}
+                                      simple={true}
+                                      trigger="LOL"
+                                      upward={false}
+                                      value={null}
+                                      wrapSelection={true}
+                                    >
+                                      <Ref
+                                        innerRef={
+                                          Object {
+                                            "current": <div
+                                              aria-expanded="false"
+                                              class="ui item simple scrolling top left pointing dropdown"
+                                              role="listbox"
+                                              tabindex="0"
+                                            >
+                                              LOL
+                                              <i
+                                                class="icon small"
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M20,8.5l-8,7-8-7Z"
+                                                    fill="currentColor"
+                                                  />
+                                                </svg>
+                                              </i>
+                                              <div
+                                                class="menu transition"
+                                              >
+                                                <a
+                                                  aria-checked="false"
+                                                  aria-selected="true"
+                                                  class="selected item"
+                                                  href="/la-casa-viva"
+                                                  role="option"
+                                                  style="pointer-events: all;"
+                                                >
+                                                  <span
+                                                    class="text"
+                                                  >
+                                                    La Casa Viva
+                                                  </span>
+                                                </a>
+                                                <a
+                                                  aria-checked="false"
+                                                  aria-selected="false"
+                                                  class="item"
+                                                  href="/la-casa-muerta"
+                                                  role="option"
+                                                  style="pointer-events: all;"
+                                                >
+                                                  <span
+                                                    class="text"
+                                                  >
+                                                    La Casa Muerta
+                                                  </span>
+                                                </a>
+                                                <a
+                                                  aria-checked="false"
+                                                  aria-selected="false"
+                                                  class="item"
+                                                  href="/the-white-lodge"
+                                                  role="option"
+                                                  style="pointer-events: all;"
+                                                >
+                                                  <span
+                                                    class="text"
+                                                  >
+                                                    The White Lodge
+                                                  </span>
+                                                </a>
+                                                <a
+                                                  aria-checked="false"
+                                                  aria-selected="false"
+                                                  class="item"
+                                                  href="/the-black-lodge"
+                                                  role="option"
+                                                  style="pointer-events: all;"
+                                                >
+                                                  <span
+                                                    class="text"
+                                                  >
+                                                    The Black Lodge
+                                                  </span>
+                                                </a>
+                                              </div>
+                                            </div>,
+                                          }
+                                        }
+                                      >
+                                        <RefFindNode
+                                          innerRef={
+                                            Object {
+                                              "current": <div
+                                                aria-expanded="false"
+                                                class="ui item simple scrolling top left pointing dropdown"
+                                                role="listbox"
+                                                tabindex="0"
+                                              >
+                                                LOL
+                                                <i
+                                                  class="icon small"
+                                                >
+                                                  <svg
+                                                    viewBox="0 0 24 24"
+                                                  >
+                                                    <path
+                                                      d="M20,8.5l-8,7-8-7Z"
+                                                      fill="currentColor"
+                                                    />
+                                                  </svg>
+                                                </i>
+                                                <div
+                                                  class="menu transition"
+                                                >
+                                                  <a
+                                                    aria-checked="false"
+                                                    aria-selected="true"
+                                                    class="selected item"
+                                                    href="/la-casa-viva"
+                                                    role="option"
+                                                    style="pointer-events: all;"
+                                                  >
+                                                    <span
+                                                      class="text"
+                                                    >
+                                                      La Casa Viva
+                                                    </span>
+                                                  </a>
+                                                  <a
+                                                    aria-checked="false"
+                                                    aria-selected="false"
+                                                    class="item"
+                                                    href="/la-casa-muerta"
+                                                    role="option"
+                                                    style="pointer-events: all;"
+                                                  >
+                                                    <span
+                                                      class="text"
+                                                    >
+                                                      La Casa Muerta
+                                                    </span>
+                                                  </a>
+                                                  <a
+                                                    aria-checked="false"
+                                                    aria-selected="false"
+                                                    class="item"
+                                                    href="/the-white-lodge"
+                                                    role="option"
+                                                    style="pointer-events: all;"
+                                                  >
+                                                    <span
+                                                      class="text"
+                                                    >
+                                                      The White Lodge
+                                                    </span>
+                                                  </a>
+                                                  <a
+                                                    aria-checked="false"
+                                                    aria-selected="false"
+                                                    class="item"
+                                                    href="/the-black-lodge"
+                                                    role="option"
+                                                    style="pointer-events: all;"
+                                                  >
+                                                    <span
+                                                      class="text"
+                                                    >
+                                                      The Black Lodge
+                                                    </span>
+                                                  </a>
+                                                </div>
+                                              </div>,
+                                            }
+                                          }
+                                        >
+                                          <div
+                                            aria-expanded={false}
+                                            className="ui item simple scrolling top left pointing dropdown"
+                                            name={null}
+                                            onBlur={[Function]}
+                                            onChange={[Function]}
+                                            onClick={[Function]}
+                                            onFocus={[Function]}
+                                            onMouseDown={[Function]}
+                                            role="listbox"
+                                            tabIndex={0}
+                                          >
+                                            LOL
+                                            <Icon
+                                              className=""
+                                              color={null}
+                                              hasBorder={false}
+                                              isButton={false}
+                                              isCircular={false}
+                                              isColorInverted={false}
+                                              isDisabled={false}
+                                              isLabelLeft={false}
+                                              labelText={null}
+                                              labelWeight={null}
+                                              name="caret down"
+                                              onClick={[Function]}
+                                              path={null}
+                                              size="small"
+                                            >
+                                              <i
+                                                className="icon small"
+                                                onClick={[Function]}
+                                              >
+                                                <svg
+                                                  viewBox="0 0 24 24"
+                                                >
+                                                  <path
+                                                    d="M20,8.5l-8,7-8-7Z"
+                                                    fill="currentColor"
+                                                  />
+                                                </svg>
+                                              </i>
+                                            </Icon>
+                                            <DropdownMenu>
+                                              <div
+                                                className="menu transition"
+                                              >
+                                                <DropdownItem
+                                                  active={false}
+                                                  href="/la-casa-viva"
+                                                  key="La Casa Viva"
+                                                  onClick={[Function]}
+                                                  selected={true}
+                                                  style={
+                                                    Object {
+                                                      "pointerEvents": "all",
+                                                    }
+                                                  }
+                                                  text="La Casa Viva"
+                                                >
+                                                  <a
+                                                    aria-checked={false}
+                                                    aria-selected={true}
+                                                    className="selected item"
+                                                    href="/la-casa-viva"
+                                                    onClick={[Function]}
+                                                    role="option"
+                                                    style={
+                                                      Object {
+                                                        "pointerEvents": "all",
+                                                      }
+                                                    }
+                                                  >
+                                                    <span
+                                                      className="text"
+                                                    >
+                                                      La Casa Viva
+                                                    </span>
+                                                  </a>
+                                                </DropdownItem>
+                                                <DropdownItem
+                                                  active={false}
+                                                  href="/la-casa-muerta"
+                                                  key="La Casa Muerta"
+                                                  onClick={[Function]}
+                                                  selected={false}
+                                                  style={
+                                                    Object {
+                                                      "pointerEvents": "all",
+                                                    }
+                                                  }
+                                                  text="La Casa Muerta"
+                                                >
+                                                  <a
+                                                    aria-checked={false}
+                                                    aria-selected={false}
+                                                    className="item"
+                                                    href="/la-casa-muerta"
+                                                    onClick={[Function]}
+                                                    role="option"
+                                                    style={
+                                                      Object {
+                                                        "pointerEvents": "all",
+                                                      }
+                                                    }
+                                                  >
+                                                    <span
+                                                      className="text"
+                                                    >
+                                                      La Casa Muerta
+                                                    </span>
+                                                  </a>
+                                                </DropdownItem>
+                                                <DropdownItem
+                                                  active={false}
+                                                  href="/the-white-lodge"
+                                                  key="The White Lodge"
+                                                  onClick={[Function]}
+                                                  selected={false}
+                                                  style={
+                                                    Object {
+                                                      "pointerEvents": "all",
+                                                    }
+                                                  }
+                                                  text="The White Lodge"
+                                                >
+                                                  <a
+                                                    aria-checked={false}
+                                                    aria-selected={false}
+                                                    className="item"
+                                                    href="/the-white-lodge"
+                                                    onClick={[Function]}
+                                                    role="option"
+                                                    style={
+                                                      Object {
+                                                        "pointerEvents": "all",
+                                                      }
+                                                    }
+                                                  >
+                                                    <span
+                                                      className="text"
+                                                    >
+                                                      The White Lodge
+                                                    </span>
+                                                  </a>
+                                                </DropdownItem>
+                                                <DropdownItem
+                                                  active={false}
+                                                  href="/the-black-lodge"
+                                                  key="The Black Lodge"
+                                                  onClick={[Function]}
+                                                  selected={false}
+                                                  style={
+                                                    Object {
+                                                      "pointerEvents": "all",
+                                                    }
+                                                  }
+                                                  text="The Black Lodge"
+                                                >
+                                                  <a
+                                                    aria-checked={false}
+                                                    aria-selected={false}
+                                                    className="item"
+                                                    href="/the-black-lodge"
+                                                    onClick={[Function]}
+                                                    role="option"
+                                                    style={
+                                                      Object {
+                                                        "pointerEvents": "all",
+                                                      }
+                                                    }
+                                                  >
+                                                    <span
+                                                      className="text"
+                                                    >
+                                                      The Black Lodge
+                                                    </span>
+                                                  </a>
+                                                </DropdownItem>
+                                              </div>
+                                            </DropdownMenu>
+                                          </div>
+                                        </RefFindNode>
+                                      </Ref>
+                                    </Dropdown>
+                                  </Submenu>
+                                </div>
                               </div>
                             </div>
                           </Menu>
@@ -2185,11 +2692,11 @@ exports[`ContactHomeHero should render the right structure 1`] = `
               mobile={true}
               parent="div"
               parentProps={Object {}}
-              tablet={false}
+              tablet={true}
               widescreen={false}
             >
               <div
-                className="show-on-mobile"
+                className="show-on-mobile show-on-tablet"
               >
                 <FlexContainer
                   alignContent={null}
@@ -2354,6 +2861,27 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                               },
                             ],
                             "text": "All properties",
+                          },
+                          Object {
+                            "subItems": Array [
+                              Object {
+                                "href": "/la-casa-viva",
+                                "text": "La Casa Viva",
+                              },
+                              Object {
+                                "href": "/la-casa-muerta",
+                                "text": "La Casa Muerta",
+                              },
+                              Object {
+                                "href": "/the-white-lodge",
+                                "text": "The White Lodge",
+                              },
+                              Object {
+                                "href": "/the-black-lodge",
+                                "text": "The Black Lodge",
+                              },
+                            ],
+                            "text": "LOL",
                           },
                         ]
                       }

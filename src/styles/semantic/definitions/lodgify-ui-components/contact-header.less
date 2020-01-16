@@ -26,7 +26,10 @@
     }
   }
 
-  > div > .flex-container {
+  > div > .header-grid {
+    display: grid;
+    grid-template-columns: @contactHeaderGridTemplate;
+    grid-template-rows: 100%;
     padding-top: @contactHeaderContainerPadding;
     padding-bottom: @contactHeaderContainerPadding;
     box-shadow: @contactHeaderContainerBoxShadow;
@@ -59,7 +62,7 @@
   }
 
   
-  .flex-container {
+  .header-grid {
     background-color: @white;
 
     .link.item {
@@ -100,8 +103,9 @@
     }
 
     .menu-wrapper {
-      margin: auto;
-      width: unset;
+      justify-content: center;
+      // margin: auto;
+      // width: unset;
 
       .menu-wrapper > a:last-child {
         margin-right: @contactHeaderMenuMargin;

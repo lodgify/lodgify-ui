@@ -3,6 +3,7 @@
 -----------------------*/
 
 @contactHeaderMenuMargin: 1.25em;
+@contactHeaderGridTemplate: ~"calc(100% / 3) calc(100% / 3) calc(100% / 3)";
 
 @contactHeaderModalPaddingTop: 1.875em;
 @contactHeaderModalIconPaddingTop: 2.188em;

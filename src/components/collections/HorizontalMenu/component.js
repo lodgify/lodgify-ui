@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from 'react';
 import { string, arrayOf, shape, func, bool } from 'prop-types';
 import classnames from 'classnames';
 import { Menu } from 'semantic-ui-react';
-import { debounce } from 'debounce';
 
 import { Submenu } from 'elements/Submenu';
 import { size } from 'utils/size';
@@ -17,11 +16,9 @@ const TEST_ID_PREFIX = 'horizontalMenu';
 
 const testid = testidFactory(TEST_ID_PREFIX);
 
-export const Component = ({ items, isHeader, onItemClick, className }) => {
+export const Component = ({ items, onItemClick, isHeader, className }) => {
   const menuRef = useRef();
-  const subMenuRef = useRef();
 
-  const [isOverflowed, setIsOverflowed] = useState(false);
   const [isArrowLeftActive, setIsArrowLeftActive] = useState(true);
   const [isArrowRightActive, setIsArrowRightActive] = useState(true);
 
@@ -47,27 +44,10 @@ export const Component = ({ items, isHeader, onItemClick, className }) => {
   useEffect(() => {
     getDisplayedArrows();
 
-    const setOverflow = isOverflowed =>
-      debounce(setIsOverflowed(isOverflowed), 150);
-
     if (menuRef.current) {
       menuRef.current.addEventListener('wheel', () => getDisplayedArrows());
 
-      if (subMenuRef.current) {
-        subMenuRef.current.addEventListener('mouseover', () => {
-          setOverflow(true);
-        });
-
-        subMenuRef.current.addEventListener('mouseout', () => {
-          setOverflow(false);
-        });
-      }
-
       return () => {
-        if (subMenuRef.current) {
-          subMenuRef.current.removeEventListener('mouseover', setOverflow);
-          subMenuRef.current.removeEventListener('mouseout', setOverflow);
-        }
         menuRef.current.removeEventListener('wheel', getDisplayedArrows);
       };
     }
@@ -83,10 +63,7 @@ export const Component = ({ items, isHeader, onItemClick, className }) => {
 
   return (
     <nav
-      className={classnames('horizontal-menu', className, {
-        'is-header': isHeader,
-        'is-overflowed': isOverflowed,
-      })}
+      className={classnames('horizontal-menu', 'is-overflowed', className)}
       data-testid={testid()}
     >
       <ShowOn computer={isHeader} mobile tablet widescreen={isHeader}>
@@ -111,14 +88,10 @@ export const Component = ({ items, isHeader, onItemClick, className }) => {
             ref={menuRef}
           >
             {items.map((item, index) => {
-              const { id, link, text, isActive, subItems } = item;
+              const { id, href, text, isActive, subItems } = item;
 
               return size(subItems) > 0 ? (
-                <div
-                  className="item"
-                  key={buildKeyFromStrings(text, index)}
-                  ref={subMenuRef}
-                >
+                <div className="item" key={buildKeyFromStrings(text, index)}>
                   <Submenu
                     isMenuItem
                     isSimple
@@ -133,7 +106,7 @@ export const Component = ({ items, isHeader, onItemClick, className }) => {
                 <Menu.Item
                   active={isActive}
                   data-testid={testid(`menu-item-${index}`)}
-                  href={link}
+                  href={href}
                   key={`menu-item-${index}-${id || ''}`}
                   name={text}
                   onClick={onItemClick && (event => onItemClick(item, event))}
@@ -167,7 +140,7 @@ Component.defaultProps = {
   items: [],
   onItemClick: undefined,
   className: '',
-  isHeader: false,
+  isHeader: null,
 };
 
 Component.propTypes = {
@@ -181,7 +154,7 @@ Component.propTypes = {
       /** Id of the item to identify it. */
       id: string,
       /** The link triggered by clicking the Item. */
-      link: string,
+      href: string,
       /** The text written in the menu for the Item. */
       text: string.isRequired,
       /** The flag that indicate if the element is active or not. */
