@@ -1,3 +1,11 @@
+## [1.289.1](https://github.com/lodgify/lodgify-ui/compare/v1.289.0...v1.289.1) (2020-01-17)
+
+
+### Bug Fixes
+
+* **Gallery:** fix width of image in the modal ([7ecb5ba](https://github.com/lodgify/lodgify-ui/commit/7ecb5ba7b37a09051a8cbc06b62fa97f69cea4c0))
+* **SlideshowHero:** fix the height of the slideshow ([a159279](https://github.com/lodgify/lodgify-ui/commit/a159279df544c229d9102bee86dcb5d162985608))
+
 # [1.289.0](https://github.com/lodgify/lodgify-ui/compare/v1.288.1...v1.289.0) (2020-01-17)
 
 
