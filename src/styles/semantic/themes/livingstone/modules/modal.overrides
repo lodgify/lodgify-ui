@@ -211,15 +211,14 @@
 /* Contact Header */
 
 .ui.fullscreen.scrolling.modal.transition.visible.active.hidden-contact-header-modal {
-  background: #9897af;
+  background: @white;
 
   .header,
-  .content,
-  .content * {
+  .content {
     background: transparent;
   }
 
   .ui.vertical.menu i.icon svg > path {
-    fill: #9897af;
+    fill: @contactHeaderFadedColor;
   }
 }

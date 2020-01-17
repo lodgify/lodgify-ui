@@ -11,7 +11,7 @@
 @contactHeaderModalIconTextMarginRight: 0.313em;
 @contactHeaderModalIconSize: 1.11em;
 
-@contactModalHeaderHeight: 82px;
+@contactModalHeaderHeight: 142px;
 @contactModalContentHeight: ~"calc(100% - @{contactModalHeaderHeight})";
 
 @contactHeaderVerticalMenuItemPaddingTop: 0.938em;

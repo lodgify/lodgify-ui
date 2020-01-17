@@ -2,6 +2,7 @@
 export { Characteristics } from './components/collections/Characteristics';
 export { CheckboxInputSegment } from './components/collections/CheckboxInputSegment';
 export { CounterInputSegment } from './components/collections/CounterInputSegment';
+export { ContactHeader } from './components/collections/ContactHeader';
 export { Footer } from './components/collections/Footer';
 export { Form } from './components/collections/Form';
 export { Header } from './components/collections/Header';
