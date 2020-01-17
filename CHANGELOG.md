@@ -1,3 +1,10 @@
+# [1.289.0](https://github.com/lodgify/lodgify-ui/compare/v1.288.1...v1.289.0) (2020-01-17)
+
+
+### Features
+
+* **Modal:** fix modal transparency ([014bd06](https://github.com/lodgify/lodgify-ui/commit/014bd06ea328af07ea0441a5dccf78abde1a36d1))
+
 ## [1.288.1](https://github.com/lodgify/lodgify-ui/compare/v1.288.0...v1.288.1) (2020-01-16)
 
 
