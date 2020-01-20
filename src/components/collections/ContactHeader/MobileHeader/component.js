@@ -77,7 +77,7 @@ export const Component = ({
     >
       <div>
         <Menu text vertical>
-          {navigationItems.map(({ subItems, text, link }, index) =>
+          {navigationItems.map(({ subItems, text, href }, index) =>
             size(subItems) ? (
               <Accordion
                 as={Menu.Item}
@@ -110,7 +110,7 @@ export const Component = ({
               <Menu.Item
                 active={text === activeItem}
                 data-testid={testid(`MobileHeaderItem_${index}`)}
-                href={link}
+                href={href}
                 key={buildKeyFromStrings(text, index)}
                 link
                 onClick={() => onMenuLinkClick(text)}

@@ -29,12 +29,12 @@ const languageOptions = [
   navigationMenuItems={[
   {
     text: 'availability',
-    link: '#availability',
+    href: '#availability',
     isActive: true,
   },
   {
     text: 'rates',
-    link: '#rates',
+    href: '#rates',
     subItems: [
       {
         href: '/la-casa-viva',
@@ -56,27 +56,27 @@ const languageOptions = [
   },
   {
     text: 'reviews',
-    link: '#reviews',
+    href: '#reviews',
   },
   {
     text: 'description',
-    link: '#link',
+    href: '#link',
   },
   {
     text: 'other stuff',
-    link: '#link',
+    href: '#link',
   },
   {
     text: 'almost the last one',
-    link: '#link',
+    href: '#link',
   },
   {
     text: 'not the last one',
-    link: '#link',
+    href: '#link',
   },
   {
     text: 'last',
-    link: '#link',
+    href: '#link',
   },
 ]
 }
