@@ -1,3 +1,10 @@
+# [1.290.0](https://github.com/lodgify/lodgify-ui/compare/v1.289.1...v1.290.0) (2020-01-20)
+
+
+### Features
+
+* **Logo:** expose a class on the main container ([270fb36](https://github.com/lodgify/lodgify-ui/commit/270fb36596353a7cd72eda7d55f2df5deb7e7ef8))
+
 ## [1.289.1](https://github.com/lodgify/lodgify-ui/compare/v1.289.0...v1.289.1) (2020-01-17)
 
 
