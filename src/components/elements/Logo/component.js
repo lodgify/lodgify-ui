@@ -8,7 +8,8 @@ import { Paragraph } from 'typography/Paragraph';
 import { FlexContainer } from 'layout/FlexContainer';
 import { testidFactory } from 'utils/testid';
 
-const TEST_ID_PREFIX = 'logo';
+import { TEST_ID_PREFIX, LOGO_CLASS } from './constants';
+
 const testid = testidFactory(TEST_ID_PREFIX);
 
 export const Component = ({
@@ -22,7 +23,7 @@ export const Component = ({
   logoText,
 }) => (
   <Menu.Item
-    className={classnames({
+    className={classnames(LOGO_CLASS, {
       'has-sub-text': !!logoSubText,
     })}
     data-testid={testid()}

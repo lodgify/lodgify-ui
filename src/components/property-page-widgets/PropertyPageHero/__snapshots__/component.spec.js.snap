@@ -229,13 +229,13 @@ exports[`PropertyPageHero if there are fewer than two items in \`galleryImages\`
                         logoText="text"
                       >
                         <MenuItem
-                          className=""
+                          className="logo"
                           data-testid="logo"
                           href="/"
                           link={true}
                         >
                           <a
-                            className="link item"
+                            className="link item logo"
                             data-testid="logo"
                             href="/"
                             onClick={[Function]}
@@ -630,13 +630,13 @@ exports[`PropertyPageHero should render the right structure 1`] = `
                         logoText="text"
                       >
                         <MenuItem
-                          className=""
+                          className="logo"
                           data-testid="logo"
                           href="/"
                           link={true}
                         >
                           <a
-                            className="link item"
+                            className="link item logo"
                             data-testid="logo"
                             href="/"
                             onClick={[Function]}

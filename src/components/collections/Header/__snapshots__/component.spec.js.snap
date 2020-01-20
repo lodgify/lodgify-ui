@@ -79,13 +79,13 @@ exports[`<Header /> by default should render the right structure 1`] = `
               logoText="someLogoText"
             >
               <MenuItem
-                className=""
+                className="logo"
                 data-testid="logo"
                 href="/"
                 link={true}
               >
                 <a
-                  className="link item"
+                  className="link item logo"
                   data-testid="logo"
                   href="/"
                   onClick={[Function]}
@@ -734,13 +734,13 @@ exports[`<Header /> if \`isMenuHidden\` is \`true\` should render the right stru
               logoText="someLogoText"
             >
               <MenuItem
-                className=""
+                className="logo"
                 data-testid="logo"
                 href="/"
                 link={true}
               >
                 <a
-                  className="link item"
+                  className="link item logo"
                   data-testid="logo"
                   href="/"
                   onClick={[Function]}
@@ -1120,13 +1120,13 @@ exports[`<Header /> if \`props.isBackgroundFilled\` is true should render the ri
               logoText="someLogoText"
             >
               <MenuItem
-                className=""
+                className="logo"
                 data-testid="logo"
                 href="/"
                 link={true}
               >
                 <a
-                  className="link item"
+                  className="link item logo"
                   data-testid="logo"
                   href="/"
                   onClick={[Function]}

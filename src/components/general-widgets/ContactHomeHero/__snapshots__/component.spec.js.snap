@@ -1452,13 +1452,13 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                     logoText="aaa"
                   >
                     <MenuItem
-                      className=""
+                      className="logo"
                       data-testid="logo"
                       href=""
                       link={true}
                     >
                       <div
-                        className="link item"
+                        className="link item logo"
                         data-testid="logo"
                         href=""
                         onClick={[Function]}
@@ -2729,13 +2729,13 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       logoText="aaa"
                     >
                       <MenuItem
-                        className=""
+                        className="logo"
                         data-testid="logo"
                         href=""
                         link={true}
                       >
                         <div
-                          className="link item"
+                          className="link item logo"
                           data-testid="logo"
                           href=""
                           onClick={[Function]}
