@@ -1,3 +1,10 @@
+## [1.290.1](https://github.com/lodgify/lodgify-ui/compare/v1.290.0...v1.290.1) (2020-01-21)
+
+
+### Bug Fixes
+
+* **ContactHeader:** fix mobileMenu links ([e7e3812](https://github.com/lodgify/lodgify-ui/commit/e7e38129412c23d66c0f003f17e5925247165580))
+
 # [1.290.0](https://github.com/lodgify/lodgify-ui/compare/v1.289.1...v1.290.0) (2020-01-20)
 
 
