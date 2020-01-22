@@ -1,13 +1,17 @@
 import { useState, useEffect } from 'react';
 import { debounce } from 'debounce';
 
-const SCROLL_DEBOUNCE_INTERVAL = 100;
+const DEBOUNCE_INTERVAL = 100;
 
-export const useScroll = (callback, initialValue) => {
+export const useScroll = (
+  callback,
+  initialValue,
+  debounceInterval = DEBOUNCE_INTERVAL
+) => {
   const [result, setResult] = useState(initialValue);
   const handleScroll = debounce(event => {
     setResult(callback(event));
-  }, SCROLL_DEBOUNCE_INTERVAL);
+  }, debounceInterval);
 
   useEffect(() => {
     global.document.addEventListener('scroll', handleScroll);

@@ -30,6 +30,7 @@ export const Component = ({ stickyMenuItems, isHeader }) => {
     () => {
       return getActiveOnScroll(stickyMenuItems);
     },
+    0,
     0
   );
 
