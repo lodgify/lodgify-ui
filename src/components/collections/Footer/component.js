@@ -89,13 +89,21 @@ export const Component = ({
         <HorizontalGutters as={Menu} borderless inverted stackable>
           {getAreNavigationItemsGrouped(navigationItems)
             ? getGroupedNavigationItems(navigationItems).map(
-                ({ text, subItems }, index) => (
+                ({ text, href, subItems }, index) => (
                   <Menu.Item
                     className="grouped"
                     key={buildKeyFromStrings(text || subItems[0].text, index)}
                   >
                     <Menu.Menu>
-                      {text && <Menu.Header>{toUpper(text)}</Menu.Header>}
+                      {text && (
+                        <Menu.Header>
+                          {!!href ? (
+                            <a href={href}>{toUpper(text)}</a>
+                          ) : (
+                            toUpper(text)
+                          )}
+                        </Menu.Header>
+                      )}
                       {subItems.map(getMenuItemMarkup)}
                     </Menu.Menu>
                   </Menu.Item>
