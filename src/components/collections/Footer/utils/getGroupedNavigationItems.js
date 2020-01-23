@@ -5,7 +5,7 @@
 export const getGroupedNavigationItems = items =>
   items.reduce((accumulator, item) => {
     // If `item` has no `href` (i.e. it represents a group rather than a link)
-    if (!item.href) {
+    if (!item.href || !!item.subItems) {
       // make `item` a new item in `accumulator`
       return [...accumulator, item];
     }

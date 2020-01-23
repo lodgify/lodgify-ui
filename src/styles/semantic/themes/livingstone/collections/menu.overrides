@@ -543,6 +543,11 @@ footer {
           padding-right: 0;
         }
       }
+
+      .menu .header .unstyled-link {
+        text-decoration: none;
+        color: @invertedMenuHeaderColor;
+      }
     }
 
     .ui.menu.inverted > .item {
