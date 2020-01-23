@@ -40,6 +40,42 @@ describe('getGroupedNavigationItems', () => {
       {
         before: [
           { href: '/', text: 'Home' },
+          { href: '/contact', text: 'Contact' },
+          { href: '/pool', text: 'Pool' },
+          {
+            text: 'The Property',
+            href: '/pool',
+            subItems: [
+              { href: '/pool', text: 'Pool' },
+              { href: '/spa', text: 'Spa' },
+              { href: '/tennis-court', text: 'Tennis Court' },
+              { href: '/gym', text: 'Gym' },
+            ],
+          },
+        ],
+        after: [
+          {
+            subItems: [
+              { href: '/', text: 'Home' },
+              { href: '/contact', text: 'Contact' },
+              { href: '/pool', text: 'Pool' },
+            ],
+          },
+          {
+            text: 'The Property',
+            href: '/pool',
+            subItems: [
+              { href: '/pool', text: 'Pool' },
+              { href: '/spa', text: 'Spa' },
+              { href: '/tennis-court', text: 'Tennis Court' },
+              { href: '/gym', text: 'Gym' },
+            ],
+          },
+        ],
+      },
+      {
+        before: [
+          { href: '/', text: 'Home' },
           {
             text: 'The Property',
             subItems: [
