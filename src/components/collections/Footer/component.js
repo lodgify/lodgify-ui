@@ -98,9 +98,7 @@ export const Component = ({
                       {text && (
                         <Menu.Header>
                           {!!href ? (
-                            <a className="unstyled-link" href={href}>
-                              {toUpper(text)}
-                            </a>
+                            <a href={href}>{toUpper(text)}</a>
                           ) : (
                             toUpper(text)
                           )}

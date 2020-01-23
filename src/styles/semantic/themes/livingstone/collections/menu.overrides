@@ -544,7 +544,7 @@ footer {
         }
       }
 
-      .menu .header .unstyled-link {
+      .menu .header a {
         text-decoration: none;
         color: @invertedMenuHeaderColor;
       }
