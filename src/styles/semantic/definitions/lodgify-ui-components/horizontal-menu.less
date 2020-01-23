@@ -38,17 +38,18 @@
 
     .ui.container {
       height: @horizontalMenuContainerHeight;
+      overflow: hidden;
 
-    .ui.menu {
-      .menu-wrapper {
-        height: @horizontalMenuWrapperSubmenuWrapperHeight;
+      .ui.menu {
+        .menu-wrapper:hover {
+          height: @horizontalMenuWrapperSubmenuWrapperHeight;
 
-        .menu.transition {
-          max-height: @horizontalMenuWrapperSubmenuMenuHeight;
+          .menu.transition {
+            max-height: @horizontalMenuWrapperSubmenuMenuHeight;
+          }
         }
       }
     }
-  }
   }
 
   .ui.menu {
