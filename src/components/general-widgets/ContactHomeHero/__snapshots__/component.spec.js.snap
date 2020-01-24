@@ -1567,7 +1567,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                   }
                 >
                   <nav
-                    className="horizontal-menu is-overflowed is-header"
+                    className="horizontal-menu is-header is-overflowed"
                     data-testid="horizontalMenu"
                   >
                     <ShowOn
