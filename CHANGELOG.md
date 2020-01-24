@@ -1,3 +1,10 @@
+## [1.292.2](https://github.com/lodgify/lodgify-ui/compare/v1.292.1...v1.292.2) (2020-01-24)
+
+
+### Bug Fixes
+
+* **StickyMenu:** remove debounce for scrolling ([81143f9](https://github.com/lodgify/lodgify-ui/commit/81143f9ac230972fd971f660b8eada6919171491))
+
 ## [1.292.1](https://github.com/lodgify/lodgify-ui/compare/v1.292.0...v1.292.1) (2020-01-24)
 
 
