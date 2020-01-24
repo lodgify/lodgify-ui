@@ -1,3 +1,10 @@
+# [1.292.0](https://github.com/lodgify/lodgify-ui/compare/v1.291.0...v1.292.0) (2020-01-24)
+
+
+### Features
+
+* **HorizontalMenu:** add overflow only for header ([eb25e2a](https://github.com/lodgify/lodgify-ui/commit/eb25e2aeeb53c27955a6da5b9053fe23d46a2743))
+
 # [1.291.0](https://github.com/lodgify/lodgify-ui/compare/v1.290.1...v1.291.0) (2020-01-23)
 
 

@@ -63,7 +63,9 @@ export const Component = ({ items, onItemClick, isHeader, className }) => {
 
   return (
     <nav
-      className={classnames('horizontal-menu', 'is-overflowed', className)}
+      className={classnames('horizontal-menu', className, {
+        'is-overflowed': isHeader,
+      })}
       data-testid={testid()}
     >
       <ShowOn computer={isHeader} mobile tablet widescreen={isHeader}>
