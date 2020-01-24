@@ -1,3 +1,10 @@
+## [1.292.1](https://github.com/lodgify/lodgify-ui/compare/v1.292.0...v1.292.1) (2020-01-24)
+
+
+### Bug Fixes
+
+* **contact-header:** remove padding from submenu ([12cee11](https://github.com/lodgify/lodgify-ui/commit/12cee113abb211cc9dcfdbe7ae6cac4d11330cd5))
+
 # [1.292.0](https://github.com/lodgify/lodgify-ui/compare/v1.291.0...v1.292.0) (2020-01-24)
 
 
