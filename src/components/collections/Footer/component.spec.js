@@ -24,6 +24,14 @@ const groupedNavigationItems = [
     subItems: [{ href: '/pool', text: 'Pool' }],
   },
 ];
+const groupedNavigationWithTitleLinkItems = [
+  { href: '/', text: 'Home' },
+  {
+    text: 'The Property',
+    href: '/lolol',
+    subItems: [{ href: '/pool', text: 'Pool' }],
+  },
+];
 const onChangeCurrency = () => {};
 const onChangeLanguage = () => {};
 const phoneNumber = '+1 2345 678912';
@@ -63,6 +71,16 @@ describe('<Footer />', () => {
   describe('if `props.navigationItems` are passed', () => {
     it('should render the right structure', () => {
       const wrapper = getFooter({ navigationItems });
+
+      expect(wrapper).toMatchSnapshot();
+    });
+  });
+
+  describe('if `props.navigationItems` are passed and the grouped title has a href', () => {
+    it('should render the right structure', () => {
+      const wrapper = getFooter({
+        navigationItems: groupedNavigationWithTitleLinkItems,
+      });
 
       expect(wrapper).toMatchSnapshot();
     });

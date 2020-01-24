@@ -1,3 +1,15 @@
+# [1.291.0](https://github.com/lodgify/lodgify-ui/compare/v1.290.1...v1.291.0) (2020-01-23)
+
+
+### Bug Fixes
+
+* **Footer:** remove unnecessary class name ([9d8fd35](https://github.com/lodgify/lodgify-ui/commit/9d8fd35d40b17bb2971081f172beb9fd30c42d38))
+
+
+### Features
+
+* **Footer:** grouped item titles accept links ([2b43292](https://github.com/lodgify/lodgify-ui/commit/2b432927007f7fb8e4f59f251f46db27f8a82ff6))
+
 ## [1.290.1](https://github.com/lodgify/lodgify-ui/compare/v1.290.0...v1.290.1) (2020-01-21)
 
 
