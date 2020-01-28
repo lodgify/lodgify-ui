@@ -1,3 +1,10 @@
+# [1.293.0](https://github.com/lodgify/lodgify-ui/compare/v1.292.2...v1.293.0) (2020-01-28)
+
+
+### Features
+
+* **Footer:** pass target to submenu links ([82209ad](https://github.com/lodgify/lodgify-ui/commit/82209ad287788e076f716fb5454ea68857b60e2f))
+
 ## [1.292.2](https://github.com/lodgify/lodgify-ui/compare/v1.292.1...v1.292.2) (2020-01-24)
 
 
