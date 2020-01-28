@@ -11,9 +11,13 @@ import { useScroll } from '../../../hooks/useScroll';
 import { Component as StickyMenu } from './component';
 import { menuItems } from './mock-data/mock-data';
 
+const props = {
+  className: 'get out',
+};
+
 const testid = testidSelectorFactory('stickyMenu');
 const getStickyHeader = (items = menuItems) =>
-  mount(<StickyMenu stickyMenuItems={items} />);
+  mount(<StickyMenu {...props} stickyMenuItems={items} />);
 const link = '#availability';
 
 document.body.innerHTML = `<div id="availability"></div>`;

@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useMemo } from 'react';
 import { PropTypes } from 'prop-types';
+import classnames from 'classnames';
 
 import { testidFactory } from 'utils/testid';
 
@@ -12,7 +13,7 @@ const TEST_ID_PREFIX = 'stickyMenu';
 
 const testid = testidFactory(TEST_ID_PREFIX);
 
-export const Component = ({ stickyMenuItems, isHeader }) => {
+export const Component = ({ className, stickyMenuItems, isHeader }) => {
   const [activeItem, setActiveItem] = useState('');
 
   useEffect(() => {
@@ -57,7 +58,7 @@ export const Component = ({ stickyMenuItems, isHeader }) => {
 
   return (
     <HorizontalMenu
-      className="sticky-menu"
+      className={classnames(className, 'sticky-menu')}
       data-testid={testid()}
       isHeader={isHeader}
       items={items}
@@ -69,11 +70,14 @@ export const Component = ({ stickyMenuItems, isHeader }) => {
 Component.displayName = 'StickyMenu';
 
 Component.defaultProps = {
+  className: null,
   isHeader: false,
   stickyMenuItems: [],
 };
 
 Component.propTypes = {
+  /** Custom className for the sticky menu. */
+  className: PropTypes.string,
   /** Is the component displaying as a header. */
   isHeader: PropTypes.bool,
   /** The sticky menu items to display. */
