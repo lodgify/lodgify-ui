@@ -1,3 +1,10 @@
+# [1.294.0](https://github.com/lodgify/lodgify-ui/compare/v1.293.0...v1.294.0) (2020-01-28)
+
+
+### Features
+
+* **StickyMenu:** expose className ([df1cb2a](https://github.com/lodgify/lodgify-ui/commit/df1cb2a789903aee443a80bd7639d61c14301f95))
+
 # [1.293.0](https://github.com/lodgify/lodgify-ui/compare/v1.292.2...v1.293.0) (2020-01-28)
 
 
