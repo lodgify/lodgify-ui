@@ -106,11 +106,12 @@
       }
     }
 
-    & > figure.responsive-image.is-fluid {
-      max-height: @featuredImageMaxHeight;
+    & > figure.responsive-image {
+      height: 100%;
 
       img {
-        flex-grow: @featuredImageFlexGrow;
+        height: @featuredImageMaxHeight;
+        object-fit: cover;
       }
     }
 
@@ -297,7 +298,7 @@
         height: 100%;
       }
 
-      .image-gallery-image {
+      .responsive-image {
         position: relative;
         border-radius: @borderRadius 0 0 @borderRadius;
         min-height: @roomTypeSlideshowImageHeight;
