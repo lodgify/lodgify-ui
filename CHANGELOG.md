@@ -1,3 +1,10 @@
+## [1.294.1](https://github.com/lodgify/lodgify-ui/compare/v1.294.0...v1.294.1) (2020-01-29)
+
+
+### Bug Fixes
+
+* **Card:** featured image heights dont obscure content ([9878605](https://github.com/lodgify/lodgify-ui/commit/9878605a3edf04a967bdf4ee0e065628562961c3))
+
 # [1.294.0](https://github.com/lodgify/lodgify-ui/compare/v1.293.0...v1.294.0) (2020-01-28)
 
 
