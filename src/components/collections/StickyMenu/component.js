@@ -13,7 +13,7 @@ const TEST_ID_PREFIX = 'stickyMenu';
 
 const testid = testidFactory(TEST_ID_PREFIX);
 
-export const Component = ({ className, stickyMenuItems, isHeader }) => {
+export const Component = ({ className, stickyMenuItems, hasOverflow }) => {
   const [activeItem, setActiveItem] = useState('');
 
   useEffect(() => {
@@ -60,7 +60,7 @@ export const Component = ({ className, stickyMenuItems, isHeader }) => {
     <HorizontalMenu
       className={classnames(className, 'sticky-menu')}
       data-testid={testid()}
-      isHeader={isHeader}
+      hasOverflow={hasOverflow}
       items={items}
       onItemClick={scrollToComponentOnMenuClick}
     />
@@ -71,15 +71,15 @@ Component.displayName = 'StickyMenu';
 
 Component.defaultProps = {
   className: null,
-  isHeader: false,
+  hasOverflow: false,
   stickyMenuItems: [],
 };
 
 Component.propTypes = {
   /** Custom className for the sticky menu. */
   className: PropTypes.string,
-  /** Is the component displaying as a header. */
-  isHeader: PropTypes.bool,
+  /** Is the component allowing overflow. */
+  hasOverflow: PropTypes.bool,
   /** The sticky menu items to display. */
   stickyMenuItems: PropTypes.arrayOf(
     PropTypes.shape({

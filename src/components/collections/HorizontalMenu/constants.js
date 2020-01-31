@@ -1,0 +1,1 @@
+export const HORIZONTAL_MENU_MARGINS = 43;

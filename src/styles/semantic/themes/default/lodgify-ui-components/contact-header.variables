@@ -2,6 +2,7 @@
     Contact Header
 -----------------------*/
 
+@contactHeaderHeight: 120px;
 @contactHeaderMenuMargin: 1.25em;
 @contactHeaderGridTemplate: ~"calc(100% / 3) calc(100% / 3) calc(100% / 3)";
 
@@ -11,7 +12,7 @@
 @contactHeaderModalIconTextMarginRight: 0.313em;
 @contactHeaderModalIconSize: 1.11em;
 
-@contactModalHeaderHeight: 142px;
+@contactModalHeaderHeight: 140px;
 @contactModalContentHeight: ~"calc(100% - @{contactModalHeaderHeight})";
 
 @contactHeaderVerticalMenuItemPaddingTop: 0.938em;
@@ -22,7 +23,7 @@
 @contactHeaderButtonColor: @white;
 @contactHeaderButtonMarginRight: 0;
 
-@contactHeaderContainerPadding: 1.9em;
+@contactHeaderContainerPadding: 1.2em 0;
 @contactHeaderContainerBoxShadow: 0 1px 0 0 #ced0d2;
 @contactHeaderContainerZIndex: 4;
 
@@ -31,4 +32,15 @@
 
 @contactHeaderTextGray:  #9897af;
 
-@contactHeaderHorizontalMenuMargin: 10px 0;
+@contactHeaderHorizontalMenuMargin: 5px 0;
+@contactHeaderHorizontalMenuHeight: 40px;
+@contactHeaderHorizontalMenuPadding: 0 1.563em;
+@contactHeaderHorizontalMenuSubmenuMaxHeight: 180px;
+@contactHeaderHorizontalMenuContainerHeightOnHover: ~"calc(70px + 260px)";
+@contactHeaderHorizontalMenuWrapperHeightOnHover: ~"calc(70px + 290px)";
+
+@contactHeaderLogoMaxWidth: 82px;
+
+@hiddenContactHeaderHeight: @contactModalHeaderHeight !important;
+@hiddenContactHeaderVerticalPadding: 20px;
+@hiddenContactHeaderModalHeaderpadding: 20px 1.78rem !important;

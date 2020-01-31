@@ -27,11 +27,11 @@
   }
 
   > div > .header-grid {
+    height: @contactHeaderHeight;
     display: grid;
     grid-template-columns: @contactHeaderGridTemplate;
     grid-template-rows: 100%;
-    padding-top: @contactHeaderContainerPadding;
-    padding-bottom: @contactHeaderContainerPadding;
+    padding: @contactHeaderContainerPadding;
     box-shadow: @contactHeaderContainerBoxShadow;
     z-index: @contactHeaderContainerZIndex;
     position: relative;
@@ -48,7 +48,6 @@
       height: @contactHeaderButtonHeight;
       border-radius: @contactHeaderButtonBorderRadius;
       box-shadow: @contactHeaderButtonBoxShadow;
-      color: @contactHeaderButtonColor;
       margin-right: @contactHeaderButtonMarginRight;
     }
 
@@ -63,6 +62,10 @@
 
   .header-grid {
     background-color: @white;
+
+    a {
+      text-decoration: none;
+    }
 
     .link.item {
       margin: auto;
@@ -96,33 +99,93 @@
   }
 
   .horizontal-menu {
+    max-height: @contactHeaderHorizontalMenuHeight;
+    height: @contactHeaderHorizontalMenuHeight;
+
+    .arrow {
+      height: @contactHeaderHorizontalMenuHeight;
+    }
 
     &.is-header {
+      max-height: unset;
       margin: @contactHeaderHorizontalMenuMargin;
+  
+      .ui.container {
+        position: absolute;
+        overflow: hidden;
+        height: @contactHeaderHorizontalMenuHeight;
+        padding: @contactHeaderHorizontalMenuPadding;
+      }
+    }
+  
+    &.is-overflowed {
+      overflow: visible;
+      max-height: unset;
+      margin: @contactHeaderHorizontalMenuMargin;
+  
+      .ui.container {
+        position: absolute;
+        overflow: hidden;
+        height: @contactHeaderHorizontalMenuHeight;
+        padding: @contactHeaderHorizontalMenuPadding;
+        height: @contactHeaderHorizontalMenuHeight;
+        overflow: hidden;
+      }
+  
+      &:hover {
+  
+        .ui.container {
+          height: @contactHeaderHorizontalMenuContainerHeightOnHover;
+        }
+  
+        .ui.menu {
+          .menu-wrapper {
+            height: @contactHeaderHorizontalMenuWrapperHeightOnHover;
+  
+            .menu.transition {
+              max-height: @contactHeaderHorizontalMenuSubmenuMaxHeight;
+            }
+          }
+        }
+      }
     }
 
-    .menu-wrapper {
-      justify-content: center;
+    .ui.menu {
 
-      .ui.item.simple.dropdown {
-        padding: 0;
+      .menu-wrapper {
+
+        &:before,
+        &:after {
+          height: @contactHeaderHorizontalMenuHeight;
+        }
+        
+        > .item {
+          height: @contactHeaderHorizontalMenuHeight;
+        }
+
+        .ui.item.simple.dropdown {
+          padding: 0;
+        }
+
+        .menu-wrapper > a:last-child {
+          margin-right: @contactHeaderMenuMargin;
+        }
+
+        .menu-wrapper > a:first-child {
+          margin-left: @contactHeaderMenuMargin;
       }
 
-      .menu-wrapper > a:last-child {
-        margin-right: @contactHeaderMenuMargin;
-      }
-
-      .menu-wrapper > a:first-child {
-        margin-left: @contactHeaderMenuMargin;
-    }
-
-      .ui.item.pointing.dropdown {
-        margin-right: 0 !important;
+        .ui.item.pointing.dropdown {
+          margin-right: 0 !important;
+        }
       }
     }
   }
 
   .hidden-contact-header {
+    height: @hiddenContactHeaderHeight;
+    padding-top: @hiddenContactHeaderVerticalPadding;
+    padding-bottom: @hiddenContactHeaderVerticalPadding;
 
     .ui.header {
       margin-left: 0;
@@ -130,20 +193,42 @@
   }
 }
 
-.ui.modal.hidden-contact-header-modal {
+/*--------------------------
+      Contact Header Modal
+--------------------------*/
+
+.ui.modal.fullscreen.visible.hidden-contact-header-modal {
   display: inline-block;
 
-  .header {
-    border-bottom: none;
-    padding-top: @contactHeaderModalPaddingTop;
+  a {
+    text-decoration: none;
+  }
 
-    .link.item {
-      text-decoration: none;
-    }
+  > .header {
+    border-bottom: none;
+    padding: @hiddenContactHeaderModalHeaderpadding;
+    height: @contactModalHeaderHeight;
+    display: flex;
+    align-items: center;
+
+    .ui.container { 
+      padding: 0;
+
+      .link.item {
+        text-decoration: none;
+      }
+    } 
   }
 
   .content {
     height: @contactModalContentHeight;
+    padding: @hiddenContactHeaderModalHeaderpadding;
+
+    .link.item,
+    .item.accordion.ui,
+    .ui.vertical.menu > .item {
+      padding-left: 0;
+    }
   }
 
    > .icon.has-label {
