@@ -1,3 +1,10 @@
+## [1.294.2](https://github.com/lodgify/lodgify-ui/compare/v1.294.1...v1.294.2) (2020-01-31)
+
+
+### Bug Fixes
+
+* **contact-header:** remove padding from menu dropdowns ([a1f3b18](https://github.com/lodgify/lodgify-ui/commit/a1f3b181dc0fc15a22643892bbd2866c2fc573e1))
+
 ## [1.294.1](https://github.com/lodgify/lodgify-ui/compare/v1.294.0...v1.294.1) (2020-01-29)
 
 
