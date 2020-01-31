@@ -41,10 +41,6 @@
       .item:after {
         top: @contactHeaderUnderlineHeight;
         height: @contactHeaderUnderlineTop;
-
-        .ui.item.simple.dropdown {
-          padding: 0;
-        }
       }
     }
 
@@ -65,7 +61,6 @@
     }
   }
 
-  
   .header-grid {
     background-color: @white;
 
@@ -108,8 +103,10 @@
 
     .menu-wrapper {
       justify-content: center;
-      // margin: auto;
-      // width: unset;
+
+      .ui.item.simple.dropdown {
+        padding: 0;
+      }
 
       .menu-wrapper > a:last-child {
         margin-right: @contactHeaderMenuMargin;
