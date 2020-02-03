@@ -1,3 +1,10 @@
+# [1.295.0](https://github.com/lodgify/lodgify-ui/compare/v1.294.2...v1.295.0) (2020-02-03)
+
+
+### Features
+
+* **HorizontalMenu:** remove menu arrows if necessary ([ab4d62e](https://github.com/lodgify/lodgify-ui/commit/ab4d62ea6f22523aee70029684b3839815746861))
+
 ## [1.294.2](https://github.com/lodgify/lodgify-ui/compare/v1.294.1...v1.294.2) (2020-01-31)
 
 
