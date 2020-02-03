@@ -1514,7 +1514,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                 </div>
                 <HorizontalMenu
                   className="is-header"
-                  isHeader={true}
+                  hasOverflow={true}
                   items={
                     Array [
                       Object {
@@ -1570,54 +1570,41 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                     className="horizontal-menu is-header is-overflowed"
                     data-testid="horizontalMenu"
                   >
-                    <ShowOn
-                      computer={true}
-                      mobile={true}
-                      parent="div"
-                      parentProps={Object {}}
-                      tablet={true}
-                      widescreen={true}
+                    <div
+                      className="arrow left"
+                      data-testid="horizontalMenu-arrow-left"
+                      onClick={[Function]}
+                      role="button"
                     >
-                      <div
-                        className="show-on-mobile show-on-tablet show-on-computer show-on-widescreen"
+                      <Icon
+                        className={null}
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="chevron left"
+                        path={null}
+                        size={null}
                       >
-                        <div
-                          className="arrow left is-active"
-                          data-testid="horizontalMenu-arrow-left"
-                          onClick={[Function]}
-                          role="button"
+                        <i
+                          className="icon"
                         >
-                          <Icon
-                            className={null}
-                            color={null}
-                            hasBorder={false}
-                            isButton={false}
-                            isCircular={false}
-                            isColorInverted={false}
-                            isDisabled={false}
-                            isLabelLeft={false}
-                            labelText={null}
-                            labelWeight={null}
-                            name="chevron left"
-                            path={null}
-                            size={null}
+                          <svg
+                            viewBox="0 0 24 24"
                           >
-                            <i
-                              className="icon"
-                            >
-                              <svg
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </i>
-                          </Icon>
-                        </div>
-                      </div>
-                    </ShowOn>
+                            <path
+                              d="M15.19,18a.55.55,0,0,1-.36-.13L8.44,12.42a.56.56,0,0,1,0-.84L14.83,6.1a.57.57,0,0,1,.79.06.55.55,0,0,1-.06.78L9.66,12l5.9,5.05a.57.57,0,0,1,.06.79A.56.56,0,0,1,15.19,18Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
+                    </div>
                     <HorizontalGutters>
                       <Container>
                         <div
@@ -2637,51 +2624,38 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       </Container>
                     </HorizontalGutters>
                     <div
-                      className="arrow right is-active"
+                      className="arrow right"
                       data-testid="horizontalMenu-arrow-right"
                       onClick={[Function]}
                     >
-                      <ShowOn
-                        computer={true}
-                        mobile={true}
-                        parent="div"
-                        parentProps={Object {}}
-                        tablet={true}
-                        widescreen={true}
+                      <Icon
+                        className={null}
+                        color={null}
+                        hasBorder={false}
+                        isButton={false}
+                        isCircular={false}
+                        isColorInverted={false}
+                        isDisabled={false}
+                        isLabelLeft={false}
+                        labelText={null}
+                        labelWeight={null}
+                        name="chevron right"
+                        path={null}
+                        size={null}
                       >
-                        <div
-                          className="show-on-mobile show-on-tablet show-on-computer show-on-widescreen"
+                        <i
+                          className="icon"
                         >
-                          <Icon
-                            className={null}
-                            color={null}
-                            hasBorder={false}
-                            isButton={false}
-                            isCircular={false}
-                            isColorInverted={false}
-                            isDisabled={false}
-                            isLabelLeft={false}
-                            labelText={null}
-                            labelWeight={null}
-                            name="chevron right"
-                            path={null}
-                            size={null}
+                          <svg
+                            viewBox="0 0 24 24"
                           >
-                            <i
-                              className="icon"
-                            >
-                              <svg
-                                viewBox="0 0 24 24"
-                              >
-                                <path
-                                  d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
-                                  fill="currentColor"
-                                />
-                              </svg>
-                            </i>
-                          </Icon>
-                        </div>
-                      </ShowOn>
+                            <path
+                              d="M8.81,18a.56.56,0,0,1-.43-.19.57.57,0,0,1,.06-.79L14.34,12,8.44,6.94a.55.55,0,0,1-.06-.78.57.57,0,0,1,.79-.06l6.39,5.48a.56.56,0,0,1,0,.84L9.17,17.9A.55.55,0,0,1,8.81,18Z"
+                              fill="currentColor"
+                            />
+                          </svg>
+                        </i>
+                      </Icon>
                     </div>
                   </nav>
                 </HorizontalMenu>

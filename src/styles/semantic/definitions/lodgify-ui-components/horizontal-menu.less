@@ -22,36 +22,6 @@
   display: flex;
   justify-content: center;
 
-  &.is-header {
-    max-height: unset;
-
-    .ui.container {
-      position: absolute;
-      overflow: hidden;
-      height: @horizontalMenuHeight;
-      padding: @contactHeaderMenuContainerHorizontalPadding;
-    }
-  }
-
-  &.is-overflowed {
-    overflow: visible;
-
-    .ui.container {
-      height: @horizontalMenuContainerHeight;
-      overflow: hidden;
-
-      .ui.menu {
-        .menu-wrapper:hover {
-          height: @horizontalMenuWrapperSubmenuWrapperHeight;
-
-          .menu.transition {
-            max-height: @horizontalMenuWrapperSubmenuMenuHeight;
-          }
-        }
-      }
-    }
-  }
-
   .ui.menu {
     margin: 0;
     padding: 0;
@@ -63,7 +33,7 @@
       > .item {
         padding-top: 0;
         padding-bottom: 0;
-        height: @horizontalMenuItemHeight;
+        height: @horizontalMenuHeight;
 
         &.simple {
           margin: 0 !important;
@@ -73,12 +43,13 @@
   }
 
   .menu-wrapper {
+    padding: @horizontalMenuHorizontalPadding;
     position: relative;
     display: flex;
-    width: 100%;
+    margin: auto;
     overflow-x: auto;
     overflow-y: hidden;
-    height: @horizontalMenuWrapperHeight;
+    height: @horizontalMenuOverflowHeight;
     &:before,
     &:after {
       content: "";

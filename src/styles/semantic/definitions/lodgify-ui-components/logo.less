@@ -12,21 +12,26 @@
         Logo
 --------------------------*/
 
-.ui.image {
+.logo {
+  text-decoration: none;
+  display: block;
 
-  &.medium-logo {
-    max-height: @headerLogoMaxHeight;
-    max-width: @headerLogoMaxWidth;
-  }
+  .ui.image {
 
-  &.large-logo {
-    max-height: @headerLargeLogoMaxHeight;
-    max-width: @headerLargeLogoMaxWidth;
-  }
-
-  &.huge-logo {
-    max-height: @headerHugeLogoMaxHeight;
-    max-width: @headerHugeLogoMaxWidth;
+    &.medium-logo {
+      max-height: @headerLogoMaxHeight;
+      max-width: @headerLogoMaxWidth;
+    }
+  
+    &.large-logo {
+      max-height: @headerLargeLogoMaxHeight;
+      max-width: @headerLargeLogoMaxWidth;
+    }
+  
+    &.huge-logo {
+      max-height: @headerHugeLogoMaxHeight;
+      max-width: @headerHugeLogoMaxWidth;
+    }
   }
 }
 

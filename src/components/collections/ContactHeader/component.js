@@ -107,7 +107,7 @@ export const Component = ({
       </div>
       <HorizontalMenu
         className="is-header"
-        isHeader
+        hasOverflow
         items={navigationMenuItems}
       />
     </ShowOn>
