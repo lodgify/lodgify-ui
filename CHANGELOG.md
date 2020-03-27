@@ -1,3 +1,11 @@
+# [1.296.0](https://github.com/lodgify/lodgify-ui/compare/v1.295.0...v1.296.0) (2020-03-27)
+
+
+### Features
+
+* **SearchBar:** pass custom id to guests popup ([c033bb2](https://github.com/lodgify/lodgify-ui/commit/c033bb27fa416c03f529a85f4982883149cc9251))
+* **webpack:** export counter css ([db0ef92](https://github.com/lodgify/lodgify-ui/commit/db0ef92eeb66a8fb96d4a66e71bf63e00afd2155))
+
 # [1.295.0](https://github.com/lodgify/lodgify-ui/compare/v1.294.2...v1.295.0) (2020-02-03)
 
 
