@@ -19,6 +19,7 @@ module.exports = {
   card: path.join(SRC_SEMANTIC_STYLES_PATH, 'card.less'),
   checkbox: path.join(SRC_SEMANTIC_STYLES_PATH, 'checkbox.less'),
   container: path.join(SRC_SEMANTIC_STYLES_PATH, 'container.less'),
+  counter: path.join(SRC_SEMANTIC_STYLES_PATH, 'counter.less'),
   dimmer: path.join(SRC_SEMANTIC_STYLES_PATH, 'dimmer.less'),
   divider: path.join(SRC_SEMANTIC_STYLES_PATH, 'divider.less'),
   dropdown: path.join(SRC_SEMANTIC_STYLES_PATH, 'dropdown.less'),

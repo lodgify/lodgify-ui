@@ -162,7 +162,6 @@ export class Component extends PureComponent {
 Component.displayName = 'SearchBar';
 
 Component.defaultProps = {
-  isCalendarIconDisplayed: undefined,
   className: null,
   dateRangePickerLocaleCode: undefined,
   datesCheckInLabel: CHECK_IN,
@@ -173,6 +172,8 @@ Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
   guestsInputLabel: GUESTS,
   guestsInputValue: undefined,
+  guestsPopupId: undefined,
+  isCalendarIconDisplayed: undefined,
   isDateRangePickerLoading: undefined,
   isDisplayedAsModal: false,
   isFixed: false,
@@ -237,6 +238,11 @@ Component.propTypes = {
   guestsInputLabel: PropTypes.string,
   /** The value for the guests input. Used when consuming `SearchBar` as a controlled component. */
   guestsInputValue: PropTypes.number,
+  /**
+   * Internal use only
+   * @ignore
+   */
+  guestsPopupId: PropTypes.string,
   /** Is the calendar icon in the search bar date range picker displaying. */
   isCalendarIconDisplayed: PropTypes.bool,
   /** Is the date range picker in loading state. */

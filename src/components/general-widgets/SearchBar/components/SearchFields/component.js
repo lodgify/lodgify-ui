@@ -36,6 +36,7 @@ export const Component = ({
   getIsDayBlocked,
   guestsInputLabel,
   guestsInputValue,
+  guestsPopupId,
   isCalendarIconDisplayed,
   isDateRangePickerLoading,
   locationInputLabel,
@@ -83,6 +84,7 @@ export const Component = ({
         dropdownLabel={guestsInputLabel}
         maximumCounterValue={maximumGuestsInputValue}
         onChange={onInputChange}
+        popupId={guestsPopupId}
       />
     </div>
     <div className="button-container">{searchButton}</div>
@@ -101,6 +103,7 @@ Component.defaultProps = {
   getIsDayBlocked: Function.prototype,
   guestsInputLabel: GUESTS,
   guestsInputValue: undefined,
+  guestsPopupId: undefined,
   isCalendarIconDisplayed: undefined,
   isDateRangePickerLoading: undefined,
   locationInputLabel: LOCATION,
@@ -129,6 +132,7 @@ Component.propTypes = {
   getIsDayBlocked: func,
   guestsInputLabel: string,
   guestsInputValue: oneOfType([string, number]),
+  guestsPopupId: string,
   isCalendarIconDisplayed: bool,
   isDateRangePickerLoading: bool,
   locationInputLabel: string,

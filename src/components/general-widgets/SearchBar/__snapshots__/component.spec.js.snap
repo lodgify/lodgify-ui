@@ -16,6 +16,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
   guestsInputValue={1}
+  guestsPopupId="lollers"
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={false}
@@ -93,6 +94,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
           getIsDayBlocked={[Function]}
           guestsInputLabel="Guests"
           guestsInputValue={1}
+          guestsPopupId="lollers"
           isDisplayedAsModal={false}
           isFixed={false}
           isStackable={false}
@@ -862,6 +864,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                 counterValue={1}
                 dropdownLabel="Guests"
                 onChange={[Function]}
+                popupId="lollers"
                 willOpenAbove={false}
               >
                 <Popup
@@ -887,6 +890,7 @@ exports[`<SearchBar /> by default should render the right structure 1`] = `
                   data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
+                  id="lollers"
                   offset={0}
                   on="click"
                   onClose={[Function]}
@@ -1198,6 +1202,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
   guestsInputValue={1}
+  guestsPopupId="lollers"
   isDisplayedAsModal={false}
   isFixed={true}
   isStackable={false}
@@ -1291,6 +1296,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                     getIsDayBlocked={[Function]}
                     guestsInputLabel="Guests"
                     guestsInputValue={1}
+                    guestsPopupId="lollers"
                     isDisplayedAsModal={false}
                     isFixed={true}
                     isStackable={false}
@@ -2060,6 +2066,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                           counterValue={1}
                           dropdownLabel="Guests"
                           onChange={[Function]}
+                          popupId="lollers"
                           willOpenAbove={false}
                         >
                           <Popup
@@ -2085,6 +2092,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                             data-testid="counter-dropdown"
                             disabled={false}
                             eventsEnabled={true}
+                            id="lollers"
                             offset={0}
                             on="click"
                             onClose={[Function]}
@@ -2402,6 +2410,7 @@ exports[`<SearchBar /> if \`props.isFixed\` is true should render the right stru
                 getIsDayBlocked={[Function]}
                 guestsInputLabel="Guests"
                 guestsInputValue={1}
+                guestsPopupId="lollers"
                 isDisplayedAsModal={false}
                 isFixed={true}
                 isModalOpen={false}
@@ -2769,6 +2778,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
   guestsInputValue={1}
+  guestsPopupId="lollers"
   isDisplayedAsModal={false}
   isFixed={false}
   isShowingSummary={true}
@@ -2847,6 +2857,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
           getIsDayBlocked={[Function]}
           guestsInputLabel="Guests"
           guestsInputValue={1}
+          guestsPopupId="lollers"
           isDisplayedAsModal={false}
           isFixed={false}
           isShowingSummary={true}
@@ -3617,6 +3628,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                 counterValue={1}
                 dropdownLabel="Guests"
                 onChange={[Function]}
+                popupId="lollers"
                 willOpenAbove={false}
               >
                 <Popup
@@ -3642,6 +3654,7 @@ exports[`<SearchBar /> if \`props.isShowingSummary\` is true should render the r
                   data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
+                  id="lollers"
                   offset={0}
                   on="click"
                   onClose={[Function]}
@@ -3951,6 +3964,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
   guestsInputValue={1}
+  guestsPopupId="lollers"
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={true}
@@ -4028,6 +4042,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
           getIsDayBlocked={[Function]}
           guestsInputLabel="Guests"
           guestsInputValue={1}
+          guestsPopupId="lollers"
           isDisplayedAsModal={false}
           isFixed={false}
           isStackable={true}
@@ -4797,6 +4812,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                 counterValue={1}
                 dropdownLabel="Guests"
                 onChange={[Function]}
+                popupId="lollers"
                 willOpenAbove={false}
               >
                 <Popup
@@ -4822,6 +4838,7 @@ exports[`<SearchBar /> if \`props.isStackable\` is true should render the right 
                   data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
+                  id="lollers"
                   offset={0}
                   on="click"
                   onClose={[Function]}
@@ -5131,6 +5148,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
   guestsInputValue={1}
+  guestsPopupId="lollers"
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={false}
@@ -5189,6 +5207,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
           getIsDayBlocked={[Function]}
           guestsInputLabel="Guests"
           guestsInputValue={1}
+          guestsPopupId="lollers"
           isDisplayedAsModal={false}
           isFixed={false}
           isStackable={false}
@@ -5427,6 +5446,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                 counterValue={1}
                 dropdownLabel="Guests"
                 onChange={[Function]}
+                popupId="lollers"
                 willOpenAbove={false}
               >
                 <Popup
@@ -5452,6 +5472,7 @@ exports[`<SearchBar /> if \`props.locationOptions\` is not passed should render 
                   data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
+                  id="lollers"
                   offset={0}
                   on="click"
                   onClose={[Function]}
@@ -5761,6 +5782,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
   getIsDayBlocked={[Function]}
   guestsInputLabel="Guests"
   guestsInputValue={1}
+  guestsPopupId="lollers"
   isDisplayedAsModal={false}
   isFixed={false}
   isStackable={false}
@@ -5820,6 +5842,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
           getIsDayBlocked={[Function]}
           guestsInputLabel="Guests"
           guestsInputValue={1}
+          guestsPopupId="lollers"
           isDisplayedAsModal={false}
           isFixed={false}
           isStackable={false}
@@ -6571,6 +6594,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                 counterValue={1}
                 dropdownLabel="Guests"
                 onChange={[Function]}
+                popupId="lollers"
                 willOpenAbove={false}
               >
                 <Popup
@@ -6596,6 +6620,7 @@ exports[`<SearchBar /> if \`props.searchButton\` is passed should render the rig
                   data-testid="counter-dropdown"
                   disabled={false}
                   eventsEnabled={true}
+                  id="lollers"
                   offset={0}
                   on="click"
                   onClose={[Function]}

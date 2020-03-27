@@ -21,6 +21,7 @@ const testid = testidFactory(TEST_ID_PREFIX);
 export const Component = ({
   counterName,
   counterValue,
+  popupId,
   dropdownLabel,
   maximumCounterValue,
   onChange,
@@ -42,6 +43,7 @@ export const Component = ({
         </FlexContainer>
       }
       data-testid={testid()}
+      id={popupId}
       on="click"
       onClose={() => setIsOpen(false)}
       onOpen={() => setIsOpen(true)}
@@ -76,6 +78,7 @@ export const Component = ({
 Component.displayName = 'CounterDropdown';
 
 Component.defaultProps = {
+  popupId: undefined,
   counterName: undefined,
   counterValue: undefined,
   dropdownLabel: GUESTS,
@@ -95,6 +98,11 @@ Component.propTypes = {
   maximumCounterValue: PropTypes.number,
   /** A function called when the counter value changes. */
   onChange: PropTypes.func,
+  /**
+   * For internal use only.
+   * @ignore
+   * */
+  popupId: PropTypes.string,
   /** Will the dropdown open above or below the trigger */
   willOpenAbove: PropTypes.bool,
 };

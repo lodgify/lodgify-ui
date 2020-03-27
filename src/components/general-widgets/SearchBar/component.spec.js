@@ -46,6 +46,7 @@ const props = {
   datesInputValue: DATE_INITIAL_VALUE,
   guestsInputValue: GUEST_INITIAL_VALUE,
   locationInputValue: INITIAL_VALUE,
+  guestsPopupId: 'lollers',
 };
 
 const getSearchBar = overrideProps =>
