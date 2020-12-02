@@ -13,7 +13,7 @@ jest.mock('utils/get-window-height');
 jest.mock('utils/is-blur-event');
 jest.mock('utils/is-displayed-as-modal');
 jest.mock('debounce');
-jest.mock('uniqid');
+jest.mock('uuid');
 jest.mock('./utils/getIsFocusControlled');
 jest.mock('./utils/getIsVisible');
 
@@ -21,7 +21,7 @@ import React from 'react';
 import { mount, shallow } from 'enzyme';
 import moment from 'moment';
 import { expectComponentToHaveDisplayName } from '@lodgify/enzyme-jest-expect-helpers';
-import uniqid from 'uniqid';
+import { v4 as uuid } from 'uuid';
 import { debounce } from 'debounce';
 
 import { getWindowHeight } from 'utils/get-window-height';
@@ -44,7 +44,7 @@ const getWrappedDateRangePicker = props => {
 };
 
 debounce.mockImplementation(func => func);
-uniqid.mockImplementation(value => value);
+uuid.mockImplementation(value => value);
 
 describe('<DateRangePicker />', () => {
   beforeEach(() => {

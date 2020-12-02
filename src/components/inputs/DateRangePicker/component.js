@@ -1,7 +1,7 @@
 import moment from 'moment';
 import React, { Fragment, PureComponent } from 'react';
 import PropTypes from 'prop-types';
-import uniqid from 'uniqid';
+import { v4 as uuid } from 'uuid';
 import { debounce } from 'debounce';
 import { DateRangePicker } from 'react-dates';
 
@@ -31,8 +31,8 @@ import {
 // eslint-disable-next-line jsdoc/require-jsdoc
 class Component extends PureComponent {
   state = {
-    endDateId: uniqid('end_date_id_'),
-    startDateId: uniqid('start_date_id_'),
+    endDateId: uuid(),
+    startDateId: uuid(),
     focusedInput: null,
     windowHeight: null,
   };

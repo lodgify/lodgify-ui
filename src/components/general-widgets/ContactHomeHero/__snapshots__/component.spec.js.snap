@@ -1571,7 +1571,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                     data-testid="horizontalMenu"
                   >
                     <div
-                      className="arrow left"
+                      className="arrow left is-active"
                       data-testid="horizontalMenu-arrow-left"
                       onClick={[Function]}
                       role="button"
@@ -2624,7 +2624,7 @@ exports[`ContactHomeHero should render the right structure 1`] = `
                       </Container>
                     </HorizontalGutters>
                     <div
-                      className="arrow right"
+                      className="arrow right is-active"
                       data-testid="horizontalMenu-arrow-right"
                       onClick={[Function]}
                     >
