@@ -21,11 +21,9 @@ deploy:
     on:
       branch: master
     provider: pages
-    skip_cleanup: true
   # Release npm
   - provider: script
     on:
       branch: master
-    skip_cleanup: true
     script:
       - npx semantic-release
