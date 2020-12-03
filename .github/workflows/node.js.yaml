@@ -27,5 +27,4 @@ jobs:
     - run: npm run install-peers
     - run: npm install
     - run: npm run build
-    - run: npm run test
     - run: npx semantic-release
