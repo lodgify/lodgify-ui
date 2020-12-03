@@ -1,4 +1,4 @@
-jest.mock('uniqid');
+jest.mock('uuid');
 jest.mock('./components/InnerContent', () => {
   const { Component } = require('react');
 

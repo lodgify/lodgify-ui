@@ -91,7 +91,6 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
               disabled={false}
               displayFormat="DD/MM/YYYY"
               endDate={null}
-              endDateId="end_date_id_"
               endDatePlaceholderText=""
               focusedInput={null}
               hideKeyboardShortcutsPanel={true}
@@ -136,7 +135,6 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`fa
               openDirection="down"
               showClearDates={true}
               startDate={null}
-              startDateId="start_date_id_"
               startDatePlaceholderText=""
             >
               <div />
@@ -241,7 +239,6 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
               disabled={false}
               displayFormat="DD/MM/YYYY"
               endDate={null}
-              endDateId="end_date_id_"
               endDatePlaceholderText=""
               focusedInput={null}
               hideKeyboardShortcutsPanel={true}
@@ -286,7 +283,6 @@ exports[`<DateRangePicker /> \`render\` if \`getIsFocusControlled\` returns \`tr
               openDirection="down"
               showClearDates={true}
               startDate={null}
-              startDateId="start_date_id_"
               startDatePlaceholderText=""
             >
               <div />
@@ -394,7 +390,6 @@ exports[`<DateRangePicker /> \`render\` if \`isLoading\` === \`true\` should ren
               disabled={true}
               displayFormat="DD/MM/YYYY"
               endDate={null}
-              endDateId="end_date_id_"
               endDatePlaceholderText=""
               focusedInput={null}
               hideKeyboardShortcutsPanel={true}
@@ -439,7 +434,6 @@ exports[`<DateRangePicker /> \`render\` if \`isLoading\` === \`true\` should ren
               openDirection="down"
               showClearDates={true}
               startDate={null}
-              startDateId="start_date_id_"
               startDatePlaceholderText=""
             >
               <div />
@@ -530,7 +524,6 @@ exports[`<DateRangePicker /> if \`isCalendarIconDisplayed\` === false should ret
               disabled={false}
               displayFormat="DD/MM/YYYY"
               endDate={null}
-              endDateId="end_date_id_"
               endDatePlaceholderText=""
               focusedInput={null}
               hideKeyboardShortcutsPanel={true}
@@ -575,7 +568,6 @@ exports[`<DateRangePicker /> if \`isCalendarIconDisplayed\` === false should ret
               openDirection="down"
               showClearDates={true}
               startDate={null}
-              startDateId="start_date_id_"
               startDatePlaceholderText=""
             >
               <div />
