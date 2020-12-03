@@ -97,6 +97,6 @@ Component.propTypes = {
    *  @param {Object} event
    */
   onClick: PropTypes.func,
-  /** The size of the button */
+  /** The size of the button. */
   size: PropTypes.string,
 };
