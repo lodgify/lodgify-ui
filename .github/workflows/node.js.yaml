@@ -27,7 +27,8 @@ jobs:
     - run: npm run install-peers
     - run: npm install
     - run: npm run build
-    - run: npx semantic-release
+    - name: Release
       env:
         NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
         GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
+      run: npx semantic-release
