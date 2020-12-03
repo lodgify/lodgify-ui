@@ -40,7 +40,7 @@ export const Component = ({
     })}
     {...getButtonProps(isButton)}
     // Passing through props is required for
-    // compatibility with dynamic components e.g. `ToolTip`
+    // compatibility with dynamic components e.g `ToolTip`
     {...otherProps}
   >
     {!!labelText && isLabelLeft && (
