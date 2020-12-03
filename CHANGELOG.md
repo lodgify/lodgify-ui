@@ -1,3 +1,10 @@
+# [1.297.0](https://github.com/lodgify/lodgify-ui/compare/v1.296.0...v1.297.0) (2020-12-03)
+
+
+### Features
+
+* **uuid:** introduce dependency ([e579e9c](https://github.com/lodgify/lodgify-ui/commit/e579e9c2a41b861b6951059853d40faa2390ef8a))
+
 # [1.296.0](https://github.com/lodgify/lodgify-ui/compare/v1.295.0...v1.296.0) (2020-03-27)
 
 
